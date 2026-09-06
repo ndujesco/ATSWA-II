@@ -708,6 +708,135 @@ CH = {
              'moved, search the organisation\'s name directly — these sites reorganise from time '
              'to time.'},
   ]},
+
+  {'n': '1.10', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'p': 'The study text\'s own end-of-chapter set, reproduced with its answer key. **Bold** '
+          'marks the crammable answer in each case.'},
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text Section A', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'One of the following is **not** an external user of public sector accounting '
+        'information: (A) Members of the Legislature  (B) Governments, apart from the one '
+        'reporting  (C) The members of the public  (D) Financial institutions  (E) Governments, '
+        'including the one reporting.',
+        'Which stage, through which a spending decision passes, does the **cash basis** of '
+        'accounting record? (A) Management decision to spend money  (B) Issue of order or '
+        'contract  (C) Supply of goods or services — acknowledgment of liability  (D) Settlement '
+        'of the amount  (E) Consumption of value.',
+        'Which of the following is **not** a public sector organisation? (A) Federal Government  '
+        '(B) State Government  (C) National Agency for Food and Drug Administration and Control  '
+        '(D) Nigeria Theological Seminary and Chaplaincy  (E) Nigerian Civil Aviation Authority.',
+        'One of the following is **not** a basis under which the financial statements of a '
+        'public sector enterprise are compiled: (A) Cash basis  (B) Accrual basis  (C) Profit '
+        'maximisation basis  (D) Commitment basis  (E) Modified cash basis.',
+        'Which of the following is **not** an advantage of the cash basis? (A) It is simple to '
+        'understand  (B) It takes a realistic view of financial transactions  (C) It eliminates '
+        'the existence of debtors and creditors  (D) It saves time and is easy to operate  '
+        '(E) It allows comparison between the amount budgeted and that actually spent.',
+        'The user of public sector accounting information whose interest is in evaluating the '
+        'credit rating of a borrowing nation is called …',
+        'The basis of accounting under which the books are left open for a maximum of three '
+        'months after year end, to capture substantial income or expenditure relating to the '
+        'year just ended, is called …',
+        'The accounting basis that records anticipated expenditure evidenced by a contract or a '
+        'purchase order is called …',
+        'The name of the first international standards-setting body, formed in 1973, is …',
+        'All organisations which are created, administered and financed by government from '
+        'taxpayers\' money on behalf of the members of the public are called the …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**E.** The reporting government itself acts through the executive arm and is an '
+        '*internal* user; every other option is external.',
+        '**E — Consumption of value.** The cash basis recognises a transaction only on payment, '
+        'i.e. stage (v). Accrual covers stages (iii)–(v); commitment covers stages (ii)–(v).',
+        '**D — Nigeria Theological Seminary and Chaplaincy.** A private religious body, not '
+        'established, run or financed by government.',
+        '**C — Profit maximisation basis.** The five bases are cash, accrual, commitment, '
+        'modified cash and modified accrual.',
+        '**B — "It takes a realistic view of financial transactions."** That is an advantage of '
+        'the *accrual* basis; the cash basis is criticised for taking an *unrealistic* view. '
+        'The other four are genuine advantages of the cash basis.',
+        '**Financial institutions** — commercial banks, the World Bank and the IMF use the '
+        'accounts to assess a borrowing nation\'s credit rating.',
+        '**Modified cash basis.**',
+        '**Commitment basis.**',
+        '**International Accounting Standards Committee (IASC)** — reorganised in 2001 into the '
+        'IASB.',
+        '**Public sector.**'],
+      }]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text Section B', 't': 'Theory questions with suggested solutions',
+      'open': True, 'q': [
+      {'ol': [
+        'IPSASB adopts a due process for developing IPSAS, with opportunity for comment by '
+        'interested parties. Enumerate any **four stages** of the IPSASB\'s due process for '
+        'project execution.',
+        'Discuss the comparison between a non-profit-oriented organisation and a profit-oriented '
+        'organisation under: (a) profit  (b) legal formation  (c) budgetary approach  '
+        '(d) dissolution  (e) revenue.',
+        'The commitment basis records anticipated expenditure evidenced by a contract or a '
+        'purchase order. Give any **three advantages** and **two disadvantages** of the '
+        'commitment basis of accounting.',
+        'Public sector accounting has three unique characteristics. **List and explain** them.',
+      ]}],
+      'a': [
+      {'h4': '1  Stages of the IPSASB due process (any four)'},
+      {'ol': [
+        'Study of national accounting requirements and practice, and exchange of views on the '
+        'issues with national standard-setters.',
+        'Consideration of pronouncements issued by the IASB, national standard-setters and '
+        'regulatory/authoritative bodies, professional accounting bodies, and other bodies '
+        'interested in public financial reporting.',
+        'Formation of **Steering Committees**, **Project Advisory Panels** or subcommittees to '
+        'provide input on a project.',
+        'Publication of an **exposure draft** for public comment, usually for at least **four '
+        'months**, including a basis for conclusions.',
+        'Consideration of all comments received within the comment period and modification of '
+        'the proposed standard as appropriate.',
+        'Publication of the **IPSAS**, including a basis for conclusions explaining the steps in '
+        'the due process and how the Board reached its conclusions.']},
+      {'h4': '2  Non-profit-oriented vs profit-oriented organisation'},
+      {'table': {'align': 'lll', 'head': ['Basis', 'Non-profit-oriented', 'Profit-oriented'],
+        'rows': [
+        ['**Profit**', 'Main objective is to provide adequate welfare to the people at '
+         'reasonable cost', 'Main objective is to maximise profit'],
+        ['**Legal formation**', 'Created by Acts of the legislatures (National / State '
+         'Assemblies)', 'Registered with the Corporate Affairs Commission'],
+        ['**Budgetary approach**', 'Public entities are rigid on the budgetary approach',
+         'Budgets are an internal affair of the organisation'],
+        ['**Dissolution**', 'Income raised or assets acquired cannot be distributed to members, '
+         'directors or officers — all proceeds revert to the State',
+         'Income realised on dissolution can be distributed to members, directors or officers'],
+        ['**Revenue**', 'Derived from the public as taxation, fines, fees, etc.',
+         'Derived principally from the sale of goods and services'],
+      ]}},
+      {'h4': '3  Commitment basis'},
+      {'p': '**Advantages (any three):** a separate payment tabulation is available on demand; '
+            'adjustments when actual expenditure is known do not affect the final accounts; it '
+            'is an aid to financial control (a commitment is a charge already made on a budget '
+            'provision); it takes a realistic view of transactions; it reveals an accurate '
+            'year-end position; it serves economic and investment decision-making; it aligns '
+            'with the matching concept; it allows for the diminution in value of assets.'},
+      {'p': '**Disadvantages (any two):** the system involves extra work (actual figures must '
+            'later be substituted for the commitment provisions); it encourages over-'
+            'expenditure in the expectation that government will release funds to settle legal '
+            'obligations; at year end, unfulfilled orders must be written back; balances that '
+            'ought to lapse in the Vote Book may be spent by issuing local purchase orders to '
+            'exhaust the votes.'},
+      {'h4': '4  Three unique characteristics of public sector accounting'},
+      {'ol': [
+        '**Distinct information, classification and procedures** apply only to government '
+        'transactions — the budgeting system, fiscal policy, accounting methods and revenue '
+        'sources — which must be treated by specific, cohesive, standardised rules.',
+        '**Budgeting largely determines the structure** of public sector accounting, because '
+        'government revenue and expenditure need legislative approval; resources are often '
+        'segregated into special-purpose **Funds**, recorded and measured by **fund '
+        'accounting**.',
+        '**The system is maintained on the cash basis** — only movements of cash are '
+        'recognised; all assets are written off when paid for, so the statement of assets and '
+        'liabilities shows no tangible assets and no depreciation is charged.']}]}},
+  ]},
  ],
  'formulas': [],
  'focus':
@@ -781,6 +910,33 @@ CH = {
     'w': 'Cash basis IPSAS was adopted from January 2014 and accrual basis IPSAS from January '
          '2016, subject to the transitional provisions of IPSAS 33.',
     'src': 'Chapter 1.5'},
+   {'q': 'Which of the following is NOT a basis on which the financial statements of a public '
+         'sector enterprise are compiled?',
+    'o': ['Cash basis', 'Accrual basis', 'Profit maximisation basis', 'Commitment basis',
+          'Modified cash basis'],
+    'a': 2,
+    'w': 'The five bases are cash, accrual, commitment, modified cash and modified accrual. '
+         'There is no "profit maximisation" basis — the public sector has no profit motive.',
+    'src': 'Chapter 1.10 (study text Section A Q4)'},
+   {'q': 'The cash basis of accounting recognises a spending decision only at which stage?',
+    'o': ['Management decision to spend', 'Issue of the order or contract',
+          'Supply of goods or services (acknowledgment of liability)',
+          'Consumption of value', 'Approval of the budget'],
+    'a': 3,
+    'w': 'A spending decision passes through five stages; the cash basis records only stage '
+         '(v), consumption of value (payment). Accrual covers stages iii–v; commitment covers '
+         'stages ii–v.',
+    'src': 'Chapter 1.10 (study text Section A Q2)'},
+   {'q': 'Which of the following is NOT an advantage of the cash basis of accounting?',
+    'o': ['It is simple to understand', 'It takes a realistic view of financial transactions',
+          'It eliminates the existence of debtors and creditors',
+          'It saves time and is easy to operate',
+          'It allows comparison of budgeted with actual spending'],
+    'a': 1,
+    'w': 'Taking a realistic view of transactions is an advantage of the accrual basis; the '
+         'cash basis is criticised for the opposite. The other four are genuine advantages of '
+         'the cash basis.',
+    'src': 'Chapter 1.10 (study text Section A Q5)'},
   ],
   'theory': [
    {'q': 'Distinguish between public sector accounting and private sector accounting, and '

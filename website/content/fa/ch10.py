@@ -179,6 +179,197 @@ CH = {
              'shared in the profit sharing ratio. You do not scale down the appropriations to fit '
              'unless the agreement expressly says so.'},
   ]},
+
+  {'n': '10.6', 't': 'The study text\'s worked illustrations', 'b': [
+    {'p': 'The three illustrations the study text works through. The T-accounts in the printed '
+          'book are badly mangled in places; the questions are reproduced faithfully and the '
+          'solutions rebuilt so the accounts cross-cast.'},
+    {'eg': {'tag': 'Illustration 10.1', 't': 'Mamah and Kwesi — distribution of income and current '
+      'accounts', 'open': True, 'q': [
+      {'p': 'Mamah and Kwesi have been in partnership for ten years, making up accounts to '
+            '31 December. Interest on drawings is charged at 15% and interest on capital allowed '
+            'at 10%. Kwesi receives a salary of ₦76m per annum. The balance of profit is shared '
+            'Mamah 3/5, Kwesi 2/5. At 31 December 2024 the books showed:'},
+      {'table': {'align': 'lr', 'head': ['', '₦m'], 'rows': [
+        ['Capital account — Mamah', '190'],
+        ['Capital account — Kwesi', '114'],
+        ['Current account — Mamah (Cr)', '95'],
+        ['Current account — Kwesi (Cr)', '57'],
+      ]}},
+      {'p': 'Net profit for the year ended 31 December 2024 was ₦285m. Drawings for the year were '
+            'Mamah ₦114m and Kwesi ₦95m. Prepare (a) the Statement of Distribution of Income and '
+            '(b) the Partners\' Current Accounts.'}],
+      'a': [
+      {'stmt': {'t': 'Statement of Distribution of Income',
+        'sub': 'for the year ended 31 December 2024 (₦m)', 'rows': [
+        ['Net profit', 285.0],
+        ['Add interest on drawings — Mamah 17.1, Kwesi 14.3', 31.4],
+        ['', 316.4, '@t'],
+        ['Less interest on capital — Mamah 19.0, Kwesi 11.4', -30.4],
+        ['Less salary — Kwesi', -76.0],
+        ['Residual profit', 210.0, '@tt'],
+      ]}},
+      {'p': 'Share of residual profit — Mamah $\\tfrac35 \\times 210 = ₦126.0\\text{m}$; '
+            'Kwesi $\\tfrac25 \\times 210 = ₦84.0\\text{m}$. Interest on drawings is '
+            '$15\\% \\times 114 = 17.1$ and $15\\% \\times 95 = 14.25 \\approx 14.3$; interest on '
+            'capital is $10\\% \\times 190 = 19.0$ and $10\\% \\times 114 = 11.4$.'},
+      {'tacc': {'t': 'Partners\' Current Accounts — Mamah (₦m)', 'dr': [
+          ['Interest on drawings', 17.1], ['Drawings', 114.0], ['Balance c/d', 108.9],
+          ['', 240.0, '@tot']],
+        'cr': [['Balance b/d', 95.0], ['Interest on capital', 19.0], ['Share of profit', 126.0],
+               ['', 240.0, '@tot']]}},
+      {'tacc': {'t': 'Partners\' Current Accounts — Kwesi (₦m)', 'dr': [
+          ['Interest on drawings', 14.3], ['Drawings', 95.0], ['Balance c/d', 119.1],
+          ['', 228.4, '@tot']],
+        'cr': [['Balance b/d', 57.0], ['Interest on capital', 11.4], ['Salary', 76.0],
+               ['Share of profit', 84.0], ['', 228.4, '@tot']]}},
+      {'note': 'The salary and interest on capital are appropriations — credited to the current '
+               'account, not paid through the statement of profit or loss. Interest on drawings '
+               'is the only debit-side appropriation.'}]}},
+    {'eg': {'tag': 'Illustration 10.2', 't': 'Zumi, Brah and Zotu — adjustments before the '
+      'appropriation', 'open': True, 'q': [
+      {'p': 'Zumi, Brah and Zotu started a partnership on 14 January 2024 sharing profits and '
+            'losses 2 : 2 : 1. Capital accounts and drawings attract interest. The trial balance '
+            'as at 30 September 2024, after the profit & loss account had been prepared, was:'},
+      {'table': {'align': 'lrr', 'head': ['', 'Dr (₦)', 'Cr (₦)'], 'rows': [
+        ['Current account — Zumi', '', '24,000'],
+        ['Current account — Brah', '6,000', ''],
+        ['Current account — Zotu', '', '13,500'],
+        ['Capital account — Zumi', '', '150,000'],
+        ['Capital account — Brah', '', '135,000'],
+        ['Capital account — Zotu', '', '120,000'],
+        ['Loan by Zotu', '', '30,000'],
+        ['Bank & cash', '31,500', ''],
+        ['Creditors', '', '27,000'],
+        ['Profit & loss account', '', '51,000'],
+        ['Debtors', '40,500', ''],
+        ['Stocks at 30/9/24', '52,500', ''],
+        ['Vehicle', '97,500', ''],
+        ['Furniture & fittings', '22,500', ''],
+        ['Buildings', '300,000', ''],
+        ['', '550,500', '550,500'],
+      ]}},
+      {'p': 'The following have not yet been recorded: (a) goods taken for personal use — Zumi '
+            '₦7,000, Brah ₦3,500; (b) general expenses paid by Brah personally ₦2,250; (c) Zotu '
+            'received ₦4,500 as salary; (d) cash drawings — Zumi ₦9,000, Brah ₦6,000, Zotu '
+            '₦4,500; (e) interest on drawings — Zumi ₦1,000, Brah ₦550, Zotu ₦450; (f) interest '
+            'on Zotu\'s loan ₦3,000; (g) interest on capital at 5%. Prepare (a) the adjusted '
+            'profit and the Statement of Distribution of Income, (b) the Partners\' Current '
+            'Accounts, (c) the statement of financial position at 30 September 2024.'}],
+      'a': [
+      {'stmt': {'t': 'Adjusted net profit', 'rows': [
+        ['Balance per trial balance', 51000],
+        ['Add goods taken for personal use (7,000 + 3,500)', 10500],
+        ['', 61500, '@t'],
+        ['Less general expenses paid by Brah', -2250],
+        ['Less interest on Zotu\'s loan', -3000],
+        ['Adjusted net profit', 56250, '@tt'],
+      ]}},
+      {'stmt': {'t': 'Statement of Distribution of Income',
+        'sub': 'for the period ended 30 September 2024', 'rows': [
+        ['Adjusted net profit', 56250],
+        ['Add interest on drawings (1,000 + 550 + 450)', 2000],
+        ['', 58250, '@t'],
+        ['Less salary — Zotu', -4500],
+        ['Less interest on capital at 5% (7,500 + 6,750 + 6,000)', -20250],
+        ['Residual profit', 33500, '@tt'],
+      ]}},
+      {'p': 'Share of residual profit 2 : 2 : 1 — Zumi ₦13,400; Brah ₦13,400; Zotu ₦6,700. '
+            'Interest on capital is $5\\%$ of ₦150,000, ₦135,000 and ₦120,000.'},
+      {'tacc': {'t': 'Current account — Zumi (₦)', 'dr': [
+          ['Goods taken', 7000], ['Interest on drawings', 1000], ['Drawings', 9000],
+          ['Balance c/d', 27900], ['', 44900, '@tot']],
+        'cr': [['Balance b/d', 24000], ['Interest on capital', 7500], ['Share of profit', 13400],
+               ['', 44900, '@tot']]}},
+      {'tacc': {'t': 'Current account — Brah (₦)', 'dr': [
+          ['Balance b/d', 6000], ['Goods taken', 3500], ['Interest on drawings', 550],
+          ['Drawings', 6000], ['Balance c/d', 6350], ['', 22400, '@tot']],
+        'cr': [['General expenses paid personally', 2250], ['Interest on capital', 6750],
+               ['Share of profit', 13400], ['', 22400, '@tot']]}},
+      {'tacc': {'t': 'Current account — Zotu (₦)', 'dr': [
+          ['Interest on drawings', 450], ['Drawings', 4500], ['Balance c/d', 28750],
+          ['', 33700, '@tot']],
+        'cr': [['Balance b/d', 13500], ['Interest on loan', 3000], ['Salary', 4500],
+               ['Interest on capital', 6000], ['Share of profit', 6700], ['', 33700, '@tot']]}},
+      {'warn': 'The study text\'s printed current account for Zumi shows a closing balance of '
+               '₦22,900, which does not cross-cast — the debit side then totals only ₦39,900 '
+               'against a credit side of ₦44,900. The correct balance carried down is **₦27,900**. '
+               'The text also routes Zotu\'s loan interest through his current account; strictly '
+               'it belongs in a loan account, but follow the text in the exam.'},
+      {'stmt': {'t': 'Statement of financial position at 30 September 2024', 'rows': [
+        'Non-current assets',
+        ['Buildings', 300000], ['Vehicle', 97500], ['Furniture & fittings', 22500],
+        ['', 420000, '@t'],
+        '@gap',
+        'Current assets',
+        ['Inventory', 52500], ['Receivables', 40500], ['Bank & cash (balancing figure)', 12000],
+        ['', 105000, '@t'],
+        ['Less current liabilities — Creditors', -27000],
+        ['Net current assets', 78000, '@t'],
+        ['Net assets', 498000, '@tt'],
+        '@gap',
+        'Financed by',
+        ['Capital — Zumi 150,000; Brah 135,000; Zotu 120,000', 405000],
+        ['Current accounts — Zumi 27,900; Brah 6,350; Zotu 28,750', 63000],
+        ['Loan from Zotu', 30000],
+        ['', 498000, '@tt'],
+      ]}},
+      {'note': 'The bank & cash figure is shown as a balancing item — the scanned study-text '
+               'solution does not give enough detail (which payments cleared the bank versus '
+               'cash) to reproduce it directly. Parts (a) and (b) are the examinable core.'}]}},
+    {'eg': {'tag': 'Illustration 10.3', 't': 'Mensah and Babatunde — revaluation on admitting a '
+      'partner', 'open': True, 'q': [
+      {'p': 'Mensah and Babatunde, sharing equally, decide to admit Shola and revalue the '
+            'partnership assets. Their statement of financial position at 31 March 2025 was:'},
+      {'table': {'align': 'lrrr',
+        'head': ['Non-current assets', 'Cost (₵\'000)', 'Depreciation', 'Carrying amount'], 'rows': [
+        ['Freehold property', '7,600', '2,850', '4,750'],
+        ['Plant & machinery', '4,275', '2,375', '1,900'],
+        ['Motor vehicles', '3,610', '2,185', '1,425'],
+        ['', '15,485', '7,410', '8,075'],
+      ]}},
+      {'p': 'Current assets: inventories ₵1,330; receivables ₵1,140; bank and cash ₵7,125 '
+            '(₵9,595). Less accounts payable ₵4,485 → net current assets ₵5,110. Net assets '
+            '₵13,185, financed by capital (Mensah ₵4,800; Babatunde ₵4,800) and current accounts '
+            '(Mensah ₵1,585; Babatunde ₵2,000).'},
+      {'p': 'New valuations (₵\'000): freehold property 9,500; plant & machinery 1,425; motor '
+            'vehicles 1,140. An allowance for doubtful debts of 2½% of receivables is to be '
+            'created. Trade payables agree to accept ₵3,000,000 in full settlement. Prepare '
+            '(a) the journal entries, (b) the Partners\' Capital Accounts, (c) the Revaluation '
+            'Account.'}],
+      'a': [
+      {'p': 'The study text works from **cost**: the accumulated depreciation of ₵7,410 is written '
+            'back to the revaluation account, and each asset is then compared with its revalued '
+            'amount against cost.'},
+      {'ol': [
+        '**Dr** Provision for depreciation ₵7,410  **Cr** Revaluation ₵7,410 — write back all '
+        'accumulated depreciation.',
+        '**Dr** Freehold property ₵1,900  **Cr** Revaluation ₵1,900 — cost 7,600 up to 9,500.',
+        '**Dr** Revaluation ₵5,348.5  **Cr** Plant & machinery ₵2,850, Motor vehicles ₵2,470, '
+        'Allowance for doubtful debts ₵28.5 — plant cost 4,275 down to 1,425; vehicles cost 3,610 '
+        'down to 1,140; allowance $2.5\\% \\times 1{,}140 = 28.5$.',
+        '**Dr** Payables ₵1,485  **Cr** Revaluation ₵1,485 — creditors 4,485 down to 3,000.',
+        '**Dr** Revaluation ₵5,446.5  **Cr** Capital — Mensah ₵2,723.25, Babatunde ₵2,723.25 — '
+        'close the profit on revaluation, shared equally.'],
+      },
+      {'tacc': {'t': 'Revaluation Account (₵\'000)', 'dr': [
+          ['Plant & machinery', 2850], ['Motor vehicles', 2470],
+          ['Allowance for doubtful debts', 28.5],
+          ['Capital — Mensah (1/2)', 2723.25], ['Capital — Babatunde (1/2)', 2723.25],
+          ['', 10795, '@tot']],
+        'cr': [['Provision for depreciation', 7410], ['Freehold property', 1900],
+               ['Payables', 1485], ['', 10795, '@tot']]}},
+      {'tacc': {'t': 'Capital Accounts (₵\'000)', 'dr': [
+          ['Mensah — Balance c/d', 7523.25], ['Babatunde — Balance c/d', 7523.25]],
+        'cr': [['Mensah — Balance b/d', 4800.00], ['Mensah — Revaluation', 2723.25],
+               ['Babatunde — Balance b/d', 4800.00], ['Babatunde — Revaluation', 2723.25]]}},
+      {'note': 'The same profit of ₵5,446.5 comes out if you work from **carrying amounts**: '
+               'freehold gain $9{,}500 - 4{,}750 = 4{,}750$; plant loss $1{,}900 - 1{,}425 = 475$; '
+               'vehicles loss $1{,}425 - 1{,}140 = 285$; payables gain 1,485; allowance $-28.5$; '
+               'net $4{,}750 - 475 - 285 + 1{,}485 - 28.5 = 5{,}446.5$. Whichever route, the '
+               'surplus belongs to the **old** partners in their old ratio, before Shola is '
+               'admitted (Chapter 11 §11.3).'}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Residual profit for sharing',

@@ -405,6 +405,128 @@ CH = {
              'source for current procurement thresholds under the Public Procurement Act — worth '
              'bookmarking ahead of the dedicated procurement chapter later in this paper.'},
   ]},
+
+  {'n': '2.14', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'p': 'The study text\'s own end-of-chapter set, with its answer key. **Bold** marks the '
+          'crammable answer. The printed key is numbered one higher than the questions and drops '
+          'the answer to Q1 — it is restored below.'},
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text Section A', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'One of the following is **not** part of the "other laws and regulations" guiding public '
+        'sector accounting: (A) Revenue Mobilization and Fiscal Allocation Commission Act (Cap. '
+        'R.7 LFN 2004)  (B) Pension Reform Act 2014  (C) Companies and Allied Matters Act 2020  '
+        '(D) Code of Conduct Bureau and Tribunal Act 1991  (E) Financial Reporting Council Act '
+        '2011.',
+        'Which of the following are the administrative tools used to amend existing provisions '
+        'of the Financial Regulations and public service rules and to introduce new policy '
+        'guidelines? (A) Finance / Treasury circulars  (B) Financial Regulations  (C) Revised '
+        'Financial Memoranda for Local Government 1991  (D) Medium-Term Expenditure Framework  '
+        '(E) Fiscal Responsibility Act 2007.',
+        'One of the following is **not** among the objectives of the Financial Memoranda: '
+        '(A) to serve as a learning tool for officers on first appointment  (B) to serve as an '
+        'administrative guideline for the day-to-day running of local government  (C) to '
+        'facilitate recording of local government transactions using appropriate accounting '
+        'methods  (D) to highlight the implications of disbursing government funds without '
+        'proper authority  (E) to make Local Government Chairmen accountable to their '
+        'communities.',
+        'Which of the following laws regulates financial matters and payment or withdrawal from '
+        'the Consolidated Revenue Fund? (A) Fiscal Responsibility Act 2007  (B) Public '
+        'Procurement Act 2007  (C) The Financial Regulations (2009 Edition)  (D) Annual / '
+        'Supplementary Appropriation Act  (E) Finance and Treasury circulars.',
+        'The Act that prescribes the basis for distribution of revenue accruing to the '
+        'Federation Account between the Federal, State and Local Governments is …',
+        '… governs the management and operation of government funds.',
+        'The Act which provides for prudent management of the nation\'s resources and long-term '
+        'macro-economic stability is …',
+        'The powerful control tool used in public sector fund management is …',
+        'The document containing the administrative guidelines and the checks and balances on '
+        'local government financial matters is …',
+        'The body charged with procurement issues under the Public Procurement Act 2007 is …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**C — Companies and Allied Matters Act 2020.** CAMA is the private-sector companies '
+        'statute; it is not in the study text\'s list of other laws guiding public sector '
+        'accounting. (The printed key omits this answer.)',
+        '**A — Finance / Treasury circulars.**',
+        '**E — "to make Local Government Chairmen accountable to their communities."** Not one '
+        'of the stated objectives of the Financial Memoranda.',
+        '**D — the Annual / Supplementary Appropriation Act.** Money bills become Appropriation '
+        'Acts and regulate withdrawals from the Consolidated Revenue Fund.',
+        '**C — the Allocation of Revenue (Federation Account, etc.) Act 1982, Cap. A.15 LFN '
+        '2004.**',
+        '**The Finance (Control and Management) Act 1958, Cap. F.26 LFN 2004.**',
+        '**The Fiscal Responsibility Act 2007.**',
+        '**The Financial Regulations (2009 Edition).**',
+        '**The Revised Financial Memoranda for Local Government, 1991.**',
+        '**The Bureau of Public Procurement (BPP).**'],
+      }]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text Section B', 't': 'Theory questions with suggested solutions',
+      'open': True, 'q': [
+      {'ol': [
+        'The Fiscal Responsibility Act 2007 established the Fiscal Responsibility Commission. '
+        'State the **functions of the Commission** as contained in the Act.',
+        'The Nigerian public sector finances are guided by the Constitution and several other '
+        'laws. **List any ten** of such laws.',
+        'The Financial Regulations (2009 Edition) is the accounting manual of government for '
+        'managing public funds. **List the objectives** of the Financial Regulations.',
+        'The Revised Financial Memoranda for Local Government contains the administrative '
+        'guidelines and the checks and balances in local government finance. **List its '
+        'contents.**',
+      ]}],
+      'a': [
+      {'h4': '1  Functions of the Fiscal Responsibility Commission'},
+      {'ol': [
+        '**Monitoring and enforcing the provisions of the Act**, thereby promoting the economic '
+        'objectives of the nation.',
+        '**Disseminating standard national and international practices** that ensure greater '
+        'efficiency in the allocation and management of public expenditure, revenue collection, '
+        'debt control and transparency in fiscal matters.',
+        '**Undertaking fiscal and financial studies, analysis and diagnosis**, and '
+        'disseminating the results to the general public.']},
+      {'h4': '2  Other laws guiding public sector accounting (any ten)'},
+      {'ol': [
+        'Revenue Mobilisation and Fiscal Allocation Commission Act (Cap. R.7 LFN 2004).',
+        'Pension Reform Act 2014.',
+        'Independent Corrupt Practices and Other Related Offences Commission (ICPC) Act 2000.',
+        'Economic and Financial Crimes Commission (Establishment) Act 2002.',
+        'Nigeria Extractive Industries Transparency Initiative (NEITI) Act 2007.',
+        'Ministry of Finance Incorporated (MoFI) Act 1959.',
+        'Financial Reporting Council Act 2011.',
+        'Freedom of Information Act 2011.',
+        'International Public Sector Accounting Standards (IPSAS).',
+        'International Financial Reporting Standards (IFRS).',
+        'Code of Conduct Bureau and Tribunal Act 1991.',
+        'Money Laundering (Prohibition) Act 1995.',
+        'Bye-laws of local government relating to revenue and expenditure.',
+        'Nigeria Tax Act 2025.']},
+      {'h4': '3  Objectives of the Financial Regulations'},
+      {'ol': [
+        'To guide the day-to-day financial operation of government MDAs.',
+        'To ensure an appropriate system of information flow from management to finance and '
+        'accounts staff.',
+        'To ensure prudence in carrying out government business.',
+        'To provide common standards, procedures and guides by which auditors and treasury '
+        'inspectors can ascertain that ministries control and maintain up-to-date records of '
+        'financial transactions.',
+        'To promote fiscal accountability, management accountability and programme-result '
+        'accountability in government financial management and control.',
+        'To ensure the applicability of the principles of good government.']},
+      {'h4': '4  Contents of the Local Government Financial Memoranda'},
+      {'ol': [
+        'The format of budget and budgetary control.',
+        'The financial responsibilities of the Chairman and other accounting officers of a '
+        'local government.',
+        'The responsibilities of the local government Secretary, Treasurer and Heads of '
+        'Departments.',
+        'The powers and functions of the Auditor-General for Local Government.',
+        'The various financial offences and their respective sanctions.',
+        'The means of revenue collection and control.',
+        'The main books of accounts kept in the local government.',
+        'The custody, accounting and control of stores.']}]}},
+  ]},
  ],
  'formulas': [],
  'focus':
@@ -472,6 +594,33 @@ CH = {
     'w': 'Cash basis IPSAS took effect from 1 January 2014 and accrual basis IPSAS from '
          '1 January 2016.',
     'src': 'Chapter 2.12'},
+   {'q': 'Which law regulates financial matters and payment or withdrawal from the Consolidated '
+         'Revenue Fund?',
+    'o': ['Fiscal Responsibility Act 2007', 'Public Procurement Act 2007',
+          'The Financial Regulations (2009 Edition)',
+          'The Annual / Supplementary Appropriation Act', 'Finance and Treasury circulars'],
+    'a': 3,
+    'w': 'Money bills, once passed, become Appropriation Acts, which regulate withdrawals from '
+         'the Consolidated Revenue Fund for the year to which they relate.',
+    'src': 'Chapter 2.14 (study text Section A Q4)'},
+   {'q': 'The administrative tool used to amend existing provisions of the Financial Regulations '
+         'and public service rules, and to introduce new policy guidelines, is the',
+    'o': ['Financial Regulations', 'Finance / Treasury circular',
+          'Revised Financial Memoranda for Local Government', 'Medium-Term Expenditure Framework',
+          'Fiscal Responsibility Act 2007'],
+    'a': 1,
+    'w': 'Finance / Treasury circulars are administrative instruments issued to amend the '
+         'Financial Regulations and public service rules and to introduce new policy.',
+    'src': 'Chapter 2.14 (study text Section A Q2)'},
+   {'q': 'The Act that prescribes the basis for distributing revenue in the Federation Account '
+         'among the Federal, State and Local Governments is the',
+    'o': ['Fiscal Responsibility Act 2007', 'Public Procurement Act 2007',
+          'Allocation of Revenue (Federation Account, etc.) Act 1982',
+          'Finance (Control and Management) Act 1958', 'Financial Reporting Council Act 2011'],
+    'a': 2,
+    'w': 'The Allocation of Revenue (Federation Account, etc.) Act 1982 (Cap. A.15 LFN 2004) '
+         'prescribes the vertical and horizontal distribution formulae.',
+    'src': 'Chapter 2.14 (study text Section A Q5)'},
   ],
   'theory': [
    {'q': 'The Fiscal Responsibility Act 2007 was enacted to promote prudent management of the '

@@ -1,5 +1,40 @@
 # Where the build stopped
 
+## Session 2026-09-06 — fidelity pass on FA + IT ch1
+- **FA ch 9, 10, 11 expanded** to carry the study text's own material, not just
+  the house-style rewrite. Added, without removing anything:
+  - ch9 §§9.7–9.10: study-text Illustrations 9.1–9.9 verbatim (questions) with
+    rebuilt solutions, plus all 10 end-of-chapter MCQ/short-answers and the 3
+    examination-type questions with worked ledger accounts. OCR garbles in the
+    printed solutions are flagged inline.
+  - ch10 §10.6: Illustrations 10.1–10.3 (distribution of income, adjustments
+    before appropriation, revaluation on admission). The study text has no
+    end-of-chapter question bank for ch10.
+  - ch11 §§11.7–11.8: Illustrations 11.1–11.7 (goodwill in/out, revaluation,
+    retirement, amalgamation, dissolution + Garner v Murray, conversion to a
+    company) and the MCQ/short-answer set with the tutorial workings.
+- **IT ch1 authored** (`content/it/ch01.py` + `content/it/meta.py`): 11 sections
+  covering system theory, control systems, data vs information, information
+  systems/AIS, IT, decision types, data representation with all number-base
+  worked examples, database elements, data acquisition/cleansing/analysis, and
+  computer evolution/types. All 33 study-text MCQs, 16 short-answers and 11
+  Section B theory questions with the answer key.
+- **PS ch 1–7** given the same treatment — a new "End-of-chapter questions
+  (study text)" section per chapter (§1.10, §2.14, §3.7, §4.22, §5.11, §6.13,
+  §7.13) carrying the study text's Section A (10 Q) + Section B (theory)
+  end-of-chapter questions with the answer key, crammable answers **bolded**;
+  3–4 Section A MCQs folded into each chapter quiz. Also: PS ch 5 §5.11 adds
+  Illustration 5-1 (payroll accounting entries). Printed answer keys in ch 2, 3
+  and 6 are misnumbered in the scan — realigned inline. The existing PS section
+  prose was already faithful and bolded; only the question banks were missing.
+  PS ch 8–16 and 17–20 still untouched.
+- Build clean: `python3 tools/build_content.py && ./build.sh`. Headless test
+  (`tools/test.mjs`) needs `npm install jsdom` — not run this session.
+- **Still a rewrite, not a transcription, for FA ch 1–8** (esp. 1, 2, 7, 8) and
+  everything in PS/QA: house-style prose + authored quizzes; the study texts'
+  own illustrations and end-of-chapter question banks are not carried over.
+  ch 3–6 do reproduce the numbered illustrations.
+
 ## Done and verified
 - Materials reorganised into `materials/study-texts/` and `materials/past-questions/`.
 - Extraction pipeline complete. All 20 past papers parse: 600 MCQs + keys,

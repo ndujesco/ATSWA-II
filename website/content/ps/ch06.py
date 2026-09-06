@@ -708,6 +708,140 @@ CH = {
       'and Fiscal Strategy Paper documents.',
     ]},
   ]},
+
+  {'n': '6.13', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'p': 'The study text\'s own end-of-chapter set, with its answer key. **Bold** marks the '
+          'crammable answer. Section B question 2 (the NEMBE / Mende State revenue budget) is '
+          'worked in full at §6.10 above.'},
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text Section A', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'One of the following is responsible for preparing the Medium-Term Expenditure '
+        'Framework: (A) Accountant-General of the Federation  (B) Chairman, National Economic '
+        'Commission  (C) Governor of the Central Bank  (D) Minister of Finance, Budget and '
+        'National Planning  (E) National Bureau of Statistics.',
+        'One of the following methods uses last year\'s figure as a base and adds a percentage '
+        'to arrive at this year\'s budget: (A) Line-item budgeting  (B) Traditional / '
+        'incremental budgeting  (C) Planning, Programming Budgeting System  (D) Programme '
+        'Performance Budgeting System  (E) Zero-based budgeting.',
+        'One of the following issues the Budget Call Circular at the beginning of the third '
+        'quarter at the federal level: (A) President  (B) National Assembly  (C) Budget Offices  '
+        '(D) Ministry of Finance  (E) Accountant-General of the Federation.',
+        'The following, **except one**, are included in the format for annual budgeting with '
+        'the Chart of Accounts: (A) summary of contracts obtained by the reporting entity  '
+        '(B) recurrent budget  (C) revenue budget  (D) consolidated budget summary  (E) summary '
+        'of total capital receipts budget by MDAs.',
+        'Which of the following is **not** a function of the Budget Office of the Federation? '
+        '(A) developing reasoned economic assumptions and forecasts  (B) issuing budget '
+        'guidelines to ministries  (C) compiling total revenue and expenditure estimates  '
+        '(D) determining the amount to be included in the estimates ratified by the National '
+        'Assembly  (E) drafting the budget speech.',
+        'A medium-term, high-level strategic plan of the Nigerian federal government, usually '
+        'for three years, is the …',
+        'Developing formats of returns aimed at ensuring cost-effectiveness in the use of '
+        'government resources is a function of the …',
+        'A budget in which government intends to spend more than the revenue it will generate '
+        'is a … budget.',
+        'The use of last year\'s figure as a base and adding a percentage to arrive at the '
+        'current-year budget is … budgeting.',
+        'An unjustified or unnecessary increase in an estimate made by a ministry to escape an '
+        'anticipated arbitrary cut by the Ministry of Finance is called …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**D — the Minister of Finance, Budget and National Planning.**',
+        '**B — Traditional / incremental budgeting.**',
+        '**D — the Ministry of Finance** (through the Budget Office). *Option C, "Budget '
+        'Offices", is also defensible — the Budget Office of the Federation issues the Call '
+        'Circular — but the study text\'s key gives the Ministry of Finance.*',
+        '**A — "summary of contracts obtained by the reporting entity."** Not part of the '
+        'budget format.',
+        '**D — "determining the amount to be included in the estimates ratified by the National '
+        'Assembly."** That is the legislature\'s role, not the Budget Office\'s.',
+        '**The Medium-Term Expenditure Framework (MTEF).**',
+        '**Budget Office of the Federation.**',
+        '**Deficit** budget.',
+        '**Incremental** budgeting.',
+        '**Budget padding.**'],
+      }]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text Section B', 't': 'Theory questions with suggested solutions',
+      'open': True, 'q': [
+      {'ol': [
+        'Identify any **four objectives** of cash planning and management.',
+        'Compute the revenue budget of NEMBE State Government for the 2021 fiscal year (worked '
+        'in full at §6.10).',
+        'For zero-based budgeting: (a) list the **five basic events** into which ZBB is '
+        'classified; (b) enumerate **three challenges** of the ZBB system.',
+        'Enumerate the **main steps** in the Planning, Programming Budgeting System (PPBS).',
+        'List and explain the **factors that militate against** the budgeting system in the '
+        'Nigerian public sector.',
+        'State and explain the **structure for budgeting with the NCOA**, and the steps to '
+        'ensure completeness when using it.',
+      ]}],
+      'a': [
+      {'h4': '1  Objectives of cash planning and management (any four)'},
+      {'ol': [
+        'Facilitate budget execution by ensuring funds are available at the right time.',
+        'Enable government to anticipate funding gaps so that low-cost borrowing arrangements '
+        'can be put in place.',
+        'Minimise idle cash by investing surplus funds for good returns.',
+        'Ensure contracts are awarded only when funds are available (Public Procurement Act '
+        '2007).',
+        'Ensure effective monitoring and reconciliation of government statutory accounts.',
+        'Promote transparent, fraud-resistant government operations.']},
+      {'h4': '3  Zero-based budgeting'},
+      {'p': '**(a) Five basic events:** identify *decision units* and formulate operational '
+            'plans; analyse the budget into *decision packages* (with costs, alternatives and '
+            'the effect of not doing the activity); rank the decision packages competitively '
+            '(new and existing); determine the *cut-off point* to accept or reject packages; '
+            'prioritise the packages to fit available resources.'},
+      {'p': '**(b) Challenges (any three):** unreliable or missing data undermine it in a less '
+            'developed economy; it may cause a major shift in resource allocation; bureaucrats '
+            'distrust and frustrate it; difficulty fixing the minimum level of expenditure in a '
+            'decision package; the volume of data to analyse and rank exceeds available skilled '
+            'staff; the accounting structure must be reworked to fit the ZBB philosophy; it '
+            'suits capital rather than recurrent expenditure and has not succeeded in the '
+            'public sector.'},
+      {'h4': '4  Main steps in PPBS'},
+      {'ol': [
+        'Identify and enumerate the organisation\'s goals and objectives.',
+        'Define the total system in detail — objectives, environment, resources, programmes.',
+        'Planning and analysis — continuously develop, compare and analyse alternative '
+        'programmes to evolve the best package.',
+        'Develop appropriate measures of performance for the programmes.',
+        'Programming and budgeting — express the agreed package, with resources and expected '
+        'results, as programmed budgets.',
+        'Reporting and controlling — monitor progress toward objectives; performance '
+        'evaluation emphasises attainment of objectives, not amounts spent.',
+        'Develop, each year, a multi-year programme and financial plan.']},
+      {'h4': '5  Factors militating against the budgeting system in Nigeria'},
+      {'ul': [
+        '**Human element** — management sees budgeting as restraining; lack of probity among '
+        'some operatives.',
+        '**Uncertainties in data inputs** — volatile oil-revenue projections; weak databases.',
+        '**Type of project** — unpopular projects face stiff implementation problems.',
+        '**Inflation** — falling money value means revenue cannot cover planned expenditure.',
+        '**Political, social and cultural elements** — cultural resistance to innovation; '
+        'political instability.',
+        '**Changing government policies** — frequent policy changes disrupt implementation.',
+        '**Debt management** — the trade-off between debt servicing and development spending.',
+        '**Low agricultural output** — resources diverted to food imports.',
+        '**Fiscal indiscipline** — spending the last naira to justify a bigger allocation next '
+        'year.']},
+      {'h4': '6  Budgeting with the NCOA'},
+      {'p': '**Structure — the six segments:** *Administrative* (which entity is responsible), '
+            '*Economic* (the type of revenue/expenditure), *Functional* (the socio-economic '
+            'purpose — COFOG), *Programme* (the set of activities meeting a policy objective), '
+            '*Funds* (the source of financing), *Geographic* (the location).'},
+      {'p': '**Steps (all six segments must be completed on every budget entry, even if a '
+            'segment is inactive; only numeric values are budgeted):** identify the government '
+            'institutions (cost and revenue centres) from the administrative codes; identify '
+            'the economic items to be executed in the year; identify the functions to be '
+            'performed; identify the programmes to be carried out; determine the sources of '
+            'financing for each budget line; identify the planned location of the '
+            'transactions.'}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Budget balance',
@@ -801,6 +935,30 @@ CH = {
          'budget serves as an economic and financial document, a guide to resource allocation, '
          'a means of accountability and a request to collect and disburse funds.',
     'src': 'Chapter 6.1, 6.3'},
+   {'q': 'Preparation of the Medium-Term Expenditure Framework (MTEF) is the responsibility of '
+         'the',
+    'o': ['Accountant-General of the Federation', 'Central Bank of Nigeria',
+          'Minister of Finance, Budget and National Planning', 'National Bureau of Statistics',
+          'National Assembly'],
+    'a': 2,
+    'w': 'Under the Fiscal Responsibility Act 2007, the Minister responsible for finance '
+         'prepares the MTEF for the Executive Council and then the National Assembly.',
+    'src': 'Chapter 6.13 (study text Section A Q1)'},
+   {'q': 'An unjustified or unnecessary amount added by a ministry to its estimates to escape '
+         'an anticipated arbitrary cut by the Ministry of Finance is called',
+    'o': ['virement', 'budget padding', 'a supplementary estimate', 'zero-basing',
+          'incrementalism'],
+    'a': 1,
+    'w': 'Budget padding — inflating a bid in anticipation of it being cut.',
+    'src': 'Chapter 6.13 (study text Section A Q10)'},
+   {'q': 'A budget in which government plans to spend more than the revenue it will generate '
+         'is a',
+    'o': ['balanced budget', 'surplus budget', 'deficit budget', 'zero-based budget',
+          'supplementary budget'],
+    'a': 2,
+    'w': 'A deficit budget plans expenditure above expected revenue, to be financed by '
+         'borrowing.',
+    'src': 'Chapter 6.13 (study text Section A Q8)'},
   ],
   'theory': [
    {'q': '(a) Explain zero-based budgeting and outline the steps involved in its operation. '

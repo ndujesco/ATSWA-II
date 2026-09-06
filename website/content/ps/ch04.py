@@ -974,6 +974,164 @@ CH = {
       '[Constitution of the Federal Republic of Nigeria 1999 (as amended)](https://placng.org/i/wp-content/uploads/2016/01/Constitution-of-the-Federal-Republic-of-Nigeria.pdf).',
     ]},
   ]},
+
+  {'n': '4.22', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'p': 'The study text\'s own end-of-chapter set, with its answer key. **Bold** marks the '
+          'crammable answer.'},
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text Section A', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'The following, **except one**, are objectives of the Pension Reform Act 2014: (A) to '
+        'establish a uniform set of rules, regulations and standards for pension administration '
+        'in Nigeria  (B) to assist improvident individuals by ensuring they save towards their '
+        'inactive years  (C) to make provision for the smooth operation of the contributory '
+        'pension scheme  (D) to give a bulk amount to employees at retirement without recourse '
+        'to contribution from salary  (E) to ensure every public and private sector employee '
+        'receives retirement benefits as and when due.',
+        'The following, **except one**, are categories of persons exempted from the Contributory '
+        'Pension Scheme: (A) the categories mentioned in section 291 of the Constitution, '
+        'including the armed forces and the intelligence and secret services  (B) an employee '
+        'entitled to retirement benefits under a pre-25 June 2004 scheme with less than three '
+        'years to retire  (C) any person within (a) or (b) who continues under the existing '
+        'scheme per the Second Schedule  (D) the Chairman of any MDA  (E) the President of the '
+        'Federal Republic of Nigeria.',
+        'The contribution for an employee to whom the Pension Reform Act 2014 applies shall be: '
+        '(A) minimum 10% employer, minimum 5% employee  (B) minimum 7.5% employer, minimum 7.5% '
+        'employee  (C) minimum 12.5% employer, minimum 7.5% employee  (D) minimum 10% employer, '
+        'minimum 8% employee  (E) minimum 10% employer, minimum 10% employer.',
+        'Which of the following is **not** a condition governing withdrawal from the Scheme? '
+        '(A) withdrawal can only occur when staff have attained 35 years in service  '
+        '(B) withdrawal cannot occur until age 50  (C) where the officer retires through total '
+        'or permanent disability of mind or body  (D) where an employee disengages before age '
+        '50 and cannot secure another job within four months  (E) where a Medical Board '
+        'certifies that a formerly unfit employee may re-enter the Scheme on securing another '
+        'job.',
+        'The following, **except one**, are exemptions from tax under the PRA 2014: '
+        '(A) contributions are tax-exempt and are tax-deductible for employer and employee  '
+        '(B) interest, dividends, profits and other income accruing to pension funds are not '
+        'taxable  (C) any amount payable as a retirement benefit is not taxable  (D) a '
+        'voluntary contribution is taxed at withdrawal if withdrawn within 5 years of being '
+        'made  (E) the income of high-net-worth private individuals in various industries.',
+        'The gross salary (basic and allowances) attached to a retiring officer\'s substantive '
+        'rank is known as …',
+        'The rates of contribution to the pension scheme by the military are … and …',
+        '… is responsible for the pension administration of the Defined Benefit Scheme (DBS).',
+        'At the death of an employee, the entitlement under the life insurance policy is paid '
+        'into his …',
+        'The qualification and years of experience required of the part-time Chairman of the '
+        'National Pension Commission are … and …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**D — "to give a bulk amount to employees at retirement without recourse to '
+        'contribution from salary."** The 2014 Act is a *contributory* scheme.',
+        '**D — the Chairman of any MDA.** Exemption covers the section 291 categories (armed '
+        'forces, intelligence, secret services), those with under three years to retire under a '
+        'pre-2004 scheme, and the President — not MDA chairmen generally.',
+        '**D — minimum 10% by the employer and minimum 8% by the employee** (18% in total).',
+        '**A — "withdrawal can only occur when staff have attained 35 years in service."** Not '
+        'a withdrawal condition under the Act.',
+        '**E — "the income of high-net-worth private individuals."** Not a PRA 2014 tax '
+        'exemption.',
+        '**Pensionable emoluments.**',
+        '**12.5% of basic salary and allowances by the government** and **8% by the military '
+        'staff**.',
+        '**The Pension Transitional Arrangements Directorate (PTAD).**',
+        '**Retirement Savings Account (RSA).**',
+        '**A university degree or its equivalent**, and **20 years** of experience.'],
+      }]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text Section B', 't': 'Theory questions with suggested solutions',
+      'open': True, 'q': [
+      {'ol': [
+        'List any **ten functions** of the National Pension Commission.',
+        'Enumerate any **ten powers** of the National Pension Commission.',
+        'Itemise the **composition** of the National Pension Commission.',
+        'List the **requirements for licensing a Pension Fund Administrator**, and the '
+        '**investment outlets** in which pension funds may be invested under the PRA 2014.',
+        'State **eight functions** of the Pension Transitional Arrangements Directorate (PTAD) '
+        'and **three powers** of the Commission over PTAD.',
+      ]}],
+      'a': [
+      {'h4': '1  Functions of the National Pension Commission (section 23; any ten)'},
+      {'ol': [
+        'Regulate and supervise the scheme established under the Act.',
+        'Issue guidelines for the investment of pension funds.',
+        'Approve, license, regulate and supervise Pension Fund Administrators, Custodians and '
+        'other pension institutions.',
+        'Establish standards, rules and guidelines for the management of the pension funds.',
+        'Ensure the maintenance of a National Data Bank on all pension matters.',
+        'Carry out public awareness and education on the scheme.',
+        'Promote capacity building and institutional strengthening of PFAs and custodians.',
+        'Receive and investigate complaints of impropriety against any PFA, custodian, employer '
+        'or their staff or agents.',
+        'Perform such other duties as are necessary or expedient for its functions under the '
+        'Act.']},
+      {'h4': '2  Powers of the Commission (any ten)'},
+      {'ol': [
+        'Formulate, direct and oversee overall policy on pension matters in Nigeria.',
+        'Fix the terms and conditions of service, including remuneration, of its employees.',
+        'Request or call for information from any employer, PFA, custodian or other person on '
+        'retirement-benefit matters.',
+        'Charge and collect fees, levies or penalties as it may specify.',
+        'Establish and acquire offices and premises for its use.',
+        'Establish standards, rules and regulations for the management of the pension funds.',
+        'Investigate any PFA, custodian or other party managing pension funds.',
+        'Impose administrative sanctions or fines on erring employers, PFAs or custodians.',
+        'Order the transfer of management or custody of pension funds or assets from a PFA or '
+        'custodian whose licence is revoked or which is insolvent.',
+        'Do such other things as are necessary for the efficient performance of its functions.']},
+      {'h4': '3  Composition of the Commission'},
+      {'ul': [
+        'A **part-time Chairman** — a university degree or equivalent and 20 years\' '
+        'experience.',
+        'A **Director-General** (Chief Executive) — appropriate professional skills and not '
+        'less than 20 years\' cognate experience.',
+        '**Four full-time Commissioners** — each with professional skills and not less than 20 '
+        'years\' cognate experience in finance, investment, accounting, pension management, '
+        'business administration or actuarial science.',
+        '**Representatives** of: the Head of the Civil Service of the Federation; the Federal '
+        'Ministry of Finance; the Nigeria Union of Pensioners; the Nigeria Employers\' '
+        'Consultative Association; the Central Bank of Nigeria; the Nigeria Labour Congress; the '
+        'Securities and Exchange Commission; the Trade Union Congress of Nigeria; the Nigerian '
+        'Exchange Group Plc; and the National Insurance Commission.']},
+      {'h4': '4  Licensing a PFA, and permitted investments'},
+      {'p': '**Requirements to be licensed as a PFA:** a limited liability company incorporated '
+            'under CAMA whose object is to manage pension funds; minimum paid-up share capital '
+            'as prescribed by the Commission; proven professional capacity to manage pension '
+            'funds and administer retirement benefits; never having managed a fund that was '
+            'mismanaged or distressed through its own or its subscribers\'/directors\'/officers\' '
+            'fault; an undertaking to engage in no business other than pension fund management; '
+            'and any additional condition the Commission prescribes.'},
+      {'p': '**Permitted investment outlets:** bonds, bills and securities issued or guaranteed '
+            'by the Federal Government and the CBN; bonds, bills and securities issued by States '
+            'and local governments; bonds, debentures, redeemable preference shares and other '
+            'debt instruments of listed corporates; ordinary shares of listed public limited '
+            'companies; bank deposits and bank securities; investment certificates of listed '
+            'closed-end or hybrid investment funds with good earnings records; units of '
+            'open-end or specialist open-end investment funds; real estate development '
+            'investments; and specialist investment funds and other instruments the Commission '
+            'approves.'},
+      {'h4': '5  PTAD — functions and the Commission\'s powers over it'},
+      {'p': '**Functions of PTAD (any eight):** implement policies, rules and regulations under '
+            'the Defined Benefit Scheme; ensure accurate payments to authentic Civil Service '
+            'pensioners; maintain an accurate, comprehensive database of pensioners; manage and '
+            'maintain pensioners\' records and files; prepare budgetary estimates for existing '
+            'pensioners and outstanding liabilities; prepare and submit the monthly Civil '
+            'Service pensioners\' payroll and issue payment instructions to the OAGF through '
+            'GIFMIS; respond to pensioners\' complaints (non-/under-/over-payment of pensions, '
+            'gratuities, death benefits); carry out monthly payment analysis and payroll '
+            'review; pre-payment audit of all payment vouchers; compliance audit; review of '
+            'financial statements (transcripts, bank reconciliations); safeguard the '
+            'department\'s assets; periodic examination and certification of vouchers and '
+            'records; produce monthly audit reports; and verify Civil Service pensioners '
+            'periodically with Pension Support.'},
+      {'p': '**Powers of the Commission over PTAD:** regulate and supervise the activities of '
+            'the Federal and FCT PTADs to ensure compliance with the Act; intervene to '
+            'administer and render technical support and advice on the management of the '
+            'various PTADs as directed by the President; and ensure the PTADs operate under the '
+            'rules, regulations and directives issued by the Commission.'}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Monthly emolument',
@@ -1063,6 +1221,33 @@ CH = {
          'the employee contributes 8% of it.',
     'calc': '8\\% \\times 2{,}400{,}000 = ₦192{,}000',
     'src': 'Chapter 4.4'},
+   {'q': 'Which of the following is NOT an objective of the Pension Reform Act 2014?',
+    'o': ['To establish uniform rules and standards for pension administration in Nigeria',
+          'To assist improvident individuals to save towards their inactive years',
+          'To give a bulk amount to employees at retirement without any contribution from salary',
+          'To provide for the smooth operation of the contributory pension scheme',
+          'To ensure every employee receives retirement benefits as and when due'],
+    'a': 2,
+    'w': 'The 2014 Act is a fully contributory scheme; a non-contributory bulk payment is the '
+         'feature of the old Defined Benefit Scheme it replaced.',
+    'src': 'Chapter 4.22 (study text Section A Q1)'},
+   {'q': 'The gross salary (basic plus allowances) attached to a retiring officer\'s '
+         'substantive rank is known as',
+    'o': ['consolidated salary', 'pensionable emoluments', 'terminal benefit', 'gratuity',
+          'annuity'],
+    'a': 1,
+    'w': 'Pensionable emoluments — basic salary plus the regular allowances attached to the '
+         'substantive rank — is the base on which pension and contributions are computed.',
+    'src': 'Chapter 4.22 (study text Section A Q6)'},
+   {'q': 'Pension administration under the Defined Benefit Scheme (the old, pre-2004 pensions) '
+         'is the responsibility of the',
+    'o': ['National Pension Commission', 'Pension Transitional Arrangements Directorate (PTAD)',
+          'Office of the Head of the Civil Service', 'Pension Fund Administrators',
+          'Federal Ministry of Finance'],
+    'a': 1,
+    'w': 'PTAD, established by sections 42 and 44 of the PRA 2014, administers the residual '
+         'Defined Benefit Scheme for existing pensioners.',
+    'src': 'Chapter 4.22 (study text Section A Q8)'},
   ],
   'theory': [
    {'q': 'The Pension Reform Act 2014 established a Contributory Pension Scheme in place of the '

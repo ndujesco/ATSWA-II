@@ -609,6 +609,152 @@ CH = {
       'the accounting officer\'s procurement responsibilities.',
     ]},
   ]},
+
+  {'n': '7.13', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'p': 'The study text\'s own end-of-chapter set, with its answer key. **Bold** marks the '
+          'crammable answer.'},
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text Section A', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'One of the following is **not** among the officials who attain their positions by way '
+        'of experience, hard work and efficiency and cannot be arbitrarily removed: '
+        '(A) Accountant-General  (B) Local Government Chairman  (C) Auditor-General for the '
+        'Federation  (D) Accounting Officer  (E) Federal Pay Officer.',
+        'The functions of the officer controlling expenditure include the following **with the '
+        'exception of one**: (A) supervising government expenditure and ensuring no payment is '
+        'made without proper authority  (B) ensuring all books are correctly posted and kept up '
+        'to date  (C) promptly charging all disbursements under proper heads and sub-heads  '
+        '(D) maintenance of the cashbook  (E) ensuring all books are correctly posted.',
+        'One of the following is **not** among the listed functions of the Auditor-General for '
+        'the Federation under Financial Regulation 109 (2009): (A) appropriation audit  '
+        '(B) commenting on the annual accounts and auditor\'s report of corporations '
+        'established by an Act of the National Assembly  (C) financial control unit  (D) power '
+        'to carry out the audit of foreign missions  (E) value-for-money (performance) audit.',
+        'The following are functions of the Minister of Finance **except**: (A) preparation of '
+        'the annual estimates of revenue and expenditure of the Federal Government  '
+        '(B) formulation of all policies relating to fiscal and monetary matters  (C) execution '
+        'of all capital projects that cut across regions of the country  (D) supervision of all '
+        'matters connected with the allocation of revenue to the three tiers  (E) stabilisation '
+        'of the value of the Nigerian currency internally and externally.',
+        'The following are functions of the Accountant-General of the Federation **except**: '
+        '(i) serve as Chief Accounting Officer for the receipts and payments of the government '
+        'of the Federation  (ii) supervise the accounts of federal ministries and other arms '
+        'of government  (iii) manage federal government investments  (iv) maintain and operate '
+        'the Federation Account  (v) comment on the annual accounts and auditors\' reports of '
+        'government statutory corporations.',
+        'The public sector officer charged with the control and management of the public funds '
+        'of the Federation is the …',
+        'The Chief Accounting Officer charged with the general supervision of the accounts of '
+        'all ministries and extra-ministerial departments and the preparation of the annual '
+        'financial statements of the nation is the …',
+        'The remuneration of the Auditor-General for the Federation is drawn from the …',
+        'Authorisations issued by the Minister of Finance to disburse from the Consolidated '
+        'Revenue Fund are known as …',
+        'The warrant issued for additional personal emoluments and other services provided for '
+        'in the approved supplementary estimate is the …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**B — Local Government Chairman.** A Chairman is an elected political officer, not a '
+        'career official protected from arbitrary removal.',
+        '**D — maintenance of the cashbook.** That is the sub-accounting officer\'s duty; the '
+        'officer controlling expenditure maintains the **vote book**.',
+        '**C — "financial control unit."** Not a function of the Auditor-General under FR 109.',
+        '**C — "execution of all capital projects that cut across regions."** The Minister of '
+        'Finance formulates policy and prepares estimates; it does not execute projects.',
+        '**(v) — commenting on the annual accounts and auditors\' reports of statutory '
+        'corporations.** That is the Auditor-General\'s function, not the Accountant-General\'s.',
+        '**The Minister of Finance.**',
+        '**The Accountant-General of the Federation.**',
+        '**The Consolidated Revenue Fund** (a statutory, first-charge item).',
+        '**Warrants** — specifically the Recurrent Expenditure Warrant.',
+        '**The Supplementary General Warrant (S.G.W.).**'],
+      }]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text Section B', 't': 'Theory questions with suggested solutions',
+      'open': True, 'q': [
+      {'ol': [
+        'List and explain any **five** warrants under Recurrent Expenditure Warrants.',
+        'Enumerate the basic **functions of sub-accounting officers**.',
+        'List the major **functions of the officer controlling expenditure**.',
+        'List the main **functions of the Budget Office** of the Federation.',
+      ]}],
+      'a': [
+      {'h4': '1  Recurrent Expenditure Warrants (any five)'},
+      {'ul': [
+        '**Annual General Warrant (A.G.W.)** — authorises the Accountant-General to release '
+        'funds, and officers controlling votes to incur expenditure, for the personal '
+        'emoluments and other services in the approved estimates. The Minister of Finance may '
+        'exclude items on which he wishes to keep special control. Original to the '
+        'Accountant-General, duplicate to the Auditor-General.',
+        '**Provisional General Warrant (P.G.W.)** — issued at the start of the year before the '
+        'Appropriation Act comes into force, to continue services at a level not exceeding the '
+        'previous year, for a maximum of **six months** or until the Act comes into effect, '
+        'whichever is shorter; amounts spent are set off against the Appropriation Act.',
+        '**Supplementary General Warrant (S.G.W.)** — for additional personal emoluments and '
+        'other services in the approved supplementary estimates.',
+        '**Reserve Expenditure Warrant (R.E.W.)** — releases funds in the approved estimates '
+        'but earlier withheld from the A.G.W. or S.G.W. for the Minister\'s special control.',
+        '**Supplementary (Contingencies) Warrant** — in exceptional cases where virement is '
+        'impossible and the urgency is such that issue of funds cannot wait for a Supplementary '
+        'Appropriation Act; a Contingencies Fund Warrant first transfers funds from the '
+        'Contingencies Fund to the CRF.',
+        '**Virement Warrant (V.W.)** — transfers a saving from a surplus sub-head to a deficit '
+        'sub-head **within the same Head**; may not create a new sub-head or fund items '
+        'disallowed by the Estimates Committee.',
+        '**Supplementary (Statutory) Expenditure Warrant** — authorises expenditure charged on '
+        'the CRF by legislation other than Appropriation Acts.',
+        '**Imprest Warrant** — releases funds to a senior officer who spends and accounts '
+        'periodically.']},
+      {'h4': '2  Functions of sub-accounting officers'},
+      {'ol': [
+        'Ensure the proper system of accounts prescribed by the Accountant-General is '
+        'established.',
+        'Supervise the receipt of public revenue and ensure prompt collection.',
+        'Promptly bring all receipts to account under the proper heads and sub-heads.',
+        'Ensure safe keeping of public funds, securities, stamps, receipts, tickets, licences '
+        'and other valuables.',
+        'Supervise all officers under his authority who handle receipts and expenditure, and '
+        'maintain checks against fraud, embezzlement and carelessness.',
+        'Supervise government expenditure and ensure no payment is made without proper '
+        'authorisation.',
+        'Promptly charge all disbursements under the proper heads and sub-heads.',
+        'Check all cash and stamps and reconcile to the cashbook and stamp register.',
+        'Bring to account promptly any cash or stamps found in excess.',
+        'Make good any minor deficiency not caused by theft or fraud, and report it in writing '
+        'to the Minister of Finance.',
+        'Prepare promptly such financial statements as the law or the Minister requires.',
+        'Maintain the cashbook.']},
+      {'h4': '3  Functions of the officer controlling expenditure'},
+      {'ol': [
+        'Supervise government expenditure and ensure no payment is made without proper '
+        'authority.',
+        'Promptly charge all disbursements under the proper heads and sub-heads.',
+        'Ensure all books are correctly posted and kept up to date.',
+        'Produce, when required by the Accountant-General or Auditor-General, all cash, stamps '
+        'etc. in his custody.',
+        'Ensure funds are available under the appropriate head and sub-heads to meet specific '
+        'vouchers.',
+        'Monitor government expenditure effectively.',
+        'Ensure there is no extra-budgetary spending.',
+        'Ensure adequate security over the custody of public funds.',
+        'Maintain the vote book.']},
+      {'h4': '4  Functions of the Budget Office of the Federation'},
+      {'ol': [
+        'Develop reasoned economic assumptions and forecasts.',
+        'Issue budget guidelines to ministries and extra-ministerial departments.',
+        'Act as liaison between the Presidency, ministries and extra-ministerial departments '
+        'during budget preparation.',
+        'Compile total revenue and expenditure estimates.',
+        'Draft the budget speech.',
+        'Supervise and control the implementation of the budget.',
+        'Monitor and evaluate the performance of budget-funded programmes.',
+        'Assess the impact of the budget on the economy.',
+        'Develop formats of returns to ensure cost-effectiveness in the use of government '
+        'resources.',
+        'Carry out research on budget utilisation and the attainment of national or state '
+        'objectives.']}]}},
+  ]},
  ],
  'formulas': [],
  'focus':
@@ -683,6 +829,31 @@ CH = {
     'w': 'The Imprest Warrant authorises funds to be released to any senior officer who has to '
          'spend the money and account for it periodically.',
     'src': 'Chapter 7.10'},
+   {'q': 'Which of the following is NOT a duty of the officer controlling expenditure?',
+    'o': ['Supervising expenditure so that no payment is made without proper authority',
+          'Promptly charging disbursements under the correct heads and sub-heads',
+          'Maintenance of the cashbook', 'Maintenance of the vote book',
+          'Ensuring there is no extra-budgetary spending'],
+    'a': 2,
+    'w': 'Keeping the cashbook is the sub-accounting officer\'s duty; the officer controlling '
+         'expenditure keeps the vote book.',
+    'src': 'Chapter 7.13 (study text Section A Q2)'},
+   {'q': 'The provisional authority issued before the Appropriation Act comes into force, '
+         'allowing services to continue at the previous year\'s level for up to six months, is '
+         'the',
+    'o': ['Annual General Warrant', 'Provisional General Warrant',
+          'Supplementary General Warrant', 'Reserve Expenditure Warrant', 'Virement Warrant'],
+    'a': 1,
+    'w': 'The Provisional General Warrant keeps government running before the Appropriation Act, '
+         'for a maximum of six months or until the Act takes effect, whichever is shorter.',
+    'src': 'Chapter 7.13 (study text Section B Q1)'},
+   {'q': 'The remuneration of the Auditor-General for the Federation is a direct charge on the',
+    'o': ['Development Fund', 'Contingencies Fund', 'Consolidated Revenue Fund',
+          'Federation Account', 'budget of the National Assembly'],
+    'a': 2,
+    'w': 'To protect the Auditor-General\'s independence, the salary is charged directly on the '
+         'Consolidated Revenue Fund and is not subject to the annual appropriation.',
+    'src': 'Chapter 7.13 (study text Section A Q8)'},
   ],
   'theory': [
    {'q': '(a) State eight duties of the Accountant-General of the Federation. (b) State the '

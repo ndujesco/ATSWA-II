@@ -635,6 +635,150 @@ CH = {
       'requirements in section 5.8 mirror.',
     ]},
   ]},
+
+  {'n': '5.11', 't': 'Worked illustration and end-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Illustration 5-1', 't': 'Ministry of Culture — payroll accounting entries',
+      'open': True, 'q': [
+      {'p': 'Mr George extracted the following from the October 2017 payroll of the Ministry of '
+            'Culture. It is the Ministry\'s policy to pay staff **one month in arrears**.'},
+      {'table': {'align': 'lr', 'head': ['', '₦'], 'rows': [
+        ['Gross salary', '2,511,000'],
+        ['PAYE deduction', '350,000'],
+        ['Pension deduction', '250,000'],
+        ['NHIS deduction', '105,000'],
+        ['Cooperative contributions', '85,000'],
+      ]}},
+      {'p': 'The Ministry also granted an overtime allowance of ₦450,000 for the month. Show the '
+            'relevant accounting entries.'}],
+      'a': [
+      {'h4': 'Recognising October salary and deductions'},
+      {'ul': [
+        '**Dr** Gross salary ₦2,511,000',
+        '**Cr** PAYE deduction ₦350,000; Pension deduction ₦250,000; NHIS deduction ₦105,000; '
+        'Cooperative contributions ₦85,000; **Net salary payable ₦1,721,000**.']},
+      {'h4': 'Paying the October salary in November 2017'},
+      {'ul': [
+        '**Dr** PAYE ₦350,000; Pension ₦250,000; NHIS ₦105,000; Cooperative ₦85,000; Net salary '
+        'payable ₦1,721,000',
+        '**Cr** Bank ₦2,511,000.']},
+      {'h4': 'Overtime (staff benefit)'},
+      {'ul': [
+        '**Dr** Staff benefit expense ₦450,000  **Cr** Staff benefit expense payable ₦450,000 — '
+        'recognise the October benefit.',
+        '**Dr** Staff benefit expense payable ₦450,000  **Cr** Bank ₦450,000 — pay it in '
+        'November 2017.']},
+      {'note': 'Because salaries are paid a month in arrears, at 31 October the Ministry '
+               'recognises the **expense and the payable** (accruals basis); the cash leaves '
+               'only in November. The deductions (PAYE, pension, NHIS, cooperative) are '
+               'liabilities to third parties until remitted.'}]}},
+    {'p': 'The study text\'s own end-of-chapter set follows, with its answer key. **Bold** marks '
+          'the crammable answer.'},
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text Section A', 't': 'Questions 1–8 with answers', 'open': True, 'q': [
+      {'ol': [
+        'A retirement benefit plan (defined benefit or defined contribution) shall present the '
+        'following, **except one**: (A) a statement of financial position  (B) a statement of '
+        'changes in net assets available for benefits  (C) a cash flow statement  (D) a '
+        'statement of public debt  (E) notes to the financial statements.',
+        'A retirement benefit plan\'s financial statements shall contain the following, '
+        '**except one**: (A) the names of the employer(s), sponsor(s) and the participant group '
+        'covered  (B) the number of participants receiving benefits and the number of other '
+        'participants  (C) the name and address of the Pension Fund Administrator  (D) the type '
+        'of plan — defined contribution or defined benefit  (E) a note as to whether '
+        'participants contribute to the plan.',
+        'The statement of changes in net assets available for benefits presents opening and '
+        'closing balances and line items for the following, **except**: (A) employer/sponsor '
+        'contribution  (B) participants\' contribution  (C) investment income  (D) other income  '
+        '(E) bad debt written off.',
+        'The transfer of assets to an entity (the retirement benefit plan) separate from the '
+        'employer/sponsor, to meet future obligations for retirement benefits, is called …',
+        'Under a defined contribution plan the entity\'s obligation is to provide the agreed '
+        'benefits to … and … employees.',
+        'Employee benefits that are not conditional on future employment are called …',
+        'Employee benefits (other than termination benefits) payable after the completion of '
+        'employment are known as …',
+        'The increase during a period in the present value of a defined benefit obligation, '
+        'because the benefits are one period closer to settlement, is known as …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**D — a statement of public debt.** Not a component of a retirement benefit plan\'s '
+        'financial statements.',
+        '**C — the name and address of the Pension Fund Administrator.** Not a required '
+        'disclosure of the plan\'s own statements.',
+        '**E — bad debt written off.** Not a line item of the statement of changes in net '
+        'assets available for benefits.',
+        '**Funding.**',
+        '**Current and former** employees.',
+        '**Vested employee benefits.**',
+        '**Post-employment benefits.**',
+        '**Interest cost.**'],
+      }]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text Section B', 't': 'Theory / computation questions with solutions',
+      'open': True, 'q': [
+      {'p': '**1.** Mr Nuhu Emeka-Balogun joined Faloloi Local Government in 1973. He became '
+            'Council Treasurer in 2004 on total annual remuneration of ₦4,716,500, was promoted '
+            'the same year to grade level 14 on ₦5,322,000, and retired on 31 December 2006. In '
+            '2004 his pension under the old scheme was computed and transferred to the Central '
+            'Bank Redemption Bond Account, earning 4% p.a. compound from 31 December 2004. His '
+            'yearly contribution under the Pension Reform Act 2004 earns 5% p.a. compound from '
+            'December 2004. The contribution rate is 15% of gross remuneration per annum. '
+            'Compute (i) the pension due under the old scheme in the Redemption Bond Account at '
+            'December 2006; (ii) the pension due under the contributory scheme on retirement; '
+            '(iii) the total pension on retirement.'},
+      {'p': '**2.** Write briefly on: (i) the distinction between defined contribution plans and '
+            'defined benefit plans; (ii) a qualifying insurance policy.'},
+      {'p': '**3.** At 31 December 2012, Long-life University\'s statement of financial position '
+            'includes a pension liability of ₦150 million. It adopts IPSAS 25 from 1 January '
+            '2013. At that date the present value of the obligation is ₦780 million and the '
+            'fair value of plan assets ₦520 million. Past-service cost for non-vested benefits '
+            'is ₦24 million, with an average remaining vesting period of eight years. Calculate '
+            'the transitional liability.'}],
+      'a': [
+      {'h4': '1  Mr Nuhu Emeka-Balogun'},
+      {'p': '**(i) Old scheme.** Service 1973–2003 = 31 years. Pension fraction $= a + (n-10)'
+            '\\times 2 = 30 + (31-10)\\times 2 = 30 + 42 = 72\\%$. Pension $= 72\\% \\times '
+            '₦4{,}716{,}500 = ₦3{,}395{,}880$. Compound at 4%: 2004 → ₦3,531,715; 2005 → '
+            '₦3,672,984; 2006 → **₦3,819,903** in the Redemption Bond Account.'},
+      {'p': '**(ii) Contributory scheme.** Contribution $= 15\\% \\times ₦5{,}322{,}000 = '
+            '₦798{,}300$ a year, each year\'s balance rolled forward at 5%. The study text '
+            'reaches **≈ ₦2,617,306** by December 2006.'},
+      {'p': '**(iii) Total** $= ₦3{,}819{,}903 + ₦2{,}617{,}306 \\approx ₦6{,}437{,}209$.'},
+      {'warn': 'The study text\'s printed working for parts (ii) and (iii) is internally '
+               'inconsistent in the scan — it applies 1.04 in places where 1.05 is meant, and '
+               'the year-by-year roll-forward does not fully reconcile. Reproduce the **method** '
+               '(compute the fraction, apply it to remuneration, then compound each stream at '
+               'its stated rate); do not rely on the printed intermediate figures.'},
+      {'h4': '2  Defined contribution vs defined benefit; qualifying insurance policy'},
+      {'ul': [
+        'Under a **defined contribution plan**, the entity\'s obligation is limited to the '
+        'amount it agrees to contribute; **actuarial risk and investment risk fall on the '
+        'employee**.',
+        'Under a **defined benefit plan**, the entity\'s obligation is to provide the agreed '
+        'benefits to current and former employees; **actuarial risk and investment risk fall, '
+        'in substance, on the entity** — a worse-than-expected experience increases its '
+        'obligation.',
+        'A **qualifying insurance policy** is one issued by an insurer that is not a related '
+        'party of the reporting entity, where the proceeds can be used only to pay or fund '
+        'employee benefits under a defined benefit plan and are not available to the entity\'s '
+        'own creditors (even in bankruptcy), except as surplus not needed to meet the '
+        'obligations or as reimbursement of benefits already paid.']},
+      {'h4': '3  Long-life University — transitional liability (₦\'000)'},
+      {'stmt': {'t': 'Calculation of transitional liability', 'rows': [
+        ['Present value of the obligation', 780000],
+        ['Fair value of plan assets', -520000],
+        ['Past-service cost to be recognised in later periods (24,000 × 3/8)', -9000],
+        ['Transitional liability', 251000, '@t'],
+        ['Liability already recognised', -150000],
+        ['Increase in liability', 101000, '@tt'],
+      ]}},
+      {'note': 'The ₦9,000 is the *unrecognised* past-service cost: of the ₦24,000, five of the '
+               'eight vesting years have elapsed, so 3/8 remains to be recognised and is '
+               'excluded from the transitional liability. The ₦101,000 increase may be '
+               'recognised immediately or spread on a straight-line basis over up to five '
+               'years (IPSAS 25 transitional provision).'}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Net defined benefit liability',
@@ -720,6 +864,31 @@ CH = {
          'after employment ends, and does not arise from termination — so it falls into the '
          'residual "other long-term" category.',
     'src': 'Chapter 5.1'},
+   {'q': 'Which of the following is NOT a component of a retirement benefit plan\'s financial '
+         'statements?',
+    'o': ['Statement of financial position',
+          'Statement of changes in net assets available for benefits', 'Cash flow statement',
+          'Statement of public debt', 'Notes to the financial statements'],
+    'a': 3,
+    'w': 'A retirement benefit plan presents a statement of financial position, a statement of '
+         'changes in net assets available for benefits, a cash flow statement and notes. There '
+         'is no "statement of public debt".',
+    'src': 'Chapter 5.11 (study text Section A Q1)'},
+   {'q': 'Employee benefits that are not conditional on future employment are described as',
+    'o': ['vested employee benefits', 'post-employment benefits', 'termination benefits',
+          'short-term benefits', 'other long-term benefits'],
+    'a': 0,
+    'w': 'Vested benefits are those an employee is entitled to regardless of whether they '
+         'remain in employment.',
+    'src': 'Chapter 5.11 (study text Section A Q6)'},
+   {'q': 'The increase in the present value of a defined benefit obligation because the '
+         'benefits are one period closer to settlement is the',
+    'o': ['current service cost', 'past service cost', 'interest cost', 'actuarial loss',
+          'settlement loss'],
+    'a': 2,
+    'w': 'Interest cost is the unwinding of the discount — the obligation grows as the payment '
+         'date approaches.',
+    'src': 'Chapter 5.11 (study text Section A Q8)'},
   ],
   'theory': [
    {'q': 'Explain the four categories of employee benefit recognised by IPSAS 39, and '

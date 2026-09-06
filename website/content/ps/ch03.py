@@ -397,6 +397,133 @@ CH = {
              'Statements and, where available, documentation on the National Chart of Accounts '
              'and GIFMIS.'},
   ]},
+
+  {'n': '3.7', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'p': 'The study text\'s own end-of-chapter set, with its answer key. **Bold** marks the '
+          'crammable answer. The printed Section A key is misnumbered in the scan; it is '
+          'realigned below.'},
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text Section A', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'One of the following is **not** a user of the National Chart of Accounts (NCOA): '
+        '(A) Finance / Accounts officer in ministries/MDAs  (B) Legislators and other political '
+        'leaders  (C) Nigeria Bottling Company Plc  (D) Donors and other development partners  '
+        '(E) Budget / Planning officers in ministries/MDAs.',
+        'One of the following is **not** a member of the Law & Justice sector of the NCOA: '
+        '(A) Judicial Council  (B) National Population Commission  (C) Ministry of Justice  '
+        '(D) ICPC  (E) Code of Conduct Bureau.',
+        'Revenue should be classified by fund and source to provide the necessary information. '
+        'One of the following is **not** among that necessary information: (A) prepare and '
+        'control the budget  (B) conduct an independent examination of financial statements and '
+        'schedules  (C) record the collection of revenues  (D) prepare financial statements and '
+        'schedules  (E) prepare financial statistics.',
+        'Which of the following is **not** part of the structure of the NCOA? (A) Functional '
+        'segment  (B) Historic segment  (C) Geographic segment  (D) Programme segment  '
+        '(E) Economic segment.',
+        'The following, except one, are objectives of Cash Basis IPSAS: (A) accountability for '
+        'cash receipts, payments and balances  (B) transparency on the allocation of cash '
+        'resources  (C) it enhances comparability  (D) it recognises transactions when they '
+        'occur, not when paid for  (E) it provides a sound base for transition to the accrual '
+        'basis.',
+        'The National Chart of Accounts was developed by …',
+        'The document giving a complete list of budget and accounting items, each uniquely '
+        'represented by a code, is the …',
+        'The specific principles, bases, conventions, rules and practices adopted by an entity '
+        'in preparing and presenting financial statements are the …',
+        'Functional reports, programme reports and geo-location reports are an integral part of '
+        'the …',
+        'The statement showing funds transferred from the Consolidated Revenue Fund and other '
+        'borrowings to finance capital projects is the …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**C — Nigeria Bottling Company Plc.** A private company, not a user of the NCOA.',
+        '**B — National Population Commission.** Not part of the Law & Justice sector.',
+        '**B — "conduct an independent examination of financial statements and schedules."** '
+        'That is the auditor\'s function, not information provided by revenue classification.',
+        '**B — Historic segment.** The six NCOA segments are **Administrative, Economic, '
+        'Functional, Programme, Funds and Geographic**.',
+        '**D — "it recognises transactions when they occur, not when paid for."** That '
+        'describes the *accrual* basis, not an objective of Cash Basis IPSAS.',
+        '**The FAAC Sub-committee** (Federation Account Allocation Committee sub-committee).',
+        '**The National Chart of Accounts (NCOA).**',
+        '**Accounting policies** (the Statement of Accounting Policies).',
+        '**Statistical reports** (part of the GPFS).',
+        '**The Statement of Capital Development Fund** (also called the Capital Income '
+        'Statement).'],
+      }]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text Section B', 't': 'Theory questions with suggested solutions',
+      'open': True, 'q': [
+      {'ol': [
+        'Name any **five** financial statements prepared as financial reports in the Nigerian '
+        'public sector, and explain any three.',
+        'Identify the differences between **GPFS-Cash** and **GPFS-Accrual**.',
+        'List **eight line items** contained in the Statement of Financial Performance.',
+        'State the causes of changes in net assets/equity, and give the order in which the '
+        'Notes to the GPFS are arranged.',
+        'Under IPSAS 2, state and explain the separate activities under which cash flows are '
+        'reported.',
+      ]}],
+      'a': [
+      {'h4': '1  Financial statements in the Nigerian public sector (any five)'},
+      {'ul': [
+        '**Statement of Consolidated Revenue Fund** — recurrent income and expenditure over '
+        'the period; shows overall financial performance after expenses; all government '
+        'revenues are paid in. It becomes the **Statement of Financial Performance** on '
+        'migration to accrual IPSAS.',
+        '**Statement of Assets and Liabilities** — the government\'s financial position at a '
+        'point in time; assets split into *liquid assets/investments* and *other cash assets*, '
+        'liabilities into *public funds* and *external and internal loans*.',
+        '**Statement of Capital Development Fund** — funds transferred from the CRF plus '
+        'borrowings, used to finance capital projects; the Capital Income Statement.',
+        '**Cash flow statement** (statement of cash receipts and payments) — sources of cash '
+        'inflows, items of expenditure and the closing cash balance, under operating, '
+        'investing and financing activities.',
+        '**Notes to the accounts** — additional information supporting the statements.',
+        '**Performance reports** — actual performance against the approved budget (not a '
+        'principal statement, but essential).',
+        '**Statistical reports** — functional, programme and geo-location reports.',
+        '**Accounting policies** — the principles, bases, conventions, rules and practices '
+        'adopted.']},
+      {'h4': '2  GPFS-Cash vs GPFS-Accrual'},
+      {'ul': [
+        'The difference stems from the **basis of accounting** adopted by the reporting entity.',
+        'Under **accrual**, transactions are recognised **when they occur**; under **cash**, '
+        'only when cash or its equivalent is received or paid.',
+        'Accrual GPFS **disclose** tangible assets, receivables and payables; cash GPFS **do '
+        'not**.',
+        'The two also differ in their **components** — the principal statements of accrual GPFS '
+        'differ from those of cash GPFS.']},
+      {'h4': '3  Line items in the Statement of Financial Performance'},
+      {'ol': [
+        'Revenue from operating activities.',
+        'Surplus or deficit from operating activities.',
+        'Finance costs.',
+        'Share of net surpluses or deficits of associates and joint ventures accounted for by '
+        'the equity method.',
+        'Surplus or deficit from ordinary activities.',
+        'Extraordinary items.',
+        'Minority interest share of net surplus or deficit.',
+        'Net surplus or deficit for the period.']},
+      {'h4': '4  Changes in net assets/equity, and the order of the Notes'},
+      {'p': '**Causes of changes in net assets/equity:** significant changes in accounting '
+            'policies; correction of prior-year errors; revaluation of assets; surplus or '
+            'deficit for the period; changes in currency translation.'},
+      {'p': '**Order of the Notes:** (i) statement of compliance with IPSAS; (ii) statement of '
+            'the measurement bases and accounting policies applied; (iii) supporting information '
+            'for items on the face of each statement, in the order the line items and '
+            'statements are presented; (iv) other disclosures — contingencies, commitments, and '
+            'other financial and non-financial disclosures.'},
+      {'h4': '5  Cash flow activities (IPSAS 2)'},
+      {'ul': [
+        '**Operating activities** — the day-to-day activities of the entity that are not '
+        'investing or financing activities.',
+        '**Investing activities** — the acquisition and disposal of long-term assets and other '
+        'investments not included in cash equivalents.',
+        '**Financing activities** — activities that change the size and composition of the '
+        'contributed capital and borrowings.']}]}},
+  ]},
  ],
  'formulas': [],
  'focus':
@@ -464,6 +591,31 @@ CH = {
     'w': 'Comparison with the budget is required under both bases, because the budget is a '
          'legal authority to spend rather than an internal plan.',
     'src': 'Chapter 3.3'},
+   {'q': 'Which of the following is NOT one of the six segments of the National Chart of '
+         'Accounts?',
+    'o': ['Administrative segment', 'Historic segment', 'Functional segment',
+          'Programme segment', 'Funds segment'],
+    'a': 1,
+    'w': 'The six segments are Administrative, Economic, Functional, Programme, Funds and '
+         'Geographic. There is no "Historic" segment.',
+    'src': 'Chapter 3.6 (study text Section A Q4)'},
+   {'q': 'Which of the following is NOT an objective of Cash Basis IPSAS?',
+    'o': ['Accountability for cash receipts, payments and balances',
+          'Transparency on the allocation of cash resources',
+          'Recognising transactions when they occur rather than when paid',
+          'Enhancing comparability', 'Providing a sound base for transition to the accrual basis'],
+    'a': 2,
+    'w': 'Recognising transactions when they occur is the accrual basis. Cash Basis IPSAS '
+         'records transactions only on receipt or payment of cash.',
+    'src': 'Chapter 3.6 (study text Section A Q5)'},
+   {'q': 'The National Chart of Accounts (NCOA) was developed by the',
+    'o': ['Office of the Accountant-General of the Federation', 'FAAC Sub-committee',
+          'Central Bank of Nigeria', 'Budget Office of the Federation',
+          'Financial Reporting Council of Nigeria'],
+    'a': 1,
+    'w': 'A sub-committee of the Federation Account Allocation Committee (FAAC) developed the '
+         'standardised, IPSAS-compliant National Chart of Accounts.',
+    'src': 'Chapter 3.6 (study text Section A Q6)'},
   ],
   'theory': [
    {'q': 'Explain the objectives of the National Chart of Accounts, describe its segments, and '
