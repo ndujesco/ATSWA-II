@@ -1,5 +1,38 @@
 # Where the build stopped
 
+## Session 2026-09-12 (cont.) — PS chapters 17–20 (all four subjects now complete)
+- **PS is now complete: 20/20 chapters.** Authored fresh from the re-extracted study-text
+  PDF (PS.txt lines 22105–25292), same full-fidelity style as IT ch2–6 this session: every
+  definition/list/table plus the study text's complete Section A + Section B end-of-chapter
+  question banks with full worked solutions, bolded crammable terms.
+  - **ch17 — Accounting for Public Sector Organisations and GBEs**: Enabling Act contents,
+    the 5 defining GBE characteristics, the minimum disclosure lists for not-for-profit
+    enterprise financial statements, educational institution books of account (cash book,
+    personal ledger sub-registers), audit of government enterprises. Section A (10 items)
+    + Section B (6 questions: Bolus Electricity Board and Okokomaiko State University
+    full statements, accounting-policy essay, bank reconciliation, two net-asset/cash-flow
+    calculations) all reproduced with full workings.
+  - **ch18 — Financial Management Control System in the Public Sector**: legislative
+    control (PAC role/weaknesses, Ghana's Appropriation concept), executive control,
+    Ministry of Finance control (virement rules, FGN cash management committees), Treasury/
+    OAGF control, departmental controls, the Vote Book (full 15-column format + a worked
+    DVEA illustration), Efficiency Unit, Finance & General-Purpose Committee, Audit
+    Committee. Section A (10) + Section B (4 questions) with full solutions.
+  - **ch19 — Interpretation of Public Sector Financial Statements**: variance analysis
+    (IPSAS 24 budget-vs-actual format), liquidity ratios (quick, current — with a 2-company
+    worked comparison), solvency ratios (debt, debt-to-equity, debt-to-capital — each
+    worked), receivables/payables payment period and inventory turnover period, advantages/
+    limitations of ratio analysis. Section A (12) + Section B (4 questions, incl. the
+    6-ratio Danduala Local Government computation) with full solutions.
+  - **ch20 — Investment/Project Appraisal in the Public Sector**: ARR, Payback Period and
+    NPV, each with the study text's full worked illustration (Agbede LG, Omidan LG, Yabus
+    LG) plus the combined Omuro LG Section B question comparing all three methods on the
+    same three projects. Section A (8) + Section B (1 multi-method question) with full
+    solutions.
+  - Build clean: `python3 tools/build_content.py ps` → 20/20 chapters, 169 sections,
+    49 formulas, 127 MCQ, 28 theory. Full `./build.sh` clean — **FA, PS, QA and IT are now
+    all complete (16/16, 20/20, 20/20, 6/6)**.
+
 ## Session 2026-09-12 — IT chapters 2–6 (full fidelity transcription)
 - **IT is now complete: 6/6 chapters.** Per the explicit instruction "continue with IT,
   chapters 2-6... no information should be lost... thoroughly transcribe it all", each
