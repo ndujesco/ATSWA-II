@@ -217,6 +217,72 @@ CH = {
                'state the range over which it is valid, or note that it applies only to small '
                'changes.'}]}},
   ]},
+
+  {'n': '15.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Linear programming (LP)** — optimising a linear objective function subject to linear '
+      'constraints and non-negativity.',
+      '**Decision variables $x_1, x_2, \\dots$** — the quantities to be found (non-negative).',
+      '**Objective function $Z$** — the linear expression to maximise (profit / contribution) '
+      'or minimise (cost).',
+      '**Constraint** — a linear inequality ($\\le$, $\\ge$) or equality limiting the '
+      'variables.',
+      '**Non-negativity constraints** — $x_j \\ge 0$.',
+      '**Feasible region** — the set of points satisfying every constraint; a convex polygon.',
+      '**Corner (extreme / vertex) point** — a vertex of the feasible region; the optimum is '
+      'always at one.',
+      '**Binding constraint** — one satisfied as an equality at the optimum (its resource is '
+      'fully used).',
+      '**Slack variable** — added to a "$\\le$" constraint to make it an equality; the unused '
+      'amount of that resource.',
+      '**Surplus variable** — subtracted from a "$\\ge$" constraint; the excess over the '
+      'minimum.',
+      '**Artificial variable** — added to "$\\ge$" and "$=$" constraints to start the simplex; '
+      'driven to zero (Big-M or two-phase).',
+      '**Iso-profit / iso-cost line** — a line of constant $Z$; slide it to the last corner it '
+      'touches.',
+      '**Shadow (dual) price** — the change in optimal $Z$ per one-unit increase in a '
+      'constraint\'s right-hand side.',
+      '**Simplex tableau** — the table the simplex algorithm iterates on; the optimum is '
+      'reached when no improving entry remains.',
+    ]},
+    {'h3': 'A. Standard form'},
+    {'fbox': {'h': 'LP in standard form', 'rows': [
+      {'lb': 'Objective',
+       'tex': '\\text{Max } Z = c_1 x_1 + c_2 x_2 + \\dots + c_n x_n'},
+      {'lb': 'Subject to',
+       'tex': 'a_{i1}x_1 + a_{i2}x_2 + \\dots + a_{in}x_n \\ \\{\\le, =, \\ge\\}\\ b_i, '
+              '\\quad i = 1,\\dots,m'},
+      {'lb': 'Non-negativity', 'tex': 'x_j \\ge 0 \\quad \\text{for all } j'},
+      {'lb': '"$\\le$" constraint with slack $s_i$',
+       'tex': 'a_{i1}x_1 + a_{i2}x_2 + s_i = b_i, \\quad s_i \\ge 0'},
+      {'lb': '"$\\ge$" constraint with surplus $s_i$ and artificial $A_i$',
+       'tex': 'a_{i1}x_1 + a_{i2}x_2 - s_i + A_i = b_i'},
+    ]}},
+    {'h3': 'B. Graphical method'},
+    {'ol': [
+      'Plot each constraint as a line (find its two axis intercepts) and shade the feasible '
+      'side.',
+      'Identify the feasible region (satisfies all constraints).',
+      'Find every corner point (intersection of boundary lines).',
+      'Evaluate $Z$ at each corner — the best value is the optimum. (Or slide an iso-profit '
+      'line.)',
+    ]},
+    {'h3': 'C. Simplex method'},
+    {'fbox': {'h': 'Simplex rules', 'rows': [
+      {'lb': 'Entering variable (maximisation)',
+       'tex': '\\text{column with the most negative value in the } Z\\text{-row}'},
+      {'lb': 'Leaving variable — minimum ratio test',
+       'tex': '\\theta = \\min\\left\\{\\dfrac{b_i}{a_{ik}} : a_{ik} > 0\\right\\}'},
+      {'lb': 'Optimality (maximisation)',
+       'tex': '\\text{stop when no } Z\\text{-row entry is negative}'},
+    ]}},
+    {'h3': 'D. Shadow price'},
+    {'tex': '\\text{Shadow price of constraint } i = \\dfrac{\\Delta Z^{*}}{\\Delta b_i} '
+            '\\quad (\\text{within the validity range; } 0 \\text{ for a non-binding '
+            'constraint})'},
+  ]},
  ],
  'formulas': [
   {'lb': 'Standard form of an LP',
@@ -225,10 +291,14 @@ CH = {
    'tex': 'a_{i1}x_1 + a_{i2}x_2 + s_i = b_i'},
   {'lb': 'Surplus variable ($\\ge$ constraint)',
    'tex': 'a_{i1}x_1 + a_{i2}x_2 - s_i + A_i = b_i'},
-  {'lb': 'Simplex ratio test',
+  {'lb': 'Simplex ratio (minimum) test',
    'tex': '\\theta = \\min\\left\\{\\frac{b_i}{a_{ik}} : a_{ik} > 0\\right\\}'},
+  {'lb': 'Simplex entering variable (max)',
+   'tex': '\\text{most negative entry in the } Z\\text{-row}'},
+  {'lb': 'Graphical method', 'tex': '\\text{evaluate } Z \\text{ at every corner of the '
+          'feasible region}'},
   {'lb': 'Shadow price',
-   'tex': '\\text{Shadow price} = \\frac{\\Delta Z}{\\Delta b_i}'},
+   'tex': '\\text{Shadow price} = \\frac{\\Delta Z^{*}}{\\Delta b_i}'},
  ],
  'focus':
    'A frequent Section B question, and reliably the highest-scoring one for a prepared '

@@ -135,17 +135,126 @@ CH = {
       'predicts the variable the question asks for.',
     ]},
   ]},
+
+  {'n': '4.3', 't': 'Worksheet summary — definitions and every formula', 'b': [
+    {'h3': 'Definitions'},
+    {'ul': [
+      '**Univariate** data — one variable. **Bivariate** data — two variables, written as '
+      'points $(x, y)$.',
+      '**Independent (explanatory) variable** $x$; **dependent (response) variable** $y$. The '
+      'distinction matters for regression, **not** for correlation.',
+      '**Scatter diagram** — bivariate data plotted on rectangular axes to reveal the '
+      'relationship.',
+      '**Correlation** — the *degree of association* between two variables. Coefficient $r$ '
+      'lies in $-1 \\le r \\le 1$.',
+      '**Regression** — the *pattern / nature* of the relationship, expressed as an equation.',
+      '**Coefficient of determination** $r^2$ — the proportion of the variation in $y$ '
+      'explained by $x$.',
+      '**Rank correlation** — correlation computed from ranks (ordinal data) rather than actual '
+      'values.',
+    ]},
+    {'h3': 'Types of correlation (name + condition)'},
+    {'ul': [
+      'Positive correlation — $0 < r < 1$',
+      'Perfect positive correlation — $r = 1$',
+      'Negative correlation — $-1 < r < 0$',
+      'Perfect negative correlation — $r = -1$',
+      'Zero (no) correlation — $r = 0$',
+    ]},
+    {'note': 'Interpretation: $|r|$ close to 1 → strong correlation; close to 0 → poor / '
+             'non-existent. The same scale applies to Spearman\'s $R$.'},
+    {'h3': 'A. Pearson\'s product-moment correlation coefficient'},
+    {'p': 'Build the columns $x$, $y$, $xy$, $x^2$, $y^2$ and total each; $n$ = number of pairs.'},
+    {'fbox': {'h': 'Pearson r — equivalent forms', 'rows': [
+      {'lb': 'Deviation form',
+       'tex': 'r = \\dfrac{\\sum (x - \\bar{x})(y - \\bar{y})}'
+              '{\\sqrt{\\sum (x - \\bar{x})^2 \\; \\sum (y - \\bar{y})^2}}, \\quad '
+              '\\bar{x} = \\tfrac{\\sum x}{n}, \\; \\bar{y} = \\tfrac{\\sum y}{n}'},
+      {'lb': 'Covariance / variance form',
+       'tex': 'r = \\dfrac{\\operatorname{Cov}(x, y)}{\\sqrt{\\operatorname{Var}(x)\\,'
+              '\\operatorname{Var}(y)}}'},
+      {'lb': 'Working (machine) form',
+       'tex': 'r = \\dfrac{n\\sum xy - \\sum x \\sum y}'
+              '{\\sqrt{\\left[n\\sum x^2 - (\\sum x)^2\\right]\\left[n\\sum y^2 - '
+              '(\\sum y)^2\\right]}}'},
+    ]}},
+    {'note': 'Numerator $= n\\sum xy - \\sum x\\sum y$ is $n^2 \\times$ the covariance; each '
+             'bracket in the denominator is $n^2 \\times$ a variance.'},
+    {'h3': 'B. Spearman\'s rank correlation coefficient'},
+    {'fbox': {'h': 'Spearman R', 'rows': [
+      {'lb': 'Formula', 'tex': 'R = 1 - \\dfrac{6\\sum d^2}{n(n^2 - 1)}',
+       'nt': '$d$ = difference in each pair of ranks $R_x - R_y$; $n$ = number of items ranked. '
+             '$-1 \\le R \\le 1$.'},
+      {'lb': 'Tied ranks', 'tex': '\\text{shared rank} = \\dfrac{\\text{sum of the positions '
+              'the tied items occupy}}{\\text{number tied}}',
+       'nt': 'e.g. two items in 2nd place each get $(2+3)/2 = 2.5$; three items in 6th place '
+             'each get $(6+7+8)/3 = 7$.'},
+    ]}},
+    {'note': 'Rank in ascending **or** descending order — but use the *same* order for both '
+             'variables. Spearman is easier to compute but less accurate than Pearson.'},
+    {'h3': 'C. Simple linear regression — line of y on x'},
+    {'p': 'Model: $\\;y = a + bx\\;$ where $a$ = intercept on the $y$-axis, $b$ = regression '
+          'coefficient = slope / gradient.'},
+    {'fbox': {'h': 'Least-squares regression of y on x', 'rows': [
+      {'lb': 'Normal equations (from least squares)',
+       'tex': '\\sum y = an + b\\sum x \\qquad\\text{and}\\qquad '
+              '\\sum xy = a\\sum x + b\\sum x^2'},
+      {'lb': 'Solve for the slope',
+       'tex': 'b = \\dfrac{n\\sum xy - \\sum x \\sum y}{n\\sum x^2 - (\\sum x)^2}'},
+      {'lb': 'then the intercept',
+       'tex': 'a = \\dfrac{\\sum y}{n} - b\\,\\dfrac{\\sum x}{n} = \\bar{y} - b\\bar{x}'},
+      {'lb': 'Graphical slope',
+       'tex': 'b = \\dfrac{\\text{vertical length}}{\\text{horizontal length}} '
+              '= \\dfrac{y_2 - y_1}{x_2 - x_1}',
+       'nt': 'The fitted line always passes through $(\\bar{x}, \\bar{y})$.'},
+    ]}},
+    {'h3': 'D. Regression line of x on y'},
+    {'p': 'Model: $\\;x = a\' + b\'y\\;$ (now $y$ is independent). **Different line** from y on '
+          'x — not a rearrangement.'},
+    {'fbox': {'h': 'Least-squares regression of x on y', 'rows': [
+      {'lb': 'Slope',
+       'tex': "b' = \\dfrac{n\\sum xy - \\sum x \\sum y}{n\\sum y^2 - (\\sum y)^2}"},
+      {'lb': 'Intercept', 'tex': "a' = \\dfrac{\\sum x}{n} - b'\\,\\dfrac{\\sum y}{n} "
+              "= \\bar{x} - b'\\bar{y}"},
+    ]}},
+    {'h3': 'E. Prediction and interpretation'},
+    {'ul': [
+      '**Predict $y$** from a given $x$: substitute $x$ into $y = a + bx$. Predict $x$ from $y$ '
+      'using $x = a\' + b\'y$.',
+      '$b = 0$ → line parallel to the $x$-axis (no linear relationship).',
+      '$b > 0$ and large → steep, upward-sloping line.',
+      '$b < 0$ → downward-sloping line.',
+      '$r^2$ (or $R^2$) — square the correlation coefficient to get the proportion of variation '
+      'explained.',
+    ]},
+  ]},
  ],
  'formulas': [
-  {'lb': "Pearson's correlation coefficient",
+  {'lb': "Pearson's r — deviation form",
+   'tex': 'r = \\frac{\\sum (x-\\bar{x})(y-\\bar{y})}{\\sqrt{\\sum (x-\\bar{x})^2 \\sum '
+          '(y-\\bar{y})^2}}'},
+  {'lb': "Pearson's r — covariance form",
+   'tex': 'r = \\frac{\\operatorname{Cov}(x,y)}{\\sqrt{\\operatorname{Var}(x)\\operatorname{Var}(y)}}'},
+  {'lb': "Pearson's r — working form",
    'tex': 'r = \\frac{n\\sum xy - \\sum x \\sum y}{\\sqrt{[n\\sum x^2 - (\\sum x)^2]'
           '[n\\sum y^2 - (\\sum y)^2]}}'},
   {'lb': "Spearman's rank correlation",
-   'tex': 'r_s = 1 - \\frac{6\\sum d^2}{n(n^2 - 1)}'},
-  {'lb': 'Coefficient of determination', 'tex': 'r^2'},
-  {'lb': 'Regression slope',
+   'tex': 'R = 1 - \\frac{6\\sum d^2}{n(n^2 - 1)}, \\quad d = R_x - R_y'},
+  {'lb': 'Tied rank', 'tex': '\\text{shared rank} = \\frac{\\text{sum of tied positions}}'
+          '{\\text{number tied}}'},
+  {'lb': 'Coefficient of determination', 'tex': 'r^2 \\text{ (or } R^2\\text{)}'},
+  {'lb': 'Regression y on x — normal equations',
+   'tex': '\\sum y = an + b\\sum x, \\qquad \\sum xy = a\\sum x + b\\sum x^2'},
+  {'lb': 'Regression y on x — slope',
    'tex': 'b = \\frac{n\\sum xy - \\sum x \\sum y}{n\\sum x^2 - (\\sum x)^2}'},
-  {'lb': 'Regression intercept', 'tex': 'a = \\bar{y} - b\\bar{x}'},
+  {'lb': 'Regression y on x — intercept',
+   'tex': 'a = \\bar{y} - b\\bar{x} = \\frac{\\sum y}{n} - b\\frac{\\sum x}{n}'},
+  {'lb': 'Regression x on y — slope',
+   'tex': "b' = \\frac{n\\sum xy - \\sum x \\sum y}{n\\sum y^2 - (\\sum y)^2}"},
+  {'lb': 'Regression x on y — intercept', 'tex': "a' = \\bar{x} - b'\\bar{y}"},
+  {'lb': 'Graphical slope',
+   'tex': 'b = \\frac{\\text{vertical length}}{\\text{horizontal length}} = '
+          '\\frac{y_2 - y_1}{x_2 - x_1}'},
  ],
  'focus':
    'One of the most reliably examined chapters, in both sections. Section A asks for $b$, for $a$, '

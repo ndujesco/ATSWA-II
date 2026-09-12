@@ -150,12 +150,77 @@ CH = {
                'Second, the mean life is a weighted average using the failure probabilities, '
                'not the simple average of 1, 2, 3 and 4.'}]}},
   ]},
+
+  {'n': '18.4', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Replacement analysis** — deciding *when* to replace equipment to minimise total '
+      'cost.',
+      '**Items that deteriorate** — efficiency falls and running / maintenance cost rises '
+      'gradually with age (a vehicle, a machine); replaced *individually*.',
+      '**Items that fail suddenly** — work at full efficiency then fail without warning '
+      '(bulbs, tubes); replaced *individually on failure* or by *group replacement*.',
+      '**Capital / purchase cost $C$** — the cost of a new item.',
+      '**Scrap / salvage / resale value $S_n$** — what the old item fetches after $n$ years.',
+      '**Running / maintenance cost $R_t$** — cost of operating the item in year $t$; an '
+      'increasing function of age.',
+      '**Average annual cost (AAC / ATC)** — total cost of ownership over $n$ years divided '
+      'by $n$; replace at the $n$ that minimises it.',
+      '**Time value of money** — where the interest rate is not zero, costs are discounted; '
+      'otherwise ignored.',
+      '**Discount factor** — $d = \\dfrac{1}{1 + r}$ (or $(1+r)^{-t}$).',
+      '**Mortality (survival) table** — the probability $p_t$ that an item fails in period '
+      '$t$.',
+      '**Individual replacement policy** — replace each item as it fails, at cost $C_i$ each.',
+      '**Group replacement policy** — replace *all* items every $n$ periods at low unit cost '
+      '$C_g$, plus replace failures individually in between.',
+    ]},
+    {'h3': 'A. Items that deteriorate — no discounting'},
+    {'fbox': {'h': 'Optimal replacement age', 'rows': [
+      {'lb': 'Total cost of owning for $n$ years',
+       'tex': 'TC(n) = (C - S_n) + \\sum_{t=1}^{n} R_t'},
+      {'lb': 'Average annual cost',
+       'tex': 'AAC(n) = \\dfrac{(C - S_n) + \\sum_{t=1}^{n} R_t}{n}'},
+      {'lb': 'Rule', 'tex': '\\text{replace at the } n \\text{ that minimises } AAC(n)'},
+    ]}},
+    {'h3': 'B. Items that deteriorate — with discounting'},
+    {'fbox': {'h': 'Discounted cost', 'rows': [
+      {'lb': 'Discount factor', 'tex': 'd = \\dfrac{1}{1 + r}'},
+      {'lb': 'Present value of the cost pattern over $n$ years',
+       'tex': 'PV(n) = C + \\sum_{t=1}^{n} R_t\\,d^{\\,t} - S_n\\,d^{\\,n}'},
+      {'lb': 'Equivalent annual cost',
+       'tex': 'EAC = \\dfrac{PV \\text{ of one replacement cycle}}{\\text{annuity factor for } '
+              'n \\text{ years}}'},
+      {'lb': 'Rule', 'tex': '\\text{choose the machine / age with the lowest EAC}'},
+    ]}},
+    {'h3': 'C. Items that fail suddenly'},
+    {'fbox': {'h': 'Failure projection and group replacement', 'rows': [
+      {'lb': 'Mean life', 'tex': '\\bar{L} = \\sum_{t} t\\,p_t'},
+      {'lb': 'Steady-state failures per period', 'tex': '\\dfrac{N}{\\bar{L}}'},
+      {'lb': 'Failures in period $t$ (include failures among replacements)',
+       'tex': 'N_t = \\sum_{k=1}^{t} N_{t-k}\\,p_k \\qquad (N_0 = N)'},
+      {'lb': 'Cost per period — individual replacement only',
+       'tex': '\\dfrac{N}{\\bar{L}} \\times C_i'},
+      {'lb': 'Cost per period — group replacement every $n$ periods',
+       'tex': '\\dfrac{N\\,C_g + C_i \\sum_{t=1}^{n-1} N_t}{n}'},
+      {'lb': 'Rule',
+       'tex': '\\text{group-replace at the } n \\text{ giving the lowest cost per period, if '
+              'below the individual-only cost}'},
+    ]}},
+  ]},
  ],
  'formulas': [
+  {'lb': 'Total cost of ownership over $n$ years',
+   'tex': 'TC(n) = (C - S_n) + \\sum_{t=1}^{n} R_t'},
   {'lb': 'Average annual cost of ownership',
    'tex': 'AAC_n = \\frac{(C - S_n) + \\sum_{t=1}^{n} R_t}{n}'},
+  {'lb': 'Discount factor', 'tex': 'd = \\frac{1}{1 + r}'},
+  {'lb': 'PV of a replacement cycle',
+   'tex': 'PV(n) = C + \\sum_{t=1}^{n} R_t\\,d^{\\,t} - S_n\\,d^{\\,n}'},
   {'lb': 'Mean life from a failure distribution',
    'tex': '\\bar{L} = \\sum t\\,p_t'},
+  {'lb': 'Cost per period, individual replacement only',
+   'tex': '\\frac{N}{\\bar{L}}\\,C_i'},
   {'lb': 'Steady-state failures per period',
    'tex': '\\frac{N}{\\bar{L}}'},
   {'lb': 'Failures in period $t$',

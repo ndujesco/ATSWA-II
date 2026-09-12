@@ -152,9 +152,232 @@ CH = {
       {'note': 'The angles must sum to 360°. Rounding each to one decimal and checking the total '
                'is a fast way to catch an arithmetic slip.'}]}},
     {'h3': 'SPSS and analytical software'},
-    {'p': '**SPSS** stands for **Statistical Package for the Social Sciences**. It, along with '
-          'Excel, R and Stata, is used for data entry, presentation and analysis. This has been '
-          'asked directly as a multiple-choice question.'},
+    {'p': '**SPSS** stands for **Statistical Package for the Social Sciences** (now IBM SPSS '
+          'Statistics). It, along with **Microsoft Excel**, R and Stata, is used for data entry, '
+          'presentation and analysis. Excel ships with Microsoft Office and has built-in '
+          'statistical functions and a data-analysis tool pack; SPSS must be installed '
+          'separately and has four windows — **data editor** (with *data view* and *variable '
+          'view*), **output**, **syntax** and **script** — of which the data editor and output '
+          'windows matter most. This has been asked directly as a multiple-choice question.'},
+  ]},
+
+  {'n': '1.5', 't': 'Full revision summary (listed)', 'b': [
+    {'p': 'Everything in this chapter, compressed to lists for a last read-through. Nothing here '
+          'is new — it is §§1.1–1.4 in recall form.'},
+    {'h3': 'A. Data and statistics'},
+    {'ul': [
+      '**Data / statistical data** — raw facts, numeric or non-numeric, collected, analysed and '
+      'summarised for presentation and interpretation.',
+      '**Statistics** — the scientific method of collecting, presenting, analysing and '
+      'interpreting data, and of making inferences under uncertainty.',
+      '**Descriptive statistics** — summarises a data set (collection, summarising, comparison).',
+      '**Inferential statistics** — uses a sample to draw conclusions about the population.',
+    ]},
+    {'h3': 'B. Classification of data'},
+    {'ul': [
+      '**By value** — *Numeric (quantitative)*: **discrete** (whole numbers only — number of '
+      'students, number of typists) and **continuous** (any value including fractions — wages, '
+      'prices, weights, exam marks). *Non-numeric (qualitative)*: **categorical / nominal** '
+      '(groups with no order — gender, nationality, religion, political affiliation) and '
+      '**ordinal** (ranked on a scale — age group, rank of a soldier, socio-economic status).',
+      '**By collection process** — *Primary*: collected first-hand for the specific enquiry. '
+      '*Secondary*: taken from records already collected by others.',
+      '**Secondary-data agencies** — National Bureau of Statistics (NBS), Central Bank of '
+      'Nigeria (CBN), educational institutions, ministries, private companies. (Financial data → '
+      'CBN, ICAN, banks; health data → Federal/State Ministries of Health, WHO, NCDC; oil & gas '
+      '→ NNPC, Ministry of Petroleum Resources, OPEC; security → Nigeria Police, Ministry of '
+      'Defence; political → INEC, the Assemblies.)',
+    ]},
+    {'h3': 'C. Methods of collecting primary data'},
+    {'ul': [
+      '**Mail (postal) questionnaire** — a set of logically arranged questions filled by the '
+      'respondent; posted out. *Question types*: **close-ended / coded** (pick from given '
+      'answers) and **open-ended / uncoded** (respondent writes freely). *Good questionnaire*: '
+      'well structured into sections (personal data first); clear, unambiguous, not lengthy; no '
+      'leading questions; no calculations required; not offensive; logical order. '
+      '*Advantages*: wide coverage, cheap, saves time. *Disadvantages*: unreliable postal '
+      'service, non-response, unreliable answers.',
+      '**Interview** — face-to-face or by a medium such as telephone. *Advantages*: detailed, '
+      'accurate, reliable; method and accuracy known. *Disadvantages*: time-consuming, '
+      'expensive. Sub-types: **interview schedule** (a form the *interviewer* completes while '
+      'asking questions — reliable, cuts non-response, questions can be reframed, difficult '
+      'respondents persuaded); **telephone interview** (fast, faster call-backs, less '
+      'non-response — but biased toward telephone owners); **group discussion** (several people, '
+      'one focus event).',
+      '**Observation** — recording behaviour, skills, objects in their natural state. '
+      '**Controlled** (predetermined rules and procedures) or **uncontrolled**.',
+    ]},
+    {'note': 'A **schedule** is completed by the *investigator/interviewer*; a **questionnaire** '
+             'is completed by the *respondent* — study text MCQ 2 turns on exactly this.'},
+    {'h3': 'D. Sampling — terms'},
+    {'ul': [
+      '**Population** — every item with a defined characteristic (people, animals, objects, or '
+      'a defined group such as "ATS candidates"). **Finite** = countable (students in a '
+      'college); **infinite** = uncountable (sand particles on a beach).',
+      '**Sample** — a fractional part of a population studied to make a statement about the '
+      'whole.',
+      '**Census** — complete enumeration of every unit (2006 head count).',
+      '**Sample survey** — collecting information using a representative sample.',
+      '**Sampling frame** — a list of all units in the target population, used as the basis for '
+      'selection (church-member list, telephone directory).',
+      '**Sampling unit** — any individual member of the population.',
+      '**Notation** — $N$ = population size, $n$ = sample size; **sampling fraction** '
+      '$f = n/N$; **expansion (raising) factor** $g = N/n$.',
+    ]},
+    {'p': '**Purposes of sampling**: cuts the cost of data collection; greater accuracy than '
+          'covering the whole population; faster; saves time; analysis is less tedious.'},
+    {'h3': 'E. Sampling methods'},
+    {'ul': [
+      '**Probability (random) sampling** — every unit has a definite, known chance of '
+      'selection; sampling error can be estimated.',
+      '  · **Simple random sampling (SRS)** — equal chance for every member; needs a sampling '
+      'frame; by random-number table or lottery/raffle; *with* or *without* replacement. '
+      '+ fair, simple, unbiased estimates.  − useless without a frame; heavy drawing from one '
+      'part defeats fairness.',
+      '  · **Systematic sampling** — needs a serially numbered frame; pick a random start '
+      'within the first $k$, then every $k$-th unit, where $k = N/n$ rounded **down** to a '
+      'whole number (e.g. $N=120$, $n=15$ → $k=8$; start 5 → 5, 13, 21, 29, …). + easy, good '
+      'representation.  − no frame, no method; biased if the list is periodic.',
+      '  · **Stratified sampling** — for a *heterogeneous* population: split into '
+      '**homogeneous, non-overlapping strata** (by income level, employment status, …), then '
+      'SRS within each. + more representative, more precise.  − hard to choose the basis for '
+      'stratification; problem of weighting the strata.',
+      '  · **Cluster sampling** — units occur in natural clusters (farm settlements, schools) '
+      'or artificial ones (faculties); randomly select whole clusters and take all their units.',
+      '  · **Multi-stage sampling** — sampling in two or more stages (institutions → faculties '
+      '→ departments); the first-stage list is the *primary sampling units*; the number of '
+      'stages names it (five-stage = five stages). + simple and cheap if frames exist at each '
+      'stage.  − tedious without frames; complex variance estimation.',
+      '**Non-probability sampling** — chance of selection is unknown; sampling error cannot be '
+      'estimated.',
+      '  · **Quota sampling** — the investigator fills preset category quotas (quota admission '
+      'to Federal Colleges). + fair spread without a frame, no frame needed.  − sampling error '
+      'not estimable.',
+      '  · **Judgemental (purposive) sampling** — units chosen to fit a criterion of interest '
+      '(interviewing only those with on-the-job experience). + in-depth insight, targets the '
+      'right group.  − researcher bias, selective sample.',
+      '  · **Convenience sampling** — whoever is easiest to reach (a lecturer using her own '
+      'students). + easy, quick, cheap.  − inaccurate, biased, unrepresentative.',
+      '  · **Snowball sampling** — respondents refer further respondents, rolling on until the '
+      'sample is complete (drug use among youths). + raises participation, reaches '
+      'hard-to-find populations.  − unrepresentative, biased.',
+    ]},
+    {'h3': 'F. Data presentation'},
+    {'ul': [
+      '**Bases of classification** — qualitative (by type/quality), quantitative (by range), '
+      'chronological (time series — trend, cyclical, periodic, irregular), geographical (by '
+      'location).',
+      '**Three methods** — *text* (words + figures, emphasis on the figures), *tabular*, '
+      '*diagrammatic* (charts and graphs).',
+      '**Table** — more detailed than text; brief and self-explanatory. *Simple* table (one '
+      'variable against one other) vs *complex* table (several items, sub-divisions). '
+      '*Essential features*: title; row/column headings; source; footnote.',
+    ]},
+    {'h3': 'G. Frequency tables'},
+    {'ul': [
+      '**Frequency table** — how many times each value / group of values occurs. *Ungrouped* '
+      '(value against its frequency) or *grouped* (class intervals against frequency).',
+      '**Grouped-table guidelines** — 5 to 8 classes; class width 5 or a multiple of 5; equal '
+      'widths (except wider open ends for extreme values); every observation in exactly one '
+      'class; **avoid overlapping limits** like 5–10, 10–15 (where does 10 go?); open-ended '
+      'classes ("less than 20", "10 and above") are assumed the same width as their neighbours.',
+      '**Tally method** — one stroke per occurrence, the fifth struck across the first four; '
+      'go through the data **once**.',
+    ]},
+    {'h3': 'H. Class limits, boundaries, width, mid-point'},
+    {'ul': [
+      '**Class limits** — the numbers as written. For class 31 – 40: lower limit 31, upper '
+      'limit 40.',
+      '**Class boundaries** — the *true* limits. Lower boundary $= \\dfrac{\\text{upper limit '
+      'of the previous class} + \\text{lower limit of this class}}{2}$; upper boundary $= '
+      '\\dfrac{\\text{upper limit of this class} + \\text{lower limit of the next class}}{2}$. '
+      'The lower boundary of a class equals the upper boundary of the class before it. '
+      'For 21 – 30: lower boundary $(20+21)/2 = 20.5$, upper boundary $(30+31)/2 = 30.5$.',
+      '**Class size / width** — difference between the boundaries, e.g. $30.5 - 20.5 = 10$. The '
+      'first lower boundary and last upper boundary are obtained by logic.',
+      '**Class mid-point / class mark** — $\\dfrac{\\text{lower limit} + \\text{upper limit}}'
+      '{2}$, e.g. $(41+50)/2 = 45.5$. Successive mid-points differ by the class width. Class '
+      'marks represent the class in calculations (mean, standard deviation) and are the '
+      'x-values of a frequency polygon.',
+      '**Cumulative frequency** — running total of the frequencies up to and including each '
+      'class.',
+    ]},
+    {'warn': 'Boundaries — not limits — are used for **histograms** and **ogives**, and for the '
+             '**median and mode formulas** in Chapter 2. Class **marks** (limits averaged) are '
+             'used for the **mean**. Where classes are written continuously (0–10, 10–20) the '
+             'lower limit already *is* the lower boundary; where there is a gap (1–10, 11–20) it '
+             'is not — see Chapter 2 §2.5.'},
+    {'h3': 'I. Charts and graphs'},
+    {'ul': [
+      '**Bar chart** — equal-width bars, *height* proportional to value, gaps between bars, '
+      'usually vertical. Forms: *simple*, *multiple* (groups side by side), *component / '
+      'stacked* (each bar split into parts), *percentage component* (all bars 100% tall, split '
+      'by percentage share).',
+      '**Pie chart** — a circle split into sectors; sector angle $= \\dfrac{\\text{component}}'
+      '{\\text{total}} \\times 360^\\circ$; angles must sum to 360°.',
+      '**Histogram** — adjacent (touching) rectangles over **class boundaries**; **area** (not '
+      'height) is proportional to frequency. Unequal widths → adjust: pick the common width and '
+      'multiply each frequency by (common width ÷ its width) — i.e. use frequency density. Used '
+      'to estimate the **mode**.',
+      '**Frequency polygon** — frequencies plotted against **class marks** and joined by '
+      'straight lines; closed by joining to the class marks of the empty classes before the '
+      'first and after the last (zero frequency). Smoothed, it becomes the **frequency curve**, '
+      'showing the shape of the distribution.',
+      '**Ogive (cumulative frequency curve)** — cumulative frequency against **class '
+      'boundaries**. *Less-than* type: cumulate from the top; plot against **upper** '
+      'boundaries. *More-than* type: cumulate from the bottom; plot against **lower** '
+      'boundaries. Used to estimate the **median, quartiles, deciles and percentiles** — but '
+      '**not the mode**. Where both ogives are drawn together, they cross at the **median**.',
+    ]},
+    {'h3': 'J. Software'},
+    {'ul': [
+      '**Microsoft Excel** — spreadsheet; comes with Microsoft Office; graphic tools, pivot '
+      'tables, built-in statistical/financial functions, data-analysis tool pack.',
+      '**SPSS** — Statistical Package for the Social Sciences (now IBM SPSS Statistics); '
+      'installed separately; windows: data editor (data view + variable view), output, syntax, '
+      'script.',
+    ]},
+  ]},
+
+  {'n': '1.6', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'Which of the following is a non-numeric ordinal data? (A) Income  (B) Price of a '
+        'commodity  (C) Occupation  (D) Rating in a beauty contest  (E) Students\' numbers in a '
+        'class',
+        'A schedule in statistics refers to (A) an examination timetable  (B) a set of '
+        'questions filled by the respondent  (C) a set of questions filled by the investigator '
+        'him/herself  (D) a set of past examination questions  (E) paper used by bankers for '
+        'investigation',
+        'Which sampling method does not need a sampling frame? (A) simple random  (B) purposive  '
+        '(C) systematic  (D) cluster  (E) stratified',
+        'The following are qualities of a good questionnaire **except** (A) each question is '
+        'precise and unambiguous  (B) leading questions are avoided  (C) it must be lengthy to '
+        'accommodate many questions  (D) it is well structured into related sections  '
+        '(E) double-barrelled questions are avoided',
+        'In sampling, a list of all units in a target population is known as a …',
+        'A small or fractional part of a population selected to meet some objective is a …',
+        'A spreadsheet with built-in functions for engineering, statistical and financial '
+        'questions is …',
+        'A report combining text and figures is known as … presentation',
+        'A histogram is similar to a bar chart except that its bars … each other',
+        'The age of an employee is an example of … type of data',
+      ]}],
+      'a': [
+      {'ol': [
+        '**D — rating in a beauty contest** (ranked, non-numeric).',
+        '**C** — a schedule is completed by the *investigator*.',
+        '**B — purposive (judgemental)** sampling needs no frame. (Quota, convenience and '
+        'snowball also need none; of the options listed, purposive is the answer.)',
+        '**C** — a good questionnaire must **not** be lengthy.',
+        '**Sampling frame.**',
+        '**Sample.**',
+        '**Microsoft Excel.**',
+        '**Text** presentation.',
+        '**Touch** (the bars are continuous / adjacent).',
+        '**Continuous numeric** (quantitative continuous) data.'],
+      }]}},
   ]},
  ],
  'formulas': [
@@ -238,6 +461,28 @@ CH = {
          'immediately below the first and above the last, where the frequency is zero. This makes '
          'the area under the polygon equal the area of the histogram.',
     'src': 'Chapter 1.4'},
+   {'q': 'Which of the following is non-numeric ordinal data?',
+    'o': ['Monthly income', 'Price of a commodity', 'Occupation',
+          'Rating in a beauty contest', 'Number of students in a class'],
+    'a': 3,
+    'w': 'A beauty-contest rating puts entrants in rank order but the "values" are not '
+         'measurements — non-numeric and ordinal. Occupation is non-numeric but only nominal; '
+         'the rest are numeric.',
+    'src': 'Chapter 1.6 (study text Q1)'},
+   {'q': 'In statistics, a schedule is a set of questions that is completed by the',
+    'o': ['respondent, unaided', 'investigator or interviewer', 'supervisor after the interview',
+          'data-entry clerk', 'head of the statistics office'],
+    'a': 1,
+    'w': 'A schedule is filled in by the investigator as they put the questions; a '
+         'questionnaire is filled in by the respondent. That is the whole distinction.',
+    'src': 'Chapter 1.6 (study text Q2)'},
+   {'q': 'A list containing every unit in the target population, used as the basis for selecting '
+         'a sample, is called the',
+    'o': ['sampling unit', 'sampling frame', 'sampling fraction', 'census', 'population'],
+    'a': 1,
+    'w': 'The sampling frame is the list; a sampling unit is one member of it; the sampling '
+         'fraction is $n/N$.',
+    'src': 'Chapter 1.6 (study text Q5)'},
   ],
   'theory': [
    {'q': 'Distinguish between primary and secondary data, and describe FOUR methods of collecting '

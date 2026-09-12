@@ -204,20 +204,95 @@ CH = {
       'Cost is not modelled in the basic network; a separate cost-schedule analysis is needed.',
     ]},
   ]},
+
+  {'n': '17.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Network analysis / CPM / PERT** — techniques for planning, scheduling and '
+      'controlling projects.',
+      '**Activity** — a task that consumes time and resources; drawn as an arrow.',
+      '**Event (node)** — the start or finish of one or more activities; drawn as a circle; '
+      'consumes no time.',
+      '**Dummy activity** — a logical link that consumes no time and no resources; a dotted '
+      'arrow; used to show dependency or to keep activities uniquely identified.',
+      '**Preceding / succeeding activities** — those that must finish before / can start after '
+      'a given activity.',
+      '**Path** — a sequence of activities from start to end; its **duration** is the sum of '
+      'its activity times.',
+      '**Critical path** — the path with the **longest** duration; it fixes the shortest time '
+      'to complete the project. (There can be more than one.)',
+      '**Critical activities** — activities on the critical path; any delay to one delays the '
+      'whole project (their float is zero).',
+      '**EST / EFT** — earliest start / finish time of an activity (from the forward pass).',
+      '**LST / LFT** — latest start / finish time without delaying the project (backward '
+      'pass).',
+      '**Float (slack)** — spare time on a non-critical activity.',
+      '**PERT** — network analysis with three time estimates per activity, giving an expected '
+      'duration and a variance.',
+    ]},
+    {'h3': 'A. Forward and backward passes'},
+    {'fbox': {'h': 'Event / activity times', 'rows': [
+      {'lb': 'Forward pass (earliest)',
+       'tex': 'E_j = \\max_{i}\\{E_i + d_{ij}\\} \\qquad EFT = EST + d'},
+      {'lb': 'Backward pass (latest)',
+       'tex': 'L_i = \\min_{j}\\{L_j - d_{ij}\\} \\qquad LST = LFT - d'},
+      {'lb': 'Project duration', 'tex': '= E_{\\text{end}} = \\text{length of the critical '
+              'path}'},
+    ]}},
+    {'h3': 'B. The three floats'},
+    {'fbox': {'h': 'Float', 'rows': [
+      {'lb': 'Total float',
+       'tex': 'TF = LFT - EFT = LST - EST = L_j - E_i - d_{ij}'},
+      {'lb': 'Free float',
+       'tex': 'FF = E_j - E_i - d_{ij} \\quad (\\text{delay without affecting the next '
+              'activity\'s EST})'},
+      {'lb': 'Independent float',
+       'tex': 'IF = E_j - L_i - d_{ij} \\quad (\\text{floor 0; delay affecting nothing '
+              'either side})'},
+    ]}},
+    {'note': 'On the critical path every float is zero. $FF \\le TF$ and $IF \\le FF$.'},
+    {'h3': 'C. PERT with three time estimates'},
+    {'fbox': {'h': 'PERT', 'rows': [
+      {'lb': 'Expected activity time',
+       'tex': 't_e = \\dfrac{a + 4m + b}{6}',
+       'nt': '$a$ = optimistic, $m$ = most likely, $b$ = pessimistic time.'},
+      {'lb': 'Activity variance',
+       'tex': '\\sigma^{2} = \\left(\\dfrac{b - a}{6}\\right)^{2}'},
+      {'lb': 'Project duration', 'tex': 'T_e = \\sum_{\\text{critical}} t_e'},
+      {'lb': 'Project variance / SD',
+       'tex': '\\sigma_p^{2} = \\sum_{\\text{critical}} \\sigma^{2}, \\qquad '
+              '\\sigma_p = \\sqrt{\\sigma_p^{2}}'},
+      {'lb': 'Probability of finishing by a scheduled date $T_s$',
+       'tex': 'z = \\dfrac{T_s - T_e}{\\sigma_p} \\ \\Rightarrow \\ \\text{read } P(Z \\le z) '
+              '\\text{ from the normal table}'},
+    ]}},
+    {'h3': 'D. Crashing (time–cost trade-off)'},
+    {'tex': '\\text{Cost slope} = \\dfrac{\\text{crash cost} - \\text{normal cost}}'
+            '{\\text{normal time} - \\text{crash time}} \\quad (\\text{extra cost per period '
+            'saved; crash the cheapest critical activity first})'},
+  ]},
  ],
  'formulas': [
   {'lb': 'Earliest start (forward pass)',
    'tex': 'ES_j = \\max(ES_i + d_{ij})'},
   {'lb': 'Latest finish (backward pass)',
    'tex': 'LF_i = \\min(LF_j - d_{ij})'},
-  {'lb': 'Total float', 'tex': 'TF = LS - ES = LF - EF'},
-  {'lb': 'Free float', 'tex': 'FF = ES_{\\text{next}} - EF'},
+  {'lb': 'Activity times',
+   'tex': 'EFT = EST + d, \\qquad LST = LFT - d'},
+  {'lb': 'Total float', 'tex': 'TF = LFT - EFT = LST - EST'},
+  {'lb': 'Free float', 'tex': 'FF = E_j - E_i - d_{ij}'},
+  {'lb': 'Independent float', 'tex': 'IF = E_j - L_i - d_{ij} \\ (\\ge 0)'},
   {'lb': 'PERT expected time',
    'tex': 't_e = \\frac{a + 4m + b}{6}'},
-  {'lb': 'PERT variance',
+  {'lb': 'PERT activity variance',
    'tex': '\\sigma^2 = \\left(\\frac{b-a}{6}\\right)^2'},
+  {'lb': 'Project standard deviation',
+   'tex': '\\sigma_p = \\sqrt{\\textstyle\\sum_{\\text{critical}} \\sigma^2}'},
   {'lb': 'Probability of meeting a date',
    'tex': 'z = \\frac{T_s - T_e}{\\sigma_p}'},
+  {'lb': 'Crash cost slope',
+   'tex': '\\frac{\\text{crash cost} - \\text{normal cost}}{\\text{normal time} - '
+          '\\text{crash time}}'},
  ],
  'focus':
    'A regular Section B question, and one of the most reliably scored. The table of activities '

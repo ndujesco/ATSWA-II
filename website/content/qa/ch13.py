@@ -181,6 +181,93 @@ CH = {
                'checked without calculus: $\\frac{1}{2} \\times 20 \\times (100 - 60) '
                '= \\frac{1}{2}(20)(40) = ₦400$ ✓'}]}},
   ]},
+
+  {'n': '13.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Derivative $\\dfrac{dy}{dx}$ (or $f\'(x)$)** — the instantaneous rate of change of $y$ '
+      'with respect to $x$; the gradient of the curve at a point.',
+      '**Differentiation** — the process of finding the derivative.',
+      '**Second derivative $\\dfrac{d^2y}{dx^2}$ (or $f\'\'(x)$)** — the derivative of the '
+      'derivative; measures how the gradient is changing.',
+      '**Turning (stationary) point** — where $\\dfrac{dy}{dx} = 0$: a **maximum**, a '
+      '**minimum**, or a **point of inflexion**.',
+      '**Marginal function** — the derivative of a total function: marginal cost, marginal '
+      'revenue, marginal profit.',
+      '**Elasticity** — the ratio of the proportionate change in one variable to the '
+      'proportionate change in another.',
+      '**Integration (anti-differentiation)** — the reverse of differentiation.',
+      '**Indefinite integral** $\\int f(x)\\,dx$ — a family of functions differing by the '
+      '**constant of integration $c$**.',
+      '**Definite integral** $\\int_a^b f(x)\\,dx$ — a number; the (signed) area under the '
+      'curve between $x = a$ and $x = b$.',
+      '**Consumer surplus / producer surplus** — areas between the demand (or supply) curve '
+      'and the market price.',
+    ]},
+    {'h3': 'A. Rules of differentiation'},
+    {'fbox': {'h': 'Differentiation', 'rows': [
+      {'lb': 'Constant', 'tex': '\\dfrac{d}{dx}(k) = 0'},
+      {'lb': 'Power rule', 'tex': '\\dfrac{d}{dx}(x^{n}) = n x^{n-1}'},
+      {'lb': 'Constant multiple', 'tex': '\\dfrac{d}{dx}(k\\,u) = k\\,\\dfrac{du}{dx}'},
+      {'lb': 'Sum / difference',
+       'tex': '\\dfrac{d}{dx}(u \\pm v) = \\dfrac{du}{dx} \\pm \\dfrac{dv}{dx}'},
+      {'lb': 'Product rule', 'tex': '(uv)\' = u\'v + uv\''},
+      {'lb': 'Quotient rule',
+       'tex': '\\left(\\dfrac{u}{v}\\right)\' = \\dfrac{u\'v - uv\'}{v^{2}}'},
+      {'lb': 'Chain rule',
+       'tex': '\\dfrac{dy}{dx} = \\dfrac{dy}{du}\\cdot\\dfrac{du}{dx}'},
+      {'lb': 'Exponential / log',
+       'tex': '\\dfrac{d}{dx}(e^{x}) = e^{x}, \\qquad \\dfrac{d}{dx}(\\ln x) = \\dfrac{1}{x}'},
+    ]}},
+    {'h3': 'B. Maxima and minima'},
+    {'fbox': {'h': 'Second-derivative test', 'rows': [
+      {'lb': 'Step 1 — stationary points', 'tex': '\\dfrac{dy}{dx} = 0 \\ \\Rightarrow \\ x'},
+      {'lb': 'Step 2 — classify',
+       'tex': '\\dfrac{d^2y}{dx^2} < 0 \\Rightarrow \\text{maximum}; \\quad '
+              '\\dfrac{d^2y}{dx^2} > 0 \\Rightarrow \\text{minimum}; \\quad '
+              '= 0 \\Rightarrow \\text{test further (possible inflexion)}'},
+    ]}},
+    {'h3': 'C. Marginal analysis'},
+    {'fbox': {'h': 'Marginals and optimisation', 'rows': [
+      {'lb': 'Marginal cost', 'tex': 'MC = \\dfrac{d(TC)}{dq}'},
+      {'lb': 'Marginal revenue', 'tex': 'MR = \\dfrac{d(TR)}{dq}'},
+      {'lb': 'Marginal profit', 'tex': 'MP = \\dfrac{d(TP)}{dq} = MR - MC'},
+      {'lb': 'Profit maximised when', 'tex': 'MR = MC \\ \\ (\\text{equivalently } MP = 0)'},
+      {'lb': 'MR from a linear demand $p = a - bq$',
+       'tex': 'TR = pq = aq - bq^{2}, \\quad MR = a - 2bq'},
+      {'lb': 'Average cost', 'tex': 'AC = \\dfrac{TC}{q}'},
+    ]}},
+    {'h3': 'D. Elasticity'},
+    {'fbox': {'h': 'Elasticity', 'rows': [
+      {'lb': 'Point elasticity of $y = f(x)$',
+       'tex': '\\varepsilon = \\dfrac{x}{y}\\cdot\\dfrac{dy}{dx}'},
+      {'lb': 'Price elasticity of demand',
+       'tex': '\\eta = -\\dfrac{p}{q}\\cdot\\dfrac{dq}{dp} '
+              '= -\\dfrac{p}{q} \\div \\dfrac{dp}{dq}'},
+      {'lb': 'Interpretation',
+       'tex': '\\eta > 1 \\text{ elastic}, \\quad \\eta = 1 \\text{ unit elastic}, \\quad '
+              '\\eta < 1 \\text{ inelastic}'},
+    ]}},
+    {'h3': 'E. Integration'},
+    {'fbox': {'h': 'Integration', 'rows': [
+      {'lb': 'Power rule',
+       'tex': '\\int x^{n}\\,dx = \\dfrac{x^{n+1}}{n+1} + c \\quad (n \\neq -1)'},
+      {'lb': 'Constant multiple / sum',
+       'tex': '\\int (a\\,u \\pm b\\,v)\\,dx = a\\!\\int u\\,dx \\pm b\\!\\int v\\,dx'},
+      {'lb': 'Constant', 'tex': '\\int a\\,dx = ax + c'},
+      {'lb': 'Special cases',
+       'tex': '\\int x^{-1}\\,dx = \\ln x + c, \\qquad \\int e^{x}\\,dx = e^{x} + c'},
+      {'lb': 'Definite integral (Fundamental Theorem)',
+       'tex': '\\int_a^b f(x)\\,dx = \\Big[F(x)\\Big]_a^b = F(b) - F(a)',
+       'nt': 'The constant $c$ cancels, so it is omitted for a definite integral.'},
+      {'lb': 'Total from a marginal',
+       'tex': 'TC = \\int MC\\,dq + \\text{(fixed cost)}, \\qquad TR = \\int MR\\,dq'},
+      {'lb': 'Consumer surplus',
+       'tex': 'CS = \\int_0^{q_0} p_d(q)\\,dq - p_0 q_0'},
+      {'lb': 'Producer surplus',
+       'tex': 'PS = p_0 q_0 - \\int_0^{q_0} p_s(q)\\,dq'},
+    ]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Power rule (differentiation)',
@@ -194,12 +281,24 @@ CH = {
    'tex': '\\frac{dy}{dx}=0; \\ \\frac{d^2y}{dx^2}<0 \\text{ max}, \\ >0 \\text{ min}'},
   {'lb': 'Marginal cost', 'tex': 'MC = \\frac{d(TC)}{dq}'},
   {'lb': 'Marginal revenue', 'tex': 'MR = \\frac{d(TR)}{dq}'},
-  {'lb': 'Profit maximisation', 'tex': 'MR = MC'},
+  {'lb': 'Marginal profit', 'tex': 'MP = \\frac{d(TP)}{dq} = MR - MC'},
+  {'lb': 'Profit maximisation', 'tex': 'MR = MC \\ \\ (MP = 0)'},
   {'lb': 'MR from linear demand $p=a-bq$', 'tex': 'MR = a - 2bq'},
+  {'lb': 'Point elasticity', 'tex': '\\varepsilon = \\frac{x}{y}\\cdot\\frac{dy}{dx}'},
+  {'lb': 'Price elasticity of demand',
+   'tex': '\\eta = -\\frac{p}{q}\\cdot\\frac{dq}{dp}'},
   {'lb': 'Power rule (integration)',
-   'tex': '\\int x^n dx = \\frac{x^{n+1}}{n+1} + c'},
+   'tex': '\\int x^n dx = \\frac{x^{n+1}}{n+1} + c \\ (n \\neq -1)'},
+  {'lb': 'Integral of $x^{-1}$ and $e^x$',
+   'tex': '\\int x^{-1}dx = \\ln x + c, \\ \\int e^x dx = e^x + c'},
   {'lb': 'Definite integral',
-   'tex': '\\int_a^b f(x)dx = F(b) - F(a)'},
+   'tex': '\\int_a^b f(x)dx = [F(x)]_a^b = F(b) - F(a)'},
+  {'lb': 'Total from marginal',
+   'tex': 'TC = \\int MC\\,dq + F, \\quad TR = \\int MR\\,dq'},
+  {'lb': 'Consumer surplus',
+   'tex': 'CS = \\int_0^{q_0} p_d(q)\\,dq - p_0 q_0'},
+  {'lb': 'Producer surplus',
+   'tex': 'PS = p_0 q_0 - \\int_0^{q_0} p_s(q)\\,dq'},
  ],
  'focus':
    'Two or three Section A marks on a straightforward derivative or the second-derivative test, '

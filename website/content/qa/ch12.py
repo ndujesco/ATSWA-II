@@ -227,17 +227,111 @@ CH = {
                'reduces the liability in the statement of financial position — a point that '
                'links directly to the lease and loan questions in Financial Accounting.'}]}},
   ]},
+
+  {'n': '12.6', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Sequence (progression)** — an ordered list of numbers; **series** — their sum.',
+      '**Arithmetic progression (AP)** — successive terms differ by a constant **common '
+      'difference $d$**. First term $a$, last term $l$.',
+      '**Geometric progression (GP)** — successive terms are in a constant ratio, the **common '
+      'ratio $r$**.',
+      '**Principal $P$** — the sum invested or borrowed. **Rate $r$** — interest rate per '
+      'period (as a decimal). **$n$** — number of periods. **Amount $A$** — principal plus '
+      'interest.',
+      '**Simple interest** — interest on the original principal only.',
+      '**Compound interest** — interest earns interest ("multi-stage single-period simple '
+      'interest").',
+      '**Nominal rate** — the stated annual rate; **effective (annual) rate** — the rate '
+      'actually earned once compounding within the year is allowed for.',
+      '**Present value (PV)** — the amount now equivalent to a future sum, found by '
+      '*discounting*. **Future value (FV)** — the accumulated amount later.',
+      '**Annuity** — a sequence of equal periodic cash flows. **Ordinary annuity** — paid at '
+      'the *end* of each period; **annuity due** — at the *beginning*; **annuity certain** — '
+      'fixed start and end dates; **perpetuity** — continues indefinitely.',
+      '**Sinking fund** — a series of equal deposits accumulated at compound interest to reach '
+      'a target sum.',
+      '**Amortisation** — repaying a loan by equal instalments, each part interest and part '
+      'capital.',
+      '**Net present value (NPV)** — the present value of all a project\'s cash inflows less '
+      'all its outflows. NPV $> 0$ → accept.',
+      '**Internal rate of return (IRR)** — the discount rate at which NPV $= 0$.',
+      '**Discount factor** — $(1 + r)^{-n}$, the PV of ₦1 receivable in $n$ periods.',
+    ]},
+    {'h3': 'A. Progressions'},
+    {'fbox': {'h': 'Arithmetic progression', 'rows': [
+      {'lb': '$n$-th term', 'tex': 'T_n = a + (n - 1)d'},
+      {'lb': 'Sum of $n$ terms',
+       'tex': 'S_n = \\dfrac{n}{2}\\bigl[2a + (n - 1)d\\bigr] = \\dfrac{n}{2}(a + l)'},
+    ]}},
+    {'fbox': {'h': 'Geometric progression', 'rows': [
+      {'lb': '$n$-th term', 'tex': 'T_n = ar^{\\,n-1}'},
+      {'lb': 'Sum of $n$ terms',
+       'tex': 'S_n = \\dfrac{a(1 - r^{n})}{1 - r} \\ (r < 1) \\quad\\text{or}\\quad '
+              '\\dfrac{a(r^{n} - 1)}{r - 1} \\ (r > 1)'},
+      {'lb': 'Sum to infinity', 'tex': 'S_\\infty = \\dfrac{a}{1 - r} \\quad (|r| < 1)'},
+    ]}},
+    {'h3': 'B. Simple interest'},
+    {'fbox': {'h': 'Simple interest', 'rows': [
+      {'lb': 'Interest', 'tex': 'I = Prn'},
+      {'lb': 'Amount', 'tex': 'A = P(1 + rn)'},
+      {'lb': 'Present value', 'tex': 'P = \\dfrac{A}{1 + rn}'},
+    ]}},
+    {'h3': 'C. Compound interest'},
+    {'fbox': {'h': 'Compound interest', 'rows': [
+      {'lb': 'Amount (annual compounding)', 'tex': 'A = P(1 + r)^{n}'},
+      {'lb': 'Compounding $m$ times a year',
+       'tex': 'A = P\\left(1 + \\dfrac{r}{m}\\right)^{mn}'},
+      {'lb': 'Compound interest earned', 'tex': 'I = A - P = P\\bigl[(1 + r)^{n} - 1\\bigr]'},
+      {'lb': 'Present value', 'tex': 'P = A(1 + r)^{-n} = \\dfrac{A}{(1 + r)^{n}}'},
+      {'lb': 'Effective annual rate',
+       'tex': 'i = \\left(1 + \\dfrac{r}{m}\\right)^{m} - 1'},
+      {'lb': 'Finding $n$', 'tex': 'n = \\dfrac{\\log(A/P)}{\\log(1 + r)}'},
+    ]}},
+    {'h3': 'D. Annuities, perpetuities, sinking funds'},
+    {'fbox': {'h': 'Annuity formulae (ordinary annuity, payment $A$)', 'rows': [
+      {'lb': 'Future value (amount)',
+       'tex': 'S = A\\left[\\dfrac{(1 + r)^{n} - 1}{r}\\right]'},
+      {'lb': 'Present value',
+       'tex': 'PV = A\\left[\\dfrac{1 - (1 + r)^{-n}}{r}\\right]'},
+      {'lb': 'Perpetuity', 'tex': 'PV = \\dfrac{A}{r}'},
+      {'lb': 'Sinking fund deposit (to accumulate $S$)',
+       'tex': 'A = S\\left[\\dfrac{r}{(1 + r)^{n} - 1}\\right]'},
+      {'lb': 'Loan instalment (amortisation of loan $L$)',
+       'tex': 'A = L\\left[\\dfrac{r}{1 - (1 + r)^{-n}}\\right]'},
+      {'lb': 'Annuity due (multiply the ordinary result by $(1+r)$)',
+       'tex': 'PV_{due} = PV_{ordinary}\\,(1 + r)'},
+    ]}},
+    {'h3': 'E. Investment appraisal'},
+    {'fbox': {'h': 'NPV and IRR', 'rows': [
+      {'lb': 'Net present value',
+       'tex': 'NPV = -A_0 + \\sum_{t=1}^{n} \\dfrac{A_t}{(1 + r)^{t}}'},
+      {'lb': 'Decision rule', 'tex': 'NPV > 0 \\Rightarrow \\text{accept}; \\ NPV < 0 '
+              '\\Rightarrow \\text{reject}'},
+      {'lb': 'IRR by linear interpolation',
+       'tex': 'IRR \\approx r_1 + \\dfrac{NPV_1}{NPV_1 - NPV_2}\\,(r_2 - r_1)',
+       'nt': '$r_1$ gives a positive $NPV_1$, $r_2$ a negative $NPV_2$.'},
+    ]}},
+    {'note': 'For a growing/declining cash stream (fixed % change each period) the terms form a '
+             '**GP**; for a fixed-amount change each period they form an **AP**.'},
+  ]},
  ],
  'formulas': [
-  {'lb': 'Simple interest', 'tex': 'I = Prt'},
+  {'lb': 'Simple interest', 'tex': 'I = Prn'},
+  {'lb': 'Simple interest amount', 'tex': 'A = P(1 + rn)'},
+  {'lb': 'Simple interest present value', 'tex': 'P = \\frac{A}{1 + rn}'},
   {'lb': 'Compound amount', 'tex': 'A = P(1+r)^n'},
   {'lb': 'Compounding $m$ times a year',
    'tex': 'A = P\\left(1+\\frac{r}{m}\\right)^{mn}'},
+  {'lb': 'Compound interest earned', 'tex': 'I = P[(1+r)^n - 1]'},
   {'lb': 'Effective annual rate',
    'tex': 'i = \\left(1+\\frac{r}{m}\\right)^{m} - 1'},
-  {'lb': 'Present value', 'tex': 'P = A(1+r)^{-n}'},
-  {'lb': 'AP: sum', 'tex': 'S_n = \\frac{n}{2}[2a + (n-1)d]'},
-  {'lb': 'GP: sum', 'tex': 'S_n = \\frac{a(r^n-1)}{r-1}'},
+  {'lb': 'Present value (compound)', 'tex': 'P = A(1+r)^{-n}'},
+  {'lb': 'Number of periods', 'tex': 'n = \\frac{\\log(A/P)}{\\log(1+r)}'},
+  {'lb': 'AP: $n$-th term', 'tex': 'T_n = a + (n-1)d'},
+  {'lb': 'AP: sum', 'tex': 'S_n = \\frac{n}{2}[2a + (n-1)d] = \\frac{n}{2}(a + l)'},
+  {'lb': 'GP: $n$-th term', 'tex': 'T_n = ar^{\\,n-1}'},
+  {'lb': 'GP: sum', 'tex': 'S_n = \\frac{a(r^n-1)}{r-1} = \\frac{a(1-r^n)}{1-r}'},
   {'lb': 'GP: sum to infinity', 'tex': 'S_\\infty = \\frac{a}{1-r}'},
   {'lb': 'PV of an annuity',
    'tex': 'PV = A\\left[\\frac{1-(1+r)^{-n}}{r}\\right]'},

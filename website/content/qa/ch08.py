@@ -137,18 +137,103 @@ CH = {
                'would **not** be strong enough. The conclusion depends on the significance '
                'level, which is exactly why it must be fixed in advance.'}]}},
   ]},
+
+  {'n': '8.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Hypothesis** — an assumption or guess about a population parameter.',
+      '**Null hypothesis $H_0$** — states there is *no difference* / no effect (e.g. '
+      '$\\mu = \\mu_0$). Always contains "=".',
+      '**Alternative hypothesis $H_1$ (or $H_a$)** — any hypothesis that differs from $H_0$ '
+      '($\\mu \\neq \\mu_0$, $\\mu > \\mu_0$ or $\\mu < \\mu_0$).',
+      '**Parameter** — a numerical property of the *population* ($\\mu$, $\\sigma$, $P_0$). '
+      '**Statistic** — the corresponding quantity computed from the *sample* '
+      '($\\bar{x}$, $s$, $p$).',
+      '**Type I error** — rejecting $H_0$ when it is true. Its probability is $\\alpha$.',
+      '**Type II error** — accepting $H_0$ when it is false. Its probability is $\\beta$.',
+      '**Level of significance $\\alpha$** — the maximum probability of a Type I error the '
+      'investigator will accept; stated *before* testing. Common values 5% (0.05) and 1% '
+      '(0.01). Confidence $= 1 - \\alpha$.',
+      '**Test statistic** — the value computed from the sample ($z_{cal}$ or $t_{cal}$) that is '
+      'compared with the table (critical) value to decide.',
+      '**Critical value / table value** — the value from the $z$ or $t$ table at the chosen '
+      '$\\alpha$; it bounds the critical region.',
+      '**Critical (rejection) region** — the set of test-statistic values, of total area '
+      '$\\alpha$, that lead to rejecting $H_0$.',
+      '**One-tailed (one-sided) test** — $H_1$ is directional ($\\mu > \\mu_0$ *or* '
+      '$\\mu < \\mu_0$); the whole $\\alpha$ is in one tail.',
+      '**Two-tailed (two-sided) test** — $H_1$ is $\\mu \\neq \\mu_0$; $\\alpha$ is split, '
+      '$\\alpha/2$ in each tail.',
+      '**Degrees of freedom $\\nu$** — for the one-sample $t$-test, $\\nu = n - 1$.',
+      '**Large sample** — $n > 30$: use the $z$-test (normal). **Small sample** — $n \\le 30$ '
+      '(study text: $n < 30$): use the $t$-test.',
+      '**Sample proportion** — $p = x/n$, where $x$ items out of $n$ have the attribute; '
+      '$P_0$ is the claimed population proportion.',
+    ]},
+    {'h3': 'The five steps'},
+    {'ol': [
+      'State $H_0$ and $H_1$ and the significance level $\\alpha$.',
+      'Choose the test statistic ($z$ for a large sample or a proportion; $t$, $\\nu = n-1$, '
+      'for a small sample).',
+      'Compute the test statistic from the sample.',
+      'Find the critical value: at $\\alpha$ for a one-tailed test, at $\\alpha/2$ for a '
+      'two-tailed test.',
+      'Decision — see the decision rules below — then state the conclusion in words.',
+    ]},
+    {'h3': 'Decision rules'},
+    {'ul': [
+      'Right one-tailed ($H_1: \\mu > \\mu_0$) — reject $H_0$ if $z_{cal} > z_{tab}$ (or '
+      '$t_{cal} > t_{tab}$).',
+      'Left one-tailed ($H_1: \\mu < \\mu_0$) — reject $H_0$ if $z_{cal} < -z_{tab}$ (or '
+      '$t_{cal} < -t_{tab}$).',
+      'Two-tailed ($H_1: \\mu \\neq \\mu_0$) — reject $H_0$ if $|z_{cal}| > z_{tab}$ (or '
+      '$|t_{cal}| > t_{tab}$).',
+      'Otherwise — do not reject (accept) $H_0$.',
+    ]},
+    {'note': 'Common critical values: two-tailed 5% → **1.96**; one-tailed 5% → **1.645**; '
+             'two-tailed 1% → **2.58**; one-tailed 1% → **2.33**.'},
+    {'h3': 'A. Test of a single population mean'},
+    {'fbox': {'h': 'Test statistic — mean', 'rows': [
+      {'lb': 'Large sample ($n > 30$), $z$-test',
+       'tex': 'z_{cal} = \\dfrac{\\bar{x} - \\mu_0}{\\sigma/\\sqrt{n}}',
+       'nt': 'If $\\sigma$ is unknown, use $s$ (large sample).'},
+      {'lb': 'Small sample ($n \\le 30$), $t$-test, $\\nu = n - 1$',
+       'tex': 't_{cal} = \\dfrac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}'},
+      {'lb': 'Sample mean', 'tex': '\\bar{x} = \\dfrac{\\sum x}{n}'},
+      {'lb': 'Sample variance (with $n - 1$)',
+       'tex': 's^2 = \\dfrac{\\sum (x - \\bar{x})^2}{n - 1}'},
+      {'lb': 'Standard error of the mean',
+       'tex': '\\text{SE}(\\bar{x}) = \\dfrac{\\sigma}{\\sqrt{n}} \\ \\text{ or } \\ '
+              '\\dfrac{s}{\\sqrt{n}}'},
+    ]}},
+    {'h3': 'B. Test of a single population proportion'},
+    {'fbox': {'h': 'Test statistic — proportion', 'rows': [
+      {'lb': 'Sample proportion', 'tex': 'p = \\dfrac{x}{n}'},
+      {'lb': 'Hypotheses', 'tex': 'H_0: P_0 = p \\qquad H_1: P_0 \\neq p \\ (\\text{or } >, <)'},
+      {'lb': '$z$-test (using $P_0$ in the standard error)',
+       'tex': 'z_{cal} = \\dfrac{p - P_0}{\\sqrt{\\dfrac{P_0(1 - P_0)}{n}}}'},
+      {'lb': 'alternative form (using $p$ in the standard error)',
+       'tex': 'z_{cal} = \\dfrac{p - P_0}{\\sqrt{\\dfrac{p(1 - p)}{n}}}'},
+    ]}},
+    {'h3': 'C. Confidence interval for a mean'},
+    {'tex': '\\bar{x} \\pm z_{\\alpha/2}\\,\\dfrac{\\sigma}{\\sqrt{n}} \\qquad '
+            '(\\text{small sample: } \\bar{x} \\pm t_{\\alpha/2, \\, n-1}\\,\\dfrac{s}{\\sqrt{n}})'},
+  ]},
  ],
  'formulas': [
-  {'lb': 'Test statistic, mean, large sample',
-   'tex': 'z = \\frac{\\bar{x} - \\mu}{\\sigma/\\sqrt{n}}'},
-  {'lb': 'Test statistic, mean, small sample',
-   'tex': 't = \\frac{\\bar{x} - \\mu}{s/\\sqrt{n}}, \\ \\nu = n-1'},
-  {'lb': 'Test statistic, proportion',
-   'tex': 'z = \\frac{p - \\pi}{\\sqrt{\\pi(1-\\pi)/n}}'},
+  {'lb': 'Sample mean', 'tex': '\\bar{x} = \\frac{\\sum x}{n}'},
+  {'lb': 'Sample variance ($n-1$)', 'tex': 's^2 = \\frac{\\sum (x - \\bar{x})^2}{n - 1}'},
+  {'lb': 'Test statistic — mean, large sample ($z$)',
+   'tex': 'z_{cal} = \\frac{\\bar{x} - \\mu_0}{\\sigma/\\sqrt{n}}'},
+  {'lb': 'Test statistic — mean, small sample ($t$, $\\nu = n-1$)',
+   'tex': 't_{cal} = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}'},
+  {'lb': 'Sample proportion', 'tex': 'p = \\frac{x}{n}'},
+  {'lb': 'Test statistic — proportion',
+   'tex': 'z_{cal} = \\frac{p - P_0}{\\sqrt{P_0(1-P_0)/n}}'},
   {'lb': 'Standard error of the mean',
    'tex': '\\text{SE}(\\bar{x}) = \\frac{\\sigma}{\\sqrt{n}}'},
   {'lb': 'Confidence interval for a mean',
-   'tex': '\\bar{x} \\pm z \\frac{\\sigma}{\\sqrt{n}}'},
+   'tex': '\\bar{x} \\pm z_{\\alpha/2}\\,\\frac{\\sigma}{\\sqrt{n}}'},
  ],
  'focus':
    'One or two Section A marks on the meaning of a Type I or Type II error, or on identifying '

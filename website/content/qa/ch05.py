@@ -156,20 +156,124 @@ CH = {
           'it just December?" It strips out the regular seasonal pattern so that consecutive '
           'periods can be compared directly.'},
   ]},
+
+  {'n': '5.5', 't': 'Worksheet summary — definitions and every formula', 'b': [
+    {'h3': 'Definitions'},
+    {'ul': [
+      '**Time series** — data collected successively at regular intervals (daily, weekly, '
+      'monthly, quarterly, yearly).',
+      '**Time-plot (historigram)** — graph of the series values against time.',
+      '**Secular trend (T)** — the long-term underlying movement (upward, downward or flat); '
+      'may be linear or non-linear.',
+      '**Seasonal variation (S)** — a pattern that repeats within a period of **one year or '
+      'less** (months, quarters).',
+      '**Cyclical variation (C)** — a wave-like fluctuation about the trend recurring over '
+      '**more than one year** (business cycles, typically 4–7 years); less predictable.',
+      '**Irregular / random variation (I)** — residual variation from sporadic, unpredictable '
+      'events (floods, strikes, wars); what is left after T, S and C.',
+      '**Moving average** — a trend estimate obtained by averaging successive overlapping '
+      'groups of values (smoothing).',
+      '**Moving total** — the numerator of a moving average, written against the middle item.',
+      '**Deseasonalised (seasonally adjusted) series** — the series with the seasonal component '
+      'removed.',
+    ]},
+    {'h3': 'Time series models (name + formula)'},
+    {'ul': [
+      'Additive model — $Y = T + S + C + I$',
+      'Multiplicative model — $Y = T \\times S \\times C \\times I$',
+      'Exponential trend — $Y = ab^{x}$',
+    ]},
+    {'h3': 'A. Trend by moving average'},
+    {'fbox': {'h': 'Moving average of order n', 'rows': [
+      {'lb': 'General term',
+       'tex': '\\text{MA}_k = \\dfrac{Y_k + Y_{k+1} + \\dots + Y_{k+n-1}}{n}',
+       'nt': 'Written against the **middle** item of the n values.'},
+      {'lb': 'Even order — centre with a second (2-point) moving total',
+       'tex': 'T = \\dfrac{\\text{(1st } n\\text{-total)} + \\text{(2nd } n\\text{-total)}}{2n}',
+       'nt': 'e.g. a 4-quarter series: pair consecutive 4-quarter totals, then divide by 8.'},
+    ]}},
+    {'note': 'Odd order (3, 5, 7): apply the general term directly. Even order (4, 12): take '
+             'n-period moving totals, add them in overlapping pairs, then divide by $2n$ so the '
+             'value sits against a real time point. Monthly data → order 12; quarterly → order 4.'},
+    {'h3': 'B. Trend by least squares'},
+    {'p': 'Take $x$ (or $t$) = the time period and $y$ = the series value, and fit $y = a + bx$.'},
+    {'fbox': {'h': 'Least squares trend — direct', 'rows': [
+      {'lb': 'Normal equations',
+       'tex': '\\sum y = an + b\\sum x, \\qquad \\sum xy = a\\sum x + b\\sum x^2'},
+      {'lb': 'Slope',
+       'tex': 'b = \\dfrac{n\\sum xy - \\sum x \\sum y}{n\\sum x^2 - (\\sum x)^2}'},
+      {'lb': 'Intercept', 'tex': 'a = \\bar{y} - b\\bar{x}'},
+    ]}},
+    {'fbox': {'h': 'Least squares trend — coded time (\\(\\sum t = 0\\))', 'rows': [
+      {'lb': 'Coding', 'tex': 't_i = x_i - x_m',
+       'nt': '$x_m$ = median of the time periods. Then $\\sum t = 0$.'},
+      {'lb': 'Slope', 'tex': 'b = \\dfrac{\\sum ty}{\\sum t^2}'},
+      {'lb': 'Intercept', 'tex': 'a = \\dfrac{\\sum y}{n} = \\bar{Y}'},
+      {'lb': 'Trend', 'tex': 'T = a + bt'},
+    ]}},
+    {'h3': 'C. Exponential trend by least squares'},
+    {'fbox': {'h': 'Fitting Y = ab^x', 'rows': [
+      {'lb': 'Linearise', 'tex': '\\log Y = \\log a + x\\log b'},
+      {'lb': 'Let $z = \\log Y$, $A = \\log a$, $B = \\log b$', 'tex': 'z = A + Bx'},
+      {'lb': 'Normal equations',
+       'tex': '\\sum z = nA + B\\sum x, \\qquad \\sum zx = A\\sum x + B\\sum x^2'},
+      {'lb': 'Recover constants', 'tex': 'a = \\operatorname{antilog}(A), \\quad '
+              'b = \\operatorname{antilog}(B)'},
+    ]}},
+    {'h3': 'D. Seasonal variation and seasonal index'},
+    {'fbox': {'h': 'Seasonal component', 'rows': [
+      {'lb': 'Additive model', 'tex': 'S = Y - T \\quad (\\text{assuming } C + I = 0)'},
+      {'lb': 'Multiplicative model', 'tex': 'S = \\dfrac{Y}{T} \\quad (\\text{assuming } '
+              'C \\times I = 1)'},
+      {'lb': 'Seasonal index (S.I.)',
+       'tex': '\\text{S.I. for a season} = \\text{average of that season\'s } S \\text{ values}'},
+    ]}},
+    {'fbox': {'h': 'Adjusting the seasonal indices', 'rows': [
+      {'lb': 'Additive — indices must sum to 0',
+       'tex': '\\text{adjustment} = \\dfrac{0 - \\sum \\text{S.I.}}{\\text{number of seasons}}, '
+              '\\quad \\text{add to each S.I.}'},
+      {'lb': 'Multiplicative — indices must sum to the number of seasons',
+       'tex': '\\text{adjustment} = \\dfrac{k - \\sum \\text{S.I.}}{k}, \\quad '
+              'k = \\text{number of seasons (4 quarterly, 2 half-yearly)}',
+       'nt': 'If expressed as percentages the target sum is $100k$ (400 quarterly, 200 '
+             'half-yearly).'},
+    ]}},
+    {'h3': 'E. Forecasting'},
+    {'fbox': {'h': 'Forecast', 'rows': [
+      {'lb': 'Additive', 'tex': 'F = T + S'},
+      {'lb': 'Multiplicative', 'tex': 'F = T \\times S \\quad \\text{or} \\quad '
+              'F = T \\times \\dfrac{\\text{S.I.}\\%}{100}'},
+    ]}},
+    {'note': 'Project the trend $T$ for the required future period using the fitted line (with '
+             '$x$/$t$ counted from the same origin), then apply the **adjusted** seasonal index '
+             'for that season.'},
+  ]},
  ],
  'formulas': [
   {'lb': 'Additive model', 'tex': 'Y = T + S + C + I'},
   {'lb': 'Multiplicative model', 'tex': 'Y = T \\times S \\times C \\times I'},
-  {'lb': 'Moving average of order $k$',
-   'tex': '\\text{MA} = \\frac{\\sum_{i=1}^{k} Y_i}{k}'},
-  {'lb': 'Centred four-quarter moving average',
-   'tex': 'T = \\frac{\\text{Total}_1 + \\text{Total}_2}{8}'},
-  {'lb': 'Trend by least squares',
-   'tex': 'b = \\frac{n\\sum ty - \\sum t\\sum y}{n\\sum t^2 - (\\sum t)^2}, \\quad '
-          'a = \\bar{y} - b\\bar{t}'},
-  {'lb': 'Seasonal variation (additive)', 'tex': 'S = Y - T'},
-  {'lb': 'Seasonal index (multiplicative)', 'tex': 'S = \\frac{Y}{T} \\times 100'},
-  {'lb': 'Forecast', 'tex': 'F = T + S \\quad\\text{or}\\quad F = T \\times \\frac{S}{100}'},
+  {'lb': 'Exponential trend', 'tex': 'Y = ab^{x}'},
+  {'lb': 'Moving average of order $n$',
+   'tex': '\\text{MA} = \\frac{Y_k + Y_{k+1} + \\dots + Y_{k+n-1}}{n}'},
+  {'lb': 'Centred even-order moving average',
+   'tex': 'T = \\frac{(\\text{1st } n\\text{-total}) + (\\text{2nd } n\\text{-total})}{2n}'},
+  {'lb': 'Trend by least squares — normal equations',
+   'tex': '\\sum y = an + b\\sum x, \\quad \\sum xy = a\\sum x + b\\sum x^2'},
+  {'lb': 'Trend by least squares — solved',
+   'tex': 'b = \\frac{n\\sum xy - \\sum x\\sum y}{n\\sum x^2 - (\\sum x)^2}, \\quad '
+          'a = \\bar{y} - b\\bar{x}'},
+  {'lb': 'Trend by least squares — coded time ($\\sum t = 0$)',
+   'tex': 't = x - x_m, \\quad b = \\frac{\\sum ty}{\\sum t^2}, \\quad a = \\bar{y}'},
+  {'lb': 'Exponential trend — linearised',
+   'tex': '\\log Y = \\log a + x\\log b; \\ \\ a = \\operatorname{antilog}A, \\ '
+          'b = \\operatorname{antilog}B'},
+  {'lb': 'Seasonal variation — additive', 'tex': 'S = Y - T'},
+  {'lb': 'Seasonal variation — multiplicative', 'tex': 'S = \\frac{Y}{T}'},
+  {'lb': 'Seasonal index adjustment — additive',
+   'tex': '\\text{adj} = \\frac{0 - \\sum \\text{S.I.}}{k}'},
+  {'lb': 'Seasonal index adjustment — multiplicative',
+   'tex': '\\text{adj} = \\frac{k - \\sum \\text{S.I.}}{k}'},
+  {'lb': 'Forecast', 'tex': 'F = T + S \\quad\\text{or}\\quad F = T \\times \\frac{\\text{S.I.}\\%}{100}'},
  ],
  'focus':
    'A very frequent Section B question — usually a centred four-quarter moving average, then '

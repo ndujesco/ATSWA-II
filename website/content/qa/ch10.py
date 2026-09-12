@@ -128,16 +128,76 @@ CH = {
                'single figure by the three numbers already placed, removes every chance of '
                'double counting.'}]}},
   ]},
+
+  {'n': '10.4', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Set** — a collection of well-defined objects. Denoted by a capital letter.',
+      '**Element / member** — an object in a set; denoted by a small letter. $b \\in B$ = "$b$ '
+      'belongs to $B$"; $b \\notin B$ = "$b$ does not belong to $B$".',
+      '**Roster (listing) method** — specify a set by listing its elements: $A = \\{1,2,3\\}$.',
+      '**Property (rule) method** — specify a set by a common property: $A = \\{x : x \\text{ '
+      'is an integer}\\}$.',
+      '**Finite set** — countable number of elements. **Infinite set** — uncountable.',
+      '**Cardinality $n(A)$** — the number of elements in $A$.',
+      '**Empty / null set $\\varnothing$ or $\\{\\}$** — a set with no elements.',
+      '**Universal set $U$** — the set of all objects under consideration; drawn as a rectangle.',
+      '**Subset $A \\subseteq B$** — every element of $A$ is in $B$. **Superset $B \\supseteq '
+      'A$**. **Proper subset $A \\subset B$** — $A \\subseteq B$ and $A \\neq B$.',
+      '**Equal sets** — $A = B$ when each is a subset of the other (same elements).',
+      '**Union $A \\cup B$** — elements in $A$ **or** $B$ **or both**.',
+      '**Intersection $A \\cap B$** — elements in **both** $A$ and $B$.',
+      '**Complement $A\'$ (or $A^{c}$)** — elements in $U$ but **not** in $A$.',
+      '**"Only" / difference $A \\cap B\'$ ($A$ only)** — in $A$ but not in $B$.',
+      '**Disjoint sets** — $A \\cap B = \\varnothing$.',
+      '**Euler–Venn diagram** — pictorial representation of sets: circles for the sets inside a '
+      'rectangle for $U$.',
+    ]},
+    {'h3': 'A. Counting formulae'},
+    {'fbox': {'h': 'Set-size identities', 'rows': [
+      {'lb': 'Complement', 'tex': "n(A') = n(U) - n(A)"},
+      {'lb': 'Union of two sets',
+       'tex': 'n(A \\cup B) = n(A) + n(B) - n(A \\cap B)'},
+      {'lb': '"A only"', 'tex': "n(A \\cap B') = n(A) - n(A \\cap B)"},
+      {'lb': 'Neither', 'tex': "n(A' \\cap B') = n(U) - n(A \\cup B)"},
+      {'lb': 'Union of three sets',
+       'tex': 'n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) '
+              '- n(B \\cap C) + n(A \\cap B \\cap C)'},
+      {'lb': '"Exactly the region" (centre-out)',
+       'tex': 'n(A \\cap B \\text{ only}) = n(A \\cap B) - n(A \\cap B \\cap C)'},
+      {'lb': '"At least one"',
+       'tex': 'n(A \\cup B \\cup C) = n(U) - n(\\text{none})'},
+    ]}},
+    {'h3': 'B. Laws of set algebra (name + statement)'},
+    {'ul': [
+      'Commutative — $A \\cup B = B \\cup A$; $A \\cap B = B \\cap A$',
+      'Associative — $(A \\cup B) \\cup C = A \\cup (B \\cup C)$; likewise for $\\cap$',
+      'Distributive — $A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)$; '
+      '$A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$',
+      'Identity — $A \\cup \\varnothing = A$; $A \\cap U = A$',
+      'Complement — $A \\cup A\' = U$; $A \\cap A\' = \\varnothing$; $(A\')\' = A$',
+      "De Morgan's laws — $(A \\cup B)' = A' \\cap B'$; $(A \\cap B)' = A' \\cup B'$",
+      'Idempotent — $A \\cup A = A$; $A \\cap A = A$',
+    ]},
+    {'h3': 'C. Subsets'},
+    {'tex': '\\text{number of subsets of a set with } n \\text{ elements} = 2^{n} '
+            '\\quad (\\text{proper subsets: } 2^{n} - 1)'},
+  ]},
  ],
  'formulas': [
+  {'lb': 'Complement', 'tex': "n(A') = n(U) - n(A)"},
   {'lb': 'Union of two sets',
    'tex': 'n(A \\cup B) = n(A) + n(B) - n(A \\cap B)'},
+  {'lb': '"A only"', 'tex': "n(A \\cap B') = n(A) - n(A \\cap B)"},
+  {'lb': 'Neither of two', 'tex': "n(A' \\cap B') = n(U) - n(A \\cup B)"},
   {'lb': 'Union of three sets',
-   'tex': 'n(A\\cup B\\cup C) = \\sum n(A) - \\sum n(A\\cap B) + n(A\\cap B\\cap C)'},
-  {'lb': 'Complement', 'tex': "n(A') = n(U) - n(A)"},
+   'tex': 'n(A\\cup B\\cup C) = n(A)+n(B)+n(C) - n(A\\cap B) - n(A\\cap C) - n(B\\cap C) '
+          '+ n(A\\cap B\\cap C)'},
   {'lb': "De Morgan (union)", 'tex': "(A \\cup B)' = A' \\cap B'"},
   {'lb': "De Morgan (intersection)", 'tex': "(A \\cap B)' = A' \\cup B'"},
-  {'lb': 'Number of subsets', 'tex': '2^n'},
+  {'lb': 'Distributive law',
+   'tex': 'A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)'},
+  {'lb': 'Number of subsets', 'tex': '2^{n} \\ \\ (\\text{proper: } 2^{n}-1)'},
  ],
  'focus':
    'One Section A mark most diets — a two-set counting problem, the number of subsets, or the '

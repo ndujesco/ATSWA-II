@@ -136,19 +136,108 @@ CH = {
           'assumption is that the relative movements within each series are correct even though '
           'the bases differ.'},
   ]},
+
+  {'n': '6.5', 't': 'Worksheet summary — definitions and every formula', 'b': [
+    {'h3': 'Definitions'},
+    {'ul': [
+      '**Index number** — a statistical measure showing the change in a variable, or a group of '
+      'variables, relative to time, geographical location or another characteristic (Spiegel).',
+      '**Base year** — the reference period other periods are compared with; should be '
+      'economically stable and not too distant. Its index is 100.',
+      '**Price relative** — the ratio of a single commodity\'s current-year price to its '
+      'base-year price, $\\times 100$.',
+      '**Price index** — a measure of the change in the *general* price level of a group of '
+      'commodities.',
+      '**Weights** — the relative importance attached to each item.',
+      '**Unweighted index** — equal importance to every item. **Weighted index** — items '
+      'weighted by quantity (or value).',
+      '**Deflating** — dividing a money value series by a price index to express it in real '
+      '(constant-price) terms.',
+      '**Splicing** — joining two index series that have different base years.',
+    ]},
+    {'h3': 'Uses of index numbers'},
+    {'ul': [
+      'deflate a value series into real / physical terms;',
+      'act as a business / economic barometer;',
+      'show the trend of business or the economy;',
+      'forecast, from a series of indices;',
+      'assess the purchasing power of money;',
+      'compare the standard of living across areas or countries.',
+    ]},
+    {'h3': 'Problems in constructing an index number'},
+    {'ul': [
+      'defining the purpose of the index;',
+      'selecting the commodities / items (type, quantity, quality);',
+      'selecting a reliable source of data;',
+      'choosing the method of collecting data;',
+      'choosing the base year;',
+      'choosing the method of combining the data (which dictates the formula);',
+      'choosing the weights.',
+    ]},
+    {'h3': 'Notation'},
+    {'p': '$p_0$, $q_0$ = base-year price and quantity; $p_1$ (or $p_i$, $p_t$), $q_1$ = '
+          'current-year price and quantity; $n$ = number of commodities; $\\sum$ over the '
+          'commodities.'},
+    {'h3': 'A. Unweighted indices (type + formula)'},
+    {'fbox': {'h': 'Unweighted price indices', 'rows': [
+      {'lb': 'Simple price relative (SPRI)', 'tex': '\\dfrac{p_1}{p_0} \\times 100'},
+      {'lb': 'Simple aggregate price index (SAPI)',
+       'tex': '\\dfrac{\\sum p_1}{\\sum p_0} \\times 100'},
+      {'lb': 'Simple average of relatives (SARPI)',
+       'tex': '\\dfrac{\\sum \\left(\\dfrac{p_1}{p_0} \\times 100\\right)}{n}'},
+    ]}},
+    {'h3': 'B. Weighted aggregative indices (type + formula)'},
+    {'fbox': {'h': 'Weighted price indices', 'rows': [
+      {'lb': 'Laspeyres (base-year quantities; upward bias)',
+       'tex': 'P_L = \\dfrac{\\sum p_1 q_0}{\\sum p_0 q_0} \\times 100'},
+      {'lb': 'Paasche (current-year quantities; downward bias)',
+       'tex': 'P_P = \\dfrac{\\sum p_1 q_1}{\\sum p_0 q_1} \\times 100'},
+      {'lb': "Fisher's ideal (geometric mean of L and P)",
+       'tex': 'P_F = \\sqrt{P_L \\times P_P} = \\sqrt{\\dfrac{\\sum p_1 q_0}{\\sum p_0 q_0} '
+              '\\times \\dfrac{\\sum p_1 q_1}{\\sum p_0 q_1}} \\times 100'},
+      {'lb': 'Marshall–Edgeworth (average of base & current quantities)',
+       'tex': 'P_{ME} = \\dfrac{\\sum p_1(q_0 + q_1)}{\\sum p_0(q_0 + q_1)} \\times 100 '
+              '= \\dfrac{\\sum p_1 q_0 + \\sum p_1 q_1}{\\sum p_0 q_0 + \\sum p_0 q_1} '
+              '\\times 100'},
+    ]}},
+    {'note': 'The column set for a weighted-index question: $p_0, q_0, p_1, q_1, \\; p_0 q_0, '
+             '\\; p_1 q_0, \\; p_1 q_1, \\; p_0 q_1$. Every weighted index above is a ratio of '
+             'two of those column totals.'},
+    {'h3': 'C. A quantity index'},
+    {'p': 'Swap the roles of $p$ and $q$: e.g. Laspeyres quantity index '
+          '$= \\dfrac{\\sum q_1 p_0}{\\sum q_0 p_0} \\times 100$.'},
+    {'h3': 'D. Using an index'},
+    {'fbox': {'h': 'Deflation and base change', 'rows': [
+      {'lb': 'Real (deflated) value',
+       'tex': '\\text{Real} = \\dfrac{\\text{Money value}}{\\text{Price index}} \\times 100'},
+      {'lb': 'Purchasing power of the naira',
+       'tex': '\\text{PP} = \\dfrac{100}{\\text{Price index}}'},
+      {'lb': 'Change of base / splicing',
+       'tex': '\\text{New index} = \\dfrac{\\text{Old index}}'
+              '{\\text{Old index of the new base year}} \\times 100'},
+    ]}},
+  ]},
  ],
  'formulas': [
-  {'lb': 'Price relative', 'tex': '\\frac{p_1}{p_0} \\times 100'},
-  {'lb': 'Laspeyres price index',
+  {'lb': 'Simple price relative (SPRI)', 'tex': '\\frac{p_1}{p_0} \\times 100'},
+  {'lb': 'Simple aggregate price index (SAPI)',
+   'tex': '\\frac{\\sum p_1}{\\sum p_0} \\times 100'},
+  {'lb': 'Simple average of relatives (SARPI)',
+   'tex': '\\frac{\\sum \\left(\\frac{p_1}{p_0}\\times 100\\right)}{n}'},
+  {'lb': 'Laspeyres price index (base-year quantities)',
    'tex': 'P_L = \\frac{\\sum p_1 q_0}{\\sum p_0 q_0} \\times 100'},
-  {'lb': 'Paasche price index',
+  {'lb': 'Paasche price index (current-year quantities)',
    'tex': 'P_P = \\frac{\\sum p_1 q_1}{\\sum p_0 q_1} \\times 100'},
+  {'lb': "Fisher's ideal index", 'tex': 'P_F = \\sqrt{P_L \\times P_P}'},
   {'lb': 'Marshall–Edgeworth index',
    'tex': 'P_{ME} = \\frac{\\sum p_1(q_0 + q_1)}{\\sum p_0(q_0 + q_1)} \\times 100'},
-  {'lb': "Fisher's ideal index", 'tex': 'P_F = \\sqrt{P_L \\times P_P}'},
+  {'lb': 'Laspeyres quantity index',
+   'tex': '\\frac{\\sum q_1 p_0}{\\sum q_0 p_0} \\times 100'},
   {'lb': 'Deflating a money series',
-   'tex': '\\text{Real} = \\frac{\\text{Money}}{\\text{Index}} \\times 100'},
-  {'lb': 'Changing the base',
+   'tex': '\\text{Real} = \\frac{\\text{Money}}{\\text{Price index}} \\times 100'},
+  {'lb': 'Purchasing power of money',
+   'tex': '\\text{PP} = \\frac{100}{\\text{Price index}}'},
+  {'lb': 'Changing the base / splicing',
    'tex': '\\text{New} = \\frac{\\text{Old index}}{\\text{Old index at new base}} \\times 100'},
  ],
  'focus':

@@ -152,6 +152,58 @@ CH = {
             'handles the quantifiable, and the manager weighs that against the factors no model '
             'contains.'},
   ]},
+
+  {'n': '14.6', 't': 'Worksheet summary — definitions and key lists', 'b': [
+    {'note': 'This chapter has no formulae of its own; it is defined vocabulary and lists.'},
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Operations research (OR)** — the application of scientific method (especially '
+      'mathematical modelling) to management problems, to help decision-making. Also called '
+      '*operational research* / *management science*.',
+      '**Model** — a simplified representation of a real system.',
+      '**Iconic model** — a physical scaled likeness (a prototype, a scale building).',
+      '**Analogue model** — one property represents another (a graph, a hydraulic model of an '
+      'economy).',
+      '**Symbolic (mathematical) model** — variables and equations (an LP, an EOQ formula).',
+      '**Deterministic model** — no probabilities; inputs known with certainty.',
+      '**Stochastic (probabilistic) model** — contains random variables.',
+      '**Decision variables** — what the decision-maker controls. **Objective function** — the '
+      'quantity to be maximised or minimised. **Constraints** — the limits on the variables. '
+      '**Parameters** — fixed known values.',
+      '**Feasible solution** — one satisfying all constraints. **Optimal solution** — the '
+      'feasible solution with the best objective value.',
+    ]},
+    {'h3': 'Stages of an OR study'},
+    {'ol': [
+      'Formulate the problem (define objective, variables, constraints).',
+      'Construct the model.',
+      'Derive a solution from the model.',
+      'Test the model and the solution (validation).',
+      'Establish controls over the solution.',
+      'Implement the solution.',
+    ]},
+    {'h3': 'The principal OR techniques (technique → problem)'},
+    {'ul': [
+      'Linear programming — allocating scarce resources to maximise profit / minimise cost',
+      'Transportation & assignment — least-cost distribution / one-to-one allocation',
+      'Network analysis (CPM / PERT) — project planning, scheduling and control',
+      'Inventory control (EOQ / EBQ) — how much to order and when',
+      'Replacement analysis — when to replace equipment',
+      'Queuing (waiting-line) theory — service-level vs cost of waiting',
+      'Simulation — modelling complex stochastic systems numerically',
+      'Decision theory — choosing under risk / uncertainty (expected value, decision trees)',
+      'Game theory — competitive decision situations',
+      'Dynamic programming — multi-stage decision problems',
+    ]},
+    {'h3': 'Benefits and limitations (one line each)'},
+    {'ul': [
+      '**Benefits** — structured analysis; better use of resources; quantified comparison of '
+      'options; improved decisions; identifies the critical factors.',
+      '**Limitations** — a model only captures the quantifiable; data may be poor or costly; '
+      'expensive and time-consuming; assumptions may not hold; does not replace managerial '
+      'judgement, only informs it.',
+    ]},
+  ]},
  ],
  'formulas': [],
  'focus':

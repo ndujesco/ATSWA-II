@@ -211,6 +211,67 @@ CH = {
                'common in assignment problems and are a legitimate answer — say so, and let '
                'non-cost factors such as skill or preference decide between them.'}]}},
   ]},
+
+  {'n': '19.4', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Transportation problem** — distribute a homogeneous product from $m$ **sources** '
+      '(supplies $a_i$) to $n$ **destinations** (demands $b_j$) at least total cost $c_{ij}$ '
+      'per unit.',
+      '**Balanced problem** — total supply equals total demand. Otherwise **unbalanced** — '
+      'add a **dummy** source or destination (zero costs) to absorb the difference.',
+      '**Occupied (basic) cell** — a route carrying a positive shipment $x_{ij}$.',
+      '**Degeneracy** — fewer than $m + n - 1$ occupied cells; add a zero allocation '
+      '(epsilon) to proceed.',
+      '**Initial basic feasible solution** — a starting allocation, from NWCR, LCM or VAM.',
+      '**North-West Corner Rule (NWCR)** — allocate starting from the top-left cell; ignores '
+      'costs.',
+      '**Least-Cost Method (LCM)** — allocate to the lowest-cost cell available, repeatedly.',
+      "**Vogel's Approximation Method (VAM)** — allocate using row/column **penalties** "
+      "(difference between the two lowest costs); usually closest to optimal.",
+      '**Optimality test (MODI / stepping-stone)** — check whether any empty cell would '
+      'reduce cost.',
+      '**Assignment problem** — a special transportation problem: $n$ jobs to $n$ people, one '
+      'each; solved by the **Hungarian method**.',
+    ]},
+    {'h3': 'A. Transportation'},
+    {'fbox': {'h': 'Transportation model', 'rows': [
+      {'lb': 'Objective',
+       'tex': '\\text{Min } Z = \\sum_{i=1}^{m}\\sum_{j=1}^{n} c_{ij}\\,x_{ij}'},
+      {'lb': 'Supply / demand constraints',
+       'tex': '\\sum_{j} x_{ij} = a_i, \\qquad \\sum_{i} x_{ij} = b_j, \\qquad x_{ij} \\ge 0'},
+      {'lb': 'Balanced condition',
+       'tex': '\\sum_{i} a_i = \\sum_{j} b_j'},
+      {'lb': 'Non-degeneracy (number of occupied cells)',
+       'tex': '\\text{occupied cells} = m + n - 1'},
+      {'lb': 'VAM penalty for a row / column',
+       'tex': '\\text{penalty} = c_{(2)} - c_{(1)} \\ (\\text{2nd-lowest minus lowest cost})'},
+      {'lb': 'MODI: dual values on occupied cells',
+       'tex': 'u_i + v_j = c_{ij}'},
+      {'lb': 'MODI: opportunity cost of an empty cell',
+       'tex': '\\Delta_{ij} = c_{ij} - (u_i + v_j)'},
+      {'lb': 'Optimality',
+       'tex': '\\text{optimal when every } \\Delta_{ij} \\ge 0; \\text{ otherwise improve '
+              'along a closed loop}'},
+    ]}},
+    {'h3': 'B. Assignment (Hungarian method)'},
+    {'ol': [
+      '**Row reduction** — subtract each row\'s minimum from that row.',
+      '**Column reduction** — subtract each column\'s minimum from that column.',
+      'Cover all zeros with the **minimum number of lines**. If the number of lines $= n$, an '
+      'optimal assignment exists among the zeros.',
+      'If fewer than $n$ lines: subtract the smallest **uncovered** value from all uncovered '
+      'entries, add it to entries at line **intersections**, and repeat step 3.',
+      'Make the assignment on the zeros (one per row and column). Total cost is read from the '
+      'original matrix.',
+    ]},
+    {'fbox': {'h': 'Assignment adjustments', 'rows': [
+      {'lb': 'Unbalanced', 'tex': '\\text{add a dummy row / column of zeros}'},
+      {'lb': 'Maximisation → minimisation',
+       'tex': "c'_{ij} = c_{\\max} - c_{ij} \\quad (\\text{then minimise; read the total "
+              "from the original matrix})"},
+    ]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Balanced condition',
@@ -221,6 +282,10 @@ CH = {
    'tex': '\\text{Occupied cells} = m + n - 1'},
   {'lb': 'Vogel penalty',
    'tex': '\\text{Penalty} = c_{(2)} - c_{(1)}'},
+  {'lb': 'MODI dual values (occupied cells)',
+   'tex': 'u_i + v_j = c_{ij}'},
+  {'lb': 'MODI opportunity cost (empty cell)',
+   'tex': '\\Delta_{ij} = c_{ij} - (u_i + v_j) \\ \\ (\\text{optimal when all } \\ge 0)'},
   {'lb': 'Assignment: conversion to minimisation',
    'tex': "c'_{ij} = c_{\\max} - c_{ij}"},
  ],

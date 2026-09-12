@@ -88,8 +88,10 @@ CH = {
             '$L = 29.5$, $CF = 13$, $f_m = 15$, $c = 10$.'},
       {'tex': '\\text{Median} = 29.5 + \\left(\\frac{25 - 13}{15}\\right)(10) '
               '= 29.5 + \\frac{120}{15} = 29.5 + 8 = 37.5'},
-      {'warn': 'Use the lower **boundary** (29.5), not the lower limit (30). Using 30 shifts every '
-               'answer by half a unit, and the marker will spot it immediately.'}]}},
+      {'warn': 'Use the lower **boundary** (29.5), not the lower limit (30). Here the classes '
+               'have a 1-unit gap (10–19, 20–29, …) so the boundary is half a unit below the '
+               'limit; if the classes had been written 10–20, 20–30, … the limit *would* be the '
+               'boundary. §2.5 sets out exactly when the two differ.'}]}},
   ]},
 
   {'n': '2.3', 't': 'The mode', 'b': [
@@ -160,6 +162,177 @@ CH = {
       'a': [
       {'tex': '\\frac{70}{100} \\times 50 = 35'},
       {'p': 'Trace across from a cumulative frequency of **35**.'}]}},
+  ]},
+
+  {'n': '2.5', 't': 'Class limits vs class boundaries — get this right for the median and mode',
+    'b': [
+    {'p': 'The median, mode and quantile formulas for grouped data all begin with **$L$ = the '
+          'lower class *boundary*** of the relevant class, and use **$c$ = the class *width* '
+          'measured between boundaries**. Nearly every lost mark on these formulas comes from '
+          'putting the **stated lower limit** in for $L$, or the **apparent width** in for $c$. '
+          'The two look interchangeable in some questions and are not in others — here is why, '
+          'and how to be safe every time.'},
+    {'fbox': {'h': 'The rule', 'rows': [
+      {'lb': 'In the median / mode / $Q$ / $D$ / $P$ formula',
+       'tex': 'L = \\text{lower class \\textbf{boundary}}, \\qquad c = \\text{upper boundary} '
+              '- \\text{lower boundary}'},
+      {'lb': 'Lower boundary of a class',
+       'tex': 'L = \\frac{\\text{lower limit of this class} + \\text{upper limit of the '
+              'previous class}}{2}',
+       'nt': 'Equivalently: lower limit − ½(gap to the previous class). The lower boundary of a '
+             'class is the upper boundary of the class before it.'},
+    ]}},
+    {'h3': 'Why it seems "interchangeable"'},
+    {'table': {'cap': 'Same frequencies, two ways of writing the classes', 'align': 'llll',
+      'head': ['Classes as written', 'Gap between classes', 'Lower boundary of "the third class"',
+               'Does $L$ = lower limit?'], 'rows': [
+      ['**Continuous:** 0–10, 10–20, 20–30, …', 'none', '20 (same as the lower limit)',
+       '**Yes** — safe to use the limit'],
+      ['**Continuous:** 2–4, 4–6, 6–8, …', 'none', '6 (same as the lower limit)',
+       '**Yes** — safe to use the limit'],
+      ['**Gapped:** 1–10, 11–20, 21–30, …', '1 unit', '$(10+11)/2 = 20.5$',
+       '**No** — limit 21 is wrong; use 20.5'],
+      ['**Gapped:** 2–4, 5–7, 8–10, …', '1 unit', '$(7+8)/2 = 7.5$',
+       '**No** — limit 8 is wrong; use 7.5'],
+    ]}},
+    {'key': 'When classes are written **continuously** (no gap — 0–10, 10–20 or 2–4, 4–6), the '
+            'lower **limit already equals** the lower boundary, so students who "use the limit" '
+            'still get the right answer and never notice the distinction. The moment the classes '
+            'have a **gap** (1–10, 11–20 or 2–4, 5–7), the boundary sits **halfway across the '
+            'gap** and using the stated limit throws every answer out by **half the gap** '
+            '(0.5 for the usual 1-unit gap). The class **width $c$** is affected too: for gapped '
+            'classes like 5–7, 8–10 the width is $10.5 - 7.5 = 3$, **not** $10 - 8 = 2$.'},
+    {'note': 'The **mean is not affected** by this at all. The class mark it uses is '
+             '$\\frac{\\text{lower limit} + \\text{upper limit}}{2}$, which is identical to '
+             '$\\frac{\\text{lower boundary} + \\text{upper boundary}}{2}$ — the two half-unit '
+             'shifts cancel. So limits-vs-boundaries only ever bites on the **median, mode and '
+             'quantiles**.'},
+    {'h3': 'Worked contrast'},
+    {'eg': {'t': 'The same data, continuous vs gapped', 'open': True, 'q': [
+      {'p': 'A distribution has frequencies **3, 4, 6, 7, 2** across five equal classes. Find '
+            'the mode by formula when the classes are written (a) continuously as 2–4, 4–6, 6–8, '
+            '8–10, 10–12, and (b) with a 1-unit gap as 2–4, 5–7, 8–10, 11–13, 14–16.'}],
+      'a': [
+      {'p': 'Modal class is the fourth one either way ($f = 7$). $\\Delta_1 = 7 - 6 = 1$, '
+            '$\\Delta_2 = 7 - 2 = 5$.'},
+      {'h4': '(a) Continuous — lower limit = lower boundary'},
+      {'p': '$L = 8$, $c = 2$ (both boundary-to-boundary):'},
+      {'tex': '\\text{Mode} = 8 + \\left(\\frac{1}{1+5}\\right)(2) = 8 + 0.33 = 8.33'},
+      {'h4': '(b) Gapped — lower boundary is 7.5, not 8'},
+      {'p': 'Boundaries of the fourth class (8–10) are $7.5$ and $10.5$, so $L = 7.5$ and '
+            '$c = 10.5 - 7.5 = 3$:'},
+      {'tex': '\\text{Mode} = 7.5 + \\left(\\frac{1}{1+5}\\right)(3) = 7.5 + 0.5 = 8.0'},
+      {'note': 'Different class *labels* for the same data legitimately give slightly different '
+               'formula answers, because the interval is genuinely 2 wide in (a) and 3 wide in '
+               '(b). What is **not** allowed is mixing them — using $L = 8$ with $c = 3$, or '
+               '$L = 8.5$ with anything.'}]}},
+    {'h3': 'Notes on the study text\'s worked examples'},
+    {'ul': [
+      '**Examples 2.5–2.9 (mean)** use continuous classes (0–10, 10–20, …) so class mark = '
+      'lower limit + 5; boundaries never arise. Example 2.6 uses gapped classes (1–10, 11–20, '
+      '…) and correctly takes the class mark as $(1+10)/2 = 5.5$, $(11+20)/2 = 15.5$, … — '
+      'limits averaged, which is right for the mean.',
+      '**Example 2.17 (mode & median by formula, continuous classes 2–4, 4–6, 6–8, 8–10, '
+      '10–12)** — correctly uses $L_{mo} = 8$, $L_{me} = 6$, $c = 2$, giving Mode = 8.33 and '
+      'Median = 7.33. Correct, because the classes touch.',
+      '**Example 2.18 (gapped classes)** — the study text writes the modal/median class as '
+      '"8–10" and then uses **$L = 8.5$**. That is wrong: the lower boundary of the class 8–10 '
+      '(neighbours 5–7 and 11–13) is **$7.5$**. With the correct $L = 7.5$ and $c = 3$: '
+      'Mode $= 7.5 + (2/6)\\times 3 = 8.5$ and Median $= 7.5 + \\frac{10-7}{6}\\times 3 = 9.0$ '
+      '— which agree with the graphical answers the study text itself gets for the same-shaped '
+      'data ($\\approx 8.5$ and $\\approx 9.0$). The printed formula answers (Mode 9.5, Median '
+      '10) are each **exactly 1.0 too high**, the size of the mistake in $L$ ($8.5 - 7.5$).',
+      '**Example 2.19 (quartiles etc., gapped classes 0–2, 3–5, 6–8, 9–11, 12–14)** — this one '
+      'is done **correctly**: $L_1 = 2.5$ for class 3–5, $L_7 = 5.5$ for class 6–8, '
+      '$L_{20} = 2.5$, all proper lower boundaries, with $c = 3$. Use this example as your '
+      'model, not Example 2.18.',
+    ]},
+  ]},
+
+  {'n': '2.6', 't': 'Easy-to-miss points, and end-of-chapter questions', 'b': [
+    {'h3': 'Points that quietly lose marks'},
+    {'ul': [
+      '**Locating the median/quantile class** — scan the **cumulative** frequency column for '
+      'the first value that reaches $N/2$ (or $kN/4$, $kN/10$, $kN/100$). Do **not** pick the '
+      'class with the largest frequency — that is the *modal* class.',
+      '**Position formula differs by data type** — ungrouped median position is '
+      '$\\frac{n+1}{2}$; grouped median position is $\\frac{N}{2}$ (no "+1"). Quartiles/'
+      'deciles/percentiles for grouped data use $\\frac{kN}{4}$, $\\frac{kN}{10}$, '
+      '$\\frac{kN}{100}$ — using $\\frac{N}{2}$ to find a quartile is a common slip.',
+      '**$\\Delta_1$ and $\\Delta_2$ are *differences*** — modal frequency minus the '
+      'frequency before, and minus the frequency after — not the neighbouring frequencies '
+      'themselves.',
+      '**$\\sum f_{me}$ in the median formula is the cumulative frequency of all classes '
+      '*before* the median class**, not including it.',
+      '**Multiply the whole bracket by $c$** — in the step-deviation mean and in every '
+      'median/mode/quantile formula, $c$ multiplies the entire correction term, not just part '
+      'of it.',
+      '**Assumed-mean and step-deviation methods are exact**, not approximations — they give '
+      'the identical answer to the direct method (Examples 2.7–2.9 all return 8.9 bags / 21.75 '
+      'years).',
+      '**Units** — the mean, median and mode carry the **same unit as the data** (bags, litres, '
+      'years, kg).',
+      '**A mean can be an "impossible" value** — Example 2.3 gives 2.6061 students. That is a '
+      'recognised shortcoming of the mean, not an error.',
+      '**Even $n$, ungrouped median** — average the two middle values (Example 2.12: 6.5th '
+      'position → mean of the 6th and 7th values $= (3+4)/2 = 3.5$).',
+      '**Empirical (skewness) relationship** — $\\text{Mean} - \\text{Mode} = 3(\\text{Mean} - '
+      '\\text{Median})$, i.e. $\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}$. Holds '
+      'approximately for a moderately skewed distribution.',
+      '**Skew direction** — right- (positively) skewed: $\\text{Mean} > \\text{Median} > '
+      '\\text{Mode}$; left- (negatively) skewed: $\\text{Mean} < \\text{Median} < '
+      '\\text{Mode}$; symmetrical/normal: all three coincide.',
+      '**Which graph gives which** — the **mode** is estimated from a **histogram** (diagonals '
+      'across the modal bar); the **median, quartiles, deciles and percentiles** are estimated '
+      'from an **ogive**. An ogive cannot give the mode.',
+      '**$Q_2 = D_5 = P_{50} = $ the median**; $Q_1 = P_{25}$, $Q_3 = P_{75}$, $D_k = P_{10k}$.',
+      '**$HM < GM < \\bar{x}$** for positive values that are not all equal; equal only when '
+      'every value is the same.',
+      '**"Measures of location" = "measures of central tendency" = "measures of centre"**, and '
+      'the study text also lumps the **measures of partition** (quantiles) under the same '
+      'heading even though a quartile is not a measure of *central* tendency.',
+    ]},
+    {'h3': 'End-of-chapter questions (study text)'},
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'The mean of 2, 4, 6, 8, 10 is (A) 4  (B) 5  (C) 6  (D) 7  (E) 8',
+        'Which of the following is **not** a measure of central tendency? (A) mean  (B) mode  '
+        '(C) median  (D) decile  (E) 2nd quartile',
+        'Which of the following is **not** a measure of partition? (A) median  (B) mode  '
+        '(C) percentile  (D) quantiles  (E) deciles',
+        'Which formula is used to compute a quartile? '
+        '(A) $L_1 + \\frac{\\frac{N}{2} - \\sum f_1}{f_1}\\,c$  '
+        '(B) $L_1 + \\frac{\\frac{3N}{4} - \\sum f_1}{f_1}\\,c$  '
+        '(C) $L_1 + \\frac{\\frac{N}{4} - \\sum f_1}{f_1}\\,c$  '
+        '(D) $L_1 + \\frac{\\frac{N}{10} - \\sum f_1}{f_1}\\,c$  '
+        '(E) $L_1 + \\frac{\\frac{N}{100} - \\sum f_1}{f_1}\\,c$',
+        'In the graphical method of obtaining the quartiles, which diagram is used? (A) bar '
+        'chart  (B) histogram  (C) pie chart  (D) ogive  (E) component bar chart',
+        'For the data 6, 3, 8, 8, 5 — calculate the arithmetic mean.',
+        'For the same data, determine the median.',
+        'For the same data, determine the mode.',
+        'Find the sum of the mode and the mean.',
+        'Find the difference between the median and the mean.',
+      ]}],
+      'a': [
+      {'ol': [
+        '**C — 6.** $\\frac{2+4+6+8+10}{5} = \\frac{30}{5} = 6$.',
+        '**D — decile.** A decile is a measure of *partition*, not of central tendency. (The '
+        '2nd quartile is the median, which *is* a central measure.)',
+        '**B — mode.** The mode is a measure of central tendency; the quartiles, deciles and '
+        'percentiles (collectively *quantiles*) are the measures of partition. The median is '
+        'both.',
+        '**C** — a quartile uses $\\frac{kN}{4}$ in the numerator; here $Q_1$ uses '
+        '$\\frac{N}{4}$.',
+        '**D — ogive.** Quartiles, like the median, are read from the cumulative frequency '
+        'curve.',
+        '**Mean = 6.** $\\frac{6+3+8+8+5}{5} = \\frac{30}{5} = 6$.',
+        '**Median = 6.** Ordered: 3, 5, **6**, 8, 8.',
+        '**Mode = 8** (occurs twice).',
+        '**14.** Mode 8 + Mean 6.',
+        '**0.** Median 6 − Mean 6.'],
+      }]}},
   ]},
  ],
  'formulas': [
@@ -234,6 +407,26 @@ CH = {
     'w': 'The harmonic mean is smallest, the arithmetic mean largest, with the geometric mean '
          'between them. Equality holds only when every value is the same.',
     'src': 'Chapter 2.1'},
+   {'q': 'A grouped distribution has classes 5 – 9, 10 – 14, 15 – 19, … The lower class '
+         'boundary of the class 15 – 19, for use in the median and mode formulas, is',
+    'o': ['15', '14.5', '15.5', '14', '17'],
+    'a': 1,
+    'w': 'The classes have a 1-unit gap (9 to 10, 14 to 15), so the boundary is half a unit '
+         'below the stated lower limit: $(14 + 15)/2 = 14.5$. The class width $c$ is '
+         '$19.5 - 14.5 = 5$.',
+    'src': 'Chapter 2.5'},
+   {'q': 'Which of the following is NOT a measure of partition?',
+    'o': ['Median', 'Mode', 'Quartile', 'Decile', 'Percentile'],
+    'a': 1,
+    'w': 'The measures of partition (quantiles) are the quartiles, deciles and percentiles; the '
+         'median is the middle quantile. The mode is a measure of central tendency only.',
+    'src': 'Chapter 2.6 (study text Q3)'},
+   {'q': 'The quartiles of a grouped distribution are estimated graphically from a(n)',
+    'o': ['histogram', 'bar chart', 'ogive', 'pie chart', 'frequency polygon'],
+    'a': 2,
+    'w': 'The ogive (cumulative frequency curve) gives the median and all quantiles. The '
+         'histogram gives the mode.',
+    'src': 'Chapter 2.6 (study text Q5)'},
   ],
   'theory': [
    {'q': 'State THREE advantages and THREE disadvantages of the arithmetic mean as a measure of '

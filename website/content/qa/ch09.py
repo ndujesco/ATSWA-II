@@ -134,10 +134,105 @@ CH = {
       {'tex': '\\text{Loss on selling price} = \\frac{10{,}000}{70{,}000} \\times 100 '
               '= 14.29\\%'}]}},
   ]},
+
+  {'n': '9.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'note': 'The study text works **profit % and loss % on cost price** throughout (not on '
+             'sales). "Mark-up on cost" in §9.1 is the same thing as the study text\'s '
+             '"profit %"; "margin" is the sales-based version this chapter adds for the '
+             'inventory questions of Financial Accounting.'},
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Cost price (CP)** — the price the buyer pays to acquire the item. Made up of **fixed '
+      'cost** (constant) and **variable cost** (varies with output / other factors).',
+      '**Selling price (SP)** — the price at which the item is actually sold; $= \\text{CP} + '
+      '\\text{target gross profit}$.',
+      '**Profit / gain** — the excess of SP over CP ($\\text{SP} > \\text{CP}$).',
+      '**Loss** — the shortfall of SP below CP ($\\text{SP} < \\text{CP}$).',
+      '**Profit % / loss %** — profit or loss as a percentage **of cost price**.',
+      '**Marked price (MP)** — the price labelled/quoted on the product; also called *market '
+      'price, retail price, list price*. Discount is calculated on this. Set at a percentage '
+      'above cost.',
+      '**Discount** — a rebate off the marked price to attract customers or clear old stock; '
+      'the price after discount **is** the selling price.',
+      '**Discount %** — discount as a percentage of the marked price.',
+      '**Mark-up** — gross profit as a percentage of **cost** (this chapter, §9.1).',
+      '**Margin** — gross profit as a percentage of **selling price** (this chapter, §9.1).',
+      '**Trade discount** — a reduction off list price for the trade, deducted *before* '
+      'invoicing. **Cash (settlement) discount** — a reduction for prompt payment, on the '
+      'invoiced amount.',
+    ]},
+    {'h3': 'A. Profit and loss (study text — all on cost price)'},
+    {'fbox': {'h': 'Profit / loss', 'rows': [
+      {'lb': 'Profit', 'tex': '\\text{Profit} = \\text{SP} - \\text{CP} \\quad (\\text{SP} > '
+              '\\text{CP})'},
+      {'lb': 'Loss', 'tex': '\\text{Loss} = \\text{CP} - \\text{SP} \\quad (\\text{CP} > '
+              '\\text{SP})'},
+      {'lb': 'Profit percentage',
+       'tex': '\\text{Profit\\%} = \\dfrac{\\text{SP} - \\text{CP}}{\\text{CP}} \\times 100 '
+              '= \\dfrac{\\text{Profit}}{\\text{CP}} \\times 100'},
+      {'lb': 'Loss percentage',
+       'tex': '\\text{Loss\\%} = \\dfrac{\\text{CP} - \\text{SP}}{\\text{CP}} \\times 100 '
+              '= \\dfrac{\\text{Loss}}{\\text{CP}} \\times 100'},
+      {'lb': 'SP from CP and profit $x\\%$',
+       'tex': '\\text{SP} = \\dfrac{(100 + x)}{100} \\times \\text{CP}'},
+      {'lb': 'SP from CP and loss $x\\%$',
+       'tex': '\\text{SP} = \\dfrac{(100 - x)}{100} \\times \\text{CP}'},
+      {'lb': 'CP from SP and profit $x\\%$',
+       'tex': '\\text{CP} = \\dfrac{100}{100 + x} \\times \\text{SP}'},
+      {'lb': 'CP from SP and loss $x\\%$',
+       'tex': '\\text{CP} = \\dfrac{100}{100 - x} \\times \\text{SP}'},
+    ]}},
+    {'h3': 'B. Discount and marked price'},
+    {'fbox': {'h': 'Discount / marked price', 'rows': [
+      {'lb': 'Discount from a rate', 'tex': '\\text{Discount} = \\text{Discount\\%} \\times '
+              '\\text{MP}'},
+      {'lb': 'Discount from prices', 'tex': '\\text{Discount} = \\text{MP} - \\text{SP}'},
+      {'lb': 'Discount percentage',
+       'tex': '\\text{Discount\\%} = \\dfrac{\\text{Discount}}{\\text{MP}} \\times 100'},
+      {'lb': 'The key identity', 'tex': '\\text{MP} = \\text{SP} + \\text{Discount}'},
+      {'lb': 'SP after a discount rate $d\\%$',
+       'tex': '\\text{SP} = \\text{MP}\\,(1 - d) = \\dfrac{(100 - d)}{100} \\times \\text{MP}'},
+      {'lb': 'MP from SP and discount rate $d\\%$',
+       'tex': '\\text{MP} = \\dfrac{\\text{SP}}{1 - d}'},
+      {'lb': 'MP giving profit $x\\%$ **and** discount $d\\%$ on cost $C$',
+       'tex': '\\text{MP} = \\dfrac{C\\,(1 + \\tfrac{x}{100})}{1 - \\tfrac{d}{100}} '
+              '\\quad \\left(\\text{since } \\text{SP} = C(1+\\tfrac{x}{100}) = '
+              '\\text{MP}(1-\\tfrac{d}{100})\\right)'},
+    ]}},
+    {'h3': 'C. Mark-up and margin (§9.1)'},
+    {'fbox': {'h': 'Mark-up / margin', 'rows': [
+      {'lb': 'Mark-up (on cost)',
+       'tex': 'm = \\dfrac{\\text{Gross profit}}{\\text{Cost}}'},
+      {'lb': 'Margin (on sales)',
+       'tex': 'g = \\dfrac{\\text{Gross profit}}{\\text{Sales}}'},
+      {'lb': 'Mark-up → margin', 'tex': 'g = \\dfrac{m}{1 + m}'},
+      {'lb': 'Margin → mark-up', 'tex': 'm = \\dfrac{g}{1 - g}'},
+      {'lb': 'Selling price from cost', 'tex': '\\text{SP} = \\text{Cost}\\,(1 + m)'},
+      {'lb': 'Cost from selling price', 'tex': '\\text{Cost} = \\text{SP}\\,(1 - g)'},
+      {'lb': 'Cost of sales identity',
+       'tex': '\\text{Opening inventory} + \\text{Purchases} - \\text{Closing inventory} '
+              '= \\text{Cost of sales}'},
+    ]}},
+  ]},
  ],
  'formulas': [
-  {'lb': 'Mark-up', 'tex': 'm = \\frac{\\text{GP}}{\\text{Cost}}'},
-  {'lb': 'Margin', 'tex': 'g = \\frac{\\text{GP}}{\\text{Sales}}'},
+  {'lb': 'Profit', 'tex': '\\text{Profit} = \\text{SP} - \\text{CP}'},
+  {'lb': 'Loss', 'tex': '\\text{Loss} = \\text{CP} - \\text{SP}'},
+  {'lb': 'Profit % (on cost)',
+   'tex': '\\text{Profit\\%} = \\frac{\\text{SP} - \\text{CP}}{\\text{CP}} \\times 100'},
+  {'lb': 'Loss % (on cost)',
+   'tex': '\\text{Loss\\%} = \\frac{\\text{CP} - \\text{SP}}{\\text{CP}} \\times 100'},
+  {'lb': 'SP given CP and profit $x\\%$', 'tex': '\\text{SP} = \\frac{100 + x}{100}\\,\\text{CP}'},
+  {'lb': 'SP given CP and loss $x\\%$', 'tex': '\\text{SP} = \\frac{100 - x}{100}\\,\\text{CP}'},
+  {'lb': 'Discount from rate', 'tex': '\\text{Discount} = \\text{Discount\\%} \\times \\text{MP}'},
+  {'lb': 'Discount from prices', 'tex': '\\text{Discount} = \\text{MP} - \\text{SP}'},
+  {'lb': 'Discount %',
+   'tex': '\\text{Discount\\%} = \\frac{\\text{Discount}}{\\text{MP}} \\times 100'},
+  {'lb': 'Marked price identity', 'tex': '\\text{MP} = \\text{SP} + \\text{Discount}'},
+  {'lb': 'SP after discount $d\\%$', 'tex': '\\text{SP} = \\text{MP}\\,(1 - d)'},
+  {'lb': 'MP from SP and discount $d\\%$', 'tex': '\\text{MP} = \\frac{\\text{SP}}{1 - d}'},
+  {'lb': 'Mark-up (on cost)', 'tex': 'm = \\frac{\\text{GP}}{\\text{Cost}}'},
+  {'lb': 'Margin (on sales)', 'tex': 'g = \\frac{\\text{GP}}{\\text{Sales}}'},
   {'lb': 'Mark-up to margin', 'tex': 'g = \\frac{m}{1+m}'},
   {'lb': 'Margin to mark-up', 'tex': 'm = \\frac{g}{1-g}'},
   {'lb': 'Selling price from cost', 'tex': 'S = C(1 + m)'},

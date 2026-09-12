@@ -168,19 +168,126 @@ CH = {
                'while Bowley\'s uses only the middle half. The **sign** is what matters, and here '
                'they all agree.'}]}},
   ]},
+
+  {'n': '3.7', 't': 'Worksheet summary — definitions and every formula', 'b': [
+    {'h3': 'Definitions'},
+    {'ul': [
+      '**Measure of variation / dispersion / spread** — the degree to which numerical data '
+      'spread about an average value.',
+      '**Range** — highest value minus lowest value.',
+      '**Mean deviation** — arithmetic mean of the *absolute* deviations from the mean.',
+      '**Variance** — mean of the squared deviations from the mean.',
+      '**Standard deviation** — the (positive) square root of the variance; same units as the '
+      'data.',
+      '**Quartile deviation / semi-interquartile range (SIR)** — half the interquartile range '
+      '$Q_3 - Q_1$.',
+      '**Coefficient of variation (CV)** — standard deviation as a percentage of the mean; '
+      'dimensionless; used to compare the spread of two data sets. *Smaller CV → higher '
+      'precision / better reliability.*',
+      '**Skewness** — the degree of asymmetry of a frequency curve. Zero for a symmetrical / '
+      'normal distribution; positive → mean > median > mode; negative → mean < median < mode.',
+      '**Population** measures use $\\mu$ and divide by $N$; **sample** measures use $\\bar{x}$ '
+      'and (in the study text) divide by $n$.',
+    ]},
+    {'h3': 'Range'},
+    {'fbox': {'h': 'Range', 'rows': [
+      {'lb': 'Ungrouped', 'tex': 'R = x_{\\max} - x_{\\min}'},
+      {'lb': 'Grouped', 'tex': 'R = (\\text{upper boundary of last class}) - '
+              '(\\text{lower boundary of first class})',
+       'nt': 'The study text also accepts (upper limit of last class) − (lower limit of first '
+             'class).'},
+    ]}},
+    {'h3': 'Mean deviation'},
+    {'fbox': {'h': 'Mean deviation', 'rows': [
+      {'lb': 'Ungrouped', 'tex': 'MD = \\frac{\\sum |x_i - \\bar{x}|}{n} = \\frac{\\sum |d_i|}{n}'},
+      {'lb': 'Grouped', 'tex': 'MD = \\frac{\\sum f|x - \\bar{x}|}{\\sum f} '
+              '= \\frac{\\sum f|d|}{\\sum f}',
+       'nt': '$d_i = x_i - \\bar{x}$; $x$ is the class mark for grouped data.'},
+    ]}},
+    {'h3': 'Variance and standard deviation'},
+    {'fbox': {'h': 'Definitional formulae', 'rows': [
+      {'lb': 'Population SD, ungrouped',
+       'tex': '\\sigma = \\sqrt{\\dfrac{\\sum (x - \\mu)^2}{N}}, \\qquad \\mu = \\frac{\\sum x}{N}'},
+      {'lb': 'Sample SD, ungrouped',
+       'tex': 's = \\sqrt{\\dfrac{\\sum (x - \\bar{x})^2}{n}}, \\qquad \\bar{x} = \\frac{\\sum x}{n}'},
+      {'lb': 'Population SD, grouped',
+       'tex': '\\sigma = \\sqrt{\\dfrac{\\sum f(x - \\mu)^2}{\\sum f}}'},
+      {'lb': 'Sample SD, grouped',
+       'tex': 's = \\sqrt{\\dfrac{\\sum f(x - \\bar{x})^2}{\\sum f}}'},
+    ]}},
+    {'fbox': {'h': 'Short-cut (working) formulae — ungrouped', 'rows': [
+      {'lb': 'Form 1', 'tex': 's^2 = \\dfrac{\\sum (x - \\bar{x})^2}{n}'},
+      {'lb': 'Form 2', 'tex': 's^2 = \\dfrac{\\sum x^2 - n\\bar{x}^2}{n}'},
+      {'lb': 'Form 3',
+       'tex': 's^2 = \\dfrac{\\sum x^2 - \\dfrac{(\\sum x)^2}{n}}{n} '
+              '= \\dfrac{\\sum x^2}{n} - \\left(\\dfrac{\\sum x}{n}\\right)^2'},
+    ]}},
+    {'fbox': {'h': 'Short-cut (working) formulae — grouped', 'rows': [
+      {'lb': 'Form 1', 'tex': 's^2 = \\dfrac{\\sum f(x - \\bar{x})^2}{\\sum f}'},
+      {'lb': 'Form 2', 'tex': 's^2 = \\dfrac{\\sum fx^2 - (\\sum f)\\bar{x}^2}{\\sum f}'},
+      {'lb': 'Form 3',
+       'tex': 's^2 = \\dfrac{\\sum fx^2 - \\dfrac{(\\sum fx)^2}{\\sum f}}{\\sum f} '
+              '= \\dfrac{\\sum fx^2}{\\sum f} - \\left(\\dfrac{\\sum fx}{\\sum f}\\right)^2'},
+      {'lb': 'then', 'tex': 's = \\sqrt{s^2}'},
+    ]}},
+    {'note': 'The column set for a grouped SD question is $f$, $x$ (class mark), $fx$, $x^2$, '
+             '$fx^2$ (and $cf$ if quartiles are also wanted). Compute $\\bar{x} = \\sum fx / '
+             '\\sum f$ first.'},
+    {'h3': 'Quartile deviation'},
+    {'fbox': {'h': 'Semi-interquartile range', 'rows': [
+      {'lb': 'Interquartile range', 'tex': 'IQR = Q_3 - Q_1'},
+      {'lb': 'Quartile deviation (SIR)', 'tex': 'QD = \\dfrac{Q_3 - Q_1}{2}'},
+      {'lb': 'Quartile (grouped), from Chapter 2',
+       'tex': 'Q_i = L + \\left(\\dfrac{\\frac{iN}{4} - \\sum f_b}{f_Q}\\right) c',
+       'nt': '$L$ = lower **boundary** of the $Q_i$ class; $\\sum f_b$ = cumulative frequency '
+             'before it; $f_Q$ = its frequency; $c$ = its width.'},
+    ]}},
+    {'h3': 'Coefficient of variation'},
+    {'tex': 'CV = \\dfrac{\\text{SD}}{\\text{Mean}} \\times 100\\% '
+            '= \\dfrac{s}{\\bar{x}} \\times 100\\%'},
+    {'h3': 'Coefficient of skewness'},
+    {'fbox': {'h': 'Skewness', 'rows': [
+      {'lb': 'Pearson, first coefficient',
+       'tex': 'SK = \\dfrac{\\bar{x} - \\text{Mode}}{s}'},
+      {'lb': 'Pearson, second coefficient',
+       'tex': 'SK = \\dfrac{3(\\bar{x} - \\text{Median})}{s}'},
+      {'lb': 'Bowley (quartile) coefficient',
+       'tex': 'SK_B = \\dfrac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}',
+       'nt': '$Q_2$ = median. Lies between −1 and +1.'},
+    ]}},
+    {'note': 'Comparing two distributions: the one with the **larger absolute** coefficient of '
+             'skewness is "more skewed"; the one with the **smaller CV** is more '
+             'consistent / reliable.'},
+  ]},
  ],
  'formulas': [
-  {'lb': 'Range', 'tex': 'R = x_{\\max} - x_{\\min}'},
-  {'lb': 'Quartile deviation', 'tex': 'QD = \\frac{Q_3 - Q_1}{2}'},
-  {'lb': 'Mean deviation', 'tex': 'MD = \\frac{\\sum f|x - \\bar{x}|}{\\sum f}'},
-  {'lb': 'Variance (working formula)',
-   'tex': '\\sigma^2 = \\frac{\\sum fx^2}{\\sum f} - \\left(\\frac{\\sum fx}{\\sum f}\\right)^2'},
-  {'lb': 'Standard deviation', 'tex': '\\sigma = \\sqrt{\\sigma^2}'},
+  {'lb': 'Range (ungrouped)', 'tex': 'R = x_{\\max} - x_{\\min}'},
+  {'lb': 'Range (grouped)',
+   'tex': 'R = \\text{upper boundary of last class} - \\text{lower boundary of first class}'},
+  {'lb': 'Mean deviation (ungrouped)',
+   'tex': 'MD = \\frac{\\sum |x - \\bar{x}|}{n}'},
+  {'lb': 'Mean deviation (grouped)', 'tex': 'MD = \\frac{\\sum f|x - \\bar{x}|}{\\sum f}'},
+  {'lb': 'Variance — definition (ungrouped)',
+   'tex': '\\sigma^2 = \\frac{\\sum (x - \\mu)^2}{N}'},
+  {'lb': 'Variance — short cut (ungrouped)',
+   'tex': 's^2 = \\frac{\\sum x^2}{n} - \\left(\\frac{\\sum x}{n}\\right)^2 '
+          '= \\frac{\\sum x^2 - n\\bar{x}^2}{n}'},
+  {'lb': 'Variance — definition (grouped)',
+   'tex': '\\sigma^2 = \\frac{\\sum f(x - \\mu)^2}{\\sum f}'},
+  {'lb': 'Variance — short cut (grouped)',
+   'tex': 's^2 = \\frac{\\sum fx^2}{\\sum f} - \\left(\\frac{\\sum fx}{\\sum f}\\right)^2'},
+  {'lb': 'Standard deviation', 'tex': 's = \\sqrt{s^2}'},
+  {'lb': 'Interquartile range', 'tex': 'IQR = Q_3 - Q_1'},
+  {'lb': 'Quartile deviation / semi-interquartile range',
+   'tex': 'QD = \\frac{Q_3 - Q_1}{2}'},
+  {'lb': 'Quartile of a grouped distribution',
+   'tex': 'Q_i = L + \\left(\\frac{\\frac{iN}{4} - \\sum f_b}{f_Q}\\right) c'},
   {'lb': 'Coefficient of variation',
-   'tex': 'CV = \\frac{\\sigma}{\\bar{x}} \\times 100\\%'},
-  {'lb': "Pearson's coefficient of skewness",
-   'tex': 'SK = \\frac{\\bar{x} - \\text{Mode}}{\\sigma} = '
-          '\\frac{3(\\bar{x} - \\text{Median})}{\\sigma}'},
+   'tex': 'CV = \\frac{s}{\\bar{x}} \\times 100\\%'},
+  {'lb': "Pearson's coefficient of skewness (1st)",
+   'tex': 'SK = \\frac{\\bar{x} - \\text{Mode}}{s}'},
+  {'lb': "Pearson's coefficient of skewness (2nd)",
+   'tex': 'SK = \\frac{3(\\bar{x} - \\text{Median})}{s}'},
   {'lb': "Bowley's coefficient of skewness",
    'tex': 'SK_B = \\frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}'},
  ],

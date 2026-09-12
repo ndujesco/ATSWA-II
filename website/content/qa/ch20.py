@@ -178,6 +178,64 @@ CH = {
              'programming, which computes the optimum directly. Making that contrast explicitly '
              'is usually worth a mark on its own.'},
   ]},
+
+  {'n': '20.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Simulation** — imitating the behaviour of a real system over time by a numerical '
+      'model, to study it without experimenting on the real thing.',
+      '**Monte Carlo simulation** — simulation driven by **random numbers** to reproduce a '
+      'probability distribution.',
+      '**Random numbers** — digits with each value equally likely; from tables, a calculator '
+      'or software; used to sample from a distribution.',
+      '**Probability distribution** — the possible values of a variable (demand, lead time, '
+      'arrivals) with their probabilities $p(x)$.',
+      '**Cumulative probability $F(x)$** — the running total of $p(x)$; used to set the random '
+      '-number ranges.',
+      '**Random-number interval (tag)** — the block of random numbers assigned to each value, '
+      'in proportion to its probability.',
+      '**Run / trial / iteration** — one pass through the simulation table (e.g. one '
+      'simulated day).',
+      '**Simulation is descriptive, not optimising** — it evaluates given policies; it does '
+      'not find the best one directly.',
+    ]},
+    {'h3': 'A. Setting up the model'},
+    {'fbox': {'h': 'Random-number assignment', 'rows': [
+      {'lb': 'Cumulative probability',
+       'tex': 'F(x_i) = \\sum_{t \\le x_i} p(t)'},
+      {'lb': 'Two-digit random-number range for value $x_i$',
+       'tex': '\\big[\\,100\\,F(x_{i-1}), \\ \\ 100\\,F(x_i) - 1\\,\\big]',
+       'nt': 'e.g. $p = 0.10, 0.25, 0.40, 0.25 \\Rightarrow$ tags 00–09, 10–34, 35–74, 75–99.'},
+      {'lb': 'One-digit version', 'tex': '\\big[\\,10\\,F(x_{i-1}), \\ 10\\,F(x_i) - 1\\,\\big]'},
+    ]}},
+    {'h3': 'B. Running and evaluating'},
+    {'ol': [
+      'Build the distribution table with $p(x)$, $F(x)$ and the random-number tags.',
+      'For each trial, draw a random number, read off the corresponding value of the variable.',
+      'Carry the value through the system logic (e.g. update stock, queue, cash).',
+      'Repeat for the required number of trials and total / average the results.',
+    ]},
+    {'fbox': {'h': 'Results', 'rows': [
+      {'lb': 'Simulated mean',
+       'tex': '\\bar{x} = \\dfrac{\\sum x_i}{n} \\quad (n = \\text{number of trials})'},
+      {'lb': 'Theoretical expected value (for comparison)',
+       'tex': 'E(X) = \\sum x\\,p(x)'},
+      {'lb': 'Simulated cost / profit per period',
+       'tex': '= \\dfrac{\\text{total simulated cost / profit}}{\\text{number of periods '
+              'simulated}}'},
+    ]}},
+    {'note': 'The simulated mean approaches $E(X)$ as the number of trials increases; a large '
+             'gap after few trials just reflects sampling variation.'},
+    {'h3': 'C. Advantages and limitations'},
+    {'ul': [
+      '**Advantages** — handles complex, stochastic systems that defy analytic solution; no '
+      'disruption to the real system; "what-if" testing of policies; relatively easy to '
+      'understand.',
+      '**Limitations** — descriptive not optimising; results depend on the quality of the '
+      'input distributions and the random numbers; many trials needed for reliable estimates; '
+      'can be time-consuming / costly to build; each run gives only an estimate.',
+    ]},
+  ]},
  ],
  'formulas': [
   {'lb': 'Cumulative probability',

@@ -198,6 +198,80 @@ CH = {
                'holding twice the stock: more storage space, greater exposure to obsolescence '
                'and deterioration, and more capital tied up.'}]}},
   ]},
+
+  {'n': '16.6', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Inventory / stock** — goods held for production or sale.',
+      '**Motives for holding stock** — *transaction* (meet expected demand), *precautionary* '
+      '(buffer against variation in demand or lead time), *speculative* (expected price rise).',
+      '**Holding (carrying) cost $C_h$** — cost of keeping one unit in stock for one year: '
+      'storage, insurance, obsolescence, deterioration, capital tied up.',
+      '**Ordering (procurement / set-up) cost $C_o$** — cost of placing one order (or one '
+      'production set-up), independent of order size.',
+      '**Stock-out (shortage) cost** — cost of running out: lost sales, idle production, '
+      'goodwill.',
+      '**Purchase cost** — price $\\times$ annual demand; relevant only when it varies '
+      '(quantity discounts).',
+      '**Annual demand / usage $D$**.',
+      '**Lead time** — the delay between placing an order and receiving it.',
+      '**Economic order quantity (EOQ) $Q^{*}$** — the order size that minimises total annual '
+      'ordering + holding cost.',
+      '**Economic batch quantity (EBQ)** — the EOQ analogue when stock is replenished '
+      'gradually at production rate $p$ while being used at rate $d$.',
+      '**Buffer (safety) stock $B$** — stock held to cover demand above average during the '
+      'lead time.',
+      '**Reorder level (ROL)** — the stock level that triggers a new order.',
+      '**Maximum / minimum stock level** — control limits used to flag over- and '
+      'under-stocking.',
+    ]},
+    {'h3': 'EOQ model assumptions'},
+    {'ul': [
+      'demand is known and constant; holding cost per unit is known and constant; ordering '
+      'cost per order is known and constant; no stock-outs allowed; the whole order is '
+      'delivered at once (no part-delivery); no quantity discounts (basic model).',
+    ]},
+    {'h3': 'A. EOQ and total cost'},
+    {'fbox': {'h': 'EOQ', 'rows': [
+      {'lb': 'Total relevant annual cost',
+       'tex': 'TC = \\underbrace{\\dfrac{D}{Q}\\,C_o}_{\\text{ordering}} + '
+              '\\underbrace{\\dfrac{Q}{2}\\,C_h}_{\\text{holding}}'},
+      {'lb': 'EOQ (minimises TC)',
+       'tex': 'Q^{*} = \\sqrt{\\dfrac{2 D C_o}{C_h}}'},
+      {'lb': 'Minimum total cost',
+       'tex': 'TC^{*} = \\sqrt{2 D C_o C_h} \\quad (\\text{ordering cost} = \\text{holding '
+              'cost at } Q^{*})'},
+      {'lb': 'Number of orders per year', 'tex': 'N = \\dfrac{D}{Q^{*}}'},
+      {'lb': 'Time between orders (cycle length)',
+       'tex': 't = \\dfrac{Q^{*}}{D} \\ (\\text{years})'},
+    ]}},
+    {'h3': 'B. Economic batch quantity (gradual replenishment)'},
+    {'tex': 'Q^{*} = \\sqrt{\\dfrac{2 D C_s}{C_h\\left(1 - \\dfrac{d}{p}\\right)}} '
+            '\\qquad (C_s = \\text{set-up cost}, \\ d = \\text{usage rate}, \\ '
+            'p = \\text{production rate})'},
+    {'h3': 'C. Control levels'},
+    {'fbox': {'h': 'Stock control levels', 'rows': [
+      {'lb': 'Reorder level',
+       'tex': '\\text{ROL} = \\text{Max usage} \\times \\text{Max lead time}'},
+      {'lb': 'Minimum (buffer) level',
+       'tex': '\\text{Min level} = \\text{ROL} - (\\text{Avg usage} \\times \\text{Avg lead '
+              'time})'},
+      {'lb': 'Maximum level',
+       'tex': '\\text{Max level} = \\text{ROL} + Q^{*} - (\\text{Min usage} \\times '
+              '\\text{Min lead time})'},
+      {'lb': 'Reorder quantity', 'tex': 'Q^{*} \\text{ (the EOQ)}'},
+      {'lb': 'Average stock (with buffer)',
+       'tex': '\\bar{S} = B + \\dfrac{Q^{*}}{2}'},
+    ]}},
+    {'h3': 'D. Quantity discounts'},
+    {'ol': [
+      'Compute $TC$ at the EOQ (at the normal price): ordering + holding + purchase cost '
+      '$= \\dfrac{D}{Q^{*}}C_o + \\dfrac{Q^{*}}{2}C_h + PD$.',
+      'For each discount price, compute $TC$ at the **minimum quantity** that earns that '
+      'discount (holding cost uses the discounted unit cost).',
+      'Accept the discount only if its total cost (including the lower purchase cost) is less.',
+    ]},
+  ]},
  ],
  'formulas': [
   {'lb': 'Economic order quantity',

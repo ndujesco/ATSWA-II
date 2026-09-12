@@ -179,19 +179,138 @@ CH = {
       {'note': 'The logarithm may be taken to any base provided the same base is used top and '
                'bottom, because the base cancels in the ratio.'}]}},
   ]},
+
+  {'n': '11.6', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'All the terms'},
+    {'ul': [
+      '**Function** — a rule assigning to each input $x$ exactly one output $y$; written '
+      '$y = f(x)$ ("$f$ of $x$"). $f(a)$ = the value when $x = a$.',
+      '**Domain** — the set of permitted input values. **Range** — the set of resulting output '
+      'values.',
+      '**Independent variable $x$** (input); **dependent variable $y$** (output).',
+      '**Explicit function** — $y$ alone on one side: $y = 5x + 9$. **Implicit function** — all '
+      'variables mixed: $2x^2 + 3xy + 3y^2 + 10 = 0$.',
+      '**Linear function** — $y = a + bx$; highest power of $x$ is 1; graph is a straight line.',
+      '**Intercept $a$** — value of $y$ where $x = 0$ (crosses the $y$-axis). The **$x$-intercept** '
+      'is where $y = 0$.',
+      '**Gradient / slope $b$** — increase in $y$ per unit increase in $x$; one value per line; '
+      'positive (rising) or negative (falling).',
+      '**Quadratic function** — $y = ax^2 + bx + c$, $a \\neq 0$; graph is a parabola — '
+      'U-shaped ($\\cup$) if $a > 0$, cap-shaped ($\\cap$) if $a < 0$.',
+      '**Root / solution / zero** — a value of $x$ making $y = 0$ (where the graph cuts the '
+      '$x$-axis).',
+      '**Vertex / turning point** — the maximum ($a < 0$) or minimum ($a > 0$) point of a '
+      'parabola.',
+      '**Simultaneous equations** — two or more equations solved together; need at least as '
+      'many independent equations as unknowns.',
+      '**Exponential function** — constant base, variable exponent: $y = a^{x}$ (or $y = e^{x}$). '
+      '$a > 1$ → growth; $0 < a < 1$ → decay.',
+      '**Logarithmic function** — the inverse of an exponential: if $y = a^{x}$ then '
+      '$x = \\log_{a} y$.',
+      '**Break-even point (BEP)** — the output at which total revenue = total cost, so profit '
+      '$= 0$ (no profit, no loss).',
+      '**Contribution** — selling price per unit minus variable cost per unit; what each unit '
+      'contributes toward fixed costs and profit.',
+      '**Margin of safety** — the excess of the planned/actual output over the break-even '
+      'output.',
+    ]},
+    {'h3': 'A. Linear functions'},
+    {'fbox': {'h': 'Straight line', 'rows': [
+      {'lb': 'Equation', 'tex': 'y = a + bx \\quad (\\text{or } y = mx + c)'},
+      {'lb': 'Gradient from two points',
+       'tex': 'b = \\dfrac{y_2 - y_1}{x_2 - x_1}'},
+      {'lb': 'Point–slope form', 'tex': 'y - y_1 = b(x - x_1)'},
+      {'lb': '$x$-intercept', 'tex': 'x = -\\dfrac{a}{b} \\ \\ (\\text{set } y = 0)'},
+    ]}},
+    {'h3': 'B. Quadratic functions and equations'},
+    {'fbox': {'h': 'Solving \\(ax^2 + bx + c = 0\\)', 'rows': [
+      {'lb': 'By formula',
+       'tex': 'x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}'},
+      {'lb': 'Discriminant',
+       'tex': '\\Delta = b^2 - 4ac \\ \\ \\begin{cases} > 0 & \\text{two real roots} \\\\ '
+              '= 0 & \\text{one repeated root} \\\\ < 0 & \\text{no real roots} \\end{cases}'},
+      {'lb': 'By factorisation',
+       'tex': '\\text{find two numbers with sum } b \\text{ and product } ac'},
+      {'lb': 'Sum and product of roots',
+       'tex': '\\alpha + \\beta = -\\dfrac{b}{a}, \\qquad \\alpha\\beta = \\dfrac{c}{a}'},
+      {'lb': 'Axis of symmetry / vertex $x$-coordinate',
+       'tex': 'x = -\\dfrac{b}{2a}'},
+      {'lb': 'Reconstruct the equation from its roots',
+       'tex': 'x^2 - (\\alpha + \\beta)x + \\alpha\\beta = 0'},
+    ]}},
+    {'h3': 'C. Business applications'},
+    {'fbox': {'h': 'Cost, revenue, profit, break-even', 'rows': [
+      {'lb': 'Total cost', 'tex': 'C(x) = F + vx \\quad (F = \\text{fixed cost}, \\ v = '
+              '\\text{variable cost per unit})'},
+      {'lb': 'Total revenue', 'tex': 'R(x) = sx \\quad (s = \\text{selling price per unit})'},
+      {'lb': 'Profit', 'tex': 'P(x) = R(x) - C(x)'},
+      {'lb': 'Contribution per unit', 'tex': 'c = s - v'},
+      {'lb': 'Break-even output',
+       'tex': 'R(x) = C(x) \\implies x^{*} = \\dfrac{F}{s - v}'},
+      {'lb': 'Output for a target profit $\\pi$',
+       'tex': 'x = \\dfrac{F + \\pi}{s - v}'},
+      {'lb': 'Contribution / sales (C/S) ratio',
+       'tex': '\\dfrac{s - v}{s}'},
+      {'lb': 'Break-even revenue', 'tex': '\\dfrac{F}{\\text{C/S ratio}}'},
+      {'lb': 'Margin of safety', 'tex': '\\text{actual output} - x^{*}'},
+    ]}},
+    {'note': 'A non-linear (quadratic) revenue or cost function gives a **quadratic** '
+             'break-even equation $R(x) = C(x)$ — solve it with the quadratic formula.'},
+    {'h3': 'D. Indices (laws)'},
+    {'fbox': {'h': 'Laws of indices', 'rows': [
+      {'lb': 'Product', 'tex': 'a^{m} \\times a^{n} = a^{m+n}'},
+      {'lb': 'Quotient', 'tex': 'a^{m} \\div a^{n} = a^{m-n}'},
+      {'lb': 'Power of a power', 'tex': '(a^{m})^{n} = a^{mn}'},
+      {'lb': 'Zero index', 'tex': 'a^{0} = 1'},
+      {'lb': 'Negative index', 'tex': 'a^{-n} = \\dfrac{1}{a^{n}}'},
+      {'lb': 'Fractional index',
+       'tex': 'a^{m/n} = \\sqrt[n]{a^{m}} = \\left(\\sqrt[n]{a}\\right)^{m}'},
+      {'lb': 'Product/quotient of bases',
+       'tex': '(ab)^{n} = a^{n}b^{n}, \\quad \\left(\\dfrac{a}{b}\\right)^{n} = '
+              '\\dfrac{a^{n}}{b^{n}}'},
+    ]}},
+    {'h3': 'E. Logarithms (laws)'},
+    {'fbox': {'h': 'Laws of logarithms', 'rows': [
+      {'lb': 'Definition', 'tex': 'y = a^{x} \\iff x = \\log_{a} y'},
+      {'lb': 'Product', 'tex': '\\log(MN) = \\log M + \\log N'},
+      {'lb': 'Quotient', 'tex': '\\log\\!\\left(\\dfrac{M}{N}\\right) = \\log M - \\log N'},
+      {'lb': 'Power', 'tex': '\\log M^{n} = n \\log M'},
+      {'lb': 'Log of 1 / log of the base', 'tex': '\\log_{a} 1 = 0, \\quad \\log_{a} a = 1'},
+      {'lb': 'Change of base', 'tex': '\\log_{a} M = \\dfrac{\\log_{b} M}{\\log_{b} a}'},
+      {'lb': 'Solving $a^{x} = k$', 'tex': 'x = \\dfrac{\\log k}{\\log a} \\ \\ '
+              '(\\text{any base, top and bottom the same})'},
+      {'lb': 'Fitting $y = ax^{b}$ (log–log linear)',
+       'tex': '\\log y = \\log a + b \\log x'},
+    ]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Straight line', 'tex': 'y = a + bx'},
   {'lb': 'Gradient', 'tex': 'b = \\frac{y_2-y_1}{x_2-x_1}'},
+  {'lb': 'Point–slope form', 'tex': 'y - y_1 = b(x - x_1)'},
   {'lb': 'Quadratic formula',
    'tex': 'x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}'},
-  {'lb': 'Vertex of a parabola', 'tex': 'x = -\\frac{b}{2a}'},
+  {'lb': 'Discriminant', 'tex': '\\Delta = b^2 - 4ac'},
+  {'lb': 'Vertex / axis of symmetry', 'tex': 'x = -\\frac{b}{2a}'},
   {'lb': 'Sum / product of roots',
    'tex': '\\alpha+\\beta = -\\frac{b}{a}, \\ \\alpha\\beta = \\frac{c}{a}'},
-  {'lb': 'Break-even output', 'tex': 'q^{*} = \\frac{F}{s-v}'},
-  {'lb': 'Output for target profit', 'tex': 'q = \\frac{F+\\pi}{s-v}'},
+  {'lb': 'Equation from roots',
+   'tex': 'x^2 - (\\alpha+\\beta)x + \\alpha\\beta = 0'},
+  {'lb': 'Total cost / revenue / profit',
+   'tex': 'C = F + vx, \\ \\ R = sx, \\ \\ P = R - C'},
+  {'lb': 'Contribution per unit', 'tex': 'c = s - v'},
+  {'lb': 'Break-even output', 'tex': 'x^{*} = \\frac{F}{s-v}'},
+  {'lb': 'Output for target profit', 'tex': 'x = \\frac{F+\\pi}{s-v}'},
   {'lb': 'Contribution/sales ratio', 'tex': '\\frac{s-v}{s}'},
-  {'lb': 'Log of a power', 'tex': '\\log x^n = n\\log x'},
+  {'lb': 'Break-even revenue', 'tex': '\\frac{F}{\\text{C/S ratio}}'},
+  {'lb': 'Laws of indices',
+   'tex': 'a^{m}a^{n}=a^{m+n}, \\ \\frac{a^{m}}{a^{n}}=a^{m-n}, \\ (a^{m})^{n}=a^{mn}, \\ '
+          'a^{0}=1, \\ a^{-n}=\\frac{1}{a^{n}}, \\ a^{m/n}=\\sqrt[n]{a^{m}}'},
+  {'lb': 'Laws of logarithms',
+   'tex': '\\log(MN)=\\log M+\\log N, \\ \\log\\frac{M}{N}=\\log M-\\log N, \\ '
+          '\\log M^{n}=n\\log M'},
+  {'lb': 'Change of base', 'tex': '\\log_{a}M = \\frac{\\log_{b}M}{\\log_{b}a}'},
+  {'lb': 'Solving $a^{x}=k$', 'tex': 'x = \\frac{\\log k}{\\log a}'},
  ],
  'focus':
    'Two or three Section A marks — solving a quadratic, a gradient, a break-even output, or a '
