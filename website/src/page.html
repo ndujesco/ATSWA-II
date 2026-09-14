@@ -583,8 +583,17 @@ a.cite:hover{text-decoration:underline;}
   text-transform:uppercase;color:var(--ok);margin-bottom:5px;}
 
 /* ── past questions matched to a chapter (§ "Examined before") ───────── */
-.pqlist{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:3px;
-  overflow:hidden;margin-top:14px;}
+.pqgroup{border:1px solid var(--rule);border-radius:3px;overflow:hidden;margin-top:10px;}
+.pqgroup > summary{display:flex;align-items:center;gap:10px;padding:11px 14px;cursor:pointer;
+  font-size:14.5px;font-weight:600;color:var(--ink);list-style:none;user-select:none;}
+.pqgroup > summary::-webkit-details-marker{display:none;}
+.pqgroup > summary::before{content:'\25b8';display:inline-block;width:.8em;
+  color:var(--ink4);transition:transform .15s ease;}
+.pqgroup[open] > summary::before{transform:rotate(90deg);}
+.pqgroup > summary:hover{background:var(--sunk);}
+.pqgroup > summary .n{margin-left:auto;font-family:var(--mono);font-size:11px;
+  font-weight:400;color:var(--ink4);}
+.pqlist{display:flex;flex-direction:column;border-top:1px solid var(--rule);}
 .pqrow{display:flex;align-items:baseline;gap:12px;padding:11px 14px;text-decoration:none;
   color:var(--ink);border-bottom:1px solid var(--rule2);}
 .pqrow:last-child{border-bottom:none;}
@@ -593,7 +602,6 @@ a.cite:hover{text-decoration:underline;}
   text-transform:uppercase;color:var(--accent);flex:none;width:6.4em;}
 .pqrow .tx{flex:1;min-width:0;font-size:14.5px;overflow:hidden;text-overflow:ellipsis;
   white-space:nowrap;color:var(--ink2);}
-.pqrow .diet{flex:none;font-family:var(--mono);font-size:11px;color:var(--ink4);}
 @media (max-width:640px){
   .pqrow{flex-wrap:wrap;}
   .pqrow .tx{white-space:normal;order:3;width:100%;}

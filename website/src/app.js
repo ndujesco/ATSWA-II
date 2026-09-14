@@ -270,37 +270,54 @@ var ATSWA = (function () {
       updateQuizCta(code, n, c, ex);
       var box = el('pq-panel');
       if (!box || !ex) return;
-      var rows = [];
+      /* diet (e.g. "2026-03") -> { name, rows: [...] }; 24 diets deep now,
+         so grouped by diet and collapsed by default rather than one long
+         flat list — the group header carries the year, so each row no
+         longer needs to repeat it. */
+      var groups = {};
+      function add(diet, name, row) {
+        var g = groups[diet] || (groups[diet] = { name: name, rows: [] });
+        g.rows.push(row);
+      }
       ex.papers.forEach(function (p) {
         if (p.subject !== code) return;
         p.mcq.forEach(function (q) {
-          if (q.ch === n && p.key[q.n]) rows.push({ diet: p.name, kind: 'MCQ', label: 'Q' + q.n,
+          if (q.ch === n && p.key[q.n]) add(p.diet, p.name, { kind: 'MCQ', label: 'Q' + q.n,
             txt: stemText(q), href: '#/exams/' + p.diet + '/' + code });
         });
         p.saq.forEach(function (q) {
-          if (q.ch === n && q.ans) rows.push({ diet: p.name, kind: 'Short answer', label: 'Q' + q.n,
+          if (q.ch === n && q.ans) add(p.diet, p.name, { kind: 'Short answer', label: 'Q' + q.n,
             txt: q.body.join(' '), href: '#/exams/' + p.diet + '/' + code });
         });
         p.secb.forEach(function (b) {
-          if (b.ch === n && b.solution && b.solution.length) rows.push({
-            diet: p.name, kind: 'Section B', label: 'Q' + b.n,
+          if (b.ch === n && b.solution && b.solution.length) add(p.diet, p.name, {
+            kind: 'Section B', label: 'Q' + b.n,
             txt: (b.q && b.q[0]) || 'See the full question in the paper.',
             href: '#/exams/' + p.diet + '/' + code });
         });
       });
-      if (!rows.length) return;
+      var diets = Object.keys(groups).sort().reverse();
+      var total = diets.reduce(function (a, d) { return a + groups[d].rows.length; }, 0);
+      if (!total) return;
+      var body = diets.map(function (d) {
+        var g = groups[d];
+        return '<details class="pqgroup"><summary>' + esc(g.name) +
+          '<span class="n">' + g.rows.length + ' question' +
+          (g.rows.length === 1 ? '' : 's') + '</span></summary>' +
+          '<div class="pqlist">' + g.rows.map(function (r) {
+            return '<a class="pqrow" href="' + r.href + '">' +
+              '<span class="tag">' + esc(r.kind) + ' ' + esc(r.label) + '</span>' +
+              '<span class="tx">' + esc(r.txt.slice(0, 130)) + (r.txt.length > 130 ? '…' : '') +
+              '</span></a>';
+          }).join('') + '</div></details>';
+      }).join('');
       box.innerHTML = '<section class="sec"><h2><span class="sn">&#9679;</span>' +
         '<span>Examined before</span></h2>' +
-        '<p>This chapter’s material has come up ' + rows.length + ' time' +
-        (rows.length === 1 ? '' : 's') + ' in the past papers below. Attempt them, with the ' +
-        'official answer, in the <a href="#/s/' + code + '/' + n + '/quiz">chapter quiz</a> — ' +
-        'or open the paper itself.</p>' +
-        '<div class="pqlist">' + rows.map(function (r) {
-          return '<a class="pqrow" href="' + r.href + '">' +
-            '<span class="tag">' + esc(r.kind) + ' ' + esc(r.label) + '</span>' +
-            '<span class="tx">' + esc(r.txt.slice(0, 130)) + (r.txt.length > 130 ? '…' : '') +
-            '</span><span class="diet">' + esc(r.diet) + '</span></a>';
-        }).join('') + '</div></section>';
+        '<p>This chapter’s material has come up ' + total + ' time' +
+        (total === 1 ? '' : 's') + ' across ' + diets.length + ' diet' +
+        (diets.length === 1 ? '' : 's') + ' of past papers. Attempt them, with the official ' +
+        'answer, in the <a href="#/s/' + code + '/' + n + '/quiz">chapter quiz</a> — or open a ' +
+        'diet below to see the paper itself.</p>' + body + '</section>';
     });
   }
 
