@@ -1101,7 +1101,7 @@ CH = {
     'w': 'Batch processing accumulates transactions and updates the master file at scheduled '
          'intervals or when enough transactions have gathered — the time between submission '
          'and the return of results is the turn-around time.',
-    'src': 'Chapter 4.1.1'},
+    'src': 'Chapter 4.1.1', 'sec': '4.1'},
    {'q': 'A processing configuration in which each department does its own processing with '
          'its own IT staff, with no link between departments or to headquarters, is called',
     'o': ['Centralized processing', 'Distributed Data Processing', 'Decentralized processing',
@@ -1110,7 +1110,7 @@ CH = {
     'w': 'Decentralized processing gives each department its own independent processing '
          'capability. Distributed Data Processing is the hybrid that links every location to '
          'each other and to the corporate server.',
-    'src': 'Chapter 4.2.2'},
+    'src': 'Chapter 4.2.2', 'sec': '4.2'},
    {'q': 'A computer with more than one CPU, where processes are assigned to whichever CPU is '
          'free and memory is shared among the CPUs, is running',
     'o': ['asymmetric multiprocessing', 'symmetric multiprocessing', 'multiprogramming',
@@ -1119,7 +1119,7 @@ CH = {
     'w': 'Symmetric multiprocessing shares memory and assigns any available CPU to a process; '
          'asymmetric multiprocessing dedicates a specific CPU (with its own memory) to a '
          'specific type of processing.',
-    'src': 'Chapter 4.3'},
+    'src': 'Chapter 4.3', 'sec': '4.3'},
    {'q': 'A computer program that uses artificial intelligence techniques to solve problems '
          'that would normally require a knowledgeable human is a(n)',
     'o': ['Decision Support System', 'Transaction Processing System', 'Expert System',
@@ -1128,7 +1128,7 @@ CH = {
     'w': 'An Expert System reproduces the performance of a human expert in a specific problem '
          'domain, typically built on a knowledge base plus a way of codifying the expert\'s '
          'knowledge, e.g. INTERNIST for medical diagnosis.',
-    'src': 'Chapter 4.7.2(g)'},
+    'src': 'Chapter 4.7.2(g)', 'sec': '4.7'},
    {'q': 'GIFMIS is best described as a system for',
     'o': ['managing personnel records and payroll for Nigerian government employees',
           'budget management, accounting and public expenditure management',
@@ -1139,7 +1139,7 @@ CH = {
     'w': 'GIFMIS modernizes fiscal processes across the budget preparation-to-reporting cycle. '
          'Personnel/payroll is IPPIS; the ASUU-proposed alternative is UTAS; the CD-based '
          'transaction recording system is ATRRS; the tax filing portal is Taxpro-Max.',
-    'src': 'Chapter 4.7.2(i)'},
+    'src': 'Chapter 4.7.2(i)', 'sec': '4.7'},
    {'q': 'A business selling directly to its end customer, without going through a retailer, '
          'distributor or wholesaler — popular for subscriptions and social selling — is the',
     'o': ['B2B model', 'C2B model', 'Direct to Consumer (D2C) model', 'G2C model',
@@ -1147,7 +1147,7 @@ CH = {
     'a': 2,
     'w': 'D2C cuts out every intermediary between brand and end customer. When a manufacturer '
          'specifically does this, it is called M2C — a form of D2C.',
-    'src': 'Chapter 4.9'},
+    'src': 'Chapter 4.9', 'sec': '4.9'},
   ],
   'theory': [
    {'q': '(a) Distinguish between batch processing and real-time processing. (b) State any '
@@ -1168,7 +1168,7 @@ CH = {
         'Avoids time-consuming and unnecessary paperwork.',
         'Enables users to see the cumulative effect of all transactions for decision making.',
         'Avoids costly and time-consuming data preparation and control operations.']}],
-    'src': 'Chapter 4.1'},
+    'src': 'Chapter 4.1', 'sec': '4.1'},
    {'q': 'Enumerate the services provided by a computer bureau, and state any THREE reasons '
          'an organization might choose to use one.',
     'marks': 12,
@@ -1187,7 +1187,7 @@ CH = {
         'To provide a standby facility in case of breakdown of the in-house computer.',
         'To cope with peak data processing loads owing to insufficient in-house capacity.',
         'Non-availability of liquid funds for installing an in-house computer.']}],
-    'src': 'Chapter 4.6.3'},
+    'src': 'Chapter 4.6.3', 'sec': '4.6'},
    {'q': 'List the five main components of an information system, and state the five '
          'historical eras of Management Information System (MIS) identified by Laudon and '
          'Laudon.',
@@ -1201,7 +1201,7 @@ CH = {
       {'h4': 'Five eras of MIS'},
       {'ol': ['Mainframe and minicomputer computing.', 'Personal computers.',
         'Client/server networks.', 'Enterprise computing.', 'Cloud computing.']}],
-    'src': 'Chapter 4.7'},
+    'src': 'Chapter 4.7', 'sec': '4.7'},
    {'q': 'Distinguish between Government-to-Government (G2G), Government-to-Business (G2B), '
          'Government-to-Citizen (G2C) and Government-to-Employees (G2E) e-government models.',
     'marks': 8,
@@ -1218,7 +1218,7 @@ CH = {
         'making.',
         '**G2E** — maintaining personal information and employee records, including e-payroll '
         'and e-learning for government employees.']}],
-    'src': 'Chapter 4.10'},
+    'src': 'Chapter 4.10', 'sec': '4.10'},
    {'q': 'Explain the drop-shipping, wholesale, and subscription revenue models, giving one '
          'example of each.',
     'marks': 9,
@@ -1232,6 +1232,6 @@ CH = {
         'shops.',
         '**Subscription** — customers pay a recurring fee for ongoing access to a service or '
         'product. Example: Netflix (movies/TV) or Spotify (music streaming).']}],
-    'src': 'Chapter 4.13'},
+    'src': 'Chapter 4.13', 'sec': '4.13'},
   ]},
 }

@@ -936,7 +936,7 @@ CH = {
     'w': 'In a star network, if a connection between one device and the server breaks, the '
          'rest of the network keeps functioning; but if the server itself fails, the whole '
          'network goes down.',
-    'src': 'Chapter 5.2.2(a)'},
+    'src': 'Chapter 5.2.2(a)', 'sec': '5.2'},
    {'q': 'The device that provides a central connection point for cables from workstations, '
          'servers and peripherals, and has largely replaced the hub because of better '
          'performance, is the',
@@ -945,14 +945,14 @@ CH = {
     'w': 'A switch (concentrator) is the central connection point in, e.g., a star topology; '
          'switches are now preferred over hubs because they are cheaper and give faster data '
          'transmission.',
-    'src': 'Chapter 5.8.5'},
+    'src': 'Chapter 5.8.5', 'sec': '5.8'},
    {'q': 'Which mode of transmission allows signals to travel in both directions but only one '
          'direction at a time, as in a walkie-talkie?',
     'o': ['Simplex', 'Half-duplex', 'Duplex', 'Synchronous', 'Asynchronous'],
     'a': 1,
     'w': 'Half-duplex is two-way but not simultaneous. Simplex is strictly one-way; duplex '
          '(full-duplex) is two-way and simultaneous.',
-    'src': 'Chapter 5.7'},
+    'src': 'Chapter 5.7', 'sec': '5.7'},
    {'q': 'The cloud computing service layer that provides the physical storage space and '
          'processing capabilities underlying all other cloud services is',
     'o': ['Software-as-a-Service (SaaS)', 'Platform-as-a-Service (PaaS)',
@@ -962,7 +962,7 @@ CH = {
     'w': 'IaaS is described as "the backbone of the entire concept of cloud computing" — '
          'vendors supply the physical storage and processing capability that PaaS and SaaS '
          'are built on top of.',
-    'src': 'Chapter 5.11.1'},
+    'src': 'Chapter 5.11.1', 'sec': '5.11'},
    {'q': 'A type of intranet that is accessible to outsiders, but limited to those with a '
          'valid user identification number, is called a(n)',
     'o': ['Internet', 'Extranet', 'WAN', 'Firewall', 'Virtual private cloud'],
@@ -970,7 +970,7 @@ CH = {
     'w': 'An extranet opens part of a corporate intranet to authorised outsiders (e.g. '
          'suppliers or customers) who must supply valid identification, unlike the fully '
          'internal intranet or the fully public internet.',
-    'src': 'Chapter 5.5.2'},
+    'src': 'Chapter 5.5.2', 'sec': '5.5'},
    {'q': 'A device used to regenerate (amplify and restore) a signal that has lost strength '
          '(attenuated) as it passes along a cable is a',
     'o': ['Multiplexer', 'Repeater', 'Bridge', 'Gateway', 'Front-End Processor'],
@@ -978,7 +978,7 @@ CH = {
     'w': 'A repeater electrically amplifies a received signal and rebroadcasts it, overcoming '
          'attenuation. A multiplexer combines several input streams into one; a bridge '
          'connects similar networks; a gateway connects dissimilar ones.',
-    'src': 'Chapter 5.8.9'},
+    'src': 'Chapter 5.8.9', 'sec': '5.8'},
   ],
   'theory': [
    {'q': 'Distinguish between a WAN, a MAN and a LAN, giving one distinguishing feature of '
@@ -992,7 +992,7 @@ CH = {
         'city, up to about 50 km in diameter.',
         '**LAN** — a privately owned network confined to a small area, usually within a '
         'kilometre — a building, adjacent buildings, or a campus.']}],
-    'src': 'Chapter 5.1.2'},
+    'src': 'Chapter 5.1.2', 'sec': '5.1'},
    {'q': 'Describe the star, ring and bus LAN topologies, stating one advantage and one '
          'disadvantage of each.',
     'marks': 9,
@@ -1008,7 +1008,7 @@ CH = {
         '**Bus** — all devices connect to a common channel, with collisions managed by '
         'CSMA/CD. Advantage: can be organised as client/server or peer-to-peer. Disadvantage: '
         'a broken connection can stop the network.']}],
-    'src': 'Chapter 5.2.2'},
+    'src': 'Chapter 5.2.2', 'sec': '5.2'},
    {'q': '(a) What is a firewall, and why is it needed on an intranet? (b) Distinguish '
          'encryption from decryption.',
     'marks': 8,
@@ -1022,7 +1022,7 @@ CH = {
             'unusable by anyone but the authorised user; **decryption** is transforming the '
             'encrypted information back into its original usable form, which only an '
             'authorised user possessing the cryptographic key can do.'}],
-    'src': 'Chapter 5.5.1, 5.2.4'},
+    'src': 'Chapter 5.5.1, 5.2.4', 'sec': '5.5'},
    {'q': 'List and briefly explain the five layers of the OSI model concerned with (i) the '
          'physical transmission of bits and (ii) the addressing and reliable transfer of data '
          '(i.e. layers 1–4), then name the remaining three layers.',
@@ -1037,7 +1037,7 @@ CH = {
         'end systems.']},
       {'p': 'The remaining three layers are **Session (5)**, **Presentation (6)** and '
             '**Application (7)**.'}],
-    'src': 'Chapter 5.3.1'},
+    'src': 'Chapter 5.3.1', 'sec': '5.3'},
    {'q': 'Distinguish between telecommuting and the virtual office, and state any THREE '
          'advantages of telecommuting to the employer.',
     'marks': 9,
@@ -1054,6 +1054,6 @@ CH = {
         'Less office utility bills.',
         'Engagement of scarce human resources not willing to take full-time appointments.',
         'Companies can engage personnel outside their localities, even in other countries.']}],
-    'src': 'Chapter 5.9.7, 5.9.8'},
+    'src': 'Chapter 5.9.7, 5.9.8', 'sec': '5.9'},
   ]},
 }

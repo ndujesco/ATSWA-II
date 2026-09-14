@@ -1,5 +1,119 @@
 # Where the build stopped
 
+## Session 2026-09-14 — 19 more past-paper diets ingested (5 → 24 diets), plus
+## per-chapter-quiz and past-paper citation links that scroll to the exact section
+- **Chapter-quiz citations now link to source, not just cite it.** `src/quiz.js`
+  `chapterQuestions()` was dropping `sec` off authored `quiz.mcq` entries before
+  `citeHTML()` ever saw it (theory questions were unaffected — they pass through
+  `.slice()` untouched). Fixed the mapping to carry `sec` through. Then added a
+  `sec` field to all 100 authored quiz questions across IT ch01–ch06, derived
+  from each question's own `src` label (e.g. `"Chapter 3.2.6"` → `sec: "3.2"`,
+  matched against that chapter's actual top-level `secs[].n` list — the exact
+  values the reader-view anchors on, `id="sec-3-2"`). This reuses machinery
+  that already existed for past-question citations (`#/s/CODE/N?sec=X-Y` +
+  `scrollToAnchor()` in `app.js`) — it just wasn't wired up for a chapter's own
+  quiz. IT was the ask; the same fix is live for any other subject whose
+  authored quiz items later gain a `sec` field.
+- **19 older INSIGHT past-question PDFs (2014–2023, one per March/September
+  diet except March 2016, which the publisher didn't produce) moved from
+  `~/Downloads` into `materials/past-questions/`, renamed to match the
+  existing `INSIGHT Part II - YYYY-MM Month YYYY.pdf` convention.** Diet count
+  5 → 24 (2014-03 through 2026-03). These are the same INSIGHT publication as
+  the existing 5, just a different re-upload/watermark ("ATS 2_..._#ifrsiseasy"),
+  so the existing extractor mostly worked — but older diets' print layout
+  drifted enough from the 2024+ house style to need real fixes, not just a
+  DIETS-list update, in `tools/extract_papers.py`:
+  - FA's paper title reads "PRINCIPLES [AND/&] PRACTICE OF FINANCIAL
+    ACCOUNTING" pre-2022-09 vs bare "FINANCIAL ACCOUNTING" after — subject
+    matching switched from `title.startswith(name)` to `name in title`.
+  - "MULTIPLE-CHOICE QUESTIONS" / "SHORT-ANSWER QUESTIONS" often wrap onto
+    their own line below the "SECTION A: PART I/II ATTEMPT ALL..." banner
+    instead of trailing it, and "SECTION B" is often printed with no colon at
+    all, and occasionally with no "SECTION A:" prefix at all (bare
+    "PART II   SHORT-ANSWER QUESTIONS") — `RE_SECA1/RE_SECA2/RE_SECB` no
+    longer require same-line trailing text or a colon.
+  - The header introducing the printed MCQ/SAQ answer key is wildly
+    inconsistent across 20 years — "MULTIPLE CHOICE QUESTIONS", "MCQ –
+    SOLUTION", "SOLUTION TO MULTIPLE CHOICE QUESTIONS (MCQ)", a bare "MCQ" on
+    its own line, even the typo "MUTIPLE" (missing the L) in one diet.
+    `RE_MCSOL`/`RE_SASOL` now match the word *combination* anywhere on a
+    line via `.search()`, not an anchored exact heading.
+  - The key itself is sometimes one-per-line with **no punctuation at all**
+    ("1   C", with only a single trailing space after 2-digit numbers because
+    of fixed-width column alignment) — `parse_key()`'s inline regex needed
+    its `[.)]` requirement loosened to `(?:[.)]|\s+)`.
+  - Section B solutions are marked "SOLUTION 1", or "SOLUTION TO QUESTION 1",
+    or (one diet) "SOLUTION TO QUESTION ONE" (spelled out) — `RE_BSOL` and a
+    new `bsol_num()` handle all three.
+  - A handful of diets append a "MARKING GUIDE" pass that **re-uses**
+    "SOLUTION 1".."SOLUTION 6" a second time for mark breakdowns — sometimes
+    as one block at the end, sometimes interleaved after each real solution.
+    Detected structurally now (a real run only holds steady or increases; a
+    "2A"/"2B" pair repeats a number legitimately, but a *decrease* means a
+    second pass has started) rather than by searching for the literal phrase,
+    since the phrase's position relative to the real solutions isn't fixed.
+  - One diet numbers SAQ questions with lower-case roman numerals
+    (i./ii./.../xx.) instead of arabic digits — `parse_numbered()` now tries
+    `RE_QNUM_ROMAN` as a fallback.
+  - A stray page-number digit occasionally lands on the same line as the next
+    question ("4.   2.   Which of the following...", where "4." is a leaked
+    page number) — stripped in `pdf_lines()` via `RE_STRAY_NUM` before any
+    other parsing runs.
+  - **Result: 90 of 96 papers (24 diets × 4 subjects) extract essentially
+    perfectly** (30/30 MCQ+key, ~20/20 SAQ+solutions, 6/6 Section B). 6 papers
+    have a small, *documented, fail-safe* gap rather than wrong content —
+    missing items just don't appear, nothing is ever shown attributed to the
+    wrong chapter or with a fabricated answer:
+    - `2020-03 PS`: 12/20 SAQ solutions (item 13 in the source is printed
+      "13 The Treasurer" — no period at all — and loosening that further would
+      risk false question-splits elsewhere in ordinary prose, so left alone).
+    - `2021-09 IT`: 0/6 Section B solutions (this paper's Section B has no
+      per-question delimiter of any kind after the first — the six answers
+      run together labelled only by sub-part, e.g. "ai)", "ii)" — genuinely
+      ambiguous without deeper structural guessing).
+    - `2022-09 IT`: 2/6 (solutions 3–6 have no "SOLUTION N" header at all,
+      jumping straight to "3a." — same ambiguity as above).
+    - `2019-03`/`2021-03`/`2021-09 QA`: 2–5 individual MCQs each missing,
+      because those questions' options are lettered F–J (continuing from an
+      earlier group) instead of A–E, which `RE_OPT` doesn't recognise —
+      accepted as a one-off print quirk not worth the false-positive risk of
+      widening the option-letter range paper-wide.
+    None of the original 5 diets (2024-03 through 2026-03) regressed — same
+    counts before and after every fix, verified by re-running after each change.
+  - **Chapter/section mapping re-run for all 24 diets**: `python3 tools/aim.py`
+    then `python3 tools/aim_sec.py FA PS QA IT` (both already existed, tuned
+    for the original 5 diets via `CHAPTER_KEYS` seed vocab in
+    `tools/corrections.py` — no `PIN` overrides were needed for the new diets).
+    Confidence split: mcq 2337 hi / 522 lo, saq 1538 hi / 382 lo, secb 429 hi /
+    133 lo (all `>= 0.12`/`< 0.12` on aim.py's retrieval-margin score).
+  - **New: a confidence gate in `tools/build_exams.py`.** Previously `ch` was
+    written to `exams.js` unconditionally (only `sec` was gated, inside
+    aim_sec.py, before this session) — meaning a low-confidence chapter guess
+    could still render a "Chapter N →" link on a past question. Added
+    `CH_CONF_MIN = 0.12` (matching aim.py's own hi/lo split) via a `chsec()`
+    helper: below that, both `ch` and `sec` are dropped to `None` and no
+    citation renders at all, rather than risk sending the reader to the wrong
+    chapter. This is the same "silence over a wrong link" principle
+    `aim_sec.py` already used for `sec`, now applied to `ch` too.
+  - **Fixed several now-stale hardcoded stats** the 5→24 diet jump exposed:
+    homepage tally ("5 exam diets" → "24", "600"/"400"/"120" → "2,859"/
+    "1,920"/"562"), the "Sit a whole paper" panel, the About page, the exams
+    index header (now computed live from the data instead of hardcoded "Five
+    diets, twenty papers"), the `<meta description>`, and two lines in
+    `README.md`.
+  - Rebuild chain used throughout:
+    `python3 tools/extract_papers.py && python3 tools/aim.py && python3
+    tools/aim_sec.py FA PS QA IT && python3 tools/build_exams.py`, then
+    `python3 tools/build_content.py && ./build.sh` for the full site. All
+    clean; `node --check` on the assembled `<script>` bundle passes.
+  - `jsdom` still isn't installed, so no headless render test this session —
+    verified instead via a direct Node `require('./data/exams.js')` smoke
+    test (96 papers, 2859 MCQs, 2338 with a chapter link, 1887 with a
+    section-level link) and by hand-checking a handful of citations resolve
+    to topically-correct sections (e.g. a 2014-03 FA subscriptions-account
+    question → FA ch8 §8.6, "The accumulated fund and the statement of
+    financial position").
+
 ## Session 2026-09-12 (cont.) — PS chapters 17–20 (all four subjects now complete)
 - **PS is now complete: 20/20 chapters.** Authored fresh from the re-extracted study-text
   PDF (PS.txt lines 22105–25292), same full-fidelity style as IT ch2–6 this session: every

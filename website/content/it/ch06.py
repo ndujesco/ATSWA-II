@@ -2052,7 +2052,7 @@ CH = {
     'w': 'Design reviews and walkthroughs (user validation) break system design into '
          'milestones with deliverables that users must formally sign off before the next '
          'stage begins.',
-    'src': 'Chapter 6.1(f)'},
+    'src': 'Chapter 6.1(f)', 'sec': '6.1'},
    {'q': 'A changeover in which the new system is run on data previously processed by the '
          'old system, so existing results are available for comparison without the staffing '
          'burden of true parallel running, is called',
@@ -2062,7 +2062,7 @@ CH = {
     'w': 'Retrospective parallel running reruns the new system on data the old system already '
          'processed, avoiding the disruption of running both systems on live current data at '
          'once.',
-    'src': 'Chapter 6.1, pilot operation'},
+    'src': 'Chapter 6.1, pilot operation', 'sec': '6.1'},
    {'q': 'Which discounted cash flow measure compares a project\'s own expected rate of '
          'return with the cost of capital, accepting the project only if its value exceeds '
          'that rate?',
@@ -2072,7 +2072,7 @@ CH = {
     'w': 'IRR is the discounted rate of return the project itself generates; it is worth '
          'undertaking only if that IRR exceeds the cost of capital. NPV instead expresses the '
          'result in currency terms, discounted at the cost of capital.',
-    'src': 'Chapter 6.1, cost-benefit analysis'},
+    'src': 'Chapter 6.1, cost-benefit analysis', 'sec': '6.1'},
    {'q': 'A type of outsourcing where an organisation outsources more than 70% of its IS '
          'capability to a single vendor is called',
     'o': ['Body shop outsourcing', 'Project management outsourcing', 'Total outsourcing',
@@ -2081,7 +2081,7 @@ CH = {
     'w': 'Total outsourcing is specifically defined by that 70% threshold to a single vendor; '
          'body shop outsourcing meets short-term IS/IT demand, and project management '
          'outsourcing covers all or part of one project.',
-    'src': 'Chapter 6.7.1'},
+    'src': 'Chapter 6.7.1', 'sec': '6.7'},
    {'q': 'A malicious program that copies itself repeatedly into memory or a medium until no '
          'space is left, and does not need to hide inside a host program, is a',
     'o': ['Virus', 'Worm', 'Trojan Horse', 'Logic bomb', 'Time bomb'],
@@ -2089,7 +2089,7 @@ CH = {
     'w': 'A worm is a standalone program (unlike a virus, which is a code segment hidden in a '
          'host program) that replicates itself and typically releases a "payload" once memory '
          'or a medium is filled.',
-    'src': 'Chapter 6.8, computer viruses and worms'},
+    'src': 'Chapter 6.8, computer viruses and worms', 'sec': '6.8'},
    {'q': 'A blockchain\'s "nonce" field is best described as',
     'o': ['The hash of the previous block', 'Information on several transactions',
           'A random value acting as a variate for the hash value',
@@ -2099,7 +2099,7 @@ CH = {
     'w': 'Every block has four fields: previous hash, transaction details, nonce (a random '
          'value varying the hash computation) and hash address (the unique SHA-256 '
          'identifier).',
-    'src': 'Chapter 6.16, fields of a blockchain block'},
+    'src': 'Chapter 6.16, fields of a blockchain block', 'sec': '6.16'},
   ],
   'theory': [
    {'q': 'Describe the four criteria a project must satisfy to be judged feasible, with one '
@@ -2115,7 +2115,7 @@ CH = {
         'skills requirements, motivation, social/environmental impact.',
         '**Economic feasibility** — must be a good investment able to recover its outlay and '
         'realise profits.']}],
-    'src': 'Chapter 6.1, criteria for project selection'},
+    'src': 'Chapter 6.1, criteria for project selection', 'sec': '6.1'},
    {'q': 'Distinguish direct changeover, parallel running, pilot operation and staged/phased '
          'changeover, stating one condition favouring each.',
     'marks': 12,
@@ -2132,7 +2132,7 @@ CH = {
         'logical part transferred first); favoured for moderate risk with lower disruption.',
         '**Staged/phased changeover** — the first stage uses the parallel approach, then a '
         'series of direct changeovers; favoured for very large or complex projects.']}],
-    'src': 'Chapter 6.1, changeover'},
+    'src': 'Chapter 6.1, changeover', 'sec': '6.1'},
    {'q': 'Explain the difference between artificial intelligence, machine learning and '
          'adaptive intelligence.',
     'marks': 9,
@@ -2145,7 +2145,7 @@ CH = {
             'intelligence** is a newer, more applied term for AI-based applications that '
             'combine real-time internal and external data with decision science and scalable '
             'computing infrastructure specifically to make business decisions smarter.'}],
-    'src': 'Chapter 6.13'},
+    'src': 'Chapter 6.13', 'sec': '6.13'},
    {'q': 'State the three tiers of an IoT system architecture and the role of each.',
     'marks': 6,
     'a': [
@@ -2157,7 +2157,7 @@ CH = {
         '**Tier 3 — The Cloud** — the IoT application itself (secured via HTTPS/OAuth), with '
         'database systems for sensor data and an event queuing/messaging system for cross-'
         'tier communication.']}],
-    'src': 'Chapter 6.14.2'},
+    'src': 'Chapter 6.14.2', 'sec': '6.14'},
    {'q': 'Distinguish blockchain from distributed ledger technology, and state any THREE '
          'features of blockchain.',
     'marks': 10,
@@ -2174,6 +2174,6 @@ CH = {
         'Every block has a hash value — its digital signature.',
         'Transactions are verified using a proof-of-work consensus algorithm.',
         'The network relies on miners, who validate transactions for rewards.']}],
-    'src': 'Chapter 6.15.5, 6.16.2'},
+    'src': 'Chapter 6.15.5, 6.16.2', 'sec': '6.15'},
   ]},
 }

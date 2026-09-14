@@ -12,7 +12,7 @@ cd "$(dirname "$0")"
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ATSWA Part II — Study</title>
-<meta name="description" content="The four ATSWA Part II subjects as chapter-by-chapter study notes with worked examples, typeset formulas, per-chapter quizzes, and five diets of past papers with expanded solutions.">
+<meta name="description" content="The four ATSWA Part II subjects as chapter-by-chapter study notes with worked examples, typeset formulas, per-chapter quizzes, and 24 diets of past papers with expanded solutions.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F2F1EC" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#12110F" media="(prefers-color-scheme: dark)">

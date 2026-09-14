@@ -818,14 +818,14 @@ CH = {
     'a': 2,
     'w': 'Online means connected to and communicating with the CPU. Peripheral equipment is '
          'designed to be used online; auxiliary equipment is designed to work offline.',
-    'src': 'Chapter 2.1.2'},
+    'src': 'Chapter 2.1.2', 'sec': '2.1'},
    {'q': 'Which of the following is a direct input device?',
     'o': ['Punched card', 'Paper tape', 'Barcode requiring conversion',
           'Optical Mark Reader (OMR)', 'Magnetic tape'],
     'a': 3,
     'w': 'OMR (like MICR and OCR) produces data already in a form suitable for processing — no '
          'conversion is needed, which is what makes it a direct input device.',
-    'src': 'Chapter 2.2.1'},
+    'src': 'Chapter 2.2.1', 'sec': '2.2'},
    {'q': 'RAM is described as volatile because',
     'o': ['it can be read but not written to', 'it loses its contents when power is switched '
           'off', 'it is more expensive than ROM', 'it stores booting programs',
@@ -833,7 +833,7 @@ CH = {
     'a': 1,
     'w': 'Volatile means the memory\'s contents are temporary and disappear once power is '
          'removed — the defining difference from non-volatile ROM.',
-    'src': 'Chapter 2.4.2'},
+    'src': 'Chapter 2.4.2', 'sec': '2.4'},
    {'q': 'A memory whose contents can be erased by exposure to ultraviolet light, after which '
          'new data can be written to it, is',
     'o': ['RAM', 'ROM', 'PROM', 'EPROM', 'cache memory'],
@@ -841,21 +841,21 @@ CH = {
     'w': 'EPROM (Erasable Programmable ROM) is erased with ultraviolet light, reverting all '
          'cells to "1", after which it can be reprogrammed. Plain PROM can be written once by '
          'the user but not subsequently erased this way.',
-    'src': 'Chapter 2.4.2'},
+    'src': 'Chapter 2.4.2', 'sec': '2.4'},
    {'q': 'Which storage medium is read sequentially, so that the data on it cannot be '
          'addressed directly?',
     'o': ['Magnetic disk', 'Winchester disk', 'Magnetic tape', 'CD-ROM', 'Solid state drive'],
     'a': 2,
     'w': 'Magnetic tape is read in the order the data was written (serial/sequential access); '
          'disks and optical/solid-state media are direct-access.',
-    'src': 'Chapter 2.5.1'},
+    'src': 'Chapter 2.5.1', 'sec': '2.5'},
    {'q': 'A validation check that rejects "34th January" as an invalid date is an example of a',
     'o': ['limit check', 'sequence check', 'validity check', 'existence check',
           'reasonableness check'],
     'a': 2,
     'w': 'A validity check rejects a value that cannot exist under the rules of the field — '
          'here, a calendar date that does not exist.',
-    'src': 'Chapter 2.6.2'},
+    'src': 'Chapter 2.6.2', 'sec': '2.6'},
   ],
   'theory': [
    {'q': '(a) Computers can be classified using different attributes such as signal '
@@ -898,7 +898,7 @@ CH = {
       {'ul': [
         '**By purpose:** special-purpose computers; general-purpose computers.',
         '**By size:** mainframe computers; minicomputers; supercomputers; microcomputers.']}],
-    'src': 'Chapter 2.8, Q1'},
+    'src': 'Chapter 2.8, Q1', 'sec': '2.8'},
    {'q': '(a) List any four examples of microcomputers. (b) State two features each of '
          'mechanistic and stochastic systems. (c) Enumerate any four unpredictable '
          'disturbances that may cause a business system to deviate from its expected '
@@ -935,7 +935,7 @@ CH = {
         'It enables accountants to monitor and gain insight into the activities of '
         'professional competitors.',
         'It enables accountants to meet customers\' requests adequately.']}],
-    'src': 'Chapter 2.8, Q2'},
+    'src': 'Chapter 2.8, Q2', 'sec': '2.8'},
    {'q': 'A computer system is made up of two broad subsystems, namely hardware and software. '
          '(a) Define computer hardware. (b) List and state one major function of each of the '
          'five basic units of computer hardware. (c) Enumerate any eight examples of input '
@@ -965,7 +965,7 @@ CH = {
         'Mouse', 'Magnetic Ink Character Recognition (MICR)', 'Joystick',
         'Magnetic stripe card', 'Smart card', 'Optical Character Recognition (OCR)',
         'Optical Mark Recognition (OMR)', 'Scanner', 'Light pen', 'Touch screen']}],
-    'src': 'Chapter 2.8, Q3'},
+    'src': 'Chapter 2.8, Q3', 'sec': '2.8'},
    {'q': 'Computer storage consists of a number of cells for storing data and programs. '
          '(a) Define a direct access storage device. (b) List three advantages and two '
          'disadvantages of a direct access storage device. (c) List four examples of a direct '
@@ -981,7 +981,7 @@ CH = {
             'to mechanical failure (e.g. a head crash).'},
       {'p': '**(c) Examples of DASD:** hard disk; flash drive; compact disk; diskette; '
             'magnetic drum; DVD.'}],
-    'src': 'Chapter 2.8, Q4'},
+    'src': 'Chapter 2.8, Q4', 'sec': '2.8'},
    {'q': 'Application controls are controls over the input, processing and output processes. '
          '(a) State the essence of output controls. (b) Enumerate five examples of output '
          'controls. (c) List five examples of storage controls.',
@@ -1005,7 +1005,7 @@ CH = {
             'log file recording every activity on the database; physical security of the '
             'storage media environment, including the data processing centre; regular file '
             'backup and secure storage to prevent data loss.'}],
-    'src': 'Chapter 2.8, Q5'},
+    'src': 'Chapter 2.8, Q5', 'sec': '2.8'},
    {'q': 'A memory is made up of a large number of cells. (a) State any four contents of the '
          'primary memory. (b) Enumerate any four distinctions between Read Only Memory (ROM) '
          'and Random Access Memory (RAM).',
@@ -1028,6 +1028,6 @@ CH = {
          'Volatile — its content is lost on power failure'],
         ['Less expensive than RAM', 'Very expensive'],
       ]}}],
-    'src': 'Chapter 2.8, Q6'},
+    'src': 'Chapter 2.8, Q6', 'sec': '2.8'},
   ]},
 }

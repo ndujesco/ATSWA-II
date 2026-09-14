@@ -928,7 +928,7 @@ CH = {
     'a': 2,
     'w': 'An interpreter converts and executes a line at a time and produces no object code — '
          'unlike a compiler, which translates the whole program at once before it is run.',
-    'src': 'Chapter 3.2.6'},
+    'src': 'Chapter 3.2.6', 'sec': '3.2'},
    {'q': 'A mainframe working on several programs by switching between them, keeping the CPU '
          'continuously busy, is running under a',
     'o': ['multi-user environment', 'multi-tasking environment', 'multi-programming '
@@ -937,14 +937,14 @@ CH = {
     'w': 'In multi-programming, one processor switches between programs, with the time slice '
          'set by I/O interrupts. Multiprocessing, by contrast, uses several processors '
          'working at once; time-sharing gives each user a predetermined time slice.',
-    'src': 'Chapter 3.3.3'},
+    'src': 'Chapter 3.3.3', 'sec': '3.3'},
    {'q': 'Which of the following is a fourth-generation language (4GL)?',
     'o': ['FORTRAN', 'COBOL', 'Assembly language', 'SQL', 'Machine language'],
     'a': 3,
     'w': 'SQL (Structured Query Language) is a 4GL — non-procedural, telling the system what '
          'is wanted rather than how to get it. FORTRAN and COBOL are 3GLs; assembly and '
          'machine language are 2GL and 1GL.',
-    'src': 'Chapter 3.5.1'},
+    'src': 'Chapter 3.5.1', 'sec': '3.5'},
    {'q': 'The software that builds, manages and provides access to a database, avoiding data '
          'duplication across many applications, is a',
     'o': ['file manager', 'Database Management System (DBMS)', 'utility program',
@@ -952,14 +952,14 @@ CH = {
     'a': 1,
     'w': 'A DBMS integrates many files and lets several applications share the same data '
          'without duplication; a file manager, by contrast, processes only one file at a time.',
-    'src': 'Chapter 3.4.2'},
+    'src': 'Chapter 3.4.2', 'sec': '3.4'},
    {'q': 'Software written in-house, tailored to one organisation\'s specific needs, is called',
     'o': ['off-the-shelf software', 'bespoke software', 'system software', 'a utility program',
           'an operating system'],
     'a': 1,
     'w': 'Bespoke (custom) software is written or commissioned for one organisation\'s '
          'specific process; off-the-shelf software is bought ready-made for general use.',
-    'src': 'Chapter 3.4.2'},
+    'src': 'Chapter 3.4.2', 'sec': '3.4'},
    {'q': 'Which of these is a function of the operating system?',
     'o': ['Compiling a high-level language program', 'Providing a virtual machine and managing '
           'memory', 'Producing multicolour hardcopy graphics', 'Storing data on a magnetic '
@@ -968,7 +968,7 @@ CH = {
     'w': 'Resource sharing, virtual storage, I/O handling, memory management, the filing '
          'system, protection/error handling, program control, and booting are all OS '
          'functions.',
-    'src': 'Chapter 3.2.1'},
+    'src': 'Chapter 3.2.1', 'sec': '3.2'},
   ],
   'theory': [
    {'q': 'Enumerate any FIVE requirements of a multi-user application.',
@@ -984,7 +984,7 @@ CH = {
         'required for storing the operating system.',
         'Protection features for preventing a system crash, and record/file locking and '
         'unlocking facilities to prevent a record/file being updated by another user.']}],
-    'src': 'Chapter 3.10, theory Q1'},
+    'src': 'Chapter 3.10, theory Q1', 'sec': '3.10'},
    {'q': '(a) Enumerate the sources of application packages. (b) State any FIVE factors to be '
          'considered when selecting application packages.',
     'marks': 13,
@@ -1016,7 +1016,7 @@ CH = {
         'Support and maintenance service provided by the software supplier.',
         'The vendor\'s or developer\'s reputation.',
         'Provision of an alternative package should the chosen one fail.']}],
-    'src': 'Chapter 3.10, theory Q2'},
+    'src': 'Chapter 3.10, theory Q2', 'sec': '3.10'},
    {'q': 'High-level languages are written in the programmer\'s language. (a) State any FIVE '
          'features of high-level languages. (b) Enumerate any THREE advantages and TWO '
          'disadvantages of high-level languages. (c) List any FOUR examples of high-level '
@@ -1045,7 +1045,7 @@ CH = {
       {'h4': '(c) Examples (any four)'},
       {'p': 'FORTRAN (Formula Translator); COBOL (Common Business Oriented Language); BASIC; '
             'Pascal; PL/1 (Programming Language 1); Ada; C; APL.'}],
-    'src': 'Chapter 3.10, theory Q3'},
+    'src': 'Chapter 3.10, theory Q3', 'sec': '3.10'},
    {'q': '(a) Enumerate the basic operations performed in a computer program. (b) List the '
          'purposes of a program flowchart.',
     'marks': 9,
@@ -1070,7 +1070,7 @@ CH = {
         'To sort out the procedural steps in the program.',
         'As an aid to program construction and coding.',
         'As a communicating document in program documentation.']}],
-    'src': 'Chapter 3.10, theory Q4'},
+    'src': 'Chapter 3.10, theory Q4', 'sec': '3.10'},
    {'q': 'What is the basic function of each of the following Microsoft Windows operations? '
          '(a) Menu bar (b) Toolbar (c) Start button (d) My Computer (e) My Documents '
          '(f) Control Panel.',
@@ -1088,6 +1088,6 @@ CH = {
         'other files stored on the computer\'s hard disk.',
         '**Control Panel** — provides access to Windows configuration settings, and a means '
         'to manage those settings.']}],
-    'src': 'Chapter 3.10, theory Q5'},
+    'src': 'Chapter 3.10, theory Q5', 'sec': '3.10'},
   ]},
 }

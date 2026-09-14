@@ -24,7 +24,8 @@
     var mcq = ((chapter.quiz && chapter.quiz.mcq) || []).map(function (q) {
       return {
         q: q.q, o: q.o, a: q.a, w: q.w || '', calc: q.calc || '',
-        src: q.src || 'Written for this chapter', pre: q.pre || [], flag: q.flag || ''
+        src: q.src || 'Written for this chapter', pre: q.pre || [], flag: q.flag || '',
+        sec: q.sec || ''
       };
     });
     if (exams) {

@@ -46,10 +46,14 @@
               ' short</span><span>' + p.secb.length + ' essay</span></div></a>';
           }).join('') + '</div>';
       }).join('');
+      var oldest = diets[order[order.length - 1]][0].name;
+      var newest = diets[order[0]][0].name;
       A.h('<div class="wrap"><section class="shead" style="border:none">' +
-        '<div class="code">Past papers</div><h1>Five diets, twenty papers</h1>' +
-        '<p>Every ATSWA Part II paper from March 2024 to March 2026, exactly as sat, with the ' +
-        'examiners&rsquo; own solutions and reports. Read one through, or sit it against the clock.</p>' +
+        '<div class="code">Past papers</div><h1>' + order.length + ' diets, ' +
+        ex.papers.length + ' papers</h1>' +
+        '<p>Every ATSWA Part II paper from ' + A.esc(oldest) + ' to ' + A.esc(newest) +
+        ', exactly as sat, with the examiners&rsquo; own solutions and reports. Read one ' +
+        'through, or sit it against the clock.</p>' +
         (only ? '<div class="sbar"><a class="btn" href="#/exams">Show all subjects</a></div>' : '') +
         '</section>' + body + '<div style="height:60px"></div></div>');
     });
@@ -345,7 +349,7 @@
 
   function foot() {
     A.el('foot').innerHTML = '<p>Written from the 2025 ATSWA Part&nbsp;II study texts (fifth ' +
-      'edition) and the INSIGHT past-question packs, March 2024 to March 2026. The chapter notes ' +
+      'edition) and the INSIGHT past-question packs, March 2014 to March 2026. The chapter notes ' +
       'are a study aid, not a substitute for the study text; check anything that matters against ' +
       'it and against your tutor. <a href="#/about">About</a></p>' +
       '<p style="margin-top:10px;font-size:13px;color:var(--ink4)">Keys: <b>A</b>&ndash;<b>E</b> ' +

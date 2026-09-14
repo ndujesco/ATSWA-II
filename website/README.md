@@ -1,7 +1,7 @@
 # ATSWA Part II — Study
 
 The four ATSWA Part II subjects as chapter-by-chapter study notes with worked
-examples, typeset formulas and per-chapter quizzes, next to five diets of past
+examples, typeset formulas and per-chapter quizzes, next to 24 diets of past
 papers with the official solutions.
 
 ## Deploy
@@ -55,8 +55,8 @@ braces and out-of-range answer indices fail the build rather than the page.
 
 Chapter notes are written from the **2025 ATSWA Part II study texts (fifth
 edition)** in `../materials/study-texts/`. Past papers are the real papers from
-the five **INSIGHT** packs in `../materials/past-questions/`, March 2024 to March
-2026, with the examiners' own solutions and reports.
+the 24 **INSIGHT** packs in `../materials/past-questions/`, March 2014 to March
+2026 (missing only March 2016), with the examiners' own solutions and reports.
 
 Every past question is assigned to a chapter by in-subject IDF retrieval against
 the study text, boosted by a curated per-chapter vocabulary in

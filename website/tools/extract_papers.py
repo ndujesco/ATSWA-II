@@ -20,6 +20,25 @@ PQ   = ROOT / 'materials' / 'past-questions'
 OUT  = ROOT / 'website' / 'data'
 
 DIETS = [
+    ('2014-03', 'March 2014',     'INSIGHT Part II - 2014-03 March 2014.pdf'),
+    ('2014-09', 'September 2014', 'INSIGHT Part II - 2014-09 September 2014.pdf'),
+    ('2015-03', 'March 2015',     'INSIGHT Part II - 2015-03 March 2015.pdf'),
+    ('2015-09', 'September 2015', 'INSIGHT Part II - 2015-09 September 2015.pdf'),
+    ('2016-09', 'September 2016', 'INSIGHT Part II - 2016-09 September 2016.pdf'),
+    ('2017-03', 'March 2017',     'INSIGHT Part II - 2017-03 March 2017.pdf'),
+    ('2017-09', 'September 2017', 'INSIGHT Part II - 2017-09 September 2017.pdf'),
+    ('2018-03', 'March 2018',     'INSIGHT Part II - 2018-03 March 2018.pdf'),
+    ('2018-09', 'September 2018', 'INSIGHT Part II - 2018-09 September 2018.pdf'),
+    ('2019-03', 'March 2019',     'INSIGHT Part II - 2019-03 March 2019.pdf'),
+    ('2019-09', 'September 2019', 'INSIGHT Part II - 2019-09 September 2019.pdf'),
+    ('2020-03', 'March 2020',     'INSIGHT Part II - 2020-03 March 2020.pdf'),
+    ('2020-09', 'September 2020', 'INSIGHT Part II - 2020-09 September 2020.pdf'),
+    ('2021-03', 'March 2021',     'INSIGHT Part II - 2021-03 March 2021.pdf'),
+    ('2021-09', 'September 2021', 'INSIGHT Part II - 2021-09 September 2021.pdf'),
+    ('2022-03', 'March 2022',     'INSIGHT Part II - 2022-03 March 2022.pdf'),
+    ('2022-09', 'September 2022', 'INSIGHT Part II - 2022-09 September 2022.pdf'),
+    ('2023-03', 'March 2023',     'INSIGHT Part II - 2023-03 March 2023.pdf'),
+    ('2023-09', 'September 2023', 'INSIGHT Part II - 2023-09 September 2023.pdf'),
     ('2024-03', 'March 2024',     'INSIGHT Part II - 2024-03 March 2024.pdf'),
     ('2024-09', 'September 2024', 'INSIGHT Part II - 2024-09 September 2024.pdf'),
     ('2025-03', 'March 2025',     'INSIGHT Part II - 2025-03 March 2025.pdf'),
@@ -35,15 +54,55 @@ SUBJECTS = [
 
 # ── markers ───────────────────────────────────────────────────────────────
 RE_PAPERHEAD = re.compile(r'PART\s+II\s+EXAMINATIONS?\s*[-–]', re.I)
-RE_SECA1 = re.compile(r'^\s*SECTION\s+A[:\s]*PART\s+(?:I|1)\b.*MULTIPLE', re.I)
-RE_SECA2 = re.compile(r'^\s*SECTION\s+A[:\s]*PART\s+(?:II|2)\b.*SHORT', re.I)
-RE_SECB  = re.compile(r'^\s*SECTION\s+B\s*[:.]', re.I)
-RE_MCSOL = re.compile(r'^\s*(?:PART\s*(?:1|I)[:\s]*)?MULTI(?:PLE)?[-\s]*CHOICE\s+'
-                      r'(?:QUESTIONS?.*|SOLUTIONS?)\s*$', re.I)
-RE_SASOL = re.compile(r'^\s*(?:PART\s*(?:II|2)[:\s]*)?SHORT[-\s]*ANSWERS?\s+'
-                      r'(?:QUESTIONS?|SOLUTIONS?)\s*$', re.I)
+
+# Older diets wrap "MULTIPLE-CHOICE QUESTIONS" / "SHORT-ANSWER QUESTIONS" onto
+# their own line below the "SECTION A: PART I/II ATTEMPT ALL QUESTIONS" banner
+# rather than trailing it on the same line, and print "SECTION B" with no
+# colon at all — so none of these three markers require what follows on the
+# same physical line, only the banner phrase itself, which is distinctive
+# enough on its own not to appear anywhere but at each part's true start.
+# One diet drops "PART II" from the Part II banner entirely ("SECTION A:
+# SHORT-ANSWER QUESTIONS"), so both banners also accept "SECTION A" directly
+# followed, on the same line, by the part's own keyword.
+# One diet drops "SECTION A:" entirely from the Part II banner, leaving a
+# bare "PART II   SHORT-ANSWER QUESTIONS (20 Marks)" — safe to accept without
+# that prefix specifically because it still requires the part's own keyword
+# on the same line, unlike the page-footer "ATSWA PART II <diet>" that
+# repeats on every page and never carries that keyword.
+RE_SECA1 = re.compile(r'^\s*SECTION\s+A[:\s]*PART\s+(?:I|1)\b|'
+                      r'^\s*SECTION\s+A[:\s]*MU(?:L)?TI(?:PLE)?[\s\-–—:()]*CHOICE|'
+                      r'^\s*PART\s+(?:I|1)\b[:\s]*MU(?:L)?TI(?:PLE)?[\s\-–—:()]*CHOICE', re.I)
+RE_SECA2 = re.compile(r'^\s*SECTION\s+A[:\s]*PART\s+(?:II|2)\b|'
+                      r'^\s*SECTION\s+A[:\s]*SHORT[\s\-]*ANSWERS?\b|'
+                      r'^\s*PART\s+(?:II|2)\b[:\s]*SHORT[\s\-]*ANSWERS?', re.I)
+RE_SECB  = re.compile(r'^\s*SECTION\s+B\b', re.I)
+# The header introducing the printed MCQ/SAQ answer key varies a lot across
+# diets — "MULTIPLE CHOICE QUESTIONS", "MULTIPLE – CHOICE QUESTION", "MCQ –
+# SOLUTION", "SOLUTION TO MULTIPLE CHOICE QUESTIONS (MCQ)", "SOLUTIONS - MCQ",
+# "SOLUTION TO SAQ", "SHORT-ANSWER SOLUTIONS", etc. Matching is therefore a
+# search for the *combination* of words anywhere on the line, not an anchored
+# exact heading, and callers use .search() rather than .match().
+RE_MCSOL = re.compile(r'MU(?:L)?TI(?:PLE)?[\s\-–—:()]*CHOICE|MCQ[\s\-–—:()]*'
+                      r'SOLUTIONS?|SOLUTIONS?[\s\-–—:()]*(?:TO\s*)?MCQ|'
+                      r'^\s*MCQ\s*[:\-–—]?\s*$', re.I)
+RE_SASOL = re.compile(r'SHORT[\s\-]*ANSWERS?|SAQ[\s\-–—:()]*SOLUTIONS?|'
+                      r'SOLUTIONS?[\s\-–—:()]*(?:TO\s*)?SAQ|'
+                      r'^\s*SAQ\s*[:\-–—]?\s*$|'
+                      # one diet labels this "SECTION A: PART II ANSWER", with
+                      # no "SHORT" at all — safe only in this exact combination.
+                      r'PART\s+(?:II|2)\b[:\s]*ANSWER\b', re.I)
 RE_WORK  = re.compile(r'^\s*WORKINGS?\b', re.I)
-RE_BSOL  = re.compile(r'^\s*SOLUTION\s+(\d+)\s*[A-Za-z]?\s*$', re.I)
+# "SOLUTION 1", "SOLUTION TO QUESTION 1" and (one diet) "SOLUTION TO QUESTION
+# ONE" all mark a Section B answer; Section B never runs past six questions,
+# so a spelled-out word is only ever one of these.
+RE_BSOL  = re.compile(r'^\s*SOLUTION\s*(?:TO\s*)?(?:QUESTION\s*)?'
+                      r'(\d+|ONE|TWO|THREE|FOUR|FIVE|SIX)\s*[A-Za-z]?\s*$', re.I)
+NUM_WORD = {'ONE': 1, 'TWO': 2, 'THREE': 3, 'FOUR': 4, 'FIVE': 5, 'SIX': 6}
+
+
+def bsol_num(m):
+    g = m.group(1).upper()
+    return NUM_WORD.get(g) or int(g)
 RE_EXAM  = re.compile(r"^\s*EXAMINER'?S?\s+(COMMENT|REPORT)", re.I)
 
 RE_QNUM_P = re.compile(r'^\s{0,14}(\d{1,2})[.)]\s*(.*)$')
@@ -56,6 +115,16 @@ class _QNum:
         return RE_QNUM_P.match(line) or RE_QNUM_B.match(line)
 
 RE_QNUM = _QNum
+
+# A few diets number the short-answer questions (only ever up to 20) with
+# lower-case roman numerals — "i.", "ii.", … "xx." — instead of arabic
+# digits; parse_numbered() tries this once the arabic match fails.
+_ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
+           'xi', 'xii', 'xiii', 'xiv', 'xv', 'xvi', 'xvii', 'xviii', 'xix', 'xx']
+ROMAN_VAL = {w: i + 1 for i, w in enumerate(_ROMANS)}
+RE_QNUM_ROMAN = re.compile(
+    r'^\s{0,14}(' + '|'.join(sorted(_ROMANS, key=len, reverse=True)) +
+    r')[.)]\s*(.*)$', re.I)
 RE_OPT   = re.compile(r'^\s{0,24}([A-E])[.,)]\s*(\S.*)?$')
 RE_PRE   = re.compile(r'^\s*Use\s+the\s+(following|data|table|information|Euler)', re.I)
 RE_KEY   = re.compile(r'^\s*(\d{1,2})[.)]?\s*([A-E])[.)]?\s*$')
@@ -68,10 +137,19 @@ def is_tabular(lines):
     return any(TABULAR.search(l) for l in lines)
 
 
+# A stray page number occasionally lands on the same line as the next
+# question, immediately before its real number, when pdftotext -layout
+# collapses a two-column page footer into the body text — e.g. "4.   2.
+# Which of the following...". Genuine prose never opens with two separate
+# "N." tokens back to back, so stripping the first is safe.
+RE_STRAY_NUM = re.compile(r'^\s*\d{1,2}[.)]\s+(?=\d{1,2}[.)]\s)')
+
+
 def pdf_lines(path):
     txt = subprocess.run(['pdftotext', '-layout', str(path), '-'],
                          capture_output=True, text=True, check=True).stdout
-    return txt.replace('\f', '\n').split('\n')
+    lines = txt.replace('\f', '\n').split('\n')
+    return [RE_STRAY_NUM.sub('', l) for l in lines]
 
 
 def find(lines, rx, start=0, end=None):
@@ -95,7 +173,10 @@ def split_papers(lines):
                 break
         code = None
         for c, name in SUBJECTS:
-            if title.upper().startswith(name[:12]):
+            # older diets title the FA paper "PRINCIPLES [AND/&] PRACTICE OF
+            # FINANCIAL ACCOUNTING"; match the subject name anywhere in the
+            # title, not just as a prefix, so both eras are found.
+            if name in title.upper():
                 code = c
         if code is None:
             continue
@@ -203,6 +284,18 @@ def parse_numbered(block, limit=40, expect=1):
             expect += 1
             continue
 
+        mr = RE_QNUM_ROMAN.match(line)
+        if mr and ROMAN_VAL.get(mr.group(1).lower()) == expect and expect <= limit:
+            if cur:
+                items.append(cur)
+            if pending:
+                pre = squeeze(pending)
+                pending = []
+            cur = {'n': expect, 'body': [tidy(mr.group(2))], 'pre': pre}
+            pre = []
+            expect += 1
+            continue
+
         if RE_PRE.match(line):
             if cur:
                 items.append(cur)
@@ -222,9 +315,13 @@ def parse_numbered(block, limit=40, expect=1):
 
 
 def parse_key(block):
+    # Normally "1.  C"; one diet prints the key as a bare "1   C" with no
+    # punctuation at all — and its fixed-width columns give a 2-digit "10"
+    # only a single trailing space where "1" gets three, so the gap after a
+    # punctuation-less number can be as narrow as one space.
     key = {}
     for l in block:
-        for m in re.finditer(r'(?:^|\s)(\d{1,2})[.)]\s*([A-E])(?=[\s.)]|$)', l):
+        for m in re.finditer(r'(?:^|\s)(\d{1,2})(?:[.)]|\s+)\s*([A-E])(?=[\s.)]|$)', l):
             n = int(m.group(1))
             if 1 <= n <= 40 and n not in key:
                 key[n] = m.group(2)
@@ -237,20 +334,37 @@ def parse_paper(lines, code, diet):
     i_a2 = find(lines, RE_SECA2, max(i_a1, 0))
     i_b  = find(lines, RE_SECB, max(i_a2, 0))
 
-    sols = [(int(m.group(1)), i) for i, l in enumerate(lines)
-            if (m := RE_BSOL.match(l)) and i > max(i_b, 0)]
+    # A few diets append a "MARKING GUIDE" pass after the real Section B
+    # solutions, re-using "SOLUTION 1".."SOLUTION 6" headers a second time for
+    # its mark breakdowns — but where that appendix falls varies (sometimes
+    # one block at the very end, sometimes interleaved after each solution),
+    # so detect it structurally instead: a genuine solution run only ever
+    # holds steady or increases (a "2A"/"2B" pair repeats the same number),
+    # so the first *decrease* marks the start of a second, spurious pass.
+    raw_sols = [(bsol_num(m), i) for i, l in enumerate(lines)
+                if (m := RE_BSOL.match(l)) and i > max(i_b, 0)]
+    sols, last, sols_end = [], 0, n
+    for num, i in raw_sols:
+        if num < last:
+            sols_end = i
+            break
+        sols.append((num, i))
+        last = num
     sol_start = sols[0][1] if sols else n
 
     # the solutions region opens with a multiple-choice header somewhere between
-    # the Section B paper and SOLUTION 1; take the last such header.
+    # the Section B paper and SOLUTION 1; take the first such header, since the
+    # (deliberately loose) word-combination match can otherwise also catch a
+    # later, incidental mention (e.g. an examiner's comment on MCQ performance).
     i_mc = -1
     for i in range(max(i_b, 0) + 1, sol_start):
-        if RE_MCSOL.match(lines[i]):
+        if RE_MCSOL.search(lines[i]):
             i_mc = i
+            break
     i_sa = -1
     if i_mc > 0:
         for i in range(i_mc + 1, sol_start):
-            if RE_SASOL.match(lines[i]):
+            if RE_SASOL.search(lines[i]):
                 i_sa = i
                 break
 
@@ -295,7 +409,7 @@ def parse_paper(lines, code, diet):
 
     secb = []
     for j, (num, at) in enumerate(sols):
-        stop = sols[j + 1][1] if j + 1 < len(sols) else n
+        stop = sols[j + 1][1] if j + 1 < len(sols) else sols_end
         body = squeeze(strip_furniture(lines[at + 1:stop]))
         e = find(body, RE_EXAM)
         comment = squeeze(body[e + 1:]) if e >= 0 else []

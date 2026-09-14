@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ATSWA Part II — Study</title>
-<meta name="description" content="The four ATSWA Part II subjects as chapter-by-chapter study notes with worked examples, typeset formulas, per-chapter quizzes, and five diets of past papers with expanded solutions.">
+<meta name="description" content="The four ATSWA Part II subjects as chapter-by-chapter study notes with worked examples, typeset formulas, per-chapter quizzes, and 24 diets of past papers with expanded solutions.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F2F1EC" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#12110F" media="(prefers-color-scheme: dark)">
@@ -1475,14 +1475,14 @@ var ATSWA = (function () {
       '<section class="hero"><div class="eyebrow">Accounting Technicians Scheme, West Africa</div>' +
       '<h1>Part II, chapter by chapter.</h1>' +
       '<p class="lede">The four Part&nbsp;II subjects set out as study notes you can actually read — ' +
-      'every chapter with its own worked examples, formula sheet and quiz — next to five diets of ' +
+      'every chapter with its own worked examples, formula sheet and quiz — next to 24 diets of ' +
       'past papers with the official solutions expanded into full working.</p>' +
       '<div class="tally">' +
       '<div><b>' + totalCh + '</b>chapters</div>' +
-      '<div><b>600</b>past MCQs</div>' +
-      '<div><b>400</b>short answers</div>' +
-      '<div><b>120</b>essay questions</div>' +
-      '<div><b>5</b>exam diets</div>' +
+      '<div><b>2,859</b>past MCQs</div>' +
+      '<div><b>1,920</b>short answers</div>' +
+      '<div><b>562</b>essay questions</div>' +
+      '<div><b>24</b>exam diets</div>' +
       '</div></section>' +
       '<div class="subs">' + cards + '</div>' +
       '<div class="panels">' +
@@ -1495,7 +1495,7 @@ var ATSWA = (function () {
       '<div class="panel"><h3>Quiz after every chapter</h3><p>Objective questions drawn from the past ' +
       'papers and written fresh from the chapter, each with the reasoning underneath, plus theory ' +
       'questions with model answers you can write against.</p></div>' +
-      '<div class="panel"><h3>Sit a whole paper</h3><p>Five diets, four papers each, three hours on ' +
+      '<div class="panel"><h3>Sit a whole paper</h3><p>24 diets, four papers each, three hours on ' +
       'the clock. Section A marks itself; Section B gives you the official solution and the ' +
       'examiner&rsquo;s report once you have written yours.</p></div>' +
       '</div></div>');
@@ -1505,7 +1505,7 @@ var ATSWA = (function () {
     h('<div class="wrap"><div class="col" style="padding:44px 0 70px">' +
       '<h1 style="font-size:34px;letter-spacing:-.03em">About this site</h1>' +
       '<p style="margin-top:16px;color:var(--ink2)">Built from the 2025 ATSWA Part II study texts ' +
-      '(fifth edition) and the five INSIGHT past-question packs from March 2024 to March 2026. ' +
+      '(fifth edition) and the 24 INSIGHT past-question packs from March 2014 to March 2026. ' +
       'The chapter notes are written from the study texts; the past papers are the real papers, ' +
       'with the examiners&rsquo; own solutions.</p>' +
       '<p style="color:var(--ink2)">Nothing here replaces the study text or your tutor. Where a ' +
@@ -1755,7 +1755,8 @@ var ATSWA = (function () {
     var mcq = ((chapter.quiz && chapter.quiz.mcq) || []).map(function (q) {
       return {
         q: q.q, o: q.o, a: q.a, w: q.w || '', calc: q.calc || '',
-        src: q.src || 'Written for this chapter', pre: q.pre || [], flag: q.flag || ''
+        src: q.src || 'Written for this chapter', pre: q.pre || [], flag: q.flag || '',
+        sec: q.sec || ''
       };
     });
     if (exams) {
@@ -2194,10 +2195,14 @@ var ATSWA = (function () {
               ' short</span><span>' + p.secb.length + ' essay</span></div></a>';
           }).join('') + '</div>';
       }).join('');
+      var oldest = diets[order[order.length - 1]][0].name;
+      var newest = diets[order[0]][0].name;
       A.h('<div class="wrap"><section class="shead" style="border:none">' +
-        '<div class="code">Past papers</div><h1>Five diets, twenty papers</h1>' +
-        '<p>Every ATSWA Part II paper from March 2024 to March 2026, exactly as sat, with the ' +
-        'examiners&rsquo; own solutions and reports. Read one through, or sit it against the clock.</p>' +
+        '<div class="code">Past papers</div><h1>' + order.length + ' diets, ' +
+        ex.papers.length + ' papers</h1>' +
+        '<p>Every ATSWA Part II paper from ' + A.esc(oldest) + ' to ' + A.esc(newest) +
+        ', exactly as sat, with the examiners&rsquo; own solutions and reports. Read one ' +
+        'through, or sit it against the clock.</p>' +
         (only ? '<div class="sbar"><a class="btn" href="#/exams">Show all subjects</a></div>' : '') +
         '</section>' + body + '<div style="height:60px"></div></div>');
     });
@@ -2493,7 +2498,7 @@ var ATSWA = (function () {
 
   function foot() {
     A.el('foot').innerHTML = '<p>Written from the 2025 ATSWA Part&nbsp;II study texts (fifth ' +
-      'edition) and the INSIGHT past-question packs, March 2024 to March 2026. The chapter notes ' +
+      'edition) and the INSIGHT past-question packs, March 2014 to March 2026. The chapter notes ' +
       'are a study aid, not a substitute for the study text; check anything that matters against ' +
       'it and against your tutor. <a href="#/about">About</a></p>' +
       '<p style="margin-top:10px;font-size:13px;color:var(--ink4)">Keys: <b>A</b>&ndash;<b>E</b> ' +

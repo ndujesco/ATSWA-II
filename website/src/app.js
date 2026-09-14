@@ -180,14 +180,14 @@ var ATSWA = (function () {
       '<section class="hero"><div class="eyebrow">Accounting Technicians Scheme, West Africa</div>' +
       '<h1>Part II, chapter by chapter.</h1>' +
       '<p class="lede">The four Part&nbsp;II subjects set out as study notes you can actually read — ' +
-      'every chapter with its own worked examples, formula sheet and quiz — next to five diets of ' +
+      'every chapter with its own worked examples, formula sheet and quiz — next to 24 diets of ' +
       'past papers with the official solutions expanded into full working.</p>' +
       '<div class="tally">' +
       '<div><b>' + totalCh + '</b>chapters</div>' +
-      '<div><b>600</b>past MCQs</div>' +
-      '<div><b>400</b>short answers</div>' +
-      '<div><b>120</b>essay questions</div>' +
-      '<div><b>5</b>exam diets</div>' +
+      '<div><b>2,859</b>past MCQs</div>' +
+      '<div><b>1,920</b>short answers</div>' +
+      '<div><b>562</b>essay questions</div>' +
+      '<div><b>24</b>exam diets</div>' +
       '</div></section>' +
       '<div class="subs">' + cards + '</div>' +
       '<div class="panels">' +
@@ -200,7 +200,7 @@ var ATSWA = (function () {
       '<div class="panel"><h3>Quiz after every chapter</h3><p>Objective questions drawn from the past ' +
       'papers and written fresh from the chapter, each with the reasoning underneath, plus theory ' +
       'questions with model answers you can write against.</p></div>' +
-      '<div class="panel"><h3>Sit a whole paper</h3><p>Five diets, four papers each, three hours on ' +
+      '<div class="panel"><h3>Sit a whole paper</h3><p>24 diets, four papers each, three hours on ' +
       'the clock. Section A marks itself; Section B gives you the official solution and the ' +
       'examiner&rsquo;s report once you have written yours.</p></div>' +
       '</div></div>');
@@ -210,7 +210,7 @@ var ATSWA = (function () {
     h('<div class="wrap"><div class="col" style="padding:44px 0 70px">' +
       '<h1 style="font-size:34px;letter-spacing:-.03em">About this site</h1>' +
       '<p style="margin-top:16px;color:var(--ink2)">Built from the 2025 ATSWA Part II study texts ' +
-      '(fifth edition) and the five INSIGHT past-question packs from March 2024 to March 2026. ' +
+      '(fifth edition) and the 24 INSIGHT past-question packs from March 2014 to March 2026. ' +
       'The chapter notes are written from the study texts; the past papers are the real papers, ' +
       'with the examiners&rsquo; own solutions.</p>' +
       '<p style="color:var(--ink2)">Nothing here replaces the study text or your tutor. Where a ' +
