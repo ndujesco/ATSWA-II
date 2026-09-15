@@ -1,5 +1,210 @@
 # Where the build stopped
 
+## Session 2026-09-15 (cont.) — PS chapter 23 added too: it's 23/23, not 22/22
+User confirmed (asked via AskUserQuestion) they wanted the discovered-but-not-yet-
+authored 23rd PS chapter added rather than left as a flagged gap. **Chapter 23,
+"Public Sector Audit"**, authored in the same full-fidelity style as 21/22: legal
+basis (Constitution ss.85–87/125, parastatal audit requirements), audit objectives
+(completeness/occurrence/measurement/regularity/disclosure) and the 7 factors for
+an effective audit, the three main audit types (compliance/financial/performance —
+full VFM "3 Es" treatment with the steps in a VFM audit) plus 10 other named audit
+types (pre-/post-payment, interim/final, management, operational, vouching,
+verification, ad-hoc, annual), the ISA-based steps in auditing government
+statements (planning, engagement letter, entrance conference, regularity-audit
+scope, fieldwork, draft report, exit conference, report distribution — compressed
+from the study text's much longer ISA 300/210/260/265 quotations, since those are
+generic auditing-standard boilerplate rather than PS-specific), the Auditor-
+General/Public Accounts Committee relationship, internal audit (objectives, scope,
+its role in a democracy, how to foster the internal/external audit relationship),
+where specialists can assist the Auditor-General, the INTOSAI code of ethics and
+basic postulates, and the full **codified audit-query offences/sanctions table**
+from FR 2009 ch.31 (19 rows — contractor defaults route to blacklist+EFCC, officer
+defaults route to surcharge/removal/discipline) — plus the study text's own
+end-of-chapter Q&A. `SUBJECTS`/`src/subjects.js` PS count updated `22 → 23`.
+Re-ran the full citation pipeline once more (`aim.py → aim_sec.py → build_exams.py`):
+ch23 picked up 10 genuinely-matching questions (mostly reclaimed from ch18's
+Financial Management Control, which shares audit/internal-control vocabulary — ch18
+dropped 29→24 matched questions as they moved to their real home). Final smoke test
+of `data/exams.js`: 96 papers, chapters 21/22/23 all present with real citation
+counts, zero citations outside the valid 1–23 range. Full rebuild clean — PS is now
+genuinely 23/23, matching the study text exactly; no more discovered-but-unbuilt
+chapters remain.
+
+## Session 2026-09-15 — PS was missing 9 chapters' worth of content and 2 whole
+## chapters; both now closed. PS is 22/22, not 20/20.
+User asked me to verify PS "contains all info in the study text." Checked directly
+against the re-extracted study-text PDF instead of trusting earlier session notes,
+and found two real gaps:
+
+- **Chapters 8–16 (9 of the then-20 chapters) had no end-of-chapter Q&A section at
+  all**, and several also had entire body topics missing that the book covers.
+  Fixed chapter by chapter, appending new sections (never rewriting existing ones)
+  plus a final "End-of-chapter questions (study text)" section with the book's own
+  Section A/B and official answers:
+  - **ch08 (Vouchers)**: added §8.7 Payroll accounting in the public sector — PERC
+    custody, action by salaries/internal audit/cash office — entirely absent before
+    (the site only covered voucher classification/contents/flow/registers/loss, not
+    payroll at all) — + §8.8 Q&A.
+  - **ch09 (Revenue)**: added funds classification (government/proprietary/
+    fiduciary; general/capital-project/special/trust/contingency/inter-govt-service/
+    revolving/self-liquidating), the 2025-reform revenue agencies (NNPCL, NUPRC,
+    NMDPRA, **Nigeria Revenue Service** replacing FIRS, SBIRS, NCS — including the
+    2023 Customs Act's 4% FOB levy replacing the old 7% cost-of-collection cut),
+    FAAC technical/plenary sessions, SJLGAAC (+ the July-2024 Supreme Court change
+    to direct LG payment), the new **Joint Revenue Board of Nigeria (2025 Act)**,
+    RMAFC, the CRF/Development Fund/Contingency Fund with a full worked
+    illustration, and Ghana's revenue/fund system — none of this 2025-reform
+    material existed on the site before. + Q&A.
+  - **ch10 (Procurement)**: body content was already thorough; added the missing
+    Q&A (Due Process, post-award voucher requirements, e-payment guidelines,
+    direct-procurement circumstances).
+  - **ch11 (Stores/losses)**: added the storekeeper's functions and procurement
+    procedure, cost-of-inventory valuation (fixed-price/last-known-price methods),
+    a full **IPSAS 12 (Inventories)** section (measurement, cost formulas — FIFO/
+    weighted-average, disclosure) that didn't exist anywhere on the site, and the
+    **Federal Losses Committee** (composition, function) plus TF146 loss-reporting
+    procedure and the accounting-entries table for losses — none previously
+    covered (the existing Board of Survey/Enquiry content was fine and untouched).
+    + Q&A.
+  - **ch12 (Local government)**: added Financial Memoranda objectives/contents,
+    expenditure accounting treatment, the three cash-basis LG final-accounts
+    statements in full, internal/external financial control, spending-limit
+    tables by IGR band, grants-in-aid objectives, fee-charging policy factors,
+    and budgetary control procedure. + Q&A.
+  - **ch13 (Cashbook/transcripts)**: added the cash office (features, functions,
+    security-document retention, cash-control measures), the imprest holder
+    (standing/special imprest, checks and balances), the revenue collector, the
+    personal/non-personal advance types, and self-accounting vs sub-self-
+    accounting vs non-self-accounting units (+ the three transcript types, the
+    main ledger) — a whole layer of named roles/procedures the site's otherwise
+    excellent worked-example content never touched. + Q&A.
+  - **ch14 (Cash-basis statutory statements)**: body was already comprehensive;
+    added the missing Q&A (a loan-fund set of ledger accounts, a trial-balance
+    extraction, a recurrent/capital account with comparatives, and a direct-
+    method cash-flow statement with comparatives).
+  - **ch15 (IPSAS 33)**: body was already comprehensive; added the missing Q&A
+    (MCQ + short-answer + three Section B scenarios: revenue recognition from
+    1 Jan 2016, preparing the opening SOFP under three different starting
+    conditions, and asset-recognition criteria/steps).
+  - **ch16 (Accrual-basis statements)**: added **IPSAS 3** (accounting policies/
+    estimates/errors), the full notes-disclosure list and **qualitative
+    characteristics of financial reporting** (12 of them — none were on the
+    site), **IPSAS 45/17 (PP&E)** in full (heritage/infrastructure/weapons-system
+    asset classes, recognition, cost, revaluation-surplus mechanics, depreciation
+    review, disclosure), **IPSAS 22** general-government-sector disclosure (GGS/
+    PFC/PNFC/GBE definitions), and the 2018 Treasury circular on accrual books of
+    account. + Q&A (two worked statements: a direct-method cash flow, and a
+    statement of financial performance with depreciation/disposal/accrual
+    adjustments).
+  - Full audit method: for each chapter, diffed the book's own "chapter contents"
+    mini-TOC against the site's section list to find topic-level gaps, not just
+    the missing Q&A — this is what caught the ch08 payroll gap and the ch09
+    2025-reform gap, which a Q&A-only pass would have missed entirely.
+
+- **The book actually has 22 numbered PS chapters, not 20 — chapters 21
+  ("Emerging Issues in the Nigerian Public Sector": TSA, ATRRS, IPPIS, GIFMIS,
+  Open Treasury Portal, FTeR, NRS e-invoicing, TMRAS) and 22 ("Ethical
+  Considerations in Public Sector Accounting in Managing Economic Crimes": EFCC,
+  ICPC, Code of Conduct Bureau/Tribunal, Public Complaints Commission, the Money
+  Laundering (Prohibition) Act, the Judiciary) didn't exist on the site at all.**
+  Authored both from scratch in the same full-fidelity style as ch17–20 (body
+  content + a faithful "End-of-chapter questions (study text)" section with the
+  book's own Section A/B and official answers). `tools/build_content.py`'s
+  `SUBJECTS` PS count updated `20 → 22`; `src/subjects.js`'s PS `n` likewise —
+  the homepage/progress-dashboard chapter tally is computed from that, so no
+  other UI file needed a manual count fix.
+  - **The book has a 23rd chapter too — "Public Sector Audit"** (legal
+    requirements, audit objectives, types of audit, INTOSAI code of ethics,
+    the Auditor-General/PAC relationship, internal audit, offences/sanctions
+    under the Financial Regulations). **Not authored** — flagged for the user
+    to decide on, not silently added, since this pass was already large. If
+    they want full parity, this is the one remaining gap.
+- **Past-paper citations were actually broken for these two chapters**, and not
+  just because the chapters didn't exist. `tools/outline.py`'s chapter-boundary
+  regex only recognised chapter-heading number words up to "TWENTY" (`WORDS` list
+  capped there), so `tools/aim.py`'s retrieval never even saw chapters 21–22 as
+  candidates — any exam question about TSA, GIFMIS, EFCC, ICPC etc. was being
+  silently mis-attributed to whichever of chapters 1–20 scored next-best. Fixed by
+  extending `WORDS`/`NUM` to `TWENTY-ONE`/`TWENTY-TWO`/`TWENTY-THREE` (the PDF
+  prints this as "CHAPTER TWENTY- ONE" with a stray space, so the regex/canon-
+  icalisation is whitespace/hyphen-tolerant), then re-ran the full pipeline
+  (`aim.py → aim_sec.py → build_exams.py`). Result: 55 questions now correctly
+  cite ch21 and 66 cite ch22 (previously 0, wrongly folded into other chapters —
+  e.g. ch1 dropped from 48→40 matched questions, ch2 84→64, ch7 77→72, as those
+  questions moved to their real home). Also added a **new safety filter** in
+  `aim.py`'s `build_index()`: retrieval is now confined to chapters that have a
+  `CHAPTER_KEYS` entry (i.e. an authored site chapter) at all, so the newly-
+  visible "chapter 23" in the raw PDF (which has no site page) can't attract a
+  citation that would point at a non-existent page — its 1 matched question
+  falls back to the next-best of chapters 1–22 instead. Verified via a Node
+  smoke-test of the built `data/exams.js`: 96 papers, ch21/ch22 citations present,
+  zero citations outside the valid 1–22 range.
+- Added `CHAPTER_KEYS['PS'][21]`/`[22]` seed vocab to `tools/corrections.py` for
+  the new chapters (TSA/ATRRS/IPPIS/GIFMIS/etc.; EFCC/ICPC/money-laundering/etc.).
+- Full rebuild clean: `python3 tools/build_content.py && ./build.sh` — PS 22/22
+  chapters, 219 sections (up from 169 at the start of this pass), 139 MCQ, 30
+  theory; all four subjects build with no regressions.
+
+## Session 2026-09-14 (cont.) — "Examined before" grouped by diet, PS lists
+## de-prosed across 13 chapters, QA worksheet-summary gap closed on ch01/ch02
+- **Chapter pages now show every past question matched to that chapter**,
+  grouped by diet. `fillPqPanel()` in `src/app.js` was already called at the
+  bottom of every chapter view but is now a collapsible-by-diet list instead
+  of a flat one: `<details class="pqgroup"><summary>{diet name}<span
+  class="n">{count} questions</span></summary><div class="pqlist">...</div>
+  </details>`, newest diet first, all collapsed by default. Needed once a
+  well-covered chapter (e.g. FA ch.8) started matching 100+ questions across
+  24 diets — user's explicit choice was "show all, grouped by diet" over
+  truncating or paginating. New `.pqgroup`/`.pqgroup > summary` CSS in
+  `src/page.html`; the old per-row `.diet` span is gone (redundant with the
+  group header now).
+- **PS, all 20 chapters: converted every prose-run-on enumeration into a
+  real `ol`/`ul` block.** Per the instruction "any list is listed and not
+  stated." Found candidates with a semicolon/bold-marker/comma heuristic
+  scan (re-run after each batch, refined to exclude worked-example numeric
+  narratives and literal exam-question restatements with "(a)...(b)..."
+  labels — those stay prose on purpose, they're reproducing the study
+  text's own question wording). ~45 conversions across ch01–ch08, ch10,
+  ch12, ch17–ch19 (ch09, ch11, ch13–ch16, ch20 needed none). A handful of
+  spots were deliberately left as prose after review — two-thing
+  comparisons and single-concept explanatory paragraphs aren't lists just
+  because they contain semicolons. Build clean: 20/20 chapters, 169
+  sections (unchanged — only block types inside existing sections moved),
+  49 formulas, 127 MCQ, 28 theory.
+- **QA worksheet-summary pass had one real gap: ch02 had no consolidated
+  "Worksheet summary" section at all** (its last section was just an
+  easy-to-miss checklist + study-text Q&A), unlike ch03–20 which all got
+  that treatment in an earlier session. Added `§2.7 Worksheet summary —
+  every term defined and every formula`: every definition (measures of
+  location/partition, the three means, median, mode, class boundary,
+  empirical relationship) plus every formula as an `fbox` with intermediate
+  steps spelled out (assumed-mean's `d = x - A` step separated from the
+  mean formula itself; mode split into locate-modal-class → Δ₁/Δ₂ → the
+  formula). Top-level `formulas` array grew 9 → 15 (step-deviation method,
+  median odd/even as separate entries, decile-*k*/percentile-*k* as
+  separate entries, the lower-class-boundary derivation).
+  - **ch01 was checked, not a gap** — its §1.5 "Full revision summary
+    (listed)" already covers the same ground under a different name
+    (sections A–J: data collection, sampling, frequency tables, class
+    boundaries, charts, software) because ch01 is mostly definitional
+    rather than computational; the title difference reflects genuinely
+    different content, not a missing section. Added the one formula that
+    was discussed in prose but absent from the top-level `formulas` list
+    (class boundary, lower). 6 → 7 formulas.
+  - Spot-checked the rest (ch01–ch20 `secs`/`formulas` counts) for anything
+    that looked truncated — ch14 (0 formulas, Intro to OR) and ch20 (4
+    formulas, Simulation) both checked out as genuinely that short given
+    their content, not accidentally incomplete.
+  - Build clean: `python3 tools/build_content.py qa` → 20/20 chapters, 104
+    sections, 230 formulas, 124 MCQ, 20 theory. Full `python3
+    tools/build_content.py && ./build.sh` clean across all four subjects.
+- **Still open from earlier this session**: user saw a stale "5 diets, 20
+  papers" screenshot and asked "what do i do to effect this change" —
+  never confirmed whether they're on `localhost` (needs a hard refresh /
+  restarted `http.server`) or a real deployed URL (needs a redeploy of
+  `index.html` + `data/*.js`). Nothing has been pushed to the git remote
+  this session.
+
 ## Session 2026-09-14 — 19 more past-paper diets ingested (5 → 24 diets), plus
 ## per-chapter-quiz and past-paper citation links that scroll to the exact section
 - **Chapter-quiz citations now link to source, not just cite it.** `src/quiz.js`

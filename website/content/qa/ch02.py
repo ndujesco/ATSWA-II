@@ -334,22 +334,132 @@ CH = {
         '**0.** Median 6 − Mean 6.'],
       }]}},
   ]},
+
+  {'n': '2.7', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Definitions'},
+    {'ul': [
+      '**Measures of location (central tendency)** — a single value taken as representative '
+      'of a whole set of data: the **mean**, **median** and **mode**.',
+      '**Arithmetic mean** — the sum of all the values divided by how many there are.',
+      '**Geometric mean** — the $n$th root of the product of $n$ values; used for average '
+      'rates of growth and for index numbers.',
+      '**Harmonic mean** — the number of values divided by the sum of their reciprocals; '
+      'used for averaging rates such as speed over equal distances.',
+      '**Median** — the value of the middle item when the data is arranged in order of '
+      'magnitude; unaffected by extreme values.',
+      '**Mode** — the most frequently occurring value; a distribution may have no mode '
+      '(non-modal), one (unimodal), two (bimodal) or more.',
+      '**Measures of partition** — values that divide an ordered distribution into equal '
+      'parts: **quartiles** (four parts), **deciles** (ten parts), **percentiles** (a '
+      'hundred parts). The study text groups these under "measures of location" too, even '
+      'though a quartile is not itself a measure of *central* tendency.',
+      '**Class boundary** — the true limit of a class, halfway between its stated limit and '
+      'the stated limit of the neighbouring class; equal to the stated limit only when '
+      'classes are written continuously (no gap), e.g. 0–10, 10–20.',
+      '**Empirical relationship** — an approximate link between the mean, median and mode '
+      'for a moderately skewed distribution.',
+    ]},
+    {'h3': 'The arithmetic mean'},
+    {'fbox': {'h': 'Arithmetic mean', 'rows': [
+      {'lb': 'Ungrouped data', 'tex': '\\bar{x} = \\frac{\\sum x}{n}'},
+      {'lb': 'Grouped or weighted data',
+       'tex': '\\bar{x} = \\frac{\\sum fx}{\\sum f}',
+       'nt': '$x$ is the class mark (mid-point) for grouped data.'},
+      {'lb': 'Assumed mean (coding) method — step 1: choose $A$, form $d$',
+       'tex': 'd = x - A'},
+      {'lb': 'Assumed mean method — step 2: the mean',
+       'tex': '\\bar{x} = A + \\frac{\\sum fd}{\\sum f}'},
+      {'lb': 'Step deviation method — step 1: choose $A$ and $c$, form $u$',
+       'tex': 'u = \\frac{x - A}{c}'},
+      {'lb': 'Step deviation method — step 2: the mean',
+       'tex': '\\bar{x} = A + \\left(\\frac{\\sum fu}{\\sum f}\\right) c',
+       'nt': '$c$ is the common class width; all three methods give the identical answer.'},
+    ]}},
+    {'h3': 'Other means'},
+    {'fbox': {'h': 'Geometric and harmonic means', 'rows': [
+      {'lb': 'Geometric mean',
+       'tex': 'GM = \\sqrt[n]{x_1 x_2 \\cdots x_n} = \\left(\\prod_{i=1}^{n} x_i\\right)^{1/n}'},
+      {'lb': 'Harmonic mean', 'tex': 'HM = \\frac{n}{\\sum \\frac{1}{x_i}}'},
+    ]}},
+    {'key': 'For any set of positive numbers not all equal: $HM < GM < \\bar{x}$.'},
+    {'h3': 'The median'},
+    {'fbox': {'h': 'Median', 'rows': [
+      {'lb': 'Ungrouped, $n$ odd', 'tex': '\\text{Median} = x_{\\left(\\frac{n+1}{2}\\right)}'},
+      {'lb': 'Ungrouped, $n$ even',
+       'tex': '\\text{Median} = \\frac{x_{(n/2)} + x_{(n/2 + 1)}}{2}'},
+      {'lb': 'Grouped data — step 1: locate the median class',
+       'tex': '\\text{first class where cumulative } f \\ge \\frac{N}{2}'},
+      {'lb': 'Grouped data — step 2: the median',
+       'tex': '\\text{Median} = L + \\left(\\frac{\\frac{N}{2} - CF}{f_m}\\right) c',
+       'nt': '$L$ = lower **boundary** of the median class; $CF$ = cumulative frequency '
+             'before it; $f_m$ = its frequency; $c$ = its width; $N = \\sum f$.'},
+    ]}},
+    {'h3': 'The mode'},
+    {'fbox': {'h': 'Mode', 'rows': [
+      {'lb': 'Step 1: locate the modal class', 'tex': '\\text{the class with the highest } f'},
+      {'lb': 'Step 2: form the differences',
+       'tex': '\\Delta_1 = f_{mo} - f_{\\text{before}}, \\qquad '
+              '\\Delta_2 = f_{mo} - f_{\\text{after}}'},
+      {'lb': 'Step 3: the mode',
+       'tex': '\\text{Mode} = L + \\left(\\frac{\\Delta_1}{\\Delta_1 + \\Delta_2}\\right) c',
+       'nt': '$L$ = lower **boundary** of the modal class; $c$ = its width.'},
+    ]}},
+    {'h3': 'The empirical relationship'},
+    {'fbox': {'h': 'Mean, median and mode', 'rows': [
+      {'lb': 'Stated as a difference',
+       'tex': '\\text{Mean} - \\text{Mode} = 3(\\text{Mean} - \\text{Median})'},
+      {'lb': 'Rearranged for the mode',
+       'tex': '\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}'},
+    ]}},
+    {'h3': 'Measures of partition — quartiles, deciles, percentiles'},
+    {'fbox': {'h': 'Quantiles for grouped data — one formula, three fractions of $N$', 'rows': [
+      {'lb': 'Quartile $k$ ($k = 1, 2, 3$)',
+       'tex': 'Q_k = L + \\left(\\frac{\\frac{kN}{4} - CF}{f_q}\\right) c'},
+      {'lb': 'Decile $k$ ($k = 1, \\ldots, 9$)',
+       'tex': 'D_k = L + \\left(\\frac{\\frac{kN}{10} - CF}{f_d}\\right) c'},
+      {'lb': 'Percentile $k$ ($k = 1, \\ldots, 99$)',
+       'tex': 'P_k = L + \\left(\\frac{\\frac{kN}{100} - CF}{f_p}\\right) c'},
+    ]}},
+    {'key': 'Identities worth memorising: $Q_2 = D_5 = P_{50} = $ the median; $Q_1 = P_{25}$; '
+            '$Q_3 = P_{75}$; $D_k = P_{10k}$.'},
+    {'h3': 'Class boundary — the rule for $L$ and $c$'},
+    {'fbox': {'h': 'Only matters for the median, mode and quantiles — never the mean', 'rows': [
+      {'lb': 'In every median / mode / $Q$ / $D$ / $P$ formula',
+       'tex': 'L = \\text{lower class \\textbf{boundary}}, \\qquad '
+              'c = \\text{upper boundary} - \\text{lower boundary}'},
+      {'lb': 'Lower boundary of a class',
+       'tex': 'L = \\frac{\\text{lower limit of this class} + \\text{upper limit of the '
+              'previous class}}{2}'},
+    ]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Arithmetic mean, ungrouped', 'tex': '\\bar{x} = \\frac{\\sum x}{n}'},
   {'lb': 'Arithmetic mean, grouped', 'tex': '\\bar{x} = \\frac{\\sum fx}{\\sum f}'},
   {'lb': 'Assumed mean method',
    'tex': '\\bar{x} = A + \\frac{\\sum fd}{\\sum f}, \\quad d = x - A'},
+  {'lb': 'Step deviation method',
+   'tex': '\\bar{x} = A + \\left(\\frac{\\sum fu}{\\sum f}\\right) c, '
+          '\\quad u = \\frac{x - A}{c}'},
   {'lb': 'Geometric mean', 'tex': 'GM = \\sqrt[n]{x_1 x_2 \\cdots x_n}'},
   {'lb': 'Harmonic mean', 'tex': 'HM = \\frac{n}{\\sum \\frac{1}{x}}'},
+  {'lb': 'Median, ungrouped ($n$ odd)',
+   'tex': '\\text{Median} = x_{\\left(\\frac{n+1}{2}\\right)}'},
+  {'lb': 'Median, ungrouped ($n$ even)',
+   'tex': '\\text{Median} = \\frac{x_{(n/2)} + x_{(n/2 + 1)}}{2}'},
   {'lb': 'Median, grouped',
    'tex': '\\text{Median} = L + \\left(\\frac{\\frac{N}{2} - CF}{f_m}\\right) c'},
   {'lb': 'Mode, grouped',
    'tex': '\\text{Mode} = L + \\left(\\frac{\\Delta_1}{\\Delta_1 + \\Delta_2}\\right) c'},
   {'lb': 'Empirical relationship',
    'tex': '\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}'},
-  {'lb': 'Quantiles',
-   'tex': 'Q_k = L + \\left(\\frac{\\frac{kN}{4} - CF}{f}\\right) c'},
+  {'lb': 'Quartile $k$', 'tex': 'Q_k = L + \\left(\\frac{\\frac{kN}{4} - CF}{f_q}\\right) c'},
+  {'lb': 'Decile $k$', 'tex': 'D_k = L + \\left(\\frac{\\frac{kN}{10} - CF}{f_d}\\right) c'},
+  {'lb': 'Percentile $k$',
+   'tex': 'P_k = L + \\left(\\frac{\\frac{kN}{100} - CF}{f_p}\\right) c'},
+  {'lb': 'Lower class boundary',
+   'tex': 'L = \\frac{\\text{lower limit of this class} + \\text{upper limit of the '
+          'previous class}}{2}'},
  ],
  'focus':
    'Guaranteed marks in both sections. Section A asks for a mean, median or mode from a small '

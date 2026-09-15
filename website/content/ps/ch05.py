@@ -26,15 +26,20 @@ CH = {
       'an **expense** when the entity consumes the economic benefit or service potential '
       'arising from the service rendered.',
     ]},
-    {'p': 'Employee benefits include: (i) **short-term employee benefits** — wages, salaries, '
-          'social security contributions, paid annual and sick leave, profit-sharing and bonuses '
-          'payable within twelve months, and non-monetary benefits such as medical care, housing, '
-          'cars and subsidised goods or services, for current employees; (ii) **post-employment '
-          'benefits** such as pensions, other retirement benefits, post-employment life insurance '
-          'and post-employment medical care; (iii) **other long-term employee benefits**, which '
-          'may include long-service or sabbatical leave, jubilee or long-service benefits, '
-          'long-term disability benefits and, if not payable wholly within twelve months, '
-          'profit-sharing, bonuses and deferred compensation; and (iv) **termination benefits**.'},
+    {'p': 'Employee benefits include:'},
+    {'ol': [
+      '**Short-term employee benefits** — wages, salaries, social security contributions, '
+      'paid annual and sick leave, profit-sharing and bonuses payable within twelve months, '
+      'and non-monetary benefits such as medical care, housing, cars and subsidised goods or '
+      'services, for current employees;',
+      '**Post-employment benefits** such as pensions, other retirement benefits, post-'
+      'employment life insurance and post-employment medical care;',
+      '**Other long-term employee benefits**, which may include long-service or sabbatical '
+      'leave, jubilee or long-service benefits, long-term disability benefits and, if not '
+      'payable wholly within twelve months, profit-sharing, bonuses and deferred '
+      'compensation; and',
+      '**Termination benefits**.',
+    ]},
     {'p': 'The standard applies to all employee benefits **except** share-based transactions '
           '(dealt with by the relevant standard). Its scope does not cover an employer\'s own '
           'reporting on retirement benefit plans — that is a separate matter, addressed by the '
@@ -339,14 +344,17 @@ CH = {
           'for defined benefit pension plans were a key aspect of IPSAS 25. IPSAS 39’s new '
           'recognition, presentation and disclosure requirements are intended to make financial '
           'statements more useful and transparent about liabilities related to defined benefit '
-          'plans. In outline, IPSAS 39 amended IPSAS 25 by: removing the deferred-recognition '
-          '“corridor approach” (**recognition**); eliminating the presentational options that '
-          'existed for actuarial gains and losses (**presentation**); introducing disclosure '
-          'objectives built around the characteristics, risks and financial-statement effect of '
-          'defined benefit plans (**disclosure**); and widening its scope to cover all public '
-          'sector entities, Government Business Enterprises **and** private sector entities, '
-          'where IPSAS 25 applied only to public sector entities other than Government Business '
-          'Enterprises (**scope**).'},
+          'plans. In outline, IPSAS 39 amended IPSAS 25 by:'},
+    {'ol': [
+      '**Recognition** — removing the deferred-recognition "corridor approach";',
+      '**Presentation** — eliminating the presentational options that existed for actuarial '
+      'gains and losses;',
+      '**Disclosure** — introducing disclosure objectives built around the characteristics, '
+      'risks and financial-statement effect of defined benefit plans; and',
+      '**Scope** — widening its scope to cover all public sector entities, Government '
+      'Business Enterprises **and** private sector entities, where IPSAS 25 applied only to '
+      'public sector entities other than Government Business Enterprises.',
+    ]},
     {'table': {'align': 'll', 'head': ['IPSAS 25', 'IPSAS 39'], 'rows': [
       ['**Recognition of actuarial gains and losses.** Three options: surplus or deficit in the '
        'period they occur; net assets/equity in the period they occur; or deferral to future '
@@ -609,19 +617,27 @@ CH = {
       'A description of the funding policy, including any obligation of the employer/sponsor to '
       'meet an actuarially determined shortfall in a funded plan.',
     ]},
-    {'p': 'For **defined benefit plans** specifically, the notes also disclose: the actuarial '
-          'present value of promised retirement benefits, distinguishing vested from non-vested '
-          'benefits; a description of the significant actuarial assumptions made and the method '
-          'used to calculate the actuarial present value; the effect of any change in actuarial '
-          'assumptions that has had a significant effect on that present value; and the date of '
-          'the actuarial valuation and when the next one will be undertaken.'},
+    {'p': 'For **defined benefit plans** specifically, the notes also disclose:'},
+    {'ol': [
+      'The actuarial present value of promised retirement benefits, distinguishing vested '
+      'from non-vested benefits;',
+      'A description of the significant actuarial assumptions made and the method used to '
+      'calculate the actuarial present value;',
+      'The effect of any change in actuarial assumptions that has had a significant effect '
+      'on that present value; and',
+      'The date of the actuarial valuation and when the next one will be undertaken.',
+    ]},
     {'p': 'Every retirement benefit plan\'s financial statements also contain a **description of '
-          'the plan**: the name(s) of the employer(s)/sponsor(s) and the participant groups '
-          'covered; the number of participants receiving benefits and the number of other '
-          'participants; the type of plan (defined contribution or defined benefit); whether '
-          'participants contribute; a description of the retirement benefits promised; a '
-          'description of any plan termination terms; and changes in any of the above during the '
-          'period.'},
+          'the plan**:'},
+    {'ol': [
+      'The name(s) of the employer(s)/sponsor(s) and the participant groups covered;',
+      'The number of participants receiving benefits and the number of other participants;',
+      'The type of plan (defined contribution or defined benefit);',
+      'Whether participants contribute;',
+      'A description of the retirement benefits promised;',
+      'A description of any plan termination terms; and',
+      'Changes in any of the above during the period.',
+    ]},
   ]},
 
   {'n': '5.10', 't': 'Further reading', 'b': [
@@ -958,12 +974,16 @@ CH = {
             'due, the excess is recognised as an asset to the extent that it will give rise to '
             'a refund or a reduction in future contributions. Contributions not due within '
             'twelve months are discounted.'},
-      {'p': '**Defined benefit accounting** requires four steps: an actuary estimates the '
-            'benefit attributable to current and prior periods using the projected unit credit '
-            'method; that benefit is discounted to a present value; the fair value of the plan '
-            'assets is deducted to give the net liability; and the total defined benefit cost '
-            'is determined and split between service cost and net interest, both recognised in '
-            'surplus or deficit, and remeasurements, recognised in net assets/equity.'},
+      {'p': '**Defined benefit accounting** requires four steps:'},
+      {'ol': [
+        'An actuary estimates the benefit attributable to current and prior periods using '
+        'the projected unit credit method;',
+        'That benefit is discounted to a present value;',
+        'The fair value of the plan assets is deducted to give the net liability; and',
+        'The total defined benefit cost is determined and split between service cost and '
+        'net interest, both recognised in surplus or deficit, and remeasurements, '
+        'recognised in net assets/equity.',
+      ]},
       {'note': 'In the Nigerian public service the Contributory Pension Scheme under the '
                'Pension Reform Act 2014 is a **defined contribution** plan, which is precisely '
                'why it removed the unfunded liability that destroyed the previous arrangement. '

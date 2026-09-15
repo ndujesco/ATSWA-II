@@ -235,6 +235,218 @@ CH = {
     {'p': 'These limitations are the reason for the move to accrual basis IPSAS, dealt with in '
           'Chapters 15 and 16.'},
   ]},
+
+  {'n': '14.6', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'Which one of the following should NOT appear under investments in the statement of '
+        'financial position of government under the cash basis? (A) Imprest  (B) Revolving '
+        'loans granted  (C) Cash balances of trust and other funds of the government  '
+        '(D) Advances  (E) Intangible assets',
+        'Which one of the following is NOT one of the operating activities reported under the '
+        'statement of cash flow? (A) Statutory allocation  (B) Value added tax allocation  '
+        '(C) Royalties  (D) Subvention to parastatals  (E) Proceeds from aids and grants',
+        'The following outflows are from the statement of Consolidated Revenue Fund, except '
+        '(A) Recurrent expenditure  (B) Transfers to Contingency Fund  (C) Redemption of '
+        'Treasury Bills  (D) Direct taxes  (E) Consolidated Revenue Fund (CRF) charges',
+        'Which of the following is NOT one of the liquid assets of government under the cash '
+        'basis? (A) Cash balances with federal pay offices  (B) Cash held by MDAs  '
+        '(C) Pension account (CBN/Bank)  (D) Cash balances of trust and other funds of the '
+        'state government  (E) Police Reward Fund balance',
+        'The format of the statement of financial position of government prepared under the '
+        'cash basis must give information on the following, except (A) Liquid assets  '
+        '(B) Investments and other cash assets  (C) Final budget  (D) Public funds  '
+        '(E) External and internal loans',
+        '… are made up of Treasury Bills, Treasury Certificates and Loan Stocks raised and '
+        'retired within the country.',
+        'The office charged with the responsibility of preparing and publishing the accounts '
+        'of the Federal Government of Nigeria is ….',
+        'The item collected from the government\'s day-to-day activities is known as ….',
+        '… relate to the day-to-day disbursements to run the administration of local '
+        'government councils, and state and federal governments.',
+        'The fund meant to finance general capital projects such as the construction of '
+        'government hospitals is called ….',
+      ]}],
+      'a': [
+      {'p': '**1.** E  **2.** D  **3.** D  **4.** E  **5.** C  **6.** Internal debt  '
+            '**7.** Office of the Accountant-General of the Federation  **8.** Recurrent '
+            'revenue  **9.** Recurrent expenditure  **10.** Development Fund'}]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text', 't': 'Question 1 — the Egu-Awori Memorial Loan Fund',
+      'open': True, 'q': [
+      {'p': 'Iludun Polytechnic held the following balances for the Egu-Awori Memorial Loan '
+            'Fund as at 31 December 2020 (₦\'000): Cash 8,400 Dr; Loan receivable 316,000 Dr; '
+            'Investments 202,000 Dr; Fund balance 526,400 Cr. During 2021: (i) investments '
+            'costing 61,600 were sold for 63,800; (ii) 61,400 cash was received from loan '
+            'repayments; (iii) 5,000 was received from a former student\'s family in full '
+            'payment of a loan earlier written off; (iv) 83,600 was issued out as new loans; '
+            '(v) a loan of 1,500 was written off as uncollectable; (vi) a gift of 6,000 cash '
+            'was received from a former borrower. (a) Open the ledger accounts and record the '
+            '2021 transactions. (b) Extract a trial balance and prepare the balance sheet of '
+            'the Fund as at 31/12/2021. (c) Prepare a statement of changes in the fund '
+            'balance.'}],
+      'a': [
+      {'table': {'cap': '(a)(i) Cash account (₦\'000)', 'align': 'lrlr',
+        'head': ['Dr', '', 'Cr', ''], 'rows': [
+        ['Balance b/f', '8,400', 'Loan receivable a/c', '83,600'],
+        ['Investment disposal a/c', '63,800', 'Balance c/d', '61,000'],
+        ['Loan receivable a/c', '61,400', '', ''],
+        ['Bad debt recovered a/c', '5,000', '', ''],
+        ['Fund balance (gift)', '6,000', '', ''],
+        ['**Total**', '**144,600**', '', '**144,600**'],
+      ]}},
+      {'table': {'cap': '(a)(ii) Loan receivable account (₦\'000)', 'align': 'lrlr',
+        'head': ['Dr', '', 'Cr', ''], 'rows': [
+        ['Balance b/f', '316,000', 'Cash account', '61,400'],
+        ['Cash a/c', '83,600', 'Bad debt recovered', '1,500'],
+        ['', '', 'Balance c/d', '336,700'],
+        ['**Total**', '**399,600**', '', '**399,600**'],
+      ]}},
+      {'table': {'cap': '(a)(iii) Investment account (₦\'000)', 'align': 'lrlr',
+        'head': ['Dr', '', 'Cr', ''], 'rows': [
+        ['Balance b/f', '202,000', 'Investment disposal a/c', '61,600'],
+        ['', '', 'Balance c/d', '140,400'],
+        ['**Total**', '**202,000**', '', '**202,000**'],
+      ]}},
+      {'table': {'cap': '(a)(iv) Fund balance account (₦\'000)', 'align': 'lrlr',
+        'head': ['Dr', '', 'Cr', ''], 'rows': [
+        ['Balance c/d', '538,100', 'Balance b/f', '526,400'],
+        ['', '', 'Cash account (gift)', '6,000'],
+        ['', '', 'Investment disposal a/c (profit)', '2,200'],
+        ['', '', 'Bad debt recovered a/c', '3,500'],
+        ['**Total**', '**538,100**', '', '**538,100**'],
+      ]}},
+      {'note': 'Workings: **Investment disposal** — cost 61,600 Dr, cash 63,800 Cr, profit '
+               '2,200 to fund balance. **Bad debt recovered** — 1,500 credited back to loan '
+               'receivable (the original write-off), 3,500 transferred to fund balance (the '
+               'excess recovered above the amount written off).'},
+      {'table': {'cap': '(b) Trial balance as at 31/12/2021 (₦\'000)', 'align': 'lrr',
+        'head': ['', 'Dr', 'Cr'], 'rows': [
+        ['Cash', '61,000', ''],
+        ['Loan receivable', '336,700', ''],
+        ['Investment', '140,400', ''],
+        ['Fund balance', '', '538,100'],
+        ['**Total**', '**538,100**', '**538,100**'],
+      ]}},
+      {'table': {'cap': '(c) Statement of changes in the fund balance (₦\'000)', 'align': 'lr',
+        'head': ['', ''], 'rows': [
+        ['Balance b/f', '526,400'],
+        ['Add: Gift received', '6,000'],
+        ['Add: Bad debt recovered', '5,000'],
+        ['Add: Profit on disposal of investment', '2,200'],
+        ['Sub-total', '539,600'],
+        ['Less: Bad debt written off', '(1,500)'],
+        ['**Balance carried forward**', '**538,100**'],
+      ]}}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 2 — trial balance, Akinyele Local Government',
+      'open': True, 'q': [
+      {'p': 'The following balances were extracted from the books of Akinyele Local '
+            'Government Treasury for the month ended 31 March 200X (₦\'000): Reserve Fund '
+            '33,500; Cash on hand 53,000; Bank overdraft 5,700; Revenue (recurrent/capital) '
+            '158,500; Expenditure (recurrent/capital) 125,390; Loans 200,000; Deposits into '
+            'the LGC Treasury 23,450; Advances granted by the LGC 25,560; Investments 15,200; '
+            'Suspense account 202,000. Prepare a trial balance for the month.'}],
+      'a': [
+      {'table': {'cap': 'Akinyele Local Government — trial balance as at 31 March 200X '
+                        '(₦\'000)', 'align': 'lrr', 'head': ['', 'Dr', 'Cr'], 'rows': [
+        ['Reserve Fund', '', '33,500'],
+        ['Cash on hand', '53,000', ''],
+        ['Bank overdraft', '', '5,700'],
+        ['Revenue (recurrent/capital)', '', '158,500'],
+        ['Expenditure (recurrent/capital)', '125,390', ''],
+        ['Loans', '', '200,000'],
+        ['Deposits into the LGC Treasury', '', '23,450'],
+        ['Advances granted by the LGC', '25,560', ''],
+        ['Investments', '15,200', ''],
+        ['Suspense account', '202,000', ''],
+        ['**Total**', '**421,150**', '**421,150**'],
+      ]}}]}},
+    {'eg': {'tag': 'Study text',
+      't': 'Question 3 — recurrent and capital accounts, Denge Pose State', 'open': True,
+      'q': [
+      {'p': 'Denge Pose State Government of Manna reported (₦\'000, 2020 / 2021): statutory '
+            'allocation 644,997 / 4,841,017; VAT 119,102 / 160,133; IGR 403,020 / 498,843; '
+            'other revenue 58,256 / 79,397; personnel cost 490,110 / 1,170,666; overhead cost '
+            '280,095 / 739,646; CRF charges 137,081 / 382,936 (of which unfunded internal '
+            'debt servicing was 36,970 / 45,364); other capital receipts 246,400 / 379,237; '
+            'capital expenditure 394,969 / 2,753,553. Any surplus/deficit on the recurrent '
+            'account transfers to the capital account. Prepare the recurrent and capital '
+            'accounts for the year ended 31 December 2021 (with 2020 comparatives).'}],
+      'a': [
+      {'table': {'cap': 'Denge Pose State — consolidated recurrent and capital accounts '
+                        '(₦\'000)', 'align': 'lrr', 'head': ['', '2020', '2021'], 'rows': [
+        ['**Recurrent revenue**', '', ''],
+        ['Statutory allocation', '644,997', '4,841,017'],
+        ['Value added tax', '119,102', '160,133'],
+        ['Internally generated revenue', '403,020', '498,843'],
+        ['Other revenue', '58,256', '79,397'],
+        ['**Total (A)**', '**1,225,375**', '**5,579,390**'],
+        ['**Recurrent expenditure**', '', ''],
+        ['Personnel cost', '490,110', '1,170,666'],
+        ['Overhead cost', '280,095', '739,646'],
+        ['Consolidated Revenue Fund charges', '137,081', '382,936'],
+        ['**Total (B)**', '**907,286**', '**2,293,248**'],
+        ['**Surplus to capital account (A − B)**', '**318,089**', '**3,286,142**'],
+        ['**Capital account**', '', ''],
+        ['Transfer from recurrent account', '318,089', '3,286,142'],
+        ['Other capital receipts', '246,400', '379,237'],
+        ['Sub-total', '564,489', '3,665,379'],
+        ['Less: Capital expenditure', '(394,969)', '(2,753,553)'],
+        ['**Capital Development Fund c/f**', '**169,520**', '**911,826**'],
+        ['*(of which internal debt servicing, within CRF charges)*', '36,970', '45,364'],
+      ]}}]}},
+    {'eg': {'tag': 'Study text',
+      't': 'Question 4 — statement of cash flow (direct method, with comparatives)',
+      'open': True, 'q': [
+      {'p': 'The Office of the Accountant-General of the Federal Republic of Legacy reported '
+            '(₦m, 2021 / 2020): VAT receipts 2,295 / 2,196; miscellaneous revenue 375 / 425; '
+            'PIT (direct tax) 10,500 / 7,200; allocation for collection costs (FIRS/Customs) '
+            '3,075 / 3,305; personnel costs 7,200 / 9,600; share of statutory allocation '
+            '13,500 / 8,450; CRF charges 2,250 / 3,750; grants/subvention from foreign donors '
+            '75 / 87; rent of federal properties 285 / 295; overhead charges 1,500 / 1,200; '
+            'subvention to parastatals 1,800 / 1,900; sales of federal properties 375 / 485 '
+            '(plus a further 1,050 / — from properties in Yenagoa); repayment of loans 870 / '
+            '243; purchases/construction of non-current assets 2,500 / 2,700; purchases of '
+            'marketable securities 500 / 300; proceeds from loans and other borrowings 3,000 '
+            '/ 1,000; cash and cash equivalents at 1 January 3,750 / —, and at 31 December '
+            '21,660 / 3,750. Prepare a statement of cash flow for the year ended 31 December '
+            '2021 using the direct method, showing comparatives.'}],
+      'a': [
+      {'table': {'cap': 'Federal Republic of Legacy — statement of cash flow for the year '
+                        'ended 31 December 2021 (₦m)', 'align': 'lrr',
+        'head': ['', '2021', '2020'], 'rows': [
+        ['**Operating activities — receipts**', '', ''],
+        ['Share of statutory allocation', '13,500', '8,450'],
+        ['Value added tax', '2,295', '2,196'],
+        ['Personal income tax (direct tax)', '10,500', '7,200'],
+        ['Allocation for collection cost', '3,075', '3,305'],
+        ['Grants and subvention received', '75', '87'],
+        ['Miscellaneous revenue', '375', '425'],
+        ['**Total receipts**', '**29,820**', '**21,663**'],
+        ['**Operating activities — payments**', '', ''],
+        ['Personnel costs', '7,200', '9,600'],
+        ['Consolidated Revenue Fund charges', '2,250', '3,750'],
+        ['Overhead charges', '1,500', '1,200'],
+        ['Subvention to parastatals', '1,800', '1,900'],
+        ['**Total payments**', '**12,750**', '**16,450**'],
+        ['**Net cash from operating activities**', '**17,070**', '**5,213**'],
+        ['**Investing activities**', '', ''],
+        ['Sale of federal properties (Yenagoa)', '1,050', '—'],
+        ['Purchases/construction of non-current assets', '(2,500)', '(2,700)'],
+        ['Purchases of marketable securities', '(500)', '(300)'],
+        ['Sale of government property', '375', '485'],
+        ['Rent of government property', '285', '295'],
+        ['**Net cash from investing activities**', '**(1,290)**', '**(2,220)**'],
+        ['**Financing activities**', '', ''],
+        ['Proceeds from loans and other borrowings', '3,000', '1,000'],
+        ['Repayment of loans', '(870)', '(243)'],
+        ['**Net cash from financing activities**', '**2,130**', '**757**'],
+        ['**Net increase in cash and cash equivalents**', '**17,910**', '**3,750**'],
+        ['Cash and cash equivalents at 1 January', '3,750', '—'],
+        ['**Cash and cash equivalents at 31 December**', '**21,660**', '**3,750**'],
+      ]}}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Net cash flow',

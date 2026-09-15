@@ -199,11 +199,15 @@ CH = {
   ]},
 
   {'n': '2.6', 't': 'Allocation of Revenue (Federation Account, etc.) Act, 1982 Cap. A.15 LFN 2004', 'b': [
-    {'p': 'The Act prescribes the basis for distribution of revenue accruing to the Federation '
-          'Account between the Federal, States and Local Governments; the formula for '
-          'distribution amongst the States; the proportion of the total revenue of each State to '
-          'be contributed to the State Joint Local Government Account; and for other purposes '
-          'connected therewith.'},
+    {'p': 'The Act prescribes:'},
+    {'ol': [
+      'The basis for distribution of revenue accruing to the Federation Account between the '
+      'Federal, States and Local Governments;',
+      'The formula for distribution amongst the States;',
+      'The proportion of the total revenue of each State to be contributed to the State '
+      'Joint Local Government Account; and',
+      'Other purposes connected therewith.',
+    ]},
     {'table': {'align': 'll', 'head': ['Section', 'Details'], 'rows': [
       ['1', 'Distribution of the Federation Accounts, etc.'],
       ['2', 'Formula for distribution between the Federal and State Governments'],

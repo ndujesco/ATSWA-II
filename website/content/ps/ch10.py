@@ -200,6 +200,138 @@ CH = {
           'order a re-tender, or declare a rule or practice inconsistent with the Act. A bidder '
           'still dissatisfied may seek **judicial review** in the Federal High Court.'},
   ]},
+
+  {'n': '10.6', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'The Permanent Secretary/Chief Executive can approve contracts of works, services and '
+        'purchase up to a certain sum of … without open competitive tendering (A) N2,500,000  '
+        '(B) N3,000,000  (C) N5,000,000  (D) N10,000,000  (E) N20,000,000',
+        'By the current approved revised threshold for service-wide application, the approval '
+        'limit for the Bureau of Public Procurement (BPP) and Federal Executive Council for '
+        'Goods is one of the following (A) N500,000,000 and above  (B) N750,000,000 and above  '
+        '(C) N100,000,000 and above  (D) N250,000,000 and above  (E) N200,000,000 and above',
+        'With the exception of one method, which may not require the approval of the Bureau, '
+        'all others attract the "Certificate of \'No Objection\' to Award Contracts" — which '
+        'method is exempt? (A) Two-stage bidding  (B) Restrictive bidding  (C) Direct '
+        'procurement  (D) Emergency procurement  (E) Request for quotations',
+        'The following are the reasons for introducing due process to the award of contracts, '
+        'except (A) To stem the tide of corruption of government officials conniving with '
+        'contractors to dupe government  (B) To allocate contracts to the key management staff '
+        'of government MDAs  (C) To eradicate embezzlement of public funds in the name of '
+        'contract awards  (D) To arrest flagrant abuse of contract award procedures  (E) To '
+        'disabuse inflation of contract and lack of transparency in contract award',
+        'Which of the following is NOT one of the benefits of Due Process? (A) To safeguard '
+        'public funds and assets  (B) To enhance transparency and accountability in governance  '
+        '(C) To see that documentation is effected only where government officials are '
+        'involved in contract execution  (D) To rebuild public confidence in government '
+        'financial activities  (E) To ensure that government receives value for money expended',
+        'The mechanism for ensuring strict compliance with rules and procedures guiding the '
+        'award of contract with openness, competition and cost accuracy is known as …',
+        'The proposal for the supply of goods or services, usually made and presented as a '
+        'result of an invitation, is known as …',
+        'The offence committed when a public officer deliberately splits tenders, contracts of '
+        'works, purchases or services so as to circumvent the provisions of the Act and the '
+        'relevant circular is known as …',
+        'In the membership of the National Council on Public Procurement (NCPP), the chairman '
+        'of the Council is …',
+        'The invitation for bids must be advertised on the notice board of the procuring '
+        'entity, on its official website, and in at least … national newspapers.',
+      ]}],
+      'a': [
+      {'p': '**1.** C  **2.** C  **3.** E  **4.** B  **5.** C  **6.** Due Process  **7.** '
+            'Tender  **8.** Tender splitting  **9.** Minister of Finance  **10.** Two'}]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text', 't': 'Question 1 — Due Process and its benefits',
+      'open': True, 'q': [
+      {'p': '(a) What is Due Process? (b) Enumerate five benefits of Due Process.'}],
+      'a': [
+      {'p': '**(a)** Due Process is the mechanism for ensuring strict compliance with the '
+            'openness, competition, cost accuracy, rules and procedures that should guide '
+            'contract awards within the three tiers of government in Nigeria. It is the '
+            'instrument used by the Budget Monitoring and Price Intelligence Unit (BMPIU), '
+            'tasked with implementing Nigeria\'s Public Procurement Reform Programme, and was '
+            'introduced to arrest flagrant abuse of procedures, inflation of contract costs '
+            'and lack of transparency.'},
+      {'p': '**(b) Benefits:**'},
+      {'ol': [
+        'Safeguards public money and assets.',
+        'Improves planning and diligent project analysis, leading to accurate costing and '
+        'prioritisation of investments.',
+        'Improves fiscal management through more efficient and effective expenditure.',
+        'Improves technical efficiency through unimpaired, enhanced information flow.',
+        'Enhances transparency and accountability in governance.',
+        'Rebuilds public confidence in government financial activities.',
+        'Ensures government receives value for money spent.',
+        'Applies the principle of competition and right costing, saving money for use '
+        'elsewhere.',
+        'Reassures foreign investors who previously doubted that genuine business could '
+        'survive in the country.',
+      ]}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 2 — post-contract-award activities',
+      'open': True, 'q': [
+      {'p': 'Under post-contract-award activities, discuss the processes involved, '
+            'classifying them into (i) Tenders Board information on vouchers, and (ii) '
+            'Tenders Board information availability.'}],
+      'a': [
+      {'p': '**(i) Tenders Board information on vouchers.** A payment voucher in respect of a '
+            'contract awarded through tender must contain, among other things: a certified '
+            'true copy of the minutes of the Tenders Board meetings relating to the award; a '
+            'certified true copy of the contract agreement; a copy of the approving '
+            'authority; and a copy of each voucher for payments already made on the '
+            'contract.'},
+      {'p': '**(ii) Tenders Board information availability.** The minutes of Tenders Board '
+            'meetings and the full records are to be made available to the accounting officer '
+            'on request, and for inspection by the Auditor-General on demand.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 3 — the e-payment procedure', 'open': True,
+      'q': [
+      {'p': 'State the guidelines for implementation of the "e-payment" procedures as '
+            'contained in Treasury Circular Ref. No. TYR/A8 and BB/2008, reference '
+            'OAGT/CAD/026/vol.II/465 of 22 October 2008.'}],
+      'a': [
+      {'ol': [
+        'All payments from government funds are made through the banks — commercial banks or '
+        'the Central Bank of Nigeria.',
+        'All MDAs stop using cheques to pay contractors.',
+        'All government-fund bank accounts cease to be cheque accounts.',
+        'Contractors must state their current-account particulars with a commercial bank on '
+        'invoices submitted for payment, under their corporate seal.',
+        'Mandates detailing payments are issued to banks, authorising payment into the '
+        'contractors\' designated accounts.',
+        'Copies of mandates issued to banks are forwarded to the Accountant-General of the '
+        'Federation, in addition to the existing monthly financial returns.',
+        'All Federal Government employees must open commercial-bank accounts into which all '
+        'payments due to them are made.',
+        'Central Pay Officers must on no account collect cash from the bank for disbursement '
+        'to any government official.',
+      ]}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 4 — circumstances for direct procurement',
+      'open': True, 'q': [
+      {'p': 'State the circumstances in which an entity may carry out direct procurement.'}],
+      'a': [
+      {'ol': [
+        'The goods, works or services are available only from a particular supplier, or that '
+        'supplier has exclusive rights over them, and no reasonable alternative exists.',
+        'There is an urgent need and using tender proceedings or any other method is '
+        'impractical because of unforeseeable circumstances not caused by the procuring '
+        'entity\'s own delay.',
+        'A catastrophic event creates an urgent need, making other methods impractical given '
+        'the time they would take.',
+        'The entity has already procured goods, equipment, technology or services from a '
+        'supplier and needs additional supplies from the same supplier for **standardisation** '
+        'or **compatibility** with the existing procurement, the additional quantity is small '
+        'relative to the original, the price is reasonable and no suitable alternative exists.',
+        'The contract is for research, study, equipment or development, unless it involves '
+        'producing goods in quantities to establish commercial viability or recover '
+        'research/development cost.',
+        'The procurement concerns **national security**, and the entity determines that '
+        'single-source procurement is the most appropriate method.',
+      ]},
+      {'note': 'In every case, the entity must record the grounds for its decision and the '
+               'circumstances justifying single-source procurement in the procurement '
+               'proceedings file.'}]}},
+  ]},
  ],
  'formulas': [],
  'focus':
@@ -359,13 +491,17 @@ CH = {
         'complete record for procurement audit.',
       ]},
       {'h4': '(d) Offences and penalties'},
-      {'p': '**Offences** include entering into a collusive agreement with bidders or engaging '
-            'in bid-rigging; splitting a contract to bring it below a threshold and avoid the '
-            'required approval; altering a procurement document or using a fake document with '
-            'intent to influence the outcome; giving or receiving a bribe or otherwise '
-            'influencing the process for personal gain; wilfully refusing the Bureau access to '
-            'procurement records; and awarding a contract without budgetary provision, without '
-            'approval, or without the certificate of no objection.'},
+      {'p': '**Offences** include:'},
+      {'ul': [
+        'Entering into a collusive agreement with bidders or engaging in bid-rigging;',
+        'Splitting a contract to bring it below a threshold and avoid the required approval;',
+        'Altering a procurement document or using a fake document with intent to influence '
+        'the outcome;',
+        'Giving or receiving a bribe or otherwise influencing the process for personal gain;',
+        'Wilfully refusing the Bureau access to procurement records; and',
+        'Awarding a contract without budgetary provision, without approval, or without the '
+        'certificate of no objection.',
+      ]},
       {'p': '**Penalties.** A natural person convicted is liable to imprisonment for a term of '
             'not less than five calendar years without the option of a fine, and a public '
             'officer is additionally liable to summary dismissal from service. A body corporate '

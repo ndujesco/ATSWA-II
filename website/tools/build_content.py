@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT, DATA = ROOT / 'content', ROOT / 'data'
-SUBJECTS = {'fa': ('FA', 16), 'ps': ('PS', 20), 'qa': ('QA', 20), 'it': ('IT', 6)}
+SUBJECTS = {'fa': ('FA', 16), 'ps': ('PS', 23), 'qa': ('QA', 20), 'it': ('IT', 6)}
 
 BLOCKS = {'p', 'h3', 'h4', 'ul', 'ol', 'steps', 'tex', 'def', 'note', 'key',
           'warn', 'pre', 'table', 'eg', 'tacc', 'stmt', 'fbox'}

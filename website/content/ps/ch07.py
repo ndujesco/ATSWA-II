@@ -147,10 +147,12 @@ CH = {
       'the age of 60 years, whichever is earlier.',
     ]},
     {'h4': 'Powers and constitutional functions'},
-    {'p': 'In accordance with government regulations, the Auditor-General has: power of access '
-          'to books and records of all MDAs at reasonable times; power to request information '
-          'and explanation necessary for his duties; and power to carry out special/ad-hoc '
-          'investigations in any MDA.'},
+    {'p': 'In accordance with government regulations, the Auditor-General has:'},
+    {'ol': [
+      'Power of access to books and records of all MDAs at reasonable times;',
+      'Power to request information and explanation necessary for his duties; and',
+      'Power to carry out special/ad-hoc investigations in any MDA.',
+    ]},
     {'table': {'align': 'll', 'head': ['Section', 'Constitutional function'], 'rows': [
       ['**S.85(2)**', 'The public accounts of the Federation, and of all offices and courts of '
        'the Federation, shall be audited and reported on by the Auditor-General to the National '
@@ -425,9 +427,12 @@ CH = {
              'd': 'A document used by the Ministry of Finance to authorise money for spending '
                   'by government departments and agencies.'}},
     {'p': 'The expenditure of government is made under various forms of authorisation. These '
-          'authorisations exist to ensure that all payments are made: from money available for '
-          'the particular expenditure; under strict scrutiny of the responsible official of '
-          'government; and as the right type of expenditure, as authorised by Parliament.'},
+          'authorisations exist to ensure that all payments are made:'},
+    {'ol': [
+      'From money available for the particular expenditure;',
+      'Under strict scrutiny of the responsible official of government; and',
+      'As the right type of expenditure, as authorised by Parliament.',
+    ]},
     {'p': 'There are two broad classes of warrant, matching the two main types of government '
           'expenditure: **recurrent** expenditure — incurred regularly in the course of the '
           'organisation\'s annual operations, for items or services used within the year — and '
@@ -537,10 +542,13 @@ CH = {
              'different warrants distinguished only by their full names. This ambiguity is '
              'preserved here as printed; always refer to a Development Fund warrant by its full '
              'name rather than the abbreviation to avoid confusion.'},
-    {'p': 'The limitations on the Development Fund Virement Warrant are: re-allocation can be '
-          'made only within the **same head** of expenditure in the capital estimates; the '
-          're-allocation must not give rise to a new principle or policy; and it cannot be used '
-          'to provide funds for new projects.'},
+    {'p': 'The limitations on the Development Fund Virement Warrant are:'},
+    {'ol': [
+      'Re-allocation can be made only within the **same head** of expenditure in the '
+      'capital estimates;',
+      'The re-allocation must not give rise to a new principle or policy; and',
+      'It cannot be used to provide funds for new projects.',
+    ]},
   ]},
 
   {'n': '7.11', 't': 'Expenditure authorisation procedures in Ghana', 'b': [

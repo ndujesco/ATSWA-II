@@ -125,10 +125,15 @@ CH = {
     {'h3': '17.4.3 Financial statements'},
     {'p': 'Financial statements must comply with normal accounting standards and the '
           'requirements of the laws regulating the enterprise. For **profit-making** public '
-          'enterprises: **(a)** Statement of financial position; **(b)** Statement of '
-          'financial performance; **(c)** Statement of changes in net assets/equity; '
-          '**(d)** Statement of cash flow; **(e)** Accounting policies; **(f)** Notes to the '
-          'financial statements and other disclosures.'},
+          'enterprises, they comprise:'},
+    {'ol': [
+      'Statement of financial position;',
+      'Statement of financial performance;',
+      'Statement of changes in net assets/equity;',
+      'Statement of cash flow;',
+      'Accounting policies; and',
+      'Notes to the financial statements and other disclosures.',
+    ]},
     {'p': 'For **not-for-profit** public enterprises, the financial statements are expected '
           'to include the same six, in more detail:'},
     {'h4': '(a) Statement of financial position'},
@@ -149,29 +154,44 @@ CH = {
     {'h4': '(b) Statement of financial performance'},
     {'p': '(The income and expenditure account.) Shows income accrued from all sources and '
           'expenditure incurred during the period. As a **minimum**, the face of the statement '
-          'should include: (i) revenue from operating activities; (ii) surplus or deficit from '
-          'operating activities; (iii) finance costs; (iv) share of net surpluses/deficits of '
-          'associates and joint ventures accounted for by the equity method; (v) surplus or '
-          'deficit from ordinary activities; (vi) extraordinary items; (vii) minority '
-          'interest\'s share of net surplus or deficit; (viii) net surplus or deficit for the '
-          'period.'},
+          'should include:'},
+    {'ol': [
+      'Revenue from operating activities;',
+      'Surplus or deficit from operating activities;',
+      'Finance costs;',
+      'Share of net surpluses/deficits of associates and joint ventures accounted for by the '
+      'equity method;',
+      'Surplus or deficit from ordinary activities;',
+      'Extraordinary items;',
+      'Minority interest\'s share of net surplus or deficit;',
+      'Net surplus or deficit for the period.',
+    ]},
     {'note': 'Expenses are classified either **by nature** or **by function**. If classified '
              'by function, a presentation **by nature** must also be given in the notes.'},
     {'h4': '(c) Statement of changes in net assets/equity'},
     {'def': {'t': 'Net assets/equity', 'd': 'assets less liabilities, financed by reserves, '
                   'accumulated surpluses/deficits and minority interest.'}},
     {'p': 'Important because it lets users ascertain the causes of movement in net equity. '
-          'Changes are normally caused by: significant changes in accounting policies; '
-          'correction of prior years\' errors; revaluation of assets; surplus or deficit for '
-          'the period; and changes in currency translation.'},
+          'Changes are normally caused by:'},
+    {'ul': [
+      'Significant changes in accounting policies;',
+      'Correction of prior years\' errors;',
+      'Revaluation of assets;',
+      'Surplus or deficit for the period; and',
+      'Changes in currency translation.',
+    ]},
     {'h4': '(d) Statement of cash flow'},
     {'p': 'Required by **IPSAS 1**; its preparation and presentation is covered by **IPSAS 2**. '
           'Identifies the sources of cash inflows, items on which cash was expended, and the '
-          'closing cash balance. Reported under three activities: **operating activities** '
-          '(the entity\'s day-to-day activities, not investing or financing); **investing '
-          'activities** (acquisition/disposal of long-term assets and other investments not '
-          'included in cash equivalents); **financing activities** (changes in the size and '
-          'composition of contributed capital and borrowings).'},
+          'closing cash balance. Reported under three activities:'},
+    {'ul': [
+      '**Operating activities** — the entity\'s day-to-day activities, not investing or '
+      'financing;',
+      '**Investing activities** — acquisition/disposal of long-term assets and other '
+      'investments not included in cash equivalents;',
+      '**Financing activities** — changes in the size and composition of contributed capital '
+      'and borrowings.',
+    ]},
     {'h4': '(e) Accounting policies'},
     {'def': {'t': 'Accounting policies', 'd': 'the specific principles, bases, conventions, '
                   'rules and practices an entity adopts in preparing and presenting financial '
@@ -191,10 +211,14 @@ CH = {
       'Other disclosures, including contingencies, commitments and other financial/'
       'non-financial disclosures.',
     ]},
-    {'p': '**Non-financial disclosures** include: domicile and legal form of the entity; '
-          'nature of the entity\'s operations and principal activities; reference to relevant '
-          'legislation governing its operations; and the name of the controlling and ultimate '
-          'controlling entity of the economic entity (where applicable).'},
+    {'p': '**Non-financial disclosures** include:'},
+    {'ul': [
+      'Domicile and legal form of the entity;',
+      'Nature of the entity\'s operations and principal activities;',
+      'Reference to relevant legislation governing its operations; and',
+      'The name of the controlling and ultimate controlling entity of the economic entity '
+      '(where applicable).',
+    ]},
     {'eg': {'tag': 'Study text', 't': 'Statement of financial performance and position — '
       'Federal Airport Authority of Nigeria', 'open': True, 'q': [
       {'p': 'A typical format of the Statement of Financial Performance and Statement of '

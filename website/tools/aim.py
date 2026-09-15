@@ -67,7 +67,7 @@ def chapter_text(code):
         tail = [x for x in lines[i + 1:i + 8] if x.strip()][:4]
         if any('....' in x for x in tail):
             continue
-        g = m.group(1).upper()
+        g = re.sub(r'[\s-]+', '-', m.group(1).upper().strip())
         pos.append((NUM.get(g) or int(m.group(1)), i))
     best = []
     for n, i in pos:
@@ -89,6 +89,11 @@ def build_index(code):
     # fold the curated seed vocabulary in as a separate, heavily weighted signal
     keys = {n: set(stem(w) for w in tokens(v))
             for n, v in CHAPTER_KEYS.get(code, {}).items()}
+    # confine retrieval to chapters the site actually has content for — a study
+    # text chapter with no CHAPTER_KEYS entry (and so no authored site chapter)
+    # would otherwise attract questions into a citation that has nowhere to go
+    if keys:
+        chs = {n: v for n, v in chs.items() if n in keys}
     N = len(chs)
     df = Counter()
     for n, (t, bag) in chs.items():

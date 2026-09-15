@@ -177,6 +177,496 @@ CH = {
       'assessments raised and amounts collected.',
     ]},
   ]},
+
+  {'n': '9.5', 't': 'Fund accounting: classification and types of fund', 'b': [
+    {'def': {'t': 'Fund', 'd': 'a separate fiscal and accounting entity in which resources are '
+             'held, governed by special regulations, kept apart from other funds, and '
+             'established for a specific purpose. For stewardship, government income is '
+             'categorised into a series of such funds, each catering for a specific activity.'}},
+    {'h4': 'Classification of funds'},
+    {'table': {'align': 'll', 'head': ['Category', 'Meaning'], 'rows': [
+      ['**Government funds**', 'Accrue resources derived from the general tax and revenue '
+       'powers of government — e.g. debt service fund, special fund, revolving fund'],
+      ['**Proprietary funds**', 'Account for resources derived from the business activities '
+       'of government and its agencies, such as parastatals'],
+      ['**Fiduciary funds**', 'Account for resources held and managed by government as '
+       'custodian or trustee — e.g. Petroleum Technology Development Fund (PTDF), Trust and '
+       'Agency Fund, Pension Trust Fund'],
+    ]}},
+    {'h4': 'Types of fund (Finance (Control and Management) Act, 1958)'},
+    {'table': {'align': 'll', 'head': ['Fund', 'What it is'], 'rows': [
+      ['**General fund**', 'For general administration and services — this **is** the '
+       'Consolidated Revenue Fund (s.5 of the Act)'],
+      ['**Capital project fund**', 'For acquisition of capital assets/facilities — this is '
+       'the **Development Fund** (s.18)'],
+      ['**Special fund**', 'Created for a specific purpose, e.g. South African Relief Fund, '
+       'African Staff Housing Scheme Fund'],
+      ['**Trust fund**', 'Resources held as trustee, used only for the purpose in the trust '
+       'deed — e.g. PTDF, Research Foundation Fund'],
+      ['**Contingency fund**', 'For expenditure of uncertain amount and timing — e.g. natural '
+       'disaster relief (s.15)'],
+      ['**Inter-governmental service fund**', 'Provides a service to other funds — e.g. the '
+       'Government Clearance Fund, which nets transactions between the Federal and State '
+       'Governments'],
+      ['**Revolving (working capital) fund**', 'Finances a service one unit provides to '
+       'other departments — e.g. a Revolving Loan Fund'],
+      ['**Self-liquidating fund**', 'Resources transferred in periodically; any balance left '
+       'is transferred to a current fund — e.g. a Deposit Fund holding money for third '
+       'parties'],
+    ]}},
+  ]},
+
+  {'n': '9.6', 't': 'Revenue collection agencies in Nigeria', 'b': [
+    {'table': {'align': 'lll', 'head': ['Agency', 'Regulates / collects', 'Key point'], 'rows': [
+      ['**NNPC Limited (NNPCL)**', 'Foreign and domestic sales of crude oil and gas, PSC '
+       'profit oil/gas, sale of refined products', 'Incorporated under CAMA per the '
+       'Petroleum Industry Act (PIA) 2021, shares held by Ministry of Finance Inc. and '
+       'Ministry of Petroleum Inc. on behalf of the FGN; operates on a commercial basis'],
+      ['**Nigerian Upstream Petroleum Regulatory Commission (NUPRC)**',
+       'Royalties, gas-flare penalties, rents on oil fields, signature bonuses',
+       'Regulator for all upstream operations (technical, operational, commercial); '
+       'inherited the assets/functions of the old DPR upstream side'],
+      ['**Nigerian Midstream and Downstream Petroleum Regulatory Authority (NMDPRA)**',
+       'Licensing and pricing in midstream/downstream operations',
+       'Absorbed DPR (downstream), PPPRA and the Petroleum Equalisation Fund; sets the '
+       'Domestic Supply Obligation (DSO)'],
+      ['**Nigeria Revenue Service (NRS)** — formerly FIRS',
+       'Companies Income Tax, Hydrocarbon/Petroleum Profits Tax, VAT, and PAYE/Capital '
+       'Gains/Stamp Duty of Armed Forces, Police, Foreign Affairs staff and FCT residents',
+       'Renamed and re-established under the 2025 tax reform Acts'],
+      ['**State Board of Internal Revenue Service (SBIRS)**',
+       'Personal income tax of individuals in the state (other than the FIRS/NRS-collected '
+       'categories), plus the state\'s share of Capital Gains Tax and Stamp Duty',
+       'Established under the Personal Income Tax Act 1993; liaises with the Joint Tax '
+       'Board on policy and reform'],
+      ['**Nigeria Customs Service (NCS)**', 'Import/export/excise duties',
+       'Core functions: revenue collection and suppression of smuggling. Also supports '
+       'combating illicit trade, IP infringement, arms/drug trafficking and money '
+       'laundering at the border'],
+    ]}},
+    {'note': 'The **Nigeria Customs Service Act 2023** changed how Customs itself is funded: '
+             'rather than a share of the Federation Account, it now retains a **4% free-on-'
+             'board (FOB) levy** on the value of imports collected at the ports for its own '
+             'operations, and FAAC stopped the old 7% cost-of-collection deduction from gross '
+             'Federation Account revenue in January 2026.'},
+  ]},
+
+  {'n': '9.7', 't': 'Bodies governing Federation Account distribution', 'b': [
+    {'def': {'t': 'Federation Accounts Allocation Committee (FAAC)',
+             'd': 'set up under the Allocation of Revenue (Federation Account etc.) Act to '
+                  'deliberate on and allocate funds from the Federation Account to the three '
+                  'tiers of government. It meets in two sessions:'}},
+    {'table': {'align': 'll', 'head': ['Session', 'Chair / key members / role'], 'rows': [
+      ['**Technical session**',
+       'Chaired by the **Accountant-General of the Federation**; States\' Accountants-'
+       'General and representatives of NNPC, NRS, NCS, DPR, RMAFC, Federal Ministry of '
+       'Finance, CBN, National Planning Commission and others. *Role:* considers the '
+       'collecting agencies\' returns, deliberates on the revenue available, and '
+       'recommends the distribution to the plenary session'],
+      ['**Plenary session**',
+       'Chaired by the **Minister of Finance**; States\' Commissioners of Finance, the '
+       'Accountants-General (Federal and State), and the same agency representatives. '
+       '*Role:* ensures allocations are promptly and fully paid into each tier\'s treasury, '
+       'and reports annually to the National Assembly'],
+    ]}},
+    {'def': {'t': 'State Joint Local Government Account Allocation Committee (SJLGAAC)',
+             'd': 'ensures the local government share of the Federation Account, together '
+                  'with 10% of the state\'s own internally generated revenue, is paid '
+                  'promptly into the **State Joint Local Government Account** and shared to '
+                  'the councils on criteria of equality, population, primary school '
+                  'enrolment and internally generated revenue. Chaired by the state '
+                  'Commissioner for Local Government, with council chairmen, two '
+                  'representatives of the Accountant-General of the Federation, a '
+                  'representative of the state Accountant-General and two persons appointed '
+                  'by the Governor.'}},
+    {'warn': 'Following the **Supreme Court judgment of 11 July 2024**, local government '
+             'allocations from the Federation Account are now paid **directly** into each '
+             'local government\'s own account rather than routed through the SJLGAAC — a '
+             'recent, examinable change to what was previously the standard procedure.'},
+    {'def': {'t': 'Joint Revenue Board of Nigeria (JRB)',
+             'd': 'a new body under the **Joint Revenue Board (Establishment) Act 2025** '
+                  '(part of the 2025 tax reform), coordinating tax policy and administration '
+                  'across federal, state and local government. Chaired by the Executive '
+                  'Chairman of the NRS, with the Finance and Planning Ministers, the '
+                  'Attorney-General, the CBN Governor, State IRS chairmen, a local-government '
+                  'representative and two private-sector members; a Federal Ministry of '
+                  'Finance representative is Secretary. Members serve part-time for a '
+                  'renewable 4-year term.'}},
+    {'ul': [
+      '**Standard-setting** — model guidelines for assessment, collection and audit that '
+      'states and LGAs adopt, so taxpayers face uniform rules nationwide.',
+      '**Dispute resolution** — binding decisions where two states claim the same taxpayer '
+      'or disagree on a revenue share, replacing litigation.',
+      '**Taxpayer database** — runs the unified national TIN system, blocking duplicate '
+      'registrations and tracking cross-border taxpayers.',
+      '**Policy review** — fiscal-impact assessment of any new levy or tax waiver before it '
+      'is introduced.',
+      '**Redress** — routes taxpayer grievances through the Tax Appeal Tribunal and an '
+      'Ombudsman.',
+    ]},
+    {'def': {'t': 'Revenue Mobilisation, Allocation and Fiscal Commission (RMAFC)',
+             'd': 'established by the RMAFC Act 1989; composed of a chairman and one member '
+                  'from each state and the FCT, appointed by the President.'}},
+    {'ol': [
+      'Monitors accruals to, and disbursement from, the Federation Account.',
+      'Reviews the **revenue allocation formula** from time to time to keep it in line with '
+      'changing realities.',
+      'Advises the three tiers on fiscal efficiency and how to raise more revenue.',
+      'Determines the remuneration of holders of political and public offices.',
+      'Recommends the formula for distributing the Federation Account and Local Government '
+      'Accounts.',
+      'Is a statutory member of FAAC, the Local Government Joint Account Allocation '
+      'Committee, the JRB, the Niger-Delta Development Commission and the Ecological Fund '
+      'Commission.',
+      'Has power to demand data from NNPC, NCS, NRS, the CBN and the Federal Ministry of '
+      'Finance.',
+    ]},
+  ]},
+
+  {'n': '9.8', 't': 'The Consolidated Revenue Fund, Development Fund and Contingency Fund',
+   'b': [
+    {'def': {'t': 'Consolidated Revenue Fund (CRF)', 'd': 'established by section 80 of the '
+             '1999 Constitution. Every revenue item not specifically designated to another '
+             'fund is paid into the CRF.'}},
+    {'table': {'align': 'll', 'head': ['CRF receipts', ''], 'rows': [
+      ['Direct allocation from the Federation Account', 'At the Federal share of the '
+       'prevailing vertical formula'],
+      ['Direct taxes', 'PAYE of Armed Forces, Police and Foreign Service personnel'],
+      ['Licences and internal revenue', 'Arms/ammunition, goldsmith, gold-dealer, radio/TV '
+       'licence fees'],
+      ['Mining', 'Mining fees, rent of crown lands, royalties on gold, tin, iron ore, coal'],
+      ['Fees', 'Court fees, court fines, medical fees'],
+      ['Earnings and sales', 'Sale of inventories/publications/stamps, money-order '
+       'commission'],
+      ['Rent of government property', 'Government quarters, land and buildings'],
+      ['Interest and repayments (general/State)', 'On loans the Federal Government granted '
+       'to individuals, corporations, government companies and State Governments'],
+      ['Armed Forces sales', 'Old vehicles and stores'],
+      ['Reimbursements', 'Refunds for services rendered by Federal officers to states, '
+       'local governments and statutory bodies — e.g. audit fees, overpayment refunds'],
+      ['Miscellaneous', 'Overpayments refunded, lapsed deposits'],
+    ]}},
+    {'p': 'Charges against the CRF fall into three groups: **(1)** every recurrent '
+          'expenditure head in the approved estimates (personnel cost, overhead cost, '
+          'debt service); **(2)** salaries and consolidated allowances of **statutory '
+          'officers**, chargeable directly regardless of budget approval — the Police '
+          'Service Commission, Public Complaints Commission, Public Service Commission, '
+          'Auditor-General for the Federation, Nigerian Law Reform Commission, INEC, the '
+          'President and Justices of the Court of Appeal, and the Chief Judge/Justices of '
+          'the Federal High Court and Supreme Court; and **(3)** pension and gratuity of '
+          'statutory and non-statutory officers, including the Armed Forces.'},
+    {'def': {'t': 'Development Fund (DF)', 'd': 'created by section 25 of the Finance '
+             '(Control and Management) Act 1958 and entrenched in the 1999 Constitution, '
+             'to finance **capital development projects**.'}},
+    {'table': {'align': 'll', 'head': ['Sources', 'Charges'], 'rows': [
+      ['Yearly contribution from the CRF', 'Capital expenditure — roads, bridges, dams'],
+      ['External grants', 'General administration capital items — barracks, staff houses, '
+       'vehicles, hospitals'],
+      ['External loans (e.g. IMF)', 'External financial obligations — aid to other '
+       'countries'],
+      ['Internal loans — development stocks (long-term), Treasury Certificates (2-year), '
+       'Treasury Bills (91-day)', 'Loans made to State Governments for development'],
+    ]}},
+    {'def': {'t': 'Contingency Fund (CF)', 'd': 'authorised by section 83 of the 1999 '
+             'Constitution (s.81 of the 1979/1989 Constitutions), fed from the CRF, to meet '
+             '**unforeseen, urgent expenditure** — e.g. a natural disaster — where virement '
+             'is impossible and the need cannot wait for a Supplementary Appropriation Act. '
+             'Any advance from it is replaced by a supplementary estimate as soon as '
+             'possible.'}},
+    {'eg': {'t': 'Illustration 9.1 — Federation Account and Consolidated Revenue Fund',
+      'q': [
+      {'p': 'For a month, inflows were: import duties ₦400,000; export duties ₦300,000; '
+            'excise duties ₦200,000; petroleum profits tax ₦80,000,000; companies income '
+            'tax ₦71,000,000; PAYE — Armed Forces ₦400,000, Police ₦30,000, Abuja residents '
+            '₦20,000; dividend from FGN investments ₦120,000. Outflows: remuneration of '
+            'statutory officers ₦13,800,000; recurrent expenditure ₦1,500,000; transfer to '
+            'Development Fund ₦2,500,000; transfer to Contingency Fund ₦20,000. The vertical '
+            'formula is Federal 52.68%, State 26.72%, Local 20.60%. Prepare the Federation '
+            'Account and the Consolidated Revenue Fund.'}],
+      'a': [
+      {'table': {'cap': 'Federation Account for the month', 'align': 'lr', 'head': ['', '₦'],
+        'rows': [
+        ['Import duties', '400,000'], ['Export duties', '300,000'],
+        ['Excise duties', '200,000'], ['Petroleum profits tax', '80,000,000'],
+        ['Companies income tax', '71,000,000'], ['**Total income**', '**151,900,000**'],
+        ['Federal Govt. 52.68%', '80,020,920'], ['State Govts. 26.72%', '40,587,680'],
+        ['Local Govts. 20.60%', '31,291,400'], ['**Total distributed**', '**151,900,000**'],
+      ]}},
+      {'table': {'cap': 'Consolidated Revenue Fund for the month', 'align': 'lr',
+        'head': ['', '₦'], 'rows': [
+        ['PAYE — Armed Forces', '400,000'], ['PAYE — Police', '30,000'],
+        ['Dividends from FGN investments', '120,000'],
+        ['Share from Federation Account', '80,020,920'], ['**Total income**', '**80,570,920**'],
+        ['Less: Remuneration of statutory officers', '(13,800,000)'],
+        ['Less: Recurrent expenditure', '(1,500,000)'],
+        ['Less: Transfer to Development Fund', '(2,500,000)'],
+        ['Less: Transfer to Contingency Fund', '(20,000)'],
+        ['**Balance carried forward**', '**62,750,920**'],
+      ]}}]}},
+  ]},
+
+  {'n': '9.9', 't': 'Sources of central, regional and local government finance (Ghana)', 'b': [
+    {'p': 'Ghana operates a **unitary**, not federal, system, so government accounts there '
+          'are unitary accounts, with accountability run through the **public accounts**.'},
+    {'h4': 'Public money'},
+    {'ul': [
+      '**Tax revenue** — direct tax (income tax, corporate tax, paid directly by the person '
+      'who bears it) and indirect tax (petroleum tax, VAT, import/export duties, borne by '
+      'the final buyer).',
+      '**Non-tax revenue** — everything else government generates, including fines and '
+      'penalties.',
+      '**Internally generated revenue (IGR / "user fees")** — passport fees, vehicle '
+      'examination/licensing fees, product-testing fees, university facility-user fees.',
+    ]},
+    {'h4': 'Special funds account'},
+    {'p': 'Money earmarked by law or the Constitution (Article 174(2)) for a specific '
+          'purpose, kept outside the Consolidated Fund and reported separately under the '
+          '**Public Financial Management Act (Act 921)** — e.g. the **Road Fund** (a fuel '
+          'cess), the **Ghana Education Trust Fund (GETFund)**, and the **National Health '
+          'Insurance Levy (NHIL)** managed by the NHIA.'},
+    {'h4': 'District Assembly revenue'},
+    {'table': {'align': 'll', 'head': ['Source', 'Examples'], 'rows': [
+      ['**Central government revenue** (to districts)', 'Grants-in-aid (foreign donations '
+       'routed via central government); recurrent transfers (staff running costs); ceded '
+       'revenue (casino, betting/advertisement tax, entertainment duty)'],
+      ['**Locally generated revenue**', 'Rates/levies on animals; taxes on the self-employed; '
+       'investment interest; trading profits; vehicle-licence collections; loans (up to '
+       '¢20m, with Ministerial approval); local/foreign grants'],
+      ['**Loans and grants**', 'Local loans via the central bank (Treasury bills/bonds); '
+       'foreign loans (IMF, World Bank). Grants are **specific** (a named project) or '
+       '**general/"budget support"** (discretionary; pooled donor funding is called '
+       '"multi-donor budget support", MDBS)'],
+      ['**Other public money**', 'Government loans/advances repaid, dividends from '
+       'profit-making state organisations, interest earnings, sale of securities, equity '
+       'or property'],
+      ['**Trust money**', 'Held by government for others, e.g. a superannuation fund held '
+       'in trust for employees until retirement'],
+    ]}},
+    {'h4': 'Revenue estimation (FAR s.159)'},
+    {'p': 'A head of department estimating the year\'s revenue must: identify all activities '
+          'already generating revenue; identify those with the *potential* to; estimate '
+          'their frequency and the revenue arising; and produce a monthly forecast of when '
+          'the revenue will flow in — checked against how past estimates compared to actual '
+          'collections.'},
+    {'h4': 'Public and departmental accounts'},
+    {'p': 'The **public accounts** (FAA ss.40–41, FAR reg.191), prepared and kept by the '
+          '**Controller and Accountant-General**, comprise: the Consolidated Fund\'s assets '
+          'and liabilities at year end; a summary of receipts and payments against budget; '
+          'revenue and expenditure against the approved estimate; and an analysis of public '
+          'debt, deposits/trust money, government securities, advances, loans, equity '
+          'investments and a cash flow statement. Each MDA (a "department" under the FAA) '
+          'separately prepares monthly/annual **departmental accounts** — balance sheet, '
+          'revenue and expenditure statement, cash flow statement and performance notes.'},
+    {'h4': 'Ghana\'s public funds (Article 175, Constitution; s.5, FAA)'},
+    {'p': 'Public funds comprise the **Consolidated Fund**, the **Contingency Fund**, and '
+          'any other fund Parliament establishes by Act — e.g. the Road Fund (1997), '
+          'GETFund (2000), District Assemblies Common Fund (1993), Ghana Investment Fund '
+          '(2002), Venture Capital Trust Fund (2004).'},
+    {'table': {'align': 'll', 'head': ['Fund', 'Purpose'], 'rows': [
+      ['**Consolidated Fund**', 'All central-government money except that legally payable '
+       'into another fund or retained by a department/agency'],
+      ['**Contingency Fund**', 'Unbudgeted, urgent, unforeseen expenditure (Article 177); '
+       'advances are replaced by a supplementary estimate to Parliament'],
+      ['**Contingency Reserve Fund**', 'A set-aside share of approved appropriation, held by '
+       'the Executive as a first line of relief before a supplementary request or virement'],
+      ['**District Assemblies\' Common Fund (DACF)**', 'At least **5%** of Ghana\'s total '
+       'annual revenue, paid quarterly, for district development projects; overseen by a '
+       'DACF Administrator; each district holds a separate Common Fund Account'],
+      ['**National loans fund / Debt service (sinking) fund**', 'Receives contracted loans '
+       'and services their principal/interest — an alternative to holding loans in the '
+       'Consolidated Fund'],
+      ['**Trust and Agency Fund**', 'Money held as trustee/agent for other bodies — e.g. '
+       'peacekeeping rewards for the armed forces'],
+      ['**Counterpart fund**', 'Supports projects financed by a foreign donation, matched '
+       'with a government contribution'],
+      ['**Intra-governmental service fund**', 'A unit supplying a service (e.g. stationery) '
+       'to other departments'],
+      ['**Revolving (working capital) fund**', 'Proceeds of what it finances are paid back '
+       'in to fund the next cycle — e.g. Ghana Education Service textbook sales to '
+       'students'],
+      ['**Local government fund / DACF**', 'For the social and economic development of '
+       'metropolises, municipalities and districts'],
+      ['**Asset renewal fund**', 'Replaces local-government equipment — harvesters, '
+       'tractors, bulldozers'],
+      ['**Stabilisation (revenue) fund**', 'Set aside against a future fall in revenue'],
+      ['**Special fund**', 'For a named purpose — Education Fund, National Housing Fund, '
+       'SMEF, Agricultural Development Fund'],
+      ['**Self-liquidating fund**', 'Balance left after periodic transfers moves to a '
+       'current fund — e.g. a Deposit Fund'],
+    ]}},
+    {'h4': 'Advantages and disadvantages of fund accounting'},
+    {'table': {'align': 'll', 'head': ['Advantages', 'Disadvantages'], 'rows': [
+      ['Ensures financial control — a fund states expressly what its money is for',
+       'No information on debtors/creditors; it is cash accounting'],
+      ['Highlights government policy', 'Assets are not capitalised — written off in the '
+       'year of purchase'],
+      ['Facilitates coordination and planning of operations',
+       'Effective control across many funds is difficult, and consolidation of government '
+       'accounts is harder; often managed by under-skilled staff'],
+    ]}},
+    {'h4': 'Entries of fund accounting'},
+    {'ol': [
+      'Dr Bank; Cr Fund — proceeds realised on creating the fund.',
+      'Dr Fund Investment; Cr Bank — value of an investment purchased with the fund.',
+      'Dr Fund Investment Disposal; Cr Fund Investment — value of an investment disposed of.',
+      'Dr Bank; Cr Fund Investment Disposal — proceeds on disposal.',
+      'Dr Fund Investment Disposal; Cr Fund — profit realised on disposal.',
+      'Dr Fund; Cr Fund Investment Disposal — loss sustained on disposal.',
+    ]},
+    {'h4': 'Revenue control'},
+    {'p': 'The checks that ensure moneys due are received and accounted for: periodic '
+          'monitoring; policing the revenue system so no service is rendered unbilled; '
+          'timely demand notices and follow-up on debts; timely issue of revenue documents; '
+          'prompt banking of collections where e-collection is not used; authority limits '
+          'for revenue handling; and a functioning system of internal control, constantly '
+          'reviewed.'},
+  ]},
+
+  {'n': '9.10', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text', 't': 'Questions 1–12 with answers', 'open': True, 'q': [
+      {'ol': [
+        'Charges/outlets of funds from the Consolidated Revenue Fund could be summarised as: '
+        'I. all recurrent expenditure heads in the approved estimates; II. salaries and '
+        'allowances of statutory officers; III. pension and gratuity. (i) I only  (ii) II '
+        'only  (iii) III only  (iv) I, II and III  (v) I and II only',
+        'The general sources of government revenue include the following EXCEPT (i) '
+        'Taxation  (ii) Fines  (iii) Foreign investment  (iv) Ordinary shares  (v) Public '
+        'debt',
+        'The revenue collection agencies of the federal government are the following '
+        'EXCEPT: Nigerian Customs Service; State Internal Revenue Service; Nigeria Revenue '
+        'Service; Nigerian National Petroleum Corporation; Department of Petroleum '
+        'Resources',
+        'Membership of the FAAC technical session includes the following except ONE '
+        '(A) Federal Ministry of Finance  (B) Department of Petroleum Resources  '
+        '(C) Central Bank of Nigeria  (D) Office of the Auditor-General for the Federation  '
+        '(E) Office of Head of the Service of the Federation',
+        'Functions of the technical session include the following except ONE (A) To '
+        'consider the accounting returns of revenue collecting agencies  (B) To submit '
+        'annual report of its performance/activities to the National Assembly  (C) To '
+        'deliberate and consider the revenue available for distribution  (D) To make '
+        'recommendation to the plenary session for adoption of the revenue to be shared to '
+        'the three tiers of government  (E) To consider any other issues sent from the '
+        'plenary session',
+        'Functions of the Joint Revenue Board (JRB) include the following except ONE '
+        '(A) Harmonising tax administration  (B) Resolving inter-governmental '
+        'jurisdictional dispute  (C) Focused on personal-income-tax coordination between '
+        'the NRS and state boards  (D) Maintaining the national taxpayer-ID platform  '
+        '(E) Advising on double-taxation and reform',
+        'Funds used to account for the resources derived from the business activities of '
+        'government and its agencies such as parastatals is called …',
+        'A compulsory levy imposed by the government for which citizens receive no direct '
+        'benefit is called …',
+        'The State Joint Local Government Account Allocation Committee is set up to '
+        'distribute allocation to local governments from the Federation Account and …(%) '
+        'of the internally generated revenue of the appropriate state government.',
+        'The expenditure incurred for the provision and maintenance of infrastructural '
+        'amenities such as road and bridge construction is contained in …',
+        'The fund set up to meet unforeseen expenditure in urgent situations occasioned by '
+        'natural disasters is called …',
+        'The Nigeria Customs Service Act 2023 (and the 2025 tax reforms) scrapped the 7% '
+        'cost-of-collection deduction from gross Federation Account revenue; it is instead '
+        'funded by a …(%) FOB levy on the value of imports collected at the ports.',
+      ]}],
+      'a': [
+      {'p': '**1.** A  **2.** D  **3.** B  **4.** D  **5.** B  **6.** C  **7.** Proprietary  '
+            '**8.** Taxation  **9.** 10%  **10.** Summary of capital expenditure payments  '
+            '**11.** Contingency Fund  **12.** 4%'}]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text',
+      't': 'Question 1 — Statement of Consolidated Revenue Fund, JOJO Federal Republic',
+      'open': True, 'q': [
+      {'p': 'Prepare the Statement of the Consolidated Revenue Fund as at 31 December 2021 '
+            'from: balance at 1 Jan 2021 ₦6,292,000; treasury bills issued during the year '
+            '₦7,114,000; treasury bills repaid ₦6,518,000; transfer to Contingencies Fund '
+            '₦3,400,000; issues from Contingencies Fund ₦3,000,000; total revenue received '
+            '₦35,554,000; recurrent expenditure ₦28,897,000; transfer to Development Fund '
+            '₦3,400,000; appreciation on valuation of securities ₦44,000.'}],
+      'a': [
+      {'table': {'cap': 'JOJO Federal Republic — Statement of Consolidated Revenue Fund as '
+                        'at 31 December 2021 (₦\'000)', 'align': 'lrr',
+        'head': ['', '', ''], 'rows': [
+        ['Balance b/f', '', '6,292'],
+        ['Treasury bills issued', '7,114', ''],
+        ['Treasury bills repaid', '(6,518)', '596'],
+        ['Issues from Contingencies Fund', '', '3,000'],
+        ['Transfer to Contingencies Fund', '(3,400)', '(400)'],
+        ['Total revenue received', '', '35,554'],
+        ['Appreciation on securities', '', '44'],
+        ['**Sub-total**', '', '**42,086**'],
+        ['Recurrent expenditure', '', '(28,897)'],
+        ['Transfer to Development Fund', '', '(3,400)'],
+        ['**Balance carried forward**', '', '**9,789**'],
+      ]}}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 2 — RMAFC composition and powers',
+      'open': True, 'q': [
+      {'p': '(a) State the composition of the Revenue Mobilisation, Allocation and Fiscal '
+            'Commission (RMAFC). (b) State the powers the Commission can exercise.'}],
+      'a': [
+      {'p': '**(a)** A chairman, and one member from each state and the FCT, all persons of '
+            'unquestionable integrity with the requisite qualifications and experience, '
+            'appointed by the President.'},
+      {'p': '**(b)** Monitor accruals/disbursement from the Federation Account; periodically '
+            'review the revenue allocation formula; advise the three tiers on fiscal '
+            'efficiency; determine remuneration of political/public office holders; '
+            'recommend the Federation Account and Local Government Account distribution '
+            'formula; discharge any other function conferred by the Constitution or an Act; '
+            'sit as a statutory member of FAAC, the Local Government Joint Account '
+            'Allocation Committee, the JRB, the Niger-Delta Development Commission and the '
+            'Ecological Fund Commission; and demand data from NNPC, NCS, NRS, the CBN and '
+            'the Federal Ministry of Finance.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 3 — SJLGAAC', 'open': True, 'q': [
+      {'p': '(i) State the stipulated criteria for sharing revenue allocations to local '
+            'governments under the 1999 Constitution. (ii) State the composition of the '
+            'State Joint Local Government Account Allocation Committee (SJLGAAC). '
+            '(iii) State the functions of the Committee.'}],
+      'a': [
+      {'p': '**(i)** Equality, population, primary school enrolment and internally '
+            'generated revenue.'},
+      {'p': '**(ii)** The state Commissioner for Local Government (chairman); every local '
+            'government council chairman; two representatives of the Accountant-General of '
+            'the Federation; a representative of the state Accountant-General; two persons '
+            'appointed by the Governor; and the Permanent Secretary of the relevant state '
+            'ministry (or an officer the Commissioner designates) as secretary.'},
+      {'p': '**(iii)** Ensures allocations from the Federation Account and from the state '
+            'are promptly paid into the State Joint Local Government Account, and '
+            'distributed to the councils under the House of Assembly\'s law.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 4 — the Consolidated Revenue Fund',
+      'open': True, 'q': [
+      {'p': 'The Consolidated Revenue Fund (CRF) was created by section 80 of the 1999 '
+            'Constitution. (i) List and explain the various revenue payable to the CRF. '
+            '(ii) What are the charges against the CRF?'}],
+      'a': [
+      {'p': '**(i)** Direct allocation from the Federation Account; direct taxes (PAYE of '
+            'Armed Forces, Police and Foreign Service personnel); licence and internal '
+            'revenue (arms, goldsmith, radio/TV, gold-dealer licences); mining (fees, rent '
+            'of crown lands, royalties); fees (court fees/fines, medical fees); earnings '
+            'and sales (inventories, publications, stamps, money-order commission); rent of '
+            'government property; interest and repayments, general and State; Armed Forces '
+            'property sales; reimbursements (audit fees, overpayment refunds from other '
+            'tiers); and miscellaneous (refunded overpayments, lapsed deposits).'},
+      {'p': '**(ii)** All recurrent expenditure heads in the approved estimates; salaries '
+            'and consolidated allowances of statutory officers (Police Service Commission, '
+            'Public Complaints Commission, Public Service Commission, Auditor-General for '
+            'the Federation, Nigerian Law Reform Commission, INEC, the President and '
+            'Justices of the Court of Appeal, the Chief Judge/Justices of the Federal High '
+            'Court, and the Chief Justice/Justices of the Supreme Court); and pension and '
+            'gratuity of statutory and non-statutory officers, including the Armed Forces.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 5 — the Joint Revenue Board', 'open': True,
+      'q': [
+      {'p': '(i) Explain the term "the Joint Revenue Board". (ii) State its composition. '
+            '(iii) State how members are appointed and how they may be removed.'}],
+      'a': [
+      {'p': '**(i)** A body established by the Joint Revenue Board (Establishment) Act 2025 '
+            'to harmonise and coordinate revenue administration across federal, state and '
+            'local government.'},
+      {'p': '**(ii)** The Executive Chairman of the NRS (chairman); chairmen of all State '
+            'IRS and the FCT-IRS; representatives of the Ministry of Finance, the National '
+            'Identity Management Commission, RMAFC, the Nigerian Immigration Service, the '
+            'Federal Road Safety Corps and the Nigeria Customs Service.'},
+      {'p': '**(iii)** Members serve part-time, for a renewable 4-year term, and may be '
+            'removed for resignation, incapacity or misconduct.'}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Derivation (first charge)',

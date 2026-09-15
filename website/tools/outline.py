@@ -16,8 +16,12 @@ FILES = {
 WORDS = ('ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE TEN ELEVEN TWELVE THIRTEEN '
          'FOURTEEN FIFTEEN SIXTEEN SEVENTEEN EIGHTEEN NINETEEN TWENTY').split()
 NUM = {w: i + 1 for i, w in enumerate(WORDS)}
+NUM.update({'TWENTY-ONE': 21, 'TWENTY-TWO': 22, 'TWENTY-THREE': 23})
 
-RE_CH = re.compile(r'^\s*CHAPTER\s+(' + '|'.join(WORDS) + r'|\d{1,2})\s*$', re.I)
+# study texts print "TWENTY-ONE"/"TWENTY-TWO" with inconsistent spacing around the
+# hyphen (e.g. "CHAPTER TWENTY- ONE"); match loosely and canonicalise before NUM lookup
+RE_CH = re.compile(r'^\s*CHAPTER\s+(TWENTY[\s-]+(?:ONE|TWO|THREE)|'
+                    + '|'.join(WORDS) + r'|\d{1,2})\s*$', re.I)
 RE_SEC = re.compile(r'^\s{0,12}(\d{1,2})[.,](\d{1,2})(?:\.(\d))?\s+(\S.{2,90})$')
 
 
@@ -35,7 +39,7 @@ def chapters(code):
         tail = [x for x in lines[i + 1:i + 8] if x.strip()][:4]
         if any('....' in x for x in tail):
             continue
-        g = m.group(1).upper()
+        g = re.sub(r'[\s-]+', '-', m.group(1).upper().strip())
         n = NUM.get(g) or int(m.group(1))
         marks.append((n, i, tidy(tail[0]) if tail else ''))
     # keep the last run where chapter numbers ascend from 1

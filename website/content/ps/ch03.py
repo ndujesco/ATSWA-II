@@ -507,14 +507,23 @@ CH = {
         'Minority interest share of net surplus or deficit.',
         'Net surplus or deficit for the period.']},
       {'h4': '4  Changes in net assets/equity, and the order of the Notes'},
-      {'p': '**Causes of changes in net assets/equity:** significant changes in accounting '
-            'policies; correction of prior-year errors; revaluation of assets; surplus or '
-            'deficit for the period; changes in currency translation.'},
-      {'p': '**Order of the Notes:** (i) statement of compliance with IPSAS; (ii) statement of '
-            'the measurement bases and accounting policies applied; (iii) supporting information '
-            'for items on the face of each statement, in the order the line items and '
-            'statements are presented; (iv) other disclosures — contingencies, commitments, and '
-            'other financial and non-financial disclosures.'},
+      {'p': '**Causes of changes in net assets/equity:**'},
+      {'ol': [
+        'Significant changes in accounting policies;',
+        'Correction of prior-year errors;',
+        'Revaluation of assets;',
+        'Surplus or deficit for the period;',
+        'Changes in currency translation.',
+      ]},
+      {'p': '**Order of the Notes:**'},
+      {'ol': [
+        'Statement of compliance with IPSAS;',
+        'Statement of the measurement bases and accounting policies applied;',
+        'Supporting information for items on the face of each statement, in the order the '
+        'line items and statements are presented;',
+        'Other disclosures — contingencies, commitments, and other financial and non-'
+        'financial disclosures.',
+      ]},
       {'h4': '5  Cash flow activities (IPSAS 2)'},
       {'ul': [
         '**Operating activities** — the day-to-day activities of the entity that are not '

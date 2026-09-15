@@ -529,11 +529,14 @@ CH = {
       'Carries out other functions the Commission prescribes.',
     ]},
     {'h4': 'Specific obligations'},
-    {'p': 'A PFC must maintain all pension funds and assets in its custody to the exclusive order '
-          'of the relevant PFA and the Commission; must not utilise any pension fund or asset in '
-          'its custody to meet its own financial obligations to any person; and must not divert '
-          'or convert pension funds or assets, or any income arising from their investment, by '
-          'any means.'},
+    {'ul': [
+      'A PFC must maintain all pension funds and assets in its custody to the exclusive '
+      'order of the relevant PFA and the Commission;',
+      'It must not utilise any pension fund or asset in its custody to meet its own '
+      'financial obligations to any person; and',
+      'It must not divert or convert pension funds or assets, or any income arising from '
+      'their investment, by any means.',
+    ]},
     {'key': 'The separation of the administrator (section 4.8) from the custodian is the central '
             'control of the scheme: the PFA decides how the money is invested but never touches '
             'it, while the PFC holds the money but has no discretion over it. Neither can '
@@ -542,12 +545,14 @@ CH = {
 
   {'n': '4.10', 't': 'Refusal and revocation of licence', 'b': [
     {'h4': 'Refusal to issue a licence'},
-    {'p': 'The Commission may refuse to issue a licence where it is satisfied that: the '
-          'information in the application is false or untrue in any material particular; the '
-          'application does not meet the Act’s or the Commission’s requirements; or the '
-          'applicant’s licence had earlier been revoked under section 64 of the Act. Where it '
-          'refuses, the Commission notifies the applicant in the prescribed form, specifying '
-          'reasons.'},
+    {'p': 'The Commission may refuse to issue a licence where it is satisfied that:'},
+    {'ul': [
+      'The information in the application is false or untrue in any material particular;',
+      'The application does not meet the Act\'s or the Commission\'s requirements; or',
+      'The applicant\'s licence had earlier been revoked under section 64 of the Act.',
+    ]},
+    {'p': 'Where it refuses, the Commission notifies the applicant in the prescribed form, '
+          'specifying reasons.'},
     {'h4': 'Grounds for revocation'},
     {'p': 'The Commission may revoke a licence issued to a PFA or PFC where it discovers that:'},
     {'ul': [
@@ -597,12 +602,16 @@ CH = {
       'Not employ any person on the Commission’s section 74(2) list without the '
       'Commission’s prior approval.',
     ]},
-    {'p': 'Except with the Commission’s prior written consent, a PFA or PFC may not enter '
-          'into any agreement or arrangement for: the sale or transfer of a significant '
-          'shareholding capable of changing its shareholding structure; the restructuring of its '
-          'share capital; amalgamation or merger with another PFA or PFC; restructuring of the '
-          'PFA or PFC itself; or the employment of a management agent, or transfer of its '
-          'business to any agent.'},
+    {'p': 'Except with the Commission\'s prior written consent, a PFA or PFC may not enter into '
+          'any agreement or arrangement for:'},
+    {'ol': [
+      'The sale or transfer of a significant shareholding capable of changing its '
+      'shareholding structure;',
+      'The restructuring of its share capital;',
+      'Amalgamation or merger with another PFA or PFC;',
+      'Restructuring of the PFA or PFC itself; or',
+      'The employment of a management agent, or transfer of its business to any agent.',
+    ]},
     {'warn': 'A PFA or PFC that fails to comply with any of these provisions (sections 73, 74 and '
              '75 of the Act) pays a penalty of **₦1,000,000** to the Commission for every '
              'violation, and the Commission may additionally remove any top management staff who '
@@ -615,10 +624,13 @@ CH = {
           'management staff found to have grossly disregarded the Act.'},
     {'h4': 'Appointment of a compliance officer'},
     {'p': 'Every PFA and PFC must employ a **compliance officer**, who must have relevant '
-          'professional and cognate experience, and who is responsible for ensuring compliance '
-          'with the Act and internal regulations; reports to the chief executive officer and the '
-          'Commission on any non-compliance; and liaises with the Commission on any matter that '
-          'will enhance compliance.'},
+          'professional and cognate experience, and who is responsible for:'},
+    {'ol': [
+      'Ensuring compliance with the Act and internal regulations;',
+      'Reporting to the chief executive officer and the Commission on any non-compliance; '
+      'and',
+      'Liaising with the Commission on any matter that will enhance compliance.',
+    ]},
   ]},
 
   {'n': '4.12', 't': 'Statutory Reserve Fund, Pension Protection Fund and administrative '
@@ -639,10 +651,13 @@ CH = {
       'operators, at a rate the Commission determines.',
       'Income from investment of the Pension Protection Fund.',
     ]},
-    {'p': 'The Commission utilises the fund for: funding the minimum guaranteed pension under '
-          'section 84 of the Act; compensating eligible pensioners for shortfall or financial '
-          'losses arising from investment activities; and any other protective purpose the '
-          'Commission determines.'},
+    {'p': 'The Commission utilises the fund for:'},
+    {'ul': [
+      'Funding the minimum guaranteed pension under section 84 of the Act;',
+      'Compensating eligible pensioners for shortfall or financial losses arising from '
+      'investment activities; and',
+      'Any other protective purpose the Commission determines.',
+    ]},
     {'h4': 'Pension fund administrative expenses'},
     {'ul': [
       'All income earned from investment of pension funds is credited to the individual RSAs of '
@@ -818,18 +833,29 @@ CH = {
        'methodology using digital imaging to obtain, store and analyse fingerprint data'],
       ['**PIN**', 'A Personal Identification Number issued to an individual upon opening an RSA'],
     ]}},
-    {'p': 'The Commission’s guidelines are set out to: set eligibility criteria for '
-          'participation; establish the registration process; define how contributions are made; '
-          'provide criteria for managing the micro pension fund; outline the modes of accessing '
-          'benefits; define the mode of conversion from a micro pension plan to mandatory '
-          'contribution; and set minimum ICT requirements for licensed PFAs and PFCs.'},
+    {'p': 'The Commission\'s guidelines are set out to:'},
+    {'ol': [
+      'Set eligibility criteria for participation;',
+      'Establish the registration process;',
+      'Define how contributions are made;',
+      'Provide criteria for managing the micro pension fund;',
+      'Outline the modes of accessing benefits;',
+      'Define the mode of conversion from a micro pension plan to mandatory contribution; '
+      'and',
+      'Set minimum ICT requirements for licensed PFAs and PFCs.',
+    ]},
     {'h4': 'Eligibility'},
-    {'p': 'Persons **not below 18 years** of age with a source of income are eligible: '
-          'self-employed persons belonging to a trade, profession, cooperative or business '
-          'association; self-employed persons with a business registered as a company, '
-          'partnership or enterprise; employees in the informal sector, with or without a formal '
-          'written employment contract; and other self-employed individuals — all of whom '
-          'must be resident in Nigeria.'},
+    {'p': 'Persons **not below 18 years** of age with a source of income are eligible, all of '
+          'whom must be resident in Nigeria:'},
+    {'ul': [
+      'Self-employed persons belonging to a trade, profession, cooperative or business '
+      'association;',
+      'Self-employed persons with a business registered as a company, partnership or '
+      'enterprise;',
+      'Employees in the informal sector, with or without a formal written employment '
+      'contract; and',
+      'Other self-employed individuals.',
+    ]},
     {'h4': 'Registration and contributions'},
     {'ul': [
       'A prospective MPC opens an RSA by completing a registration form with a PFA of choice, '
@@ -1096,41 +1122,63 @@ CH = {
         'Securities and Exchange Commission; the Trade Union Congress of Nigeria; the Nigerian '
         'Exchange Group Plc; and the National Insurance Commission.']},
       {'h4': '4  Licensing a PFA, and permitted investments'},
-      {'p': '**Requirements to be licensed as a PFA:** a limited liability company incorporated '
-            'under CAMA whose object is to manage pension funds; minimum paid-up share capital '
-            'as prescribed by the Commission; proven professional capacity to manage pension '
-            'funds and administer retirement benefits; never having managed a fund that was '
-            'mismanaged or distressed through its own or its subscribers\'/directors\'/officers\' '
-            'fault; an undertaking to engage in no business other than pension fund management; '
-            'and any additional condition the Commission prescribes.'},
-      {'p': '**Permitted investment outlets:** bonds, bills and securities issued or guaranteed '
-            'by the Federal Government and the CBN; bonds, bills and securities issued by States '
-            'and local governments; bonds, debentures, redeemable preference shares and other '
-            'debt instruments of listed corporates; ordinary shares of listed public limited '
-            'companies; bank deposits and bank securities; investment certificates of listed '
-            'closed-end or hybrid investment funds with good earnings records; units of '
-            'open-end or specialist open-end investment funds; real estate development '
-            'investments; and specialist investment funds and other instruments the Commission '
-            'approves.'},
+      {'p': '**Requirements to be licensed as a PFA:**'},
+      {'ol': [
+        'A limited liability company incorporated under CAMA whose object is to manage '
+        'pension funds;',
+        'Minimum paid-up share capital as prescribed by the Commission;',
+        'Proven professional capacity to manage pension funds and administer retirement '
+        'benefits;',
+        'Never having managed a fund that was mismanaged or distressed through its own or '
+        'its subscribers\'/directors\'/officers\' fault;',
+        'An undertaking to engage in no business other than pension fund management; and',
+        'Any additional condition the Commission prescribes.',
+      ]},
+      {'p': '**Permitted investment outlets:**'},
+      {'ol': [
+        'Bonds, bills and securities issued or guaranteed by the Federal Government and the '
+        'CBN;',
+        'Bonds, bills and securities issued by States and local governments;',
+        'Bonds, debentures, redeemable preference shares and other debt instruments of '
+        'listed corporates;',
+        'Ordinary shares of listed public limited companies;',
+        'Bank deposits and bank securities;',
+        'Investment certificates of listed closed-end or hybrid investment funds with good '
+        'earnings records;',
+        'Units of open-end or specialist open-end investment funds;',
+        'Real estate development investments; and',
+        'Specialist investment funds and other instruments the Commission approves.',
+      ]},
       {'h4': '5  PTAD — functions and the Commission\'s powers over it'},
-      {'p': '**Functions of PTAD (any eight):** implement policies, rules and regulations under '
-            'the Defined Benefit Scheme; ensure accurate payments to authentic Civil Service '
-            'pensioners; maintain an accurate, comprehensive database of pensioners; manage and '
-            'maintain pensioners\' records and files; prepare budgetary estimates for existing '
-            'pensioners and outstanding liabilities; prepare and submit the monthly Civil '
-            'Service pensioners\' payroll and issue payment instructions to the OAGF through '
-            'GIFMIS; respond to pensioners\' complaints (non-/under-/over-payment of pensions, '
-            'gratuities, death benefits); carry out monthly payment analysis and payroll '
-            'review; pre-payment audit of all payment vouchers; compliance audit; review of '
-            'financial statements (transcripts, bank reconciliations); safeguard the '
-            'department\'s assets; periodic examination and certification of vouchers and '
-            'records; produce monthly audit reports; and verify Civil Service pensioners '
-            'periodically with Pension Support.'},
-      {'p': '**Powers of the Commission over PTAD:** regulate and supervise the activities of '
-            'the Federal and FCT PTADs to ensure compliance with the Act; intervene to '
-            'administer and render technical support and advice on the management of the '
-            'various PTADs as directed by the President; and ensure the PTADs operate under the '
-            'rules, regulations and directives issued by the Commission.'}]}},
+      {'p': '**Functions of PTAD (any eight):**'},
+      {'ol': [
+        'Implement policies, rules and regulations under the Defined Benefit Scheme;',
+        'Ensure accurate payments to authentic Civil Service pensioners;',
+        'Maintain an accurate, comprehensive database of pensioners;',
+        'Manage and maintain pensioners\' records and files;',
+        'Prepare budgetary estimates for existing pensioners and outstanding liabilities;',
+        'Prepare and submit the monthly Civil Service pensioners\' payroll and issue payment '
+        'instructions to the OAGF through GIFMIS;',
+        'Respond to pensioners\' complaints (non-/under-/over-payment of pensions, '
+        'gratuities, death benefits);',
+        'Carry out monthly payment analysis and payroll review;',
+        'Pre-payment audit of all payment vouchers;',
+        'Compliance audit;',
+        'Review of financial statements (transcripts, bank reconciliations);',
+        'Safeguard the department\'s assets;',
+        'Periodic examination and certification of vouchers and records;',
+        'Produce monthly audit reports; and',
+        'Verify Civil Service pensioners periodically with Pension Support.',
+      ]},
+      {'p': '**Powers of the Commission over PTAD:**'},
+      {'ol': [
+        'Regulate and supervise the activities of the Federal and FCT PTADs to ensure '
+        'compliance with the Act;',
+        'Intervene to administer and render technical support and advice on the management '
+        'of the various PTADs as directed by the President; and',
+        'Ensure the PTADs operate under the rules, regulations and directives issued by the '
+        'Commission.',
+      ]}]}},
   ]},
  ],
  'formulas': [
@@ -1301,25 +1349,38 @@ CH = {
         'all.',
       ]},
       {'h4': '(c) The institutional roles'},
-      {'p': '**National Pension Commission (PenCom)** — the regulator. It licenses and '
-            'supervises Pension Fund Administrators and Custodians; issues guidelines, rules and '
-            'standards for the administration and investment of pension funds; approves the '
-            'categories of investment and the limits on each; maintains a national databank of '
-            'contributors; receives and resolves complaints; carries out routine and special '
-            'examinations of operators; and imposes sanctions for breach. It does not manage or '
-            'hold any pension money.'},
-      {'p': '**Pension Fund Administrator (PFA)** — the manager. It opens and maintains the '
-            'Retirement Savings Account for each contributor; invests and manages the pension '
-            'fund within the categories PenCom permits; maintains books of account on all '
-            'transactions; provides each contributor with a statement of account at least once '
-            'a year; computes and pays retirement benefits; and reports to the Commission. It '
-            'gives instructions to the custodian but never holds the assets itself.'},
-      {'p': '**Pension Fund Custodian (PFC)** — the trustee of the assets. It receives '
-            'contributions remitted by employers on behalf of the PFA and notifies the PFA '
-            'within 24 hours; holds the pension fund assets in trust for the contributors; '
-            'settles transactions and undertakes activities relating to the assets only on the '
-            'instruction of the PFA; and reports to the Commission. It has no discretion over '
-            'the investment of the fund.'},
+      {'p': '**National Pension Commission (PenCom)** — the regulator. It does not manage or '
+            'hold any pension money:'},
+      {'ul': [
+        'Licenses and supervises Pension Fund Administrators and Custodians;',
+        'Issues guidelines, rules and standards for the administration and investment of '
+        'pension funds;',
+        'Approves the categories of investment and the limits on each;',
+        'Maintains a national databank of contributors;',
+        'Receives and resolves complaints;',
+        'Carries out routine and special examinations of operators; and',
+        'Imposes sanctions for breach.',
+      ]},
+      {'p': '**Pension Fund Administrator (PFA)** — the manager. It gives instructions to the '
+            'custodian but never holds the assets itself:'},
+      {'ul': [
+        'Opens and maintains the Retirement Savings Account for each contributor;',
+        'Invests and manages the pension fund within the categories PenCom permits;',
+        'Maintains books of account on all transactions;',
+        'Provides each contributor with a statement of account at least once a year;',
+        'Computes and pays retirement benefits; and',
+        'Reports to the Commission.',
+      ]},
+      {'p': '**Pension Fund Custodian (PFC)** — the trustee of the assets. It has no discretion '
+            'over the investment of the fund:'},
+      {'ul': [
+        'Receives contributions remitted by employers on behalf of the PFA and notifies the '
+        'PFA within 24 hours;',
+        'Holds the pension fund assets in trust for the contributors;',
+        'Settles transactions and undertakes activities relating to the assets only on the '
+        'instruction of the PFA; and',
+        'Reports to the Commission.',
+      ]},
       {'p': 'The separation of the three functions is deliberate and is the principal safeguard '
             'in the scheme. The administrator decides but cannot touch the money; the custodian '
             'holds the money but cannot decide; and the Commission supervises both. No single '

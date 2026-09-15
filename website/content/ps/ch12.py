@@ -41,11 +41,14 @@ CH = {
       'and the licensing and control of the sale of liquor.',
     ]},
     {'h4': 'Participatory functions (Fourth Schedule, paragraph 2)'},
-    {'p': 'Performed jointly with the State Government: the provision and maintenance of '
-          '**primary, adult and vocational education**; the development of **agriculture and '
-          'natural resources** other than the exploitation of minerals; the provision and '
-          'maintenance of **health services**; and such other functions as the State House of '
-          'Assembly may confer.'},
+    {'p': 'Performed jointly with the State Government:'},
+    {'ul': [
+      'The provision and maintenance of **primary, adult and vocational education**;',
+      'The development of **agriculture and natural resources** other than the exploitation '
+      'of minerals;',
+      'The provision and maintenance of **health services**; and',
+      'Such other functions as the State House of Assembly may confer.',
+    ]},
   ]},
 
   {'n': '12.2', 't': 'Sources of revenue', 'b': [
@@ -192,12 +195,268 @@ CH = {
       '**Corruption and leakage**, particularly in revenue collected in cash at markets and '
       'motor parks.',
     ]},
-    {'p': '**Remedies** commonly proposed are direct payment of the allocation to councils, '
-          'abolishing or reforming the Joint Account; enumeration and valuation of properties '
-          'for tenement rating; automation of revenue collection to eliminate cash handling; '
-          'financial autonomy backed by the constitutional amendment guaranteeing tenure for '
-          'elected councils; strengthening of the internal audit function; and capacity '
-          'building for finance staff.'},
+    {'p': '**Remedies** commonly proposed:'},
+    {'ul': [
+      'Direct payment of the allocation to councils, abolishing or reforming the Joint '
+      'Account;',
+      'Enumeration and valuation of properties for tenement rating;',
+      'Automation of revenue collection to eliminate cash handling;',
+      'Financial autonomy backed by the constitutional amendment guaranteeing tenure for '
+      'elected councils;',
+      'Strengthening of the internal audit function; and',
+      'Capacity building for finance staff.',
+    ]},
+  ]},
+
+  {'n': '12.6', 't': 'The Model Financial Memoranda: objectives and contents', 'b': [
+    {'h4': 'Objectives'},
+    {'ul': [
+      'Serve as **administrative guidelines** facilitating the day-to-day running of local '
+      'governments.',
+      'Spell out the implications of **disbursing government funds or property without proper '
+      'authority**, approval or justification.',
+      'Facilitate recording local government financial transactions in the appropriate '
+      'accounting method.',
+      'Serve as a **learning tool** for officers newly appointed or transferred to a new '
+      'section.',
+    ]},
+    {'h4': 'Contents'},
+    {'ul': [
+      'The format of the budget and of budgetary control.',
+      'The financial responsibilities of the Chairman and other accounting officers.',
+      'The responsibilities of the Secretary, Treasurer and Heads of Department.',
+      'The Internal Auditor\'s responsibilities, including the **Audit Alarm** function.',
+      'The powers and functions of the Auditor-General for Local Government.',
+      'The functions and operation of the **Audit Alarm Committee**.',
+      'Financial offences and their sanctions.',
+      'The means of revenue collection and control.',
+      'The main books of account kept.',
+      'The custody, accounting and control of stores.',
+    ]},
+  ]},
+
+  {'n': '12.7', 't': 'Expenditure and its accounting treatment', 'b': [
+    {'p': 'Council expenditure is **recurrent** (personnel costs; maintenance, repairs, fuel, '
+          'rent, electricity and water — the day-to-day running of its affairs) or **capital** '
+          '(constructing roads, motor parks, toilet facilities), each classified to the main '
+          'heads and the appropriate NCOA code, departmentally.'},
+    {'ul': [
+      'Amounts disbursed under an NCOA code within a Head are aggregated at year end; the '
+      'number of sub-heads under a Head varies and can exceed twenty.',
+      'Capital expenditure is **written off in the year incurred** — only a memorandum entry '
+      'is kept for tangible assets, so the statement of financial position discloses **no** '
+      'information on the tangible assets a council has acquired.',
+      'There is no capital/proprietorship interest shown, as there would be in a private '
+      'organisation.',
+      'The excess of receipts over payments is the **general revenue balance** (not "profit"), '
+      'transferred to the statement of financial position.',
+      'The statement of financial position accordingly shows only current assets and '
+      'liabilities.',
+    ]},
+  ]},
+
+  {'n': '12.8', 't': 'Local government final accounts (IPSAS cash basis)', 'b': [
+    {'p': 'Local government uses the **cash basis**, as the Federal and State tiers do: income '
+          'is recognised when cash is received, expenditure when the liability is paid. Each '
+          'council prepares and publishes:'},
+    {'ol': [
+      'A **declaration of responsibility** by the Treasurer, that the statements follow the '
+      'Finance (Control and Management) Act Cap 144 LFN 1990 and generally accepted accounting '
+      'practice.',
+      'The **Auditor-General\'s certificate** on whether the statements give a true and fair '
+      'view.',
+      '**Statement No. 1 — Statement of Cash Flow**, in the three usual activities (operating, '
+      'investing, financing), with operating receipts split into IGR, grants/subventions, VAT, '
+      'statutory revenue allocation and miscellaneous, and payments into personal emoluments, '
+      'pensions/gratuities, CRF charges, overheads, public debt charges and subsidies.',
+      '**Statement No. 2 — Statement of Financial Position** (Assets and Liabilities): liquid '
+      'assets (cash and bank), investments/advances/other cash assets, against public funds '
+      '(the general revenue balance), external/internal loans and deposits.',
+      '**Statement No. 3 — Statement of Financial Performance** (Revenue and Expenditure): '
+      'revenue by source (rates, fines/fees/licences, earnings and sales, rent, interest, '
+      'taxes, statutory allocation) less expenditure by department (general administration, '
+      'health, works, education, agriculture, grants, capital projects), each column showing '
+      'budget, actual and variance, down to an **operating balance**.',
+    ]},
+  ]},
+
+  {'n': '12.9', 't': 'Financial control, spending limits, grants-in-aid and fee policy', 'b': [
+    {'h4': 'Financial control'},
+    {'table': {'align': 'll', 'head': ['Internal controls', 'External controls'], 'rows': [
+      ['Issuance of financial authorities (e.g. supplementary warrants)',
+       'Legislative control — National and State Assemblies'],
+      ['Committees for different services', 'Federal and State Executive control'],
+      ['Centralisation of all payments', 'Public comment and scrutiny'],
+      ['Standing orders on cheque-signing and payments on account',
+       'External audit — Auditors-General for Local Government, for the State, and for the '
+       'Federation'],
+      ['Internal audit', ''],
+      ['Preparation of income/expenditure estimates', ''],
+      ['Budgetary control and feedback', ''],
+    ]}},
+    {'h4': 'Other limitations facing councils'},
+    {'ul': [
+      'Cannot raise a tax or introduce a new one without the **State Government\'s express '
+      'permission**.',
+      'Cannot raise or maintain loans without permission — which limits capital projects.',
+      'Delayed or non-payment of Federal/State grants or oil-revenue shares.',
+      'Non-viability of some councils, especially those with small populations.',
+      'Rising costs and demand for services, against ineffective financial and management '
+      'control.',
+    ]},
+    {'h4': 'Spending limits (expenditure approval ceilings, by IGR band)'},
+    {'table': {'align': 'lrrrr', 'head': ['IGR band', 'Chairman', 'Vice-Chairman',
+      'Head of Personnel Mgt', 'Head of Department'], 'rows': [
+      ['Above ₦2m', '₦250,000', '₦50,000', '₦10,000', '₦5,000'],
+      ['₦1m – ₦2m', '₦100,000', '₦20,000', '₦5,000', '₦3,000'],
+      ['Below ₦1m', '₦50,000', '₦10,000', '₦3,000', '₦2,000'],
+    ]}},
+    {'ul': [
+      'Every approval must be **reported within a week** to a higher officer.',
+      'The approving officer is **personally liable** for what he approves.',
+      'Approval is always subject to normal **budgetary appropriation**.',
+      'A contract above the council\'s limit needs the **Ministry of Local Government\'s** '
+      'approval.',
+    ]},
+    {'h4': 'Objectives of the grants-in-aid system'},
+    {'ol': [
+      'Augment the resources of local government councils.',
+      'Meet the exceptional needs, or the limited means, of a particular area.',
+      'Assist central control over particular services.',
+      'Influence aggregate local government expenditure as part of the control process.',
+    ]},
+    {'h4': 'Fee-charging policy'},
+    {'p': 'The Treasurer advises on service charges, considering: the **level of development** '
+          'of the area; the **status of the people** in the community; the **nature of the '
+          'service** rendered; and the **skill and technical competence** needed to perform '
+          'it.'},
+    {'h4': 'Budgeting and budgetary control'},
+    {'p': 'The Executive prepares the budget for Legislative approval, assented to by the '
+          'Council Chairman. Control procedures: **approval** before spending; **monthly '
+          'reports** comparing actual to budget and extracting variances; **corrective action** '
+          'on the variances found; **internal audit** verifying the integrity of the accounts; '
+          '**external audit** by the Auditor-General for Local Government; and individual '
+          '**expenditure limits** that officers must not exceed.'},
+  ]},
+
+  {'n': '12.10', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'Which of the following is NOT a considerable influence of States over local '
+        'governments as contained in the Fourth Schedule of the 1999 Constitution? '
+        '(A) Issuance of licences in respect of motorcycles, cars, bicycles and keeping of '
+        'pets  (B) Registration of births, marriages and deaths  (C) Naming of streets, roads '
+        'and crescents and numbering of houses  (D) Provision and maintenance of basic '
+        'facilities for refuse disposal and public conveniences  (E) Collection of personal '
+        'income taxes and withholding taxes',
+        'One of the following is NOT in the Executive arm of a local government (A) The '
+        'Executive Chairman  (B) The Secretary  (C) The Cashier  (D) Head of Personnel '
+        'Management  (E) The Legislature',
+        'The following, except one, are duties of the Secretary of a local government council '
+        'now performed by the Head of Personnel Management: (A) Co-ordinates the operations '
+        'of the various departments and represents the Chairman as directed at high-level '
+        'meetings  (B) Liaises with the Secretary to the State Government and other important '
+        'dignitaries on matters of interest to local government councils  (C) Handles the '
+        'disbursement of funds on various contracts awarded by the council  (D) Maintains the '
+        'record of proceedings of meetings  (E) Performs other assignments delegated by the '
+        'Chairman',
+        'The Accounting Officer of the Local Government is ONE of the following: (i) '
+        'Secretary to the Local Government  (ii) Treasurer  (iii) The Chairman  (iv) Leader '
+        'of the House  (v) Head of Personnel Management',
+        'Election of leaders in the council is performed by ONE of the following: (i) '
+        'Chairman  (ii) State Governor  (iii) Electorate at the poll  (iv) Council Clerk  '
+        '(v) The Councillors',
+        'The publication by the Federal Government containing administrative guidelines, the '
+        'existing systems of checks and balances, and the role of all officers in a local '
+        'government is called …',
+        'Budgetary control and feedback process in local government finance is one of the '
+        'measures of …',
+        'Proceeds from loans and other borrowings, in Statement No. 1 (Cash Flow Statement), '
+        'is an item under …',
+        'The share of the Statutory Allocation going to local government councils under the '
+        'Allocation of Revenue (Federation Account, etc.) Act, Cap A15 LFN 2005, is …',
+        'Vetting and monitoring the implementation of projects and programmes in the local '
+        'government council\'s annual budget is the prerogative of …',
+      ]}],
+      'a': [
+      {'p': '**1.** E  **2.** C  **3.** C  **4.** C (the Chairman)  **5.** E (electorate at '
+            'the poll)  **6.** Financial Memoranda for Local Government  **7.** Internal '
+            'controls  **8.** Cash flows from financing activities  **9.** 20.60%  '
+            '**10.** The Council Legislature'}]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text', 't': 'Question 1 — the Financial Memoranda', 'open': True,
+      'q': [
+      {'p': 'The Local Government Financial Memoranda guides all financial activities in '
+            'local government. (i) Enumerate the objectives of the Memoranda. (ii) List the '
+            'contents of the Local Government Financial Memoranda.'}],
+      'a': [
+      {'p': '**(i) Objectives** — see §12.6 above: administrative guidelines for day-to-day '
+            'running; highlighting the implications of unauthorised disbursement; facilitating '
+            'correct recording of transactions; and serving as a learning tool for new or '
+            'transferred officers.'},
+      {'p': '**(ii) Contents** — see §12.6 above: budget/budgetary-control format; financial '
+            'responsibilities of the Chairman and accounting officers; responsibilities of the '
+            'Secretary, Treasurer and Heads of Department; the Internal Auditor\'s '
+            'responsibilities and the Audit Alarm function; the Auditor-General for Local '
+            'Government\'s powers; the Audit Alarm Committee; financial offences and sanctions; '
+            'revenue collection and control; the main books of account; and the custody, '
+            'accounting and control of stores.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 2 — functions of the Local Government '
+      'Treasurer (1988 Reform)', 'open': True, 'q': [
+      {'p': 'The Local Government Treasurer oversees all financial matters of a local '
+            'government. Enumerate his functions as specified in the Civil Service and Local '
+            'Government Reform of 1988.'}],
+      'a': [
+      {'ol': [
+        'Rendering financial advice to the council.',
+        'Serving as secretary to the Budget Committee.',
+        'Receiving and disbursing money for authorised ends.',
+        'Keeping proper accounting records of money collected or utilised.',
+        'Verifying the accuracy and integrity of all accounting records.',
+        'Ensuring compliance with financial instructions/laws for safe custody of council '
+        'money.',
+        'Ensuring vouchers are correctly made out and funds are available in the appropriate '
+        'vote of charge.',
+        'Rendering the statutory returns required by the State and Federal Governments.',
+        'Ensuring all revenue belonging to the council is collected when due.',
+        'Ensuring fiscal policies are executed and expenditure incurred with due diligence.',
+        'Maintaining effective and well-staffed financial operations.',
+        'Keeping up-to-date statistical information for prompt, accurate reporting.',
+        'Submitting recommendations to the council as financial adviser.',
+        'Serving as a signatory to the council\'s bank account and other disbursements.',
+        'Offering expert opinion on short-, medium- and long-term bases.',
+      ]}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 3 — statutory and permissive revenue sources',
+      'open': True, 'q': [
+      {'p': 'Local governments in Nigeria run on revenue from both statutory and permissive '
+            'sources. Enumerate (i) the statutory sources, and (ii) the permissive sources.'}],
+      'a': [
+      {'p': '**(i) Statutory sources:** statutory allocation from the Federation Account '
+            '(20.60% of federally collected revenue, paid directly to councils); 10% of the '
+            'State\'s internally generated revenue; and fees/charges imposed by the council '
+            'under its instrument of creation and applicable legislation.'},
+      {'p': '**(ii) Permissive sources:** shop and kiosk rates; tenement rates; on- and '
+            'off-liquor licence fees; slaughter slab fees; birth/marriage/death registration '
+            'fees; street-naming registration fees (outside the State capital); rural '
+            'right-of-occupancy fees; market taxes and levies; motor park levies; domestic '
+            'animal licence fees; bicycle/truck/canoe/wheelbarrow/cart fees; cattle tax; '
+            'merriment and road-closure levies; radio/TV licence fees; vehicle radio licence '
+            'fees; wrong-parking charges; public-convenience and refuse-disposal fees; '
+            'customary burial-ground permit fees; religious-place establishment permit fees; '
+            'and signboard/advertisement permit fees.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 4 — the new statutory financial statements',
+      'open': True, 'q': [
+      {'p': 'Enumerate the new statutory financial statements to be prepared and published by '
+            'each local government.'}],
+      'a': [
+      {'ol': [
+        'The Treasurer\'s declaration of responsibility for the financial statements.',
+        'The Auditor-General\'s certificate on whether they give a true and fair view.',
+        'Statement No. 1 — Statement of Cash Flow.',
+        'Statement No. 2 — Statement of Financial Position (Assets and Liabilities).',
+        'Statement No. 3 — Statement of Financial Performance (Revenue and Expenditure).',
+      ]}]}},
   ]},
  ],
  'formulas': [
@@ -302,10 +561,12 @@ CH = {
         'Control and regulation of out-door advertising, shops and kiosks, restaurants and '
         'other places for the sale of food, laundries, and the sale of liquor.',
       ]},
-      {'p': 'In addition, councils perform **participatory functions** jointly with the State: '
-            'primary, adult and vocational education; the development of agriculture and '
-            'natural resources other than minerals; and the provision and maintenance of health '
-            'services.'},
+      {'p': 'In addition, councils perform **participatory functions** jointly with the State:'},
+      {'ul': [
+        'Primary, adult and vocational education;',
+        'The development of agriculture and natural resources other than minerals; and',
+        'The provision and maintenance of health services.',
+      ]},
       {'h4': '(b) Sources of revenue'},
       {'ol': [
         '**Statutory allocation from the Federation Account** — 20.60% of the distributable '

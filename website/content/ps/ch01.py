@@ -254,8 +254,14 @@ CH = {
 
   {'n': '1.5', 't': 'Bases of public sector accounting', 'b': [
     {'p': 'The following are the bases under which the financial statements of a public sector '
-          'enterprise are compiled: **cash basis; accrual basis; commitment basis; modified cash '
-          'basis; and modified accrual basis.**'},
+          'enterprise are compiled:'},
+    {'ol': [
+      '**Cash basis;**',
+      '**Accrual basis;**',
+      '**Commitment basis;**',
+      '**Modified cash basis; and**',
+      '**Modified accrual basis.**',
+    ]},
     {'h3': 'Cash basis'},
     {'p': 'It is the basis of accounting under which revenue is recorded only when cash is '
           'received, and expenditure recognised only when cash is paid, irrespective of the fact '
@@ -329,14 +335,20 @@ CH = {
     {'h3': 'Modified accrual basis'},
     {'p': 'This is the basis under which revenue is recorded when received (not earned), while '
           'expenditure is recorded once its liability is incurred. It means that the cash basis '
-          'is used for recording revenue while the accrual basis is used for expenditure. The '
-          'modified accrual basis operates as follows. **Revenue** is recorded when cash is '
-          'received, except for: (a) revenue which is susceptible to accrual; and (b) revenue of '
-          'a material amount which has not been received at the time it should have been. '
-          '**Expenditure** is recorded on the accrual basis, except in the cases of: (a) '
-          'disbursements for inventory items, which may be considered as expenditure at the time '
-          'the items are utilised; and (b) interest on long-term debt, commonly accounted for in '
-          'debt service funds and recorded as expenditure on its due date.'},
+          'is used for recording revenue while the accrual basis is used for expenditure.'},
+    {'p': '**Revenue** is recorded when cash is received, except for:'},
+    {'ol': [
+      'Revenue which is susceptible to accrual; and',
+      'Revenue of a material amount which has not been received at the time it should have '
+      'been.',
+    ]},
+    {'p': '**Expenditure** is recorded on the accrual basis, except in the cases of:'},
+    {'ol': [
+      'Disbursements for inventory items, which may be considered as expenditure at the time '
+      'the items are utilised; and',
+      'Interest on long-term debt, commonly accounted for in debt service funds and recorded '
+      'as expenditure on its due date.',
+    ]},
     {'h3': 'Commitment basis'},
     {'p': 'It is a basis that records **anticipated expenditure** evidenced by a contract or a '
           'purchase order. In public sector financing, budgetary and accounting systems are '
@@ -431,11 +443,14 @@ CH = {
           'the public interest by strengthening the profession and contributing to the '
           'development of strong international economies. Founded in **1977**, IFAC comprises '
           '173 members and associates in 129 countries and jurisdictions, including Nigeria. The '
-          'mission of IFAC is to serve the public interest by: contributing to the development, '
-          'adoption and implementation of high-quality international standards and guidance; '
-          'contributing to the development of strong professional accountants; promoting the '
-          'value of professional accountants worldwide; and speaking out on accounting public '
-          'interest issues.'},
+          'mission of IFAC is to serve the public interest by:'},
+    {'ol': [
+      'Contributing to the development, adoption and implementation of high-quality '
+      'international standards and guidance;',
+      'Contributing to the development of strong professional accountants;',
+      'Promoting the value of professional accountants worldwide; and',
+      'Speaking out on accounting public interest issues.',
+    ]},
     {'p': 'In spite of the importance of public sector accounting in the economic development '
           'process, significant attention was not always given to it. The development of the '
           'private sector depends largely on activities in the public sector, and in developing '
@@ -579,83 +594,116 @@ CH = {
           're-appointed for a further term of 4 years and no more.'},
     {'h4': 'Cessation and disqualification from membership'},
     {'p': 'A person shall not be appointed or continue to hold office as a member of the Board '
-          'if: he becomes bankrupt, suspends payment or compounds with his creditors; he is '
-          'convicted of a felony or any offence involving dishonesty or fraud; he becomes of '
-          'unsound mind, or incapable of carrying out his duties; he is guilty of serious '
-          'misconduct in relation to his duties; or, being a person who possessed professional '
-          'qualifications, he is disqualified or suspended (other than at his own request) from '
-          'practising his profession anywhere in the world by order of a competent authority.'},
-    {'p': 'The seat of a member becomes vacant if he resigns; he becomes disqualified from '
-          'membership under section 4 of the Act; he no longer holds the office by virtue of '
-          'which he became a member; or he has been absent from three consecutive meetings, or '
-          'three-quarters of the meetings of the Board during a financial year, without leave. A '
-          'vacancy so created must be filled not later than 30 days from the date it occurs, and '
-          'the replacement holds office only for the remainder of the term of the vacating '
+          'if:'},
+    {'ol': [
+      'He becomes bankrupt, suspends payment or compounds with his creditors;',
+      'He is convicted of a felony or any offence involving dishonesty or fraud;',
+      'He becomes of unsound mind, or incapable of carrying out his duties;',
+      'He is guilty of serious misconduct in relation to his duties; or',
+      'Being a person who possessed professional qualifications, he is disqualified or '
+      'suspended (other than at his own request) from practising his profession anywhere in '
+      'the world by order of a competent authority.',
+    ]},
+    {'p': 'The seat of a member becomes vacant if:'},
+    {'ol': [
+      'He resigns;',
+      'He becomes disqualified from membership under section 4 of the Act;',
+      'He no longer holds the office by virtue of which he became a member; or',
+      'He has been absent from three consecutive meetings, or three-quarters of the '
+      'meetings of the Board during a financial year, without leave.',
+    ]},
+    {'p': 'A vacancy so created must be filled not later than 30 days from the date it occurs, '
+          'and the replacement holds office only for the remainder of the term of the vacating '
           'member.'},
     {'h4': 'Powers of the Council'},
-    {'p': 'The Council shall have power to: enforce and approve enforcement of compliance with '
-          'accounting, auditing, corporate governance and financial reporting standards in '
-          'Nigeria; enter into such contracts as may be necessary or expedient for discharging '
-          'its functions; borrow such sums of money, or raise such loans, as it may require to '
-          'discharge its functions; co-operate with, or become a member or affiliate of, any '
-          'similar international body; exercise such powers as are necessary or expedient to give '
-          'effect to the provisions of the Act; require management assessment of internal '
-          'controls, including information systems controls, with independent attestation; '
-          'require a code of ethics for financial officers and certification of financial '
-          'statements by the Chief Executive Officer and Chief Financial Officer; require entities '
-          'to provide real-time disclosures on material changes in financial condition or '
-          'operations; and pronounce forfeiture, by Chief Executive Officers and Chief Financial '
-          'Officers, of certain bonuses received and profits realised from the sale of company '
-          'shares owned by them, where the company is required to prepare an accounting '
-          'restatement.'},
+    {'p': 'The Council shall have power to:'},
+    {'ol': [
+      'Enforce and approve enforcement of compliance with accounting, auditing, corporate '
+      'governance and financial reporting standards in Nigeria;',
+      'Enter into such contracts as may be necessary or expedient for discharging its '
+      'functions;',
+      'Borrow such sums of money, or raise such loans, as it may require to discharge its '
+      'functions;',
+      'Co-operate with, or become a member or affiliate of, any similar international body;',
+      'Exercise such powers as are necessary or expedient to give effect to the provisions '
+      'of the Act;',
+      'Require management assessment of internal controls, including information systems '
+      'controls, with independent attestation;',
+      'Require a code of ethics for financial officers and certification of financial '
+      'statements by the Chief Executive Officer and Chief Financial Officer;',
+      'Require entities to provide real-time disclosures on material changes in financial '
+      'condition or operations; and',
+      'Pronounce forfeiture, by Chief Executive Officers and Chief Financial Officers, of '
+      'certain bonuses received and profits realised from the sale of company shares owned '
+      'by them, where the company is required to prepare an accounting restatement.',
+    ]},
     {'h4': 'Functions of the Council'},
-    {'p': 'Among a longer list, the Council shall: develop and publish accounting and financial '
-          'reporting standards to be observed in the preparation of financial statements of '
-          'public interest entities; review, promote and enforce compliance with the standards it '
-          'adopts; receive notices of non-compliance from preparers, users, other third parties or '
-          'auditors; receive copies of annual reports and financial statements of public interest '
-          'entities within 60 days of the Board\'s approval; advise the Federal Government on '
-          'matters relating to accounting and financial reporting standards; maintain a register '
-          'of professional accountants and other professionals engaged in the financial reporting '
-          'process; monitor compliance with the reporting requirements of the adopted code of '
-          'corporate governance; promote compliance with standards issued by IFAC and the IASB; '
-          'monitor and promote education, research and training in accounting, auditing, '
-          'financial reporting and corporate governance; conduct practice reviews of registered '
-          'professionals; review financial statements and reports of public interest entities; '
-          'enforce compliance with the Act and the Council\'s rules; establish such systems, '
-          'schemes or activities, alone or with any other organisation, as needed to discharge its '
-          'functions; receive copies of all qualified audit reports together with detailed '
-          'explanations within 30 days of the qualification (such reports are not announced to '
-          'the public until all accounting issues relating to them are resolved by the Council); '
-          'adopt and keep up to date accounting and financial reporting standards, ensuring '
-          'consistency with IFRS; specify, in those standards, the minimum requirements for '
-          'recognition, measurement, presentation and disclosure that every public interest '
-          'entity must comply with; develop or adopt and keep up-to-date auditing standards, '
-          'ensuring consistency with the pronouncements of the International Auditing and '
-          'Assurance Standards Board; and perform such other functions as, in the Board\'s '
-          'opinion, are necessary or expedient for the efficient performance of the Council\'s '
-          'functions.'},
+    {'p': 'Among a longer list, the Council shall:'},
+    {'ol': [
+      'Develop and publish accounting and financial reporting standards to be observed in '
+      'the preparation of financial statements of public interest entities;',
+      'Review, promote and enforce compliance with the standards it adopts;',
+      'Receive notices of non-compliance from preparers, users, other third parties or '
+      'auditors;',
+      'Receive copies of annual reports and financial statements of public interest entities '
+      'within 60 days of the Board\'s approval;',
+      'Advise the Federal Government on matters relating to accounting and financial '
+      'reporting standards;',
+      'Maintain a register of professional accountants and other professionals engaged in '
+      'the financial reporting process;',
+      'Monitor compliance with the reporting requirements of the adopted code of corporate '
+      'governance;',
+      'Promote compliance with standards issued by IFAC and the IASB;',
+      'Monitor and promote education, research and training in accounting, auditing, '
+      'financial reporting and corporate governance;',
+      'Conduct practice reviews of registered professionals;',
+      'Review financial statements and reports of public interest entities;',
+      'Enforce compliance with the Act and the Council\'s rules;',
+      'Establish such systems, schemes or activities, alone or with any other organisation, '
+      'as needed to discharge its functions;',
+      'Receive copies of all qualified audit reports together with detailed explanations '
+      'within 30 days of the qualification (such reports are not announced to the public '
+      'until all accounting issues relating to them are resolved by the Council);',
+      'Adopt and keep up to date accounting and financial reporting standards, ensuring '
+      'consistency with IFRS;',
+      'Specify, in those standards, the minimum requirements for recognition, measurement, '
+      'presentation and disclosure that every public interest entity must comply with;',
+      'Develop or adopt and keep up-to-date auditing standards, ensuring consistency with '
+      'the pronouncements of the International Auditing and Assurance Standards Board; and',
+      'Perform such other functions as, in the Board\'s opinion, are necessary or expedient '
+      'for the efficient performance of the Council\'s functions.',
+    ]},
     {'h4': 'Functions of the Board'},
-    {'p': 'The Board shall: determine broad strategies and priorities; set out the budget, secure '
-          'the necessary funding and monitor expenditure; appoint the directors and other senior '
-          'management staff; oversee the delivery by each directorate of its functions, through '
-          'regular reports from the directorates\' coordinating directors; oversee the performance '
-          'of the executive through regular reports from the Chief Executive Officer; ensure that '
-          'the Council and its directorates achieve high levels of accountability and '
-          'transparency; undertake an annual assessment of the risks to the success of the '
-          'Council\'s operations and oversee the necessary risk-mitigation plan; and undertake an '
-          'annual evaluation of its own performance, and that of its committees and operating '
-          'bodies, against its objectives, including a review of the schedule of matters reserved '
-          'to the Board.'},
+    {'p': 'The Board shall:'},
+    {'ol': [
+      'Determine broad strategies and priorities;',
+      'Set out the budget, secure the necessary funding and monitor expenditure;',
+      'Appoint the directors and other senior management staff;',
+      'Oversee the delivery by each directorate of its functions, through regular reports '
+      'from the directorates\' coordinating directors;',
+      'Oversee the performance of the executive through regular reports from the Chief '
+      'Executive Officer;',
+      'Ensure that the Council and its directorates achieve high levels of accountability '
+      'and transparency;',
+      'Undertake an annual assessment of the risks to the success of the Council\'s '
+      'operations and oversee the necessary risk-mitigation plan; and',
+      'Undertake an annual evaluation of its own performance, and that of its committees '
+      'and operating bodies, against its objectives, including a review of the schedule of '
+      'matters reserved to the Board.',
+    ]},
     {'h4': 'Objectives of the Council'},
-    {'p': 'The objectives of the Council are to: protect investors\' and other stakeholders\' '
-          'interests; give guidance on issues relating to financial reporting and corporate '
-          'governance to the bodies it regulates; ensure good corporate governance practices in '
-          'the public and private sectors of the Nigerian economy; ensure the accuracy and '
-          'reliability of financial reports and corporate disclosures, pursuant to the various '
-          'laws and regulations currently in existence; and harmonise the activities of relevant '
-          'professional and regulatory bodies as they relate to corporate governance and '
-          'financial reporting.'},
+    {'p': 'The objectives of the Council are to:'},
+    {'ol': [
+      'Protect investors\' and other stakeholders\' interests;',
+      'Give guidance on issues relating to financial reporting and corporate governance to '
+      'the bodies it regulates;',
+      'Ensure good corporate governance practices in the public and private sectors of the '
+      'Nigerian economy;',
+      'Ensure the accuracy and reliability of financial reports and corporate disclosures, '
+      'pursuant to the various laws and regulations currently in existence; and',
+      'Harmonise the activities of relevant professional and regulatory bodies as they '
+      'relate to corporate governance and financial reporting.',
+    ]},
     {'key': 'Do not try to memorise the FRCN material as one undifferentiated block. Organise it '
             'into the same five buckets the source itself uses — **establishment, composition, '
             'powers, functions of the Council, functions of the Board, and objectives** — and '
@@ -812,18 +860,28 @@ CH = {
          'Derived principally from the sale of goods and services'],
       ]}},
       {'h4': '3  Commitment basis'},
-      {'p': '**Advantages (any three):** a separate payment tabulation is available on demand; '
-            'adjustments when actual expenditure is known do not affect the final accounts; it '
-            'is an aid to financial control (a commitment is a charge already made on a budget '
-            'provision); it takes a realistic view of transactions; it reveals an accurate '
-            'year-end position; it serves economic and investment decision-making; it aligns '
-            'with the matching concept; it allows for the diminution in value of assets.'},
-      {'p': '**Disadvantages (any two):** the system involves extra work (actual figures must '
-            'later be substituted for the commitment provisions); it encourages over-'
-            'expenditure in the expectation that government will release funds to settle legal '
-            'obligations; at year end, unfulfilled orders must be written back; balances that '
-            'ought to lapse in the Vote Book may be spent by issuing local purchase orders to '
-            'exhaust the votes.'},
+      {'p': '**Advantages (any three):**'},
+      {'ol': [
+        'A separate payment tabulation is available on demand;',
+        'Adjustments when actual expenditure is known do not affect the final accounts;',
+        'It is an aid to financial control (a commitment is a charge already made on a '
+        'budget provision);',
+        'It takes a realistic view of transactions;',
+        'It reveals an accurate year-end position;',
+        'It serves economic and investment decision-making;',
+        'It aligns with the matching concept;',
+        'It allows for the diminution in value of assets.',
+      ]},
+      {'p': '**Disadvantages (any two):**'},
+      {'ol': [
+        'The system involves extra work (actual figures must later be substituted for the '
+        'commitment provisions);',
+        'It encourages over-expenditure in the expectation that government will release '
+        'funds to settle legal obligations;',
+        'At year end, unfulfilled orders must be written back;',
+        'Balances that ought to lapse in the Vote Book may be spent by issuing local '
+        'purchase orders to exhaust the votes.',
+      ]},
       {'h4': '4  Three unique characteristics of public sector accounting'},
       {'ol': [
         '**Distinct information, classification and procedures** apply only to government '

@@ -391,6 +391,10 @@ CH = {
   {'lb': 'Pie chart sector angle',
    'tex': '\\theta = \\frac{f}{\\sum f} \\times 360^\\circ'},
   {'lb': 'Systematic sampling interval', 'tex': 'k = \\frac{N}{n}'},
+  {'lb': 'Class boundary (lower)',
+   'tex': '\\text{Lower boundary} = \\frac{\\text{upper limit of previous class} + '
+          '\\text{lower limit of this class}}{2}',
+   'nt': 'The upper boundary of a class is the lower boundary of the class after it.'},
  ],
  'focus':
    'Two or three Section A marks every diet, on the definitions rather than on computation: which '

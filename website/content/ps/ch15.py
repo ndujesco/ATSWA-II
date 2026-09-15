@@ -176,6 +176,155 @@ CH = {
             'which assets, and say when it will finish — and it may not describe its statements '
             'as IPSAS-compliant until it has.'},
   ]},
+
+  {'n': '15.6', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'h3': 'Section A — multiple choice'},
+    {'eg': {'tag': 'Study text', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'What is the primary objective of IPSAS 33? (A) To provide guidance on financial '
+        'reporting  (B) To establish accounting standards for public sector entities  '
+        '(C) To facilitate the transition to accrual basis IPSASs  (D) To harmonize accounting '
+        'standards with IFRSs  (E) To audit financial statements',
+        'What is the definition of "first-time adoption" under IPSAS? (A) Adopting IPSASs for '
+        'the first time  (B) Changing from cash basis to accrual basis IPSASs  (C) Adopting a '
+        'new accounting policy  (D) Preparing financial statements for the first time  '
+        '(E) Both A and B',
+        'What is the purpose of the "deemed cost" approach in IPSAS? (A) To determine fair '
+        'value  (B) To provide relief from retrospective application  (C) To calculate '
+        'carrying amount  (D) To recognize transitional adjustments  (E) To impair assets',
+        'What is the accounting treatment for assets and liabilities under IPSAS 33? '
+        '(A) Recognize at fair value  (B) Recognize at historical cost  (C) Apply relevant '
+        'IPSASs  (D) Do not recognize until transition date  (E) Use deemed cost for all '
+        'assets and liabilities',
+        'What is the role of the "date of transition" in IPSAS 33? (A) Marks the beginning of '
+        'the first reporting period  (B) Determines the opening balance sheet  (C) First '
+        'financial statements under IPSASs  (D) All of the above  (E) None of the above',
+        'What is a benefit of adopting IPSAS 33? (A) Improved financial reporting  (B) Reduced '
+        'compliance costs  (C) Increased complexity  (D) Decreased accountability  '
+        '(E) Enhanced transparency and accountability',
+        'What is the primary principle in IPSAS 33? (A) Full retrospective application  '
+        '(B) Prospective application  (C) Fair value measurement  (D) Comparative information '
+        'not required  (E) Modified retrospective application',
+        'What is the purpose of IPSAS 33? (A) To provide guidance on financial reporting  '
+        '(B) To facilitate transition to accrual basis IPSASs  (C) To establish accounting '
+        'standards  (D) To audit financial statements  (E) To provide training on IPSASs',
+        'What is the accounting treatment for transitional adjustments under IPSAS 33? '
+        '(A) Recognize in opening balance sheet  (B) Recognize in income statement  '
+        '(C) Recognize in equity  (D) Do not recognize in opening balance sheet  (E) Account '
+        'for as a change in accounting policy',
+        'What is the effective date of IPSAS 33? (A) Immediate adoption  (B) Annual financial '
+        'statements after a specific date  (C) Optional adoption  (D) Prospective application  '
+        '(E) Retrospective application',
+      ]}],
+      'a': [
+      {'p': '**1.** C  **2.** E  **3.** B  **4.** C  **5.** D  **6.** E  **7.** E  **8.** B  '
+            '**9.** B  **10.** B'}]}},
+    {'h3': 'Section A — short answer'},
+    {'eg': {'tag': 'Study text', 't': 'Questions 1–6 with answers', 'open': True, 'q': [
+      {'ol': [
+        'The transition to accrual basis International Public Sector Accounting Standards '
+        'for public entities is treated in …',
+        'The approach in IPSAS 33 that provides relief from retrospective application by '
+        'allowing entities to use a deemed cost as a surrogate for historical cost or fair '
+        'value is known as …',
+        'Transitional adjustments are recognised in the opening statement of financial '
+        'position of an entity\'s …',
+        'IPSAS 33 ensures that an entity\'s first IPSAS financial statements, and its interim '
+        'financial reports for the period, provide a … of its financial position, performance '
+        'and cash flows.',
+        'The application of IPSAS for the first time — including recognition, measurement and '
+        'disclosure principles, and transitional provisions and reliefs — is treated in …',
+        'The beginning of the earliest period for which an entity presents full comparative '
+        'information under IPSAS in its first IPSAS financial statements is known as …',
+      ]}],
+      'a': [
+      {'p': '**1.** IPSAS 33  **2.** Deemed-cost approach  **3.** First IPSAS financial '
+            'statements  **4.** Faithful representation  **5.** IPSAS 33  **6.** Date of '
+            'transition'}]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text', 't': 'Question 1 — recognising revenue from 1 January 2016',
+      'open': True, 'q': [
+      {'p': 'IPSAS 33 gives up to three years\' transitional relief within which to develop '
+            'models for transiting to accrual IPSAS; Nigeria adopted accrual IPSAS for '
+            'revenue effective 1 January 2016. State how each of the following would be '
+            'recognised: (a) government share of FAAC (statutory revenue); (b) aid/grants '
+            'receivable as at 31 December 2015, and those approved on or after 1 January '
+            '2016; (c) debt forgiveness approved on or after 1 January 2016; (d) other '
+            'transfer revenue; (e) personal income tax on or after 1 January 2016; '
+            '(f) licences, fees and fines on or after 1 January 2016.'}],
+      'a': [
+      {'p': '**(a) FAAC allocation** is recognised by the head of the respective Treasury '
+            '(AGF/AGS/LGA Treasurer) at the end of each monthly FAAC/JAAC meeting, using the '
+            'distribution schedule as the source document.'},
+      {'p': '**(b) Aid/grants.** A grant an entity was unconditionally entitled to by 31 '
+            'December 2015 but had not yet received is recognised as a **receivable** in the '
+            'opening statement of financial position. A grant approved on or after 1 January '
+            '2016 is recognised (accrued) immediately once both parties have signed an '
+            'agreement/MoU with **no conditions**; a **conditional** grant is recognised only '
+            'as its conditions are met, with the unmet portion held as a **liability**.'},
+      {'p': '**(c) Debt forgiveness** approved on or after 1 January 2016 is recognised as '
+            'revenue immediately once the agreement is approved by both parties with **no '
+            'conditions**; where conditions attach and failure to meet them is possible, the '
+            'forgiven amount (or the conditional portion) remains a **liability** until met.'},
+      {'p': '**(d) Other transfer revenue** is recognised where it meets the IPSAS 23 '
+            '(Revenue from Non-Exchange Transactions) recognition criteria; a conditional '
+            'portion at risk of failing its conditions is held as a liability until the '
+            'conditions are met.'},
+      {'p': '**(e) Personal income tax** is recognised in two stages: at the **Relevant Tax '
+            'Authority**, when the taxpayer/employer submits returns; and in the books of the '
+            '**whole of government** (Federal/State Treasury), only on **remittance** by the '
+            'RTA to the Consolidated Revenue Fund.'},
+      {'p': '**(f) Licences, fees and fines** are recognised when the application is '
+            '**approved**, and again on approval of each renewal.'}]}},
+    {'eg': {'tag': 'Study text',
+      't': 'Question 2 — preparing the opening statement of financial position (1 January '
+           '2016)', 'open': True, 'q': [
+      {'p': 'State the practical steps for preparing the Opening Statement of Financial '
+            'Position under each condition: (i) whole of government on the cash basis; '
+            '(ii) a PSE already on accrual accounting but not IPSAS-compliant; (iii) a PSE '
+            'on the cash basis preparing only an incomplete set of financial statements '
+            '(transcript of accounts) as at 31 December 2015.'}],
+      'a': [
+      {'p': '**(i) Cash basis, whole of government:** prepare the draft annual financial '
+            'statements to 31 December 2015 under cash-basis IPSAS; have them audited by the '
+            'respective Auditor-General; submit the audited statements to Parliament; '
+            'ascertain the value of all assets (e.g. via a stock report) and confirmed '
+            'liabilities as at 31 December 2015; restate the existing Statement of Assets and '
+            'Liabilities into the Opening Statement of Financial Position at 1 January 2016; '
+            'and convert it accordingly.'},
+      {'p': '**(ii) Already on accrual, not IPSAS-compliant:** prepare the draft annual '
+            'financial statements to 31 December 2015 on the accrual basis; have them '
+            'audited by an approved external auditor; submit them to the Board/Governing '
+            'Council; ascertain the value of confirmed assets/liabilities missing from the '
+            'statements; restate the existing balance sheet into the Opening Statement of '
+            'Financial Position at 1 January 2016; and convert it accordingly.'},
+      {'p': '**(iii) Cash basis, incomplete transcript of accounts:** submit the December '
+            '2015 transcript to the respective Treasury; carry out a stock-take of all '
+            'stores per the Treasury circular as at 31 December 2015; value the stock-take '
+            'using FIFO or another method the FAAC Sub-Committee on IPSAS Implementation (or '
+            'the Treasury) prescribes; extract cash assets/liabilities from the Statement of '
+            'Assets and Liabilities and ascertain other assets/liabilities under the PSE\'s '
+            'control at that date; restate present balances into the Opening Statement of '
+            'Financial Position; and convert accordingly.'}]}},
+    {'eg': {'tag': 'Study text',
+      't': 'Question 3 — recognising and measuring existing assets', 'open': True, 'q': [
+      {'p': 'State (a) the criteria for recognition of assets, and (b) the basic steps for '
+            'recognising and measuring existing assets as at 31 December 2015.'}],
+      'a': [
+      {'p': '**(a) Recognition criteria:** it is probable that future economic benefits or '
+            'service potential will flow to the entity; the cost/deemed cost (fair value) can '
+            'be measured reliably; and the entity **controls** the asset.'},
+      {'ol': [
+        'Verify all the entity\'s assets and confirm they satisfy the recognition '
+        'requirements.',
+        'Prepare a schedule of the verified assets, correctly classified.',
+        'Obtain source documents to establish details such as historical cost.',
+        'Where cost cannot be established, engage professional valuers/estimators to '
+        'determine fair value (deemed cost).',
+        'Bring the values into the books — debit the relevant asset account, credit '
+        'accumulated reserves.',
+      ]}]}},
+  ]},
  ],
  'formulas': [],
  'focus':

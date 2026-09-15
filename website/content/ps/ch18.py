@@ -110,10 +110,13 @@ CH = {
           '**Section 25(2) of the FAA**, expenditure estimates are classified under programmes '
           'or activities in the Appropriation Bill, forwarded to Parliament to authorise the '
           'issue of money from the Consolidated Fund (or another appropriate fund).'},
-    {'p': 'Functions of an Appropriation Act: **(i)** authorise the organisations\' estimates; '
-          '**(ii)** give agreement to the **Ambit of the Vote**; **(iii)** act as a reference '
-          'point for disagreements; **(iv)** denote, by implication, activities outside '
-          'authorised areas as **ultra vires**.'},
+    {'p': 'Functions of an Appropriation Act:'},
+    {'ol': [
+      'Authorise the organisations\' estimates;',
+      'Give agreement to the **Ambit of the Vote**;',
+      'Act as a reference point for disagreements;',
+      'Denote, by implication, activities outside authorised areas as **ultra vires**.',
+    ]},
     {'p': 'Before a budget year starts, a **Provisional Appropriation Act** authorises finances '
           'for government organisations to operate (normally for the first three months) '
           'until examinations/debates finish — these finances are **Provisional '
@@ -188,42 +191,70 @@ CH = {
     {'h4': '(b) Cash management'},
     {'def': {'t': 'Cash management', 'd': 'a component of good financial governance — ensuring '
                   'cash resources are spent to maximize citizen benefit, and are available in '
-                  'a predictable, smooth manner for effective, efficient service delivery. '
-                  'Requires: cash flow forecasting and planning; integrated cash and debt '
-                  'management; active liquidity management; and efficient banking and payment '
-                  'arrangements.'}},
-    {'p': '**Objectives:** minimize costs within a prudent risk level; give a consolidated '
-          'view of Government cash resources; ensure adequate cash to pay expenditures when '
-          'due; maximize returns on idle cash; manage risk by investing temporary surpluses; '
-          'develop good practice for daily cash-balance management; take advantage of modern '
-          'banking systems/instruments; minimize borrowing.'},
+                  'a predictable, smooth manner for effective, efficient service delivery.'}},
+    {'p': '**Requires:**'},
+    {'ul': [
+      'Cash flow forecasting and planning;',
+      'Integrated cash and debt management;',
+      'Active liquidity management; and',
+      'Efficient banking and payment arrangements.',
+    ]},
+    {'p': '**Objectives:**'},
+    {'ol': [
+      'Minimize costs within a prudent risk level;',
+      'Give a consolidated view of Government cash resources;',
+      'Ensure adequate cash is available to pay expenditures when due;',
+      'Maximize returns on idle cash;',
+      'Manage risk by investing temporary surpluses;',
+      'Develop good practice for managing daily cash balances;',
+      'Take advantage of modern banking systems and financial instruments;',
+      'Minimize borrowing.',
+    ]},
     {'h4': 'Structure and institutional arrangement for FGN cash management'},
     {'p': '**Federal Cash Management Policy Committee** — chaired by the Honourable Minister '
           'of Finance (HMF), with overall responsibility for FGN cash planning/management. '
-          'Members: Minister of Finance (Chair); Minister of Budget and National Planning; '
-          'Chief Economic Adviser to the President; Permanent Secretary, Federal Ministry of '
-          'Finance; Deputy Governor (Operations), CBN; Special Adviser to the President on '
-          'National Assembly Matters; Senior Special Assistant to the President on Millennium '
-          'Development Goals; Accountant-General of the Federation; DG, Budget Office of the '
-          'Federation; DG, Bureau of Public Procurement; DG, Debt Management Office; a '
-          'representative of the SGF. Meets **at least quarterly** to review performance and '
-          'approve Cash Plans, and authorises publication of quarterly Cash Performance '
-          'Reports.'},
+          'Members:'},
+    {'ol': [
+      'Minister of Finance — Chairperson;',
+      'Minister of Budget and National Planning;',
+      'Chief Economic Adviser to the President;',
+      'Permanent Secretary, Federal Ministry of Finance;',
+      'Deputy Governor (Operations), CBN;',
+      'Special Adviser to the President on National Assembly Matters;',
+      'Senior Special Assistant to the President on Millennium Development Goals;',
+      'Accountant-General of the Federation;',
+      'DG, Budget Office of the Federation;',
+      'DG, Bureau of Public Procurement;',
+      'DG, Debt Management Office;',
+      'A representative of the SGF.',
+    ]},
+    {'p': 'The Committee meets **at least quarterly** to review performance and approve Cash '
+          'Plans, and authorises publication of quarterly Cash Performance Reports.'},
     {'p': '**Cash Management Technical Committee** — drawn from key MDAs, providing technical '
           'support to the FCMPC, coordinating MDA/stakeholder activities and undertaking '
-          'analytical work ahead of ministerial meetings. Membership: Director Fund, OAGF '
-          '(Chair); Director, Cash Management Department, FMF; Director Expenditure, BOF; '
-          'Director, Portfolio Management, DMO; Director, Banking and Payment System, CBN; '
-          'Director, Revenue Accounting, FIRS; Directors of Finance and Accounts of key MDAs '
-          '(State House, FMWH, Power, Agriculture, Transport, etc.).'},
-    {'p': '**MDA cash management** — each MDA should: have its own cash planning/forecasting '
-          'mechanism, with the Accounting Officer overall responsible for cash resources; '
-          'consider its Procurement Plan and Annual Cash Plan against budget objectives, needs '
-          'and government priority; review actual budget out-turn and address mitigating '
-          'factors; and, at a minimum, assign an officer to enter/review departmental needs '
-          'into **GIFMIS**, consolidate MDA cash needs for the CMU in the OAGF Funds '
-          'Department, confirm cash payment needs are supported by legal/financial commitments '
-          'in GIFMIS, and assign a staff counterpart to the CMU.'},
+          'analytical work ahead of ministerial meetings. Membership:'},
+    {'ol': [
+      'Director Fund, OAGF — Chairperson;',
+      'Director, Cash Management Department, FMF;',
+      'Director Expenditure, BOF;',
+      'Director, Portfolio Management, DMO;',
+      'Director, Banking and Payment System, CBN;',
+      'Director, Revenue Accounting, FIRS;',
+      'Directors of Finance and Accounts of key MDAs (State House, FMWH, Power, Agriculture, '
+      'Transport, etc.).',
+    ]},
+    {'p': '**MDA cash management** — each MDA should:'},
+    {'ol': [
+      'Have its own cash planning/forecasting mechanism, with the Accounting Officer overall '
+      'responsible for cash resources;',
+      'Consider its Procurement Plan and Annual Cash Plan against budget objectives, needs '
+      'and government priority;',
+      'Review actual budget out-turn and address mitigating factors; and',
+      'At a minimum: assign an officer to enter/review departmental needs into **GIFMIS**; '
+      'consolidate MDA cash needs for the CMU in the OAGF Funds Department; confirm cash '
+      'payment needs are supported by legal/financial commitments in GIFMIS; and assign a '
+      'staff counterpart to the CMU.',
+    ]},
     {'h4': 'Other Ministry of Finance controls'},
     {'ol': [
       'Issuance of financial authorities;',
@@ -250,9 +281,13 @@ CH = {
                   'answered, and a list of documents to be made available, during a visit to '
                   'an Accounts Department, used by the Accountant-General\'s representatives '
                   'to perform appraisal/control functions.'}},
-    {'p': '**Advantages:** they help the inspector complete the assignment without omission; '
-          'they clearly state the required standard of performance; they state the '
-          'requirements to be met; and they detail the level of assignment required.'},
+    {'p': '**Advantages:**'},
+    {'ol': [
+      'They help the inspector complete the assignment without omission;',
+      'They clearly state the required standard of performance;',
+      'They state the requirements to be met; and',
+      'They detail the level of assignment required.',
+    ]},
     {'h4': '(b) Inspectorate department'},
     {'p': 'Inspectorate Officers visit MDAs to evaluate the internal control system, ensuring '
           'the accounting system and books conform to approved regulations. Functions:'},
@@ -369,17 +404,26 @@ CH = {
           'not below the rank of **Senior Finance Assistant**, always supervised by another '
           'senior officer so its objectives are not neglected.'},
     {'h3': '18.8.3 Format of a vote book'},
-    {'p': 'A DVEA book has 15 columns: **(1)** Line No.; **(2)** Date; **(3)** Voucher No. '
-          '(from the Voucher Register); **(4)** Particulars (payee name); **(5)** Payments '
-          '(gross payment on the voucher); **(6)** Cumulative payment (total to date); '
-          '**(7)** Balance (authorised amount less column 6); **(8)** Liability reference '
-          '(an LPO, job order or agreement entered into but not yet executed/supplied); '
-          '**(9)** Liability incurred (the actual amount recognised once supply/execution '
-          'occurs); **(10)** Liability cleared (posted once the liability in column 9 is '
-          'cleared and entered in column 5); **(11)** Outstanding liabilities (cumulative '
-          'liability to date); **(12)** Remarks (indebtedness to the contractor/supplier in '
-          'column 9); **(13)** Uncommitted balance (column 7 less all liabilities incurred); '
-          '**(14)–(15)** Line No. references (to lines cleared, and repeating column 1).'},
+    {'p': 'A DVEA book has 15 columns:'},
+    {'ol': [
+      '**Line No.** — numbered serially;',
+      '**Date** — the date a voucher is recorded or a liability is incurred;',
+      '**Voucher No.** — from the Voucher Register;',
+      '**Particulars** — the payee\'s name;',
+      '**Payments** — the gross payment on the voucher;',
+      '**Cumulative payment** — total payments to date;',
+      '**Balance** — the authorised amount less column 6;',
+      '**Liability reference** — an LPO, job order or agreement entered into but not yet '
+      'executed/supplied;',
+      '**Liability incurred** — the actual amount recognised once supply/execution occurs;',
+      '**Liability cleared** — posted once the liability in column 9 is cleared and entered '
+      'in column 5;',
+      '**Outstanding liabilities** — cumulative liability to date;',
+      '**Remarks** — the indebtedness to the contractor/supplier in column 9;',
+      '**Uncommitted balance** — column 7 less all liabilities incurred;',
+      '**Line No.** — reference to the numbers of the lines cleared;',
+      '**Line No.** — repeating column 1.',
+    ]},
     {'eg': {'tag': 'Study text', 't': 'Vote Book illustration — Ministry of Education, '
       'August 2021 (stationery)', 'open': True, 'q': [
       {'p': 'The Ministry of Education\'s DVEA book shows: authorised appropriation for the '

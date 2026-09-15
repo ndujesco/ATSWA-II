@@ -59,10 +59,13 @@ CH = {
     {'p': 'Under **IPSAS 24**, entities must present a comparison of the budgeted amount for '
           'which they are held publicly accountable against the actual amount, either as a '
           'separate additional statement or an additional budget column, presented separately '
-          'for each level of legislative oversight, covering: **(a)** the original and final '
-          'budget amounts; **(b)** the actual amounts on a comparable basis; and **(c)**, by '
-          'note disclosure, an explanation of material differences (variances) between budget '
-          'and actual, unless already explained elsewhere with a cross-reference given.'},
+          'for each level of legislative oversight, covering:'},
+    {'ol': [
+      'The original and final budget amounts;',
+      'The actual amounts on a comparable basis; and',
+      'By note disclosure, an explanation of material differences (variances) between budget '
+      'and actual, unless already explained elsewhere with a cross-reference given.',
+    ]},
     {'table': {'cap': 'Extract Statement of Financial Performance showing budget '
       'information, per IPSAS 24', 'align': 'lllll', 'head': ['Description', 'Previous year '
       'actual', 'Current year actual', 'Final budget for current year', 'Original budget for '

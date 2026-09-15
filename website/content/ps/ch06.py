@@ -126,11 +126,17 @@ CH = {
           'public consultations — open to the public, the press, citizens, organisations and '
           'groups of citizens — on the macro-economic framework, the fiscal strategy document, '
           'the strategic/economic/social/developmental priorities of government, and any other '
-          'matters he deems necessary. The Minister seeks input from: the National Planning '
-          'Commission; the Joint Planning Commission; the National Commission on Development '
-          'Planning; the National Economic Commission; the National Assembly; the Central Bank '
-          'of Nigeria; the National Bureau of Statistics; and the Revenue Mobilisation '
-          'Allocation and Fiscal Commission.'},
+          'matters he deems necessary. The Minister seeks input from:'},
+    {'ul': [
+      'The National Planning Commission;',
+      'The Joint Planning Commission;',
+      'The National Commission on Development Planning;',
+      'The National Economic Commission;',
+      'The National Assembly;',
+      'The Central Bank of Nigeria;',
+      'The National Bureau of Statistics; and',
+      'The Revenue Mobilisation Allocation and Fiscal Commission.',
+    ]},
     {'p': 'The Minister must, before the end of the **second quarter** of each financial year, '
           'present the MTEF to the Federal Executive Council for consideration and endorsement. '
           'The MTEF, as endorsed by the Federal Executive Council, takes effect upon approval by '
@@ -251,10 +257,18 @@ CH = {
     ]},
     {'h4': 'Format for annual budgeting with the chart of accounts'},
     {'p': 'A complete set of annual budgeting documents, prepared with the chart of accounts, '
-          'comprises: a revenue budget; a recurrent budget; a capital budget; a summary of total '
-          'revenue budget; a summary of recurrent expenditure budget; a summary of independent '
-          'revenue budget by MDAs; a summary of total recurrent expenditure by MDAs; a summary '
-          'of total capital receipts budget by MDAs; and a consolidated budget summary.'},
+          'comprises:'},
+    {'ol': [
+      'A revenue budget;',
+      'A recurrent budget;',
+      'A capital budget;',
+      'A summary of total revenue budget;',
+      'A summary of recurrent expenditure budget;',
+      'A summary of independent revenue budget by MDAs;',
+      'A summary of total recurrent expenditure by MDAs;',
+      'A summary of total capital receipts budget by MDAs; and',
+      'A consolidated budget summary.',
+    ]},
   ]},
 
   {'n': '6.5', 't': 'Procedure for preparation and approval of budgets', 'b': [
@@ -339,12 +353,15 @@ CH = {
           'do with the management process — providing for the purchase, allocation and use of '
           'available resources by setting operational criteria in advance, resulting in the '
           'achievement of corporate goals.'},
-    {'p': 'The line-item budgeting system has three features: the budget gives prominence to '
-          'the ministries and extra-ministerial departments for which it is prepared, while '
-          'little or no attention is given to the end results the funds provide; the current '
-          'year’s budget is arrived at through routine and incremental reasoning, not scientific '
-          'analysis; and the main thrust of the budget is the achievement of control and '
-          'accountability.'},
+    {'p': 'The line-item budgeting system has three features:'},
+    {'ol': [
+      'The budget gives prominence to the ministries and extra-ministerial departments for '
+      'which it is prepared, while little or no attention is given to the end results the '
+      'funds provide;',
+      'The current year\'s budget is arrived at through routine and incremental reasoning, '
+      'not scientific analysis; and',
+      'The main thrust of the budget is the achievement of control and accountability.',
+    ]},
     {'table': {'align': 'll', 'head': ['Advantages of line-item budgeting',
       'Disadvantages of line-item budgeting'], 'rows': [
       ['It is simple to understand and operate', 'It allows past errors to be carried forward, '
@@ -373,8 +390,12 @@ CH = {
           'are not necessarily allocated in accordance with previous patterns; each item of '
           'expenditure proposed must be re-justified annually. ZBB seeks to avoid perpetuating '
           'obsolete expenditure items.'},
-    {'p': 'In government, the three key users of ZBB are: the Legislature; the Executive; and '
-          'the various ministries, extra-ministerial departments and parastatals.'},
+    {'p': 'In government, the three key users of ZBB are:'},
+    {'ul': [
+      'The Legislature;',
+      'The Executive; and',
+      'The various ministries, extra-ministerial departments and parastatals.',
+    ]},
     {'p': 'ZBB involves the use of a **decision-package approach**, based on the identification '
           'of activities, classified into five basic events:'},
     {'ol': [
@@ -442,21 +463,29 @@ CH = {
       'the amount spent (the focus of traditional budgeting).',
       'Development, in each year, of a multi-year programme and financial plan.',
     ]},
-    {'p': '**Advantages of PPBS:** it provides information on the objectives of the '
-          'organisation; it lays emphasis on long-term effects; it achieves effective use of '
-          'budgeted resources and anticipated performance; it ensures rational decision-making '
-          'and forces those seeking budgetary allocations to consider alternatives; and it leads '
-          'to rapid economic development.'},
+    {'p': '**Advantages of PPBS:**'},
+    {'ol': [
+      'It provides information on the objectives of the organisation;',
+      'It lays emphasis on long-term effects;',
+      'It achieves effective use of budgeted resources and anticipated performance;',
+      'It ensures rational decision-making and forces those seeking budgetary allocations '
+      'to consider alternatives; and',
+      'It leads to rapid economic development.',
+    ]},
     {'h4': 'Performance budgeting'},
     {'p': 'Performance budgeting is a technique used for presenting public expenditure in the '
           'form of functions or projects to be undertaken, highlighting the cost involved. The '
           'anticipated costs are compared with the expected income. The focus of the technique '
           'is on **results or output achieved**, rather than how much has been expended. Its '
-          'essential features are: classification of budgets in terms of functions and '
-          'activities; measurement of the work done or output provided by each activity; '
-          'expression of the budget in a way that allows direct comparison between a project’s '
-          'cost and its anticipated income or benefit; and monitoring of actual cost and '
-          'performance against the budgeted results or expectations.'},
+          'essential features are:'},
+    {'ol': [
+      'Classification of budgets in terms of functions and activities;',
+      'Measurement of the work done or output provided by each activity;',
+      'Expression of the budget in a way that allows direct comparison between a project\'s '
+      'cost and its anticipated income or benefit; and',
+      'Monitoring of actual cost and performance against the budgeted results or '
+      'expectations.',
+    ]},
     {'h4': 'Rolling plan / continuous budgets'},
     {'p': 'A continuous budget or rolling plan is the continuous updating of a medium-term plan '
           'spanning a specified period of time — for example, “1998 to 2000”, within which '
@@ -791,18 +820,26 @@ CH = {
         'Ensure effective monitoring and reconciliation of government statutory accounts.',
         'Promote transparent, fraud-resistant government operations.']},
       {'h4': '3  Zero-based budgeting'},
-      {'p': '**(a) Five basic events:** identify *decision units* and formulate operational '
-            'plans; analyse the budget into *decision packages* (with costs, alternatives and '
-            'the effect of not doing the activity); rank the decision packages competitively '
-            '(new and existing); determine the *cut-off point* to accept or reject packages; '
-            'prioritise the packages to fit available resources.'},
-      {'p': '**(b) Challenges (any three):** unreliable or missing data undermine it in a less '
-            'developed economy; it may cause a major shift in resource allocation; bureaucrats '
-            'distrust and frustrate it; difficulty fixing the minimum level of expenditure in a '
-            'decision package; the volume of data to analyse and rank exceeds available skilled '
-            'staff; the accounting structure must be reworked to fit the ZBB philosophy; it '
-            'suits capital rather than recurrent expenditure and has not succeeded in the '
-            'public sector.'},
+      {'p': '**(a) Five basic events:**'},
+      {'ol': [
+        'Identify *decision units* and formulate operational plans;',
+        'Analyse the budget into *decision packages* (with costs, alternatives and the '
+        'effect of not doing the activity);',
+        'Rank the decision packages competitively (new and existing);',
+        'Determine the *cut-off point* to accept or reject packages;',
+        'Prioritise the packages to fit available resources.',
+      ]},
+      {'p': '**(b) Challenges (any three):**'},
+      {'ol': [
+        'Unreliable or missing data undermine it in a less developed economy;',
+        'It may cause a major shift in resource allocation;',
+        'Bureaucrats distrust and frustrate it;',
+        'Difficulty fixing the minimum level of expenditure in a decision package;',
+        'The volume of data to analyse and rank exceeds available skilled staff;',
+        'The accounting structure must be reworked to fit the ZBB philosophy;',
+        'It suits capital rather than recurrent expenditure and has not succeeded in the '
+        'public sector.',
+      ]},
       {'h4': '4  Main steps in PPBS'},
       {'ol': [
         'Identify and enumerate the organisation\'s goals and objectives.',
@@ -830,17 +867,26 @@ CH = {
         '**Fiscal indiscipline** — spending the last naira to justify a bigger allocation next '
         'year.']},
       {'h4': '6  Budgeting with the NCOA'},
-      {'p': '**Structure — the six segments:** *Administrative* (which entity is responsible), '
-            '*Economic* (the type of revenue/expenditure), *Functional* (the socio-economic '
-            'purpose — COFOG), *Programme* (the set of activities meeting a policy objective), '
-            '*Funds* (the source of financing), *Geographic* (the location).'},
-      {'p': '**Steps (all six segments must be completed on every budget entry, even if a '
-            'segment is inactive; only numeric values are budgeted):** identify the government '
-            'institutions (cost and revenue centres) from the administrative codes; identify '
-            'the economic items to be executed in the year; identify the functions to be '
-            'performed; identify the programmes to be carried out; determine the sources of '
-            'financing for each budget line; identify the planned location of the '
-            'transactions.'}]}},
+      {'p': '**Structure — the six segments:**'},
+      {'ol': [
+        '*Administrative* (which entity is responsible);',
+        '*Economic* (the type of revenue/expenditure);',
+        '*Functional* (the socio-economic purpose — COFOG);',
+        '*Programme* (the set of activities meeting a policy objective);',
+        '*Funds* (the source of financing);',
+        '*Geographic* (the location).',
+      ]},
+      {'p': '**Steps** — all six segments must be completed on every budget entry, even if a '
+            'segment is inactive; only numeric values are budgeted:'},
+      {'ol': [
+        'Identify the government institutions (cost and revenue centres) from the '
+        'administrative codes;',
+        'Identify the economic items to be executed in the year;',
+        'Identify the functions to be performed;',
+        'Identify the programmes to be carried out;',
+        'Determine the sources of financing for each budget line;',
+        'Identify the planned location of the transactions.',
+      ]}]}},
   ]},
  ],
  'formulas': [

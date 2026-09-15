@@ -50,10 +50,13 @@ CH = {
        'transfers between funds, write-off of losses',
        'As dictated by the entry; no cash movement'],
     ]}},
-    {'p': 'Vouchers are further described by the stage they have reached: an **unpaid voucher** '
-          'awaits payment; a **paid voucher** has been settled and is filed as evidence; an '
-          '**outstanding voucher** was raised but not paid by the year end; and a **duplicate '
-          'voucher** is a certified copy raised where the original is lost.'},
+    {'p': 'Vouchers are further described by the stage they have reached:'},
+    {'ul': [
+      'An **unpaid voucher** awaits payment;',
+      'A **paid voucher** has been settled and is filed as evidence;',
+      'An **outstanding voucher** was raised but not paid by the year end; and',
+      'A **duplicate voucher** is a certified copy raised where the original is lost.',
+    ]},
     {'warn': 'An **adjustment voucher** corrects a classification error only; it does not create '
              'or extinguish a liability. Using an adjustment voucher to record a genuine new '
              'transaction, or to move an over-expenditure quietly to a head with a balance, is a '
@@ -171,6 +174,216 @@ CH = {
              'duplicate is certified, the loss is reported to both the Accountant-General and '
              'the Auditor-General, and it is entered in the Register of Losses — because the '
              'possibility of a fraudulent second payment must be positively excluded.'},
+  ]},
+
+  {'n': '8.7', 't': 'Payroll accounting in the public sector', 'b': [
+    {'def': {'t': 'Payroll approval', 'd': 'the **Accountant-General** must approve the '
+             'procedure and method employed by federal ministries, departments and units for '
+             'the recording and calculation of personal emoluments. Unless FR 1518 provides '
+             'otherwise, the standard payroll system maintains three records in a single '
+             'operation:'}},
+    {'ol': [
+      'the **Personal Emoluments Record (PER)**;',
+      'the **payroll**, in duplicate, together with a **bank paying-in-advice slip**; and',
+      'the **pay statement** issued to the individual officer.',
+    ]},
+    {'p': 'This applies whether the system is manual or computerised. The officer controlling '
+          'expenditure ensures the **Standard Personal Emoluments Record** shows: standard '
+          'rate of pay, incremental rate, standard allowance, salary and other advances '
+          'issued, tax (PAYE), gross emoluments, standard deductions from emoluments, and net '
+          'emoluments payable.'},
+    {'h4': 'Custody of Personal Emoluments Record Cards (PERC)'},
+    {'p': 'Where the accounting system is **manual**, the **Head, Finance and Accounts** '
+          'ensures the PERC is kept under strict security — always under lock and key in a '
+          'fire-resistant cabinet, safe or strong room when not in use. Every officer must '
+          'complete a Personal Emolument Record form annually, certified by the head of '
+          'department or other designated officer; the completed form is the basis for '
+          'opening the group registers, which must be **audited before the officer is '
+          'included in the payroll**.'},
+    {'h4': 'Action by the salaries section on payroll'},
+    {'ol': [
+      'Effect necessary entries in each employee\'s Personnel Emolument Record — basic salary '
+      'for the month, deductions and net salary payable.',
+      'Aggregate all such entries and raise **Treasury Form 209** (advice of deduction from '
+      'salary) for deductions and **TF 1** (other charges payment vouchers) for on-payment '
+      'vouchers in favour of the relevant beneficiaries.',
+      'Classify TF 209 and TF 1 to the appropriate **below-the-line** classification code.',
+      'Raise a **summary payment voucher** on a pay-point basis, capturing gross salaries and '
+      'allowances due, total deductions and net amount payable.',
+      'Process the **cash-order form** in accordance with the Financial Regulations.',
+      'Effect the corresponding entries in the Personnel Emolument Voucher, register and vote '
+      'book.',
+      'Carry out an **internal check** of payroll entries and vouchers, taking account of '
+      'staff vacating post during the month, to ensure accurate postings.',
+      'Compare and reconcile the salaries-section figures with the **variation control '
+      'sheet** for the month.',
+      'Once the officer controlling expenditure agrees the figures with the variation control '
+      'sheet, he signs all summary vouchers and TF 209.',
+      'Forward the payrolls, with summary vouchers, TF 209 and on-payment vouchers, to the '
+      '**Internal Audit Unit**.',
+    ]},
+    {'h4': 'Action by the Internal Audit Unit'},
+    {'ol': [
+      'Ascertain the **accuracy** of entries in officers\' Personnel Emolument Records and the '
+      'payroll, examining them in detail so that any variation in emoluments is correctly '
+      'stated.',
+      'Examine all summary vouchers and supporting documents for accuracy of deductions and '
+      'net salaries payable.',
+      'Ensure gross salaries in the summary vouchers **agree with the variation control '
+      'sheets**.',
+      'Extract copies of summary vouchers and other supporting documents for record purposes.',
+    ]},
+    {'h4': 'Action by the cash office'},
+    {'ol': [
+      'Check the payroll summary voucher and supporting documents against the Internal Audit '
+      'Unit\'s forwarding schedule for completeness.',
+      'Sort and allocate a **Treasury Payment Voucher number** to summary vouchers, '
+      'on-payment vouchers and the treasury receipt vouchers for TF 209.',
+      'Stamp all summary vouchers and on-payment vouchers **"PAID"** for the month of account.',
+      'Draw cheques for the net amount payable in the summary payment voucher, in favour of '
+      'the paying bank.',
+      'Draw cheques for the amounts due to the various agencies shown in the on-payment '
+      'vouchers.',
+      'Post all payment vouchers and treasury receipt vouchers separately in a **salary cash '
+      'book**, balance it and reconcile with the bank statement monthly.',
+    ]},
+    {'key': 'The chain of custody matters more than any single step: salaries prepares and '
+            'raises the vouchers, Internal Audit independently checks them against the '
+            'variation control sheet **before** payment, and the cash office pays and '
+            'reconciles. Collapsing these into one office removes the segregation of duties '
+            'that is the whole point of the procedure.'},
+  ]},
+
+  {'n': '8.8', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'One of the following is responsible to take custody of Personnel Emoluments '
+        'Records Cards (PERC) where the accounting system is manual (A) Revenue Collector '
+        '(B) Imprest holder  (C) Accountant-General  (D) Head of Finance and Account  '
+        '(E) Cashier',
+        'One of the following must approve the procedure and method to be employed by '
+        'federal ministries, departments and units for the recording and the calculation of '
+        'personal emoluments (A) Minister of Finance  (B) Budget Officer of the Federation  '
+        '(C) Accounting Officer  (D) Accountant-General  (E) National Assembly',
+        'The standard Personal Emoluments Record shall show the following with the exception '
+        'of one (A) Standard rate of pay of the officer  (B) Incremental rate  (C) Next-of-kin '
+        'of the officer  (D) Salary and other advances issued  (E) Tax, PAYE',
+        'Adjustment voucher is used in any of the following circumstances with the exception '
+        'of one (A) Payment for inter-ministerial services  (B) Payment for on-going projects  '
+        '(C) Correction of accounting errors arising from misclassification  (D) Ultimate '
+        'allocation of unallocated inventories  (E) Carrying out adjustments or transfers '
+        'between accounts',
+        'One of the following is not a component of receipt voucher (A) NCOA code  '
+        '(B) Commitment balance  (C) Received from  (D) Date  (E) Receipt number',
+        'According to Financial Regulation 605 of January 2009, a payment voucher register '
+        'shall be operated by …',
+        'Documentary evidence of payment or receipt of money which is available for future '
+        'reference, accounting and auditing purposes is called …',
+        'A process used for effecting transfers from one account to another without involving '
+        'physical movement of cash is called …',
+        'The office responsible for ascertaining the accuracy of entries in the Personnel '
+        'Emolument Records of officers and the payroll, by examining them in detail to ensure '
+        'that variations, if any, in the emolument of staff are correctly stated, is called …',
+        'Before any receipt into the Government purse can be regarded as an authentic receipt '
+        'voucher, the attached Treasury Receipt Book 6 must be supported with …',
+      ]}],
+      'a': [
+      {'p': '**1.** D  **2.** D  **3.** C  **4.** B  **5.** B  **6.** Officer Controlling '
+            'Vote  **7.** Voucher  **8.** Journal entries  **9.** Internal Audit Unit  '
+            '**10.** Treasury Form 15 (Pay-in form)'}]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text', 't': 'Question 1 — essential features of a payment voucher',
+      'open': True, 'q': [
+      {'p': 'A valid payment voucher must contain the full particulars of services rendered '
+            'or goods purchased. List any ten (10) essential features of a well-prepared '
+            'payment voucher.'}],
+      'a': [
+      {'ol': [
+        'Date of the voucher, which indicates its life span.',
+        'Classification code according to the National Chart of Accounts (NCOA) of '
+        'expenditure.',
+        'Amount in words and figures.',
+        'Voucher number.',
+        'Description of payment.',
+        'Name and address of payee/beneficiary.',
+        'Supporting documents — local purchase orders, invoices, store receipt vouchers and '
+        'contract agreements.',
+        'Authority, such as the signature of the officer controlling expenditure and the '
+        'warrant which released the money.',
+        'Signature of the cashier.',
+        'Signature of the payee.',
+        'Voucher certification — prepared by, checked by, entered into vote book by, paid by '
+        'and authorised by.',
+        'Cashier\'s stamp "PAID".',
+      ]}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 2 — procedure where a payment voucher is lost',
+      'open': True, 'q': [
+      {'p': 'State the procedures that should be followed where a payment voucher is reported '
+            'lost, and the action to be taken by the cash office.'}],
+      'a': [
+      {'ol': [
+        'Prompt investigation should be carried out.',
+        'It should be established whether payment has been made on it or not.',
+        'It should be ascertained whether or not the cash drawn is still on hand.',
+        'A report should be made by the accounting officer to the Accountant-General, stating '
+        'the circumstances of the loss.',
+      ]}]}},
+    {'eg': {'tag': 'Study text',
+      't': 'Question 3 — accounting officers\' responsibilities under the Public Procurement '
+           'Act', 'open': True, 'q': [
+      {'p': 'In compliance with their special role under the Public Procurement Act, state the '
+            'responsibilities that accounting officers of ministries, extra-ministerial '
+            'offices and other arms of government are charged to comply with.'}],
+      'a': [
+      {'ol': [
+        'Ensure adequate appropriation is available for procurements in the annual budget.',
+        'Integrate the entity\'s procurement expenditure into its yearly budget.',
+        'Ensure the establishment of a procurement planning committee over whose activities '
+        'they preside.',
+        'Constitute a Procurement Evaluation Committee for the efficient evaluation of '
+        'tenders.',
+        'Constitute a Procurement Committee.',
+        'Render annual returns of procurement records to the Bureau of Public Procurement.',
+        'Liaise with the Bureau of Public Procurement to ensure implementation of its '
+        'regulations.',
+        'Ensure compliance with the Public Procurement Act by their organisations — failing '
+        'which they are personally liable for any breach, whether caused by them, their '
+        'subordinates, or anyone to whom they delegated the responsibility.',
+      ]}]}},
+    {'eg': {'tag': 'Study text',
+      't': 'Questions 4–9 — recording discoveries of loss and abandonment',
+      'open': True, 'q': [
+      {'p': 'The following were discoveries made by the Accountant-General of Ogudu State '
+            'while checking the books of account of the State. Record each using journal '
+            'entries.'},
+      {'ol': [
+        'On 31 May 2019, a double payment of N1,950,000 was made to Sango Plc for a contract '
+        'executed on maintenance of an office complex. The discovery was made in December of '
+        'the same year.',
+        'A fraudulent withdrawal of N950,000 from the account of the State Emergency Relief '
+        'Agency was made in August 2019 and discovered in December of the same year.',
+        'The sum of N1,300,000 initially charged to the Motor Vehicle Advance Account had '
+        'been abandoned.',
+        'The sum of N3,500,000 revenue that should have been collected by the government had '
+        'been abandoned.',
+        'An erroneous overpayment of N76,000 was made in 2018, charged to the CRF, but was '
+        'discovered in 2019.',
+      ]}],
+      'a': [
+      {'table': {'cap': 'Journal entries — 31 December 2019', 'align': 'lrr',
+        'head': ['Account', 'Dr (₦)', 'Cr (₦)'], 'rows': [
+        ['Cash account', '1,950,000', ''],
+        ['**Sango Plc** — refund of overpayment made 31 May 2019', '', '1,950,000'],
+        ['Cash account', '950,000', ''],
+        ['**Emergency Relief Agency** — refund of fraudulent withdrawal', '', '950,000'],
+        ['Bad debt account', '1,300,000', ''],
+        ['**Motor vehicle advances account** — abandonment of charge', '', '1,300,000'],
+        ['Bad debt account', '3,500,000', ''],
+        ['**Revenue receivable account** — revenue now abandoned', '', '3,500,000'],
+        ['Cash account', '76,000', ''],
+        ['**CRF account** — erroneous overpayment recovered', '', '76,000'],
+      ]}}]}},
   ]},
  ],
  'formulas': [],

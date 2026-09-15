@@ -175,6 +175,294 @@ CH = {
     {'key': 'The single sentence that best distinguishes them: a **Board of Survey verifies what '
             'is there**; a **Board of Enquiry investigates what is missing**.'},
   ]},
+
+  {'n': '11.6', 't': 'The storekeeper, procurement and handing over', 'b': [
+    {'h4': 'Functions of the storekeeper'},
+    {'ul': [
+      'Maintain proper accounting records that timely reflect transactions.',
+      'Arrange the store diligently and keep it clean.',
+      'Invite purchase requisitions from the departments that need stores.',
+      'Collect items from the supplier, checking they agree with the specification and price '
+      'on the Local Purchase Order.',
+      'Update the bin/tally cards, and issue items only against a properly authenticated '
+      'requisition.',
+      'Prepare inventory receipt and issue vouchers.',
+      'Ensure the store is adequately secured.',
+    ]},
+    {'h4': 'Procedure for procuring stores'},
+    {'steps': [
+      'The purchasing department obtains **approval from the officer controlling the vote**.',
+      'It carries out a **market survey** or obtains quotations/tenders from prospective '
+      'suppliers, and fixes a **closing date** for submission.',
+      'A **Contract Tenders\' Board** is constituted after the closing date to determine the '
+      'lowest bidder and recommend the award.',
+      'The **Head of Department approves** the Board\'s recommendation.',
+      'A **Local Purchase Order** is issued to the successful contractor for supply within the '
+      'agreed time.',
+    ]},
+    {'h4': 'Handing over of stores'},
+    {'p': 'When custody passes to another officer, the incoming officer confirms the physical '
+          'count agrees with the bin cards/store ledger; both officers then jointly sign **Store '
+          'Form 10**. Where the outgoing officer is unavailable, an Inventory Verifier or Board '
+          'of Survey does the check instead. The **outgoing officer answers for any discrepancy '
+          'found at handover**; the **incoming officer answers for anything discovered later** '
+          'that was not found at that time.'},
+  ]},
+
+  {'n': '11.7', 't': 'Cost of inventories and valuation methods', 'b': [
+    {'p': 'For unallocated stores, cost for accounting purposes is: for **imported** items, the '
+          'invoice (FOB) price plus freight, inspection fees, marine insurance and customs '
+          'duty; for **locally purchased** items, the full purchase price less any discount.'},
+    {'table': {'align': 'll', 'head': ['Valuation method', 'How it works'], 'rows': [
+      ['**Fixed price method**', 'A hypothetical unit price is set (the arithmetic mean of '
+       'stock values and known/estimated replacement price) and held fixed until the '
+       'replacement cost varies'],
+      ['**Last known price method**', 'Items are taken on charge at the last known price when '
+       'the full landed cost is not yet available'],
+    ]}},
+    {'note': 'Minimum records for stores accounting: a Purchases Journal (Inventory Cost '
+             'Book), an Issues Journal (Inventory Issues Summary), and an Inventory Ledger with '
+             'separate accounts for shortfalls/excesses (price adjustments) and for claims '
+             '(settlements for damaged imported goods). The storekeeper keeps only the bin/tally '
+             'card — never the ledger, which stays in the accounts section.'},
+  ]},
+
+  {'n': '11.8', 't': 'IPSAS 12 — Inventories', 'b': [
+    {'def': {'t': 'Inventories (IPSAS 12.9)', 'd': 'assets held for sale in the ordinary course '
+             'of operations, in production for such sale, to be consumed in producing goods or '
+             'services, or held as materials/supplies awaiting use. In the **public sector** '
+             'this extends to goods distributed to third parties free or for a nominal charge '
+             '(e.g. free textbooks), and specifically includes ammunition, maintenance '
+             'materials, spare parts, strategic stockpiles (energy reserves, hospital medicine), '
+             'unissued currency and stamps, work-in-progress and property held for sale.'}},
+    {'h4': 'What IPSAS 12 does not cover'},
+    {'ul': [
+      'Work-in-progress under construction contracts.',
+      'Financial instruments.',
+      'Biological assets and agricultural produce at the point of harvest.',
+      'Work-in-progress on services to be rendered for no or nominal consideration.',
+      '**Measurement** (though not recognition/disclosure) of agricultural/forest/mineral '
+      'inventories held at net realisable value, and of commodity broker-traders\' inventories '
+      'held at fair value less costs to sell, under established industry practice.',
+    ]},
+    {'key': 'Inventories are measured at the **lower of cost and net realisable value** — '
+            'except inventories held for distribution at no or nominal charge, or to be '
+            'consumed in producing such goods, which are measured at the **lower of cost and '
+            'current replacement cost** (there being no "selling price" for a free good).'},
+    {'def': {'t': 'Net realisable value', 'd': 'the estimated selling price in the ordinary '
+             'course of operations, less the estimated costs of completion and the estimated '
+             'costs necessary to make the sale, exchange or distribution.'}},
+    {'h4': 'Cost of inventories'},
+    {'p': 'Cost = **cost of purchase** + **cost of conversion** + other costs of bringing the '
+          'item to its present location and condition.'},
+    {'ul': [
+      '**Cost of purchase** — purchase price, import duties and other non-recoverable taxes, '
+      'and directly attributable transport/handling, less trade discounts and rebates.',
+      '**Cost of conversion** — direct costs (e.g. direct labour) plus a systematic allocation '
+      'of **fixed** production overheads (e.g. factory depreciation and management — relatively '
+      'constant regardless of volume) and **variable** production overheads (e.g. indirect '
+      'materials/labour — vary with volume).',
+      '**Excluded and expensed instead**: abnormal waste; storage costs (unless needed before a '
+      'further production stage); administrative overheads not contributing to bringing the '
+      'item to its location/condition; and selling costs.',
+      '**Service provider\'s inventory cost** — mainly the labour and attributable overheads of '
+      'personnel directly providing the service (including supervision); sales and general '
+      'administration staff costs are expensed, not included.',
+    ]},
+    {'h4': 'Cost formulas — assigning cost to items issued'},
+    {'table': {'align': 'll', 'head': ['Formula', 'How it works'], 'rows': [
+      ['**FIFO**', 'Assumes items are used/sold in the order received, so what remains at '
+       'period end is the most recently purchased'],
+      ['**Weighted average**', 'The cost of each item is the purchase cost at the start of the '
+       'period plus the purchase cost at the end, divided by two — calculated periodically or '
+       'as each new shipment arrives'],
+    ]}},
+    {'note': 'The same cost formula must be used for all inventories of similar nature and '
+             'use to the entity; a mere difference in geographic location is **not**, by '
+             'itself, grounds for using a different formula.'},
+    {'h4': 'Recognition and disclosure'},
+    {'ul': [
+      'The carrying amount is expensed when the inventory is sold, exchanged or distributed '
+      '(matched to the period the related revenue, if any, is recognised) — or, with no '
+      'related revenue, when the goods are distributed or the service rendered.',
+      'Any **write-down** to net realisable/replacement value, and any inventory loss, is '
+      'expensed in the period it occurs; a later **reversal** of a write-down reduces the '
+      'expense in the period of reversal.',
+      '**Disclose:** the accounting policy and cost formula used; the total carrying amount and '
+      'its classification; the carrying amount held at fair value less costs to sell; and any '
+      'write-down reversal recognised in the period.',
+    ]},
+  ]},
+
+  {'n': '11.9', 't': 'Loss of government fund and the Federal Losses Committee', 'b': [
+    {'h4': 'Types of loss'},
+    {'ul': [
+      'Misappropriation of funds.', 'Falsification of records.',
+      'Conversion of funds to personal use.', 'Fraudulent payments.', 'Theft.', 'Negligence.',
+      'Abandonment of revenue receivable.',
+      'Abandonment of an advance granted from recurrent expenditure.', 'Loss of cash.',
+    ]},
+    {'h4': 'The accounting officer\'s own surcharge power'},
+    {'p': 'Where a **cash loss of ₦50,000 or less** occurs with no fraud involved, the '
+          'accounting officer is personally empowered to **surcharge the responsible officer '
+          'up to the full amount**, and is personally responsible for seeing that this is done. '
+          'Losses involving an officer above Grade Level 10 must still be reported to the '
+          'Accountant-General. Whichever way it is treated, the accounting officer sends a '
+          'brief report to the **Chairman of the Federal Civil Service Commission, the '
+          'Auditor-General, the Accountant-General and the Federal Ministry of Finance**.'},
+    {'p': 'The officer in whose office the loss occurs must: report immediately to the head of '
+          'unit/division (by the fastest means, if away from headquarters); report to the '
+          'Police if fraud or theft is suspected; complete **Treasury Form 146** ("Report on '
+          'Loss of Funds or Inventories") Part II, in quintuplicate, and forward it up; fix any '
+          'control weakness found; and ensure the accounting entries are made.'},
+    {'def': {'t': 'Federal Losses Committee', 'd': 'a **standing committee** considering every '
+             'case of loss of cash, stores and vehicles. Chaired by a representative of the '
+             '**Auditor-General**, with representatives of the **Accountant-General**, the '
+             'administration department of the ministry/agency concerned, the '
+             '**Inspector-General of Police**, and the **EFCC**; the Inspectorate Department of '
+             'the Accountant-General\'s office provides the secretariat.'}},
+    {'p': 'It meets with officers of the Treasury, the Civil Service Commission and NIPOST to '
+          'investigate reported losses of cash, stores, plant and equipment from theft, fraud '
+          'or negligence (and on the death of a government debtor), examining the Board of '
+          'Enquiry report and the relevant files, in order to **apportion blame** and recommend '
+          '**surcharge, write-off or preventive measures**.'},
+    {'table': {'align': 'lll', 'head': ['Event', 'Debit', 'Credit'], 'rows': [
+      ['Loss of cash', 'Non-Personal Advance A/c', 'Cash A/c'],
+      ['Fraudulent payment/overpayment, discovered same year',
+       'Non-Personal Advance A/c', 'Relevant sub-head'],
+      ['Same, but charged to CRF/Development Fund in a prior year',
+       'Non-Personal Advance A/c', 'Relevant sub-head'],
+      ['Same, but charged to another public fund (not CRF/DF) in a prior year',
+       'Non-Personal Advance A/c', 'Account originally debited'],
+      ['Abandoning recovery of an advance', 'Loss of Fund A/c', 'Advance A/c'],
+      ['Recovery of an amount earlier written off to a Non-Personal Advance',
+       'Cash/Bank A/c', 'Non-Personal Advance A/c'],
+    ]}},
+    {'note': 'A prior-year overpayment **not** involving fraud, charged to the CRF or DF, an '
+             'abandoned bicycle advance from recurrent expenditure, and an abandoned unpaid '
+             'revenue receivable, all need **no adjusting entry** — the Accountant-General '
+             'simply recognises the loss.'},
+  ]},
+
+  {'n': '11.10', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'h3': 'Section A'},
+    {'eg': {'tag': 'Study text', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
+      {'ol': [
+        'Where a cash loss of ₦50,000 or less has occurred without fraud, the accounting '
+        'officer\'s report of the loss must be sent to all of the following EXCEPT one: '
+        '(A) The Chairman, Federal Civil Service Commission  (B) The Inspector-General of '
+        'Police  (C) The Auditor-General for the Federation  (D) The Accountant-General of '
+        'the Federation  (E) The Federal Ministry of Finance',
+        'The composition of the Federal Losses Committee includes the following, with the '
+        'exception of one: (A) A representative of the Auditor-General for the Federation  '
+        '(B) A representative of the Accountant-General of the Federation  (C) A '
+        'representative of the Inspector-General of Police  (D) A representative of the '
+        'Governor of the Central Bank  (E) A representative of the Economic and Financial '
+        'Crimes Commission (EFCC)',
+        'The functions of the storekeeper include the following, with the exception of one: '
+        '(A) Maintenance of proper accounting records that timely reflect transactions  '
+        '(B) Diligent arrangement of the store  (C) Ensuring cleanliness of the store  '
+        '(D) Invitation of purchase requisitions from the needy department  (E) Carrying out '
+        'a market survey or obtaining quotations/tenders from a prospective supplier',
+        'Which of the following is NOT covered by the exceptions from IPSAS 12 for '
+        'inventories? (1) Work-in-progress under a construction contract  (2) Assets to be '
+        'consumed in the production of goods or services for sale  (3) Financial instruments  '
+        '(4) Biological assets related to agricultural activity and produce at the point of '
+        'harvest  (5) Work-in-progress on services to be provided for no or nominal '
+        'consideration',
+        'The following, except one, are items on the debit side of the shortfall-and-excess '
+        'account when treating unallocated inventories: (i) Claims written-off  (ii) '
+        'Inventories written-off  (iii) Inventories found surplus and taken on charge  (iv) '
+        'Revaluation of inventories  (v) Transfer to Unallocated Inventories Deficiencies '
+        'sub-head',
+        'The estimated selling price in the ordinary course of operations, less the '
+        'estimated costs of completion and of making the sale, exchange or distribution, is '
+        'called …',
+        'The cost formula that adds the purchase cost of an item at the start of a period to '
+        'its purchase cost at the end and divides by two is called …',
+        'The method of arriving at the value at which inventories are taken on charge, when '
+        'the full landed cost is not yet available, is called …',
+        'A method used to refine inventory control to balance holding too much against too '
+        'little inventory is called …',
+        'Inventories whose cost is chargeable to, and remains a charge on, the NCOA code for '
+        'which funds were provided in the budget estimates are called …',
+      ]}],
+      'a': [
+      {'p': '**1.** B  **2.** D  **3.** E  **4.** B  **5.** C  **6.** Net realisable value  '
+            '**7.** Weighted average cost  **8.** Last known price method  **9.** Economic '
+            'Order Quantity (EOQ)  **10.** Allocated inventories'}]}},
+    {'h3': 'Section B'},
+    {'eg': {'tag': 'Study text', 't': 'Question 1 — actions on loss of government inventory',
+      'open': True, 'q': [
+      {'p': 'In the event of a loss of government inventory, explain the actions to be taken '
+            'by (i) the storekeeper, (ii) the head of department, and (iii) the accounting '
+            'officer.'}],
+      'a': [
+      {'h4': '(i) The storekeeper'},
+      {'ol': [
+        'Report to the head of department.',
+        'Report to the nearest police station if fraud or theft is possible.',
+        'Complete Part I of Treasury Form 146 and forward it to the head of department.',
+        'Ensure any internal-control weakness found is fixed at once, to prevent recurrence.',
+      ]},
+      {'h4': '(ii) The head of department'},
+      {'ol': [
+        'Forward brief details of the loss to the accounting officer.',
+        'Investigate the loss and complete Parts II and III of Treasury Form 146.',
+        'Recommend a Board of Enquiry to the accounting officer where warranted.',
+        'Strengthen any internal-control weakness identified.',
+        'Obtain and transmit copies of the police report or court proceedings to the '
+        'accounting officer.',
+      ]},
+      {'h4': '(iii) The accounting officer'},
+      {'p': 'If the loss is **not significant**: complete Part IV of TF 146 and copy it to the '
+            'Accountant-General, the Auditor-General, and the Head of the Accounts Department.'},
+      {'p': 'If the loss is **material**: forward details to the Accountant-General and '
+            'Auditor-General for follow-up; convene a Board of Survey if warranted; recommend '
+            'suspension of the officer where disciplinary action is called for; write to the '
+            'Accountant-General, the Auditor-General and the Federal Civil Service Commission '
+            'with the police report and TF 146 attached; review and tighten the internal '
+            'control system; and recoup the loss as the procedures require.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 2 — a Board of Enquiry', 'open': True, 'q': [
+      {'p': '(a) What circumstances would warrant setting up a Board of Enquiry? (b) State '
+            'the contents of a Board of Enquiry\'s report.'}],
+      'a': [
+      {'p': '**(a)** If fraud is probable; if the loss is substantial; if several officers are '
+            'involved; if responsibility is not clearly defined; or if the loss took place '
+            'over a period of time.'},
+      {'p': '**(b)** A statement of the exact amount lost; an assessment of whether the '
+            'accounting system was faulty and any remedy to institute; recommendations to '
+            'improve physical security where it was inadequate; and a recommendation on the '
+            'extent of negligence of the officers responsible.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 3 — loss of government inventory/fund',
+      'open': True, 'q': [
+      {'p': '(a) What is loss of government inventory/fund? (b) List the types of losses that '
+            'can arise in the public sector. (c) State the actions to be taken by the Head of '
+            'Division where the officer concerned serves.'}],
+      'a': [
+      {'p': '**(a)** A depletion of government fund at a given time.'},
+      {'p': '**(b)** Misappropriation of funds; falsification of records; conversion of funds '
+            'to personal use; theft; negligence; abandonment of revenue receivable; '
+            'abandonment of an advance from recurrent expenditure; and loss of cash.'},
+      {'p': '**(c)** The same actions as the head of department: forward details to the '
+            'accounting officer, investigate and complete TF 146 Parts II and III, recommend a '
+            'Board of Enquiry where warranted, correct any control weakness, and forward any '
+            'police report or court proceedings.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Question 4 — IPSAS 12 recognition and disclosure',
+      'open': True, 'q': [
+      {'p': '(a) Explain the recognition of inventories as an expense. (b) State what IPSAS 12 '
+            'requires the financial statements to disclose.'}],
+      'a': [
+      {'p': '**(a)** When inventories are sold, exchanged or distributed, their carrying '
+            'amount is recognised as an expense in the period the related revenue is '
+            'recognised (or, if there is none, when the goods are distributed or the service '
+            'rendered); a write-down or loss is expensed when it occurs, and a reversal of a '
+            'write-down reduces the expense in the period of reversal.'},
+      {'p': '**(b)** The accounting policy and cost formula used; the total carrying amount of '
+            'inventories and its classification; the carrying amount held at fair value less '
+            'costs to sell; and the amount of any write-down reversal recognised in the '
+            'period.'}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Closing stores balance',

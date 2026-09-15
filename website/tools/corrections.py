@@ -93,6 +93,16 @@ CHAPTER_KEYS = {
       'index analysis trend',
   20: 'investment appraisal project payback net present value internal rate of return '
       'discounted cash flow profitability index cost benefit social discount rate',
+  21: 'treasury single account tsa e-payment e-collection atrrs ippis gifmis ghost worker '
+      'open treasury portal e-receipt fter e-invoicing nrs tmras remita zero balanced '
+      'account cash management economic reform governance project ergp',
+  22: 'efcc economic financial crimes commission icpc corrupt practices code of conduct '
+      'bureau tribunal public complaints commission ombudsman money laundering '
+      'gratification bribery asset declaration judiciary ethics',
+  23: 'audit auditor general public accounts committee compliance financial performance '
+      'value for money economy efficiency effectiveness internal audit intosai code of '
+      'ethics audit query surcharge sanction pre-payment post-payment interim final '
+      'management operational vouching verification audit',
  },
  'QA': {
   1: 'primary secondary data questionnaire census sample sampling frame random stratified '
