@@ -127,6 +127,7 @@ RE_QNUM_ROMAN = re.compile(
     r')[.)]\s*(.*)$', re.I)
 RE_OPT   = re.compile(r'^\s{0,24}([A-E])[.,)]\s*(\S.*)?$')
 RE_PRE   = re.compile(r'^\s*Use\s+the\s+(following|data|table|information|Euler)', re.I)
+RE_PRE_RANGE = re.compile(r'questions?\s+(.+)', re.I)
 RE_KEY   = re.compile(r'^\s*(\d{1,2})[.)]?\s*([A-E])[.)]?\s*$')
 
 
@@ -197,9 +198,37 @@ def _finish(part):
     return {'t': money(tidy(' '.join(l.strip() for l in lines if l.strip())))}
 
 
+def pre_range_end(pre_lines):
+    """The last question number a "Use the following ... to answer questions
+    9 to 12" preamble applies to — the max of every integer following the
+    word "question(s)" in it, which survives every phrasing seen in these
+    papers ("9 to 12", "9 & 10", "13" alone, "4, 5 and 6", "16 – 19", ...).
+    None if the preamble does not name a range at all (rare; those keep the
+    old unbounded behaviour rather than being dropped outright). Only the
+    preamble's own first line is examined — the range is always stated
+    there ("...to answer questions 9 to 12") — never the scenario text
+    that follows on later lines, which is often full of unrelated numbers
+    (amounts, years) that would otherwise be mistaken for question numbers."""
+    if not pre_lines:
+        return None
+    m = RE_PRE_RANGE.search(pre_lines[0])
+    if not m:
+        return None
+    nums = [int(x) for x in re.findall(r'\d+', m.group(1))]
+    return max(nums) if nums else None
+
+
 def parse_mcq(block):
-    """Numbered stems with A-E options; a shared preamble carries onto its group."""
+    """Numbered stems with A-E options; a shared preamble carries onto its
+    group — but only for the range of question numbers it actually names.
+    Without this a preamble like "Use the following information to answer
+    questions 9 to 12" would keep attaching to every question from 13
+    onward until (if ever) the next "Use the following..." line appears,
+    silently mixing an unrelated scenario's vocabulary into every question
+    in between — confirmed happening live (a Public Procurement question
+    was carrying a pensions preamble meant only for questions 9-12)."""
     qs, cur, pre, pending = [], None, [], []
+    pre_end = None
     expect = 1
 
     def close():
@@ -235,13 +264,16 @@ def parse_mcq(block):
             if pending:
                 pre = squeeze(pending)
                 pending = []
+                pre_end = pre_range_end(pre)
+            if pre_end is not None and expect > pre_end:
+                pre, pre_end = [], None
             cur = {'n': expect, '_stem': [mq.group(2)], '_opts': [], 'pre': pre}
             expect += 1
             continue
 
         if RE_PRE.match(line):
             flush()
-            pre = []
+            pre, pre_end = [], None
             pending = [line.strip()]
             continue
 
@@ -261,8 +293,15 @@ def parse_mcq(block):
 
 
 def parse_numbered(block, limit=40, expect=1):
-    """Short-answer questions or their solutions: numbered prose, table-tolerant."""
+    """Short-answer questions or their solutions: numbered prose, table-tolerant.
+
+    A shared preamble stays attached for exactly the range of question
+    numbers it names (see pre_range_end / parse_mcq above) — not just the
+    single question right after it (which would leave the rest of the
+    range with no shared data at all) and not forever (which would smear
+    it onto every later question until, if ever, a new preamble appears)."""
     items, cur, pre, pending = [], None, [], []
+    pre_end = None
     for raw in block:
         line = raw.rstrip()
         if not line.strip():
@@ -279,8 +318,10 @@ def parse_numbered(block, limit=40, expect=1):
             if pending:
                 pre = squeeze(pending)
                 pending = []
+                pre_end = pre_range_end(pre)
+            if pre_end is not None and expect > pre_end:
+                pre, pre_end = [], None
             cur = {'n': expect, 'body': [tidy(m.group(2))], 'pre': pre}
-            pre = []
             expect += 1
             continue
 
@@ -291,8 +332,10 @@ def parse_numbered(block, limit=40, expect=1):
             if pending:
                 pre = squeeze(pending)
                 pending = []
+                pre_end = pre_range_end(pre)
+            if pre_end is not None and expect > pre_end:
+                pre, pre_end = [], None
             cur = {'n': expect, 'body': [tidy(mr.group(2))], 'pre': pre}
-            pre = []
             expect += 1
             continue
 
@@ -300,6 +343,7 @@ def parse_numbered(block, limit=40, expect=1):
             if cur:
                 items.append(cur)
                 cur = None
+            pre, pre_end = [], None
             pending = [line.strip()]
             continue
 

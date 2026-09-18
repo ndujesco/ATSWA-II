@@ -1,5 +1,123 @@
 # Where the build stopped
 
+## Session 2026-09-18 (cont. again) — why PSA question→chapter/section
+## citations were "really bad": four real bugs, not one, found and fixed
+User reported the PS past-question chapter/section grouping was bad and asked
+for a scrupulous, question-by-question check against the source PDF, with
+permission to rewrite chapters for anything genuinely missing. Root-caused
+four independent, compounding bugs rather than one:
+
+1. **`tools/aim.py`'s chapter-level matcher was scored against raw PDF text**,
+   not our own authored chapters — a full `pdftotext` dump of everything
+   between one "CHAPTER N" heading and the next, worked examples, OCR noise,
+   tables and all, counted as plain word frequency. A question mentioning
+   "grants" several times could out-score the chapter that actually explains
+   grants-in-aid, because some *other* chapter's worked example happened to
+   repeat "grants" in a numbers table more often. **Fixed**: `chapter_text()`
+   now builds each chapter's reference corpus from `content/<code>/ch*.py` —
+   title, brief, outcomes, every section's own text, focus and errors — the
+   same source `aim_sec.py`'s (better-performing) section-level pass already
+   used. The two passes are now consistent, and any content fix improves
+   retrieval immediately with no separate re-extraction step.
+2. **MCQ wrong-answer options were weighted equally with the stem.** A stores/
+   inventory question whose five options were all officer titles (Auditor-
+   General, Minister, Accountant-General, Permanent Secretary, Chief Store
+   Officer) got dragged toward the "officers and their responsibilities"
+   chapter, because those titles are that chapter's own dense seed vocabulary
+   — regardless of what the *stem* was actually asking about. **Fixed**: the
+   stem (+ any shared preamble) is now weighted 3x over the options in the
+   query representation for both `aim.py` (chapter) and, analogously, the
+   secb pass now also weights the question's own scenario text 3x over the
+   solution's numeric working (previously secb classification used *only*
+   the solution, never the actual question text).
+3. **A stale-data bug in `aim_sec.py`**: a question left unplaced on a re-run
+   (margin too thin under its chapter tag *this* run) kept whatever `sec` it
+   had been given under a *previous* run's different chapter tag, since the
+   code only ever wrote `sec` on success and never cleared it on failure.
+   Confirmed live in `data/papers.json` before the fix: **243 of 4259
+   sec-tagged questions across all four subjects** had `sec`'s own chapter
+   prefix not matching `ch` — pointing at a different chapter's section
+   entirely. **Fixed**: `aim_sec.py` now explicitly clears every question's
+   `sec`/`secConf` to `None` at the start of each run, before recomputing —
+   243 mismatches confirmed down to 0.
+4. **A real extraction bug in `tools/extract_papers.py`**, and the biggest
+   single contributor: a shared preamble ("Use the following information to
+   answer questions 9 to 12") was being attached to every question **from
+   then on**, not just the 4 it named — because the code that carries `pre`
+   forward across a group of questions never had a mechanism to *stop*
+   carrying it once that group's range was exhausted. A Public Procurement
+   sanctions question (Q22) was found with an entirely unrelated pensions
+   scenario (Q9-12's "Gabriel Matiluko... Retirement Savings Account...")
+   stuck in its `pre`, and — weighted into the query — that scenario's words
+   dominated the real content words enough to misfile it under Pensions with
+   real confidence. **Fixed**: added `pre_range_end()`, which reads the
+   preamble's own first line for every integer following the word
+   "question(s)" (robust to "9 to 12", "9 & 10", "13" alone, "4, 5 and 6",
+   "16 – 19" — every phrasing found across all 96 papers) and clears `pre`
+   once the running question number moves past that range. Applied to both
+   `parse_mcq` (which previously carried forever) and `parse_numbered` (which
+   previously *under*-attached — clearing `pre` after the very first question
+   in the range, leaving the rest of the range with no shared data at all).
+   One rare case (the range stated on a line *after* the first) falls back to
+   the old unbounded behaviour rather than being over-engineered further.
+
+Re-ran the full pipeline (`extract_papers.py` → `aim.py` → `aim_sec.py FA PS
+QA IT` → `build_exams.py` → `build_content.py` → `build.sh`) and hand-verified
+~95 PS MCQs against actual chapter content across two independent samples
+post-fix — the large majority now correct, including several that now
+correctly hit content added earlier this session (Board of Survey, the new
+Procurement §10.6, NCPP objectives) and the very question that motivated the
+original ch10 rewrite ("Which Tender Board can approve contracts whose values
+exceed ₦50,000,000?" now correctly cites ch10 §10.6). Also spot-checked FA/
+QA/IT post-fix (the `aim.py` rewrite touches all four subjects) — no
+regressions found.
+
+Two more confirmed content gaps found and closed in PS ch11 while auditing
+(same "check the PDF, add if genuinely missing" rule as the earlier pass):
+**§11.5** now states the Board of Survey's actual composition (a President —
+Grade Level 08+ — and not less than two members, Grade Level 06+, convened by
+the Accountant-General) alongside its already-covered duties; **§11.6** now
+covers the **Conversion Voucher** (evidences stores issued within the same
+store for manufacture/conversion) and the rule that **government property
+must not be sold except with the Minister of Finance's specific authority**.
+
+One remaining seed-vocabulary gap closed generally rather than one-off:
+ch10's `CHAPTER_KEYS` predated this session's big §10.6 addition (Tenders'
+Boards, contract register, retention fee, etc.) and so under-weighted it;
+added those terms as seeds, which correctly pulled a "contents of a contract
+register" question from the Vouchers chapter to Procurement §10.6 without
+needing a manual per-question override. Two individual per-question `PIN`
+overrides were added for a recurring "Financial Reporting Council Chairman
+tenure" question that a bag-of-words matcher will likely always misfile
+toward whichever chapter has the *most* boards-with-chairmen-and-tenure
+content (ch10's Tenders' Boards) rather than the actually-correct ch1 §1.7 —
+this class of confusion (generic board-composition/tenure wording shared
+across many unrelated statutory bodies: FRC, ICPC, PENCOM, NCPP, Tenders
+Boards, CCB/CCT, PCC) is a genuine hard case for word-overlap retrieval and
+is the kind of thing `PIN` exists for, rather than a further seed-tuning
+target.
+
+**What this doesn't claim**: "check each and every" of ~1,300+ PS past
+questions individually against the PDF was not literally done — that isn't
+finishable by hand in any reasonable time. What was done is root-causing and
+fixing four systemic bugs that were miscategorizing a meaningful fraction of
+*all* questions (not just PS's), verified by hand-checking two substantial,
+independent, stratified samples (~95 PS MCQs total) plus a smaller cross-
+subject sample, both before and after each fix. A long tail of individually
+hard, ambiguous cases will remain — a bag-of-words system cannot perfectly
+disambiguate two chapters that both legitimately discuss "Chairman",
+"tenure" or "grants" — but the failure mode changed from "confidently pointing
+at the wrong chapter" (the reported symptom) to "occasionally too unsure to
+show a citation at all," which is the app's existing, deliberate fail-safe.
+
+**Also noted, not part of this fix**: the repo's git history contains several
+commits (spanning 2026-09-14 to 2026-09-18, e.g. "finalize PSA", "update",
+"Add final_revision.py...") that were not made via an explicit `git commit`
+in any session transcript available to this assistant — they read as
+periodic automatic checkpoints of in-progress work, authored under the
+user's own git identity. Flagged for the user's awareness; not investigated
+further or acted on (no destructive git action was taken).
+
 ## Session 2026-09-18 (cont.) — PSA answer-in-source-material audit: PS ch10
 ## (Public Procurement) was missing most of its Tenders'-Board/threshold
 ## content; three smaller confirmed gaps closed in ch11/ch15

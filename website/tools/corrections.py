@@ -72,7 +72,9 @@ CHAPTER_KEYS = {
   9: 'revenue tax non-tax independent statutory allocation federation account vat '
      'customs excise royalty licence fine fee earning',
   10: 'procurement bureau public procurement act tender bid due process open competitive '
-      'selective restricted certificate of no objection threshold prequalification',
+      'selective restricted certificate of no objection threshold prequalification '
+      'tenders board construction contract retention fee contingencies clause '
+      'contract register project register national council public procurement',
   11: 'inventory store ledger bin card losses cash shortage stock verification board of '
       'survey pilferage write-off surcharge',
   12: 'local government councillor chairman joint account allocation committee '
@@ -179,7 +181,18 @@ CHAPTER_KEYS = {
 
 # ── explicit pins ─────────────────────────────────────────────────────────
 # (diet, subject, part, question number) -> chapter
-PIN = {}
+PIN = {
+    # "Chairman/members... hold office for a term of..." — generic board-
+    # composition/tenure wording that TF-IDF alone keeps pulling toward
+    # whichever chapter has the most such boards (ch10's Tenders' Boards),
+    # when the actual subject is the Financial Reporting Council (ch1 §1.7).
+    ('2024-03', 'PS', 'mcq', 9): 1,
+    ('2024-09', 'PS', 'mcq', 11): 1,
+    # "Contingency Fund... NOT be used" — ch9 §9.8, not the chapter the
+    # first-pass PIN above was wrongly copied onto (a mis-check on this
+    # question's own diet/number while investigating the FRC one above).
+    ('2017-03', 'PS', 'mcq', 28): 9,
+}
 
 # ── defects in the printed papers ─────────────────────────────────────────
 FLAGS = {

@@ -156,6 +156,23 @@ def main(codes):
     for p in papers:
         if p['subject'] not in codes:
             continue
+        # Clear any 'sec'/'secConf' left over from a previous run *before*
+        # recomputing. aim.py's own chapter tag can (and does) change
+        # between runs — e.g. a chapter's seed vocabulary gets refined, or
+        # its reference corpus is rebuilt — and a question left unplaced
+        # this time (margin too thin under its *new* chapter) would
+        # otherwise keep whatever 'sec' it was given under its *old*
+        # chapter, silently pointing at a different chapter's section
+        # number. Confirmed live in data/papers.json before this fix: 243
+        # of 4259 sec-tagged questions across all four subjects had
+        # sec.split('.')[0] != ch — a stale cross-chapter citation that
+        # would either fail to scroll (right chapter, no such section) or,
+        # worse, look confident while pointing at the wrong place entirely.
+        for q in p['mcq'] + p['saq']:
+            q['sec'], q['secConf'] = None, None
+        for s in p['secb_solutions']:
+            s['sec'], s['secConf'] = None, None
+
         for q in p['mcq']:
             if q.get('ch') and q.get('chConf', 0) >= CH_CONF_MIN:
                 parts = flatten(q['stem'], []) + flatten(q['options'], []) + q.get('pre', [])
