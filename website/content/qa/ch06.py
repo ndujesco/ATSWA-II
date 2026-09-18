@@ -138,6 +138,33 @@ CH = {
   ]},
 
   {'n': '6.5', 't': 'Worksheet summary — definitions and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§6.1 What an index number is** — measures change in a variable relative to a base '
+      'period = 100. Uses: inflation (CPI), deflating money series, wage/pension adjustment, '
+      'comparison across time/region, policy/forecasting. Construction problems: choosing a '
+      'normal (not boom/slump, not too remote) base period; a representative, manageable item '
+      'basket; the weights and how often to revise them; which formula (Laspeyres/Paasche/'
+      'Fisher give different answers); reliable price data; quality changes; and items that '
+      'disappear or are newly introduced.',
+      '**§6.2 Unweighted indices** — price/quantity relative $=p_1/p_0\\times100$; the simple '
+      '**aggregate** index $\\sum p_1/\\sum p_0\\times100$ is unsound (unit-dependent — never '
+      'use it where a weighted index is available); the simple **average of relatives** fixes '
+      'the unit problem but still weights every item equally.',
+      '**§6.3 Weighted indices** — **Laspeyres** (base-year quantity weights, overstates '
+      'inflation — ignores substitution); **Paasche** (current-year weights, understates '
+      'inflation, costlier to compute); **Marshall-Edgeworth** ($q_0+q_1$ weights); '
+      '**Fisher\'s ideal** $=\\sqrt{P_L\\times P_P}$ (satisfies time- and factor-reversal '
+      'tests). Quantity indices mirror the price ones with $p$ and $q$ swapped. Laspeyres is '
+      'always $\\ge$ Paasche when prices rise and consumers substitute away from dearer items.',
+      '**§6.4 Using an index** — the **CPI** is normally a Laspeyres-form weighted price '
+      'index measuring inflation; inflation rate $=(\\text{CPI}_1-\\text{CPI}_0)/'
+      '\\text{CPI}_0\\times100$. **Deflating**: real value $=$ money value $\\div$ price index '
+      '$\\times100$ — a money figure can rise while the real (deflated) figure falls, which is '
+      'the chapter\'s most-examined idea. **Changing the base** (splicing): new index $=$ old '
+      'index $\\div$ old index of the new base year $\\times100$, joining two differently-'
+      'based series on the assumption their internal relative movements are correct.',
+    ]},
     {'h3': 'Definitions'},
     {'ul': [
       '**Index number** — a statistical measure showing the change in a variable, or a group of '
@@ -261,20 +288,20 @@ CH = {
     'a': 1,
     'w': 'Laspeyres holds the basket fixed at base-year quantities, which is why it is cheap to '
          'maintain but overstates inflation by ignoring substitution.',
-    'src': 'Chapter 6.3'},
+    'src': 'Chapter 6.3', 'sec': '6.3'},
    {'q': "If Laspeyres' index is 121 and Paasche's is 116, Fisher's ideal index is",
     'o': ['118.5', '118.47', '237.0', '116.0', '121.0'],
     'a': 1,
     'w': "Fisher's index is the geometric mean of the other two.",
     'calc': 'P_F = \\sqrt{121 \\times 116} = \\sqrt{14{,}036} = 118.47',
-    'src': 'Chapter 6.3'},
+    'src': 'Chapter 6.3', 'sec': '6.3'},
    {'q': 'A salary of ₦450,000 is earned when the price index is 180 (base 100). Its real value '
          'at base-year prices is',
     'o': ['₦810,000', '₦250,000', '₦270,000', '₦450,000', '₦2,500'],
     'a': 1,
     'w': 'Deflate by dividing the money value by the index and multiplying by 100.',
     'calc': '\\frac{450{,}000}{180} \\times 100 = 250{,}000',
-    'src': 'Chapter 6.4'},
+    'src': 'Chapter 6.4', 'sec': '6.4'},
    {'q': 'The main defect of the simple aggregate price index is that',
     'o': ['it is difficult to compute', 'it requires quantity data',
           'its value depends on the units in which the items are quoted',
@@ -282,13 +309,13 @@ CH = {
     'a': 2,
     'w': 'Adding prices quoted in different units lets the item with the largest unit dominate '
          'the index for reasons unconnected with its importance. Weighting removes the problem.',
-    'src': 'Chapter 6.2'},
+    'src': 'Chapter 6.2', 'sec': '6.2'},
    {'q': 'The CPI rose from 148 to 172 over a year. The rate of inflation was',
     'o': ['24%', '16.22%', '13.95%', '86%', '116.22%'],
     'a': 1,
     'w': 'Express the increase as a percentage of the earlier index.',
     'calc': '\\frac{172 - 148}{148} \\times 100 = \\frac{24}{148} \\times 100 = 16.22\\%',
-    'src': 'Chapter 6.4'},
+    'src': 'Chapter 6.4', 'sec': '6.4'},
   ],
   'theory': [
    {'q': "Distinguish between Laspeyres' and Paasche's price indices, stating one advantage and "
@@ -323,6 +350,6 @@ CH = {
         'index equals the change in total value.']},
       {'p': 'Its practical drawback is that it requires both sets of quantities, so it costs as '
             'much to compute as Paasche and is less easily interpreted.'}],
-    'src': 'Chapter 6.3'},
+    'src': 'Chapter 6.3', 'sec': '6.3'},
   ]},
 }

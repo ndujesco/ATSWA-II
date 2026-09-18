@@ -175,13 +175,13 @@ CH = {
     'a': 3,
     'w': 'Independence is a state of mind and appearance required in assurance engagements; it is '
          'not itself one of the five fundamental principles. The fifth is professional behaviour.',
-    'src': 'Chapter 16.1'},
+    'src': 'Chapter 16.1', 'sec': '16.1'},
    {'q': 'An accountant audits financial statements that the same firm prepared. The threat is',
     'o': ['self-interest', 'self-review', 'advocacy', 'familiarity', 'intimidation'],
     'a': 1,
     'w': 'A self-review threat arises when an accountant reviews their own previous work or '
          'judgement, because they are unlikely to identify their own errors objectively.',
-    'src': 'Chapter 16.2'},
+    'src': 'Chapter 16.2', 'sec': '16.2'},
    {'q': 'A distributed ledger technology that records transactions in a secured, transparent and '
          'tamper-resistant manner is called',
     'o': ['cloud computing', 'a blockchain', 'a data warehouse', 'robotic process automation',
@@ -190,14 +190,14 @@ CH = {
     'w': 'A blockchain links cryptographically hashed blocks across a distributed network, making '
          'past records effectively immutable — which is why it is described as immutable, '
          'decentralised and tamper-proof.',
-    'src': 'Chapter 16.4'},
+    'src': 'Chapter 16.4', 'sec': '16.4'},
    {'q': 'A client threatens to dismiss the accountant unless a questionable accounting treatment '
          'is accepted. This is a threat to objectivity described as',
     'o': ['self-interest', 'advocacy', 'familiarity', 'intimidation', 'self-review'],
     'a': 3,
     'w': 'Intimidation arises where actual or perceived pressures, including attempts to exercise '
          'undue influence, deter the accountant from acting objectively.',
-    'src': 'Chapter 16.2'},
+    'src': 'Chapter 16.2', 'sec': '16.2'},
    {'q': 'Which of the following is NOT an advantage of a computerised accounting system?',
     'o': ['Faster processing of large volumes', 'Guaranteed arithmetical accuracy',
           'Instant availability of reports',
@@ -207,7 +207,7 @@ CH = {
     'w': 'A computer applies whatever classification it is told to apply. Deciding whether an item '
          'is capital or revenue remains a matter of judgement, and an error in that judgement is '
          'repeated faithfully.',
-    'src': 'Chapter 16.3'},
+    'src': 'Chapter 16.3', 'sec': '16.3'},
   ],
   'theory': [
    {'q': 'State the FIVE fundamental principles of the IFAC Code of Ethics and explain each '
@@ -243,6 +243,6 @@ CH = {
       {'note': 'A complete answer adds that the Code requires a conceptual framework approach: '
                'identify the threat, evaluate its significance, and apply safeguards to reduce it '
                'to an acceptable level, declining or resigning where no adequate safeguard exists.'}],
-    'src': 'Chapter 16.1'},
+    'src': 'Chapter 16.1', 'sec': '16.1'},
   ]},
 }

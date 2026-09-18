@@ -137,6 +137,22 @@ CH = {
   ]},
 
   {'n': '4.3', 't': 'Worksheet summary — definitions and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§4.1 Correlation** — strength/direction of a *linear* relationship, $-1\\le r\\le1$; '
+      'Pearson\'s $r$ (measured data) and Spearman\'s $r_s=1-6\\sum d^2/n(n^2-1)$ (ranked '
+      'data, tied items share the average of the positions they occupy) with the $d$-column '
+      'always summing to zero as a check; $r^2$ is the proportion of $y$\'s variation '
+      'explained by $x$. **Correlation is not causation** — a high $r$ may reflect a genuine '
+      'causal link either way, a common third cause, or coincidence.',
+      '**§4.2 Regression** — fits $y=a+bx$ by least squares (minimises squared vertical '
+      'distances); $b=(n\\sum xy-\\sum x\\sum y)/(n\\sum x^2-(\\sum x)^2)$, then '
+      '$a=\\bar{y}-b\\bar{x}$; $r$ and $b$ always share the same sign; the line always passes '
+      'through $(\\bar{x},\\bar{y})$ — use that as a check. The line of $y$ on $x$ is **not** '
+      'the line of $x$ on $y$ — use whichever the question asks you to predict. '
+      '**Interpolation** (within the data range) is safe; **extrapolation** (beyond it) is '
+      'not, since there is no evidence the relationship continues.',
+    ]},
     {'h3': 'Definitions'},
     {'ul': [
       '**Univariate** data — one variable. **Bivariate** data — two variables, written as '
@@ -277,13 +293,13 @@ CH = {
     'a': 0,
     'w': 'Compute the sums and apply the slope formula.',
     'calc': 'b = \\frac{3(40) - (6)(21)}{3(14) - 36} = \\frac{-6}{6} = -1',
-    'src': 'Chapter 4.2'},
+    'src': 'Chapter 4.2', 'sec': '4.2'},
    {'q': 'For the same data, the value of $a$ is',
     'o': ['6', '7', '8', '9', '10'],
     'a': 3,
     'w': 'The intercept is the mean of $y$ less $b$ times the mean of $x$.',
     'calc': 'a = 7 - (-1)(2) = 9',
-    'src': 'Chapter 4.2'},
+    'src': 'Chapter 4.2', 'sec': '4.2'},
    {'q': 'In the regression line $y = a + bx$, $y$ is a/an ……… variable while $x$ is a/an ……… '
          'variable.',
     'o': ['constant, dependent', 'constant, independent', 'dependent, independent',
@@ -291,14 +307,14 @@ CH = {
     'a': 2,
     'w': '$y$ is the variable being explained or predicted, so it is dependent; $x$ is the '
          'explanatory variable, so it is independent.',
-    'src': 'Chapter 4.2'},
+    'src': 'Chapter 4.2', 'sec': '4.2'},
    {'q': 'Five items are ranked by two judges and $\\sum d^2 = 18$. Spearman\'s rank correlation '
          'coefficient is',
     'o': ['0.9', '0.1', '−0.1', '0.5', '0.82'],
     'a': 1,
     'w': 'Apply the rank correlation formula with $n = 5$.',
     'calc': 'r_s = 1 - \\frac{6(18)}{5(25-1)} = 1 - \\frac{108}{120} = 1 - 0.9 = 0.1',
-    'src': 'Chapter 4.1'},
+    'src': 'Chapter 4.1', 'sec': '4.1'},
    {'q': 'A correlation coefficient of $-0.92$ indicates',
     'o': ['a weak relationship', 'no relationship',
           'a strong relationship in which $y$ falls as $x$ rises',
@@ -307,20 +323,20 @@ CH = {
     'a': 2,
     'w': 'The magnitude 0.92 shows the relationship is strong; the negative sign shows it is '
          'inverse. It shows association only — it does not establish that $x$ causes anything.',
-    'src': 'Chapter 4.1'},
+    'src': 'Chapter 4.1', 'sec': '4.1'},
    {'q': 'If $r = 0.8$, the percentage of the variation in $y$ explained by the variation in $x$ is',
     'o': ['80%', '64%', '89%', '20%', '36%'],
     'a': 1,
     'w': 'The coefficient of determination is $r^2$.',
     'calc': 'r^2 = 0.8^2 = 0.64 = 64\\%',
-    'src': 'Chapter 4.1'},
+    'src': 'Chapter 4.1', 'sec': '4.1'},
    {'q': 'Which of the following indicates a very steep and upward sloping regression line?',
     'o': ['A gradient of 0.05', 'A gradient of −4.5', 'A gradient of 4.5', 'A gradient of 0',
           'A gradient of −0.05'],
     'a': 2,
     'w': 'Upward sloping means a positive gradient; steep means a large magnitude. A gradient of '
          '4.5 is both.',
-    'src': 'Chapter 4.2'},
+    'src': 'Chapter 4.2', 'sec': '4.2'},
   ],
   'theory': [
    {'q': 'Distinguish between correlation and regression, and explain why a high correlation '
@@ -348,6 +364,6 @@ CH = {
         'of series are tested.']},
       {'p': 'Establishing causation requires a plausible mechanism, correct time ordering, and '
             'ideally controlled experiment — none of which a correlation coefficient supplies.'}],
-    'src': 'Chapter 4.1'},
+    'src': 'Chapter 4.1', 'sec': '4.1'},
   ]},
 }

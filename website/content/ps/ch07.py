@@ -798,21 +798,21 @@ CH = {
     'w': 'Section 85(5) of the Constitution requires the report to go to the National Assembly '
          '— reporting to the legislature rather than to the executive he audits is the core of '
          'his independence.',
-    'src': 'Chapter 7.4'},
+    'src': 'Chapter 7.4', 'sec': '7.4'},
    {'q': 'The accounting officer of a federal ministry is the',
     'o': ['Minister', 'Permanent Secretary', 'Director of Finance and Accounts',
           'Accountant-General', 'Internal Auditor'],
     'a': 1,
     'w': 'The Permanent Secretary is the accounting officer, in full control of and responsible '
          'for the human, material and financial resources of the ministry.',
-    'src': 'Chapter 7.6'},
+    'src': 'Chapter 7.6', 'sec': '7.6'},
    {'q': 'The Auditor-General must submit his report within how many days of receiving the '
          'Accountant-General\'s financial statements?',
     'o': ['60 days', '90 days', '30 days', '180 days', '120 days'],
     'a': 1,
     'w': 'Section 85(5) of the Constitution requires submission within 90 days of receipt of '
          'the Accountant-General\'s financial statements.',
-    'src': 'Chapter 7.4'},
+    'src': 'Chapter 7.4', 'sec': '7.4'},
    {'q': 'Requiring a public officer to make good a loss of public funds caused by his '
          'negligence or breach of duty is known as',
     'o': ['interdiction', 'surcharge', 'virement', 'retirement', 'suspension'],
@@ -820,7 +820,7 @@ CH = {
     'w': 'Surcharge is the personal financial liability imposed under the Financial '
          'Regulations. Interdiction and suspension are disciplinary measures, not financial '
          'ones.',
-    'src': 'Chapter 7.6'},
+    'src': 'Chapter 7.6', 'sec': '7.6'},
    {'q': 'Preparation and publication of the statutory financial statements of the Federation '
          'is the duty of the',
     'o': ['Auditor-General', 'Accountant-General', 'Minister of Finance',
@@ -828,7 +828,7 @@ CH = {
     'a': 1,
     'w': 'The Accountant-General collates, prepares and publishes them (Financial Regulation '
          '107); the Auditor-General audits them and reports to the National Assembly.',
-    'src': 'Chapter 7.3'},
+    'src': 'Chapter 7.3', 'sec': '7.3'},
    {'q': 'A fixed sum entrusted to an officer to meet minor payments, retired and reimbursed on '
          'presentation of vouchers, is authorised by an',
     'o': ['Annual General Warrant', 'Imprest Warrant', 'Virement Warrant', 'Reserve Expenditure '
@@ -836,7 +836,7 @@ CH = {
     'a': 1,
     'w': 'The Imprest Warrant authorises funds to be released to any senior officer who has to '
          'spend the money and account for it periodically.',
-    'src': 'Chapter 7.10'},
+    'src': 'Chapter 7.10', 'sec': '7.10'},
    {'q': 'Which of the following is NOT a duty of the officer controlling expenditure?',
     'o': ['Supervising expenditure so that no payment is made without proper authority',
           'Promptly charging disbursements under the correct heads and sub-heads',
@@ -845,7 +845,7 @@ CH = {
     'a': 2,
     'w': 'Keeping the cashbook is the sub-accounting officer\'s duty; the officer controlling '
          'expenditure keeps the vote book.',
-    'src': 'Chapter 7.13 (study text Section A Q2)'},
+    'src': 'Chapter 7.13 (study text Section A Q2)', 'sec': '7.13'},
    {'q': 'The provisional authority issued before the Appropriation Act comes into force, '
          'allowing services to continue at the previous year\'s level for up to six months, is '
          'the',
@@ -854,14 +854,14 @@ CH = {
     'a': 1,
     'w': 'The Provisional General Warrant keeps government running before the Appropriation Act, '
          'for a maximum of six months or until the Act takes effect, whichever is shorter.',
-    'src': 'Chapter 7.13 (study text Section B Q1)'},
+    'src': 'Chapter 7.13 (study text Section B Q1)', 'sec': '7.13'},
    {'q': 'The remuneration of the Auditor-General for the Federation is a direct charge on the',
     'o': ['Development Fund', 'Contingencies Fund', 'Consolidated Revenue Fund',
           'Federation Account', 'budget of the National Assembly'],
     'a': 2,
     'w': 'To protect the Auditor-General\'s independence, the salary is charged directly on the '
          'Consolidated Revenue Fund and is not subject to the annual appropriation.',
-    'src': 'Chapter 7.13 (study text Section A Q8)'},
+    'src': 'Chapter 7.13 (study text Section A Q8)', 'sec': '7.13'},
   ],
   'theory': [
    {'q': '(a) State eight duties of the Accountant-General of the Federation. (b) State the '
@@ -971,6 +971,6 @@ CH = {
             '**surcharge**: making the officer good the loss personally, in addition to possible '
             'interdiction, suspension, dismissal or criminal prosecution where the conduct '
             'amounts to an offence.'}],
-    'src': 'Chapter 7.3, 7.4, 7.6'},
+    'src': 'Chapter 7.3, 7.4, 7.6', 'sec': '7.3'},
   ]},
 }

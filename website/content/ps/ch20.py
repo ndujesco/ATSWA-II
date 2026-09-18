@@ -339,7 +339,7 @@ CH = {
     'a': 1,
     'w': 'Average investment averages the initial outlay and what is left over (residual '
          'value) at the end of the project\'s life.',
-    'src': 'Chapter 20.3'},
+    'src': 'Chapter 20.3', 'sec': '20.3'},
    {'q': 'A project with an initial outlay of N200,000 recovers N90,000 in Year 1, N80,000 '
          'in Year 2 and N70,000 in Year 3. Under the payback period method, in which year is '
          'the outlay recovered?',
@@ -349,7 +349,7 @@ CH = {
          'Year 2 = 170,000 (30,000 outstanding); Year 3 brings cumulative inflows to '
          '240,000, exceeding the 200,000 outlay partway through the year — so payback falls '
          'within Year 3.',
-    'src': 'Chapter 20.4'},
+    'src': 'Chapter 20.4', 'sec': '20.4'},
    {'q': 'Under the Net Present Value decision rule, a project should be',
     'o': ['Accepted only if its IRR exceeds its ARR', 'Accepted if its NPV is positive, '
           'rejected if negative', 'Accepted regardless of the sign of its NPV, provided the '
@@ -359,7 +359,7 @@ CH = {
     'w': 'A positive NPV means the discounted inflows exceed the discounted outflows '
          '(including the initial outlay), making the project acceptable; a negative NPV '
          'means it should be rejected.',
-    'src': 'Chapter 20.5'},
+    'src': 'Chapter 20.5', 'sec': '20.5'},
   ],
   'theory': [
    {'q': 'A Local Government invests N50,000 in a project with a residual value of N5,000 '
@@ -371,7 +371,7 @@ CH = {
             'Average annual accounting profit = 44,000 / 4 = **N11,000**.'},
       {'p': 'Average investment = (50,000 + 5,000) / 2 = **N27,500**.'},
       {'tex': 'ARR = \\dfrac{11{,}000}{27{,}500} = 0.40\\ or\\ 40\\%'}],
-    'src': 'Chapter 20.3'},
+    'src': 'Chapter 20.3', 'sec': '20.3'},
    {'q': 'A project costs N120,000 and is expected to generate cash inflows of N50,000, '
          'N45,000, N40,000 and N35,000 in years 1–4. Using discount factors of 0.9091, '
          '0.8264, 0.7513 and 0.6830 at 10%, calculate the NPV and advise whether the project '
@@ -388,7 +388,7 @@ CH = {
         ['**NPV**', '', '', '**16,600**'],
       ]}},
       {'p': 'Since the NPV is **positive (N16,600)**, the project should be **accepted**.'}],
-    'src': 'Chapter 20.5'},
+    'src': 'Chapter 20.5', 'sec': '20.5'},
    {'q': 'State any three advantages and three disadvantages of the Payback Period method of '
          'investment appraisal.',
     'marks': 6,
@@ -402,6 +402,6 @@ CH = {
       {'ul': ['Does not consider the time value of money.', 'Ignores variations in the '
         'timing of cash inflows within the payback period.', 'Cash inflows outside the '
         'payback period are ignored.', 'Does not take risk and uncertainty into account.']}],
-    'src': 'Chapter 20.4'},
+    'src': 'Chapter 20.4', 'sec': '20.4'},
   ]},
 }

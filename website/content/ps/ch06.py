@@ -932,7 +932,7 @@ CH = {
     'a': 1,
     'w': 'The PGW is issued under section 82 of the Constitution and is limited to six months '
          'or until the Appropriation Act is passed, whichever is earlier.',
-    'src': 'Chapter 6.11'},
+    'src': 'Chapter 6.11', 'sec': '6.11'},
    {'q': 'Virement is the transfer of funds',
     'o': ['from one head to another', 'from one subhead to another within the same head',
           'from the Development Fund to the Consolidated Revenue Fund',
@@ -940,28 +940,28 @@ CH = {
     'a': 1,
     'w': 'Virement operates within a head and does not change the total appropriated. Moving '
          'money between heads requires a supplementary appropriation.',
-    'src': 'Chapter 6.11'},
+    'src': 'Chapter 6.11', 'sec': '6.11'},
    {'q': 'In zero-based budgeting, the lowest level at which an activity can be separately '
          'evaluated is called a',
     'o': ['decision package', 'decision unit', 'cost centre', 'programme', 'vote'],
     'a': 1,
     'w': 'Decision units are identified first; decision packages are then prepared for each '
          'unit and ranked.',
-    'src': 'Chapter 6.6'},
+    'src': 'Chapter 6.6', 'sec': '6.6'},
    {'q': 'The vote book (DVEA) is maintained on the',
     'o': ['cash basis', 'commitment basis', 'accrual basis', 'modified cash basis',
           'modified accrual basis'],
     'a': 1,
     'w': 'Charging the vote when the order is placed, rather than when payment is made, is what '
          'prevents over-commitment of the appropriation.',
-    'src': 'Chapter 6.11'},
+    'src': 'Chapter 6.11', 'sec': '6.11'},
    {'q': 'Capital expenditure of the Federal Government is financed from the',
     'o': ['Consolidated Revenue Fund', 'Development Fund', 'Contingencies Fund',
           'Federation Account', 'Excess Crude Account'],
     'a': 1,
     'w': 'The Development Fund finances capital expenditure; the Consolidated Revenue Fund '
          'meets recurrent expenditure.',
-    'src': 'Chapter 6.11'},
+    'src': 'Chapter 6.11', 'sec': '6.11'},
    {'q': 'A principal disadvantage of incremental budgeting is that it',
     'o': ['is expensive and time-consuming to operate',
           'perpetuates existing inefficiencies because the base is never examined',
@@ -971,7 +971,7 @@ CH = {
     'a': 1,
     'w': 'Only the increment is scrutinised, so waste embedded in the base carries forward '
          'indefinitely. The other options describe zero-based budgeting.',
-    'src': 'Chapter 6.6'},
+    'src': 'Chapter 6.6', 'sec': '6.6'},
    {'q': 'Which of the following is NOT a purpose of a government budget?',
     'o': ['Legal authorisation of expenditure', 'Determination of the profit of government',
           'Allocation of scarce resources', 'Control of public expenditure',
@@ -980,7 +980,7 @@ CH = {
     'w': 'Government does not compute a profit; its objective is service delivery, and the '
          'budget serves as an economic and financial document, a guide to resource allocation, '
          'a means of accountability and a request to collect and disburse funds.',
-    'src': 'Chapter 6.1, 6.3'},
+    'src': 'Chapter 6.1, 6.3', 'sec': '6.1'},
    {'q': 'Preparation of the Medium-Term Expenditure Framework (MTEF) is the responsibility of '
          'the',
     'o': ['Accountant-General of the Federation', 'Central Bank of Nigeria',
@@ -989,14 +989,14 @@ CH = {
     'a': 2,
     'w': 'Under the Fiscal Responsibility Act 2007, the Minister responsible for finance '
          'prepares the MTEF for the Executive Council and then the National Assembly.',
-    'src': 'Chapter 6.13 (study text Section A Q1)'},
+    'src': 'Chapter 6.13 (study text Section A Q1)', 'sec': '6.13'},
    {'q': 'An unjustified or unnecessary amount added by a ministry to its estimates to escape '
          'an anticipated arbitrary cut by the Ministry of Finance is called',
     'o': ['virement', 'budget padding', 'a supplementary estimate', 'zero-basing',
           'incrementalism'],
     'a': 1,
     'w': 'Budget padding — inflating a bid in anticipation of it being cut.',
-    'src': 'Chapter 6.13 (study text Section A Q10)'},
+    'src': 'Chapter 6.13 (study text Section A Q10)', 'sec': '6.13'},
    {'q': 'A budget in which government plans to spend more than the revenue it will generate '
          'is a',
     'o': ['balanced budget', 'surplus budget', 'deficit budget', 'zero-based budget',
@@ -1004,7 +1004,7 @@ CH = {
     'a': 2,
     'w': 'A deficit budget plans expenditure above expected revenue, to be financed by '
          'borrowing.',
-    'src': 'Chapter 6.13 (study text Section A Q8)'},
+    'src': 'Chapter 6.13 (study text Section A Q8)', 'sec': '6.13'},
   ],
   'theory': [
    {'q': '(a) Explain zero-based budgeting and outline the steps involved in its operation. '
@@ -1113,6 +1113,6 @@ CH = {
                'audit and accountability machinery — are developed more fully in Chapter 7 and '
                'the later chapters on government accounting and audit; this answer draws the '
                'threads together into a single sequence.'}],
-    'src': 'Chapter 6.2, 6.5, 6.6, 6.11'},
+    'src': 'Chapter 6.2, 6.5, 6.6, 6.11', 'sec': '6.2'},
   ]},
 }

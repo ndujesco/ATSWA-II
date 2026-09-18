@@ -183,6 +183,32 @@ CH = {
   ]},
 
   {'n': '13.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§13.1 Rules of differentiation** — $dy/dx$ = instantaneous rate of change / gradient '
+      'of the tangent = the *marginal* quantity in economics. Power rule '
+      '$d(x^n)/dx=nx^{n-1}$; constant multiple, sum, product ($u\\,dv/dx+v\\,du/dx$), quotient '
+      '($(v\\,du/dx-u\\,dv/dx)/v^2$) and chain ($dy/du\\times du/dx$) rules; '
+      '$d(e^{kx})/dx=ke^{kx}$, $d(\\ln x)/dx=1/x$. Check a product-rule answer by expanding '
+      'first where the expansion is easy.',
+      '**§13.2 Maxima and minima** — differentiate, set $dy/dx=0$ to find stationary points, '
+      'differentiate again; second derivative **negative** = maximum (frown shape), '
+      '**positive** = minimum (smile shape), **zero** = inconclusive (possible inflexion). '
+      'Always substitute the $x$ back into the *original* function to get the turning-point '
+      'value.',
+      '**§13.3 Marginal analysis** — $MC=d(TC)/dq$, $MR=d(TR)/dq$, $AC=TC/q$, '
+      '$TR=p\\times q$; profit is maximised where $d\\pi/dq=0\\iff MR=MC$ (confirm with a '
+      'negative second derivative); for any linear demand $p=a-bq$, $MR=a-2bq$ — same '
+      'intercept, **twice** the gradient. **$MC=AC$ exactly at the minimum of AC** — while '
+      '$MC<AC$ the average is still falling, while $MC>AC$ it is rising. Elasticity of demand '
+      '$E_d=(dq/dp)\\times(p/q)$.',
+      '**§13.4 Integration** — reverses differentiation; power rule '
+      '$\\int x^n\\,dx=x^{n+1}/(n+1)+c$ ($n\\ne-1$), constant $\\int k\\,dx=kx+c$, reciprocal '
+      '$\\int(1/x)dx=\\ln x+c$, exponential $\\int e^{kx}dx=(1/k)e^{kx}+c$; definite integral '
+      '$\\int_a^b f(x)dx=F(b)-F(a)$ needs **no** constant (it cancels in the subtraction), but '
+      'every **indefinite** integral must carry $c$ — in a business context $c$ is real data '
+      '(fixed cost, opening stock/balance) recovered from information the question supplies.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Derivative $\\dfrac{dy}{dx}$ (or $f\'(x)$)** — the instantaneous rate of change of $y$ '
@@ -321,38 +347,38 @@ CH = {
     'a': 1,
     'w': 'Apply the power rule to each term; the derivative of the constant 7 is zero.',
     'calc': '\\frac{dy}{dx} = 15x^2 - 4x',
-    'src': 'Chapter 13.1'},
+    'src': 'Chapter 13.1', 'sec': '13.1'},
    {'q': 'A stationary point of $y = f(x)$ is a maximum if, at that point,',
     'o': ['$\\frac{d^2y}{dx^2} > 0$', '$\\frac{d^2y}{dx^2} < 0$', '$\\frac{dy}{dx} > 0$',
           '$\\frac{dy}{dx} < 0$', '$\\frac{d^2y}{dx^2} = 0$'],
     'a': 1,
     'w': 'At a maximum the gradient is decreasing as $x$ increases, so the second derivative '
          'is negative.',
-    'src': 'Chapter 13.2'},
+    'src': 'Chapter 13.2', 'sec': '13.2'},
    {'q': 'If $TC = 100 + 8q + q^2$, the marginal cost at $q = 10$ is',
     'o': ['₦18', '₦28', '₦280', '₦108', '₦8'],
     'a': 1,
     'w': 'Marginal cost is the derivative of total cost.',
     'calc': 'MC = 8 + 2q = 8 + 2(10) = ₦28',
-    'src': 'Chapter 13.3'},
+    'src': 'Chapter 13.3', 'sec': '13.3'},
    {'q': '$\\displaystyle\\int (6x^2 + 4)\\, dx$ equals',
     'o': ['$12x + c$', '$2x^3 + 4x + c$', '$6x^3 + 4x + c$', '$2x^3 + 4 + c$', '$3x^3 + 4x$'],
     'a': 1,
     'w': 'Raise each power by one and divide by the new power, then add the constant.',
     'calc': '\\int (6x^2+4)dx = \\frac{6x^3}{3} + 4x + c = 2x^3 + 4x + c',
-    'src': 'Chapter 13.4'},
+    'src': 'Chapter 13.4', 'sec': '13.4'},
    {'q': 'Profit is maximised at the output where',
     'o': ['total revenue is maximised', 'marginal revenue equals marginal cost',
           'average cost is minimised', 'marginal cost is zero', 'total cost is minimised'],
     'a': 1,
     'w': 'Profit is $TR - TC$; setting its derivative to zero gives $MR - MC = 0$.',
-    'src': 'Chapter 13.3'},
+    'src': 'Chapter 13.3', 'sec': '13.3'},
    {'q': '$\\displaystyle\\int_{1}^{3} 2x \\, dx$ equals',
     'o': ['4', '8', '9', '6', '10'],
     'a': 1,
     'w': 'Integrate to $x^2$ and evaluate between the limits.',
     'calc': '\\Big[x^2\\Big]_{1}^{3} = 9 - 1 = 8',
-    'src': 'Chapter 13.4'},
+    'src': 'Chapter 13.4', 'sec': '13.4'},
   ],
   'theory': [
    {'q': 'A company\'s demand function is $p = 400 - 4q$ and its total cost function is '
@@ -402,6 +428,6 @@ CH = {
       {'note': 'Note $MR = 400 - 8q$ against demand $p = 400 - 4q$: same intercept, twice the '
                'gradient. This holds for every linear demand curve and is a quick check that '
                'the revenue function was differentiated correctly.'}],
-    'src': 'Chapter 13.3'},
+    'src': 'Chapter 13.3', 'sec': '13.3'},
   ]},
 }

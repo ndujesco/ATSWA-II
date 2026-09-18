@@ -835,14 +835,14 @@ CH = {
     'a': 1,
     'w': 'The depreciable amount is cost less residual value, spread evenly over the life.',
     'calc': '\\frac{9{,}000{,}000 - 1{,}000{,}000}{5} = 1{,}600{,}000',
-    'src': 'Chapter 9.2'},
+    'src': 'Chapter 9.2', 'sec': '9.2'},
    {'q': 'An asset with a carrying amount of ₦2,600,000 was sold for ₦2,150,000. The result is',
     'o': ['a profit of ₦450,000', 'a loss of ₦450,000', 'a profit of ₦2,150,000',
           'a loss of ₦2,600,000', 'no gain or loss'],
     'a': 1,
     'w': 'Proceeds below carrying amount give a loss on disposal, charged to profit or loss.',
     'calc': '2{,}150{,}000 - 2{,}600{,}000 = -450{,}000',
-    'src': 'Chapter 9.3'},
+    'src': 'Chapter 9.3', 'sec': '9.3'},
    {'q': 'A building with a carrying amount of ₦28,000,000 is revalued to ₦41,000,000. The '
          'surplus of ₦13,000,000 is',
     'o': ['credited to profit or loss',
@@ -854,7 +854,7 @@ CH = {
     'w': 'IAS 16 requires an upward revaluation to go to other comprehensive income and accumulate '
          'in equity as a revaluation surplus. It reaches profit or loss only where it reverses an '
          'earlier decrease charged there.',
-    'src': 'Chapter 9.4'},
+    'src': 'Chapter 9.4', 'sec': '9.4'},
    {'q': 'Which of the following should NOT be capitalised as part of the cost of a machine?',
     'o': ['Delivery charges', 'Installation and testing costs',
           'Staff training on how to operate it', 'Site preparation costs',
@@ -863,14 +863,14 @@ CH = {
     'w': 'Training benefits the staff, whom the entity does not control, so it fails the '
          'definition of an asset. The other four are directly attributable to bringing the '
          'machine to working condition.',
-    'src': 'Chapter 9.1'},
+    'src': 'Chapter 9.1', 'sec': '9.1'},
    {'q': 'A vehicle costing ₦5,000,000 is depreciated at 25% on the reducing balance. Its '
          'carrying amount at the end of year 3 is',
     'o': ['₦1,250,000', '₦2,109,375', '₦2,812,500', '₦1,875,000', '₦3,750,000'],
     'a': 1,
     'w': 'Apply 25% to the carrying amount each year, or use the factor directly.',
     'calc': '5{,}000{,}000 \\times (1 - 0.25)^3 = 5{,}000{,}000 \\times 0.421875 = 2{,}109{,}375',
-    'src': 'Chapter 9.2'},
+    'src': 'Chapter 9.2', 'sec': '9.2'},
    {'q': 'Treating the cost of repairing a delivery van as capital expenditure will',
     'o': ['understate profit and understate assets', 'overstate profit and overstate assets',
           'overstate profit and understate assets', 'understate profit and overstate assets',
@@ -878,7 +878,7 @@ CH = {
     'a': 1,
     'w': 'The repair should have been an expense. Capitalising it removes the expense (overstating '
          'profit) and adds a non-existent asset (overstating assets). It is an error of principle.',
-    'src': 'Chapter 9.6'},
+    'src': 'Chapter 9.6', 'sec': '9.6'},
    {'q': 'Research expenditure under IAS 38 is',
     'o': ['always capitalised', 'always written off as incurred',
           'capitalised if the six conditions are met', 'capitalised and amortised over five years',
@@ -886,14 +886,14 @@ CH = {
     'a': 1,
     'w': 'Research is always expensed because future benefits cannot be demonstrated. Only '
          '**development** expenditure meeting all six conditions may be capitalised.',
-    'src': 'Chapter 9.5'},
+    'src': 'Chapter 9.5', 'sec': '9.5'},
    {'q': 'Depreciation of an asset that has a fixed period of legal life (a lease or a patent) '
          'is referred to as',
     'o': ['obsolescence', 'amortization', 'diminishing balance', 'depletion', 'appreciation'],
     'a': 1,
     'w': 'Amortization is the term used for writing off an intangible asset or an asset with a '
          'fixed legal life. Depletion is the equivalent for a wasting asset such as a mine.',
-    'src': 'Chapter 9.10 (study text Q4)'},
+    'src': 'Chapter 9.10 (study text Q4)', 'sec': '9.10'},
    {'q': 'An increase in the value of a non-current asset over and above its original cost is '
          'termed',
     'o': ['depreciation', 'appreciation', 'inflation', 'residual value', 'revaluation surplus'],
@@ -901,7 +901,7 @@ CH = {
     'w': 'Appreciation is a rise in value above cost. (A formal upward revaluation recognised '
          'under IAS 16 produces a revaluation *surplus*, but the general term the study text '
          'wants here is appreciation.)',
-    'src': 'Chapter 9.10 (study text Q5)'},
+    'src': 'Chapter 9.10 (study text Q5)', 'sec': '9.10'},
    {'q': 'The depreciable amount of a non-current asset is',
     'o': ['the carrying amount', 'cost less residual value',
           'residual value plus carrying amount', 'residual value less carrying amount',
@@ -909,7 +909,7 @@ CH = {
     'a': 1,
     'w': 'Depreciable amount is cost (or revalued amount) less residual value — the total to be '
          'spread over the useful life.',
-    'src': 'Chapter 9.10 (study text Q7)'},
+    'src': 'Chapter 9.10 (study text Q7)', 'sec': '9.10'},
    {'q': 'An asset that cost ₦43,750,000 has been depreciated at 15% per annum on the reducing '
          'balance for four years. Its carrying amount is approximately',
     'o': ['₦17,500,000', '₦22,838,000', '₦26,868,000', '₦19,688,000', '₦37,188,000'],
@@ -917,7 +917,7 @@ CH = {
     'w': 'Reduce by 15% four times: 43,750 → 37,188 → 31,609 → 26,868 → 22,838 (₦\'000).',
     'calc': '43{,}750{,}000 \\times (1 - 0.15)^4 = 43{,}750{,}000 \\times 0.52200625 \\approx '
             '22{,}838{,}000',
-    'src': 'Chapter 9.10 (examination-type Q2)'},
+    'src': 'Chapter 9.10 (examination-type Q2)', 'sec': '9.10'},
   ],
   'theory': [
    {'q': 'Explain what is meant by depreciation, state FOUR causes of depreciation, and explain '
@@ -943,7 +943,7 @@ CH = {
             'management separately invests that cash there will be nothing available when the '
             'asset must be replaced. Replacement also costs current prices, not historical cost, '
             'so accumulated depreciation would in any case be insufficient.'}],
-    'src': 'Chapter 9.2'},
+    'src': 'Chapter 9.2', 'sec': '9.2'},
    {'q': 'Distinguish between capital and revenue expenditure, and state the effect on the '
          'financial statements of treating revenue expenditure as capital expenditure.',
     'marks': 6,
@@ -969,6 +969,6 @@ CH = {
         'slowly rather than correcting itself.',
         'It is an **error of principle**, so the trial balance still agrees and the error will not '
         'be found by checking the arithmetic.']}],
-    'src': 'Chapter 9.6'},
+    'src': 'Chapter 9.6', 'sec': '9.6'},
   ]},
 }

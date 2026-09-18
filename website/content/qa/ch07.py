@@ -134,6 +134,31 @@ CH = {
   ]},
 
   {'n': '7.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§7.1 Basic terms** — experiment, sample space $S$ (all outcomes), event (a subset of '
+      '$S$), mutually exclusive ($P(A\\cap B)=0$), exhaustive (covers all of $S$), independent '
+      '($P(A\\cap B)=P(A)P(B)$), complement ($P(A\')=1-P(A)$); $P(A)=$ favourable ÷ total '
+      'equally-likely outcomes, $0\\le P(A)\\le1$. **Mutually exclusive is not independent** — '
+      'in fact two such events (with non-zero probability) are strongly *dependent*, since one '
+      'occurring guarantees the other does not.',
+      '**§7.2 The laws of probability** — "or" means **add** (subtract the overlap unless '
+      'mutually exclusive: $P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$); "and" means **multiply** (use '
+      'the conditional probability unless independent: $P(A\\cap B)=P(A)P(B|A)$); conditional '
+      '$P(B|A)=P(A\\cap B)/P(A)$. Always check independence by comparing $P(A)P(B)$ against '
+      'the actual $P(A\\cap B)$ rather than assuming it.',
+      '**§7.3 Counting: permutations and combinations** — permutation ${}^nP_r=n!/(n-r)!$ when '
+      'order matters (chairman/secretary/treasurer); combination ${}^nC_r=n!/(r!(n-r)!)$ when '
+      'it does not (a 3-person committee); ${}^nP_r={}^nC_r\\times r!$. Combinations feed '
+      'directly into probability-without-replacement questions (favourable-selection '
+      'combinations ÷ total-selection combinations).',
+      '**§7.4 Expected value** — $E(X)=\\sum x_ip_i$, the long-run probability-weighted '
+      'average outcome — it need **not** be an attainable value (e.g. 3.5 on a die). When '
+      'choosing between options, the higher $E(X)$ is only one criterion: also weigh risk/'
+      'variability of outcomes, whether there is a downside the decision-maker could not '
+      'survive, whether the decision repeats (EV suits repeated decisions more than one-off '
+      'ones), and the reliability of the probability estimates themselves.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Probability** — a measure, between 0 and 1, of the likelihood that an event occurs. '
@@ -289,13 +314,13 @@ CH = {
     'a': 1,
     'w': 'Each face has probability 1/6, so the expected value is the mean of 1 to 6.',
     'calc': 'E(X) = \\frac{1+2+3+4+5+6}{6} = \\frac{21}{6} = 3.5',
-    'src': 'Chapter 7.4'},
+    'src': 'Chapter 7.4', 'sec': '7.4'},
    {'q': 'If $P(A) = 0.5$, $P(B) = 0.4$ and $P(A \\cap B) = 0.2$, then $P(A \\cup B)$ is',
     'o': ['0.9', '0.7', '0.2', '1.1', '0.3'],
     'a': 1,
     'w': 'Apply the general addition law, subtracting the overlap so it is not counted twice.',
     'calc': 'P(A \\cup B) = 0.5 + 0.4 - 0.2 = 0.7',
-    'src': 'Chapter 7.2'},
+    'src': 'Chapter 7.2', 'sec': '7.2'},
    {'q': 'Two events are mutually exclusive if',
     'o': ['the occurrence of one does not affect the other',
           'they cannot occur at the same time',
@@ -305,20 +330,20 @@ CH = {
     'a': 1,
     'w': 'Mutually exclusive means the events cannot occur together, so $P(A \\cap B) = 0$. '
          'Option A describes independence, which is a different idea.',
-    'src': 'Chapter 7.1'},
+    'src': 'Chapter 7.1', 'sec': '7.1'},
    {'q': 'A committee of 3 is to be chosen from 8 people. The number of possible committees is',
     'o': ['24', '56', '336', '512', '120'],
     'a': 1,
     'w': 'Order does not matter in a committee, so this is a combination.',
     'calc': '{}^{8}C_3 = \\frac{8 \\times 7 \\times 6}{3 \\times 2 \\times 1} = 56',
-    'src': 'Chapter 7.3'},
+    'src': 'Chapter 7.3', 'sec': '7.3'},
    {'q': 'A bag has 5 red and 3 blue balls. Two are drawn without replacement. The probability '
          'that both are red is',
     'o': ['25/64', '5/14', '15/56', '10/28', '1/2'],
     'a': 1,
     'w': 'Without replacement the second draw is conditional on the first.',
     'calc': 'P = \\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{5}{14}',
-    'src': 'Chapter 7.2'},
+    'src': 'Chapter 7.2', 'sec': '7.2'},
    {'q': 'If $P(A) = 0.3$ and $A$ and $B$ are independent with $P(B) = 0.6$, then '
          '$P(A \\cap B)$ is',
     'o': ['0.9', '0.3', '0.18', '0.5', '0'],
@@ -326,7 +351,7 @@ CH = {
     'w': 'For independent events the joint probability is the product of the individual '
          'probabilities.',
     'calc': 'P(A \\cap B) = 0.3 \\times 0.6 = 0.18',
-    'src': 'Chapter 7.2'},
+    'src': 'Chapter 7.2', 'sec': '7.2'},
   ],
   'theory': [
    {'q': 'Distinguish between mutually exclusive events and independent events, and state the '
@@ -349,6 +374,6 @@ CH = {
       {'p': 'The two concepts are often confused but are almost opposites. Two mutually exclusive '
             'events with non-zero probabilities are necessarily **dependent**: knowing that $A$ '
             'has occurred tells you that $B$ certainly has not, so $P(B \\mid A) = 0 \\ne P(B)$.'}],
-    'src': 'Chapter 7.1'},
+    'src': 'Chapter 7.1', 'sec': '7.1'},
   ]},
 }

@@ -454,7 +454,7 @@ CH = {
     'w': 'The quick ratio uses only cash, marketable securities and receivables — the most '
          'liquid current assets — making it stricter than the current ratio, which includes '
          'inventory and prepayments.',
-    'src': 'Chapter 19.3.2(a)'},
+    'src': 'Chapter 19.3.2(a)', 'sec': '19.3'},
    {'q': 'Under IPSAS 24, a comparison of budgeted and actual amounts must be presented '
          'separately for',
     'o': ['Each individual employee', 'Each level of legislative oversight',
@@ -463,7 +463,7 @@ CH = {
     'w': 'IPSAS 24 requires the comparison — original budget, final budget, and actual on a '
          'comparable basis, with variance explanations — to be presented separately for each '
          'level of legislative oversight.',
-    'src': 'Chapter 19.2'},
+    'src': 'Chapter 19.2', 'sec': '19.2'},
    {'q': 'An abnormally high current ratio most likely indicates',
     'o': ['Excellent short-term liquidity with no downside', 'Idle or under-utilised '
           'resources, potentially hurting profitability', 'A high risk of insolvency',
@@ -472,7 +472,7 @@ CH = {
     'w': 'Since most current assets earn little or no return compared with long-term '
          'projects, an abnormally high current ratio signals idle/under-utilised resources '
          'rather than pure strength.',
-    'src': 'Chapter 19.3.2(b)'},
+    'src': 'Chapter 19.3.2(b)', 'sec': '19.3'},
   ],
   'theory': [
    {'q': 'Distinguish liquidity ratios from solvency ratios, giving one example of each and '
@@ -484,7 +484,7 @@ CH = {
             'delay or loss of value. **Solvency ratios** (e.g. the debt ratio) assess an '
             'entity\'s long-term financial viability — its ability to meet long-term '
             'obligations such as bank loans and bonds payable.'}],
-    'src': 'Chapter 19.3.2, 19.3.3'},
+    'src': 'Chapter 19.3.2, 19.3.3', 'sec': '19.3'},
    {'q': 'A Local Government reports current assets of N45,000,000 and current liabilities '
          'of N30,000,000, of which N12,000,000 is inventory. Calculate the current ratio and '
          'the quick ratio, and comment on the difference.',
@@ -496,7 +496,7 @@ CH = {
             'excludes the N12,000,000 of inventory, which is less readily convertible to '
             'cash — both ratios remain above 1, so the Local Government should not face '
             'short-term liquidity difficulty even without selling inventory.'}],
-    'src': 'Chapter 19.3.2, worked example'},
+    'src': 'Chapter 19.3.2, worked example', 'sec': '19.3'},
    {'q': 'State the advantages and limitations of ratio analysis (any three of each).',
     'marks': 6,
     'a': [
@@ -508,6 +508,6 @@ CH = {
       {'ul': ['Cross-area comparisons can mislead, given different regulation/market '
         'structures.', 'Different accounting policies impair comparability.', 'Ratios '
         'explain past relationships, not current/future ones.']}],
-    'src': 'Chapter 19.3.5'},
+    'src': 'Chapter 19.3.5', 'sec': '19.3'},
   ]},
 }

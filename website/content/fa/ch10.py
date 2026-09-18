@@ -405,21 +405,21 @@ CH = {
     'a': 2,
     'w': 'The Partnership Act default is equal sharing, whatever the capitals. This is why an '
          'agreement matters so much where contributions are unequal.',
-    'src': 'Chapter 10.1'},
+    'src': 'Chapter 10.1', 'sec': '10.1'},
    {'q': 'Where there is no agreement, a loan advanced by a partner beyond agreed capital carries '
          'interest at',
     'o': ['nil', '5% a year', '6% a year', '8% a year', 'the commercial bank rate'],
     'a': 1,
     'w': 'The Act allows 5% a year on an advance beyond capital, and that interest is an expense '
          'in arriving at net profit rather than an appropriation of it.',
-    'src': 'Chapter 10.1'},
+    'src': 'Chapter 10.1', 'sec': '10.1'},
    {'q': 'A partner withdrew ₦1,800,000 on 31 March. Interest on drawings is 12% a year and the '
          'year ends 31 December. The interest charged is',
     'o': ['₦216,000', '₦162,000', '₦54,000', '₦108,000', '₦180,000'],
     'a': 1,
     'w': 'Interest runs from the date of the drawing to the year end — nine months.',
     'calc': '1{,}800{,}000 \\times 0.12 \\times \\frac{9}{12} = 162{,}000',
-    'src': 'Chapter 10.3'},
+    'src': 'Chapter 10.3', 'sec': '10.3'},
    {'q': 'Net profit is ₦5,400,000. Interest on capital totals ₦720,000, partners\' salaries '
          '₦1,200,000 and interest on drawings ₦95,000. The residual profit to be shared is',
     'o': ['₦3,385,000', '₦3,575,000', '₦3,480,000', '₦4,575,000', '₦3,385,500'],
@@ -427,7 +427,7 @@ CH = {
     'w': 'Interest on drawings is added back because it increases the pool available; interest on '
          'capital and salaries are deducted.',
     'calc': '5{,}400{,}000 + 95{,}000 - 720{,}000 - 1{,}200{,}000 = 3{,}575{,}000',
-    'src': 'Chapter 10.3'},
+    'src': 'Chapter 10.3', 'sec': '10.3'},
    {'q': 'A debit balance on a partner\'s current account indicates that the partner',
     'o': ['has contributed extra capital', 'has drawn more than has been credited to the account',
           'is owed money by the partnership', 'has made a loan to the partnership',
@@ -436,7 +436,7 @@ CH = {
     'w': 'Current accounts are normally credit balances. A debit balance means drawings and '
          'interest on drawings have exceeded the partner\'s entitlements, so the partner owes '
          'the firm.',
-    'src': 'Chapter 10.2'},
+    'src': 'Chapter 10.2', 'sec': '10.2'},
   ],
   'theory': [
    {'q': 'State SIX matters that should be dealt with in a partnership agreement, and state the '
@@ -465,6 +465,6 @@ CH = {
         'Every partner may take part in the management of the business.',
         'No person may be introduced as a partner without the consent of all existing partners.',
         'The partnership books are kept at the place of business and every partner may inspect them.']}],
-    'src': 'Chapter 10.1'},
+    'src': 'Chapter 10.1', 'sec': '10.1'},
   ]},
 }

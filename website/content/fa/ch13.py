@@ -228,7 +228,7 @@ CH = {
     'w': 'The premium is the excess of issue price over nominal value, per share, times the '
          'number of shares.',
     'calc': '1{,}500{,}000 \\times (32 - 20) = 1{,}500{,}000 \\times 12 = 18{,}000{,}000',
-    'src': 'Chapter 13.2'},
+    'src': 'Chapter 13.2', 'sec': '13.2'},
    {'q': 'Which of the following is NOT a permitted use of the share premium account?',
     'o': ['Issuing fully paid bonus shares', 'Writing off preliminary expenses',
           'Writing off the expenses of an issue of debentures',
@@ -237,7 +237,7 @@ CH = {
     'a': 3,
     'w': 'Share premium is a non-distributable capital reserve. Using it to pay a cash dividend '
          'would return capital to members and reduce the fund creditors rely on.',
-    'src': 'Chapter 13.2'},
+    'src': 'Chapter 13.2', 'sec': '13.2'},
    {'q': 'A bonus issue of shares',
     'o': ['increases total equity and increases net assets',
           'leaves total equity unchanged and leaves net assets unchanged',
@@ -247,7 +247,7 @@ CH = {
     'a': 1,
     'w': 'A bonus issue capitalises reserves: it moves an amount from one part of equity to '
          'another. No cash enters or leaves, so neither total equity nor net assets change.',
-    'src': 'Chapter 13.3'},
+    'src': 'Chapter 13.3', 'sec': '13.3'},
    {'q': 'The tax liability brought forward was ₦2,800,000 and ₦2,600,000 was paid in settlement. '
          'The current year estimate is ₦3,400,000. The charge to profit or loss is',
     'o': ['₦3,400,000', '₦3,600,000', '₦3,200,000', '₦3,000,000', '₦2,600,000'],
@@ -256,14 +256,14 @@ CH = {
          'and the excess is credited back against this year\'s charge.',
     'calc': '3{,}400{,}000 - (2{,}800{,}000 - 2{,}600{,}000) = 3{,}400{,}000 - 200{,}000 '
             '= 3{,}200{,}000',
-    'src': 'Chapter 13.5'},
+    'src': 'Chapter 13.5', 'sec': '13.5'},
    {'q': 'Which of the following does NOT appear in the statement of changes in equity?',
     'o': ['Profit for the year', 'Dividends paid', 'Revaluation surplus arising in the year',
           'Depreciation charge for the year', 'Proceeds of a share issue'],
     'a': 3,
     'w': 'Depreciation is an expense within profit or loss. Only the resulting profit figure '
          'reaches the statement of changes in equity.',
-    'src': 'Chapter 13.6'},
+    'src': 'Chapter 13.6', 'sec': '13.6'},
    {'q': 'Interest on loan notes is',
     'o': ['an appropriation of profit', 'a finance cost charged before profit for the year',
           'deducted from the loan note balance', 'credited to share premium',
@@ -271,7 +271,7 @@ CH = {
     'a': 1,
     'w': 'Loan note holders are creditors, not owners. Their return is contractual and is charged '
          'as a finance cost whether or not the company is profitable.',
-    'src': 'Chapter 13.4'},
+    'src': 'Chapter 13.4', 'sec': '13.4'},
   ],
   'theory': [
    {'q': 'Distinguish between a bonus issue and a rights issue of shares, and state TWO reasons a '
@@ -298,6 +298,6 @@ CH = {
       {'ol': ['To raise new capital more cheaply than a public offer, since issue costs are lower.',
               'To preserve existing shareholders\' proportionate control, since they have first refusal.',
               'To fund expansion or reduce gearing without incurring the fixed interest burden of debt.']}],
-    'src': 'Chapter 13.3'},
+    'src': 'Chapter 13.3', 'sec': '13.3'},
   ]},
 }

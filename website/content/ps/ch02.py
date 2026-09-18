@@ -560,14 +560,14 @@ CH = {
     'a': 1,
     'w': 'Section 80(1) establishes the CRF. Section 162(1) establishes the Federation Account, '
          'section 81(2) the Development Fund and section 83 the Contingencies Fund.',
-    'src': 'Chapter 2.2'},
+    'src': 'Chapter 2.2', 'sec': '2.2'},
    {'q': 'Under the Fiscal Responsibility Act 2007, the aggregate expenditure deficit may not '
          'exceed',
     'o': ['1% of GDP', '3% of GDP', '5% of GDP', '3% of aggregate revenue', '10% of GDP'],
     'a': 1,
     'w': 'Section 12(1) caps the deficit at 3% of estimated GDP, save in exceptional '
          'circumstances.',
-    'src': 'Chapter 2.4'},
+    'src': 'Chapter 2.4', 'sec': '2.4'},
    {'q': 'Where the Appropriation Act has not been passed at the beginning of a financial year, '
          'the President may authorise withdrawals from the Consolidated Revenue Fund for a '
          'maximum period of',
@@ -575,7 +575,7 @@ CH = {
     'a': 1,
     'w': 'Section 82 permits withdrawals for up to six months or until the Appropriation Act '
          'is passed, whichever is earlier.',
-    'src': 'Chapter 2.2'},
+    'src': 'Chapter 2.2', 'sec': '2.2'},
    {'q': 'Scheduled corporations are required by the Fiscal Responsibility Act to remit to the '
          'Consolidated Revenue Fund',
     'o': ['50% of operating surplus', '80% of operating surplus', '100% of operating surplus',
@@ -583,21 +583,21 @@ CH = {
     'a': 1,
     'w': 'The Act requires 80% of the operating surplus, computed in accordance with the '
          'Commission\'s template, to be paid over.',
-    'src': 'Chapter 2.4'},
+    'src': 'Chapter 2.4', 'sec': '2.4'},
    {'q': 'Financial Regulations derive their authority from the',
     'o': ['1999 Constitution directly', 'Finance (Control and Management) Act',
           'Audit Act', 'Public Procurement Act', 'Financial Reporting Council Act'],
     'a': 1,
     'w': 'The Minister of Finance issues them under the Finance (Control and Management) Act '
          '1958, which vests in him the supervision of the finances of the Federation.',
-    'src': 'Chapter 2.7'},
+    'src': 'Chapter 2.7', 'sec': '2.7'},
    {'q': 'Nigeria adopted the accrual basis IPSAS with effect from',
     'o': ['1 January 2014', '1 January 2016', '1 January 2012', '1 January 2018',
           '1 January 2020'],
     'a': 1,
     'w': 'Cash basis IPSAS took effect from 1 January 2014 and accrual basis IPSAS from '
          '1 January 2016.',
-    'src': 'Chapter 2.12'},
+    'src': 'Chapter 2.12', 'sec': '2.12'},
    {'q': 'Which law regulates financial matters and payment or withdrawal from the Consolidated '
          'Revenue Fund?',
     'o': ['Fiscal Responsibility Act 2007', 'Public Procurement Act 2007',
@@ -606,7 +606,7 @@ CH = {
     'a': 3,
     'w': 'Money bills, once passed, become Appropriation Acts, which regulate withdrawals from '
          'the Consolidated Revenue Fund for the year to which they relate.',
-    'src': 'Chapter 2.14 (study text Section A Q4)'},
+    'src': 'Chapter 2.14 (study text Section A Q4)', 'sec': '2.14'},
    {'q': 'The administrative tool used to amend existing provisions of the Financial Regulations '
          'and public service rules, and to introduce new policy guidelines, is the',
     'o': ['Financial Regulations', 'Finance / Treasury circular',
@@ -615,7 +615,7 @@ CH = {
     'a': 1,
     'w': 'Finance / Treasury circulars are administrative instruments issued to amend the '
          'Financial Regulations and public service rules and to introduce new policy.',
-    'src': 'Chapter 2.14 (study text Section A Q2)'},
+    'src': 'Chapter 2.14 (study text Section A Q2)', 'sec': '2.14'},
    {'q': 'The Act that prescribes the basis for distributing revenue in the Federation Account '
          'among the Federal, State and Local Governments is the',
     'o': ['Fiscal Responsibility Act 2007', 'Public Procurement Act 2007',
@@ -624,7 +624,7 @@ CH = {
     'a': 2,
     'w': 'The Allocation of Revenue (Federation Account, etc.) Act 1982 (Cap. A.15 LFN 2004) '
          'prescribes the vertical and horizontal distribution formulae.',
-    'src': 'Chapter 2.14 (study text Section A Q5)'},
+    'src': 'Chapter 2.14 (study text Section A Q5)', 'sec': '2.14'},
   ],
   'theory': [
    {'q': 'The Fiscal Responsibility Act 2007 was enacted to promote prudent management of the '
@@ -709,6 +709,6 @@ CH = {
             'convenient. Strengthening the Commission\'s sanctioning powers, extending the Act '
             'to all tiers, and narrowing the exceptional-circumstances exemption would do more '
             'than further legislation.'}],
-    'src': 'Chapter 2.4'},
+    'src': 'Chapter 2.4', 'sec': '2.4'},
   ]},
 }

@@ -703,12 +703,12 @@ CH = {
     'a': 1,
     'w': 'Not less than 13% of revenue accruing directly from any natural resource is paid to '
          'the state of derivation as a first charge, before the balance is shared.',
-    'src': 'Chapter 9.2'},
+    'src': 'Chapter 9.2', 'sec': '9.2'},
    {'q': 'The current vertical allocation of the Federation Account to the Federal Government is',
     'o': ['48.50%', '52.68%', '56.00%', '26.72%', '20.60%'],
     'a': 1,
     'w': 'The shares are Federal 52.68%, States 26.72% and Local Governments 20.60%.',
-    'src': 'Chapter 9.2'},
+    'src': 'Chapter 9.2', 'sec': '9.2'},
    {'q': 'Value added tax proceeds are shared among the tiers of government in the ratio',
     'o': ['Federal 52.68%, States 26.72%, Local 20.60%',
           'Federal 15%, States 50%, Local 35%',
@@ -718,7 +718,7 @@ CH = {
     'a': 1,
     'w': 'VAT is not part of the Federation Account and has its own pool and formula: 15% '
          'Federal, 50% States, 35% Local Governments.',
-    'src': 'Chapter 9.3'},
+    'src': 'Chapter 9.3', 'sec': '9.3'},
    {'q': 'In the horizontal allocation formula for sharing among states, the principle carrying '
          'the greatest weight is',
     'o': ['population', 'equality of states', 'internal revenue effort', 'land mass',
@@ -726,14 +726,14 @@ CH = {
     'a': 1,
     'w': 'Equality of states carries 40%, population 30%, and internal revenue effort, land '
          'mass and social development 10% each.',
-    'src': 'Chapter 9.2'},
+    'src': 'Chapter 9.2', 'sec': '9.2'},
    {'q': 'Which of the following is a non-tax revenue of government?',
     'o': ['Companies income tax', 'Royalties on crude oil', 'Value added tax',
           'Customs duty', 'Education tax'],
     'a': 1,
     'w': 'Royalties are a payment for the extraction of a natural resource, not a compulsory '
          'levy on income or consumption.',
-    'src': 'Chapter 9.1'},
+    'src': 'Chapter 9.1', 'sec': '9.1'},
    {'q': 'Personal income tax of members of the Armed Forces and residents of the Federal '
          'Capital Territory is collected by',
     'o': ['the State Boards of Internal Revenue', 'the Federal Inland Revenue Service',
@@ -742,7 +742,7 @@ CH = {
     'a': 1,
     'w': 'Section 162(1) excepts this category from the Federation Account, and the FIRS '
          'collects it.',
-    'src': 'Chapter 9.2'},
+    'src': 'Chapter 9.2', 'sec': '9.2'},
   ],
   'theory': [
    {'q': 'Many state and local governments in Nigeria depend heavily on statutory allocation '
@@ -843,6 +843,6 @@ CH = {
                'own citizens is accountable to them in a way that a government financed by an '
                'unearned monthly allocation is not. Raising IGR improves governance as well as '
                'cash flow.'}],
-    'src': 'Chapter 9.1, 9.4'},
+    'src': 'Chapter 9.1, 9.4', 'sec': '9.1'},
   ]},
 }

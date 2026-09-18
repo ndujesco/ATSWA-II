@@ -633,7 +633,7 @@ CH = {
     'w': 'These four items require approval from the supervising ministry and government '
          'before they become operative — the supervising ministry then recommends senior '
          'appointments to the President or National Assembly for approval.',
-    'src': 'Chapter 17.1'},
+    'src': 'Chapter 17.1', 'sec': '17.1'},
    {'q': 'Which of these is NOT one of the five defining characteristics of a Government '
          'Business Enterprise (GBE)?',
     'o': ['It can contract in its own name', 'It sells goods/services at a profit or full '
@@ -644,7 +644,7 @@ CH = {
     'w': 'A GBE must specifically NOT be reliant on continuing government funding (other '
          'than arm\'s-length purchases of its outputs) to be a going concern — that is one '
          'of its five defining features, stated in the negative.',
-    'src': 'Chapter 17.3'},
+    'src': 'Chapter 17.3', 'sec': '17.3'},
    {'q': 'On the face of a not-for-profit public enterprise\'s Statement of Financial '
          'Position, current liabilities must, as a minimum, disclose',
     'o': ['Public funds and long-term borrowings', 'Loans granted, investments and '
@@ -655,7 +655,7 @@ CH = {
     'w': 'Deposits, short-term loans/advances, unremitted deductions and accrued expenses '
          'are the minimum current-liability disclosures; public funds and long-term '
          'borrowings are non-current liabilities.',
-    'src': 'Chapter 17.4.3(a)'},
+    'src': 'Chapter 17.4.3(a)', 'sec': '17.4'},
   ],
   'theory': [
    {'q': 'State the contents of a corporation\'s Enabling Act, and explain why a corporation\'s '
@@ -672,7 +672,7 @@ CH = {
       {'p': 'A corporation is not governed by the Companies and Allied Matters Act, Cap C20, '
             'LFN 2004 — so its name does not end with "Limited" or "Public Limited Company", '
             'unlike a registered commercial company.'}],
-    'src': 'Chapter 17.1'},
+    'src': 'Chapter 17.1', 'sec': '17.1'},
    {'q': 'List the minimum line items required on the face of a not-for-profit public '
          'enterprise\'s Statement of Financial Performance.',
     'marks': 8,
@@ -687,7 +687,7 @@ CH = {
         'Extraordinary items.',
         'Minority interest share of net surplus or deficit.',
         'Net surplus or deficit for the period.']}],
-    'src': 'Chapter 17.4.3(b)'},
+    'src': 'Chapter 17.4.3(b)', 'sec': '17.4'},
    {'q': 'Kagoma Water Board reports: property, plant and equipment N600,000,000; '
          'receivables N90,000,000; cash N40,000,000; payables N75,000,000; long-term '
          'borrowings N250,000,000. Calculate total assets, total liabilities and net assets.',
@@ -703,6 +703,6 @@ CH = {
         ['Total liabilities@sub', -325000000],
         ['Net assets/equity@tot', 405000000],
       ]}}],
-    'src': 'Chapter 17.8, similar to Section B Q5'},
+    'src': 'Chapter 17.8, similar to Section B Q5', 'sec': '17.8'},
   ]},
 }

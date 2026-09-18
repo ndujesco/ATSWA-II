@@ -181,6 +181,35 @@ CH = {
   ]},
 
   {'n': '11.6', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§11.1 Functions** — a rule assigning each domain element exactly one co-domain value '
+      '($y=f(x)$); range = values actually taken. Linear $y=a+bx$, quadratic $y=ax^2+bx+c$, '
+      'polynomial (highest power $=n$), exponential $y=ab^x$ (constant *proportional* growth, '
+      'variable in the exponent), logarithmic $y=\\log_b x$ (its inverse). Test: no $x$ gives '
+      'two $y$s — a vertical line meets the graph at most once.',
+      '**§11.2 Linear functions** — gradient from two points $b=(y_2-y_1)/(x_2-x_1)$; '
+      'point-slope $y-y_1=b(x-x_1)$; parallel lines share $b$, perpendicular lines have '
+      '$b_1b_2=-1$. Simultaneous equations by substitution or elimination — always check the '
+      'answer in the equation you did **not** use to solve.',
+      '**§11.3 Quadratic functions** — quadratic formula '
+      '$x=(-b\\pm\\sqrt{b^2-4ac})/2a$; discriminant $\\Delta=b^2-4ac$ ($>0$ two real roots, '
+      '$=0$ one repeated root, $<0$ no real roots); vertex at $x=-b/2a$ (maximum if $a<0$, '
+      'minimum if $a>0$); sum of roots $=-b/a$, product $=c/a$ (use as a check). In a '
+      'profit/break-even parabola, the profit-maximising output sits exactly halfway between '
+      'the two break-even (zero-profit) outputs.',
+      '**§11.4 Business applications** — **break-even**: contribution $c=s-v$; break-even '
+      'units $q^*=F/(s-v)$; break-even sales value $=F\\div(\\text{C/S ratio})$; target-profit '
+      'output $=(F+\\pi)/(s-v)$; margin of safety $=$ (budgeted $-$ break-even) $\\div$ '
+      'budgeted. **Market equilibrium**: set $Q_d=Q_s$ and solve for $P$, then substitute back '
+      'for $Q$.',
+      '**§11.5 Exponentials, logarithms and indices** — index laws ($a^ma^n=a^{m+n}$, '
+      '$a^m\\div a^n=a^{m-n}$, $(a^m)^n=a^{mn}$, $a^0=1$, $a^{-n}=1/a^n$); '
+      '$y=\\log_ax\\iff a^y=x$; $\\log(xy)=\\log x+\\log y$, $\\log(x/y)=\\log x-\\log y$, '
+      '$\\log x^n=n\\log x$. Solving $c(1+r)^n$-type growth/decay equations for $n$ by taking '
+      'logs of both sides — any base works provided the **same** base is used top and bottom, '
+      'since it cancels in the ratio.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Function** — a rule assigning to each input $x$ exactly one output $y$; written '
@@ -333,39 +362,39 @@ CH = {
     'a': 1,
     'w': 'Gradient is the change in $y$ divided by the change in $x$.',
     'calc': 'b = \\frac{10-4}{3-1} = \\frac{6}{2} = 3',
-    'src': 'Chapter 11.2'},
+    'src': 'Chapter 11.2', 'sec': '11.2'},
    {'q': 'The roots of $x^2 - 5x + 6 = 0$ are',
     'o': ['1 and 6', '2 and 3', '−2 and −3', '5 and 6', '1 and 5'],
     'a': 1,
     'w': 'Factorise: two numbers whose sum is 5 and product is 6.',
     'calc': '(x-2)(x-3) = 0 \\Rightarrow  x = 2 \\text{ or } 3',
-    'src': 'Chapter 11.3'},
+    'src': 'Chapter 11.3', 'sec': '11.3'},
    {'q': 'Fixed costs are ₦300,000, selling price ₦80 and variable cost ₦50 per unit. The '
          'break-even output is',
     'o': ['3,750 units', '10,000 units', '6,000 units', '5,000 units', '3,000 units'],
     'a': 1,
     'w': 'Contribution per unit is ₦30; divide fixed costs by contribution.',
     'calc': 'q^{*} = \\frac{300{,}000}{80-50} = \\frac{300{,}000}{30} = 10{,}000',
-    'src': 'Chapter 11.4'},
+    'src': 'Chapter 11.4', 'sec': '11.4'},
    {'q': 'If $b^2 - 4ac < 0$, the quadratic equation has',
     'o': ['two distinct real roots', 'no real roots', 'one repeated root',
           'roots that sum to zero', 'infinitely many roots'],
     'a': 1,
     'w': 'A negative discriminant means the square root is imaginary, so the parabola never '
          'meets the $x$-axis.',
-    'src': 'Chapter 11.3'},
+    'src': 'Chapter 11.3', 'sec': '11.3'},
    {'q': 'Given $Q_d = 60 - 4P$ and $Q_s = 10 + P$, the equilibrium price is',
     'o': ['₦8', '₦10', '₦12', '₦14', '₦20'],
     'a': 1,
     'w': 'Set demand equal to supply and solve for $P$.',
     'calc': '60 - 4P = 10 + P \\Rightarrow  50 = 5P \\Rightarrow  P = 10',
-    'src': 'Chapter 11.4'},
+    'src': 'Chapter 11.4', 'sec': '11.4'},
    {'q': 'The maximum value of $y = -x^2 + 8x - 5$ occurs at $x =$',
     'o': ['−4', '4', '8', '2', '5'],
     'a': 1,
     'w': 'The turning point of a parabola is at $x = -b/2a$; with $a<0$ it is a maximum.',
     'calc': 'x = -\\frac{8}{2(-1)} = 4',
-    'src': 'Chapter 11.3'},
+    'src': 'Chapter 11.3', 'sec': '11.3'},
   ],
   'theory': [
    {'q': 'A manufacturer sells a product at ₦400 per unit. Variable costs are ₦240 per unit and '
@@ -413,6 +442,6 @@ CH = {
         'whole range, that fixed costs do not step up, and that everything produced is sold. '
         'These assumptions weaken well outside the relevant range.',
       ]}],
-    'src': 'Chapter 11.4'},
+    'src': 'Chapter 11.4', 'sec': '11.4'},
   ]},
 }

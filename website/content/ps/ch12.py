@@ -492,28 +492,28 @@ CH = {
     'a': 1,
     'w': 'There are 774 local government areas, together with the six area councils of the '
          'Federal Capital Territory.',
-    'src': 'Chapter 12.1'},
+    'src': 'Chapter 12.1', 'sec': '12.1'},
    {'q': 'Allocations to local government councils from the Federation Account are paid into the',
     'o': ['council\'s own account', 'State Joint Local Government Account',
           'Consolidated Revenue Fund of the State', 'Development Fund', 'Contingencies Fund'],
     'a': 1,
     'w': 'Section 162(6) requires each State to maintain the Joint Account, from which the '
          'Joint Account Allocation Committee distributes to the councils.',
-    'src': 'Chapter 12.3'},
+    'src': 'Chapter 12.3', 'sec': '12.3'},
    {'q': 'The accounting officer of a local government council is the',
     'o': ['Treasurer', 'Chairman', 'Secretary to the Local Government',
           'Head of Personnel Management', 'Supervisory Councillor for Finance'],
     'a': 1,
     'w': 'The Chairman is the chief executive and accounting officer; the Treasurer is the '
          'professional head of the finance department.',
-    'src': 'Chapter 12.4'},
+    'src': 'Chapter 12.4', 'sec': '12.4'},
    {'q': 'The code of financial and accounting procedure applicable to local government is the',
     'o': ['Financial Regulations', 'Model Financial Memoranda', 'Treasury Circulars',
           'Store Regulations', 'Establishment Circulars'],
     'a': 1,
     'w': 'The Model Financial Memoranda perform for local government the function the Financial '
          'Regulations perform for the Federal Government.',
-    'src': 'Chapter 12.4'},
+    'src': 'Chapter 12.4', 'sec': '12.4'},
    {'q': 'Which of the following is an exclusive function of a local government council under '
          'the Fourth Schedule?',
     'o': ['Provision of secondary education', 'Naming of roads and numbering of houses',
@@ -522,7 +522,7 @@ CH = {
     'a': 1,
     'w': 'Naming of roads and numbering of houses is listed in paragraph 1. Primary education '
          'and health services are participatory functions shared with the State.',
-    'src': 'Chapter 12.1'},
+    'src': 'Chapter 12.1', 'sec': '12.1'},
    {'q': 'Section 7(1) of the 1999 Constitution guarantees',
     'o': ['the Joint Account Allocation Committee',
           'a system of local government by democratically elected councils',
@@ -531,7 +531,7 @@ CH = {
     'a': 1,
     'w': 'Section 7(1) guarantees democratically elected councils and requires each State to '
          'provide for their existence, structure, composition, finance and functions by law.',
-    'src': 'Chapter 12.1'},
+    'src': 'Chapter 12.1', 'sec': '12.1'},
   ],
   'theory': [
    {'q': '(a) State eight functions of a local government council under the Fourth Schedule to '
@@ -651,6 +651,6 @@ CH = {
         '**Control the recurrent burden** by verifying the payroll and eliminating ghost '
         'workers, so that a larger share of revenue reaches capital projects.',
       ]}],
-    'src': 'Chapter 12.1–12.5'},
+    'src': 'Chapter 12.1–12.5', 'sec': '12.1'},
   ]},
 }

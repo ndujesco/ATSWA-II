@@ -170,6 +170,33 @@ CH = {
   ]},
 
   {'n': '3.7', 't': 'Worksheet summary — definitions and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§3.1 Why variation matters** — two data sets can share a mean and differ entirely in '
+      'spread; a measure of location alone describes almost nothing.',
+      '**§3.2 Range and quartile deviation** — range = largest − smallest (grouped: upper '
+      'boundary of the last class − lower boundary of the first); it uses only two values and '
+      'one outlier destroys it. Quartile deviation $= (Q_3-Q_1)/2$ ignores the extreme quarter '
+      'at each end and is more stable, but still ignores most of the data.',
+      '**§3.3 Mean deviation** — the average of the *absolute* deviations from the mean '
+      '($MD = \\sum|x-\\bar{x}|/n$, grouped $\\sum f|x-\\bar{x}|/\\sum f$); absolute values are '
+      'needed because signed deviations always sum to zero — that sum-to-zero check confirms '
+      'the mean used is correct.',
+      '**§3.4 Variance and standard deviation** — definitional formula '
+      '$\\sigma^2=\\sum(x-\\bar{x})^2/n$ and the faster working formula '
+      '$\\sigma^2=\\sum x^2/n-(\\sum x/n)^2$ give identical answers; grouped uses $fx^2$ meaning '
+      '$f\\times x^2$, **not** $(fx)^2$ — the commonest error in the chapter. Sample variance '
+      'divides by $n-1$, not $n$, when estimating a population variance from a sample.',
+      '**§3.5 Coefficient of variation** — $CV=\\sigma/\\bar{x}\\times100\\%$, dimensionless, so '
+      'it can compare the spread of two *differently scaled* data sets; the **lower** CV is the '
+      'more consistent/lower-risk series, even if its absolute standard deviation is larger.',
+      '**§3.6 Skewness** — symmetrical: mean = median = mode, coefficient zero; positively '
+      'skewed: mean > median > mode, coefficient positive; negatively skewed: the reverse. '
+      'Three coefficients: Pearson\'s first $(\\bar{x}-\\text{Mode})/\\sigma$, Pearson\'s second '
+      '$3(\\bar{x}-\\text{Median})/\\sigma$ (used when the mode is ill-defined), and Bowley\'s '
+      '$(Q_3+Q_1-2Q_2)/(Q_3-Q_1)$ (bounded −1 to +1, uses only the middle half of the data). '
+      'They needn\'t agree closely in size — only the **sign** matters for the shape verdict.',
+    ]},
     {'h3': 'Definitions'},
     {'ul': [
       '**Measure of variation / dispersion / spread** — the degree to which numerical data '
@@ -313,13 +340,13 @@ CH = {
     'a': 0,
     'w': 'The mean is 5; the absolute deviations are 4, 3, 0, 2, 5, summing to 14.',
     'calc': 'MD = \\frac{|1-5| + |2-5| + |5-5| + |7-5| + |10-5|}{5} = \\frac{14}{5} = 2.8',
-    'src': 'Chapter 3.3'},
+    'src': 'Chapter 3.3', 'sec': '3.3'},
    {'q': 'A distribution has $\\sum x = 60$, $\\sum x^2 = 800$ and $n = 6$. The variance is',
     'o': ['33.33', '133.33', '23.33', '100.00', '10.00'],
     'a': 2,
     'w': 'Apply the working formula: mean square minus square of the mean.',
     'calc': '\\sigma^2 = \\frac{800}{6} - \\left(\\frac{60}{6}\\right)^2 = 133.33 - 100 = 33.33',
-    'src': 'Chapter 3.4'},
+    'src': 'Chapter 3.4', 'sec': '3.4'},
    {'q': 'A distribution has a mean of 250 and a standard deviation of 40. Its coefficient of '
          'variation is',
     'o': ['6.25%', '16%', '625%', '10%', '62.5%'],
@@ -327,20 +354,20 @@ CH = {
     'w': 'The coefficient of variation expresses the standard deviation as a percentage of the '
          'mean, making distributions with different units comparable.',
     'calc': 'CV = \\frac{40}{250} \\times 100 = 16\\%',
-    'src': 'Chapter 3.5'},
+    'src': 'Chapter 3.5', 'sec': '3.5'},
    {'q': 'If $Q_1 = 65.8$ and $Q_3 = 98.3$, the semi-interquartile range is',
     'o': ['32.5', '16.25', '82.05', '164.1', '8.125'],
     'a': 1,
     'w': 'The semi-interquartile range, or quartile deviation, is half the interquartile range.',
     'calc': 'QD = \\frac{98.3 - 65.8}{2} = \\frac{32.5}{2} = 16.25',
-    'src': 'Chapter 3.2'},
+    'src': 'Chapter 3.2', 'sec': '3.2'},
    {'q': 'In a positively skewed distribution',
     'o': ['mean = median = mode', 'mean > median > mode', 'mean < median < mode',
           'median > mean > mode', 'mode > mean > median'],
     'a': 1,
     'w': 'A long right tail pulls the mean furthest, then the median, leaving the mode at the '
          'peak. Hence mean > median > mode and a positive coefficient of skewness.',
-    'src': 'Chapter 3.6'},
+    'src': 'Chapter 3.6', 'sec': '3.6'},
    {'q': 'Which measure of dispersion uses every observation and is expressed in the same units '
          'as the data?',
     'o': ['Range', 'Variance', 'Standard deviation', 'Coefficient of variation',
@@ -349,7 +376,7 @@ CH = {
     'w': 'The variance uses every observation but is in squared units. Taking the square root '
          'returns it to the original units, which is exactly why the standard deviation is '
          'preferred for reporting.',
-    'src': 'Chapter 3.4'},
+    'src': 'Chapter 3.4', 'sec': '3.4'},
   ],
   'theory': [
    {'q': 'Explain what is meant by the coefficient of variation, state why it is used in '
@@ -373,6 +400,6 @@ CH = {
             'less variability relative to the average. This is so even though Y\'s absolute '
             'standard deviation is more than twice X\'s — which is precisely the comparison the '
             'standard deviation alone would get wrong.'}],
-    'src': 'Chapter 3.5'},
+    'src': 'Chapter 3.5', 'sec': '3.5'},
   ]},
 }

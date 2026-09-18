@@ -362,14 +362,14 @@ CH = {
     'a': 1,
     'w': 'Every other method requires justification, and above the threshold the approval of '
          'the Bureau of Public Procurement.',
-    'src': 'Chapter 10.2'},
+    'src': 'Chapter 10.2', 'sec': '10.2'},
    {'q': 'Under a request for quotations, quotations must be obtained from at least',
     'o': ['two unrelated suppliers', 'three unrelated suppliers', 'five suppliers',
           'one supplier', 'seven suppliers'],
     'a': 1,
     'w': 'The Act requires a minimum of three quotations from unrelated contractors or '
          'suppliers.',
-    'src': 'Chapter 10.3'},
+    'src': 'Chapter 10.3', 'sec': '10.3'},
    {'q': 'The document issued by the Bureau of Public Procurement before a high-value contract '
          'may be awarded is the',
     'o': ['procurement plan', 'certificate of no objection', 'letter of award',
@@ -377,7 +377,7 @@ CH = {
     'a': 1,
     'w': 'The Certificate of "No Objection" to Contract Award confirms that the Bureau has '
          'reviewed the process. Without it the award is invalid.',
-    'src': 'Chapter 10.4'},
+    'src': 'Chapter 10.4', 'sec': '10.4'},
    {'q': 'A contract under the Act should be awarded to the',
     'o': ['lowest bidder', 'lowest evaluated responsive bidder',
           'bidder with the best technical proposal', 'most experienced bidder',
@@ -385,7 +385,7 @@ CH = {
     'a': 1,
     'w': 'The bid must first be responsive — meeting the specification and the qualification '
          'requirements — before price is compared. A cheap but non-responsive bid is rejected.',
-    'src': 'Chapter 10.2'},
+    'src': 'Chapter 10.2', 'sec': '10.2'},
    {'q': 'A body corporate convicted of an offence under the Public Procurement Act is liable '
          'to a fine of not less than',
     'o': ['10% of the procurement value', '25% of the procurement value',
@@ -393,7 +393,7 @@ CH = {
     'a': 1,
     'w': 'The company is fined not less than 25% of the value of the procurement, its officers '
          'may be prosecuted, and it may be debarred from public procurement.',
-    'src': 'Chapter 10.5'},
+    'src': 'Chapter 10.5', 'sec': '10.5'},
    {'q': 'The policy-making body established by the Public Procurement Act 2007 is the',
     'o': ['Bureau of Public Procurement', 'National Council on Public Procurement',
           'Federal Executive Council', 'Ministerial Tenders Board',
@@ -401,7 +401,7 @@ CH = {
     'a': 1,
     'w': 'The Council makes policy and approves thresholds; the Bureau is the regulatory and '
          'supervisory body that certifies individual procurements.',
-    'src': 'Chapter 10.1'},
+    'src': 'Chapter 10.1', 'sec': '10.1'},
   ],
   'theory': [
    {'q': '(a) State six objectives of the Public Procurement Act 2007. (b) Describe five '
@@ -514,6 +514,6 @@ CH = {
                'public opening, published criteria and the certificate of no objection. These '
                'work by removing discretion and creating a record, which is a more reliable '
                'control than the threat of a prosecution that may never come.'}],
-    'src': 'Chapter 10.1–10.5'},
+    'src': 'Chapter 10.1–10.5', 'sec': '10.1'},
   ]},
 }

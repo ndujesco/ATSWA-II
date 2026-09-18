@@ -350,7 +350,7 @@ CH = {
     'a': 1,
     'w': 'Three years from the date of adoption, after which everything must be recognised and '
          'measured in accordance with IPSAS.',
-    'src': 'Chapter 15.4'},
+    'src': 'Chapter 15.4', 'sec': '15.4'},
    {'q': 'An amount used as a surrogate for cost where the actual cost of an asset cannot be '
          'determined reliably is called',
     'o': ['fair value', 'deemed cost', 'residual value', 'recoverable amount',
@@ -358,14 +358,14 @@ CH = {
     'a': 1,
     'w': 'Deemed cost is fixed at the date of adoption and thereafter treated exactly as if it '
          'were cost, for depreciation and carrying amount.',
-    'src': 'Chapter 15.3'},
+    'src': 'Chapter 15.3', 'sec': '15.3'},
    {'q': 'Adjustments arising on transition to accrual basis IPSAS are recognised in',
     'o': ['surplus or deficit for the period', 'opening accumulated surplus or deficit',
           'the statement of cash flows', 'a revaluation reserve only', 'the notes only'],
     'a': 1,
     'w': 'Taking them through performance would distort the results of the year of transition '
          'for reasons unconnected with its operations.',
-    'src': 'Chapter 15.2'},
+    'src': 'Chapter 15.2', 'sec': '15.2'},
    {'q': 'Financial statements in which an entity relies on an exemption that affects fair '
          'presentation are described as',
     'o': ['first IPSAS financial statements', 'transitional IPSAS financial statements',
@@ -374,7 +374,7 @@ CH = {
     'a': 1,
     'w': 'Only when no such exemption remains may the entity present first IPSAS financial '
          'statements with an explicit and unreserved statement of compliance.',
-    'src': 'Chapter 15.1'},
+    'src': 'Chapter 15.1', 'sec': '15.1'},
    {'q': 'Which of the following exemptions does NOT affect fair presentation and compliance '
          'with accrual basis IPSAS?',
     'o': ['Non-recognition of property, plant and equipment',
@@ -385,7 +385,7 @@ CH = {
     'a': 1,
     'w': 'Not restating comparatives is a practical simplification. The other four withhold '
          'recognition of items IPSAS requires, and so prevent an assertion of full compliance.',
-    'src': 'Chapter 15.3'},
+    'src': 'Chapter 15.3', 'sec': '15.3'},
   ],
   'theory': [
    {'q': 'Nigeria adopted the accrual basis IPSAS with effect from 1 January 2016. '
@@ -502,6 +502,6 @@ CH = {
             'entity more time while requiring it to disclose what remains outstanding and when '
             'it will be completed. The risk is not the exemption itself but its indefinite '
             'extension, and the answer to that is enforcement of the three-year limit.'}],
-    'src': 'Chapter 15.1–15.5'},
+    'src': 'Chapter 15.1–15.5', 'sec': '15.1'},
   ]},
 }

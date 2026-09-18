@@ -200,6 +200,36 @@ CH = {
   ]},
 
   {'n': '16.6', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§16.1 The costs of inventory** — ordering/set-up cost (fixed per order, total rises '
+      'with the *number* of orders); holding/carrying cost (per unit per period, total rises '
+      'with order *size*); purchase cost (irrelevant to order size unless discounts apply); '
+      'stockout cost (lost contribution, emergency buys, goodwill). Ordering and holding cost '
+      'move in **opposite** directions as order size changes — EOQ minimises their total.',
+      '**§16.2 The economic order quantity** — $Q^*=\\sqrt{2DC_o/C_h}$; average inventory '
+      '$=Q/2$; $TC=(D/Q)C_o+(Q/2)C_h$; minimum total cost '
+      '$TC^*=\\sqrt{2DC_oC_h}$. **At the EOQ, ordering cost always equals holding cost** — the '
+      'one-second check on any EOQ answer. Assumptions: known constant demand and lead time, '
+      'instantaneous replenishment, constant unit price (no discounts), no stockouts allowed. '
+      'The total-cost curve is **flat near the optimum**, so a moderate departure from the '
+      'exact EOQ (e.g. to a round pallet size) costs relatively little.',
+      '**§16.3 Gradual replenishment (economic batch quantity)** — used when items are '
+      '**produced**, not bought, so they arrive at production rate $p$ while being consumed at '
+      'demand rate $d$; $Q^*=\\sqrt{2DC_s/(C_h(1-d/p))}$, maximum inventory '
+      '$=Q(1-d/p)$, average $=\\,(Q/2)(1-d/p)$. Gradual delivery lowers effective holding '
+      'cost, so the economic batch is **larger** than the plain EOQ would be for the same data.',
+      '**§16.4 Control levels** — reorder level $=$ max usage $\\times$ max lead time (or '
+      'average usage $\\times$ lead time $+$ buffer stock); minimum/buffer level $=$ ROL $-$ '
+      '(average usage $\\times$ average lead time); maximum level $=$ ROL $+Q^*-$ (min usage '
+      '$\\times$ min lead time); average inventory $=$ buffer stock $+Q^*/2$. Buffer stock is '
+      'the cushion against usage or lead time running above average, and it raises average '
+      'inventory (and so holding cost) above the plain $Q^*/2$ figure.',
+      '**§16.5 Quantity discounts** — a discount makes purchase price relevant, so compare '
+      '**total annual cost including purchases** (purchases $+$ ordering $+$ holding) at the '
+      'EOQ and at the smallest order quantity earning each discount threshold, and pick the '
+      'lowest overall — never rely on the EOQ formula alone once a discount is offered.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Inventory / stock** — goods held for production or sale.',
@@ -312,14 +342,14 @@ CH = {
     'a': 1,
     'w': 'Substitute directly into the EOQ formula.',
     'calc': 'Q^{*} = \\sqrt{\\frac{2(8{,}000)(250)}{4}} = \\sqrt{1{,}000{,}000} = 1{,}000',
-    'src': 'Chapter 16.2'},
+    'src': 'Chapter 16.2', 'sec': '16.2'},
    {'q': 'At the economic order quantity,',
     'o': ['ordering cost is minimised', 'ordering cost equals holding cost',
           'holding cost is minimised', 'purchase cost is minimised',
           'the number of orders is minimised'],
     'a': 1,
     'w': 'The two costs move in opposite directions; their sum is least where they are equal.',
-    'src': 'Chapter 16.2'},
+    'src': 'Chapter 16.2', 'sec': '16.2'},
    {'q': 'Maximum usage is 60 units a day and the maximum lead time 8 days. The reorder level '
          'is',
     'o': ['68 units', '480 units', '420 units', '240 units', '52 units'],
@@ -327,7 +357,7 @@ CH = {
     'w': 'The reorder level must cover the worst case: highest usage over the longest lead '
          'time.',
     'calc': '\\text{ROL} = 60 \\times 8 = 480 \\text{ units}',
-    'src': 'Chapter 16.4'},
+    'src': 'Chapter 16.4', 'sec': '16.4'},
    {'q': 'Which of the following is NOT an assumption of the basic EOQ model?',
     'o': ['Demand is constant and known', 'Lead time is constant',
           'Quantity discounts are available', 'Replenishment is instantaneous',
@@ -335,7 +365,7 @@ CH = {
     'a': 2,
     'w': 'The basic model assumes a constant unit price. Discounts require the extended '
          'analysis of total cost including purchases.',
-    'src': 'Chapter 16.2'},
+    'src': 'Chapter 16.2', 'sec': '16.2'},
    {'q': 'If annual demand doubles, all other costs remaining unchanged, the economic order '
          'quantity',
     'o': ['doubles', 'increases by about 41%', 'halves', 'is unchanged',
@@ -343,7 +373,7 @@ CH = {
     'a': 1,
     'w': 'Demand is under a square root, so the EOQ rises by $\\sqrt{2} = 1.414$ — an increase '
          'of about 41%, not 100%.',
-    'src': 'Chapter 16.2'},
+    'src': 'Chapter 16.2', 'sec': '16.2'},
    {'q': 'A firm orders 400 units at a time against annual demand of 4,800 units, with '
          'ordering cost ₦150 and holding cost ₦5 per unit per year. Its total relevant cost is',
     'o': ['₦1,800', '₦2,800', '₦2,000', '₦3,800', '₦1,000'],
@@ -351,7 +381,7 @@ CH = {
     'w': 'Add the ordering cost for 12 orders to the holding cost on average inventory of 200 '
          'units.',
     'calc': 'TC = \\frac{4{,}800}{400}(150) + \\frac{400}{2}(5) = 1{,}800 + 1{,}000 = ₦2{,}800',
-    'src': 'Chapter 16.2'},
+    'src': 'Chapter 16.2', 'sec': '16.2'},
   ],
   'theory': [
    {'q': 'Ogunsanya Nigeria Limited uses 24,000 units of a raw material each year. The cost of '
@@ -426,6 +456,6 @@ CH = {
             'figure costs little extra; and the discipline of identifying ordering and holding '
             'costs separately often improves inventory management more than the resulting '
             'number does.'}],
-    'src': 'Chapter 16.2, 16.5'},
+    'src': 'Chapter 16.2, 16.5', 'sec': '16.2'},
   ]},
 }

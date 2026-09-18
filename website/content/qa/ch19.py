@@ -213,6 +213,30 @@ CH = {
   ]},
 
   {'n': '19.4', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§19.1 The transportation problem** — ship a commodity from $m$ sources to $n$ '
+      'destinations at least cost; **balanced** when total supply = total demand (otherwise add '
+      'a zero-cost dummy source/destination for the difference); **non-degenerate** when '
+      'occupied cells $= m+n-1$ (fewer needs a nominal zero allocation before testing). Testing '
+      'an initial solution for optimality (stepping-stone/MODI) is **outside the Part II '
+      'syllabus** — only building and comparing initial solutions is examined.',
+      '**§19.2 Finding an initial solution** — three methods on the same tableau: '
+      '**north-west corner rule** (top-left cell first, ignores cost entirely, quickest but '
+      'usually worst); **least-cost method** (cheapest cell each time, better but short-sighted); '
+      '**Vogel\'s approximation (VAM)** (allocate to the cheapest cell in the row/column with the '
+      '**largest penalty** = difference between the two cheapest remaining costs there — '
+      'penalties **must be recomputed** after every deletion, not carried forward). VAM is '
+      'usually closest to optimal and the preferred method unless told otherwise.',
+      '**§19.3 The assignment problem** — a special transportation problem where every supply '
+      'and demand $=1$ ($n$ jobs to $n$ workers, one each); solved by the **Hungarian method**: '
+      'row-reduce, column-reduce, cover all zeros with the minimum number of lines, and once '
+      'lines $=$ number of rows an optimal assignment exists among the zeros — otherwise revise '
+      '(subtract the smallest uncovered value from uncovered cells, add it at line '
+      'intersections) and recover. A **maximisation** problem is converted first by subtracting '
+      'every cost from the matrix maximum; an **unbalanced** problem gets a dummy row/column of '
+      'zeros; a **prohibited** pairing gets a very large cost $M$.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Transportation problem** — distribute a homogeneous product from $m$ **sources** '
@@ -317,7 +341,7 @@ CH = {
     'a': 1,
     'w': 'Balance concerns quantities, not the size of the matrix. An unbalanced problem is '
          'made balanced by adding a dummy row or column at zero cost.',
-    'src': 'Chapter 19.1'},
+    'src': 'Chapter 19.1', 'sec': '19.1'},
    {'q': 'In a transportation problem with 4 sources and 5 destinations, a non-degenerate '
          'solution has',
     'o': ['9 occupied cells', '8 occupied cells', '20 occupied cells', '5 occupied cells',
@@ -325,7 +349,7 @@ CH = {
     'a': 1,
     'w': 'The condition is $m + n - 1$ occupied cells.',
     'calc': 'm + n - 1 = 4 + 5 - 1 = 8',
-    'src': 'Chapter 19.1'},
+    'src': 'Chapter 19.1', 'sec': '19.1'},
    {'q': "In Vogel's approximation method, the penalty for a row is",
     'o': ['the smallest cost in the row',
           'the difference between the two smallest costs in the row',
@@ -334,7 +358,7 @@ CH = {
     'a': 1,
     'w': 'The penalty measures the extra cost that would be incurred if the cheapest route in '
          'that row were not used.',
-    'src': 'Chapter 19.2'},
+    'src': 'Chapter 19.2', 'sec': '19.2'},
    {'q': 'The north-west corner rule',
     'o': ['always produces the optimal solution',
           'ignores the transportation costs entirely',
@@ -344,7 +368,7 @@ CH = {
     'a': 1,
     'w': 'It allocates purely by position in the tableau, which is why it is quick to apply but '
          'generally gives the most expensive of the three initial solutions.',
-    'src': 'Chapter 19.2'},
+    'src': 'Chapter 19.2', 'sec': '19.2'},
    {'q': 'In the Hungarian method, an optimal assignment has been reached when the minimum '
          'number of lines needed to cover all the zeros',
     'o': ['is less than the number of rows', 'equals the number of rows',
@@ -352,7 +376,7 @@ CH = {
     'a': 1,
     'w': 'When the covering lines equal the order of the matrix, an independent zero can be '
          'chosen in every row and column.',
-    'src': 'Chapter 19.3'},
+    'src': 'Chapter 19.3', 'sec': '19.3'},
    {'q': 'An assignment problem in which the objective is to maximise profit is solved by',
     'o': ['maximising each row in turn',
           'subtracting every element from the largest element and then minimising',
@@ -362,7 +386,7 @@ CH = {
     'a': 1,
     'w': 'Converting to a regret or opportunity-loss matrix turns the problem into a standard '
          'minimisation, which the Hungarian method then solves.',
-    'src': 'Chapter 19.3'},
+    'src': 'Chapter 19.3', 'sec': '19.3'},
   ],
   'theory': [
    {'q': 'Distinguish between the transportation problem and the assignment problem. Explain '
@@ -430,6 +454,6 @@ CH = {
                'respectively — Vogel\'s solution is 18% cheaper than the north-west corner '
                'rule\'s. Quoting a worked comparison of this kind, if the question supplies '
                'data, earns the discussion marks convincingly.'}],
-    'src': 'Chapter 19.1–19.3'},
+    'src': 'Chapter 19.1–19.3', 'sec': '19.1'},
   ]},
 }

@@ -557,7 +557,7 @@ CH = {
     'w': 'Add the closing accrual (used but not paid) and deduct the opening accrual (paid this '
          'year but belonging to last).',
     'calc': '4{,}800{,}000 + 295{,}000 - 210{,}000 = 4{,}885{,}000',
-    'src': 'Chapter 4.3'},
+    'src': 'Chapter 4.3', 'sec': '4.3'},
    {'q': 'The allowance for doubtful debts was ₦140,000 at the start of the year and is to be '
          '₦185,000 at the end. Bad debts of ₦62,000 were written off during the year. The charge '
          'to profit or loss is',
@@ -565,14 +565,14 @@ CH = {
     'a': 2,
     'w': 'Only the increase in the allowance is charged, plus the debts actually written off.',
     'calc': '62{,}000 + (185{,}000 - 140{,}000) = 107{,}000',
-    'src': 'Chapter 4.6'},
+    'src': 'Chapter 4.6', 'sec': '4.6'},
    {'q': 'Receivables are ₦6,000,000 before adjustment. Debts of ₦200,000 are to be written off '
          'and a general allowance of 5% made. The closing allowance is',
     'o': ['₦300,000', '₦290,000', '₦310,000', '₦280,000', '₦200,000'],
     'a': 1,
     'w': 'Write off first, then take the percentage of what is left.',
     'calc': '0.05 \\times (6{,}000{,}000 - 200{,}000) = 0.05 \\times 5{,}800{,}000 = 290{,}000',
-    'src': 'Chapter 4.6'},
+    'src': 'Chapter 4.6', 'sec': '4.6'},
    {'q': 'Why are accrued expenses shown in the financial statements?',
     'o': ['So that the correct total assets are shown',
           'So that the income of the period is matched against the cost of that period',
@@ -582,7 +582,7 @@ CH = {
     'a': 1,
     'w': 'An accrual exists to satisfy the matching (accruals) concept: the expense belongs to '
          'the period in which the benefit was consumed, whether or not it has been paid.',
-    'src': 'Chapter 4.1'},
+    'src': 'Chapter 4.1', 'sec': '4.1'},
    {'q': 'Insurance of ₦960,000 was paid on 1 October 2024 covering the twelve months to 30 '
          'September 2025. In the statement of financial position at 31 December 2024 this gives',
     'o': ['a prepayment of ₦240,000', 'a prepayment of ₦720,000', 'an accrual of ₦240,000',
@@ -590,7 +590,7 @@ CH = {
     'a': 1,
     'w': 'Three months (October to December) belong to 2024 and nine months are paid in advance.',
     'calc': '\\frac{9}{12} \\times 960{,}000 = 720{,}000',
-    'src': 'Chapter 4.2'},
+    'src': 'Chapter 4.2', 'sec': '4.2'},
    {'q': 'A debt of ₦85,000 written off two years ago was received in cash this year. The correct '
          'entry is',
     'o': ['Dr Receivables, Cr Cash', 'Dr Cash, Cr Receivables',
@@ -599,7 +599,7 @@ CH = {
     'a': 2,
     'w': 'The receivable no longer exists — it was removed when the debt was written off. The '
          'cash received is therefore income of the current period.',
-    'src': 'Chapter 4.9'},
+    'src': 'Chapter 4.9', 'sec': '4.9'},
   ],
   'theory': [
    {'q': 'Distinguish between an irrecoverable debt and an allowance for doubtful debts, and '
@@ -622,7 +622,7 @@ CH = {
         'Reduce an allowance: **Dr** Allowance for doubtful debts, **Cr** Statement of profit or loss.',
         'Recovery of a debt written off: **Dr** Trade receivables / Cash, **Cr** Irrecoverable '
         'debts recovered.']}],
-    'src': 'Chapter 4.6'},
+    'src': 'Chapter 4.6', 'sec': '4.6'},
    {'q': 'Explain, with the accounting entry in each case, the treatment at the year end of '
          '(a) an accrued expense, (b) a prepaid expense, (c) accrued income and (d) deferred income.',
     'marks': 8,
@@ -641,6 +641,6 @@ CH = {
       'cash received.']},
       {'note': 'All four exist to satisfy the accruals concept, which requires income and '
                'expenses to be recognised as earned or incurred rather than as received or paid.'}],
-    'src': 'Chapter 4.1'},
+    'src': 'Chapter 4.1', 'sec': '4.1'},
   ]},
 }

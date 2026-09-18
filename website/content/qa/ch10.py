@@ -130,6 +130,23 @@ CH = {
   ]},
 
   {'n': '10.4', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§10.1 Notation and basic operations** — set, element ($\\in$/$\\notin$), universal set '
+      '$U$, empty set $\\varnothing$ ($\\ne\\{0\\}$), subset/proper subset, cardinality $n(A)$, '
+      'disjoint sets. Union (or), intersection (and), complement (in $U$ not $A$), difference '
+      '$A-B=A\\cap B\'$; a set of $n$ elements has $2^n$ subsets.',
+      '**§10.2 Laws of set algebra** — commutative, associative, distributive, identity, '
+      'complement, idempotent, and **De Morgan\'s laws** '
+      '$(A\\cup B)\'=A\'\\cap B\'$, $(A\\cap B)\'=A\'\\cup B\'$ — named explicitly because '
+      'examiners ask for them by name: "not (A or B)" = "not A and not B".',
+      '**§10.3 Counting with Venn diagrams** — inclusion–exclusion: two sets '
+      '$n(A\\cup B)=n(A)+n(B)-n(A\\cap B)$; three sets add the three singles, subtract the '
+      'three pairwise overlaps, add back the triple overlap (removed three times, restored '
+      'once); "neither/none" $=n(U)-n(A\\cup B)$. Work an "only" region as the set less its '
+      'pairwise overlaps plus the triple overlap back. Always sanity-check that the four/eight '
+      'Venn regions sum to the total surveyed.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Set** — a collection of well-defined objects. Denoted by a capital letter.',
@@ -218,19 +235,19 @@ CH = {
     'a': 1,
     'w': 'Add the two sets and subtract the overlap, which would otherwise be counted twice.',
     'calc': 'n(A \\cup B) = 20 + 15 - 5 = 30',
-    'src': 'Chapter 10.3'},
+    'src': 'Chapter 10.3', 'sec': '10.3'},
    {'q': 'The number of subsets of a set containing 5 elements is',
     'o': ['10', '32', '25', '5', '120'],
     'a': 1,
     'w': 'Each element is either in or out of a subset, giving $2^5$ possibilities.',
     'calc': '2^{5} = 32',
-    'src': 'Chapter 10.1'},
+    'src': 'Chapter 10.1', 'sec': '10.1'},
    {'q': 'De Morgan\'s law states that $(A \\cup B)\'$ equals',
     'o': ["$A' \\cup B'$", "$A' \\cap B'$", "$A \\cap B$", "$A' - B'$", "$U - A$"],
     'a': 1,
     'w': 'The complement of a union is the intersection of the complements: "not (A or B)" is '
          '"not A and not B".',
-    'src': 'Chapter 10.2'},
+    'src': 'Chapter 10.2', 'sec': '10.2'},
    {'q': 'In a class of 40, 25 study French and 18 study German. If 5 study neither, the number '
          'studying both is',
     'o': ['13', '8', '7', '12', '10'],
@@ -238,12 +255,12 @@ CH = {
     'w': 'Those studying at least one language number $40 - 5 = 35$; substitute in the '
          'inclusion–exclusion formula.',
     'calc': '35 = 25 + 18 - n(F \\cap G) \\Rightarrow  n(F \\cap G) = 43 - 35 = 8',
-    'src': 'Chapter 10.3'},
+    'src': 'Chapter 10.3', 'sec': '10.3'},
    {'q': 'Two sets with no element in common are said to be',
     'o': ['equal', 'disjoint', 'universal', 'equivalent', 'complementary'],
     'a': 1,
     'w': 'Disjoint sets satisfy $A \\cap B = \\varnothing$.',
-    'src': 'Chapter 10.1'},
+    'src': 'Chapter 10.1', 'sec': '10.1'},
   ],
   'theory': [
    {'q': 'In a survey of 120 employees, 62 belong to the pension scheme, 55 to the medical '
@@ -295,6 +312,6 @@ CH = {
                'Draw three overlapping circles, write 12 in the central region first, then the '
                'three pairwise regions, then the three "only" regions, and finally the 19 '
                'outside the circles but inside the rectangle representing $U$.'}],
-    'src': 'Chapter 10.3'},
+    'src': 'Chapter 10.3', 'sec': '10.3'},
   ]},
 }

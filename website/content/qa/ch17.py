@@ -206,6 +206,36 @@ CH = {
   ]},
 
   {'n': '17.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§17.1 Terms and conventions** — activity (an arrow, consumes time/resources); event/'
+      'node (a circle, zero duration); dummy activity (broken arrow, zero duration, shows '
+      'dependency or separates parallel activities); critical path = the **longest** path '
+      '(not shortest) — it fixes the project duration and every activity on it has zero float; '
+      'float/slack = how far a non-critical activity can slip without delaying something else.',
+      '**§17.2 The forward and backward passes** — forward pass (left to right) takes the '
+      '**maximum** earliest finish where activities converge, giving the project duration at '
+      'the final event; backward pass (right to left, starting from that duration) takes the '
+      '**minimum** latest start where activities diverge. Reversing max/min is the chapter\'s '
+      'most frequent error. Total float $TF=LS-ES=LF-EF$; free float $FF=ES_{\\text{next}}-EF$ '
+      '— total float can be shared along a chain of activities, free float belongs to one '
+      'activity alone, so "which activity can be delayed without affecting any other" always '
+      'means **free** float. A project can have more than one critical path; shortening it '
+      'requires shortening an activity common to **all** of them, or one on each simultaneously.',
+      '**§17.3 PERT: three time estimates** — for uncertain durations, use optimistic $a$, '
+      'most likely $m$, pessimistic $b$: expected duration $t_e=(a+4m+b)/6$ (the $1:4:1$ '
+      'weighting matches a beta distribution); activity variance '
+      '$\\sigma^2=((b-a)/6)^2$; project variance $=\\sum\\sigma^2$ summed **only along the '
+      'critical path**, assuming independence; probability of meeting a target date '
+      '$z=(T_s-T_e)/\\sigma_p$, read off the normal table.',
+      '**§17.4 Uses and limitations** — uses: identifies the activities controlling duration, '
+      'quantifies delay tolerance, supports **crashing** (which activity to accelerate and at '
+      'what cost per week saved), resource smoothing, and progress control. Limitations: '
+      'durations are estimates (PERT assumes a distribution and independence); ignores '
+      'resource constraints; the probability calculation considers only the critical path, so '
+      'a near-critical high-variance path could actually be the one that overruns; needs '
+      'redrawing when logic changes; cost needs a separate analysis.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Network analysis / CPM / PERT** — techniques for planning, scheduling and '
@@ -317,19 +347,19 @@ CH = {
           'the path with the fewest dummy activities'],
     'a': 1,
     'w': 'The longest path determines the project duration and has zero float throughout.',
-    'src': 'Chapter 17.1'},
+    'src': 'Chapter 17.1', 'sec': '17.1'},
    {'q': 'An activity has ES = 8, EF = 13, LS = 11 and LF = 16. Its total float is',
     'o': ['2 days', '3 days', '5 days', '8 days', 'nil'],
     'a': 1,
     'w': 'Total float is $LS - ES$, equivalently $LF - EF$.',
     'calc': 'TF = 11 - 8 = 3 \\quad(\\text{or } 16 - 13 = 3)',
-    'src': 'Chapter 17.2'},
+    'src': 'Chapter 17.2', 'sec': '17.2'},
    {'q': 'Using PERT with $a = 3$, $m = 6$ and $b = 15$ days, the expected duration is',
     'o': ['6 days', '7 days', '8 days', '9 days', '24 days'],
     'a': 1,
     'w': 'Weight the most likely estimate four times and divide the total by six.',
     'calc': 't_e = \\frac{3 + 4(6) + 15}{6} = \\frac{42}{6} = 7',
-    'src': 'Chapter 17.3'},
+    'src': 'Chapter 17.3', 'sec': '17.3'},
    {'q': 'A dummy activity in a network',
     'o': ['consumes resources but no time', 'consumes neither time nor resources',
           'consumes time but no resources', 'is always on the critical path',
@@ -337,7 +367,7 @@ CH = {
     'a': 1,
     'w': 'A dummy exists only to express a dependency or to separate two activities sharing '
          'the same start and end events. Its duration is zero.',
-    'src': 'Chapter 17.1'},
+    'src': 'Chapter 17.1', 'sec': '17.1'},
    {'q': 'On the forward pass, where several activities converge on an event, the earliest '
          'event time is',
     'o': ['the smallest of the earliest finishes', 'the largest of the earliest finishes',
@@ -346,7 +376,7 @@ CH = {
     'a': 1,
     'w': 'Every converging activity must be complete before the event is reached, so the '
          'latest arrival governs.',
-    'src': 'Chapter 17.2'},
+    'src': 'Chapter 17.2', 'sec': '17.2'},
    {'q': 'If three activities on the critical path have variances of 1.0, 2.25 and 0.75, the '
          'standard deviation of the project duration is',
     'o': ['4.00', '2.00', '1.50', '4.00 weeks squared', '3.00'],
@@ -354,7 +384,7 @@ CH = {
     'w': 'Add the variances, then take the square root — variances add, standard deviations '
          'do not.',
     'calc': '\\sigma_p = \\sqrt{1.0 + 2.25 + 0.75} = \\sqrt{4} = 2.0',
-    'src': 'Chapter 17.3'},
+    'src': 'Chapter 17.3', 'sec': '17.3'},
   ],
   'theory': [
    {'q': 'The following activities make up a construction project:\n\nA (no predecessor, 4 '
@@ -419,6 +449,6 @@ CH = {
             'costs per week for A, C, E and G, select the two cheapest weeks, verify by '
             're-running the network that no other path becomes binding, and accept the bonus '
             'only if it exceeds that cost.'}],
-    'src': 'Chapter 17.2'},
+    'src': 'Chapter 17.2', 'sec': '17.2'},
   ]},
 }

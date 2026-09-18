@@ -155,6 +155,37 @@ CH = {
 
   {'n': '14.6', 't': 'Worksheet summary — definitions and key lists', 'b': [
     {'note': 'This chapter has no formulae of its own; it is defined vocabulary and lists.'},
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§14.1 What OR is** — scientific/mathematical modelling applied to operational '
+      'problems for a quantitative decision basis; grew out of WWII interdisciplinary teams, '
+      'moved into industry after 1945. Characteristics: system orientation (a local optimum '
+      'can harm the whole), an interdisciplinary team, the scientific method, a quantitative '
+      'output, the use of models, a search for the **optimum** (not merely workable), and '
+      'decision **support**, not replacement.',
+      '**§14.2 Stages of an OR study** — formulate (objective, variables, constraints, '
+      'effectiveness measure — the hardest, most-skimped stage); construct the model; collect '
+      'data and derive a solution; **test/validate** (against historical data, plus '
+      'sensitivity analysis); establish controls (monitor the parameters that would change the '
+      'decision); implement. Examiners ask for these **by name with a one-line explanation '
+      'each** — the marks are in the explanation, not the bare list.',
+      '**§14.3 Types of model** — by abstraction: iconic (physical likeness), analogue (one '
+      'property stands for another, e.g. a graph), symbolic/mathematical (equations, most '
+      'abstract and flexible). By uncertainty: deterministic (LP, basic EOQ, CPM) vs '
+      'stochastic (queueing, simulation, PERT, decision trees). Also: static vs dynamic; '
+      'descriptive vs normative/optimising; analytical vs numerical/iterative.',
+      '**§14.4 The principal techniques** — match each to its problem: linear programming '
+      '(scarce-resource allocation), EOQ/inventory control (order quantity and timing), '
+      'network analysis/CPM/PERT (project scheduling), replacement analysis (when to replace '
+      'deteriorating/failing assets), transportation/assignment (least-cost distribution/'
+      'allocation), simulation (systems too complex for an analytical solution), plus queueing '
+      'theory, decision theory, game theory and Markov analysis.',
+      '**§14.5 Benefits and limitations** — benefits: better decisions, co-ordination, control '
+      'and systems, and cost saving from testing on the model rather than reality. '
+      'Limitations: cost/time, simplifying assumptions, data dependence, intangible factors '
+      'left out, the communication gap, and resistance to implementation. Standard closing '
+      'line: OR **informs** managerial judgement, it does not replace it.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Operations research (OR)** — the application of scientific method (especially '
@@ -228,27 +259,27 @@ CH = {
     'a': 1,
     'w': 'Analogue models substitute one property for another. Iconic models physically '
          'resemble the original; symbolic models use equations.',
-    'src': 'Chapter 14.3'},
+    'src': 'Chapter 14.3', 'sec': '14.3'},
    {'q': 'Which of the following is a deterministic model?',
     'o': ['Simulation', 'Linear programming', 'Queueing theory', 'PERT', 'Markov analysis'],
     'a': 1,
     'w': 'Linear programming assumes all coefficients are known with certainty. The others all '
          'involve random variables.',
-    'src': 'Chapter 14.3'},
+    'src': 'Chapter 14.3', 'sec': '14.3'},
    {'q': 'Operations research first developed as a discipline during',
     'o': ['the Industrial Revolution', 'the Second World War', 'the 1970s oil crisis',
           'the dot-com era', 'the Great Depression'],
     'a': 1,
     'w': 'Interdisciplinary teams were formed to improve military operations, and the methods '
          'were carried into industry after 1945.',
-    'src': 'Chapter 14.1'},
+    'src': 'Chapter 14.1', 'sec': '14.1'},
    {'q': 'In an operations research study, checking the model against historical data to see '
          'whether it reproduces known outcomes is called',
     'o': ['formulation', 'validation', 'implementation', 'optimisation', 'sensitivity'],
     'a': 1,
     'w': 'Validation tests whether the model is an adequate representation before its output '
          'is relied on.',
-    'src': 'Chapter 14.2'},
+    'src': 'Chapter 14.2', 'sec': '14.2'},
    {'q': 'The technique most appropriate for allocating scarce resources among competing '
          'products to maximise contribution is',
     'o': ['network analysis', 'linear programming', 'simulation',
@@ -256,7 +287,7 @@ CH = {
     'a': 1,
     'w': 'Linear programming maximises a linear objective subject to linear resource '
          'constraints.',
-    'src': 'Chapter 14.4'},
+    'src': 'Chapter 14.4', 'sec': '14.4'},
   ],
   'theory': [
    {'q': 'Define operations research and outline the stages involved in an operations research '
@@ -314,6 +345,6 @@ CH = {
       {'p': 'These limitations argue for using operations research as an aid to judgement rather '
             'than a substitute for it. The model quantifies what can be quantified; the manager '
             'weighs that result against everything the model necessarily left out.'}],
-    'src': 'Chapter 14.1–14.5'},
+    'src': 'Chapter 14.1–14.5', 'sec': '14.1'},
   ]},
 }

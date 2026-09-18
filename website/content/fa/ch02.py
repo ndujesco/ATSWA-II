@@ -837,7 +837,7 @@ CH = {
     'a': 1,
     'w': 'Relevance and faithful representation are fundamental — information lacking either is '
          'not useful. Comparability, verifiability, timeliness and understandability are enhancing.',
-    'src': 'Chapter 2.3'},
+    'src': 'Chapter 2.3', 'sec': '2.3'},
    {'q': 'An entity controls a machine held under a five-year lease but does not own it. Under '
          'the Conceptual Framework the machine is',
     'o': ['not an asset, because the entity does not own it',
@@ -848,7 +848,7 @@ CH = {
     'a': 1,
     'w': 'The definition turns on control, not legal ownership. The past event is signing the '
          'lease; the right to direct the use of the machine is the economic resource.',
-    'src': 'Chapter 2.5'},
+    'src': 'Chapter 2.5', 'sec': '2.5'},
    {'q': 'A business had opening net assets of ₦3,000,000 and closing net assets of ₦4,100,000. '
          'The owner introduced ₦500,000 and withdrew ₦200,000 during the year. Profit for the '
          'year is',
@@ -856,13 +856,13 @@ CH = {
     'a': 0,
     'w': 'Strip out the two owner transactions from the movement in net assets.',
     'calc': '\\text{Profit} = (4{,}100{,}000 - 3{,}000{,}000) + 200{,}000 - 500{,}000 = 800{,}000',
-    'src': 'Chapter 2.5'},
+    'src': 'Chapter 2.5', 'sec': '2.5'},
    {'q': 'The pervasive constraint on the information provided in financial reports is',
     'o': ['materiality', 'prudence', 'the cost of providing it', 'going concern', 'consistency'],
     'a': 2,
     'w': 'Cost is described in the Framework as the pervasive constraint: the benefits of '
          'reporting information must justify the cost of providing it.',
-    'src': 'Chapter 2.3'},
+    'src': 'Chapter 2.3', 'sec': '2.3'},
    {'q': 'Under IFRS 18, which subtotal must be presented in the statement of profit or loss?',
     'o': ['Gross profit', 'EBITDA', 'Operating profit',
           'Profit attributable to non-controlling interests', 'Net current assets'],
@@ -870,14 +870,14 @@ CH = {
     'w': 'IFRS 18 requires two defined subtotals: operating profit, and profit before financing '
          'and income taxes. EBITDA is a management-defined performance measure and must be '
          'reconciled in a note.',
-    'src': 'Chapter 2.8'},
+    'src': 'Chapter 2.8', 'sec': '2.8'},
    {'q': 'Which measurement basis reflects the present value of the cash flows an entity expects '
          'to derive from the continuing use of an asset and its ultimate disposal?',
     'o': ['Fair value', 'Historical cost', 'Current cost', 'Value in use', 'Fulfilment value'],
     'a': 3,
     'w': 'Value in use is entity-specific and forward-looking, and is the basis used in '
          'impairment testing. Fair value is market-based.',
-    'src': 'Chapter 2.5'},
+    'src': 'Chapter 2.5', 'sec': '2.5'},
    {'q': 'A company shows trade receivables of ₦2,000,000 owed by a customer, and separately owes '
          'the same customer ₦1,800,000, with no legally enforceable right of set-off between the '
          'two balances. Presenting only the ₦200,000 net figure would be',
@@ -890,7 +890,7 @@ CH = {
     'w': 'Offsetting is only permitted where the entity has a legally enforceable right to offset '
          'AND intends to settle net or simultaneously. Without the legal right, the gross amounts '
          'must be shown separately.',
-    'src': 'Chapter 2.6'},
+    'src': 'Chapter 2.6', 'sec': '2.6'},
   ],
   'theory': [
    {'q': 'The IASB Conceptual Framework identifies two fundamental and four enhancing qualitative '
@@ -914,7 +914,7 @@ CH = {
         '**Understandability** — it is classified, characterised and presented clearly and concisely.']},
       {'note': 'Add the cost constraint for a mark: the benefits of reporting must justify the cost.'},
     ],
-    'src': 'Chapter 2.3'},
+    'src': 'Chapter 2.3', 'sec': '2.3'},
    {'q': 'Define an asset and a liability as set out in the 2018 Conceptual Framework, and state '
          'the recognition criteria that must additionally be satisfied.',
     'marks': 6,
@@ -934,7 +934,7 @@ CH = {
       {'p': 'Recognition is also subject to the cost constraint: the benefit of recognising the '
             'item must exceed the cost of doing so.'},
     ],
-    'src': 'Chapter 2.5'},
+    'src': 'Chapter 2.5', 'sec': '2.5'},
    {'q': 'State and explain the THREE requirements introduced by IFRS 18 to achieve its '
          'objective of improving how companies communicate financial performance.',
     'marks': 9,
@@ -955,6 +955,6 @@ CH = {
     {'note': 'The study text itself only labels the first two of these "1)" and "2)" before moving '
              'to a new section header for the third — see Chapter 2.8 for the full explanation of '
              'this gap in the source material.'}],
-    'src': 'Chapter 2.8'},
+    'src': 'Chapter 2.8', 'sec': '2.8'},
   ]},
 }

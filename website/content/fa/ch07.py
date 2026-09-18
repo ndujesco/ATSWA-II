@@ -243,7 +243,7 @@ CH = {
     'w': 'A revised useful life is a change in accounting estimate. IAS 8 requires prospective '
          'application: the remaining carrying amount is spread over the revised remaining life '
          'and prior years are untouched.',
-    'src': 'Chapter 7.3'},
+    'src': 'Chapter 7.3', 'sec': '7.3'},
    {'q': 'An asset costing ₦20,000,000 with no residual value has been depreciated on the '
          'straight line basis over 20 years. After 8 years the remaining useful life is revised '
          'to 6 years. The charge for year 9 is',
@@ -252,7 +252,7 @@ CH = {
     'w': 'Spread the unrecovered carrying amount over the revised remaining life.',
     'calc': '\\text{CA} = 20{,}000{,}000 - \\left(\\frac{20{,}000{,}000}{20}\\times 8\\right) '
             '= 12{,}000{,}000; \\quad \\frac{12{,}000{,}000}{6} = 2{,}000{,}000',
-    'src': 'Chapter 7.3'},
+    'src': 'Chapter 7.3', 'sec': '7.3'},
    {'q': 'Under IAS 8, an accounting policy may be changed only if',
     'o': ['the directors consider the result more favourable',
           'the change is required by a standard, or gives reliable and more relevant information',
@@ -262,7 +262,7 @@ CH = {
     'a': 1,
     'w': 'Those are the only two permitted grounds. Any other reason — most obviously a wish to '
          'report a better result — breaches the standard.',
-    'src': 'Chapter 7.2'},
+    'src': 'Chapter 7.2', 'sec': '7.2'},
    {'q': 'Where it is unclear whether a change is a change of policy or a change of estimate, '
          'IAS 8 requires it to be treated as',
     'o': ['a change of policy', 'a change of estimate', 'a prior period error',
@@ -270,7 +270,7 @@ CH = {
     'a': 1,
     'w': 'IAS 8 states the default explicitly: where a distinction is difficult, treat the change '
          'as a change in accounting estimate, which means prospective application.',
-    'src': 'Chapter 7.3'},
+    'src': 'Chapter 7.3', 'sec': '7.3'},
    {'q': 'A material error in the 2023 financial statements is discovered in 2024. It should be '
          'corrected by',
     'o': ['charging it against 2024 profit',
@@ -281,7 +281,7 @@ CH = {
     'a': 1,
     'w': 'A material prior period error is corrected retrospectively. It never passes through '
          'current-period profit or loss.',
-    'src': 'Chapter 7.4'},
+    'src': 'Chapter 7.4', 'sec': '7.4'},
   ],
   'theory': [
    {'q': 'Distinguish between a change in accounting policy and a change in accounting estimate, '
@@ -305,6 +305,6 @@ CH = {
         'allowance for doubtful debts; revising a warranty provision.']},
       {'note': 'Add the IAS 8 default for a mark: where the distinction is unclear, treat the '
                'change as a change in estimate.'}],
-    'src': 'Chapter 7.2'},
+    'src': 'Chapter 7.2', 'sec': '7.2'},
   ]},
 }

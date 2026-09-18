@@ -734,7 +734,7 @@ CH = {
     'a': 1,
     'w': 'Virement moves money between sub-heads of the same head, subject to a 10% cap on '
          'overhead-cost sub-heads, and cannot create a new sub-head.',
-    'src': 'Chapter 18.5(b)'},
+    'src': 'Chapter 18.5(b)', 'sec': '18.5'},
    {'q': 'Which committee is empowered to examine the Auditor-General\'s reports on fraud or '
          'embezzlement of public funds and report to the National/State Assembly?',
     'o': ['The Finance and General-Purpose Committee', 'The Audit Committee',
@@ -744,7 +744,7 @@ CH = {
     'w': 'The PAC specifically examines audited accounts and the Auditor-General\'s report, '
          'exposing waste, corruption or inefficiency and recommending action to the '
          'Assembly.',
-    'src': 'Chapter 18.3(d)'},
+    'src': 'Chapter 18.3(d)', 'sec': '18.3'},
    {'q': 'The officer below whose rank the Vote Book may not be maintained is a',
     'o': ['Senior Finance Assistant', 'Director of Finance and Accounts', 'Permanent '
           'Secretary', 'Accountant-General', 'Chief Treasury Officer'],
@@ -752,7 +752,7 @@ CH = {
     'w': 'The Vote Book must be maintained by an officer of integrity and experience not '
          'below the rank of Senior Finance Assistant, always under a senior officer\'s '
          'supervision.',
-    'src': 'Chapter 18.8.2'},
+    'src': 'Chapter 18.8.2', 'sec': '18.8'},
   ],
   'theory': [
    {'q': 'Distinguish "ante-natal" from "post-natal" legislative control, and state the '
@@ -767,7 +767,7 @@ CH = {
             'Consolidated Revenue Fund to run the Federation\'s administration for not more '
             'than **six months**, or until the Appropriation Act comes into operation, '
             'whichever is earlier.'}],
-    'src': 'Chapter 18.3'},
+    'src': 'Chapter 18.3', 'sec': '18.3'},
    {'q': 'State the conditions under which an Accounting Officer may apply for virement.',
     'marks': 8,
     'a': [
@@ -784,7 +784,7 @@ CH = {
         'Details of authorised virements must be forwarded within one month of approval to '
         'the ministry concerned, and to the Accountant-General and Auditor-General for the '
         'Federation.']}],
-    'src': 'Chapter 18.5(b)'},
+    'src': 'Chapter 18.5(b)', 'sec': '18.5'},
    {'q': 'List any five purposes served by keeping a Departmental Vote Expenditure Allocation '
          '(Vote) Book.',
     'marks': 5,
@@ -796,6 +796,6 @@ CH = {
         'provided for in the approved budget.',
         'To reveal balances available.',
         'To show all commitments and outstanding liabilities.']}],
-    'src': 'Chapter 18.8.1'},
+    'src': 'Chapter 18.8.1', 'sec': '18.8'},
   ]},
 }

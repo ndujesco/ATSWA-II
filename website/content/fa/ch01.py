@@ -953,14 +953,14 @@ CH = {
     'a': 1,
     'w': 'Bookkeeping is the recording stage and ends at the trial balance. Accounting takes '
          'over from there — adjusting, preparing statements and interpreting them.',
-    'src': 'Chapter 1.2'},
+    'src': 'Chapter 1.2', 'sec': '1.2'},
    {'q': 'A trader values his inventory at the lower of cost and net realisable value. Which '
          'concept is he applying?',
     'o': ['Going concern', 'Consistency', 'Prudence', 'Materiality', 'Periodicity'],
     'a': 2,
     'w': 'Prudence requires caution under uncertainty: an asset is not carried above the amount '
          'expected to be recovered from it. Taking the lower of the two figures does exactly that.',
-    'src': 'Chapter 1.6'},
+    'src': 'Chapter 1.6', 'sec': '1.6'},
    {'q': 'The proprietor of a business takes goods costing ₦40,000 for personal use. Recording '
          'this as drawings rather than sales applies which concept?',
     'o': ['Money measurement', 'Business entity', 'Realisation', 'Duality', 'Historical cost'],
@@ -969,7 +969,7 @@ CH = {
          'left the business, but not by way of a sale to a third party, so capital is reduced '
          'rather than revenue recognised.',
     'calc': '\\text{Dr Drawings } 40{,}000 \\quad \\text{Cr Purchases } 40{,}000',
-    'src': 'Chapter 1.6'},
+    'src': 'Chapter 1.6', 'sec': '1.6'},
    {'q': 'Which body adopts and enforces accounting standards in Nigeria?',
     'o': ['The International Accounting Standards Board',
           'The Financial Reporting Council of Nigeria',
@@ -979,7 +979,7 @@ CH = {
     'a': 1,
     'w': 'The IASB issues IFRS internationally. The FRCN, created by the Financial Reporting '
          'Council of Nigeria Act 2011, adopts them for Nigeria and enforces compliance.',
-    'src': 'Chapter 1.7'},
+    'src': 'Chapter 1.7', 'sec': '1.7'},
    {'q': 'Under the accrual basis, an expense is recognised when it is',
     'o': ['paid in cash', 'invoiced by the supplier', 'incurred',
           'approved by the directors', 'included in the budget'],
@@ -987,7 +987,7 @@ CH = {
     'w': 'Accrual accounting recognises an expense in the period in which the benefit is '
          'consumed — when it is incurred — regardless of when the invoice arrives or the cash '
          'leaves. That is why accruals and prepayments exist.',
-    'src': 'Chapter 1.6'},
+    'src': 'Chapter 1.6', 'sec': '1.6'},
    {'q': 'Which of the following is NOT a user of financial statements identified with an '
          'information need in the study text?',
     'o': ['Trade payables wanting to know whether they will be paid',
@@ -999,7 +999,7 @@ CH = {
     'w': 'Competitors read published statements, but they are not a user group whose information '
          'needs financial reporting sets out to serve. The other four are standard user groups '
          'with recognised needs.',
-    'src': 'Chapter 1.5'},
+    'src': 'Chapter 1.5', 'sec': '1.5'},
    {'q': 'A company writes off the cost of a ₦9,000 stapler expected to last five years as an '
          'expense of the current period. This is justified by',
     'o': ['the going concern concept', 'the materiality concept', 'the realisation concept',
@@ -1007,7 +1007,7 @@ CH = {
     'a': 1,
     'w': 'Strictly the stapler is a non-current asset, but the amount is too small to influence '
          'any decision taken on the statements. Materiality permits the simpler treatment.',
-    'src': 'Chapter 1.6'},
+    'src': 'Chapter 1.6', 'sec': '1.6'},
   ],
   'theory': [
    {'q': 'Distinguish between bookkeeping and accounting under any FIVE headings.',
@@ -1023,7 +1023,7 @@ CH = {
           ]}},
           {'note': 'Five well-made distinctions earn full marks. A tabular answer is faster to '
                    'write and easier for the examiner to mark than prose.'}],
-    'src': 'Chapter 1.2'},
+    'src': 'Chapter 1.2', 'sec': '1.2'},
    {'q': 'State the accounting concept breached in each of the following, and give the correct '
          'treatment. (a) A trader includes his personal car in the business assets. (b) A company '
          'changes from FIFO to weighted average every year to smooth reported profit. (c) A '
@@ -1044,7 +1044,7 @@ CH = {
             '**(d) Money measurement.** The workforce cannot be measured reliably in money and '
             'is not controlled by the entity, so it fails the definition of an asset and is not '
             'recognised.']}],
-    'src': 'Chapter 1.6'},
+    'src': 'Chapter 1.6', 'sec': '1.6'},
    {'q': 'Explain FIVE advantages of accounting standards to the users of financial statements.',
     'marks': 5,
     'a': [{'ol': [
@@ -1059,6 +1059,6 @@ CH = {
             '**Consistency and transparency** — entities prepare statements the same way year on '
             'year, based on open rules rather than discretion, which also narrows the scope for '
             'creative accounting.']}],
-    'src': 'Chapter 1.7'},
+    'src': 'Chapter 1.7', 'sec': '1.7'},
   ]},
 }

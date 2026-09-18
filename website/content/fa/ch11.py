@@ -572,7 +572,7 @@ CH = {
     'w': 'Super profit is the excess of actual profit over the normal return on capital employed.',
     'calc': '3{,}600{,}000 - (0.12 \\times 18{,}000{,}000) = 3{,}600{,}000 - 2{,}160{,}000 '
             '= 1{,}440{,}000',
-    'src': 'Chapter 11.1'},
+    'src': 'Chapter 11.1', 'sec': '11.1'},
    {'q': 'Yemi and Dele share profits 1 : 2. They admit Ade, who is entitled to one-fifth of '
          'profits, the others continuing to share the balance in their old ratio. The new ratio is',
     'o': ['1 : 2 : 1', '4 : 8 : 3', '3 : 6 : 5', '2 : 4 : 1', '1 : 1 : 1'],
@@ -581,7 +581,7 @@ CH = {
          '= 8/15; Ade is 1/5 = 3/15. So 4 : 8 : 3.',
     'calc': '\\text{Yemi} = \\frac{4}{15}, \\quad \\text{Dele} = \\frac{8}{15}, \\quad '
             '\\text{Ade} = \\frac{3}{15}',
-    'src': 'Chapter 11.2'},
+    'src': 'Chapter 11.2', 'sec': '11.2'},
    {'q': 'A surplus arising on the revaluation of assets when a new partner is admitted is '
          'credited to',
     'o': ['all partners in the new ratio', 'the old partners in the old ratio',
@@ -590,7 +590,7 @@ CH = {
     'a': 1,
     'w': 'The surplus accrued while only the old partners were in the firm, so it belongs to them '
          'in the ratio in which they then shared profits.',
-    'src': 'Chapter 11.3'},
+    'src': 'Chapter 11.3', 'sec': '11.3'},
    {'q': 'Under the rule in Garner v Murray, the deficiency of an insolvent partner is borne by '
          'the solvent partners in the ratio of',
     'o': ['their profit sharing ratio', 'their last agreed capital balances', 'their drawings',
@@ -598,7 +598,7 @@ CH = {
     'a': 1,
     'w': 'The rule requires the deficiency to be shared in the ratio of the solvent partners\' '
          'last agreed capitals, not in the profit sharing ratio.',
-    'src': 'Chapter 11.5'},
+    'src': 'Chapter 11.5', 'sec': '11.5'},
    {'q': 'On the dissolution of a partnership, the debit balance remaining on the realisation '
          'account represents',
     'o': ['a profit on realisation', 'a loss on realisation', 'cash still to be collected',
@@ -607,7 +607,7 @@ CH = {
     'w': 'The realisation account is debited with book values and credited with proceeds. A debit '
          'balance means the assets realised less than their book value — a loss, shared in the '
          'profit sharing ratio.',
-    'src': 'Chapter 11.5'},
+    'src': 'Chapter 11.5', 'sec': '11.5'},
   ],
   'theory': [
    {'q': 'Explain the nature of goodwill and describe FOUR methods by which it may be valued.',
@@ -635,6 +635,6 @@ CH = {
         'as an agreed percentage of annual gross fees.']},
       {'note': 'Every method gives a different figure from the same facts, so the method used must '
                'be agreed between the partners and stated in the answer.'}],
-    'src': 'Chapter 11.1'},
+    'src': 'Chapter 11.1', 'sec': '11.1'},
   ]},
 }

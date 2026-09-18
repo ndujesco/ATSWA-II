@@ -953,20 +953,20 @@ CH = {
     'w': 'Cash (an asset) falls by ₦120,000 and the payable (a liability) falls by ₦120,000. '
          'Both sides of the equation fall equally. Profit is untouched — the expense was '
          'recognised when the goods were received.',
-    'src': 'Chapter 3.1'},
+    'src': 'Chapter 3.1', 'sec': '3.1'},
    {'q': 'Repairs to a motor vehicle were debited to the Motor Vehicles account. This is an error of',
     'o': ['omission', 'commission', 'principle', 'original entry', 'reversal'],
     'a': 2,
     'w': 'The entry went to the wrong *type* of account — a revenue expense treated as capital '
          'expenditure. That is an error of principle, and the trial balance still agrees.',
-    'src': 'Chapter 3.6'},
+    'src': 'Chapter 3.6', 'sec': '3.6'},
    {'q': 'Opening capital was ₦1,800,000, closing capital ₦2,450,000. The owner introduced '
          '₦300,000 and drew ₦180,000. Profit for the period was',
     'o': ['₦350,000', '₦530,000', '₦650,000', '₦770,000', '₦1,130,000'],
     'a': 1,
     'w': 'Rearrange the capital movement formula for profit.',
     'calc': '\\text{Profit} = 2{,}450{,}000 - 1{,}800{,}000 - 300{,}000 + 180{,}000 = 530{,}000',
-    'src': 'Chapter 3.1'},
+    'src': 'Chapter 3.1', 'sec': '3.1'},
    {'q': 'The imprest is ₦40,000. Vouchers for the month total ₦27,300 and the tin holds ₦12,700. '
          'The amount to reimburse is',
     'o': ['₦12,700', '₦27,300', '₦40,000', '₦52,700', '₦14,600'],
@@ -974,14 +974,14 @@ CH = {
     'w': 'Reimbursement always equals the vouchers, restoring the float. Check: '
          '40,000 − 27,300 = 12,700, which is what the tin holds, so there is no shortage.',
     'calc': '\\text{Reimbursement} = 40{,}000 - 12{,}700 = 27{,}300',
-    'src': 'Chapter 3.4'},
+    'src': 'Chapter 3.4', 'sec': '3.4'},
    {'q': 'A credit note received from a supplier is entered in the',
     'o': ['sales day book', 'purchases day book', 'sales returns day book',
           'purchases returns day book', 'petty cash book'],
     'a': 3,
     'w': 'A credit note *received* means goods were returned *to* the supplier, so it enters the '
          'purchases returns (returns outwards) day book.',
-    'src': 'Chapter 3.4'},
+    'src': 'Chapter 3.4', 'sec': '3.4'},
    {'q': 'A trial balance shows a difference of ₦270. The most likely cause is',
     'o': ['an error of omission', 'a compensating error', 'a transposition on one side only',
           'an error of principle', 'a reversal of entries'],
@@ -989,7 +989,7 @@ CH = {
     'w': 'A difference divisible by 9 points to a transposition — ₦8,730 written as ₦8,460, for '
          'example. The other four errors listed all leave the trial balance in agreement.',
     'calc': '270 \\div 9 = 30 \\quad \\text{(exact, so a transposition is likely)}',
-    'src': 'Chapter 3.6'},
+    'src': 'Chapter 3.6', 'sec': '3.6'},
    {'q': 'Discount received of ₦12,000 was credited to the discount allowed account. Correcting '
          'this will change profit by',
     'o': ['nil', '₦12,000 increase', '₦12,000 decrease', '₦24,000 increase', '₦24,000 decrease'],
@@ -998,7 +998,7 @@ CH = {
          'was wrongly reduced by ₦12,000. Correcting both moves profit by ₦24,000 upward.',
     'calc': '\\text{Effect} = 12{,}000 \\text{ (income restored)} + 12{,}000 '
             '\\text{ (expense restored)} = 24{,}000',
-    'src': 'Chapter 3.6'},
+    'src': 'Chapter 3.6', 'sec': '3.6'},
   ],
   'theory': [
    {'q': 'State and explain SIX errors that would not be revealed by a trial balance, giving one '
@@ -1023,7 +1023,7 @@ CH = {
     {'note': 'The trial balance agrees in every one of these cases because each error preserves '
              'equality of debits and credits. Only errors of principle and of original entry '
              'misstate profit; commission and omission of a transfer affect classification only.'}],
-    'src': 'Chapter 3.6'},
+    'src': 'Chapter 3.6', 'sec': '3.6'},
    {'q': 'Explain the imprest system of petty cash and state FOUR of its advantages.',
     'marks': 6,
     'a': [
@@ -1041,6 +1041,6 @@ CH = {
         'Every payment must be supported by an authorised voucher, which enforces control and '
         'gives an audit trail.',
         'It relieves the main cashier of a large volume of trivial payments.']}],
-    'src': 'Chapter 3.4'},
+    'src': 'Chapter 3.4', 'sec': '3.4'},
   ]},
 }

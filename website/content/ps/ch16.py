@@ -652,13 +652,13 @@ CH = {
     'a': 1,
     'w': 'Revenue is recognised when earned and expenses when incurred, regardless of when cash '
          'moves.',
-    'src': 'Chapter 16.1'},
+    'src': 'Chapter 16.1', 'sec': '16.1'},
    {'q': 'Total assets are ₦180,000,000 and total liabilities ₦52,000,000. Net assets are',
     'o': ['₦232,000,000', '₦128,000,000', '₦52,000,000', '₦180,000,000', '₦104,000,000'],
     'a': 1,
     'w': 'Net assets are total assets less total liabilities.',
     'calc': '180{,}000{,}000 - 52{,}000{,}000 = ₦128{,}000{,}000',
-    'src': 'Chapter 16.3'},
+    'src': 'Chapter 16.3', 'sec': '16.3'},
    {'q': 'A gain on the revaluation of property is recognised in',
     'o': ['the Statement of Financial Performance',
           'the Statement of Changes in Net Assets/Equity',
@@ -667,7 +667,7 @@ CH = {
     'a': 1,
     'w': 'The gain goes to the revaluation reserve within net assets, not through surplus or '
          'deficit for the year.',
-    'src': 'Chapter 16.4'},
+    'src': 'Chapter 16.4', 'sec': '16.4'},
    {'q': 'In a cash flow statement prepared by the indirect method, an increase in receivables '
          'is',
     'o': ['added to the surplus', 'deducted from the surplus', 'shown as an investing outflow',
@@ -675,14 +675,14 @@ CH = {
     'a': 1,
     'w': 'Revenue has been recognised but the cash has not arrived, so cash is lower than the '
          'surplus suggests.',
-    'src': 'Chapter 16.5'},
+    'src': 'Chapter 16.5', 'sec': '16.5'},
    {'q': 'The purchase of property, plant and equipment is classified in the cash flow '
          'statement as',
     'o': ['an operating outflow', 'an investing outflow', 'a financing outflow',
           'a non-cash item', 'an adjustment to net assets'],
     'a': 1,
     'w': 'Acquisition and disposal of non-current assets are investing activities.',
-    'src': 'Chapter 16.5'},
+    'src': 'Chapter 16.5', 'sec': '16.5'},
    {'q': 'Which item would appear in an accrual basis but NOT in a cash basis Statement of '
          'Financial Position?',
     'o': ['Cash and cash equivalents', 'Employee benefit obligations', 'Advances', 'Deposits',
@@ -690,7 +690,7 @@ CH = {
     'a': 1,
     'w': 'A pension obligation is incurred but unpaid, so it is recognised only under the '
          'accrual basis. The other four arise from cash transactions and appear under both.',
-    'src': 'Chapter 16.3'},
+    'src': 'Chapter 16.3', 'sec': '16.3'},
   ],
   'theory': [
    {'q': 'The following balances were extracted from the accrual-based records of the '
@@ -798,6 +798,6 @@ CH = {
                'lives, impairment, actuarial assumptions — that themselves create scope for '
                'manipulation. The conclusion is nevertheless that the information gained '
                'outweighs those costs, which is why IPSAS and Nigeria have both moved that way.'}],
-    'src': 'Chapter 16.2–16.6'},
+    'src': 'Chapter 16.2–16.6', 'sec': '16.2'},
   ]},
 }

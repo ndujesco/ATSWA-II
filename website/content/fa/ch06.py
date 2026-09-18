@@ -652,14 +652,14 @@ CH = {
     'w': 'A mark-up of 25% (1/4 on cost) is a margin of 1/5, or 20%, on sales. Take 20% of sales.',
     'calc': '\\text{Margin} = \\frac{0.25}{1.25} = 0.20; \\quad 0.20 \\times 3{,}000{,}000 '
             '= 600{,}000',
-    'src': 'Chapter 6.6'},
+    'src': 'Chapter 6.6', 'sec': '6.6'},
    {'q': 'Opening capital ₦2,400,000; closing capital ₦2,900,000; drawings ₦600,000; capital '
          'introduced ₦250,000. Profit for the year is',
     'o': ['₦500,000', '₦850,000', '₦1,100,000', '₦250,000', '₦350,000'],
     'a': 1,
     'w': 'Add back drawings and remove the capital introduced from the movement in capital.',
     'calc': '(2{,}900{,}000 - 2{,}400{,}000) + 600{,}000 - 250{,}000 = 850{,}000',
-    'src': 'Chapter 6.2'},
+    'src': 'Chapter 6.2', 'sec': '6.2'},
    {'q': 'Opening receivables ₦520,000; closing receivables ₦610,000; cash received from '
          'customers ₦4,300,000; discounts allowed ₦75,000; bad debts written off ₦40,000. Credit '
          'sales were',
@@ -667,7 +667,7 @@ CH = {
     'a': 2,
     'w': 'Build the receivables control account and take credit sales as the balancing figure.',
     'calc': '610{,}000 + 4{,}300{,}000 + 75{,}000 + 40{,}000 - 520{,}000 = 4{,}505{,}000',
-    'src': 'Chapter 6.3'},
+    'src': 'Chapter 6.3', 'sec': '6.3'},
    {'q': 'A trader operates on a gross profit margin of 33⅓%. If cost of sales was ₦2,400,000, '
          'sales were',
     'o': ['₦3,200,000', '₦3,600,000', '₦3,000,000', '₦2,800,000', '₦7,200,000'],
@@ -675,7 +675,7 @@ CH = {
     'w': 'A margin of 1/3 means cost is 2/3 of sales, so sales are cost × 3/2.',
     'calc': '\\text{Sales} = \\frac{2{,}400{,}000}{1 - \\frac13} = 2{,}400{,}000 \\times '
             '\\frac{3}{2} = 3{,}600{,}000',
-    'src': 'Chapter 6.6'},
+    'src': 'Chapter 6.6', 'sec': '6.6'},
    {'q': 'A statement of affairs is prepared in order to ascertain',
     'o': ['the profit for the period', 'the capital at a particular date',
           'the cash balance at a date', 'the credit sales for the period',
@@ -683,7 +683,7 @@ CH = {
     'a': 1,
     'w': 'A statement of affairs lists assets and liabilities at a date; the balancing figure is '
          'the capital. Profit then comes from comparing two such capitals.',
-    'src': 'Chapter 6.3'},
+    'src': 'Chapter 6.3', 'sec': '6.3'},
    {'q': 'Which of the following is NOT a limitation of incomplete records?',
     'o': ['No trial balance can be extracted',
           'Fraud is difficult to detect',
@@ -693,7 +693,7 @@ CH = {
     'a': 3,
     'w': 'Cheapness is the reason small traders keep incomplete records — it is an advantage, '
          'not a limitation.',
-    'src': 'Chapter 6.8'},
+    'src': 'Chapter 6.8', 'sec': '6.8'},
   ],
   'theory': [
    {'q': 'Explain the capital comparison method of ascertaining profit from incomplete records, '
@@ -723,6 +723,6 @@ CH = {
         'The method gives a profit figure only — it produces no analysis of revenue and expenses, '
         'so it cannot show *why* profit moved.',
         'Such statements are often unacceptable to lenders and revenue authorities.']}],
-    'src': 'Chapter 6.2'},
+    'src': 'Chapter 6.2', 'sec': '6.2'},
   ]},
 }

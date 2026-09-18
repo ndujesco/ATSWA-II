@@ -163,7 +163,32 @@ CH = {
 
   {'n': '1.5', 't': 'Full revision summary (listed)', 'b': [
     {'p': 'Everything in this chapter, compressed to lists for a last read-through. Nothing here '
-          'is new — it is §§1.1–1.4 in recall form.'},
+          'is new — it is §§1.1–1.4 in recall form, mapped below so you can check off every '
+          'section as you go.'},
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§1.1 Types of data** — covered in **A–C** below: what data/statistics are, the '
+      'primary/secondary, qualitative/quantitative, discrete/continuous and nominal/ordinal/'
+      'interval/ratio classifications, and the six methods of collecting primary data with '
+      'their trade-offs (compiling from published sources is **secondary**, not primary — a '
+      'standard trap).',
+      '**§1.2 Sampling** — covered in **D–E**: census vs sample; probability sampling (simple '
+      'random, systematic, stratified, cluster, multi-stage) where selection probability is '
+      '**known**, vs non-probability sampling (quota, judgemental, convenience, snowball) '
+      'where it is not — that distinction is the whole difference and is what makes sampling '
+      'error estimable only for probability designs.',
+      '**§1.3 The frequency distribution** — covered in **G–H**: what a frequency table is; '
+      'Sturges\' rule $k=1+3.322\\log_{10}N$ for the number of classes; class limits vs '
+      '**boundaries** vs width vs mid-point/mark, with the boundary formula and the warning '
+      'that boundaries feed histograms/ogives/median/mode while marks feed the mean.',
+      '**§1.4 Presenting data** — covered in **F, I–J**: text/tabular/diagrammatic '
+      'presentation; bar charts (simple, multiple, component, percentage component); pie '
+      'charts (sector angle $=f/\\sum f\\times360°$); histograms (area, not height, '
+      'proportional to frequency — use frequency density for unequal widths); frequency '
+      'polygons (closed at zero-frequency class marks either end); ogives (less-than vs '
+      'more-than, gives every positional measure except the mode); and the software — Excel '
+      'and SPSS (data editor, output, syntax, script windows).',
+    ]},
     {'h3': 'A. Data and statistics'},
     {'ul': [
       '**Data / statistical data** — raw facts, numeric or non-numeric, collected, analysed and '
@@ -418,14 +443,14 @@ CH = {
     'a': 0,
     'w': 'That is the definition of a frequency table or frequency distribution. A contingency '
          'table cross-classifies two attributes; a probability table gives probabilities.',
-    'src': 'Chapter 1.3'},
+    'src': 'Chapter 1.3', 'sec': '1.3'},
    {'q': 'The ogive can be used to estimate all of the following EXCEPT the',
     'o': ['median', 'quartiles', 'deciles', 'percentiles', 'mode'],
     'a': 4,
     'w': 'An ogive is a cumulative frequency curve, so it gives every measure of **position** — '
          'median, quartiles, deciles, percentiles. The mode is the most frequent value and is '
          'read from a histogram instead.',
-    'src': 'Chapter 1.4'},
+    'src': 'Chapter 1.4', 'sec': '1.4'},
    {'q': 'SPSS stands for',
     'o': ['Standard Program for Statistical Sampling',
           'Statistical Package for the Social Sciences',
@@ -435,7 +460,7 @@ CH = {
     'a': 1,
     'w': 'Statistical Package for the Social Sciences — one of the standard tools for data entry, '
          'presentation and analysis.',
-    'src': 'Chapter 1.4'},
+    'src': 'Chapter 1.4', 'sec': '1.4'},
    {'q': 'Which of the following is NOT a probability sampling method?',
     'o': ['Simple random sampling', 'Stratified sampling', 'Cluster sampling', 'Quota sampling',
           'Systematic sampling'],
@@ -443,20 +468,20 @@ CH = {
     'w': 'In quota sampling the interviewer chooses whom to approach within each quota, so the '
          'probability of any individual being selected is unknown. That is what makes it '
          'non-probability sampling.',
-    'src': 'Chapter 1.2'},
+    'src': 'Chapter 1.2', 'sec': '1.2'},
    {'q': 'For the class interval 30 – 39, the class boundaries are',
     'o': ['30 and 39', '29.5 and 39.5', '30.5 and 38.5', '29 and 40', '34.5 only'],
     'a': 1,
     'w': 'Class boundaries extend half a unit beyond the stated limits so that adjacent classes '
          'touch, which is what continuous data requires.',
-    'src': 'Chapter 1.3'},
+    'src': 'Chapter 1.3', 'sec': '1.3'},
    {'q': 'A population of 3,600 is to be sampled systematically with a sample size of 90. The '
          'sampling interval is',
     'o': ['30', '40', '45', '36', '90'],
     'a': 1,
     'w': 'The interval is population size divided by sample size.',
     'calc': 'k = \\frac{3600}{90} = 40',
-    'src': 'Chapter 1.2'},
+    'src': 'Chapter 1.2', 'sec': '1.2'},
    {'q': 'The first and last points on a frequency polygon have',
     'o': ['zero frequencies', 'cumulative frequencies', 'high frequencies', 'low frequencies',
           'undefined frequencies'],
@@ -464,7 +489,7 @@ CH = {
     'w': 'The polygon is closed by extending it to the class marks of the empty classes '
          'immediately below the first and above the last, where the frequency is zero. This makes '
          'the area under the polygon equal the area of the histogram.',
-    'src': 'Chapter 1.4'},
+    'src': 'Chapter 1.4', 'sec': '1.4'},
    {'q': 'Which of the following is non-numeric ordinal data?',
     'o': ['Monthly income', 'Price of a commodity', 'Occupation',
           'Rating in a beauty contest', 'Number of students in a class'],
@@ -472,21 +497,21 @@ CH = {
     'w': 'A beauty-contest rating puts entrants in rank order but the "values" are not '
          'measurements — non-numeric and ordinal. Occupation is non-numeric but only nominal; '
          'the rest are numeric.',
-    'src': 'Chapter 1.6 (study text Q1)'},
+    'src': 'Chapter 1.6 (study text Q1)', 'sec': '1.6'},
    {'q': 'In statistics, a schedule is a set of questions that is completed by the',
     'o': ['respondent, unaided', 'investigator or interviewer', 'supervisor after the interview',
           'data-entry clerk', 'head of the statistics office'],
     'a': 1,
     'w': 'A schedule is filled in by the investigator as they put the questions; a '
          'questionnaire is filled in by the respondent. That is the whole distinction.',
-    'src': 'Chapter 1.6 (study text Q2)'},
+    'src': 'Chapter 1.6 (study text Q2)', 'sec': '1.6'},
    {'q': 'A list containing every unit in the target population, used as the basis for selecting '
          'a sample, is called the',
     'o': ['sampling unit', 'sampling frame', 'sampling fraction', 'census', 'population'],
     'a': 1,
     'w': 'The sampling frame is the list; a sampling unit is one member of it; the sampling '
          'fraction is $n/N$.',
-    'src': 'Chapter 1.6 (study text Q5)'},
+    'src': 'Chapter 1.6 (study text Q5)', 'sec': '1.6'},
   ],
   'theory': [
    {'q': 'Distinguish between primary and secondary data, and describe FOUR methods of collecting '
@@ -511,6 +536,6 @@ CH = {
         ['**Indirect oral investigation**', 'Reaches information respondents will not give directly',
          'Depends on the reliability and memory of third parties'],
       ]}}],
-    'src': 'Chapter 1.1'},
+    'src': 'Chapter 1.1', 'sec': '1.1'},
   ]},
 }

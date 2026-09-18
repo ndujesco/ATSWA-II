@@ -279,7 +279,7 @@ CH = {
     'a': 1,
     'w': 'Cash has been spent building up inventory, so it is a cash outflow: an increase in a '
          'current asset is deducted.',
-    'src': 'Chapter 14.4'},
+    'src': 'Chapter 14.4', 'sec': '14.4'},
    {'q': 'Tax payable was ₦18,000,000 at the start of the year and ₦21,000,000 at the end. The '
          'charge for the year was ₦25,000,000. Tax paid during the year was',
     'o': ['₦25,000,000', '₦22,000,000', '₦28,000,000', '₦21,000,000', '₦18,000,000'],
@@ -287,7 +287,7 @@ CH = {
     'w': 'Open a tax T-account: opening liability plus the charge, less the closing liability, '
          'gives the cash paid.',
     'calc': '18{,}000{,}000 + 25{,}000{,}000 - 21{,}000{,}000 = 22{,}000{,}000',
-    'src': 'Chapter 14.4'},
+    'src': 'Chapter 14.4', 'sec': '14.4'},
    {'q': 'Which of the following is a financing activity under IAS 7?',
     'o': ['Purchase of a delivery vehicle', 'Receipt of a dividend from an investment',
           'Repayment of a bank loan', 'Payment of wages',
@@ -295,7 +295,7 @@ CH = {
     'a': 2,
     'w': 'Financing activities change the size and composition of the contributed equity and '
          'borrowings. Repaying a loan does exactly that.',
-    'src': 'Chapter 14.3'},
+    'src': 'Chapter 14.3', 'sec': '14.3'},
    {'q': 'An asset with a carrying amount of ₦4,000,000 was sold for ₦5,200,000. In the statement '
          'of cash flows the correct treatment is',
     'o': ['₦5,200,000 investing inflow, and ₦1,200,000 deducted in the operating section',
@@ -307,14 +307,14 @@ CH = {
     'w': 'The full proceeds are the investing inflow. The ₦1,200,000 profit is already inside '
          'profit before tax, so it must be removed from the operating section to avoid counting '
          'the same cash twice.',
-    'src': 'Chapter 14.4'},
+    'src': 'Chapter 14.4', 'sec': '14.4'},
    {'q': 'Revenue was ₦12,000,000. Receivables fell from ₦2,100,000 to ₦1,650,000. Cash received '
          'from customers was',
     'o': ['₦11,550,000', '₦12,450,000', '₦12,000,000', '₦10,350,000', '₦13,650,000'],
     'a': 1,
     'w': 'A fall in receivables means more cash was collected than was invoiced in the year.',
     'calc': '12{,}000{,}000 + 2{,}100{,}000 - 1{,}650{,}000 = 12{,}450{,}000',
-    'src': 'Chapter 14.5'},
+    'src': 'Chapter 14.5', 'sec': '14.5'},
    {'q': 'Which of the following is a limitation of the statement of cash flows?',
     'o': ['It is easily manipulated by the choice of depreciation method',
           'It omits non-cash transactions such as assets acquired under a lease',
@@ -325,7 +325,7 @@ CH = {
     'w': 'Significant non-cash transactions do not appear in the statement at all and must be '
          'disclosed separately. Independence from depreciation policy is a strength, not a '
          'limitation.',
-    'src': 'Chapter 14.6'},
+    'src': 'Chapter 14.6', 'sec': '14.6'},
   ],
   'theory': [
    {'q': 'Explain the difference between the direct and the indirect methods of presenting cash '
@@ -361,6 +361,6 @@ CH = {
               'year end improves operating cash flow without improving the business.',
               'It says nothing about profitability, so it must be read alongside the other '
               'primary statements.']}],
-    'src': 'Chapter 14.5'},
+    'src': 'Chapter 14.5', 'sec': '14.5'},
   ]},
 }

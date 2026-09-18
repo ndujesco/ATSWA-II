@@ -219,6 +219,36 @@ CH = {
   ]},
 
   {'n': '15.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§15.1 Formulation** — three parts: decision variables (defined precisely, with '
+      'units), objective function (linear, maximise contribution/minimise cost — **not** '
+      'profit, since apportioned fixed costs distort the answer), and constraints (linear '
+      'inequalities plus non-negativity $x,y\\ge0$). Model assumptions: linearity, certainty, '
+      'divisibility (fractional solutions allowed — otherwise integer programming is needed), '
+      'non-negativity, additivity (no interaction effects).',
+      '**§15.2 The graphical method** — plot each constraint as a line (via its two '
+      'intercepts), shade to find the **feasible region**, find every corner by solving pairs '
+      'of constraints simultaneously, and evaluate the objective at each corner — the optimum '
+      'is **always at a corner**. A constraint is **binding** (zero slack) if resource use '
+      'exactly hits the limit at the optimum; a constraint with slack is not binding and '
+      'relaxing it changes nothing.',
+      '**§15.3 The simplex method** — needed beyond two variables. Standard form: add a '
+      '**slack** variable for each $\\le$ constraint (unused resource); a $\\ge$ constraint '
+      'needs a surplus variable subtracted **and** an artificial variable added; an $=$ '
+      'constraint needs an artificial variable only. Algorithm: entering variable = most '
+      'negative $Z$-row coefficient (none negative → optimal); leaving variable = smallest '
+      'non-negative ratio of RHS to positive pivot-column entries; pivot the row to 1, clear '
+      'the rest of that column (including the $Z$ row); repeat.',
+      '**§15.4 Slack and shadow prices** — slack = unused resource at the optimum (zero = '
+      '**binding**); shadow price = the increase in the objective from **one more unit** of a '
+      'scarce resource, read from the $Z$ row of the final tableau under that resource\'s '
+      'slack column — always **zero** for a non-binding resource. Compare the shadow price '
+      'with the marginal cost of acquiring more of the resource to decide whether to buy it. A '
+      'shadow price holds only over a limited range — beyond it the optimum shifts to a '
+      'different corner and the shadow price itself changes, so never extrapolate it '
+      'indefinitely.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Linear programming (LP)** — optimising a linear objective function subject to linear '
@@ -326,20 +356,20 @@ CH = {
     'a': 1,
     'w': 'A linear objective attains its extreme value at a vertex of a convex feasible region; '
          'this is the basis of both the graphical and the simplex methods.',
-    'src': 'Chapter 15.2'},
+    'src': 'Chapter 15.2', 'sec': '15.2'},
    {'q': 'A slack variable is added to a constraint of the form',
     'o': ['$\\ge$', '$\\le$', '$=$', '$<$', '$\\ne$'],
     'a': 1,
     'w': 'A $\\le$ constraint has unused capacity, which the slack variable measures. A $\\ge$ '
          'constraint needs a surplus variable subtracted.',
-    'src': 'Chapter 15.3'},
+    'src': 'Chapter 15.3', 'sec': '15.3'},
    {'q': 'The shadow price of a resource that is not fully utilised at the optimum is',
     'o': ['equal to its market price', 'zero', 'negative', 'equal to the contribution per unit',
           'undefined'],
     'a': 1,
     'w': 'If a resource is already in surplus, an additional unit adds nothing to the '
          'objective.',
-    'src': 'Chapter 15.4'},
+    'src': 'Chapter 15.4', 'sec': '15.4'},
    {'q': 'Maximise $Z = 5x + 4y$ subject to $x + y \\le 10$, $x \\le 6$, $x, y \\ge 0$. The '
          'maximum value of $Z$ is',
     'o': ['40', '46', '50', '54', '30'],
@@ -347,7 +377,7 @@ CH = {
     'w': 'Test the corners $(0,0)$, $(0,10)$, $(6,4)$ and $(6,0)$. Since $x$ carries the higher '
          'contribution, push $x$ to its limit of 6 and fill the rest with $y$.',
     'calc': 'Z(6,4) = 5(6) + 4(4) = 30 + 16 = 46 \\quad\\text{against}\\quad Z(0,10) = 40',
-    'src': 'Chapter 15.2'},
+    'src': 'Chapter 15.2', 'sec': '15.2'},
    {'q': 'In the simplex method, the variable chosen to enter the basis is the one with',
     'o': ['the largest right-hand-side value', 'the most negative coefficient in the $Z$ row',
           'the smallest ratio in the ratio test', 'the largest positive coefficient in the $Z$ row',
@@ -356,7 +386,7 @@ CH = {
     'w': 'For a maximisation problem the most negative $Z$-row coefficient identifies the '
          'variable that improves the objective fastest. The ratio test identifies the '
          '*leaving* variable.',
-    'src': 'Chapter 15.3'},
+    'src': 'Chapter 15.3', 'sec': '15.3'},
    {'q': 'Which of the following is NOT an assumption of linear programming?',
     'o': ['Linearity', 'Divisibility', 'Certainty', 'Independence of the decision variables',
           'Additivity'],
@@ -364,7 +394,7 @@ CH = {
     'w': 'Linear programming does not require the decision variables to be independent — they '
          'are linked precisely through the shared constraints. The other four are standard '
          'assumptions of the model.',
-    'src': 'Chapter 15.1'},
+    'src': 'Chapter 15.1', 'sec': '15.1'},
   ],
   'theory': [
    {'q': 'Kuforiji Limited manufactures two products, X and Y, which yield contributions of '
@@ -438,6 +468,6 @@ CH = {
         'contributions of the two products, with no joint effects, and the whole of production '
         'can be sold at the assumed prices.',
       ]}],
-    'src': 'Chapter 15.1–15.4'},
+    'src': 'Chapter 15.1–15.4', 'sec': '15.1'},
   ]},
 }

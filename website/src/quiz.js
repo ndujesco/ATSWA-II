@@ -84,6 +84,15 @@
     }
     return '<div class="cite"' + sty + '>' + label + '</div>';
   }
+  /* the same citation, shown before the question is answered — so the reader
+     can jump to the section first if they would rather revise it than guess.
+     Suppressed in timed exam mode, where nothing about the answer's source
+     should be visible before the question is attempted. */
+  function citeTop(q, code, ch) {
+    if (Q && Q.exam) return '';
+    var html = citeHTML(q, code, ch);
+    return html ? '<div class="qsrc">' + html + '</div>' : '';
+  }
 
   /* ---- state -------------------------------------------------------- */
   function load(k, n) {
@@ -209,6 +218,7 @@
       '<div class="qhead"><span class="n">' + (i + 1) + '</span>' +
       '<span class="tp">' + (q.past ? 'Past question' : 'Practice') + '</span>' +
       '<span class="sr">' + (i + 1) + ' of ' + Q.mcq.length + '</span></div>' +
+      citeTop(q, Q.code, Q.ch) +
       A.preBlock(q.pre) +
       (q.flag ? '<div class="flagbox"><div class="lbl">Check this</div>' +
                 R.inl(q.flag) + '</div>' : '') +
@@ -257,6 +267,7 @@
       'text-transform:uppercase;color:var(--accent)">' +
       (t.short ? 'Short answer' : 'Theory') + '</span>' +
       '<span class="mk">' + (t.marks ? t.marks + ' marks' : '') + '</span></div>' +
+      citeTop(t, Q.code, Q.ch) +
       A.preBlock(t.pre) +
       '<div class="qz">' + R.inl(t.q) + '</div>' +
       '<div class="pad"><textarea id="wr" placeholder="Write your answer here — it is saved as you type.">' +

@@ -476,7 +476,7 @@ CH = {
     'a': 1,
     'w': 'The EFCC has direct prosecutorial power; the ICPC must prosecute through the '
          'Attorney-General.',
-    'src': 'Chapter 22.3'},
+    'src': 'Chapter 22.3', 'sec': '22.3'},
    {'q': 'The ICPC is limited in time to offences committed',
     'o': ['at any time, with no limitation', 'from the year 2000 onward',
           'within the last five years only', 'before independence in 1960',
@@ -484,13 +484,13 @@ CH = {
     'a': 1,
     'w': 'Unlike the EFCC, which has no time limitation, the ICPC covers only offences from '
          '2000 onward.',
-    'src': 'Chapter 22.3'},
+    'src': 'Chapter 22.3', 'sec': '22.3'},
    {'q': 'Under the Money Laundering (Prohibition) Act, the cash payment limit outside a '
          'financial institution for an individual is',
     'o': ['₦200,000', '₦500,000', '₦1,000,000', '₦2,000,000', '₦5,000,000'],
     'a': 1,
     'w': 'The limit is ₦500,000 for an individual and ₦2 million for a body corporate.',
-    'src': 'Chapter 22.7'},
+    'src': 'Chapter 22.7', 'sec': '22.7'},
    {'q': 'A body established under Part I of the Third Schedule to the 1999 Constitution to '
          'receive and examine public officers\' asset declarations is the',
     'o': ['Independent Corrupt Practices Commission', 'Code of Conduct Bureau',
@@ -499,7 +499,7 @@ CH = {
     'a': 1,
     'w': 'The Code of Conduct Bureau receives, examines and keeps custody of asset '
          'declarations, and refers breaches to the Code of Conduct Tribunal.',
-    'src': 'Chapter 22.4'},
+    'src': 'Chapter 22.4', 'sec': '22.4'},
    {'q': 'Nigeria\'s "Ombudsman", empowered to investigate administrative action by MDAs and '
          'public bodies on its own initiative or on complaint, is the',
     'o': ['Code of Conduct Tribunal', 'Public Complaints Commission', 'ICPC', 'EFCC',
@@ -507,7 +507,7 @@ CH = {
     'a': 1,
     'w': 'The Public Complaints Commission, established by Decree No. 31 of 1975, is Nigeria\'s '
          'Ombudsman.',
-    'src': 'Chapter 22.6'},
+    'src': 'Chapter 22.6', 'sec': '22.6'},
    {'q': 'A decision of the Code of Conduct Tribunal',
     'o': ['is final and cannot be appealed', 'may be appealed to the Court of Appeal',
           'may be pardoned under the prerogative of mercy', 'may only be appealed to the ICPC',
@@ -515,7 +515,7 @@ CH = {
     'a': 1,
     'w': 'An officer found guilty may appeal to the Court of Appeal, but the prerogative of '
          'mercy does not apply to a Tribunal punishment.',
-    'src': 'Chapter 22.5'},
+    'src': 'Chapter 22.5', 'sec': '22.5'},
   ],
   'theory': [
    {'q': '(a) State the composition and duties of the Independent Corrupt Practices and '
@@ -570,7 +570,7 @@ CH = {
             'access to all information needed for its work — save for matters already before '
             'the National Assembly, a court, or concerning the Armed Forces/Police, which it '
             'may not investigate.'}],
-    'src': 'Chapter 22.2–22.6'},
+    'src': 'Chapter 22.2–22.6', 'sec': '22.2'},
   ]},
 }
 

@@ -180,6 +180,37 @@ CH = {
   ]},
 
   {'n': '20.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§20.1 What simulation is** — models a real system over time using random numbers to '
+      'generate values for the uncertain variables, without experimenting on the real system. '
+      '**Descriptive, not optimising** — it shows what a given policy would do; alternative '
+      'policies must be simulated separately and compared. **Monte Carlo** simulation samples '
+      'probability distributions with random numbers. Used when the system is too complex '
+      'analytically, when an analytical model\'s assumptions don\'t hold, when real-world '
+      'experiments would be too costly/slow/dangerous, or when the **whole distribution** of '
+      'outcomes (not just the expected value) is wanted.',
+      '**§20.2 Assigning random number ranges** — list values and probabilities, cumulate the '
+      'probabilities, assign a **contiguous, non-overlapping** block of random numbers to each '
+      'value in proportion to its probability (using the cumulative column as the upper '
+      'boundary), then read off values against drawn random numbers. With two-digit numbers '
+      '(00–99), a probability of 0.30 gets 30 numbers; check that each block\'s count equals '
+      '100 × its probability and that all blocks together span 00–99 with no gaps.',
+      '**§20.3 Running a simulation** — build a table of random number → simulated value per '
+      'trial. A small number of trials will **not** match the theoretical expected value '
+      'exactly — convergence needs many iterations, so a short exam simulation is an '
+      'illustration of *method*, not a reliable estimate (say so for marks). When comparing '
+      'policies (e.g. order quantities), **every policy must be tested against the same '
+      'stream of random numbers**, or the policy comparison is confounded with differences in '
+      'the random demand stream itself.',
+      '**§20.4 Advantages and limitations** — advantages: handles complex interacting random '
+      'variables, avoids restrictive analytical assumptions, safe/cheap experimentation, '
+      'compresses time (years in seconds), shows the whole outcome distribution, and is '
+      'intuitively understandable to management. Limitations (see the full list below) '
+      'include that it is time-consuming to build/validate, gives no guaranteed optimum (only '
+      'compares the policies actually tried), and results depend on the quality of the input '
+      'distributions.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Simulation** — imitating the behaviour of a real system over time by a numerical '
@@ -271,19 +302,19 @@ CH = {
     'a': 1,
     'w': 'Each outcome receives a block of random numbers proportional to its probability, so '
          'that it is selected with that relative frequency.',
-    'src': 'Chapter 20.2'},
+    'src': 'Chapter 20.2', 'sec': '20.2'},
    {'q': 'If an outcome has a probability of 0.25, how many two-digit random numbers should be '
          'assigned to it?',
     'o': ['4', '25', '20', '75', '2'],
     'a': 1,
     'w': 'Out of the one hundred numbers 00–99, a probability of 0.25 takes 25 of them.',
-    'src': 'Chapter 20.2'},
+    'src': 'Chapter 20.2', 'sec': '20.2'},
    {'q': 'Simulation is best described as a technique that is',
     'o': ['optimising', 'descriptive', 'deterministic', 'analytical', 'graphical'],
     'a': 1,
     'w': 'Simulation shows what would happen under a specified policy. It does not compute the '
          'best policy, so alternatives must be tested and compared.',
-    'src': 'Chapter 20.1'},
+    'src': 'Chapter 20.1', 'sec': '20.1'},
    {'q': 'Demand has probabilities 0.2, 0.5 and 0.3 for 10, 20 and 30 units. Using the '
          'convention that intervals begin at 00, the random number range assigned to a demand '
          'of 20 units is',
@@ -291,7 +322,7 @@ CH = {
     'a': 1,
     'w': 'A demand of 10 takes 00–19. A demand of 20 has probability 0.5, so it takes the next '
          'fifty numbers, 20 to 69.',
-    'src': 'Chapter 20.2'},
+    'src': 'Chapter 20.2', 'sec': '20.2'},
    {'q': 'A principal reason why a simulation should be run for a large number of trials is '
          'that',
     'o': ['random numbers are eventually exhausted',
@@ -302,7 +333,7 @@ CH = {
     'a': 1,
     'w': 'A simulated average is a sample statistic subject to sampling error. Only a large '
          'number of trials makes it a reliable estimate.',
-    'src': 'Chapter 20.3'},
+    'src': 'Chapter 20.3', 'sec': '20.3'},
   ],
   'theory': [
    {'q': 'The daily demand for a perishable product at a retail outlet follows the '
@@ -388,6 +419,6 @@ CH = {
         'historical data and computing resources that may not be justified for a small or '
         'one-off decision.',
       ]}],
-    'src': 'Chapter 20.1–20.4'},
+    'src': 'Chapter 20.1–20.4', 'sec': '20.1'},
   ]},
 }

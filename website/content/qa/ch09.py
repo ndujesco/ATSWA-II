@@ -140,6 +140,26 @@ CH = {
              'sales). "Mark-up on cost" in §9.1 is the same thing as the study text\'s '
              '"profit %"; "margin" is the sales-based version this chapter adds for the '
              'inventory questions of Financial Accounting.'},
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§9.1 Mark-up and margin** — mark-up $m=\\text{GP}/\\text{Cost}$; margin '
+      '$g=\\text{GP}/\\text{Sales}$; convert with $g=m/(1+m)$ and $m=g/(1-g)$; the mark-up is '
+      '**always the larger** number since it is a percentage of the smaller base (cost). Trick: '
+      'set out cost : profit : sales as a whole-number ratio and read off whichever is wanted.',
+      '**§9.2 Working back from sales** — reconstructs cost of sales (and so closing inventory) '
+      'from sales and a **margin**: $\\text{Cost of sales}=\\text{Sales}\\times(1-g)$. Standard '
+      'use: estimating inventory destroyed by fire/theft via '
+      '$\\text{Opening}+\\text{Purchases}-\\text{Cost of sales}=\\text{Closing}$, then deduct '
+      'any salvage value recovered to reach the insurance claim.',
+      '**§9.3 Discounts and commission** — trade discount is deducted *before* invoicing and '
+      '**never enters the accounts**; cash (settlement) discount is a further reduction on the '
+      'invoiced amount for prompt payment, applied *after* trade discount — the two are applied '
+      'in **sequence** (multiplied), never added. A sliding-scale commission applies each rate '
+      'only to its own band, not the whole amount.',
+      '**§9.4 Losses** — handled as a negative profit; a given percentage **loss on cost** is a '
+      '**larger** percentage of selling price (the reverse of the profit case, because selling '
+      'price is now the smaller figure).',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Cost price (CP)** — the price the buyer pays to acquire the item. Made up of **fixed '
@@ -259,25 +279,25 @@ CH = {
     'a': 1,
     'w': 'Mark-up is a percentage of cost, so add 20% of ₦60,000 to the cost.',
     'calc': 'S = 60{,}000 \\times 1.20 = ₦72{,}000',
-    'src': 'Chapter 9.1'},
+    'src': 'Chapter 9.1', 'sec': '9.1'},
    {'q': 'A mark-up of 25% on cost is equivalent to a margin on selling price of',
     'o': ['25%', '20%', '33⅓%', '30%', '75%'],
     'a': 1,
     'w': 'Cost 4, profit 1, sales 5, so the profit is one fifth of sales.',
     'calc': 'g = \\frac{m}{1+m} = \\frac{0.25}{1.25} = 0.20 = 20\\%',
-    'src': 'Chapter 9.1'},
+    'src': 'Chapter 9.1', 'sec': '9.1'},
    {'q': 'Sales are ₦900,000 and the gross margin is 20%. The cost of sales is',
     'o': ['₦180,000', '₦720,000', '₦750,000', '₦1,080,000', '₦680,000'],
     'a': 1,
     'w': 'Cost of sales is the complement of the margin applied to sales.',
     'calc': '\\text{Cost of sales} = 900{,}000 \\times 0.80 = ₦720{,}000',
-    'src': 'Chapter 9.2'},
+    'src': 'Chapter 9.2', 'sec': '9.2'},
    {'q': 'A margin of 20% on selling price corresponds to a mark-up on cost of',
     'o': ['20%', '25%', '16⅔%', '80%', '125%'],
     'a': 1,
     'w': 'Sales 5, profit 1, cost 4, so the profit is one quarter of cost.',
     'calc': 'm = \\frac{g}{1-g} = \\frac{0.20}{0.80} = 0.25 = 25\\%',
-    'src': 'Chapter 9.1'},
+    'src': 'Chapter 9.1', 'sec': '9.1'},
    {'q': 'Goods listed at ₦200,000 carry a trade discount of 10% and a cash discount of 5%. '
          'The amount received on prompt payment is',
     'o': ['₦170,000', '₦171,000', '₦180,000', '₦190,000', '₦185,000'],
@@ -285,13 +305,13 @@ CH = {
     'w': 'Apply the discounts in sequence: trade discount first to give the invoice value, then '
          'cash discount on that value.',
     'calc': '200{,}000 \\times 0.90 \\times 0.95 = 180{,}000 \\times 0.95 = ₦171{,}000',
-    'src': 'Chapter 9.3'},
+    'src': 'Chapter 9.3', 'sec': '9.3'},
    {'q': 'An article costing ₦2,500 is sold for ₦2,000. The loss as a percentage of cost is',
     'o': ['25%', '20%', '15%', '10%', '80%'],
     'a': 1,
     'w': 'The loss is ₦500; expressed on cost the base is ₦2,500.',
     'calc': '\\frac{500}{2{,}500} \\times 100 = 20\\%',
-    'src': 'Chapter 9.4'},
+    'src': 'Chapter 9.4', 'sec': '9.4'},
   ],
   'theory': [
    {'q': 'Distinguish between mark-up and margin, and explain why the distinction matters when '
@@ -329,6 +349,6 @@ CH = {
       {'note': 'When a question says only "profit of 25% on sales" or "25% on cost", the '
                'preposition is doing all the work. Underline it before starting the '
                'computation.'}],
-    'src': 'Chapter 9.1–9.2'},
+    'src': 'Chapter 9.1–9.2', 'sec': '9.1'},
   ]},
 }

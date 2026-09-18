@@ -586,7 +586,7 @@ CH = {
     'a': 2,
     'w': 'A discount allowed reduces the amount the customer must pay, so it reduces the '
          'receivable and is credited. The other four all increase what customers owe.',
-    'src': 'Chapter 5.2'},
+    'src': 'Chapter 5.2', 'sec': '5.2'},
    {'q': 'A cash book shows a balance of ₦840,000. Bank charges of ₦25,000 and a standing order '
          'of ₦60,000 have not been entered; unpresented cheques total ₦180,000. The balance to '
          'appear in the statement of financial position is',
@@ -595,7 +595,7 @@ CH = {
     'w': 'Only the cash-book adjustments affect the reported figure. Unpresented cheques are a '
          'timing difference and belong in the reconciliation statement, not the cash book.',
     'calc': '840{,}000 - 25{,}000 - 60{,}000 = 755{,}000',
-    'src': 'Chapter 5.7'},
+    'src': 'Chapter 5.7', 'sec': '5.7'},
    {'q': 'A contra entry between the receivables and payables ledgers is recorded as',
     'o': ['Dr Receivables control, Cr Payables control',
           'Dr Payables control, Cr Receivables control',
@@ -605,14 +605,14 @@ CH = {
     'a': 1,
     'w': 'A set-off reduces both balances: the amount the customer owes us is cancelled against '
          'the amount we owe the same party as a supplier. Debit payables, credit receivables.',
-    'src': 'Chapter 5.2'},
+    'src': 'Chapter 5.2', 'sec': '5.2'},
    {'q': 'The bank statement shows ₦3,400,000. Unpresented cheques are ₦520,000 and uncredited '
          'lodgements ₦270,000. The corrected cash book balance is',
     'o': ['₦3,150,000', '₦3,650,000', '₦2,610,000', '₦4,190,000', '₦3,400,000'],
     'a': 0,
     'w': 'Add what the bank has not yet credited and deduct what it has not yet paid out.',
     'calc': '3{,}400{,}000 + 270{,}000 - 520{,}000 = 3{,}150{,}000',
-    'src': 'Chapter 5.7'},
+    'src': 'Chapter 5.7', 'sec': '5.7'},
    {'q': 'Which of the following would NOT cause the receivables control account to disagree '
          'with the total of the individual receivables balances?',
     'o': ['The sales day book was undercast',
@@ -624,7 +624,7 @@ CH = {
     'w': 'Posting to the wrong customer is an error of commission: the total of the individual '
          'balances is unchanged, so the control account still agrees. Only a statement sent to '
          'the customer will find it.',
-    'src': 'Chapter 5.4'},
+    'src': 'Chapter 5.4', 'sec': '5.4'},
   ],
   'theory': [
    {'q': 'Explain FIVE reasons why the balance in the cash book may differ from the balance shown '
@@ -648,7 +648,7 @@ CH = {
       {'note': 'The examiner usually wants the classification as well: the first two and any bank '
                'error are timing differences dealt with in the reconciliation statement; the rest '
                'require the cash book to be updated.'}],
-    'src': 'Chapter 5.7'},
+    'src': 'Chapter 5.7', 'sec': '5.7'},
    {'q': 'State FOUR uses of control accounts and explain why a control account that agrees with '
          'the list of balances does not guarantee that the ledger is free from error.',
     'marks': 6,
@@ -672,6 +672,6 @@ CH = {
             'both are wrong. Compensating errors within the ledger, and the complete omission of '
             'a transaction from both the day book and the individual account, are equally '
             'invisible. Only sending statements to customers will find these.'}],
-    'src': 'Chapter 5.1'},
+    'src': 'Chapter 5.1', 'sec': '5.1'},
   ]},
 }

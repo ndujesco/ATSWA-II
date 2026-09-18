@@ -928,7 +928,7 @@ CH = {
     'a': 1,
     'w': 'Section 80(1) establishes the Consolidated Revenue Fund. The Federation Account is '
          'established separately by section 162(1) and is the pool shared among the three tiers.',
-    'src': 'Chapter 1.8'},
+    'src': 'Chapter 1.8', 'sec': '1.8'},
    {'q': 'Under which basis of accounting is expenditure recognised when an order is placed, '
          'before any invoice is received?',
     'o': ['Cash basis', 'Commitment basis', 'Accrual basis', 'Modified cash basis',
@@ -936,7 +936,7 @@ CH = {
     'a': 1,
     'w': 'The commitment basis records the obligation at the point of order so that the vote is '
          'not over-committed. It is a budgetary control device.',
-    'src': 'Chapter 1.5'},
+    'src': 'Chapter 1.5', 'sec': '1.5'},
    {'q': 'The primary objective of public sector accounting is to',
     'o': ['maximise government revenue', 'demonstrate accountability for public resources',
           'compute the profit of government', 'value government assets',
@@ -944,7 +944,7 @@ CH = {
     'a': 1,
     'w': 'Because public money is raised compulsorily, accountability rather than profit '
          'measurement is the central purpose.',
-    'src': 'Chapter 1.2'},
+    'src': 'Chapter 1.2', 'sec': '1.2'},
    {'q': 'Which fund meets urgent and unforeseen expenditure for which no other provision '
          'exists?',
     'o': ['Development Fund', 'Contingencies Fund', 'Consolidated Revenue Fund',
@@ -952,7 +952,7 @@ CH = {
     'a': 1,
     'w': 'Section 83 of the Constitution establishes the Contingencies Fund; the advance is '
          'subsequently replaced by a supplementary appropriation.',
-    'src': 'Chapter 1.8'},
+    'src': 'Chapter 1.8', 'sec': '1.8'},
    {'q': 'A disadvantage of the cash basis of accounting is that it',
     'o': ['is difficult to audit', 'ignores assets and liabilities',
           'requires extensive professional judgement', 'is not comparable with the budget',
@@ -961,13 +961,13 @@ CH = {
     'w': 'Recording only receipts and payments means receivables, payables and non-current '
          'assets never appear, so the financial position is not disclosed. The other four '
          'options are in fact advantages of the cash basis.',
-    'src': 'Chapter 1.5'},
+    'src': 'Chapter 1.5', 'sec': '1.5'},
    {'q': 'Nigeria adopted the accrual basis IPSAS with effect from',
     'o': ['January 2012', 'January 2016', 'January 2014', 'January 2020', 'January 2010'],
     'a': 1,
     'w': 'Cash basis IPSAS was adopted from January 2014 and accrual basis IPSAS from January '
          '2016, subject to the transitional provisions of IPSAS 33.',
-    'src': 'Chapter 1.5'},
+    'src': 'Chapter 1.5', 'sec': '1.5'},
    {'q': 'Which of the following is NOT a basis on which the financial statements of a public '
          'sector enterprise are compiled?',
     'o': ['Cash basis', 'Accrual basis', 'Profit maximisation basis', 'Commitment basis',
@@ -975,7 +975,7 @@ CH = {
     'a': 2,
     'w': 'The five bases are cash, accrual, commitment, modified cash and modified accrual. '
          'There is no "profit maximisation" basis — the public sector has no profit motive.',
-    'src': 'Chapter 1.10 (study text Section A Q4)'},
+    'src': 'Chapter 1.10 (study text Section A Q4)', 'sec': '1.10'},
    {'q': 'The cash basis of accounting recognises a spending decision only at which stage?',
     'o': ['Management decision to spend', 'Issue of the order or contract',
           'Supply of goods or services (acknowledgment of liability)',
@@ -984,7 +984,7 @@ CH = {
     'w': 'A spending decision passes through five stages; the cash basis records only stage '
          '(v), consumption of value (payment). Accrual covers stages iii–v; commitment covers '
          'stages ii–v.',
-    'src': 'Chapter 1.10 (study text Section A Q2)'},
+    'src': 'Chapter 1.10 (study text Section A Q2)', 'sec': '1.10'},
    {'q': 'Which of the following is NOT an advantage of the cash basis of accounting?',
     'o': ['It is simple to understand', 'It takes a realistic view of financial transactions',
           'It eliminates the existence of debtors and creditors',
@@ -994,7 +994,7 @@ CH = {
     'w': 'Taking a realistic view of transactions is an advantage of the accrual basis; the '
          'cash basis is criticised for the opposite. The other four are genuine advantages of '
          'the cash basis.',
-    'src': 'Chapter 1.10 (study text Section A Q5)'},
+    'src': 'Chapter 1.10 (study text Section A Q5)', 'sec': '1.10'},
   ],
   'theory': [
    {'q': 'Distinguish between public sector accounting and private sector accounting, and '
@@ -1062,6 +1062,6 @@ CH = {
                'with a company\'s disclosure can sell the shares; a citizen cannot resign from '
                'the state. That asymmetry is the reason public sector reporting obligations are '
                'imposed by statute rather than left to the entity.'}],
-    'src': 'Chapter 1.2–1.3'},
+    'src': 'Chapter 1.2–1.3', 'sec': '1.2'},
   ]},
 }

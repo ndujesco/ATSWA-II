@@ -556,13 +556,13 @@ CH = {
     'a': 1,
     'w': 'Section 85 (section 125 for a State) makes the Auditor-General the external '
          'auditor of the Federation (or State).',
-    'src': 'Chapter 23.1'},
+    'src': 'Chapter 23.1', 'sec': '23.1'},
    {'q': 'Value-for-money audit rests on the "3 Es": economy, efficiency and',
     'o': ['equity', 'effectiveness', 'evaluation', 'ethics', 'expenditure'],
     'a': 1,
     'w': 'Economy (cheap inputs), efficiency (output per input) and effectiveness (achieving '
          'the objective).',
-    'src': 'Chapter 23.3'},
+    'src': 'Chapter 23.3', 'sec': '23.3'},
    {'q': 'An audit carried out before payment is made to a contractor, to check economy, '
          'efficiency and compliance, is called a',
     'o': ['post-payment audit', 'pre-payment audit', 'interim audit', 'final audit',
@@ -570,7 +570,7 @@ CH = {
     'a': 1,
     'w': 'Pre-payment audit is common in government service and guards against unreasonable '
          'or non-compliant expenditure before money leaves the treasury.',
-    'src': 'Chapter 23.3'},
+    'src': 'Chapter 23.3', 'sec': '23.3'},
    {'q': 'Under the INTOSAI code of ethics, an auditor who does not disclose information '
          'obtained during an audit to third parties (except to meet the SAI\'s own statutory '
          'duties) is observing',
@@ -578,14 +578,14 @@ CH = {
     'a': 1,
     'w': 'Professional secrecy restricts disclosure of audit information to what the SAI\'s '
          'own statutory responsibilities require.',
-    'src': 'Chapter 23.8'},
+    'src': 'Chapter 23.8', 'sec': '23.8'},
    {'q': 'Under the Financial Regulations\' codified sanctions, a shortage or loss of cash by '
          'the cashier must be responded to within',
     'o': ['30 days', '21 days', '14 days', '7 days', '5 days'],
     'a': 3,
     'w': 'Cash losses by a cashier carry a 7-day response limit — the shortest in the table '
          'besides the false-reply case, reflecting how urgent a cash shortfall is treated.',
-    'src': 'Chapter 23.9'},
+    'src': 'Chapter 23.9', 'sec': '23.9'},
    {'q': 'A body established by law to examine the Auditor-General\'s reports, especially on '
          'fraud or embezzlement, and recommend action to the National Assembly, is the',
     'o': ['Code of Conduct Tribunal', 'Public Accounts Committee', 'Fiscal Responsibility '
@@ -593,7 +593,7 @@ CH = {
     'a': 1,
     'w': 'The Public Accounts Committee deliberates on the Auditor-General\'s reports and '
          'reports its recommendations to the National Assembly.',
-    'src': 'Chapter 23.5'},
+    'src': 'Chapter 23.5', 'sec': '23.5'},
   ],
   'theory': [
    {'q': '(a) State the objectives of audit and five factors that contribute to an effective '
@@ -639,6 +639,6 @@ CH = {
             'specialist expertise, and — through regular liaison and agreed reliance on its '
             'work — letting the external auditor avoid duplicating procedures already '
             'performed competently.'}],
-    'src': 'Chapter 23.1–23.9'},
+    'src': 'Chapter 23.1–23.9', 'sec': '23.1'},
   ]},
 }

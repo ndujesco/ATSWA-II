@@ -1226,7 +1226,7 @@ CH = {
     'a': 1,
     'w': 'The 2014 Act raised the combined rate to 18%, split 10% employer and 8% employee. '
          '7.5% each were the rates under the repealed 2004 Act.',
-    'src': 'Chapter 4.4'},
+    'src': 'Chapter 4.4', 'sec': '4.4'},
    {'q': 'For pension purposes, "monthly emolument" means',
     'o': ['gross monthly salary', 'basic salary plus housing and transport allowances',
           'basic salary only', 'basic salary plus all allowances',
@@ -1234,7 +1234,7 @@ CH = {
     'a': 1,
     'w': 'The Act defines it as basic salary, housing allowance and transport allowance. Other '
          'allowances are excluded unless the employer elects to include them.',
-    'src': 'Chapter 4.4'},
+    'src': 'Chapter 4.4', 'sec': '4.4'},
    {'q': 'Pension contributions must be remitted to the Pension Fund Custodian within',
     'o': ['seven calendar days of payment of salary',
           'seven working days of payment of salary',
@@ -1243,14 +1243,14 @@ CH = {
     'a': 1,
     'w': 'Section 11(3)(b) requires remittance within seven working days of paying the salary, '
          'with a penalty of not less than 2% per month on late remittance.',
-    'src': 'Chapter 4.6'},
+    'src': 'Chapter 4.6', 'sec': '4.6'},
    {'q': 'The body that holds pension fund assets in trust is the',
     'o': ['Pension Fund Administrator', 'Pension Fund Custodian',
           'National Pension Commission', 'Central Bank of Nigeria', 'employer'],
     'a': 1,
     'w': 'The PFC holds the assets; the PFA manages and invests them but never holds them. That '
          'separation is the central control of the scheme.',
-    'src': 'Chapter 4.9'},
+    'src': 'Chapter 4.9', 'sec': '4.9'},
    {'q': 'An employer must maintain a group life insurance policy for each employee of not less '
          'than',
     'o': ['twice the annual total emolument', 'three times the annual total emolument',
@@ -1259,7 +1259,7 @@ CH = {
     'a': 1,
     'w': 'Section 4(5) requires cover of a minimum of three times the annual total emolument, '
          'in addition to the pension contributions.',
-    'src': 'Chapter 4.4'},
+    'src': 'Chapter 4.4', 'sec': '4.4'},
    {'q': 'An employee with an annual basic salary of ₦1,800,000, housing allowance '
          '₦450,000 and transport allowance ₦150,000 will have an annual employee '
          'pension contribution of',
@@ -1268,7 +1268,7 @@ CH = {
     'w': 'Pensionable emolument is $1{,}800{,}000 + 450{,}000 + 150{,}000 = ₦2{,}400{,}000$; '
          'the employee contributes 8% of it.',
     'calc': '8\\% \\times 2{,}400{,}000 = ₦192{,}000',
-    'src': 'Chapter 4.4'},
+    'src': 'Chapter 4.4', 'sec': '4.4'},
    {'q': 'Which of the following is NOT an objective of the Pension Reform Act 2014?',
     'o': ['To establish uniform rules and standards for pension administration in Nigeria',
           'To assist improvident individuals to save towards their inactive years',
@@ -1278,7 +1278,7 @@ CH = {
     'a': 2,
     'w': 'The 2014 Act is a fully contributory scheme; a non-contributory bulk payment is the '
          'feature of the old Defined Benefit Scheme it replaced.',
-    'src': 'Chapter 4.22 (study text Section A Q1)'},
+    'src': 'Chapter 4.22 (study text Section A Q1)', 'sec': '4.22'},
    {'q': 'The gross salary (basic plus allowances) attached to a retiring officer\'s '
          'substantive rank is known as',
     'o': ['consolidated salary', 'pensionable emoluments', 'terminal benefit', 'gratuity',
@@ -1286,7 +1286,7 @@ CH = {
     'a': 1,
     'w': 'Pensionable emoluments — basic salary plus the regular allowances attached to the '
          'substantive rank — is the base on which pension and contributions are computed.',
-    'src': 'Chapter 4.22 (study text Section A Q6)'},
+    'src': 'Chapter 4.22 (study text Section A Q6)', 'sec': '4.22'},
    {'q': 'Pension administration under the Defined Benefit Scheme (the old, pre-2004 pensions) '
          'is the responsibility of the',
     'o': ['National Pension Commission', 'Pension Transitional Arrangements Directorate (PTAD)',
@@ -1295,7 +1295,7 @@ CH = {
     'a': 1,
     'w': 'PTAD, established by sections 42 and 44 of the PRA 2014, administers the residual '
          'Defined Benefit Scheme for existing pensioners.',
-    'src': 'Chapter 4.22 (study text Section A Q8)'},
+    'src': 'Chapter 4.22 (study text Section A Q8)', 'sec': '4.22'},
   ],
   'theory': [
    {'q': 'The Pension Reform Act 2014 established a Contributory Pension Scheme in place of the '
@@ -1402,6 +1402,6 @@ CH = {
                'contributor the balance is paid to the beneficiaries named under a will or '
                'letters of administration, together with the proceeds of the group life '
                'policy.'}],
-    'src': 'Chapter 4.4, 4.6, 4.7–4.9, 4.19'},
+    'src': 'Chapter 4.4, 4.6, 4.7–4.9, 4.19', 'sec': '4.4'},
   ]},
 }

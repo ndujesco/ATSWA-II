@@ -490,14 +490,14 @@ CH = {
     'a': 1,
     'w': 'Non-current assets are recognised only under accrual IPSAS. A cash basis statement '
          'shows financial assets and liabilities arising from cash transactions.',
-    'src': 'Chapter 14.3'},
+    'src': 'Chapter 14.3', 'sec': '14.3'},
    {'q': 'Total receipts were ₦92,400,000 and total payments ₦86,150,000. Opening cash was '
          '₦4,300,000. Closing cash is',
     'o': ['₦6,250,000', '₦10,550,000', '₦1,950,000', '₦14,850,000', '₦2,150,000'],
     'a': 1,
     'w': 'Net cash flow is ₦6,250,000; add the opening balance.',
     'calc': '4{,}300{,}000 + (92{,}400{,}000 - 86{,}150{,}000) = ₦10{,}550{,}000',
-    'src': 'Chapter 14.2'},
+    'src': 'Chapter 14.2', 'sec': '14.2'},
    {'q': 'The statement peculiar to the public sector and required under both cash and accrual '
          'IPSAS is the',
     'o': ['Statement of Cash Flows', 'Statement of Comparison of Budget and Actual Amounts',
@@ -506,7 +506,7 @@ CH = {
     'a': 1,
     'w': 'The budget is a legal authority to spend, so reporting against it is a statutory '
          'obligation rather than a management convenience.',
-    'src': 'Chapter 14.1'},
+    'src': 'Chapter 14.1', 'sec': '14.1'},
    {'q': 'Actual capital expenditure of ₦18,000,000 against a budget of ₦24,000,000 represents '
          'a budget performance of',
     'o': ['133%', '75%', '25%', '60%', '80%'],
@@ -514,7 +514,7 @@ CH = {
     'w': 'Divide actual by budget. The 25% underspend means a quarter of the capital programme '
          'was not executed.',
     'calc': '\\frac{18{,}000{,}000}{24{,}000{,}000} \\times 100 = 75\\%',
-    'src': 'Chapter 14.4'},
+    'src': 'Chapter 14.4', 'sec': '14.4'},
    {'q': 'A principal limitation of cash basis reporting is that it',
     'o': ['is difficult to audit', 'does not disclose receivables and payables',
           'requires actuarial valuation', 'cannot be compared with the budget',
@@ -522,7 +522,7 @@ CH = {
     'a': 1,
     'w': 'Recognising only cash means unpaid obligations and uncollected revenue never appear, '
          'so the true financial position is not shown.',
-    'src': 'Chapter 14.5'},
+    'src': 'Chapter 14.5', 'sec': '14.5'},
    {'q': 'Closing cash in the Statement of Cash Receipts and Payments must agree with',
     'o': ['net assets in the Statement of Assets and Liabilities',
           'cash and cash equivalents in the Statement of Assets and Liabilities',
@@ -530,7 +530,7 @@ CH = {
           'the budgeted surplus'],
     'a': 1,
     'w': 'This articulation check should be performed on every answer before it is submitted.',
-    'src': 'Chapter 14.2'},
+    'src': 'Chapter 14.2', 'sec': '14.2'},
   ],
   'theory': [
    {'q': 'The following balances were extracted from the records of the Government of Ondo '
@@ -619,6 +619,6 @@ CH = {
       ]},
       {'note': 'These limitations are the reason Nigeria adopted accrual basis IPSAS with '
                'effect from 1 January 2016, with the transitional relief provided by IPSAS 33.'}],
-    'src': 'Chapter 14.2–14.5'},
+    'src': 'Chapter 14.2–14.5', 'sec': '14.2'},
   ]},
 }

@@ -564,7 +564,7 @@ CH = {
     'a': 1,
     'w': 'The administrative segment answers "who spent it". The economic segment answers "on '
          'what, by nature" and the functional segment "for what purpose of government".',
-    'src': 'Chapter 3.2'},
+    'src': 'Chapter 3.2', 'sec': '3.2'},
    {'q': 'GIFMIS stands for',
     'o': ['Government Integrated Fiscal Management Information Service',
           'Government Integrated Financial Management Information System',
@@ -574,13 +574,13 @@ CH = {
     'a': 1,
     'w': 'It is the integrated platform covering budgeting, commitment control, payments, '
          'accounting and reporting, built on the National Chart of Accounts.',
-    'src': 'Chapter 3.5'},
+    'src': 'Chapter 3.5', 'sec': '3.5'},
    {'q': 'The Treasury Single Account was fully implemented in Nigeria in',
     'o': ['2012', '2015', '2014', '2016', '2011'],
     'a': 1,
     'w': 'Full implementation followed the presidential directive of 2015, with collections '
          'sweeping into the CBN through Remita from September of that year.',
-    'src': 'Chapter 3.5'},
+    'src': 'Chapter 3.5', 'sec': '3.5'},
    {'q': 'Under a complete set of accrual-based GPFS, "revenue from operating activities" is a '
          'minimum line item required in the',
     'o': ['Statement of financial position', 'Statement of financial performance',
@@ -590,7 +590,7 @@ CH = {
     'w': 'The statement of financial performance (the accrual-basis income and expenditure '
          'account) must show, as a minimum, revenue from operating activities through to the '
          'net surplus or deficit for the period.',
-    'src': 'Chapter 3.4'},
+    'src': 'Chapter 3.4', 'sec': '3.4'},
    {'q': 'Which financial statement is required under BOTH cash basis and accrual basis IPSAS?',
     'o': ['Statement of Financial Performance',
           'Statement of Comparison of Budget and Actual Amounts',
@@ -599,7 +599,7 @@ CH = {
     'a': 1,
     'w': 'Comparison with the budget is required under both bases, because the budget is a '
          'legal authority to spend rather than an internal plan.',
-    'src': 'Chapter 3.3'},
+    'src': 'Chapter 3.3', 'sec': '3.3'},
    {'q': 'Which of the following is NOT one of the six segments of the National Chart of '
          'Accounts?',
     'o': ['Administrative segment', 'Historic segment', 'Functional segment',
@@ -607,7 +607,7 @@ CH = {
     'a': 1,
     'w': 'The six segments are Administrative, Economic, Functional, Programme, Funds and '
          'Geographic. There is no "Historic" segment.',
-    'src': 'Chapter 3.6 (study text Section A Q4)'},
+    'src': 'Chapter 3.6 (study text Section A Q4)', 'sec': '3.6'},
    {'q': 'Which of the following is NOT an objective of Cash Basis IPSAS?',
     'o': ['Accountability for cash receipts, payments and balances',
           'Transparency on the allocation of cash resources',
@@ -616,7 +616,7 @@ CH = {
     'a': 2,
     'w': 'Recognising transactions when they occur is the accrual basis. Cash Basis IPSAS '
          'records transactions only on receipt or payment of cash.',
-    'src': 'Chapter 3.6 (study text Section A Q5)'},
+    'src': 'Chapter 3.6 (study text Section A Q5)', 'sec': '3.6'},
    {'q': 'The National Chart of Accounts (NCOA) was developed by the',
     'o': ['Office of the Accountant-General of the Federation', 'FAAC Sub-committee',
           'Central Bank of Nigeria', 'Budget Office of the Federation',
@@ -624,7 +624,7 @@ CH = {
     'a': 1,
     'w': 'A sub-committee of the Federation Account Allocation Committee (FAAC) developed the '
          'standardised, IPSAS-compliant National Chart of Accounts.',
-    'src': 'Chapter 3.6 (study text Section A Q6)'},
+    'src': 'Chapter 3.6 (study text Section A Q6)', 'sec': '3.6'},
   ],
   'theory': [
    {'q': 'Explain the objectives of the National Chart of Accounts, describe its segments, and '
@@ -706,6 +706,6 @@ CH = {
             'diverted by an official who intends to divert it. The costs it imposed on the '
             'banking sector and on agency operations were real but largely transitional, and '
             'are outweighed by the improvement in control and in the cost of debt.'}],
-    'src': 'Chapter 3.2–3.5'},
+    'src': 'Chapter 3.2–3.5', 'sec': '3.2'},
   ]},
 }

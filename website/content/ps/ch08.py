@@ -410,14 +410,14 @@ CH = {
     'a': 1,
     'w': 'The adjustment voucher moves the charge from the head wrongly debited to the correct '
          'one. It does not create or discharge a liability.',
-    'src': 'Chapter 8.2'},
+    'src': 'Chapter 8.2', 'sec': '8.2'},
    {'q': 'Vouchers may not be destroyed without the written approval of the',
     'o': ['Accountant-General', 'Auditor-General', 'Minister of Finance',
           'accounting officer', 'internal auditor'],
     'a': 1,
     'w': 'Destruction would remove audit evidence, so it requires the approval of the officer '
          'who must rely on it.',
-    'src': 'Chapter 8.6'},
+    'src': 'Chapter 8.6', 'sec': '8.6'},
    {'q': 'A voucher recording a transaction that does not involve any movement of cash — such '
          'as depreciation or a transfer between funds — is a',
     'o': ['receipt voucher', 'journal voucher', 'adjustment voucher', 'payment voucher',
@@ -425,13 +425,13 @@ CH = {
     'a': 1,
     'w': 'The journal voucher records non-cash entries; the adjustment voucher is the special '
          'case of correcting a misclassification.',
-    'src': 'Chapter 8.2'},
+    'src': 'Chapter 8.2', 'sec': '8.2'},
    {'q': 'Immediately a payment voucher is settled it should be',
     'o': ['filed unmarked', 'stamped "PAID" and dated', 'returned to the payee',
           'entered in the Register of Losses', 'sent to the Auditor-General'],
     'a': 1,
     'w': 'Stamping prevents the same voucher being presented a second time for payment.',
-    'src': 'Chapter 8.4'},
+    'src': 'Chapter 8.4', 'sec': '8.4'},
    {'q': 'Where a paid voucher is lost, the duplicate obtained must be certified by the',
     'o': ['payee', 'accounting officer', 'internal auditor', 'Auditor-General',
           'Accountant-General'],
@@ -439,7 +439,7 @@ CH = {
     'w': 'The accounting officer certifies that the original is lost, that the payment was '
          'properly made and that no double payment has occurred, and reports the loss to both '
          'the Accountant-General and the Auditor-General.',
-    'src': 'Chapter 8.6'},
+    'src': 'Chapter 8.6', 'sec': '8.6'},
   ],
   'theory': [
    {'q': '(a) Define a voucher and state five purposes it serves in government accounting. '
@@ -520,6 +520,6 @@ CH = {
                'classic cover for a fraudulent duplicate payment. The requirement to report to '
                'the Auditor-General ensures the matter is examined by someone outside the '
                'department in which the loss occurred.'}],
-    'src': 'Chapter 8.3, 8.6'},
+    'src': 'Chapter 8.3, 8.6', 'sec': '8.3'},
   ]},
 }

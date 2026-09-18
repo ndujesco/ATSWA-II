@@ -229,6 +229,38 @@ CH = {
   ]},
 
   {'n': '12.6', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§12.1 Simple and compound interest** — simple $I=Prt$, $A=P(1+rt)$ (grows linearly); '
+      'compound $A=P(1+r)^n$ (grows geometrically — interest earns interest); $m$ times a year '
+      '$A=P(1+r/m)^{mn}$; effective annual rate $i=(1+r/m)^m-1$ **exceeds** the nominal rate — '
+      'always convert to effective rates before comparing differently-compounded offers; '
+      'present value $P=A(1+r)^{-n}$.',
+      '**§12.2 Progressions** — AP has a constant **difference** $d$ (straight-line '
+      'depreciation, a fixed-naira pay rise): $T_n=a+(n-1)d$, $S_n=(n/2)[2a+(n-1)d]$. GP has a '
+      'constant **ratio** $r$ (reducing-balance depreciation, compound interest, a fixed-%% pay '
+      'rise): $T_n=ar^{n-1}$, $S_n=a(r^n-1)/(r-1)$, $S_\\infty=a/(1-r)$ for $|r|<1$. Deciding '
+      'AP vs GP is usually worth more marks than the summation itself. A stream of equal '
+      'deposits earning compound interest is itself a GP, and its sum is the future-value-of-'
+      'an-annuity factor.',
+      '**§12.3 Annuities, perpetuities and sinking funds** — annuity = equal payments at equal '
+      'intervals; **ordinary** (in arrears) pays at period-**end**, **due** (in advance) pays '
+      'at period-**start** — an annuity-due value is the ordinary value $\\times(1+r)$. PV of '
+      'an ordinary annuity $A[1-(1+r)^{-n}]/r$; FV $A[(1+r)^n-1]/r$; perpetuity $PV=A/r$; '
+      'growing perpetuity $PV=A/(r-g)$, $g<r$; sinking-fund instalment '
+      '$A=S[r/((1+r)^n-1)]$; loan instalment $A=P[r/(1-(1+r)^{-n})]$.',
+      '**§12.4 Investment appraisal** — discount factor $(1+r)^{-n}$; $NPV=\\sum C_t/(1+r)^t$ — '
+      'accept if $NPV>0$; IRR = the rate where $NPV=0$, estimated by interpolation between a '
+      'positive- and negative-NPV trial rate — accept if IRR exceeds the cost of capital. '
+      'Profitability index $=$ PV of inflows $\\div$ initial outlay. Interpolation '
+      'under-estimates the true IRR slightly because the real NPV/rate curve is convex — keep '
+      'the two trial rates within about ten points of each other.',
+      '**§12.5 Amortisation** — a loan repaid by equal instalments is the mirror of an '
+      'annuity; each instalment splits into an **interest** element (an expense — falls over '
+      'the loan\'s life as the principal shrinks) and a **capital/principal** element (reduces '
+      'the statement-of-financial-position liability — rises over the loan\'s life). Only the '
+      'interest element hits profit or loss.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Sequence (progression)** — an ordered list of numbers; **series** — their sum.',
@@ -366,25 +398,25 @@ CH = {
     'a': 1,
     'w': 'Compound interest multiplies by $(1+r)$ each year.',
     'calc': 'A = 100{,}000(1.10)^3 = 100{,}000 \\times 1.331 = ₦133{,}100',
-    'src': 'Chapter 12.1'},
+    'src': 'Chapter 12.1', 'sec': '12.1'},
    {'q': 'The present value of ₦1,000,000 receivable in 2 years at a discount rate of 10% is',
     'o': ['₦800,000', '₦826,446', '₦900,000', '₦909,091', '₦1,210,000'],
     'a': 1,
     'w': 'Divide by $(1.10)^2 = 1.21$.',
     'calc': 'PV = \\frac{1{,}000{,}000}{1.21} = ₦826{,}446',
-    'src': 'Chapter 12.1'},
+    'src': 'Chapter 12.1', 'sec': '12.1'},
    {'q': 'A perpetuity of ₦30,000 per annum at a discount rate of 12% has a present value of',
     'o': ['₦360,000', '₦250,000', '₦300,000', '₦240,000', '₦336,000'],
     'a': 1,
     'w': 'The present value of a perpetuity is the annual amount divided by the rate.',
     'calc': 'PV = \\frac{30{,}000}{0.12} = ₦250{,}000',
-    'src': 'Chapter 12.3'},
+    'src': 'Chapter 12.3', 'sec': '12.3'},
    {'q': 'The 10th term of the arithmetic progression 7, 11, 15, … is',
     'o': ['39', '43', '47', '40', '44'],
     'a': 1,
     'w': 'The first term is 7 and the common difference 4.',
     'calc': 'T_{10} = 7 + 9(4) = 43',
-    'src': 'Chapter 12.2'},
+    'src': 'Chapter 12.2', 'sec': '12.2'},
    {'q': 'The internal rate of return of a project is the discount rate at which',
     'o': ['the payback period is shortest', 'the net present value is zero',
           'total inflows equal total outflows undiscounted',
@@ -392,20 +424,20 @@ CH = {
     'a': 1,
     'w': 'By definition the IRR is the break-even discount rate — the rate at which the present '
          'value of inflows exactly equals the outlay.',
-    'src': 'Chapter 12.4'},
+    'src': 'Chapter 12.4', 'sec': '12.4'},
    {'q': 'A nominal rate of 12% per annum compounded semi-annually gives an effective annual '
          'rate of',
     'o': ['12.00%', '12.36%', '12.68%', '24.00%', '6.00%'],
     'a': 1,
     'w': 'Two periods of 6% each: $(1.06)^2 = 1.1236$.',
     'calc': 'i = (1.06)^2 - 1 = 0.1236 = 12.36\\%',
-    'src': 'Chapter 12.1'},
+    'src': 'Chapter 12.1', 'sec': '12.1'},
    {'q': 'The sum to infinity of the geometric progression $8 + 4 + 2 + 1 + \\cdots$ is',
     'o': ['15', '16', '20', '32', 'infinite'],
     'a': 1,
     'w': 'The common ratio is ½, which is less than 1, so the series converges.',
     'calc': 'S_\\infty = \\frac{a}{1-r} = \\frac{8}{1-0.5} = 16',
-    'src': 'Chapter 12.2'},
+    'src': 'Chapter 12.2', 'sec': '12.2'},
   ],
   'theory': [
    {'q': 'Oyo Manufacturing Limited is considering a project requiring an immediate investment '
@@ -464,6 +496,6 @@ CH = {
                'managers, and it is a rough guide to liquidity and to risk where cash is '
                'tight. The usual recommendation is to use it as a screening device alongside '
                'NPV, not instead of it.'}],
-    'src': 'Chapter 12.4'},
+    'src': 'Chapter 12.4', 'sec': '12.4'},
   ]},
 }

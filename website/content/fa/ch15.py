@@ -231,7 +231,7 @@ CH = {
     'a': 2,
     'w': 'Gross profit margin expresses gross profit as a percentage of revenue.',
     'calc': '\\frac{200{,}000{,}000}{500{,}000{,}000} \\times 100 = 40\\%',
-    'src': 'Chapter 15.2'},
+    'src': 'Chapter 15.2', 'sec': '15.2'},
    {'q': 'Current assets ₦8,400,000, of which inventory ₦3,200,000; current liabilities '
          '₦4,000,000. The acid test ratio is',
     'o': ['2.10 : 1', '1.30 : 1', '0.80 : 1', '1.05 : 1', '2.63 : 1'],
@@ -239,7 +239,7 @@ CH = {
     'w': 'The acid test excludes inventory, the least liquid current asset.',
     'calc': '\\frac{8{,}400{,}000 - 3{,}200{,}000}{4{,}000{,}000} = \\frac{5{,}200{,}000}'
             '{4{,}000{,}000} = 1.30',
-    'src': 'Chapter 15.4'},
+    'src': 'Chapter 15.4', 'sec': '15.4'},
    {'q': 'Operating profit is ₦9,000,000, revenue ₦60,000,000 and capital employed ₦45,000,000. '
          'ROCE is',
     'o': ['15%', '20%', '13.3%', '75%', '6.7%'],
@@ -247,20 +247,20 @@ CH = {
     'w': 'ROCE is operating profit over capital employed. Note the decomposition: margin 15% × '
          'asset turnover 1.33 = 20%.',
     'calc': '\\frac{9{,}000{,}000}{45{,}000{,}000} \\times 100 = 20\\%',
-    'src': 'Chapter 15.2'},
+    'src': 'Chapter 15.2', 'sec': '15.2'},
    {'q': 'Trade receivables are ₦7,300,000 and credit sales ₦36,500,000. The collection period is',
     'o': ['20 days', '50 days', '73 days', '146 days', '5 days'],
     'a': 2,
     'w': 'Receivables days measures how long customers take to pay.',
     'calc': '\\frac{7{,}300{,}000}{36{,}500{,}000} \\times 365 = 73 \\text{ days}',
-    'src': 'Chapter 15.3'},
+    'src': 'Chapter 15.3', 'sec': '15.3'},
    {'q': 'Inventory days are 48, receivables days 62 and payables days 39. The working capital '
          'cycle is',
     'o': ['149 days', '71 days', '25 days', '53 days', '101 days'],
     'a': 1,
     'w': 'The cycle is the time between paying suppliers and being paid by customers.',
     'calc': '48 + 62 - 39 = 71 \\text{ days}',
-    'src': 'Chapter 15.3'},
+    'src': 'Chapter 15.3', 'sec': '15.3'},
    {'q': 'Which of the following is NOT a limitation of ratio analysis?',
     'o': ['Ratios are based on historical information',
           'Different entities may use different accounting policies',
@@ -270,7 +270,7 @@ CH = {
     'a': 2,
     'w': 'Reducing a relationship to one comparable figure is the point of a ratio — it is the '
          'principal advantage, not a limitation.',
-    'src': 'Chapter 15.7'},
+    'src': 'Chapter 15.7', 'sec': '15.7'},
   ],
   'theory': [
    {'q': 'Explain the relationship between return on capital employed, profit margin and asset '
@@ -295,7 +295,7 @@ CH = {
             'and the strategic implications differ entirely: the supermarket must protect volume, '
             'the jeweller must protect price. This is why ROCE should always be analysed into its '
             'components rather than reported alone.'}],
-    'src': 'Chapter 15.2'},
+    'src': 'Chapter 15.2', 'sec': '15.2'},
    {'q': 'State SIX limitations of ratio analysis as a means of interpreting financial statements.',
     'marks': 6,
     'a': [{'ol': [
@@ -315,6 +315,6 @@ CH = {
       'businesses it actually operates.',
       '**No causes** — ratios identify that something changed, not why; the explanation must come '
       'from outside the statements.']}],
-    'src': 'Chapter 15.7'},
+    'src': 'Chapter 15.7', 'sec': '15.7'},
   ]},
 }

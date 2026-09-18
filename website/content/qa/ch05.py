@@ -158,6 +158,31 @@ CH = {
   ]},
 
   {'n': '5.5', 't': 'Worksheet summary — definitions and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§5.1 The four components** — trend $T$ (long-term direction), seasonal $S$ (fixed-'
+      'period, within a year), cyclical $C$ (3–10-year swings, no fixed period), irregular $I$ '
+      '(one-off shocks). **Additive** $Y=T+S+C+I$ for a roughly constant seasonal swing '
+      '(seasonals sum to zero); **multiplicative** $Y=T\\times S\\times C\\times I$ for a '
+      'swing that grows with the trend (seasonal indices average to 1, or sum to 400 for '
+      'quarterly/1,200 for monthly data).',
+      '**§5.2 The moving average trend** — order = periods in one cycle (4 quarterly, 12 '
+      'monthly, 7 daily); **odd** order needs no centring, **even** order must be **centred** '
+      'by a further two-point average (or, faster, by summing two consecutive n-period totals '
+      'and dividing by $2n$) so the trend value lines up with a real period.',
+      '**§5.3 Fitting a trend line** — **least squares** $T=a+bt$ uses the Chapter 4 formulas '
+      'with $t$ in place of $x$; coding $t$ symmetrically about zero makes $\\sum t=0$ and '
+      'collapses them to $b=\\sum ty/\\sum t^2$, $a=\\bar{y}$. **Semi-averages** (split the '
+      'series in half, plot each half\'s mean against its mid-point, join them) is quick but '
+      'crude, using only two summary points.',
+      '**§5.4 Seasonal variation and forecasting** — find $T$ (usually centred MA), compute '
+      'each period\'s deviation ($Y-T$ additive, $Y/T$ multiplicative), average by season '
+      'across years, then **adjust** so the averages sum to zero (additive) or to the number '
+      'of seasons (multiplicative) by spreading the discrepancy equally — this adjustment is '
+      'compulsory before forecasting. Forecast = project the trend from the **same origin** '
+      'the line was fitted from, then apply the adjusted seasonal factor. Deseasonalising '
+      'strips the seasonal pattern out so consecutive periods can be compared directly.',
+    ]},
     {'h3': 'Definitions'},
     {'ul': [
       '**Time series** — data collected successively at regular intervals (daily, weekly, '
@@ -296,20 +321,20 @@ CH = {
     'a': 0,
     'w': 'Average the first three values; the result is centred on the middle one.',
     'calc': '\\frac{15 + 20 + 25}{3} = \\frac{60}{3} = 20',
-    'src': 'Chapter 5.2'},
+    'src': 'Chapter 5.2', 'sec': '5.2'},
    {'q': 'For the same series, the three-point moving average centred on the third value is',
     'o': ['43', '36', '27', '14', '12'],
     'a': 2,
     'w': 'Average the second, third and fourth values.',
     'calc': '\\frac{20 + 25 + 36}{3} = \\frac{81}{3} = 27',
-    'src': 'Chapter 5.2'},
+    'src': 'Chapter 5.2', 'sec': '5.2'},
    {'q': 'Under the additive model, the seasonal variations for four quarters must sum to',
     'o': ['zero', '100', '400', '1', 'the value of the trend'],
     'a': 0,
     'w': 'Additive seasonals are measured in the units of the data as deviations from trend, and '
          'over a complete cycle the deviations must cancel. Multiplicative indices sum to 400 for '
          'four quarters.',
-    'src': 'Chapter 5.1'},
+    'src': 'Chapter 5.1', 'sec': '5.1'},
    {'q': 'A four-quarter moving average must be centred because',
     'o': ['the data is seasonal',
           'the average of an even number of periods falls between two periods',
@@ -319,21 +344,21 @@ CH = {
     'w': 'With an even order the average corresponds to a point midway between two actual '
          'periods. A further two-point average shifts it onto an actual period so that $Y-T$ can '
          'be computed.',
-    'src': 'Chapter 5.2'},
+    'src': 'Chapter 5.2', 'sec': '5.2'},
    {'q': 'The trend line is $T = 96 + 3.2t$ and the adjusted seasonal for Q3 is $+30$. The '
          'forecast for $t = 15$ under the additive model is',
     'o': ['144', '174', '114', '4,320', '126'],
     'a': 1,
     'w': 'Project the trend, then add the adjusted seasonal variation.',
     'calc': 'T = 96 + 3.2(15) = 144; \\quad F = 144 + 30 = 174',
-    'src': 'Chapter 5.4'},
+    'src': 'Chapter 5.4', 'sec': '5.4'},
    {'q': 'Which component of a time series has no fixed period?',
     'o': ['Trend', 'Seasonal', 'Cyclical', 'Irregular', 'Both cyclical and irregular'],
     'a': 4,
     'w': 'The seasonal component repeats over a fixed period, usually a year. Cyclical swings '
          'recur but at irregular intervals of several years, and the irregular component is by '
          'definition unpredictable.',
-    'src': 'Chapter 5.1'},
+    'src': 'Chapter 5.1', 'sec': '5.1'},
   ],
   'theory': [
    {'q': 'Identify the FOUR components of a time series, and explain the difference between the '
@@ -364,6 +389,6 @@ CH = {
             'the trend rises, use the additive model. If they **grow in proportion** to the '
             'trend — the peaks getting taller as the series climbs — use the multiplicative '
             'model, which is the more usual case for a growing business.'}],
-    'src': 'Chapter 5.1'},
+    'src': 'Chapter 5.1', 'sec': '5.1'},
   ]},
 }

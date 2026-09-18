@@ -205,7 +205,7 @@ CH = {
     'a': 2,
     'w': 'The lower of the two, applied item by item or by group of similar items. This applies '
          'prudence: an asset is not carried above the amount expected to be recovered from it.',
-    'src': 'Chapter 12.3'},
+    'src': 'Chapter 12.3', 'sec': '12.3'},
    {'q': 'An item of inventory cost ₦1,000. Its selling price has fallen to ₦800 and ₦100 of '
          'costs will be incurred before it can be sold. Its net realisable value is',
     'o': ['₦1,000', '₦900', '₦800', '₦700', '₦600'],
@@ -213,14 +213,14 @@ CH = {
     'w': 'NRV is the estimated selling price less the costs necessary to make the sale. The item '
          'is written down from ₦1,000 to ₦700, a loss of ₦300.',
     'calc': '\\text{NRV} = 800 - 100 = 700',
-    'src': 'Chapter 12.3'},
+    'src': 'Chapter 12.3', 'sec': '12.3'},
    {'q': 'Which cost formula is NOT permitted by IAS 2?',
     'o': ['First in, first out', 'Weighted average cost', 'Specific identification',
           'Last in, first out', 'Standard cost, where it approximates actual cost'],
     'a': 3,
     'w': 'LIFO was withdrawn because it rarely reflects the physical flow of goods and, in a '
          'period of rising prices, leaves obsolete costs in the statement of financial position.',
-    'src': 'Chapter 12.2'},
+    'src': 'Chapter 12.2', 'sec': '12.2'},
    {'q': 'Opening inventory ₦900,000; purchases ₦7,200,000; sales ₦9,600,000; gross margin 30%. '
          'Closing inventory is',
     'o': ['₦1,380,000', '₦1,200,000', '₦2,100,000', '₦1,020,000', '₦1,500,000'],
@@ -229,7 +229,7 @@ CH = {
          'cost of sales computation.',
     'calc': '\\text{COS} = 0.70 \\times 9{,}600{,}000 = 6{,}720{,}000; \\quad '
             '900{,}000 + 7{,}200{,}000 - 6{,}720{,}000 = 1{,}380{,}000',
-    'src': 'Chapter 12.5'},
+    'src': 'Chapter 12.5', 'sec': '12.5'},
    {'q': 'In a period of rising prices, compared with weighted average cost, FIFO gives',
     'o': ['a lower closing inventory and a lower profit',
           'a higher closing inventory and a higher profit',
@@ -239,7 +239,7 @@ CH = {
     'a': 1,
     'w': 'FIFO leaves the most recent, dearest purchases in inventory. Higher closing inventory '
          'means lower cost of sales, and therefore higher reported profit.',
-    'src': 'Chapter 12.2'},
+    'src': 'Chapter 12.2', 'sec': '12.2'},
    {'q': 'Which of the following should be included in the cost of inventory?',
     'o': ['Storage costs of finished goods', 'Selling and distribution costs',
           'Import duties on raw materials', 'Abnormal wastage of materials',
@@ -248,7 +248,7 @@ CH = {
     'w': 'Import duties are a cost of purchase and are directly attributable to bringing the '
          'inventory to its present location and condition. The other four are all expensed as '
          'incurred under IAS 2.',
-    'src': 'Chapter 12.1'},
+    'src': 'Chapter 12.1', 'sec': '12.1'},
   ],
   'theory': [
    {'q': 'State the costs that should be included in, and excluded from, the cost of inventories '
@@ -283,6 +283,6 @@ CH = {
             'Any write-down is recognised as an expense in the period. If the circumstances that '
             'caused a write-down cease to exist, the write-down is reversed, but only up to the '
             'original cost.'}],
-    'src': 'Chapter 12.3'},
+    'src': 'Chapter 12.3', 'sec': '12.3'},
   ]},
 }

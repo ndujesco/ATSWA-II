@@ -499,14 +499,14 @@ CH = {
     'a': 1,
     'w': 'Unallocated stores are charged to the receiving vote on issue, not on purchase. '
          'Allocated stores are charged directly to a vote when bought.',
-    'src': 'Chapter 11.1'},
+    'src': 'Chapter 11.1', 'sec': '11.1'},
    {'q': 'The record kept by the storekeeper showing quantities only is the',
     'o': ['store ledger', 'bin card', 'store receipt voucher', 'inventory register',
           'store issue voucher'],
     'a': 1,
     'w': 'The bin card records quantities at the bin. The store ledger, kept in the accounts '
          'section, records both quantity and value.',
-    'src': 'Chapter 11.2'},
+    'src': 'Chapter 11.2', 'sec': '11.2'},
    {'q': 'A body constituted to investigate a specific loss of cash or stores and determine '
          'responsibility for it is a',
     'o': ['Board of Survey', 'Board of Enquiry', 'Tenders Board',
@@ -514,13 +514,13 @@ CH = {
     'a': 1,
     'w': 'A Board of Survey verifies what is present; a Board of Enquiry investigates what is '
          'missing.',
-    'src': 'Chapter 11.5'},
+    'src': 'Chapter 11.5', 'sec': '11.5'},
    {'q': 'Requiring a public officer to make good a loss caused by his negligence is known as',
     'o': ['write-off', 'surcharge', 'interdiction', 'virement', 'adjustment'],
     'a': 1,
     'w': 'Surcharge imposes personal financial liability. Write-off merely removes the '
          'irrecoverable amount from the books and does not absolve the officer.',
-    'src': 'Chapter 11.4'},
+    'src': 'Chapter 11.4', 'sec': '11.4'},
    {'q': 'A Board of Survey should be constituted',
     'o': ['only when a loss occurs',
           'at the end of the financial year and on a change of custody of cash or stores',
@@ -529,7 +529,7 @@ CH = {
     'a': 1,
     'w': 'The annual board supports the cash and stores figures in the financial statements; a '
          'special board on handing over protects both the outgoing and the incoming officer.',
-    'src': 'Chapter 11.5'},
+    'src': 'Chapter 11.5', 'sec': '11.5'},
    {'q': 'On discovery of a loss of public funds through suspected theft, the accounting officer '
          'must report to the Accountant-General, the Police and the',
     'o': ['Minister of Finance only', 'Auditor-General', 'National Assembly',
@@ -537,7 +537,7 @@ CH = {
     'a': 1,
     'w': 'The Auditor-General must be informed so that the loss is examined independently of '
          'the department in which it occurred.',
-    'src': 'Chapter 11.4'},
+    'src': 'Chapter 11.4', 'sec': '11.4'},
   ],
   'theory': [
    {'q': '(a) Distinguish between a Board of Survey and a Board of Enquiry, stating the '
@@ -637,6 +637,6 @@ CH = {
             'clears the record while the surcharge pursues the officer. It is precisely because '
             'write-off does **not** discharge liability that the two are considered separately: '
             'if it did, an officer\'s easiest defence would be to procure a write-off.'}],
-    'src': 'Chapter 11.4–11.5'},
+    'src': 'Chapter 11.4–11.5', 'sec': '11.4'},
   ]},
 }

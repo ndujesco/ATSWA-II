@@ -838,13 +838,13 @@ CH = {
     'a': 1,
     'w': 'The twelve-month test is the dividing line between short-term and other long-term '
          'benefits.',
-    'src': 'Chapter 5.1'},
+    'src': 'Chapter 5.1', 'sec': '5.1'},
    {'q': 'In a defined contribution plan, actuarial and investment risk falls on the',
     'o': ['employer', 'employee', 'pension fund custodian', 'government', 'actuary'],
     'a': 1,
     'w': 'The employer\'s obligation ends when the contribution is paid, so any shortfall in '
          'investment returns reduces the employee\'s eventual benefit.',
-    'src': 'Chapter 5.3'},
+    'src': 'Chapter 5.3', 'sec': '5.3'},
    {'q': 'Under IPSAS 39, remeasurements of a net defined benefit liability are recognised in',
     'o': ['surplus or deficit', 'net assets / equity', 'the statement of cash flows',
           'the notes only', 'surplus or deficit over the remaining service life'],
@@ -852,7 +852,7 @@ CH = {
     'w': 'Remeasurements — actuarial gains and losses and the return on plan assets excluding '
          'net interest — go to net assets/equity and are never reclassified to surplus or '
          'deficit.',
-    'src': 'Chapter 5.3'},
+    'src': 'Chapter 5.3', 'sec': '5.3'},
    {'q': 'A ministry has 200 staff each with 5 days of accumulating vesting leave unused at the '
          'year end. The average daily rate is ₦9,000. The liability to be recognised is',
     'o': ['₦1,800,000', '₦9,000,000', '₦45,000', '₦900,000', '₦4,500,000'],
@@ -860,7 +860,7 @@ CH = {
     'w': 'Vesting entitlement is paid in cash if not taken, so the whole accumulated balance is '
          'provided for.',
     'calc': '200 \\times 5 \\times 9{,}000 = ₦9{,}000{,}000',
-    'src': 'Chapter 5.2'},
+    'src': 'Chapter 5.2', 'sec': '5.2'},
    {'q': 'Termination benefits are recognised at the earlier of the date the entity can no '
          'longer withdraw the offer and the date',
     'o': ['the employee accepts the offer',
@@ -870,7 +870,7 @@ CH = {
     'a': 1,
     'w': 'IPSAS 39 sets these two dates as the recognition trigger, because the obligation '
          'arises from the decision to terminate rather than from service rendered.',
-    'src': 'Chapter 5.3'},
+    'src': 'Chapter 5.3', 'sec': '5.3'},
    {'q': 'Which of the following is an "other long-term employee benefit"?',
     'o': ['Paid annual leave taken within the year', 'Long-service leave after ten years',
           'A pension payable on retirement', 'Redundancy pay on restructuring',
@@ -879,7 +879,7 @@ CH = {
     'w': 'Long-service leave is not expected to be settled within twelve months, is not payable '
          'after employment ends, and does not arise from termination — so it falls into the '
          'residual "other long-term" category.',
-    'src': 'Chapter 5.1'},
+    'src': 'Chapter 5.1', 'sec': '5.1'},
    {'q': 'Which of the following is NOT a component of a retirement benefit plan\'s financial '
          'statements?',
     'o': ['Statement of financial position',
@@ -889,14 +889,14 @@ CH = {
     'w': 'A retirement benefit plan presents a statement of financial position, a statement of '
          'changes in net assets available for benefits, a cash flow statement and notes. There '
          'is no "statement of public debt".',
-    'src': 'Chapter 5.11 (study text Section A Q1)'},
+    'src': 'Chapter 5.11 (study text Section A Q1)', 'sec': '5.11'},
    {'q': 'Employee benefits that are not conditional on future employment are described as',
     'o': ['vested employee benefits', 'post-employment benefits', 'termination benefits',
           'short-term benefits', 'other long-term benefits'],
     'a': 0,
     'w': 'Vested benefits are those an employee is entitled to regardless of whether they '
          'remain in employment.',
-    'src': 'Chapter 5.11 (study text Section A Q6)'},
+    'src': 'Chapter 5.11 (study text Section A Q6)', 'sec': '5.11'},
    {'q': 'The increase in the present value of a defined benefit obligation because the '
          'benefits are one period closer to settlement is the',
     'o': ['current service cost', 'past service cost', 'interest cost', 'actuarial loss',
@@ -904,7 +904,7 @@ CH = {
     'a': 2,
     'w': 'Interest cost is the unwinding of the discount — the obligation grows as the payment '
          'date approaches.',
-    'src': 'Chapter 5.11 (study text Section A Q8)'},
+    'src': 'Chapter 5.11 (study text Section A Q8)', 'sec': '5.11'},
   ],
   'theory': [
    {'q': 'Explain the four categories of employee benefit recognised by IPSAS 39, and '
@@ -988,6 +988,6 @@ CH = {
                'Pension Reform Act 2014 is a **defined contribution** plan, which is precisely '
                'why it removed the unfunded liability that destroyed the previous arrangement. '
                'The obligation of government now ends when the 10% is remitted.'}],
-    'src': 'Chapter 5.1, 5.3'},
+    'src': 'Chapter 5.1, 5.3', 'sec': '5.1'},
   ]},
 }

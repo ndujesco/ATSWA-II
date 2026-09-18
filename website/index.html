@@ -407,6 +407,9 @@ math{font-family:var(--serif);}
   text-transform:uppercase;color:var(--ink3);text-align:right;}
 .qhead .sr a{color:var(--ink2);border-bottom:1px solid var(--rule);}
 .qhead .sr a:hover{color:var(--accent);border-color:var(--accent-edge);}
+.qsrc{padding:8px 24px 0;font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+  color:var(--ink3);}
+.qsrc a.cite{color:var(--accent);}
 .qstem{padding:12px 24px 18px;font-size:18.5px;line-height:1.52;}
 .qstem .pre{margin-top:12px;font-size:12.5px;}
 .qpre{margin:0 24px 14px;padding:12px 15px;background:var(--sunk);border-radius:3px;
@@ -1840,6 +1843,15 @@ var ATSWA = (function () {
     }
     return '<div class="cite"' + sty + '>' + label + '</div>';
   }
+  /* the same citation, shown before the question is answered — so the reader
+     can jump to the section first if they would rather revise it than guess.
+     Suppressed in timed exam mode, where nothing about the answer's source
+     should be visible before the question is attempted. */
+  function citeTop(q, code, ch) {
+    if (Q && Q.exam) return '';
+    var html = citeHTML(q, code, ch);
+    return html ? '<div class="qsrc">' + html + '</div>' : '';
+  }
 
   /* ---- state -------------------------------------------------------- */
   function load(k, n) {
@@ -1965,6 +1977,7 @@ var ATSWA = (function () {
       '<div class="qhead"><span class="n">' + (i + 1) + '</span>' +
       '<span class="tp">' + (q.past ? 'Past question' : 'Practice') + '</span>' +
       '<span class="sr">' + (i + 1) + ' of ' + Q.mcq.length + '</span></div>' +
+      citeTop(q, Q.code, Q.ch) +
       A.preBlock(q.pre) +
       (q.flag ? '<div class="flagbox"><div class="lbl">Check this</div>' +
                 R.inl(q.flag) + '</div>' : '') +
@@ -2013,6 +2026,7 @@ var ATSWA = (function () {
       'text-transform:uppercase;color:var(--accent)">' +
       (t.short ? 'Short answer' : 'Theory') + '</span>' +
       '<span class="mk">' + (t.marks ? t.marks + ' marks' : '') + '</span></div>' +
+      citeTop(t, Q.code, Q.ch) +
       A.preBlock(t.pre) +
       '<div class="qz">' + R.inl(t.q) + '</div>' +
       '<div class="pad"><textarea id="wr" placeholder="Write your answer here — it is saved as you type.">' +

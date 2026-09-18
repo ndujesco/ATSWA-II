@@ -189,7 +189,7 @@ CH = {
     'w': 'Add closing arrears and opening advances (both earned this year); deduct opening '
          'arrears and closing advances (both belong to another year).',
     'calc': '2{,}400{,}000 + 185{,}000 - 120{,}000 + 90{,}000 - 65{,}000 = 2{,}490{,}000',
-    'src': 'Chapter 8.3'},
+    'src': 'Chapter 8.3', 'sec': '8.3'},
    {'q': 'The accumulated fund of a not-for-profit organisation represents',
     'o': ['the cash at bank', 'the surplus for the year',
           'the excess of assets over liabilities', 'the total subscriptions received to date',
@@ -197,7 +197,7 @@ CH = {
     'a': 2,
     'w': 'The accumulated fund is the club\'s capital: assets less liabilities. It is exactly the '
          'residual the accounting equation defines for any entity.',
-    'src': 'Chapter 8.6'},
+    'src': 'Chapter 8.6', 'sec': '8.6'},
    {'q': 'Which of the following would appear in a receipts and payments account but NOT in an '
          'income and expenditure account?',
     'o': ['Depreciation of equipment', 'Purchase of a new minibus',
@@ -207,7 +207,7 @@ CH = {
     'w': 'A receipts and payments account is a summarised cash book, so it records the whole '
          'capital payment. An income and expenditure account excludes capital items and shows '
          'only the depreciation.',
-    'src': 'Chapter 8.2'},
+    'src': 'Chapter 8.2', 'sec': '8.2'},
    {'q': 'Bar takings were ₦1,800,000; opening bar inventory ₦140,000; bar purchases ₦990,000; '
          'closing bar inventory ₦175,000; barman\'s wages ₦260,000. The net bar profit is',
     'o': ['₦845,000', '₦585,000', '₦810,000', '₦510,000', '₦675,000'],
@@ -215,7 +215,7 @@ CH = {
     'w': 'Cost of bar sales is 140,000 + 990,000 − 175,000 = ₦955,000, giving gross bar profit of '
          '₦845,000, then deduct the wages.',
     'calc': '1{,}800{,}000 - (140{,}000 + 990{,}000 - 175{,}000) - 260{,}000 = 585{,}000',
-    'src': 'Chapter 8.4'},
+    'src': 'Chapter 8.4', 'sec': '8.4'},
    {'q': 'Subscriptions received in advance at the year end are shown in the statement of '
          'financial position as',
     'o': ['a current asset', 'a current liability', 'part of the accumulated fund',
@@ -223,7 +223,7 @@ CH = {
     'a': 1,
     'w': 'The club has received cash for a period of membership it has not yet provided, so it '
          'owes a service. That is a current liability.',
-    'src': 'Chapter 8.6'},
+    'src': 'Chapter 8.6', 'sec': '8.6'},
   ],
   'theory': [
    {'q': 'Distinguish between a receipts and payments account and an income and expenditure '
@@ -242,6 +242,6 @@ CH = {
       ['Result', 'Closing balance of cash and bank', 'Surplus or deficit for the year'],
       ['Debit side records', 'Receipts', 'Expenditure'],
     ]}}],
-    'src': 'Chapter 8.2'},
+    'src': 'Chapter 8.2', 'sec': '8.2'},
   ]},
 }

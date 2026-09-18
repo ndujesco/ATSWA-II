@@ -1,5 +1,66 @@
 # Where the build stopped
 
+## Session 2026-09-18 — quiz citations didn't scroll (root cause: `sec` was
+## unset on 443 of 543 authored quiz questions), + a section-by-section
+## revision checklist added to every QA chapter's summary
+User reported that chapter-quiz citations in PS (and, on checking, every subject
+except IT) weren't scrolling to the cited section, and asked for the citation to
+show **before** answering too, not just in the post-answer "why" box.
+- **Root cause**: `citeHTML()` in `src/quiz.js` only renders a clickable link when
+  the question object has a `sec` field; otherwise it silently falls back to
+  plain, non-clickable text. A prior session ("2026-09-14") wired up the
+  mechanism and populated `sec` for IT's 100 authored quiz items, but never did
+  the other 443 (FA 123, PS 176, QA 144) — so for every subject but IT, the
+  citation was always the plain-text fallback with nothing to click. The
+  scroll mechanism itself (`VIEWS.chapter` → `scrollToAnchor()` reading
+  `route.q.sec`) was already correct and needed no fix.
+- **Fix**: every authored `quiz.mcq`/`quiz.theory` item's `'src': 'Chapter '
+  X.Y'` field already names the exact section its answer comes from — a
+  script parsed that string, resolved it (with dotted-suffix truncation, e.g.
+  `18.8.2` → `18.8`) against the chapter's own `secs[].n` list, and inserted
+  a matching `'sec': 'X.Y'` right after `src` wherever one didn't already
+  exist. 434/443 resolved on the first pass; the remaining 9 (PS ch17/18/19,
+  sub-numbered references like `19.3.2(a)`) resolved once truncation was
+  added. **443/443 auto-resolved, 0 needed a manual guess.** Verified every
+  inserted `sec` against the built `data/<subj>.js` — all 543 (100 IT + 443
+  new) point at a section that actually exists in that chapter; 0 mismatches.
+- **New UI**: `citeTop()` in `quiz.js` now renders the same citation link at
+  the **top** of the question card (new `.qsrc` CSS in `page.html`), visible
+  before the question is answered, in addition to the existing one in the
+  post-answer "why"/model-answer block. Suppressed during timed exam-mode
+  sitting (`Q.exam`), so a citation never hints at the source chapter before
+  a simulated exam question is attempted.
+- Verified end-to-end with a Node simulation of `citeHTML()`'s link format →
+  `parseHash()`'s query parsing → the DOM anchor `VIEWS.chapter` renders —
+  confirms `sec: '8.6'` produces `href="#/s/PS/8?sec=8-6"`, which parses back
+  to `sec=8-6`, which matches anchor id `sec-8-6` exactly. (No live browser
+  available this session — Claude-in-Chrome extension wasn't connected — so
+  this was the strongest verification possible; worth an actual click-through
+  next time the browser tool is available.)
+
+User also asked, again, for QA: "a detailed summary of each chapter section by
+section such that I do not miss any info... not even one info." Checked the
+existing "Worksheet summary" sections first rather than assuming they were
+still deficient (per [[fidelity-pass]], an earlier pass already built these) —
+spot-checked ch03/ch09/ch19 line by line against their own body content and
+found the substance (every definition, every formula, including deliberately-
+scoped-out things like ch19's stepping-stone/MODI) was already genuinely
+complete. The real gap was **presentation**: the summaries are organised by
+*topic* (lettered "A/B/C..." headers), not by the chapter's own section
+numbers, so there was no way to confirm every section (2.1, 2.2, 2.3...) had
+actually been captured without re-reading the whole chapter.
+- **Fix**: added a **"Section-by-section checklist"** as the first block of
+  every QA chapter's Worksheet-summary section (all 20, including ch01's
+  differently-named "Full revision summary" and ch14's formula-free "OR
+  intro" summary) — one compact, numbered entry per body section (§X.1, §X.2,
+  ...), each entry compressing that section's core definitions, formulas and
+  gotchas into 2–5 sentences. This sits *alongside* the existing topic-
+  organised content (definitions, lettered formula groups), not instead of
+  it — nothing was removed, only made independently checkable per section.
+- Full rebuild clean: `python3 tools/build_content.py && ./build.sh` — QA
+  104 sections (unchanged — checklists are new blocks *within* the existing
+  summary sections, not new top-level sections), all four subjects clean.
+
 ## Session 2026-09-15 (cont.) — PS chapter 23 added too: it's 23/23, not 22/22
 User confirmed (asked via AskUserQuestion) they wanted the discovered-but-not-yet-
 authored 23rd PS chapter added rather than left as a flagged gap. **Chapter 23,

@@ -152,6 +152,30 @@ CH = {
   ]},
 
   {'n': '18.4', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§18.1 The two replacement problems** — **gradual deterioration** (running cost rises, '
+      'resale falls steadily — vehicles, machinery): decide the *age* to replace a single '
+      'asset by minimising average annual cost. **Sudden failure** (works perfectly then fails '
+      'without warning — bulbs, fuses, small components): decide **individual** replacement '
+      '(on failure) vs **group** replacement (all together at intervals, individual '
+      'replacement of any that fail in between) by comparing cost per period.',
+      '**§18.2 Items that deteriorate** — average annual cost $AAC_n=[(C-S_n)+\\sum R_t]/n$ '
+      '($C$ = purchase cost, $S_n$ = resale value at year $n$, $R_t$ = running cost in year '
+      '$t$); capital cost per year **falls** with longer ownership, running cost per year '
+      '**rises**, so $AAC$ is U-shaped — replace at the age that minimises it. The bottom of '
+      'the U is usually flat, so a small departure from the exact optimum costs little; the '
+      'basic model **ignores the time value of money** — where that matters, discount to an '
+      '**equivalent annual cost** instead.',
+      '**§18.3 Items that fail suddenly** — project period failures $N_t$ **including failures '
+      'among the replacements themselves** (a common omission that understates later periods); '
+      'mean life $\\bar{L}=\\sum t\\,p_t$ (a probability-weighted average, not a simple one); '
+      'steady-state individual-policy failures per period $=N/\\bar{L}$; group-replacement '
+      'cost per period at interval $n$ $=[NC_g+C_i\\sum_{t=1}^n N_t]/n$. Compare the individual '
+      'policy\'s steady-state cost per period against the cheapest group interval\'s cost per '
+      'period and pick the lower — and comment on non-financial factors when the financial '
+      'margin between them is thin.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Replacement analysis** — deciding *when* to replace equipment to minimise total '
@@ -256,7 +280,7 @@ CH = {
     'w': 'The criterion is the total cost per year of use, combining falling capital cost per '
          'year with rising running cost. Accounting depreciation is irrelevant to the '
          'decision.',
-    'src': 'Chapter 18.2'},
+    'src': 'Chapter 18.2', 'sec': '18.2'},
    {'q': 'A machine costs ₦80,000 and has a resale value of ₦30,000 after 2 years. Running '
          'costs are ₦20,000 in year 1 and ₦26,000 in year 2. The average annual cost of '
          'replacing after 2 years is',
@@ -265,14 +289,14 @@ CH = {
     'w': 'Capital cost is $80{,}000 - 30{,}000 = ₦50{,}000$; cumulative running cost is '
          '₦46,000; divide the total by 2 years.',
     'calc': 'AAC_2 = \\frac{50{,}000 + 46{,}000}{2} = \\frac{96{,}000}{2} = ₦48{,}000',
-    'src': 'Chapter 18.2'},
+    'src': 'Chapter 18.2', 'sec': '18.2'},
    {'q': 'If items fail with probabilities 0.2, 0.3 and 0.5 in the first, second and third '
          'months of life, the mean life of an item is',
     'o': ['2.00 months', '2.30 months', '2.50 months', '3.00 months', '1.00 month'],
     'a': 1,
     'w': 'Weight each period by its probability of failure.',
     'calc': '\\bar{L} = 1(0.2) + 2(0.3) + 3(0.5) = 0.2 + 0.6 + 1.5 = 2.3',
-    'src': 'Chapter 18.3'},
+    'src': 'Chapter 18.3', 'sec': '18.3'},
    {'q': 'Group replacement is likely to be preferred to individual replacement when',
     'o': ['items are expensive to buy', 'the cost of replacing an item individually greatly '
           'exceeds the cost of replacing it as part of a group',
@@ -282,7 +306,7 @@ CH = {
     'w': 'The saving comes from the labour and disruption avoided by doing the work once. If '
          'the two unit costs were similar there would be nothing to gain, since group '
          'replacement discards unexpired life.',
-    'src': 'Chapter 18.3'},
+    'src': 'Chapter 18.3', 'sec': '18.3'},
    {'q': 'In the replacement model for a deteriorating asset, capital cost per year of '
          'ownership',
     'o': ['rises as the asset is kept longer', 'falls as the asset is kept longer',
@@ -290,7 +314,7 @@ CH = {
     'a': 1,
     'w': 'The net capital outlay is spread over more years, so although the total capital cost '
          'rises as resale value falls, the amount per year falls.',
-    'src': 'Chapter 18.2'},
+    'src': 'Chapter 18.2', 'sec': '18.2'},
   ],
   'theory': [
    {'q': 'A transport company is considering its policy for replacing its delivery vans. A new '
@@ -367,6 +391,6 @@ CH = {
         'Capital allowances and the tax treatment of disposals also affect the real cost of '
         'each policy.',
       ]}],
-    'src': 'Chapter 18.2'},
+    'src': 'Chapter 18.2', 'sec': '18.2'},
   ]},
 }

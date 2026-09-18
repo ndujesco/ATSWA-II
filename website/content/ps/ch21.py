@@ -491,13 +491,13 @@ CH = {
     'a': 1,
     'w': 'Model 1, the "pure" TSA, has no sub-structure at all; Model 2 (decentralised) uses '
          'zero-balanced overnight accounts per MDA.',
-    'src': 'Chapter 21.2'},
+    'src': 'Chapter 21.2', 'sec': '21.2'},
    {'q': 'The TSA component that commenced in April 2012, involving direct electronic-'
          'transfer payments, is',
     'o': ['e-collection', 'e-payment', 'e-invoicing', 'IPPIS', 'ATRRS'],
     'a': 1,
     'w': 'E-payment began in April 2012; e-collection followed in January 2015.',
-    'src': 'Chapter 21.2'},
+    'src': 'Chapter 21.2', 'sec': '21.2'},
    {'q': 'ATRRS is best described as',
     'o': ['the final IT system replacing all manual accounting permanently',
           'an interim ICT bridge automating manual accounting ahead of GIFMIS',
@@ -507,7 +507,7 @@ CH = {
     'a': 1,
     'w': 'ATRRS eases the workforce and data into IT before the full GIFMIS rollout, reducing '
          'GIFMIS training time and cost.',
-    'src': 'Chapter 21.3'},
+    'src': 'Chapter 21.3', 'sec': '21.3'},
    {'q': 'A core objective of IPPIS is to',
     'o': ['increase the number of MDA bank accounts', 'eliminate the "ghost workers" syndrome',
           'replace the Treasury Single Account', 'set procurement thresholds',
@@ -515,20 +515,20 @@ CH = {
     'a': 1,
     'w': 'A centralised, verified personnel database removes fictitious ("ghost") names from '
          'the payroll.',
-    'src': 'Chapter 21.4'},
+    'src': 'Chapter 21.4', 'sec': '21.4'},
    {'q': 'Under the Open Treasury Portal, an MDA must publish payments above',
     'o': ['₦1 million', '₦5 million', '₦10 million', '₦50 million', '₦100 million'],
     'a': 1,
     'w': 'The Treasury itself publishes payments of ₦10 million and above; every MDA must '
          'publish its own payments above ₦5 million.',
-    'src': 'Chapter 21.6'},
+    'src': 'Chapter 21.6', 'sec': '21.6'},
    {'q': 'The unique identifier assigned to every payment under the Federal Treasury '
          'e-Receipt (FTeR) is the',
     'o': ['NCOA code', 'Unique Reference Number (URN)', 'Treasury Form 15',
           'Certificate of No Objection', 'TIN'],
     'a': 1,
     'w': 'The URN allows each e-Receipt payment to be tracked and verified.',
-    'src': 'Chapter 21.7'},
+    'src': 'Chapter 21.7', 'sec': '21.7'},
   ],
   'theory': [
    {'q': '(a) Explain the concept of the Treasury Single Account (TSA) and state five reasons '
@@ -576,6 +576,6 @@ CH = {
             'platform linking treasuries, revenue-generating agencies and the central bank to '
             'pool cash in real time, track every naira from collection through allocation, '
             'and close revenue leakages before they happen.'}],
-    'src': 'Chapter 21.2–21.8'},
+    'src': 'Chapter 21.2–21.8', 'sec': '21.2'},
   ]},
 }

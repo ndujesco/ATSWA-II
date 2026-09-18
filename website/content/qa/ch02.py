@@ -336,6 +336,45 @@ CH = {
   ]},
 
   {'n': '2.7', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§2.1 The arithmetic mean** — ungrouped $\\bar{x}=\\sum x/n$; grouped $\\sum fx/\\sum '
+      'f$; assumed-mean $\\bar{x}=A+\\sum fd/\\sum f$ ($d=x-A$); step-deviation '
+      '$\\bar{x}=A+(\\sum fu/\\sum f)c$ ($u=(x-A)/c$) — all three give the identical answer, '
+      'step-deviation just keeps the arithmetic in small integers. Other means: geometric '
+      '$GM=\\sqrt[n]{\\prod x_i}$ (growth rates, index numbers), harmonic $HM=n/\\sum(1/x_i)$ '
+      '(rates like speed); for positive unequal values $HM<GM<\\bar{x}$.',
+      '**§2.2 The median** — the middle value; ungrouped odd-$n$ position $(n+1)/2$, even-$n$ '
+      'average the two middle values; grouped $L+((N/2-CF)/f_m)\\,c$ using the lower '
+      '**boundary** and the cumulative frequency **before** the median class. Unaffected by '
+      'extreme values, unlike the mean.',
+      '**§2.3 The mode** — the most frequent value; grouped '
+      '$L+(\\Delta_1/(\\Delta_1+\\Delta_2))\\,c$ where $\\Delta_1,\\Delta_2$ are the modal '
+      'frequency\'s **excess** over the classes before/after (not the neighbouring frequencies '
+      'themselves). Empirical relationship: $\\text{Mean}-\\text{Mode}='
+      '3(\\text{Mean}-\\text{Median})$, used to find any one of the three from the other two '
+      'in a moderately skewed distribution. Mean is best for further algebra but distorted by '
+      'extremes; median survives extremes and open-ended classes; mode suits qualitative data '
+      'but may not exist or be unique.',
+      '**§2.4 Measures of partition** — one formula family for quartiles/deciles/percentiles, '
+      'only the fraction of $N$ changes ($kN/4$, $kN/10$, $kN/100$); identities '
+      '$Q_2=D_5=P_{50}=$ median, $Q_1=P_{25}$, $Q_3=P_{75}$, $D_k=P_{10k}$. Read from an '
+      '**ogive** by tracing the required cumulative frequency across to the curve then down — '
+      'an ogive gives every positional measure **except the mode**.',
+      '**§2.5 Class limits vs boundaries** — the median/mode/quantile formulas always need $L$ '
+      '= the lower class **boundary** and $c$ = boundary-to-boundary width, never the stated '
+      'limit or apparent width. For **continuous** classes (0–10, 10–20, …) the limit already '
+      'equals the boundary so the distinction is invisible; for **gapped** classes (1–10, '
+      '11–20, …) the boundary sits half the gap above the limit and using the limit throws the '
+      'answer out. The **mean** is never affected (its class mark cancels the shift). The '
+      'study text\'s own Example 2.18 gets this wrong (uses $L=8.5$ instead of the correct '
+      '$7.5$); Examples 2.17 and 2.19 get it right and are the ones to model.',
+      '**§2.6 Easy-to-miss points** — locate the median/quantile class from the **cumulative** '
+      'column, not the largest frequency (that finds the modal class instead); grouped median '
+      'position is $N/2$ with **no** "+1"; $c$ multiplies the **whole** correction bracket; '
+      'assumed-mean/step-deviation are exact, not approximations; a mean may be a value that '
+      'cannot literally occur (e.g. 2.6 students) — that is a known shortcoming, not an error.',
+    ]},
     {'h3': 'Definitions'},
     {'ul': [
       '**Measures of location (central tendency)** — a single value taken as representative '
@@ -481,21 +520,21 @@ CH = {
     'a': 1,
     'w': 'Sum the values and divide by how many there are.',
     'calc': '\\bar{x} = \\frac{15 + 17 + 14 + 16 + 18}{5} = \\frac{80}{5} = 16',
-    'src': 'Chapter 2.1'},
+    'src': 'Chapter 2.1', 'sec': '2.1'},
    {'q': 'A distribution has a mean of 48 and a median of 45. Using the empirical relationship, '
          'the mode is approximately',
     'o': ['39', '42', '46.5', '51', '54'],
     'a': 0,
     'w': 'Apply Mode = 3 Median − 2 Mean.',
     'calc': '\\text{Mode} = 3(45) - 2(48) = 135 - 96 = 39',
-    'src': 'Chapter 2.3'},
+    'src': 'Chapter 2.3', 'sec': '2.3'},
    {'q': 'For a distribution with total frequency 50, the cumulative frequency traced on the ogive '
          'to give the 70th percentile is',
     'o': ['70', '50', '35', '25', '15'],
     'a': 2,
     'w': 'The 70th percentile is the value below which 70% of the observations fall.',
     'calc': 'P_{70} \\text{ at } \\frac{70}{100} \\times 50 = 35',
-    'src': 'Chapter 2.4'},
+    'src': 'Chapter 2.4', 'sec': '2.4'},
    {'q': 'In a grouped distribution the median class is 40 – 49 with frequency 12. The cumulative '
          'frequency up to 39 is 28 and $N = 80$. The median is',
     'o': ['45.5', '49.5', '49.0', '39.5', '48.5'],
@@ -503,20 +542,20 @@ CH = {
     'w': 'Apply the grouped median formula with $L = 39.5$, $N/2 = 40$, $CF = 28$, $f_m = 12$, '
          '$c = 10$.',
     'calc': '39.5 + \\left(\\frac{40 - 28}{12}\\right)(10) = 39.5 + 10 = 49.5',
-    'src': 'Chapter 2.2'},
+    'src': 'Chapter 2.2', 'sec': '2.2'},
    {'q': 'Which measure of location is most affected by extreme values?',
     'o': ['Mode', 'Median', 'Arithmetic mean', 'Lower quartile', 'Upper quartile'],
     'a': 2,
     'w': 'The arithmetic mean uses every observation, so a single very large or very small value '
          'pulls it. The median and mode are positional and are unaffected.',
-    'src': 'Chapter 2.3'},
+    'src': 'Chapter 2.3', 'sec': '2.3'},
    {'q': 'For any set of positive numbers that are not all equal, the correct ordering is',
     'o': ['$\\bar{x} < GM < HM$', '$HM < GM < \\bar{x}$', '$GM < HM < \\bar{x}$',
           '$\\bar{x} < HM < GM$', 'they are always equal'],
     'a': 1,
     'w': 'The harmonic mean is smallest, the arithmetic mean largest, with the geometric mean '
          'between them. Equality holds only when every value is the same.',
-    'src': 'Chapter 2.1'},
+    'src': 'Chapter 2.1', 'sec': '2.1'},
    {'q': 'A grouped distribution has classes 5 – 9, 10 – 14, 15 – 19, … The lower class '
          'boundary of the class 15 – 19, for use in the median and mode formulas, is',
     'o': ['15', '14.5', '15.5', '14', '17'],
@@ -524,19 +563,19 @@ CH = {
     'w': 'The classes have a 1-unit gap (9 to 10, 14 to 15), so the boundary is half a unit '
          'below the stated lower limit: $(14 + 15)/2 = 14.5$. The class width $c$ is '
          '$19.5 - 14.5 = 5$.',
-    'src': 'Chapter 2.5'},
+    'src': 'Chapter 2.5', 'sec': '2.5'},
    {'q': 'Which of the following is NOT a measure of partition?',
     'o': ['Median', 'Mode', 'Quartile', 'Decile', 'Percentile'],
     'a': 1,
     'w': 'The measures of partition (quantiles) are the quartiles, deciles and percentiles; the '
          'median is the middle quantile. The mode is a measure of central tendency only.',
-    'src': 'Chapter 2.6 (study text Q3)'},
+    'src': 'Chapter 2.6 (study text Q3)', 'sec': '2.6'},
    {'q': 'The quartiles of a grouped distribution are estimated graphically from a(n)',
     'o': ['histogram', 'bar chart', 'ogive', 'pie chart', 'frequency polygon'],
     'a': 2,
     'w': 'The ogive (cumulative frequency curve) gives the median and all quantiles. The '
          'histogram gives the mode.',
-    'src': 'Chapter 2.6 (study text Q5)'},
+    'src': 'Chapter 2.6 (study text Q5)', 'sec': '2.6'},
   ],
   'theory': [
    {'q': 'State THREE advantages and THREE disadvantages of the arithmetic mean as a measure of '
@@ -563,6 +602,6 @@ CH = {
             'and is unaffected by the size of the extremes. It is also the only one of the two '
             'that can be computed where the distribution has **open-ended classes**, since only '
             'the position of the middle observation is needed, not the value of every one.'}],
-    'src': 'Chapter 2.3'},
+    'src': 'Chapter 2.3', 'sec': '2.3'},
   ]},
 }

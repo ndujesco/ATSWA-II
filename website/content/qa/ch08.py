@@ -139,6 +139,29 @@ CH = {
   ]},
 
   {'n': '8.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+    {'h3': 'Section-by-section checklist'},
+    {'ol': [
+      '**§8.1 The vocabulary** — $H_0$ (the claim, always an equality) vs $H_1$ (accepted if '
+      '$H_0$ is rejected — $\\ne$ two-tailed, $>$/$<$ one-tailed); significance level $\\alpha$ '
+      '(fixed **before** testing); critical region (test-statistic values that reject $H_0$). '
+      'Type I error = rejecting a true $H_0$ (probability $\\alpha$); Type II = failing to '
+      'reject a false $H_0$ (probability $\\beta$). Lowering $\\alpha$ cuts Type I risk but '
+      'raises Type II risk — only a bigger sample reduces both together.',
+      '**§8.2 The five steps** — state $H_0$/$H_1$ and tail; fix $\\alpha$ and find the '
+      'critical value; compute the test statistic; compare; conclude **in the words of the '
+      'question**. Memorise: two-tailed 5% $z=\\pm1.96$, 1% $z=\\pm2.58$; one-tailed 5% '
+      '$z=1.645$, 1% $z=2.33$. "Differs from" → two-tailed; "exceeds/greater than/improved/'
+      'less than" → one-tailed.',
+      '**§8.3 Choosing the test statistic** — $z=(\\bar{x}-\\mu)/(\\sigma/\\sqrt{n})$ when '
+      '$\\sigma$ is known or $n\\ge30$; $t=(\\bar{x}-\\mu)/(s/\\sqrt{n})$, $\\nu=n-1$, when '
+      '$\\sigma$ is unknown and $n<30$; proportion $z=(p-\\pi)/\\sqrt{\\pi(1-\\pi)/n}$ — using '
+      'the **hypothesised** $\\pi$, not the sample $p$, in the standard error, since $H_0$ '
+      'assumes $\\pi$ true. The denominator is always the standard error of the statistic.',
+      '**§8.4 Worked tests** — three full worked examples (two-tailed mean/large sample, '
+      't-test/small sample, one-tailed proportion) demonstrating the five steps end to end. '
+      'Always say "**do not reject** $H_0$", never "accept $H_0$" — failing to find evidence '
+      'against a claim is not proof the claim is true.',
+    ]},
     {'h3': 'All the terms'},
     {'ul': [
       '**Hypothesis** — an assumption or guess about a population parameter.',
@@ -259,13 +282,13 @@ CH = {
     'a': 1,
     'w': 'Type I rejects a true $H_0$; its probability is the significance level $\\alpha$. '
          'Option A describes a Type II error.',
-    'src': 'Chapter 8.1'},
+    'src': 'Chapter 8.1', 'sec': '8.1'},
    {'q': 'The critical value for a two-tailed test at the 5% level of significance is',
     'o': ['$\\pm 1.645$', '$\\pm 1.96$', '$\\pm 2.33$', '$\\pm 2.58$', '$\\pm 1.28$'],
     'a': 1,
     'w': 'With 5% split between two tails, 2.5% lies in each, giving $z = \\pm 1.96$. '
          '$\\pm 1.645$ is the one-tailed 5% value.',
-    'src': 'Chapter 8.2'},
+    'src': 'Chapter 8.2', 'sec': '8.2'},
    {'q': 'A sample of 100 items has mean 52 and standard deviation 10. Testing $H_0: \\mu = 50$, '
          'the value of the test statistic is',
     'o': ['0.2', '2.0', '5.0', '20.0', '0.5'],
@@ -273,7 +296,7 @@ CH = {
     'w': 'The standard error is $10/\\sqrt{100} = 1$, and the sample mean is 2 above the '
          'hypothesised mean.',
     'calc': 'z = \\frac{52 - 50}{10/\\sqrt{100}} = \\frac{2}{1} = 2.0',
-    'src': 'Chapter 8.4'},
+    'src': 'Chapter 8.4', 'sec': '8.4'},
    {'q': 'In testing a hypothesis about a mean with $n = 12$ and the population standard '
          'deviation unknown, the appropriate distribution is',
     'o': ['normal with 12 degrees of freedom',
@@ -284,7 +307,7 @@ CH = {
     'a': 1,
     'w': 'A small sample with $\\sigma$ unknown requires the $t$ distribution, and the degrees '
          'of freedom are $n - 1 = 11$.',
-    'src': 'Chapter 8.3'},
+    'src': 'Chapter 8.3', 'sec': '8.3'},
    {'q': 'Reducing the significance level from 5% to 1%, with the sample size unchanged,',
     'o': ['reduces the probability of both errors',
           'reduces the probability of a Type I error but increases that of a Type II error',
@@ -294,13 +317,13 @@ CH = {
     'a': 1,
     'w': 'A smaller $\\alpha$ pushes the critical value further out, so $H_0$ is rejected less '
          'readily: fewer true nulls are rejected, but more false nulls survive.',
-    'src': 'Chapter 8.1'},
+    'src': 'Chapter 8.1', 'sec': '8.1'},
    {'q': 'The phrase "the new process produces a higher yield" indicates',
     'o': ['a two-tailed test', 'a one-tailed test', 'a chi-square test',
           'a test of proportions', 'that no test is possible'],
     'a': 1,
     'w': 'Direction is specified ("higher"), so the whole of $\\alpha$ goes into the upper tail.',
-    'src': 'Chapter 8.2'},
+    'src': 'Chapter 8.2', 'sec': '8.2'},
   ],
   'theory': [
    {'q': 'Explain the meaning of Type I and Type II errors and outline the steps involved in '
@@ -349,6 +372,6 @@ CH = {
                '5% level to conclude that…". Never write "$H_0$ is proved true": a test that '
                'fails to reject $H_0$ has found no evidence against it, which is a much weaker '
                'statement.'}],
-    'src': 'Chapter 8.1–8.2'},
+    'src': 'Chapter 8.1–8.2', 'sec': '8.1'},
   ]},
 }

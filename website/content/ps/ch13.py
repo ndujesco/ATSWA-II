@@ -554,13 +554,13 @@ CH = {
     'a': 1,
     'w': 'A deposit is repayable, so it creates a liability rather than revenue and does not '
          'affect the surplus or deficit for the year.',
-    'src': 'Chapter 13.1'},
+    'src': 'Chapter 13.1', 'sec': '13.1'},
    {'q': 'An advance granted to an officer and outstanding at the year end appears in the '
          'financial statements as',
     'o': ['expenditure', 'an asset', 'a liability', 'revenue', 'a contingent liability'],
     'a': 1,
     'w': 'The advance is recoverable, so it is an asset until it is retired or repaid.',
-    'src': 'Chapter 13.2'},
+    'src': 'Chapter 13.2', 'sec': '13.2'},
    {'q': 'In a bank reconciliation, bank charges not recorded in the cash book are',
     'o': ['added to the bank statement balance', 'deducted in the adjusted cash book',
           'deducted from the bank statement balance', 'added in the adjusted cash book',
@@ -568,14 +568,14 @@ CH = {
     'a': 1,
     'w': 'The bank has already processed the charge; it is the office that has not recorded it, '
          'so the cash book must be adjusted.',
-    'src': 'Chapter 13.5'},
+    'src': 'Chapter 13.5', 'sec': '13.5'},
    {'q': 'The monthly return by which a sub-accounting officer brings his transactions into the '
          'central accounts is called a',
     'o': ['warrant', 'transcript', 'voucher', 'mandate', 'schedule of losses'],
     'a': 1,
     'w': 'The transcript comprises the cash book for the month together with all supporting '
          'schedules and certificates.',
-    'src': 'Chapter 13.4'},
+    'src': 'Chapter 13.4', 'sec': '13.4'},
    {'q': 'A cash book shows a bank balance of ₦2,400,000. Unpresented cheques are ₦350,000 and '
          'uncredited lodgements ₦120,000. There are no other differences. The bank statement '
          'balance is',
@@ -584,7 +584,7 @@ CH = {
     'w': 'Work backwards: the bank statement balance less unpresented cheques plus uncredited '
          'lodgements equals the cash book balance.',
     'calc': '\\text{Bank} = 2{,}400{,}000 + 350{,}000 - 120{,}000 = ₦2{,}630{,}000',
-    'src': 'Chapter 13.5'},
+    'src': 'Chapter 13.5', 'sec': '13.5'},
    {'q': 'Remittances between government offices are recorded',
     'o': ['as revenue at the receiving office and expenditure at the sending office',
           'below the line at both offices, clearing on consolidation',
@@ -593,7 +593,7 @@ CH = {
     'a': 1,
     'w': 'A remittance is an internal transfer of the government\'s own money. Treating it as '
          'revenue and expenditure would inflate both figures on consolidation.',
-    'src': 'Chapter 13.2'},
+    'src': 'Chapter 13.2', 'sec': '13.2'},
   ],
   'theory': [
    {'q': 'The following transactions passed through the cash book of the Bauchi Sub-Treasury '
@@ -695,6 +695,6 @@ CH = {
         'A **certificate of cash and postage stamps** on hand at the close of the month.',
         'A statement of **unpaid and outstanding vouchers**.',
       ]}],
-    'src': 'Chapter 13.3–13.5'},
+    'src': 'Chapter 13.3–13.5', 'sec': '13.3'},
   ]},
 }
