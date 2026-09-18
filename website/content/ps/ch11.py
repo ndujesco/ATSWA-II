@@ -154,6 +154,15 @@ CH = {
        'A report of findings on cause and responsibility, with recommendations on surcharge, '
        'discipline and prevention'],
     ]}},
+    {'p': 'A Board of Survey is **convened by the Accountant-General of the Federation**, '
+          'mostly at the close of each financial year. Where an entity has adopted e-payment, '
+          'a cash survey is not relevant, since physical cash is not expected to be held in '
+          'the safe.'},
+    {'key': 'A Board consists of **three officers**: a President and not less than **two '
+            'members**. The President must hold a post of **Grade Level 08 or higher**; other '
+            'members must not be below **Grade Level 06**. Where this is not possible, a '
+            'single-member board may be appointed, but the reasons for this must be clearly '
+            'stated on the survey report.'},
     {'h4': 'Duties of a Board of Survey'},
     {'ol': [
       'To count the **cash and stamps** on hand and agree them to the cash book balance.',
@@ -189,6 +198,21 @@ CH = {
       'Prepare inventory receipt and issue vouchers.',
       'Ensure the store is adequately secured.',
     ]},
+    {'h4': 'Vouchers for the movement of stores'},
+    {'table': {'align': 'll', 'head': ['Voucher', 'Use'], 'rows': [
+      ['**Inventory transfer voucher**',
+       'Raised in duplicate by the requisitioning store where stores move between warehouses; '
+       'the original goes to the issuing store, and an inventory issue voucher (one copy '
+       'receipted and returned as the receipt voucher) accompanies the goods'],
+      ['**Inventory issue voucher**',
+       'Prepared in duplicate to support every issue against a properly signed requisition; '
+       'the storekeeper posts the tally card at the time of issue'],
+      ['**Conversion voucher**',
+       'Evidences stores/materials issued **within the same store** for manufacture or '
+       'conversion. The original copy doubles as the issue voucher for the finished article, '
+       'which is returned to store and taken back on charge; both the receipt and the issue '
+       'sides show quantities and values'],
+    ]}},
     {'h4': 'Procedure for procuring stores'},
     {'steps': [
       'The purchasing department obtains **approval from the officer controlling the vote**.',
@@ -200,6 +224,14 @@ CH = {
       'A **Local Purchase Order** is issued to the successful contractor for supply within the '
       'agreed time.',
     ]},
+    {'h4': 'Sale of government property'},
+    {'key': '**Government property must not be sold**, except where specifically authorised by '
+            'the **Minister of Finance**. The selling price is the gross cost (for allocated '
+            'stores) or the current issue price (for unallocated stores), plus a rateable store '
+            'charge the Minister approves. It may be issued on payment only when the **head of '
+            'the MDA is satisfied the sale is in the public interest**, and the inventory issue '
+            'voucher supporting the release is not passed until the purchaser presents proof of '
+            'payment to the schedule officer.'},
     {'h4': 'Handing over of stores'},
     {'p': 'When custody passes to another officer, the incoming officer confirms the physical '
           'count agrees with the bin cards/store ledger; both officers then jointly sign **Store '
@@ -515,6 +547,30 @@ CH = {
     'w': 'A Board of Survey verifies what is present; a Board of Enquiry investigates what is '
          'missing.',
     'src': 'Chapter 11.5', 'sec': '11.5'},
+   {'q': 'A Board of Survey is convened by the',
+    'o': ['Auditor-General for the Federation', 'Accountant-General of the Federation',
+          'Minister of Finance', 'Head of Civil Service of the Federation',
+          'Federal Civil Service Commission'],
+    'a': 1,
+    'w': 'The Accountant-General of the Federation convenes a Board of Survey, mostly at the '
+         'close of each financial year.',
+    'src': 'Chapter 11.5', 'sec': '11.5'},
+   {'q': 'A Board of Survey consists of a President and not less than',
+    'o': ['one other member', 'two other members', 'three other members',
+          'four other members', 'five other members'],
+    'a': 1,
+    'w': 'Three officers in all: a President (Grade Level 08 or higher) and not less than two '
+         'members (not below Grade Level 06). A single-member board is exceptional and must be '
+         'justified on the report.',
+    'src': 'Chapter 11.5', 'sec': '11.5'},
+   {'q': 'Stores and materials issued within the same store for manufacturing or conversion '
+         'must be supported by a',
+    'o': ['inventory transfer voucher', 'conversion voucher', 'local purchase order',
+          'store form 10', 'bin card'],
+    'a': 1,
+    'w': 'A conversion voucher evidences the issue; its original copy also serves as the issue '
+         'voucher for the finished article when it is returned to store.',
+    'src': 'Chapter 11.6', 'sec': '11.6'},
    {'q': 'Requiring a public officer to make good a loss caused by his negligence is known as',
     'o': ['write-off', 'surcharge', 'interdiction', 'virement', 'adjustment'],
     'a': 1,

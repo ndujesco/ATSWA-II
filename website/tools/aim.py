@@ -9,18 +9,31 @@ for little, a word that lives in one chapter counts for a lot. A hit in the
 chapter's own title is weighted heavily; chapter length is discounted so the
 longest chapter cannot win by bulk alone.
 
+The reference corpus for each chapter is OUR OWN authored content/<code>/ch*.py
+— not the raw study-text PDF. It used to be the PDF (a full pdftotext dump from
+one chapter heading to the next), which folds in every worked example, every
+number in every table, and OCR noise, all counted as plain word frequency; a
+question mentioning "grants" several times could out-score the chapter that
+actually explains grants-in-aid, just because some other chapter's worked
+example happens to repeat the word "grants" in a table more often. Our own
+chapters are clean prose organised exactly the way we want questions matched
+to them, and aim_sec.py already builds its (better-performing) section-level
+index the same way — this makes the two passes consistent, and any content
+fix made to a chapter improves its retrieval immediately, with no separate
+re-extraction step.
+
 Writes the chapter id back into data/papers.json and prints the confidence split.
 """
-import json, math, re, subprocess, sys
+import importlib.util, json, math, re, sys
 from collections import Counter, defaultdict
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from common import tidy, desymbol
-from outline import chapters, FILES, ST
+from common import desymbol
 from corrections import CHAPTER_KEYS, PIN
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / 'website' / 'data'
+CONTENT = ROOT / 'website' / 'content'
 
 STOP = set('''a an the and or but if of to in on at by for with from as is are was were be been
 being it its this that these those which who whom what when where how why not no nor so than then
@@ -46,41 +59,53 @@ def stem(w):
     return w
 
 
+def bag_of(node, acc):
+    """Walk the block-schema tree exactly as render.js's text() does — same
+    helper as aim_sec.py's, duplicated rather than imported to keep each
+    tool script runnable standalone."""
+    if node is None:
+        return
+    if isinstance(node, str):
+        acc.append(node)
+    elif isinstance(node, list):
+        for v in node:
+            bag_of(v, acc)
+    elif isinstance(node, dict):
+        for v in node.values():
+            bag_of(v, acc)
+
+
+def load_chapter(code, n):
+    path = CONTENT / code.lower() / f'ch{n:02d}.py'
+    if not path.exists():
+        return None
+    spec = importlib.util.spec_from_file_location(f'{code}_{n}', path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.CH
+
+
 def chapter_text(code):
-    """Chapter number -> (title, bag of stemmed words)."""
-    txt = subprocess.run(['pdftotext', '-layout', str(ST / FILES[code]), '-'],
-                         capture_output=True, text=True, check=True).stdout
-    lines = txt.replace('\f', '\n').split('\n')
-    chs = chapters(code)
-    marks = []
-    idx = 0
-    for n, title, secs, span in chs:
-        # relocate the chapter start: chapters() already knows the span
-        marks.append((n, title, span))
-    # rebuild positions by re-scanning, mirroring outline.chapters()
-    from outline import RE_CH, NUM
-    pos = []
-    for i, l in enumerate(lines):
-        m = RE_CH.match(l)
-        if not m:
-            continue
-        tail = [x for x in lines[i + 1:i + 8] if x.strip()][:4]
-        if any('....' in x for x in tail):
-            continue
-        g = re.sub(r'[\s-]+', '-', m.group(1).upper().strip())
-        pos.append((NUM.get(g) or int(m.group(1)), i))
-    best = []
-    for n, i in pos:
-        if n == 1:
-            best = []
-        if not best or n >= best[-1][0]:
-            best.append((n, i))
+    """Chapter number -> (title, bag of stemmed words), built from every
+    section of our own authored chapter — title, brief, outcomes, body,
+    focus and errors all count; formulas/quiz are left out (they are
+    exam-facing already, not the explanatory prose a question is "about")."""
     out = {}
-    for j, (n, i) in enumerate(best):
-        end = best[j + 1][1] if j + 1 < len(best) else len(lines)
-        title = next((tidy(x) for x in lines[i + 1:i + 6] if x.strip()), '')
-        body = ' '.join(lines[i:end])
-        out[n] = (title, Counter(stem(w) for w in tokens(body)))
+    for path in sorted((CONTENT / code.lower()).glob('ch*.py')):
+        n = int(path.stem[2:])
+        ch = load_chapter(code, n)
+        if not ch:
+            continue
+        words = []
+        bag_of(ch.get('t'), words)
+        bag_of(ch.get('brief'), words)
+        bag_of(ch.get('outcomes'), words)
+        for sec in ch.get('secs', []):
+            bag_of(sec.get('t'), words)
+            bag_of(sec.get('b'), words)
+        bag_of(ch.get('focus'), words)
+        bag_of(ch.get('errors'), words)
+        out[n] = (ch.get('t', ''), Counter(stem(w) for w in tokens(' '.join(words))))
     return out
 
 
@@ -147,6 +172,21 @@ def flatten(node, acc):
     return acc
 
 
+RE_Q = re.compile(r'^\s*QUESTION\s+(\d)\b', re.I)
+
+
+def split_secb(lines):
+    """Cut the Section B paper into its questions — same logic as
+    build_exams.py's split_secb, duplicated so aim.py can score a question
+    against its own scenario text, not just its solution's working."""
+    marks = [(i, int(m.group(1))) for i, l in enumerate(lines) if (m := RE_Q.match(l))]
+    out = {}
+    for j, (i, n) in enumerate(marks):
+        end = marks[j + 1][0] if j + 1 < len(marks) else len(lines)
+        out[n] = [l.rstrip() for l in lines[i + 1:end]]
+    return out
+
+
 def main():
     papers = json.loads((DATA / 'papers.json').read_text())
     idx = {c: build_index(c) for c in ('FA', 'PS', 'QA', 'IT')}
@@ -155,9 +195,13 @@ def main():
 
     for p in papers:
         chs, idf, titles, lens, avg, keys, seed_idf = idx[p['subject']]
+        secb_qs = split_secb(p['secb_paper'])
 
-        def assign(text_parts):
-            qw = Counter(stem(w) for w in tokens(' '.join(text_parts)))
+        def assign(weighted_parts):
+            qw = Counter()
+            for parts, weight in weighted_parts:
+                for w in tokens(' '.join(parts)):
+                    qw[stem(w)] += weight
             if not qw:
                 return None, 0.0
             sc = score(qw, chs, idf, titles, lens, avg, keys, seed_idf)
@@ -167,8 +211,19 @@ def main():
             return top[0], margin
 
         for q in p['mcq']:
-            parts = flatten(q['stem'], []) + flatten(q['options'], []) + q.get('pre', [])
-            ch, m = assign(parts)
+            # the stem carries the actual subject matter; the four wrong
+            # options are often just plausible-sounding entities (officer
+            # titles, standard numbers) that happen to be another chapter's
+            # core vocabulary — weighting them equally with the stem let
+            # them drag the match toward whichever chapter's seed words
+            # they matched, regardless of what the question was actually
+            # about (e.g. a stores/inventory question whose options were
+            # five officer titles, pulled toward the "officers" chapter).
+            weighted = [
+                (flatten(q['stem'], []) + q.get('pre', []), 3.0),
+                (flatten(q['options'], []), 1.0),
+            ]
+            ch, m = assign(weighted)
             pin = PIN.get((p['diet'], p['subject'], 'mcq', q['n']))
             if pin:
                 ch, m = pin, 1.0
@@ -178,13 +233,23 @@ def main():
 
         sol = {s['n']: s for s in p['saq_solutions']}
         for q in p['saq']:
-            parts = q['body'] + q.get('pre', []) + (sol[q['n']]['body'] if q['n'] in sol else [])
-            ch, m = assign(parts)
+            weighted = [
+                (q['body'] + q.get('pre', []), 2.0),
+                (sol[q['n']]['body'] if q['n'] in sol else [], 2.0),
+            ]
+            ch, m = assign(weighted)
             q['ch'], q['chConf'] = ch, round(m, 3)
             stats['saq_hi' if m >= .12 else 'saq_lo'] += 1
 
         for s in p['secb_solutions']:
-            ch, m = assign(s['solution'][:60])
+            # the question's own scenario text (what it is actually about)
+            # is weighted well above the solution's numeric working, which
+            # is mostly figures and layout rather than topic vocabulary.
+            weighted = [
+                (secb_qs.get(s['n'], [])[:40], 3.0),
+                (s['solution'][:60], 1.0),
+            ]
+            ch, m = assign(weighted)
             s['ch'], s['chConf'] = ch, round(m, 3)
             stats['secb_hi' if m >= .12 else 'secb_lo'] += 1
 

@@ -1,5 +1,86 @@
 # Where the build stopped
 
+## Session 2026-09-18 (cont.) — PSA answer-in-source-material audit: PS ch10
+## (Public Procurement) was missing most of its Tenders'-Board/threshold
+## content; three smaller confirmed gaps closed in ch11/ch15
+User asked: "if there is any question that the answer is not in the study
+material (for PSA) search the main source (PDF) and if it is found there
+modify the chapter accordingly to include it" (permission given mid-task to
+rearrange/renumber sections if needed).
+- **Method**: pulled every PS past-question (`data/exams.js`) with no
+  confident chapter match — 183/716 MCQ, 139 SAQ, 34 SecB — as the candidate
+  pool, then triaged each stem by topic recognition, checked it against the
+  actual chapter body (many "unmatched" turned out to be **retrieval false
+  positives**: content already exists, e.g. ch07's Auditor-General section
+  fully covers appointment/90-day-reporting; ch01's FRCN section fully covers
+  the 4-year tenure/vacancy conditions; ch04/ch05 fully cover PENCOM,
+  restricted pension investments and "statement of changes in net assets
+  available for benefits"; ch06/ch16/ch19 fully cover IPSAS 24), then grepped
+  the re-extracted source PDF text for anything that still looked missing.
+  **Per the user's explicit constraint, anything not actually in the source
+  PDF was left alone, not fabricated** — confirmed absent: IPSAS 31 detail,
+  IPSAS 11, IPSAS 15, computer/EDP audit, debt relief, Advance Payment
+  Voucher, Accountant-General's Office internal departments, Bureau of
+  Public Enterprises/commercialisation, PPA "scope of application" (s.15),
+  ICPC-remuneration mechanism, PenCom Chairman/DG's own tenure clause,
+  "movement of accounting staff between MDAs" approval authority, and the
+  specific "retirement benefits with immediate effect" condition-list.
+- **Largest confirmed real gap — PS ch10, Public Procurement**: the source
+  (§10.1, §10.5.1–10.5.3, §10.3–10.4 of the book) has a great deal that our
+  chapter never carried:
+  - §10.1: NCPP's **six specific named part-time member bodies** (Nigeria
+    Institute of Purchasing and Supply Management, Nigerian Bar Association,
+    NACCIMA, Nigerian Society of Engineers, civil society, the media) —
+    previously only a generic "professional and private sector bodies" line —
+    and the Bureau's fuller objectives + ~15-item functions list, replacing a
+    one-line description.
+  - §10.4: replaced the old generic 3-row threshold table and its "don't
+    memorize figures" warn-box with the actual **2025-circular thresholds**
+    (Circular Ref. 59780/S.2/B/532): a 5-tier approving-authority table and a
+    procurement-method table, both split by Goods/Works/Non-consultant/
+    Consultancy; NNPC's own USD-denominated thresholds; three processing-
+    timeline tables (NCB 91 days, ICB 107 days, Consultancy 128 days); FEC's
+    specific current limits. The old "figures are revised, don't memorise
+    them" framing is now a `warn` about the **structure surviving revision**,
+    since the source itself commits to concrete, examinable numbers.
+  - New **§10.6** ("Tenders' Boards and contract administration"), inserted
+    before the existing Q&A section (renumbered §10.6→§10.7 — safe, since
+    nothing cited `sec: '10.6'`): Construction Contract definition; history
+    (2001 abrogation of the old Departmental/Federal Tenders Boards) and the
+    ₦5m no-open-tendering threshold; the three Tenders' Board types and their
+    exact compositions (Ministerial, Armed Forces/MoD, Nigeria Police);
+    full tender-board operating procedure (notice, deposit, sealed-envelope
+    tender procedure, selection, award); audit inspection (7-year record
+    retention); contract terms (Contingencies Clause; 5%-for-6-months
+    Retention Fee); contract payment voucher contents/attachments; the
+    Contract Register's 9 fields plus the Project Register.
+  - This directly answers real, previously-unanswerable past questions, e.g.
+    "Which Tender Board can approve contracts whose values exceed
+    ₦50,000,000?" — added 2 new quiz MCQs citing §10.6, 145→151 PS MCQs.
+- **Three smaller confirmed gaps, also fixed**: PS ch15 §15.2 never spelled
+  out that **PSE = Public Sector Entity** (IPSAS 33's own acronym, used
+  throughout the chapter but never defined) — added a `def` + quiz item;
+  ch11 §11.5 never gave the Board of Survey's **composition** (President +
+  ≥2 members, Grade Level 08/06 minimums) even though duties were covered —
+  added, with 2 quiz items (who convenes it — the Accountant-General — and
+  its composition); ch11 §11.6 never mentioned the **Conversion Voucher**
+  (evidences stores issued *within the same store* for manufacture) among
+  the storekeeper's vouchers — added a small table + 1 quiz item.
+- Rebuilt clean throughout: `python3 tools/build_content.py ps` after each
+  edit, then `python3 tools/build_content.py` (all 4 subjects) →
+  `tools/aim.py` (PS ch10's matched-question count rose to 21) →
+  `tools/aim_sec.py FA PS QA IT` → `tools/build_exams.py` → `./build.sh`. PS
+  is now 230 sections / 49 formulas / 151 MCQ / 31 theory, all clean.
+  (Numeric-heavy exam stems like the ₦50,000,000 one may still fall below
+  the TF-IDF confidence threshold that gates automatic citation — a known,
+  pre-existing pipeline limitation, not a content gap; the content itself
+  now exists on the site either way.)
+- Triage was not fully exhaustive on the SecB pool (34 essay questions) —
+  spot-checked roughly two-thirds against source/site and found no further
+  gaps beyond the three above, but a handful of broad essay stems (Local
+  Government Treasurer functions, TIMSEL University-style numeric problems)
+  were not individually re-verified line-by-line.
+
 ## Session 2026-09-18 — quiz citations didn't scroll (root cause: `sec` was
 ## unset on 443 of 543 authored quiz questions), + a section-by-section
 ## revision checklist added to every QA chapter's summary

@@ -47,6 +47,10 @@ CH = {
   ]},
 
   {'n': '15.2', 't': 'The opening statement of financial position', 'b': [
+    {'def': {'t': 'PSE',
+             'd': 'the acronym/mnemonic for a **Public Sector Entity** — the term IPSAS 33 uses '
+                  'for the reporting entity moving from the cash basis (or from accrual '
+                  'accounting outside IPSAS) to accrual-basis IPSAS.'}},
     {'p': 'At the date of adoption, the entity prepares an opening statement of financial '
           'position. In doing so it must:'},
     {'ol': [
@@ -351,6 +355,14 @@ CH = {
     'w': 'Three years from the date of adoption, after which everything must be recognised and '
          'measured in accordance with IPSAS.',
     'src': 'Chapter 15.4', 'sec': '15.4'},
+   {'q': 'In line with IPSAS 33, the acronym/mnemonic PSE means',
+    'o': ['Public Sector Entity', 'Public Sector Expenditure', 'Public Service Establishment',
+          'Provisional Statement of Estimates', 'Public Sector Examination'],
+    'a': 0,
+    'w': 'PSE is IPSAS 33\'s shorthand for the reporting entity — the Public Sector Entity — '
+         'moving from cash basis (or from accrual accounting outside IPSAS) to accrual basis '
+         'IPSAS.',
+    'src': 'Chapter 15.2', 'sec': '15.2'},
    {'q': 'An amount used as a surrogate for cost where the actual cost of an asset cannot be '
          'determined reliably is called',
     'o': ['fair value', 'deemed cost', 'residual value', 'recoverable amount',

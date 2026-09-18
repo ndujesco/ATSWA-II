@@ -32,19 +32,55 @@ CH = {
       'To promote competition, economy and efficiency.',
       'To ensure that public procurement is applied as a tool of national development.',
     ]},
-    {'table': {'align': 'll', 'head': ['Institution', 'Role'], 'rows': [
-      ['**National Council on Public Procurement (NCPP)**',
-       'The policy-making body. Chaired by the Minister of Finance, with the Attorney-General, '
-       'the Secretary to the Government of the Federation, the Head of Service, the Economic '
-       'Adviser and representatives of professional and private sector bodies. It considers and '
-       'approves policies, approves the appointment of the Bureau\'s directors, receives the '
-       'Bureau\'s audited accounts, and approves changes in procurement thresholds'],
-      ['**Bureau of Public Procurement (BPP)**',
-       'The regulatory and supervisory body, headed by a Director-General. It formulates '
-       'policies for the Council, certifies federal procurement before award (the certificate '
-       'of no objection), supervises implementation, publishes procurement details, maintains '
-       'the National Database of contractors and of prices, monitors prices, conducts '
-       'procurement audits and reviews complaints'],
+    {'def': {'t': 'National Council on Public Procurement (NCPP)',
+             'd': 'the policy-making body established by the Act. Chaired by the **Minister of '
+                  'Finance**, with the Attorney-General and Minister of Justice, the Secretary '
+                  'to the Government of the Federation, the Head of Service, the Economic '
+                  'Adviser to the President, **six part-time members** representing the Nigerian '
+                  'Institute of Purchasing and Supply Management, the Nigerian Bar Association, '
+                  'the Nigeria Association of Chambers of Commerce, Industry, Mines and '
+                  'Agriculture, the Nigerian Society of Engineers, civil society, and the media, '
+                  'and the **Director-General of the Bureau**, who serves as Secretary to the '
+                  'Council. It considers and approves policies, approves the appointment of the '
+                  'Bureau\'s directors, receives the Bureau\'s audited accounts, and approves '
+                  'changes in procurement thresholds.'}},
+    {'note': 'A recurring criticism, and a good point to make in a discussion question, is that '
+             'the National Council on Public Procurement was not constituted for many years '
+             'after the Act, its functions being exercised in practice by the Federal Executive '
+             'Council. Since the Council approves thresholds and appointments, its absence '
+             'weakened the independence the Act intended.'},
+    {'def': {'t': 'Bureau of Public Procurement (BPP)',
+             'd': 'the regulatory and supervisory body established by the Act, headed by a '
+                  'Director-General.'}},
+    {'h4': 'Objectives of the Bureau'},
+    {'ul': [
+      'Harmonising existing government policies and practices on public procurement, and '
+      'ensuring **probity, accountability and transparency** in the procurement process.',
+      'Establishing **pricing standards and benchmarks**.',
+      'Ensuring fair, competitive, transparent and value-for-money standards/practices for the '
+      'procurement and disposal of public assets and services.',
+      'Attaining transparency, competitiveness, cost-effectiveness and professionalism in the '
+      'public-sector procurement system.',
+    ]},
+    {'h4': 'Functions of the Bureau'},
+    {'ul': [
+      'Formulates general procurement policies/guidelines for NCPP approval, and publicises and '
+      'explains the Act\'s provisions.',
+      'Certifies federal procurement **before award** (the certificate of no objection) and '
+      'supervises implementation of procurement policies.',
+      'Monitors tendered-item prices and keeps a **national database of standard prices**, and '
+      'of contractors\' particulars, classification and categorisation.',
+      'Publishes major-contract details, and paper/electronic editions, in the **procurement '
+      'journal**, and maintains an archive of federal procurement plans and information.',
+      'Undertakes procurement research/surveys; organises training for procurement '
+      'professionals; periodically reviews the socio-economic effect of procurement policy and '
+      'advises the NCPP.',
+      'Prepares and updates standard bidding and contract documents.',
+      'Prevents fraudulent/unfair procurement, applying administrative sanctions where '
+      'necessary, and reviews the procurement/contract-award procedures of every entity the Act '
+      'applies to.',
+    ]},
+    {'table': {'align': 'll', 'head': ['Other institution', 'Role'], 'rows': [
       ['**Accounting officer of the procuring entity**',
        'Personally responsible for the entity\'s procurement: for planning, for constituting '
        'the tenders board, for ensuring compliance with the Act, and for the records'],
@@ -52,11 +88,6 @@ CH = {
        'The Procurement Planning Committee prepares the plan; the Tenders Board conducts the '
        'process and makes the award within its threshold'],
     ]}},
-    {'note': 'A recurring criticism, and a good point to make in a discussion question, is that '
-             'the National Council on Public Procurement was not constituted for many years '
-             'after the Act, its functions being exercised in practice by the Federal Executive '
-             'Council. Since the Council approves thresholds and appointments, its absence '
-             'weakened the independence the Act intended.'},
   ]},
 
   {'n': '10.2', 't': 'Fundamental principles', 'b': [
@@ -153,19 +184,84 @@ CH = {
       'to review by the Bureau and by the Auditor-General.',
     ]},
     {'h4': 'Approval thresholds'},
-    {'p': 'The Act provides for approving authorities by value, with the limits set in '
-          'regulations and revised from time to time. The structure is:'},
-    {'table': {'align': 'll', 'head': ['Value of the procurement', 'Approving authority'],
+    {'p': 'The Act provides for approving authorities by value, with the naira limits set by '
+          'circular and periodically revised. The structure — accounting officer, then '
+          'Tenders Board, then Bureau certificate, then FEC at the top — is fixed; only the '
+          'figures move. The tables below reproduce the **revised guidelines and thresholds on '
+          'public procurement** (Circular Ref. No. 59780/S.2/B/532 of 27 May 2025), the figures '
+          'current at the time of writing and the ones the examiner is expected to test.'},
+    {'table': {'align': 'lllll', 'head': [
+      'Approving authority', 'Goods', 'Works', 'Non-consultant services', 'Consultancy'],
       'rows': [
-      ['Small value', 'Accounting officer of the procuring entity'],
-      ['Above that limit', 'Parastatals Tenders Board / Ministerial Tenders Board'],
-      ['Above the Bureau threshold',
-       'Federal Executive Council, on the certificate of no objection issued by the Bureau'],
+      ['**BPP certificate + FEC/NASS** (Tenders Board)', '₦5bn and above', '₦10bn and above',
+       '₦5bn and above', '₦5bn and above'],
+      ['**BPP certificate** — Ministerial / NASS-Parastatal / Judicial TB',
+       '₦1bn – ₦5bn', '₦5bn – ₦10bn', '₦1bn – ₦5bn', '₦1bn – ₦5bn'],
+      ['**Ministerial TB / NASS-Parastatal TB / Judicial TB** approval',
+       '₦50m – ₦1bn', '₦75m – ₦5bn', '₦50m – ₦1bn', '₦50m – ₦1bn'],
+      ['**Parastatals TB** — MDAs / NASS / Court bodies',
+       '₦25m – ₦500m', '₦50m – ₦1bn', '₦25m – ₦500m', '₦25m – ₦500m'],
+      ['**Accounting Officer** — Permanent Secretary / Head of Ministerial body',
+       'below ₦50m', 'below ₦75m', 'below ₦50m', 'below ₦50m'],
+      ['**Accounting Officer** — DG / CEO',
+       'below ₦25m', 'below ₦50m', 'below ₦25m', 'below ₦25m'],
     ]}},
-    {'warn': 'Learn the **structure** of the thresholds rather than the naira figures, which '
-             'are revised by circular and differ between goods, works and services. An answer '
-             'that describes the tiers of approval and the certificate of no objection scores '
-             'full marks; an answer quoting an out-of-date figure does not.'},
+    {'table': {'align': 'lllll', 'head': [
+      'Procurement method', 'Goods', 'Works', 'Non-consultant services', 'Consultancy'],
+      'rows': [
+      ['**International/National Competitive Bidding**', '₦1bn and above', '₦5bn and above',
+       '₦1bn and above', '—'],
+      ['**National Competitive Bidding**', '₦30m – ₦1bn', '₦30m – ₦5bn', '₦30m – ₦1bn', '—'],
+      ['**Request for quotation**', 'below ₦30m', 'below ₦50m', 'below ₦30m', '—'],
+      ['**Single source / direct contracting**', 'below ₦5m', 'below ₦5m', 'below ₦5m',
+       'as indicated in the PPA 2007'],
+      ['**Prequalification required**', '₦500m and above', '₦1bn and above', '₦500m and above',
+       '—'],
+      ['**Quality & Cost Based Selection / Consultant Qualifications / Least Cost**',
+       '—', '—', '—', 'below ₦100m (QCBS/CQS), below ₦1bn (QCBS), below ₦100m (Least Cost)'],
+    ]}},
+    {'note': 'The **Nigerian National Petroleum Company Limited (NNPCL)** operates under its '
+             'own, dollar-denominated thresholds (Circular Ref. PROC/OSGF/BPP/709/85 of 19 '
+             'January 2022): BPP + FEC from **US$20m**; Ministerial TB (NNPC) US$10m–US$20m; '
+             'Group HQ Tenders Board US$4m–US$10m; Parastatal TB (Refinery/E&P/Supply-Chain) '
+             'US$2m–US$4m; Parastatal TB (Minor) US$0.5m–US$2m; Parastatal TB (Business Unit) '
+             'US$0.10m–US$0.5m; Accounting Officer (PS/GMD, at Corporate HQ) below US$0.3m; '
+             'Accounting Officer (DG/CEO, at a Strategic Business Unit) below US$0.10m.'},
+    {'h4': 'Procurement processing timeline'},
+    {'p': 'The prescribed number of working days at each stage, from advertisement to contract '
+          'signing:'},
+    {'table': {'align': 'lll', 'head': ['Stage', 'NCB', 'ICB'], 'rows': [
+      ['Advertisement / prequalification documents', '14 days', '21 days'],
+      ['Evaluation and shortlisting', '14 days', '14 days'],
+      ['Tender documents issuance and submission', '21 days', '30 days'],
+      ['Tender evaluation, approval and publication', '21 days', '21 days'],
+      ['Standstill period', '14 days', '14 days'],
+      ['Award', '7 days', '7 days'],
+      ['**Total**', '**91 days**', '**107 days**'],
+    ]}},
+    {'table': {'align': 'll', 'head': ['Consultancy services — stage', 'Days'], 'rows': [
+      ['Invitation and submission of expressions of interest (EOI)', '14 days or more'],
+      ['EOI evaluation and shortlisting', '14 days'],
+      ['Proposal submission', '30 days or more'],
+      ['Technical evaluation', '30 days or more'],
+      ['Notification', '5 days'],
+      ['Financial-proposal opening, evaluation, approval and negotiation notice', '21 days'],
+      ['Negotiation and approval', '7 days'],
+      ['Contract signing', '7 days'],
+      ['**Total**', '**128 days**'],
+    ]}},
+    {'h4': 'Federal Executive Council'},
+    {'p': 'The Federal Executive Council approves, on the Bureau\'s certificate of no '
+          'objection, procurements of **₦5bn and above for goods, ₦10bn and above for works, '
+          'and ₦5bn and above for non-consultancy and for consultancy services** — the same '
+          'figures as the top tier of the approving-authority table above.'},
+    {'warn': 'These figures are revised periodically by circular, so a question may be set on '
+             'an older or a newer scale — but the **structure never changes**: accounting '
+             'officer, then Tenders Board, then Bureau certificate for the higher band, then '
+             'FEC at the very top, with works always attracting a higher band than goods or '
+             'services at the same tier. If a question\'s figures do not match the table above, '
+             'answer on the structure and the relative ordering, which is what is actually '
+             'being tested.'},
   ]},
 
   {'n': '10.5', 't': 'Offences and remedies', 'b': [
@@ -201,7 +297,119 @@ CH = {
           'still dissatisfied may seek **judicial review** in the Federal High Court.'},
   ]},
 
-  {'n': '10.6', 't': 'End-of-chapter questions (study text)', 'b': [
+  {'n': '10.6', 't': 'Tenders\' Boards and contract administration', 'b': [
+    {'def': {'t': 'Construction contract',
+             'd': 'the execution of a building or civil engineering project, mechanical and '
+                  'electrical engineering installations and other fabrications, normally '
+                  'evidenced by an agreement between two or more parties. It is a **capital '
+                  'project**, normally financed from the Capital Development Fund.'}},
+    {'h4': 'History and types of Tenders\' Board'},
+    {'p': 'Before the Public Procurement Act, the Federal Ministry of Finance (circular '
+          'F15775 of 27 June 2001) **abrogated the Departmental Tenders Board and the Federal '
+          'Tenders Board**. Their functions passed to the Permanent Secretary of the ministry '
+          'and to the Ministerial Tenders Board.'},
+    {'key': 'A Permanent Secretary or a parastatal\'s Chief Executive may, without going to '
+            'open tendering, approve contracts up to **₦5,000,000**, provided at least '
+            '**three written quotations** are obtained and a quarterly return is made to the '
+            'Minister.'},
+    {'table': {'align': 'll', 'head': ['Tenders Board', 'Composition'], 'rows': [
+      ['**Ministerial Tenders Board**',
+       'Ministry: Chairman = Permanent Secretary, Members = Heads of Department. Parastatal: '
+       'Chairman = Chief Executive Officer, Members = Heads of Department'],
+      ['**Armed Forces / Ministry of Defence Tenders Board**',
+       'Chairman = Permanent Secretary, Ministry of Defence; Members = representatives of the '
+       'Army, Navy and Air Force, and the Director of Finance and Accounts'],
+      ['**Nigeria Police Tenders and Purchasing Board** (Ministerial)',
+       'Chairman = Permanent Secretary, Ministry of Police Affairs; Members = Deputy '
+       'Inspector-General (Finance and Administration), all Heads of Department, and the Head '
+       'of Finance and Accounts'],
+    ]}},
+    {'h4': 'How a Tenders Board operates'},
+    {'steps': [
+      '**Notification.** Once a contract is approved and funded, the Secretariat is informed '
+      'of its magnitude; the Secretary informs the Chairman so a meeting can be convened — '
+      'periodic for routine business, or emergency where urgent.',
+      '**Notice of invitation.** The Board orders a notice giving the full details of the job '
+      'or service, published in the official gazette and/or national newspapers/magazines and '
+      'on the Ministry\'s notice board, always stating a closing date.',
+      '**Deposit for tender**, where required: a Treasury receipt for the deposit is obtained '
+      'and confirmed before the tender form is issued.',
+      '**Tender procedure.** Tenders are submitted in sealed envelopes to the Board '
+      'Secretariat and opened, under the Chairman\'s (or a deputy\'s) supervision, at the '
+      'close of the notice; each is numbered serially and initialled and dated by the '
+      'Secretary, then listed in duplicate and kept in safe custody.',
+      '**Selection.** The Board meets to select the best tender, considering the contractor\'s '
+      'track record, quality of service and experience — **the lowest tender is not '
+      'necessarily the best**. If every tender is rejected, fresh applications are called for; '
+      'if one is recommended, all bids go forward to the approving authority with the '
+      'duplicate list and the Board\'s comments.',
+      '**Award.** The approving authority communicates its decision to the Board; the '
+      'Secretary writes the letter of award and invites the contractor to sign, with bonds or '
+      'sureties where necessary. The award is published in the newspapers/gazette and '
+      'unsuccessful tenderers are informed. Certified copies of the contract are sent to the '
+      '**Auditor-General and the Accountant-General**. Government contracts may not be '
+      '**sub-let or assigned** except where the agreement permits it; disposal of government '
+      'property follows a similar tender process.',
+    ]},
+    {'h4': 'Audit inspection'},
+    {'p': 'Documents forwarded to the Auditor-General for inspection include: **(a)** certified '
+          'true copies of all contract agreements, **(b)** minutes of Tenders Board meetings, '
+          'and **(c)** the full records of the tendering process. These are available for '
+          'inspection by the Auditor-General or the Accountant-General at short notice or none, '
+          'and must be **retained for seven years** from the completion or takeover of the '
+          'project.'},
+    {'h4': 'Terms of the contract'},
+    {'table': {'align': 'll', 'head': ['Term', 'Effect'], 'rows': [
+      ['**Contingencies clause**',
+       'If the contractor exercised reasonable care but meets an unexpected situation, the '
+       'contractee/owner bails the contractor out — more money, or an upward review of the '
+       'contract sum. Otherwise the contractor bears the cost'],
+      ['**Retention fee**',
+       'Government withholds about **5%** of the contract sum for **six months** after '
+       'completion. If the project is properly executed with no construction fault found, the '
+       'retained amount is released; if a fault is found (e.g. a wall crack from a '
+       'construction error), the retained sum is used to fix it and the contractor must pay '
+       'any shortfall or risk **blacklisting**'],
+    ]}},
+    {'h4': 'Contract payment vouchers'},
+    {'p': 'A voucher raised to pay a contractor must contain: **(a)** the contractor\'s name '
+          'and address, **(b)** the contract number, **(c)** the vote of charge, **(d)** a '
+          'description of the project, **(e)** the number of the certificate being paid, '
+          '**(f)** the gross amount and any retention fee, **(g)** the authority for payment, '
+          'and **(h)**, where it is a part-payment, the full contract amount and the '
+          'outstanding balance.'},
+    {'p': 'Before it is processed, the voucher for the **Tenders Board information** must '
+          'carry a certified copy of the Board\'s minutes, a certified copy of the contract '
+          'agreement, a copy of the approving authority\'s approval, and a copy of each prior '
+          'payment voucher on the same contract; the minutes and records are also available to '
+          'the Accounting Officer on request and to the Auditor-General on demand. Attachments '
+          'required before payment: **(a)** the Tenders Board award minutes (verifying the '
+          'award was within the Board\'s power), **(b)** a completion certificate signed by a '
+          'competent authority (an engineer, surveyor or architect), **(c)** the letter of '
+          'award and the contract agreement, **(d)** for supplies, the original delivery notes '
+          'and store receipt vouchers, and **(e)** the firm\'s bill or invoice.'},
+    {'h4': 'Electronic payment of contractors'},
+    {'p': 'From January 2009, Federal Government policy required **all payments to '
+          'contractors to be electronic**, to eliminate payment delays and reduce corruption '
+          'and undue contact between government officials and contractors. The implementation '
+          'guidelines (Treasury Circular Ref. TYR/A8&B8/2008) require: all payments made '
+          'through the bank; cheque payments to contractors stopped; contractors\' bank '
+          'accounts cease to be cheque accounts; contractors disclose their bank particulars on '
+          'every invoice; mandates authorise the bank to pay the contractor\'s account '
+          'directly; copies of mandates go to the OAGF with the monthly returns; every Federal '
+          'Government employee must hold a commercial bank account; and cash pay officers must '
+          'never collect cash from a bank for disbursement.'},
+    {'h4': 'Contract register'},
+    {'p': 'Copies of every contract agreement are forwarded to the Accounts Division and '
+          'entered in a **Contract Register**, showing: **(a)** the contractor\'s name and '
+          'address, **(b)** the contract number, **(c)** the contract sum, **(d)** any '
+          'contingency or variation, **(e)** the payment terms, **(f)** the completion period, '
+          '**(g)** the file number, **(h)** payment particulars and the balance outstanding, '
+          'and **(i)** the signature of the officer controlling the expenditure. Large '
+          'multi-contract projects may also keep a summary **Project Register**.'},
+  ]},
+
+  {'n': '10.7', 't': 'End-of-chapter questions (study text)', 'b': [
     {'h3': 'Section A'},
     {'eg': {'tag': 'Study text', 't': 'Questions 1–10 with answers', 'open': True, 'q': [
       {'ol': [
@@ -402,6 +610,29 @@ CH = {
     'w': 'The Council makes policy and approves thresholds; the Bureau is the regulatory and '
          'supervisory body that certifies individual procurements.',
     'src': 'Chapter 10.1', 'sec': '10.1'},
+   {'q': 'By the revised guidelines and thresholds on public procurement, a contract with a '
+         'value exceeding ₦50,000,000 for goods would ordinarily require the approval of',
+    'o': ['the Accounting Officer alone', 'the Ministerial Tenders Board',
+          'the National Council on Public Procurement directly',
+          'the Nigeria Police Tenders and Purchasing Board only',
+          'no approval, since it is below every threshold'],
+    'a': 1,
+    'w': 'For goods, the Accounting Officer\'s limit is below ₦50m; ₦50m–₦1bn falls to the '
+         'Ministerial (or NASS-Parastatal/Judicial) Tenders Board. A figure exceeding '
+         '₦50,000,000 therefore sits above the Accounting Officer\'s own limit and is a '
+         'Tenders Board matter.',
+    'src': 'Chapter 10.6', 'sec': '10.6'},
+   {'q': 'Under the retention-fee term of a public sector construction contract, government '
+         'ordinarily withholds about',
+    'o': ['5% of the contract sum for six months after completion',
+          '25% of the contract sum indefinitely', '10% of the contract sum for one month',
+          'the full contract sum until an audit is completed',
+          '5% of the contract sum for six months before commencement'],
+    'a': 0,
+    'w': 'About 5% of the contract sum is withheld for six months after completion; it is '
+         'released if no construction fault is found, or used to fix one if found, with any '
+         'shortfall recovered from the contractor.',
+    'src': 'Chapter 10.6', 'sec': '10.6'},
   ],
   'theory': [
    {'q': '(a) State six objectives of the Public Procurement Act 2007. (b) Describe five '
