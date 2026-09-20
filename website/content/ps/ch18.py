@@ -188,6 +188,13 @@ CH = {
       'the ministry concerned, with copies to the Accountant-General and Auditor-General for '
       'the Federation.',
     ]},
+    {'def': {'t': 'Appropriation-in-Aid (A-in-A)',
+             'd': 'income a department receives, apart from its normal release from the '
+                  'Consolidated Revenue Fund — e.g. fees, sales of forms or by-products, rent '
+                  'on official quarters — that it is permitted to apply directly against its '
+                  'own expenditure, instead of remitting the whole amount to the CRF and being '
+                  'released a matching sum back. Also called **appropriations-in-aid**, or '
+                  'simply **grants**, of the department\'s vote.'}},
     {'h4': '(b) Cash management'},
     {'def': {'t': 'Cash management', 'd': 'a component of good financial governance — ensuring '
                   'cash resources are spent to maximize citizen benefit, and are available in '
@@ -735,6 +742,16 @@ CH = {
     'w': 'Virement moves money between sub-heads of the same head, subject to a 10% cap on '
          'overhead-cost sub-heads, and cannot create a new sub-head.',
     'src': 'Chapter 18.5(b)', 'sec': '18.5'},
+   {'q': 'Income a department receives, apart from its normal release from the Consolidated '
+         'Revenue Fund, which it is permitted to apply directly against its own expenditure '
+         'is called',
+    'o': ['a supplementary appropriation', 'a vote on account', 'Appropriation-in-Aid',
+          'a virement', 'a warrant'],
+    'a': 2,
+    'w': 'Appropriation-in-Aid (A-in-A) — e.g. fees, sales of by-products, rent on official '
+         'quarters — is applied directly by the department rather than remitted wholly to '
+         'the CRF.',
+    'src': 'Chapter 18.5(a)', 'sec': '18.5'},
    {'q': 'Which committee is empowered to examine the Auditor-General\'s reports on fraud or '
          'embezzlement of public funds and report to the National/State Assembly?',
     'o': ['The Finance and General-Purpose Committee', 'The Audit Committee',

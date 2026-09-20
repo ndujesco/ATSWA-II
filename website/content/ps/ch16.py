@@ -15,6 +15,9 @@ CH = {
  ],
  'secs': [
   {'n': '16.1', 't': 'The required statements', 'b': [
+    {'note': '[Cash vs accrual, every statement side by side →](guides/statements.html) — what '
+             'each statement reports under each basis, the modified-basis combinations, and '
+             'every past exam question on the topic with answers.'},
     {'p': '**IPSAS 1, Presentation of Financial Statements**, requires a complete set of '
           'financial statements to comprise the following.'},
     {'table': {'align': 'll', 'head': ['Statement', 'What it reports'], 'rows': [

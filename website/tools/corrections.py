@@ -192,6 +192,56 @@ PIN = {
     # first-pass PIN above was wrongly copied onto (a mis-check on this
     # question's own diet/number while investigating the FRC one above).
     ('2017-03', 'PS', 'mcq', 28): 9,
+    # "Rolling Plan" — ch6 (Planning and Budgeting), found tagged to ch5
+    # (Employee Benefits) by generic wording overlap.
+    ('2014-03', 'PS', 'mcq', 15): 6,
+    # "IPSAS 5 (Borrowing Costs)" — mentioned in ch15's IPSAS 33 exemptions
+    # list, not ch20 (Investment Appraisal).
+    ('2015-09', 'PS', 'mcq', 25): 15,
+    # "Sub-Self Accounting unit" — ch13 §13.10 has the actual
+    # self-/sub-self-/non-self-accounting unit definitions; ch7 only
+    # mentions accounting officers in passing.
+    ('2017-03', 'PS', 'mcq', 5): 13,
+    # "Specific grant" — the site's only treatment of this term was buried
+    # inside a Ghana-comparative table (ch9 §9.9); moved to a proper
+    # standalone definition in ch12 §12.9 (Nigeria's own grants-in-aid
+    # section), which is where a non-Ghana-specific question belongs.
+    ('2019-09', 'PS', 'mcq', 26): 12,
+    # 2026-09-19 pass — found via a precision answer-text audit
+    # (tools/audit_answers.py) extended to cover SAQ, not just MCQ.
+    ('2015-03', 'PS', 'saq', 8): 21,   # Public-Private Partnership -> ch21 §21.2
+    ('2023-03', 'PS', 'mcq', 8): 21,   # PPP acronym -> ch21 §21.2
+    ('2016-09', 'PS', 'saq', 11): 1,   # Modified Cash Basis -> ch1
+    ('2019-03', 'PS', 'saq', 17): 8,   # Personal Emolument Record Card -> ch8 §8.7
+    ('2020-03', 'PS', 'saq', 5): 6,    # Rolling Plan -> ch6
+    ('2025-03', 'PS', 'saq', 15): 6,   # Rolling Plan -> ch6
+    ('2020-03', 'PS', 'saq', 7): 18,   # Appropriation-in-Aid -> ch18 §18.5
+    ('2016-09', 'PS', 'saq', 14): 18,  # Appropriation-in-Aid -> ch18 §18.5
+    ('2024-09', 'PS', 'saq', 9): 18,   # Public Finance Committee -> ch18
+    ('2025-03', 'PS', 'saq', 18): 17,  # Subventions recurrent/capital -> ch17 (GBEs)
+    ('2025-09', 'PS', 'saq', 4): 5,    # Defined Benefit Pension Plan -> ch5, not ch4
+    # Found via a targeted sweep of every past question that tests an
+    # acronym's meaning ("X is an acronym for", "full meaning of X").
+    ('2018-09', 'PS', 'mcq', 13): 3,   # GIFMIS -> ch3 §3.5 (also legit in ch21; ch3 already
+                                        # has its own "GIFMIS stands for" quiz item)
+    ('2021-03', 'PS', 'mcq', 30): 1,   # IFAC -> ch1 §1.7
+    ('2019-09', 'PS', 'saq', 20): 3,   # GPFRs -> ch3 §3.2
+}
+
+# Same idea as PIN, one level down: an explicit section for a question whose
+# *chapter* retrieval already gets right but whose *section* keeps landing on
+# a neighbour purely on citation-style word overlap ("Act", "Cap.", "LFN",
+# a year) — every question below is about the Finance (Control and
+# Management) Act, which content-wise sits at PS ch2 §2.2 (as the "2.2.2"
+# sub-heading, alongside the 1999 Constitution's "2.2.1") but keeps being
+# outscored by §2.6/§2.8, whose own *section titles* are themselves other
+# Acts cited the same way ("...Act, 1982 Cap. A.15 LFN 2004"). Confirmed by
+# a user report that the citation on this exact question scrolled to the
+# wrong place.
+SEC_PIN = {
+    ('2015-03', 'PS', 'mcq', 2): '2.2',
+    ('2015-09', 'PS', 'saq', 2): '2.2',
+    ('2016-09', 'PS', 'mcq', 23): '2.2',
 }
 
 # ── defects in the printed papers ─────────────────────────────────────────

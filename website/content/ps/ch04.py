@@ -41,6 +41,20 @@ CH = {
              'under ten years’ service yields **gratuity only**; ten years or more yields '
              '**both gratuity and pension**. This five/ten-year boundary recurs throughout the '
              'chapter and is a common source of examination marks.'},
+    {'h4': 'Abbreviations used in this chapter'},
+    {'table': {'align': 'll', 'head': ['Abbreviation', 'Full meaning'], 'rows': [
+      ['**CPS**', 'Contributory Pension Scheme (§4.4)'],
+      ['**RSA**', 'Retirement Savings Account (§4.6)'],
+      ['**PenCom**', 'National Pension Commission (§4.7)'],
+      ['**PFA**', 'Pension Fund Administrator (§4.8)'],
+      ['**PFC**', 'Pension Fund Custodian (§4.9)'],
+      ['**PTAD**', 'Pension Transitional Arrangements Directorate (§4.16) — administers the '
+       'old Defined Benefit Scheme for those exempted from the CPS'],
+      ['**RLA**', 'Retiree Life Annuity — one of the two ways (with PW) a retiree may draw down '
+       'an RSA: a life annuity purchased from a NAICOM-licensed insurer (§4.6)'],
+      ['**PW**', 'Programmed Withdrawal — the other of the two draw-down options: scheduled '
+       'monthly/quarterly payments calculated on expected life span (§4.6)'],
+    ]}},
   ]},
 
   {'n': '4.2', 't': 'The 1999 Constitutional provisions', 'b': [
@@ -221,13 +235,14 @@ CH = {
           'of **50 years**, whichever is later, utilise the balance credited to the account for '
           'the following:'},
     {'ol': [
-      '**Programmed monthly or quarterly withdrawals**, calculated on the basis of an expected '
-      'life span.',
+      '**Programmed Withdrawal (PW)** — monthly or quarterly withdrawals, calculated on the '
+      'basis of an expected life span.',
       '**Withdrawal of a lump sum** from the account, provided the amount left after the '
       'withdrawal is sufficient to procure programmed withdrawals or an annuity for life, in '
       'accordance with extant Commission guidelines.',
-      '**Annuity for life**, purchased from a life insurance company licensed by the National '
-      'Insurance Commission (NAICOM), with monthly or quarterly payments.',
+      '**Retiree Life Annuity (RLA)** — an annuity for life, purchased from a life insurance '
+      'company licensed by the National Insurance Commission (NAICOM), with monthly or '
+      'quarterly payments.',
       'For **professors** covered by the Universities (Miscellaneous Provisions) (Amendment) Act '
       '2012, benefits are paid according to the University Act.',
       'Other categories of employee entitled, by their terms of employment, to retire with full '

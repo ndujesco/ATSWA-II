@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cash vs Accrual Financial Statements — ATSWA PS Study Guide</title>
+<meta name="description" content="Every financial statement the ATSWA Part II Public Sector Accounting syllabus requires, cash basis and accrual basis side by side — what each one reports, worked examples, and every past exam question on the topic.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E5C42'/%3E%3Cpath d='M7 6h18v6H13v5h11v6H13v6H7z' fill='%23F6F1E6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F6F1E6; --paper-raised:#FBF8F1;
+    --ink:#1B231E; --ink-soft:#4E5951; --ink-faint:#7C877E;
+    --green:#1E5C42; --green-deep:#123B2B; --green-wash:#E7EEE7;
+    --gold:#96742A; --gold-wash:#F1E7CE;
+    --rule:rgba(27,35,30,0.14); --rule-strong:rgba(27,35,30,0.28);
+    --shadow:0 1px 2px rgba(27,35,30,0.06);
+    --warn-bg:#FBEEEA; --warn-ink:#8A3B24; --warn-rule:#D9B7A8;
+    --cash-bg:#EDF3F6; --cash-ink:#2A5D73; --cash-rule:#C3DAE3;
+    --accr-bg:#F4EEF8; --accr-ink:#5B3E85; --accr-rule:#DACBEA;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1613; --paper-raised:#151E19;
+      --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+      --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+      --gold:#D3AE5C; --gold-wash:#26210F;
+      --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+      --shadow:0 1px 2px rgba(0,0,0,0.35);
+      --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+      --cash-bg:#122029; --cash-ink:#8FC4DB; --cash-rule:#264655;
+      --accr-bg:#1E1826; --accr-ink:#C6ABE6; --accr-rule:#3E2E58;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1613; --paper-raised:#151E19;
+    --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+    --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+    --gold:#D3AE5C; --gold-wash:#26210F;
+    --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+    --shadow:0 1px 2px rgba(0,0,0,0.35);
+    --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+    --cash-bg:#122029; --cash-ink:#8FC4DB; --cash-rule:#264655;
+    --accr-bg:#1E1826; --accr-ink:#C6ABE6; --accr-rule:#3E2E58;
+  }
+
+  *{box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;margin:0;}
+  ::selection{background:var(--gold-wash);}
+
+  .topbar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);}
+  .topbar .in{max-width:920px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .topbar a.back{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-soft);text-decoration:none;display:flex;align-items:center;gap:6px;}
+  .topbar a.back:hover{color:var(--green);}
+  .topbar a.back .arrow{color:var(--gold);}
+  .topbar .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase;}
+
+  .page{max-width:920px;margin:0 auto;padding:40px 24px 96px;}
+
+  .masthead{display:flex;flex-direction:column;gap:10px;padding-bottom:28px;margin-bottom:36px;border-bottom:2px solid var(--ink);}
+  .masthead .eyebrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:10px;}
+  .masthead .eyebrow::before{content:'§';font-size:14px;color:var(--gold);}
+  .masthead h1{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,4.4vw,42px);line-height:1.1;letter-spacing:-.01em;margin:2px 0 0;text-wrap:balance;}
+  .masthead .dek{font-size:16.5px;color:var(--ink-soft);max-width:72ch;margin-top:2px;}
+  .masthead .cite{font-family:var(--font-mono);font-size:12px;color:var(--ink-faint);display:flex;gap:18px;flex-wrap:wrap;margin-top:6px;}
+  .masthead .cite b{color:var(--ink-soft);font-weight:600;}
+
+  section{position:relative;padding-left:26px;margin-bottom:44px;}
+  section::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--rule);}
+  section.primary::before{background:var(--green);width:3px;left:-1px;}
+  .sec-tag{display:inline-flex;align-items:baseline;gap:7px;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;color:var(--green);margin-bottom:6px;}
+  .sec-tag .num{background:var(--green-wash);color:var(--green);padding:2px 7px;border-radius:3px;font-weight:600;}
+  h2{font-family:var(--font-display);font-weight:600;font-size:25px;letter-spacing:-.005em;margin:0 0 4px;text-wrap:balance;}
+  h3{font-family:var(--font-display);font-weight:600;font-size:18px;margin:22px 0 9px;}
+  h4{font-family:var(--font-mono);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:18px 0 8px;}
+  p{margin:0 0 13px;max-width:72ch;}
+  .lede{font-size:15.5px;color:var(--ink-soft);max-width:72ch;}
+  strong{font-weight:600;color:var(--ink);}
+  a{color:var(--green);text-decoration-color:var(--rule-strong);text-underline-offset:2px;}
+
+  .twrap{overflow-x:auto;margin:14px 0 20px;border:1px solid var(--rule);border-radius:8px;}
+  table{width:100%;border-collapse:collapse;font-size:14px;background:var(--paper-raised);}
+  caption{text-align:left;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);padding:10px 14px 0;}
+  th{text-align:left;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;padding:9px 12px;border-bottom:1px solid var(--rule-strong);background:var(--green-wash);}
+  td{padding:8px 12px;border-bottom:1px solid var(--rule);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td.num,th.num{text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+  tr.total td{font-weight:600;border-top:1px solid var(--rule-strong);}
+  tr.hd td{font-weight:600;background:var(--green-wash);color:var(--green);}
+
+  ul,ol{margin:0 0 14px;padding-left:22px;}
+  li{margin-bottom:7px;max-width:68ch;}
+
+  .trap{background:var(--warn-bg);border:1px solid var(--warn-rule);border-radius:8px;padding:15px 18px;margin:16px 0;}
+  .trap .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--warn-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px;font-weight:600;}
+  .trap .k::before{content:'⚠';font-size:12px;}
+  .trap p{margin:0;color:var(--ink);font-size:14.5px;}
+  .trap strong{color:var(--warn-ink);}
+
+  /* cash/accrual twin columns */
+  .twin{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+  @media (max-width:680px){.twin{grid-template-columns:1fr;}}
+  .basis-card{border-radius:8px;padding:16px 18px;box-shadow:var(--shadow);}
+  .basis-card.cash{background:var(--cash-bg);border:1px solid var(--cash-rule);}
+  .basis-card.accr{background:var(--accr-bg);border:1px solid var(--accr-rule);}
+  .basis-card .lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;margin-bottom:8px;display:block;}
+  .basis-card.cash .lbl{color:var(--cash-ink);}
+  .basis-card.accr .lbl{color:var(--accr-ink);}
+  .basis-card ul{margin:0;padding-left:18px;}
+  .basis-card li{font-size:14px;margin-bottom:6px;}
+
+  .statement-block{margin-bottom:32px;padding-bottom:28px;border-bottom:1px solid var(--rule);}
+  .statement-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+  .statement-block .title{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .statement-block h3{margin:0;}
+  .basis-pill{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:10px;font-weight:600;}
+  .basis-pill.cash{background:var(--cash-bg);color:var(--cash-ink);border:1px solid var(--cash-rule);}
+  .basis-pill.accr{background:var(--accr-bg);color:var(--accr-ink);border:1px solid var(--accr-rule);}
+
+  /* past questions (same component as the CRF guide) */
+  .pq-group{margin-bottom:8px;}
+  .pq-group h4{margin-top:26px;}
+  .pq{border-top:1px solid var(--rule);padding:12px 0;}
+  .pq:last-child{padding-bottom:0;}
+  .pq .diets{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;color:var(--gold);margin-bottom:5px;display:block;}
+  .pq .qtext{font-size:14.5px;margin:0 0 6px;max-width:66ch;}
+  .pq .opts{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13.5px;color:var(--ink-soft);margin:0;padding:0;list-style:none;}
+  .pq .opts li{margin:0;max-width:none;}
+  .pq .opts li.correct{color:var(--green);font-weight:600;}
+  .pq .opts li.correct::after{content:' ✓';}
+  .pq .answer{font-size:13.5px;margin-top:4px;}
+  .pq .answer .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);margin-right:6px;}
+  .pq .answer b{color:var(--green);}
+
+  .takeaways{background:var(--green-deep);color:var(--paper);border-radius:10px;padding:22px 24px;margin-top:8px;}
+  :root:not([data-theme="light"]) .takeaways,
+  :root[data-theme="dark"] .takeaways{color:var(--green-deep);background:var(--green-wash);border:1px solid var(--rule-strong);}
+  .takeaways h3{color:inherit;margin-top:0;}
+  .takeaways ol{padding-left:20px;}
+  .takeaways li{margin-bottom:9px;max-width:64ch;}
+  .takeaways strong{color:inherit;}
+
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);font-family:var(--font-mono);font-size:11.5px;color:var(--ink-faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  @media (max-width:600px){.page{padding:32px 18px 80px;}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="in">
+  <a class="back" href="../index.html#/s/PS/16"><span class="arrow">&larr;</span> Back to PS Chapter 16</a>
+  <span class="kicker">Study guide</span>
+</div></div>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Public Sector Accounting &middot; Financial Statements</div>
+    <h1>Cash basis vs accrual basis, statement by statement</h1>
+    <p class="dek">Every statement the Nigerian public sector prepares, cash basis (Chapter 14) and accrual basis (Chapter 16) side by side — what each one reports, what changes between the two bases, and every past exam question on the topic.</p>
+    <div class="cite"><span><b>Cash basis since:</b> 1 Jan 2014</span><span><b>Accrual basis since:</b> 1 Jan 2016</span><span><b>Governing standards:</b> Cash Basis IPSAS &middot; IPSAS 1</span></div>
+  </header>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">Core&nbsp;&middot;&nbsp;</span>The one idea everything else follows from</div>
+    <h2>What actually changes between the two bases</h2>
+    <p class="lede">Both bases eventually report the same cash. The entire difference is <strong>when</strong> a revenue or expense is recognised, and therefore <strong>what else besides cash</strong> ends up on the statements.</p>
+
+    <div class="twin">
+      <div class="basis-card cash">
+        <span class="lbl">Cash basis</span>
+        <ul>
+          <li>Revenue recognised when <strong>received</strong>; expenditure when <strong>paid</strong></li>
+          <li>No receivables, no payables, no PP&amp;E, no depreciation, no long-term liabilities</li>
+          <li>Reports only <strong>financial</strong> assets/liabilities from cash transactions — cash, investments, advances, deposits</li>
+          <li>Can be manipulated by timing a payment past year-end</li>
+        </ul>
+      </div>
+      <div class="basis-card accr">
+        <span class="lbl">Accrual basis</span>
+        <ul>
+          <li>Revenue recognised when <strong>earned</strong>; expenses when <strong>incurred</strong> — whether or not cash has moved</li>
+          <li>Full balance sheet: PP&amp;E, receivables, payables, borrowings, pension obligations, all visible</li>
+          <li>Shows the <strong>true cost</strong> of a service (via depreciation) and the <strong>true level</strong> of public debt</li>
+          <li>Timing a payment no longer changes the reported result</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="trap">
+      <span class="k">Cash is cash, whatever the basis</span>
+      <p>The <em>closing cash balance</em> is identical either way — what accrual accounting changes is everything <em>around</em> the cash (assets owned, amounts owed, revenue earned but not yet collected), never the cash figure itself. A Statement of Cash Flows prepared under accrual IPSAS reconciles to the exact same closing cash a Statement of Cash Receipts and Payments would show for the same entity.</p>
+    </div>
+  </section>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">Ch 14&nbsp;&middot;&nbsp;</span>Required under the Cash Basis IPSAS</div>
+    <h2>The cash-basis statements</h2>
+
+    <div class="statement-block">
+      <div class="title"><h3>1. Statement of Cash Receipts and Payments</h3><span class="basis-pill cash">principal statement</span></div>
+      <p>All cash received and paid during the period, classified by nature, opening and closing cash and cash equivalents. Revenue is recognised when received, expenditure when paid — whatever period the transaction actually relates to.</p>
+      <p><strong>Worked-example checkpoint:</strong> total receipts less total payments gives the net cash flow for the year; add the opening cash balance and the total must agree with cash and cash equivalents in the Statement of Assets and Liabilities. Always perform this check before submitting an answer.</p>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>2. Statement of Assets and Liabilities</h3></div>
+      <p>Limited by design: only cash, investments, advances and deposits — <strong>no PP&amp;E, no receivables, no payables</strong>, because none of those are recognised under the cash basis. Net assets are represented by the fund balances (the CRF balance plus the Capital Development Fund balance, which is usually the balancing figure).</p>
+      <div class="trap"><span class="k">The single most common error in this question</span><p>Including buildings, roads, vehicles or trade payables in a <strong>cash-basis</strong> Statement of Assets and Liabilities. Those only ever appear under accrual IPSAS, in the Statement of Financial Position.</p></div>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>3. Statement of Consolidated Revenue Fund</h3></div>
+      <p>Opening balance, revenue, recurrent expenditure and transfers (to the Development Fund, to the Contingency Fund), giving the closing CRF balance. See the <a href="crf.html">full CRF guide</a> for everything that feeds and finances this fund.</p>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>4. Statement of Capital Development Fund</h3></div>
+      <p>Opening balance, transfers from the CRF, capital receipts, capital expenditure, and the closing balance — the capital-side mirror of the CRF statement above.</p>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>5. Statement of Comparison of Budget and Actual Amounts</h3><span class="basis-pill cash">required under both bases</span></div>
+      <p>Original budget, final budget (after any supplementary appropriation or virement), actual amounts on a comparable basis, and the variance — with material differences explained. This is the public sector's own signature statement: because the budget is a <strong>legal authority</strong>, not a management plan, reporting against it is an obligation.</p>
+      <p><strong>Reading a variance:</strong> favourable on receipts when actual exceeds budget; favourable on payments when actual is below budget. Examiners award most marks for <em>commentary that connects two variances</em> (e.g. a revenue shortfall absorbed entirely by the capital budget), not for reciting each line separately.</p>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>6. Notes to the financial statements</h3></div>
+      <p>Accounting policies (including the basis itself); composition of cash and cash equivalents; restrictions on cash/borrowing facilities; the basis of the budget and explanation of variances; third-party payments made on the entity's behalf; undrawn borrowing facilities; supporting analyses of every principal line; consolidated entities; related-party disclosures.</p>
+    </div>
+
+    <h4>Limitations of the cash basis</h4>
+    <ul>
+      <li>Ignores receivables/payables — unpaid contractors and uncollected taxes are invisible</li>
+      <li>Omits non-current assets and depreciation — the true cost of using assets never enters the accounts</li>
+      <li>Open to manipulation by timing a payment past year-end</li>
+      <li>Does not disclose the full cost of a service, so economy/efficiency can't be assessed</li>
+      <li>Shows only cash liabilities — understates real public debt</li>
+      <li>Not comparable with accrual-based reporting elsewhere</li>
+    </ul>
+  </section>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">Ch 16&nbsp;&middot;&nbsp;</span>Required under IPSAS 1</div>
+    <h2>The accrual-basis statements</h2>
+
+    <div class="statement-block">
+      <div class="title"><h3>1. Statement of Financial Performance</h3><span class="basis-pill accr">the "income statement"</span></div>
+      <p>Revenue earned and expenses incurred during the period, whether or not cash has moved, giving the surplus or deficit for the year. Minimum line items include revenue from operating activities, finance cost, and surplus/deficit from operating activities — but <strong>not</strong> "changes in cash and cash equivalents", which belongs on the Statement of Cash Flows instead.</p>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>2. Statement of Financial Position</h3><span class="basis-pill accr">the "balance sheet"</span></div>
+      <p>Assets, liabilities and net assets/equity at the reporting date — <strong>including</strong> property, plant and equipment, receivables and payables, none of which exist under the cash basis. IPSAS replaces the term "Balance Sheet" with this name.</p>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>3. Statement of Changes in Net Assets/Equity</h3></div>
+      <p>The movement in each component of net assets — accumulated surplus, revaluation reserve, other reserves — between the opening and closing dates. Captures the surplus/deficit for the year <em>together with</em> items recognised directly in net assets.</p>
+      <div class="trap"><span class="k">Where a revaluation gain goes</span><p>A gain on revaluation of property, and the remeasurement of a defined benefit obligation (IPSAS 39), are both recognised <strong>directly in this statement</strong> — never routed through the Statement of Financial Performance. Doing so misstates both statements at once.</p></div>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>4. Statement of Cash Flows</h3></div>
+      <p>Cash flows classified into <strong>operating</strong>, <strong>investing</strong> and <strong>financing</strong> activities (IPSAS 2). Operating flows may use the direct method (gross receipts/payments) or the indirect method (surplus adjusted for non-cash items and working-capital movements) — IPSAS encourages direct, but <strong>examinations usually set the indirect method</strong>, since it tests the cash/accrual distinction directly: add back depreciation and finance cost, deduct investment income, then adjust for the movement in every working-capital line.</p>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>5. Statement of Comparison of Budget and Actual Amounts</h3><span class="basis-pill accr">IPSAS 24</span></div>
+      <p>Identical requirement to the cash-basis version above — original budget, final budget, actual on a comparable basis, variance explained — just prepared on accrual figures.</p>
+    </div>
+
+    <div class="statement-block">
+      <div class="title"><h3>6. Notes</h3></div>
+      <p>Significant accounting policies plus supporting analysis of every principal figure — the same role as under the cash basis, just covering a much larger set of recognised items.</p>
+    </div>
+
+    <h4>Advantages of accrual reporting</h4>
+    <ul>
+      <li>Discloses the full financial position — what government owns <em>and</em> owes</li>
+      <li>Shows the true cost of a service via depreciation — enables cost-per-unit and value-for-money analysis</li>
+      <li>Forces proper asset registers, making deterioration visible</li>
+      <li>Discloses the real level of public debt, including pension liabilities</li>
+      <li>Removes the year-end payment-timing manipulation the cash basis allows</li>
+      <li>Improves comparability with other governments and the private sector</li>
+      <li>Supports buy-vs-lease, maintain-vs-replace and contract-out decisions cash information can't</li>
+    </ul>
+    <p style="font-size:14px;color:var(--ink-soft)">Against these: the cost and complexity of accrual accounting, the judgement (and scope for manipulation of that judgement) it requires, and the genuine difficulty of valuing heritage/infrastructure assets with no market. A balanced answer acknowledges both sides before concluding.</p>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">Terms&nbsp;&middot;&nbsp;</span>IPSAS 3</div>
+    <h3>Policy, estimate, or error — and why it matters which</h3>
+    <div class="twrap">
+      <table>
+        <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Accounting policy</strong></td><td>The specific principles, bases, conventions, rules and practices an entity applies in preparing its statements</td></tr>
+          <tr><td><strong>Change in accounting estimate</strong></td><td>Adjusting a carrying amount from new information — <strong>not</strong> an error, applied prospectively</td></tr>
+          <tr><td><strong>Prior period error</strong></td><td>An omission/misstatement from failing to use reliable information that was available at the time — corrected retrospectively</td></tr>
+          <tr><td><strong>Material</strong></td><td>Could influence users' decisions — a threshold, not a qualitative characteristic in its own right</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>A change <strong>between bases</strong> (cash to accrual, say) is itself a change in accounting policy — the very reason Chapter 15's transitional relief exists.</p>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">A third way&nbsp;&middot;&nbsp;</span>The modified bases</div>
+    <h3>Modified cash and modified accrual basis</h3>
+    <p>Two hybrid bases sit between the pure cash and pure accrual positions — and the past papers are not entirely consistent about which name goes with which combination, so learn the <em>combination</em>, not just the label.</p>
+    <div class="twrap">
+      <table>
+        <thead><tr><th>Basis</th><th>Revenue recognised</th><th>Expenditure recognised</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Modified cash basis</strong></td><td>Cash (when received)</td><td>Accrual (when incurred)</td></tr>
+          <tr><td><strong>Modified accrual basis</strong></td><td>Accrual (when earned)</td><td>Cash (when paid)</td></tr>
+          <tr><td><strong>Commitment basis</strong></td><td>&mdash;</td><td>Recorded once evidenced by a purchase order or contract, before cash even moves</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="trap">
+      <span class="k">A genuine inconsistency in the past papers</span>
+      <p>Two diets (2016-09, 2024-03) give <strong>"Modified Cash Basis"</strong> as the answer for "revenue on cash, expenditure on accrual" — but a separate diet's own MCQ (2020-03 Q27) explicitly defines <strong>"Modified Accrual Basis"</strong> as exactly that same combination, and 2020-09's short-answer key agrees with 2020-03. The table above follows the 2-out-of-3 majority and the definitional MCQ; if a specific past question insists on the opposite pairing, answer <em>that question's own</em> stated definition rather than the table.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">Past questions&nbsp;&middot;&nbsp;</span>Every one on this topic</div>
+    <h2>Past questions on the financial statements</h2>
+    <p class="lede">Every ATSWA Part&nbsp;II past question testing which statements are required, what each contains, or the cash/accrual/modified-basis distinction.</p>
+
+    <div class="pq-group">
+      <h4>A &middot; What a complete set of statements contains</h4>
+      <div class="pq"><span class="diets">2014-09</span>
+        <p class="qtext">A complete set of financial statements under IPSAS includes the following, <strong>except</strong>:</p>
+        <ul class="opts"><li>Statement of financial position</li><li class="correct">Statement of profit or loss</li><li>Statement of financial performance</li><li>Cash flow Statement</li><li>Accounting policies and notes</li></ul>
+        <p class="answer"><span class="lbl">Why</span>"Profit or loss" is private-sector language — the public-sector equivalent is the Statement of Financial <em>Performance</em>, already listed as a separate, correct option.</p>
+      </div>
+      <div class="pq"><span class="diets">2017-03</span>
+        <p class="qtext">In accordance with IPSAS 1, a complete set of financial statements comprises the following, <strong>except</strong>:</p>
+        <ul class="opts"><li>Statement of financial performance</li><li>Cash flow statement</li><li class="correct">Statement of unallocated stores</li><li>Statement of financial position</li><li>Statement of changes in net assets/equity</li></ul>
+      </div>
+      <div class="pq"><span class="diets">2015-09</span>
+        <p class="qtext">Under IPSAS, "Balance Sheet" is replaced with:</p>
+        <ul class="opts"><li>Value Added Statement</li><li>Ruled Sheet</li><li>Current Cost Accounting</li><li class="correct">Statement of Financial Position</li><li>Statement of Financial Instrument</li></ul>
+      </div>
+      <div class="pq"><span class="diets">2026-03</span>
+        <p class="qtext">According to IPSAS 1, which of the following should NOT be presented on the face of the Statement of Financial Position?</p>
+        <ul class="opts"><li>Investment property</li><li>Intangible assets</li><li>Property, plant and equipment</li><li class="correct">Auditor-General's report</li><li>Inventories</li></ul>
+      </div>
+      <div class="pq"><span class="diets">2021-09</span>
+        <p class="qtext">Notes to the accounts form part of a complete set of financial statements. (True or False)</p>
+        <p class="answer"><b>True</b></p>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>B &middot; The Statement of Financial Performance</h4>
+      <div class="pq"><span class="diets">2025-03</span>
+        <p class="qtext">The Statement of Financial Performance, as a minimum requirement, should include the following line items <strong>except</strong>:</p>
+        <ul class="opts"><li class="correct">Changes in cash and cash equivalents</li><li>Revenue from operating activities</li><li>Finance cost</li><li>Surplus or deficit from operating activities</li><li>Net surplus or deficit for the period</li></ul>
+        <p class="answer"><span class="lbl">Why</span>Cash movement belongs on the Statement of Cash Flows, not the Statement of Financial Performance — the classic basis-confusion trap.</p>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>C &middot; Fundamental principles / qualitative characteristics</h4>
+      <div class="pq"><span class="diets">2020-09 &middot; 2022-09</span>
+        <p class="qtext">Which of the following is NOT a fundamental principle underlying the preparation of financial statements?</p>
+        <ul class="opts"><li>Consistency of presentation</li><li>Accrual basis of accounting</li><li>Going concern assumption</li><li>Materiality</li><li class="correct">First-in first-out principle</li></ul>
+        <p class="answer"><span class="lbl">Why</span>FIFO is an <em>inventory valuation method</em> (IPSAS 12), not a fundamental presentation principle.</p>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>D &middot; Cash, accrual and the modified/commitment bases</h4>
+      <div class="pq"><span class="diets">2018-09</span>
+        <p class="qtext">The basis of accounting that records anticipated expenditure evidenced by a purchase order and/or a contract is called:</p>
+        <ul class="opts"><li>Accrual basis</li><li>Cash basis</li><li class="correct">Commitment basis</li><li>Modified accrual basis</li><li>Modified cash basis</li></ul>
+      </div>
+      <div class="pq"><span class="diets">2020-03</span>
+        <p class="qtext">Under the Modified Accrual Basis, which of the following is correct?</p>
+        <ul class="opts"><li class="correct">Revenue is recognised on cash basis and expenditure on accrual basis</li><li>Only expenditure is recognised on cash basis</li><li>Only revenue is recognised on cash basis</li><li>Revenue and expenditure are both recognised on accrual basis</li><li>Revenue on accrual, expenditure on cash</li></ul>
+      </div>
+      <div class="pq"><span class="diets">2016-09 &middot; 2024-03</span>
+        <p class="qtext">An accounting basis that recognises revenue on cash basis and expenditure on accrual basis is called &hellip;</p>
+        <p class="answer"><b>Modified Cash Basis</b> <span style="color:var(--ink-faint)">(these two diets' own answer keys — see the inconsistency note above)</span></p>
+      </div>
+      <div class="pq"><span class="diets">2020-09</span>
+        <p class="qtext">An accounting basis that recognises revenue on cash basis and expenditure on accrual basis is called &hellip;</p>
+        <p class="answer"><b>Modified Accrual Basis</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-left:0;margin-bottom:0;">
+    <div class="takeaways">
+      <h3>Six facts worth over-learning</h3>
+      <ol>
+        <li>Both bases report the <strong>same closing cash</strong> — accrual accounting adds everything <em>around</em> the cash, it never changes the cash itself.</li>
+        <li>"Statement of Financial <strong>Performance</strong>" and "Statement of Financial <strong>Position</strong>" are IPSAS's own names for what private-sector accounting calls the income statement and the balance sheet.</li>
+        <li>The <strong>Statement of Comparison of Budget and Actual Amounts</strong> is required under <em>both</em> bases — it is the one statement cash and accrual reporting have in common, and a frequently-omitted item on "list the required statements" questions.</li>
+        <li>A revaluation gain, and a defined-benefit remeasurement, are recognised in the <strong>Statement of Changes in Net Assets/Equity</strong> — never in the Statement of Financial Performance.</li>
+        <li>Examiners set the <strong>indirect</strong> method for the Statement of Cash Flows precisely because reconstructing cash from an accrual surplus tests whether you understand the basis difference at all.</li>
+        <li>Learn <strong>combinations</strong>, not labels, for the modified bases — the past papers themselves don't agree on which name goes with "revenue cash, expenditure accrual".</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <span>Sources: Cash Basis IPSAS &middot; IPSAS 1, 2, 3, 24 &middot; ATSWA PS Chapters 14 &amp; 16</span>
+    <span>ATSWA Part II &middot; Public Sector Accounting</span>
+  </footer>
+
+</div>
+</body>
+</html>

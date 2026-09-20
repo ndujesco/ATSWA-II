@@ -353,6 +353,9 @@ CH = {
   ]},
 
   {'n': '2.12', 't': 'The standard-setting framework — IPSAS in Nigeria', 'b': [
+    {'note': '[Every IPSAS this course treats, indexed by number →](guides/ipsas.html) — what '
+             'each one covers, the two supersessions (17→45, 25→39), the "IPSAS 49" numbering '
+             'anomaly, and exactly which chapter deals with which standard.'},
     {'p': 'The chapter\'s own list in §2.10 names IPSAS as one instrument among many, without '
           'saying anything further about it — the detail below fills that gap, since IPSAS '
           'adoption is one of the most heavily examined topics to come out of this chapter\'s '

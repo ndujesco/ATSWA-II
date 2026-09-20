@@ -238,6 +238,9 @@ def main():
                 (sol[q['n']]['body'] if q['n'] in sol else [], 2.0),
             ]
             ch, m = assign(weighted)
+            pin = PIN.get((p['diet'], p['subject'], 'saq', q['n']))
+            if pin:
+                ch, m = pin, 1.0
             q['ch'], q['chConf'] = ch, round(m, 3)
             stats['saq_hi' if m >= .12 else 'saq_lo'] += 1
 
@@ -250,6 +253,9 @@ def main():
                 (s['solution'][:60], 1.0),
             ]
             ch, m = assign(weighted)
+            pin = PIN.get((p['diet'], p['subject'], 'secb', s['n']))
+            if pin:
+                ch, m = pin, 1.0
             s['ch'], s['chConf'] = ch, round(m, 3)
             stats['secb_hi' if m >= .12 else 'secb_lo'] += 1
 

@@ -34,6 +34,13 @@ CH = {
           'Accounts. The National Chart of Accounts is an integrated budget and accounting '
           'classification system prepared primarily for the implementation of a uniform '
           'accounting system that is IPSAS compliant.'},
+    {'note': 'This section\'s own heading is examinable in its own right: **General Purpose '
+             'Financial Reports (GPFRs)** is the umbrella term — every report a public-sector '
+             'entity issues for users who cannot demand information to meet their own specific '
+             'needs. **General Purpose Financial Statements (GPFS)** are one part of that: the '
+             'formal statements of financial position, performance, cash flows and so on. Every '
+             'GPFS is a GPFR; not every GPFR (e.g. a budget or a service-performance report) is '
+             'a GPFS.'},
     {'def': {'t': 'National Chart of Accounts (NCOA)', 'd': 'a complete list of budget and '
                   'accounting items, where each item is uniquely represented by a code and '
                   'grouped into tables of related data, for the purposes of tracking, managing '
@@ -564,6 +571,15 @@ CH = {
     'a': 1,
     'w': 'The administrative segment answers "who spent it". The economic segment answers "on '
          'what, by nature" and the functional segment "for what purpose of government".',
+    'src': 'Chapter 3.2', 'sec': '3.2'},
+   {'q': 'The full meaning of the acronym GPFRs is',
+    'o': ['General Public Financial Regulations', 'Government Public Finance Reports',
+          'General Purpose Financial Reports', 'General Purpose Financial Returns',
+          'Government Purpose Financial Reports'],
+    'a': 2,
+    'w': 'GPFRs is the umbrella term for every report issued to users who cannot demand '
+         'information to meet their own needs. GPFS (financial statements) is one part of it, '
+         'not a synonym for it.',
     'src': 'Chapter 3.2', 'sec': '3.2'},
    {'q': 'GIFMIS stands for',
     'o': ['Government Integrated Fiscal Management Information Service',

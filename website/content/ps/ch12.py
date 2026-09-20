@@ -318,6 +318,22 @@ CH = {
       'A contract above the council\'s limit needs the **Ministry of Local Government\'s** '
       'approval.',
     ]},
+    {'h4': 'Types of grant'},
+    {'def': {'t': 'Specific grant',
+             'd': 'a discretionary financial assistance given to finance a **particular, named '
+                  'project** — e.g. building a community school. Also called **programme or '
+                  'project support**.'}},
+    {'def': {'t': 'General grant',
+             'd': 'a grant not tied to any identified activity, used at the recipient\'s own '
+                  'discretion — also called **"budget support"**. Where several donors pool '
+                  'their resources this way, the fund is called **"multi-donor budget support" '
+                  '(MDBS)**.'}},
+    {'note': 'The study text\'s own wording of these two definitions is internally '
+             'inconsistent — it describes a "specific grant" as **not** for any particular '
+             'purpose, immediately followed by an example of a named, particular project. The '
+             'definitions above follow the examples given (and the examiner\'s own answer key), '
+             'which is the only reading consistent with the illustrations: **specific = tied to '
+             'one named project; general = untied, discretionary**.'},
     {'h4': 'Objectives of the grants-in-aid system'},
     {'ol': [
       'Augment the resources of local government councils.',
@@ -500,6 +516,13 @@ CH = {
     'w': 'Section 162(6) requires each State to maintain the Joint Account, from which the '
          'Joint Account Allocation Committee distributes to the councils.',
     'src': 'Chapter 12.3', 'sec': '12.3'},
+   {'q': 'A discretionary financial assistance given to finance a particular project is known as',
+    'o': ['a grant', 'non-matching grant', 'a specific grant', 'a general grant', 'an aid'],
+    'a': 2,
+    'w': 'A specific grant (also called programme or project support) is tied to a named '
+         'project. A general grant — "budget support" — is untied and used at the recipient\'s '
+         'own discretion.',
+    'src': 'Chapter 12.9', 'sec': '12.9'},
    {'q': 'The accounting officer of a local government council is the',
     'o': ['Treasurer', 'Chairman', 'Secretary to the Local Government',
           'Head of Personnel Management', 'Supervisory Councillor for Finance'],

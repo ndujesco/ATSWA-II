@@ -23,7 +23,7 @@ HEAD
   # the fragment carries its own <title>; the head above owns it now
   grep -v '^<title>ATSWA Part II</title>$' src/page.html
   echo '<script>'
-  cat src/subjects.js src/math.js src/render.js src/app.js src/quiz.js src/exams.js
+  cat src/subjects.js src/math.js src/render.js src/app.js src/quiz.js src/revision.js src/exams.js
   echo '</script>'
   echo '</body>'
   echo '</html>'

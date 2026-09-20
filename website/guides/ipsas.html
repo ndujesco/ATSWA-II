@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IPSAS in This Course — ATSWA PS Study Guide</title>
+<meta name="description" content="Every International Public Sector Accounting Standard the ATSWA Part II Public Sector Accounting syllabus treats — number, topic, Nigeria's adoption timeline, and exactly where each is covered.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E5C42'/%3E%3Cpath d='M7 6h18v6H13v5h11v6H13v6H7z' fill='%23F6F1E6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F6F1E6; --paper-raised:#FBF8F1;
+    --ink:#1B231E; --ink-soft:#4E5951; --ink-faint:#7C877E;
+    --green:#1E5C42; --green-deep:#123B2B; --green-wash:#E7EEE7;
+    --gold:#96742A; --gold-wash:#F1E7CE;
+    --rule:rgba(27,35,30,0.14); --rule-strong:rgba(27,35,30,0.28);
+    --shadow:0 1px 2px rgba(27,35,30,0.06);
+    --warn-bg:#FBEEEA; --warn-ink:#8A3B24; --warn-rule:#D9B7A8;
+    --super-bg:#EEF1FB; --super-ink:#2E3E86; --super-rule:#C7D0EE;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1613; --paper-raised:#151E19;
+      --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+      --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+      --gold:#D3AE5C; --gold-wash:#26210F;
+      --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+      --shadow:0 1px 2px rgba(0,0,0,0.35);
+      --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+      --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1613; --paper-raised:#151E19;
+    --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+    --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+    --gold:#D3AE5C; --gold-wash:#26210F;
+    --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+    --shadow:0 1px 2px rgba(0,0,0,0.35);
+    --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+    --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+  }
+
+  *{box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{
+    background:var(--paper); color:var(--ink); font-family:var(--font-body);
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; margin:0;
+  }
+  ::selection{background:var(--gold-wash);}
+
+  .topbar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);}
+  .topbar .in{max-width:920px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .topbar a.back{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-soft);text-decoration:none;display:flex;align-items:center;gap:6px;}
+  .topbar a.back:hover{color:var(--green);}
+  .topbar a.back .arrow{color:var(--gold);}
+  .topbar .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase;}
+
+  .page{max-width:920px;margin:0 auto;padding:40px 24px 96px;}
+
+  .masthead{display:flex;flex-direction:column;gap:10px;padding-bottom:28px;margin-bottom:36px;border-bottom:2px solid var(--ink);}
+  .masthead .eyebrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:10px;}
+  .masthead .eyebrow::before{content:'§';font-size:14px;color:var(--gold);}
+  .masthead h1{font-family:var(--font-display);font-weight:600;font-size:clamp(32px,4.6vw,44px);line-height:1.08;letter-spacing:-.01em;margin:2px 0 0;text-wrap:balance;}
+  .masthead .dek{font-size:16.5px;color:var(--ink-soft);max-width:70ch;margin-top:2px;}
+  .masthead .cite{font-family:var(--font-mono);font-size:12px;color:var(--ink-faint);display:flex;gap:18px;flex-wrap:wrap;margin-top:6px;}
+  .masthead .cite b{color:var(--ink-soft);font-weight:600;}
+
+  section{position:relative;padding-left:26px;margin-bottom:44px;}
+  section::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--rule);}
+  section.primary::before{background:var(--green);width:3px;left:-1px;}
+  .sec-tag{display:inline-flex;align-items:baseline;gap:7px;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;color:var(--green);margin-bottom:6px;}
+  .sec-tag .num{background:var(--green-wash);color:var(--green);padding:2px 7px;border-radius:3px;font-weight:600;}
+  h2{font-family:var(--font-display);font-weight:600;font-size:26px;letter-spacing:-.005em;margin:0 0 4px;text-wrap:balance;}
+  h3{font-family:var(--font-display);font-weight:600;font-size:19px;margin:26px 0 10px;}
+  h4{font-family:var(--font-mono);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:20px 0 9px;}
+  p{margin:0 0 13px;max-width:72ch;}
+  .lede{font-size:15.5px;color:var(--ink-soft);max-width:70ch;}
+  strong{font-weight:600;color:var(--ink);}
+  a{color:var(--green);text-decoration-color:var(--rule-strong);text-underline-offset:2px;}
+
+  .defcap{background:var(--paper-raised);border:1px solid var(--rule);border-radius:8px;padding:16px 18px;margin:14px 0 18px;box-shadow:var(--shadow);}
+  .defcap .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:5px;}
+  .defcap p{margin:0;font-size:15px;}
+
+  .twrap{overflow-x:auto;margin:14px 0 20px;border:1px solid var(--rule);border-radius:8px;}
+  table{width:100%;border-collapse:collapse;font-size:14px;background:var(--paper-raised);}
+  th{text-align:left;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;padding:9px 12px;border-bottom:1px solid var(--rule-strong);background:var(--green-wash);}
+  td{padding:9px 12px;border-bottom:1px solid var(--rule);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td.n{font-family:var(--font-mono);font-weight:600;color:var(--green);white-space:nowrap;}
+  td.loc{white-space:nowrap;font-family:var(--font-mono);font-size:12.5px;}
+  tr.superseded td{opacity:.72;}
+  .pill{display:inline-block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-left:6px;white-space:nowrap;}
+  .pill.super{background:var(--super-bg);color:var(--super-ink);border:1px solid var(--super-rule);}
+  .pill.warn{background:var(--warn-bg);color:var(--warn-ink);border:1px solid var(--warn-rule);}
+
+  ul,ol{margin:0 0 14px;padding-left:22px;}
+  li{margin-bottom:7px;max-width:68ch;}
+  ul.plain{list-style:none;padding-left:0;}
+  ul.plain li{padding-left:18px;position:relative;}
+  ul.plain li::before{content:'—';position:absolute;left:0;color:var(--gold);}
+
+  .trap{background:var(--warn-bg);border:1px solid var(--warn-rule);border-radius:8px;padding:15px 18px;margin:16px 0;}
+  .trap .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--warn-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px;font-weight:600;}
+  .trap .k::before{content:'⚠';font-size:12px;}
+  .trap p{margin:0;color:var(--ink);font-size:14.5px;}
+  .trap strong{color:var(--warn-ink);}
+
+  .super-box{background:var(--super-bg);border:1px solid var(--super-rule);border-radius:8px;padding:15px 18px;margin:16px 0;}
+  .super-box .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--super-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px;font-weight:600;}
+  .super-box .k::before{content:'⇄';font-size:13px;}
+  .super-box p{margin:0;color:var(--ink);font-size:14.5px;}
+  .super-box strong{color:var(--super-ink);}
+
+  .timeline{display:flex;flex-direction:column;margin:14px 0;}
+  .tstep{display:grid;grid-template-columns:88px 1fr;gap:14px;padding:10px 0;border-bottom:1px dashed var(--rule);}
+  .tstep:last-child{border-bottom:none;}
+  .tstep .yr{font-family:var(--font-mono);font-weight:600;color:var(--green);font-size:15px;}
+  .tstep .name{font-weight:600;color:var(--ink);margin-bottom:2px;}
+  .tstep p{margin:0;font-size:14px;color:var(--ink-soft);}
+
+  .clusters{display:flex;flex-direction:column;gap:12px;margin:16px 0 4px;}
+  .cluster{border-left:3px solid var(--gold);background:var(--paper-raised);border-radius:0 8px 8px 0;padding:12px 16px;box-shadow:var(--shadow);}
+  .cluster .t{font-family:var(--font-display);font-weight:600;font-size:15.5px;margin-bottom:4px;}
+  .cluster .nums{font-family:var(--font-mono);font-size:12px;color:var(--gold);margin-bottom:5px;display:block;}
+  .cluster p{margin:0;font-size:14px;}
+
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);font-family:var(--font-mono);font-size:11.5px;color:var(--ink-faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  @media (max-width:600px){.page{padding:32px 18px 80px;} .tstep{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="in">
+  <a class="back" href="../index.html#/s/PS/1"><span class="arrow">&larr;</span> Back to PS Chapter 1</a>
+  <span class="kicker">Study guide</span>
+</div></div>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Public Sector Accounting &middot; Standards Index</div>
+    <h1>IPSAS in this course</h1>
+    <p class="dek">Every International Public Sector Accounting Standard the ATSWA Part&nbsp;II syllabus actually treats — the number, what it covers, and exactly which chapter and section deals with it.</p>
+    <div class="cite"><span><b>Issuer:</b> IPSASB (part of IFAC)</span><span><b>Nigeria — cash basis:</b> 1 Jan 2014</span><span><b>Nigeria — accrual basis:</b> 1 Jan 2016</span></div>
+  </header>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">§2.12&nbsp;&middot;&nbsp;</span>The switch-over</div>
+    <h2>Nigeria's own IPSAS timeline</h2>
+    <p class="lede">Individual standards each have their own IPSASB issue date, but the one date that actually gets examined is <strong>when Nigeria itself moved onto them</strong> — and that happened in exactly two steps, on the recommendation of the Federation Accounts Allocation Committee (FAAC).</p>
+
+    <div class="timeline">
+      <div class="tstep"><div class="yr">2014</div><div><div class="name">Cash Basis IPSAS adopted</div><p><em>Financial Reporting Under the Cash Basis of Accounting</em> — the standalone (unnumbered) cash-basis standard — takes effect from 1 January 2014. Covered fully in Chapter 14.</p></div></div>
+      <div class="tstep"><div class="yr">2016</div><div><div class="name">Accrual Basis IPSAS adopted</div><p>Nigeria moves to the full suite of numbered accrual-basis standards from 1 January 2016, using the transitional relief in <strong>IPSAS 33</strong> (Chapter 15) to phase recognition/measurement in over up to three years rather than restating everything at once.</p></div></div>
+    </div>
+
+    <div class="trap">
+      <span class="k">Frequently tested, easy to swap</span>
+      <p>Cash basis = <strong>2014</strong>; accrual basis = <strong>2016</strong>. An exam option often offers both years for both bases, banking on the swap.</p>
+    </div>
+  </section>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">Index&nbsp;&middot;&nbsp;</span>By number</div>
+    <h2>Every standard, in numeric order</h2>
+    <p>Twenty-one standards (plus the unnumbered Cash Basis IPSAS) appear somewhere in this course. Greyed rows are standards a newer one has since <span class="pill super">superseded</span> — still worth knowing, since the study text and older past questions sometimes cite the old number.</p>
+
+    <div class="twrap">
+      <table>
+        <thead><tr><th>No.</th><th>Title / what it covers</th><th>Treated in</th></tr></thead>
+        <tbody>
+          <tr><td class="n">—</td><td><strong>Cash Basis IPSAS</strong> — <em>Financial Reporting Under the Cash Basis of Accounting</em>: the standalone standard behind Nigeria's 2014 switch, requiring a Statement of Cash Receipts and Payments plus notes, and encouraging (not yet requiring) comparison with budget.</td><td class="loc"><a href="../index.html#/s/PS/14">Ch 14</a></td></tr>
+          <tr><td class="n">IPSAS 1</td><td><strong>Presentation of Financial Statements</strong> — the complete-set requirement (statement of position, performance, changes in net assets, cash flows, notes) that every other standard sits underneath.</td><td class="loc"><a href="../index.html#/s/PS/3">Ch 3 §3.2</a></td></tr>
+          <tr><td class="n">IPSAS 2</td><td><strong>Cash Flow Statements</strong> — direct vs indirect method; IPSAS 2 itself recommends the direct method, mirroring IAS 7.</td><td class="loc"><a href="../index.html#/s/PS/3">Ch 3 §3.3&ndash;3.4</a></td></tr>
+          <tr><td class="n">IPSAS 3</td><td><strong>Accounting Policies, Changes in Accounting Estimates and Errors</strong> — when a change is a policy change vs an estimate change vs a prior-period error, and how each is applied (retrospective vs prospective).</td><td class="loc"><a href="../index.html#/s/PS/16">Ch 16 §16.7</a></td></tr>
+          <tr><td class="n">IPSAS 5</td><td><strong>Borrowing Costs</strong> — capitalising interest on qualifying assets under construction. One of the standards a first-time adopter may skip for up to three years under IPSAS 33.</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a></td></tr>
+          <tr><td class="n">IPSAS 12</td><td><strong>Inventories</strong> — measured at the lower of cost and net realisable value (current replacement cost where held for distribution at no charge).</td><td class="loc"><a href="../index.html#/s/PS/11">Ch 11 §11.8</a></td></tr>
+          <tr><td class="n">IPSAS 16</td><td><strong>Investment Property</strong> — land/buildings held for rental income or capital appreciation rather than own use.</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a></td></tr>
+          <tr class="superseded"><td class="n">IPSAS 17</td><td><strong>Property, Plant and Equipment</strong> <span class="pill super">superseded</span> — replaced by IPSAS 45. Still the number the three-year first-time-adoption relief itself refers to, and the one most Nigerian entities lean on hardest (legacy infrastructure with no cost records).</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a></td></tr>
+          <tr><td class="n">IPSAS 19</td><td><strong>Provisions, Contingent Liabilities and Contingent Assets</strong> — recognise a provision only for a present obligation from a past event, probable outflow, reliably estimable.</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a></td></tr>
+          <tr><td class="n">IPSAS 22</td><td><strong>Disclosure of Financial Information About the General Government Sector</strong> — lets a government voluntarily disclose GGS-only figures alongside its whole-of-government accrual statements.</td><td class="loc"><a href="../index.html#/s/PS/16">Ch 16 §16.10</a></td></tr>
+          <tr><td class="n">IPSAS 23</td><td><strong>Revenue from Non-Exchange Transactions (Taxes and Transfers)</strong> — recognition of tax revenue and of transfers (grants) once their own conditions are met; a conditional portion at risk of clawback is carried as a liability until then.</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.4</a></td></tr>
+          <tr><td class="n">IPSAS 24</td><td><strong>Presentation of Budget Information in Financial Statements</strong> — the public sector's own signature requirement: original budget, final budget, and actual, all on a comparable basis, with material differences explained.</td><td class="loc"><a href="../index.html#/s/PS/6">Ch 6 §6.9</a> &middot; <a href="../index.html#/s/PS/19">Ch 19</a></td></tr>
+          <tr class="superseded"><td class="n">IPSAS 25</td><td><strong>Employee Benefits</strong> <span class="pill super">superseded</span> — replaced by IPSAS 39. Covered the same four categories of benefit (short-term, post-employment, other long-term, termination) under an older actuarial model.</td><td class="loc"><a href="../index.html#/s/PS/5">Ch 5</a></td></tr>
+          <tr><td class="n">IPSAS 27</td><td><strong>Agriculture</strong> — biological assets and agricultural produce at the point of harvest, at fair value less costs to sell.</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a></td></tr>
+          <tr><td class="n">IPSAS 31</td><td><strong>Intangible Assets</strong> — identifiable non-monetary assets without physical substance (software, licences, some rights).</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a></td></tr>
+          <tr><td class="n">IPSAS 32</td><td><strong>Service Concession Arrangements: Grantor</strong> — accounting by the government side of a public-private-partnership infrastructure deal (a toll road built and operated by a private partner, say).</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a> &middot; <a href="../index.html#/s/PS/16">Ch 16 §16.9</a></td></tr>
+          <tr><td class="n">IPSAS 33</td><td><strong>First-Time Adoption of Accrual Basis IPSASs</strong> — the whole subject of Chapter 15: the up-to-three-year transitional relief that let Nigeria (and every first adopter) phase in recognition/measurement rather than restate everything on day one.</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15</a> (whole chapter)</td></tr>
+          <tr><td class="n">IPSAS 34&ndash;38</td><td><strong>The consolidation suite</strong> — Separate Financial Statements, Consolidated Financial Statements, Investments in Associates and Joint Ventures, Joint Arrangements, Disclosure of Interests in Other Entities. Cited as a group: interests in controlled entities/associates/joint ventures are one of the items a first-time adopter may exempt for up to three years.</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a></td></tr>
+          <tr><td class="n">IPSAS 39</td><td><strong>Employee Benefits</strong> — replaces IPSAS 25. The four categories (short-term, post-employment, other long-term, termination benefits), and the split between defined-contribution and defined-benefit obligations, sit here.</td><td class="loc"><a href="../index.html#/s/PS/5">Ch 5</a> (whole chapter)</td></tr>
+          <tr><td class="n">IPSAS 41</td><td><strong>Financial Instruments</strong> — recognition, classification and measurement of financial assets/liabilities.</td><td class="loc"><a href="../index.html#/s/PS/15">Ch 15 §15.3</a></td></tr>
+          <tr><td class="n">IPSAS 44</td><td><strong>Non-Current Assets Held for Sale and Discontinued Operations</strong> — the "held for sale" classification IPSAS 45 explicitly carves out of its own PP&amp;E scope.</td><td class="loc"><a href="../index.html#/s/PS/16">Ch 16 §16.9</a></td></tr>
+          <tr><td class="n">IPSAS 45</td><td><strong>Property, Plant, and Equipment</strong> — the current standard, replacing IPSAS 17. Extends explicitly to heritage assets, infrastructure assets and weapons systems, and covers service concession assets once IPSAS 32 has first recognised them.</td><td class="loc"><a href="../index.html#/s/PS/16">Ch 16 §16.9</a></td></tr>
+          <tr><td class="n">"IPSAS 49"</td><td><strong>Retirement Benefit Plans</strong> <span class="pill warn">source error</span> — the study text's own chapter-contents page labels this section "IPSAS 49", but the IPSASB has never issued a standard with that number. The content itself (a retirement plan as its own reporting entity, defined-benefit vs defined-contribution obligations, the actuarial present value of promised benefits) closely mirrors <strong>IAS 26</strong>, the IFRS Foundation's standard for exactly this topic. Treated on the site exactly as printed, with the number flagged.</td><td class="loc"><a href="../index.html#/s/PS/5">Ch 5 §5.8</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="super-box">
+      <span class="k">Two supersessions worth knowing both numbers for</span>
+      <p><strong>IPSAS 17 → IPSAS 45</strong> (Property, Plant and Equipment) and <strong>IPSAS 25 → IPSAS 39</strong> (Employee Benefits). Older past questions and the study text's own transitional-relief wording still cite the retired number; a current question is more likely to use the replacement. Learn the pair, not just one half of it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">Grouped&nbsp;&middot;&nbsp;</span>By theme</div>
+    <h2>How they cluster</h2>
+    <p>The same twenty-one standards, grouped by what they actually govern rather than by number — useful for a "name the IPSAS that deals with X" question where you know the topic but not the number.</p>
+
+    <div class="clusters">
+      <div class="cluster"><span class="nums">IPSAS 1 &middot; 2 &middot; 22 &middot; 24</span><div class="t">Presentation &amp; disclosure</div><p>What a complete set of statements must contain, how the cash flow statement is built, optional general-government-sector disclosure, and the mandatory budget-vs-actual comparison.</p></div>
+      <div class="cluster"><span class="nums">IPSAS 3</span><div class="t">Policies, estimates &amp; errors</div><p>The three-way test — policy change, estimate change, or prior-period error — and the different treatment each gets.</p></div>
+      <div class="cluster"><span class="nums">IPSAS 12 &middot; 16 &middot; 17/45 &middot; 27 &middot; 31 &middot; 32 &middot; 44</span><div class="t">Assets</div><p>Inventories, investment property, PP&amp;E (old and current number), biological assets, intangibles, service-concession assets, and held-for-sale classification.</p></div>
+      <div class="cluster"><span class="nums">IPSAS 5 &middot; 19 &middot; 41</span><div class="t">Liabilities &amp; financial instruments</div><p>Capitalising borrowing costs, recognising provisions, and financial instrument recognition/measurement.</p></div>
+      <div class="cluster"><span class="nums">IPSAS 23</span><div class="t">Revenue</div><p>Non-exchange revenue — taxes and transfers — recognised once their own conditions are actually met.</p></div>
+      <div class="cluster"><span class="nums">IPSAS 25/39 &middot; "IPSAS 49"</span><div class="t">Employee benefits &amp; retirement plans</div><p>The employer's own obligation to staff (old and current number), and — separately — a retirement plan reporting on itself as its own entity.</p></div>
+      <div class="cluster"><span class="nums">IPSAS 33</span><div class="t">Transition</div><p>The rules for moving onto accrual IPSAS in the first place — the whole reason Chapter 15 exists.</p></div>
+      <div class="cluster"><span class="nums">IPSAS 34&ndash;38</span><div class="t">Group accounts</div><p>Separate vs consolidated statements, and how to account for associates, joint ventures and other interests.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Issuer: IPSASB (International Public Sector Accounting Standards Board), part of IFAC &middot; Nigeria adoption dates per FAAC recommendation</span>
+    <span>ATSWA Part II &middot; Public Sector Accounting</span>
+  </footer>
+
+</div>
+</body>
+</html>

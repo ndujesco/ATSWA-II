@@ -134,6 +134,12 @@ var ATSWA = (function () {
       document.body.setAttribute('data-sub', p[2]);
       return VIEWS.paper(p[1], p[2]);
     }
+    if (p[0] === 'revision') {
+      if (!p[1]) return VIEWS.revision();
+      document.body.setAttribute('data-sub', p[1]);
+      if (!p[2]) return VIEWS.revisionSub(p[1]);
+      return VIEWS.revisionList(p[1], p[2]);
+    }
     if (p[0] === 'formulas') return VIEWS.formulas();
     if (p[0] === 'progress') return VIEWS.progress();
     if (p[0] === 'about') return VIEWS.about();
@@ -148,6 +154,7 @@ var ATSWA = (function () {
              '>' + esc(s.name) + '</a>';
     });
     out.push('<a href="#/exams"' + (p[0] === 'exams' ? ' aria-current="page"' : '') + '>Past papers</a>');
+    out.push('<a href="#/revision"' + (p[0] === 'revision' ? ' aria-current="page"' : '') + '>Final Revision</a>');
     out.push('<a href="#/formulas"' + (p[0] === 'formulas' ? ' aria-current="page"' : '') + '>Formulas</a>');
     out.push('<a href="#/progress"' + (p[0] === 'progress' ? ' aria-current="page"' : '') + '>Progress</a>');
     el('tabs').innerHTML = out.join('');
@@ -203,7 +210,17 @@ var ATSWA = (function () {
       '<div class="panel"><h3>Sit a whole paper</h3><p>24 diets, four papers each, three hours on ' +
       'the clock. Section A marks itself; Section B gives you the official solution and the ' +
       'examiner&rsquo;s report once you have written yours.</p></div>' +
-      '</div></div>');
+      '</div>' +
+      '<section class="ghead"><h2>Study guides</h2><p>One topic, everything about it, in one ' +
+      'page — pulled together across chapters, with every past question that touches it.</p>' +
+      '</section>' +
+      '<div class="subs">' + GUIDES.map(function (g) {
+        return '<a class="subcard" href="' + g.href + '">' +
+          '<div class="r1"><span class="code">' + esc(g.tag) + '</span></div>' +
+          '<h2>' + esc(g.title) + '</h2>' +
+          '<div class="sub">' + esc(g.blurb) + '</div></a>';
+      }).join('') + '</div>' +
+      '</div>');
   };
 
   VIEWS.about = function () {

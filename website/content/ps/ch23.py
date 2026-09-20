@@ -183,7 +183,9 @@ CH = {
       '**Report distribution** — the final report goes to the Legislature and the '
       'Accountant-General and is published for public consumption.',
     ]},
-    {'note': 'Two ISAs govern how findings are communicated: **ISA 260** (communication with '
+    {'note': '**ISA** = **International Standards on Auditing** — the numbered standards '
+             'referred to throughout this chapter. Two ISAs govern how findings are '
+             'communicated: **ISA 260** (communication with '
              'those charged with governance — the audit\'s scope/timing, information needed '
              'from them, significant observations, and two-way dialogue) and **ISA 265** '
              '(communicating internal-control deficiencies — where a control is badly '

@@ -96,6 +96,12 @@ CH = {
           'accelerates cash collection; channels resources to budget priorities; minimises '
           'deficits/borrowing within set limits; and improves transparency of all FGN '
           'receipts.'},
+    {'def': {'t': 'Public-Private Partnership (PPP)',
+             'd': 'an arrangement in which the private sector is co-opted into financing '
+                  'socio-economic infrastructure that would otherwise be provided exclusively '
+                  'by government — e.g. toll roads, or the international passport contract '
+                  'referenced in the table below. Government and the private partner share the '
+                  'financing, risk and revenue of the project.'}},
     {'h4': 'Scope: how different MDA categories operate under TSA'},
     {'table': {'align': 'll', 'head': ['MDA category', 'How it operates under TSA'], 'rows': [
       ['Fully budget-funded (e.g. ministries)', 'All collections paid directly into CRF/TSA; '
@@ -497,6 +503,14 @@ CH = {
     'o': ['e-collection', 'e-payment', 'e-invoicing', 'IPPIS', 'ATRRS'],
     'a': 1,
     'w': 'E-payment began in April 2012; e-collection followed in January 2015.',
+    'src': 'Chapter 21.2', 'sec': '21.2'},
+   {'q': 'The acronym PPP, in the context of government expenditure, means',
+    'o': ['Principal Partners Plan', 'Private Public Plan', 'Public-Private Partnership',
+          'Public Practice Partners', 'Perfect Public Partners'],
+    'a': 2,
+    'w': 'A Public-Private Partnership co-opts the private sector into financing '
+         'socio-economic infrastructure otherwise provided exclusively by government, '
+         'sharing financing, risk and revenue.',
     'src': 'Chapter 21.2', 'sec': '21.2'},
    {'q': 'ATRRS is best described as',
     'o': ['the final IT system replacing all manual accounting permanently',

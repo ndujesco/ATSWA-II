@@ -15,6 +15,9 @@ CH = {
  ],
  'secs': [
   {'n': '14.1', 't': 'The required statements', 'b': [
+    {'note': '[Cash vs accrual, every statement side by side →](guides/statements.html) — what '
+             'each statement reports under each basis, the modified-basis combinations, and '
+             'every past exam question on the topic with answers.'},
     {'p': 'The **Cash Basis IPSAS**, *Financial Reporting Under the Cash Basis of Accounting*, '
           'requires an entity to present a Statement of Cash Receipts and Payments together with '
           'accounting policies and explanatory notes, and encourages comparison with the budget. '

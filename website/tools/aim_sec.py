@@ -17,6 +17,8 @@ Writes 'sec' (e.g. "2.6") and 'secConf' onto each question in data/papers.json.
 import importlib.util, json, math, re, sys
 from collections import Counter
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
+from corrections import SEC_PIN
 
 ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / 'website' / 'content'
@@ -72,8 +74,32 @@ def load_chapter(code, n):
     return mod.CH
 
 
+def heading_words(node, acc):
+    """Text from h3/h4 sub-headings inside a section's body. A section that
+    bundles more than one sub-topic under its one top-level title — e.g.
+    ch2's "2.2 Constitutional and legal provisions" holding both "2.2.1 —
+    The 1999 Constitution" and "2.2.2 — The Finance (Control and
+    Management) Act" as h3s — has no way for a query about the second
+    sub-topic to win the section-title boost below, even when it is
+    exactly on-topic, because the words that would earn it ("Finance",
+    "Management", "Act") never appear in the section's own title. Confirmed
+    live: a question naming the Finance (Control and Management) Act was
+    sent to a *different* section purely because that section's own title
+    happened to also contain "Act" and "Federation"."""
+    if isinstance(node, list):
+        for v in node:
+            heading_words(v, acc)
+    elif isinstance(node, dict):
+        for k in ('h3', 'h4'):
+            if isinstance(node.get(k), str):
+                acc.append(node[k])
+        for v in node.values():
+            heading_words(v, acc)
+
+
 def section_index(code, n):
-    """secId -> Counter of stemmed words, for every section of chapter n."""
+    """secId -> (title, bag of stemmed words, sub-heading words), for every
+    section of chapter n."""
     ch = load_chapter(code, n)
     if not ch:
         return {}
@@ -82,7 +108,10 @@ def section_index(code, n):
         words = []
         bag_of(sec.get('t'), words)
         bag_of(sec.get('b'), words)
-        out[sec['n']] = (sec.get('t', ''), Counter(stem(w) for w in tokens(' '.join(words))))
+        heads = []
+        heading_words(sec.get('b'), heads)
+        out[sec['n']] = (sec.get('t', ''), Counter(stem(w) for w in tokens(' '.join(words))),
+                          set(stem(w) for w in tokens(' '.join(heads))))
     return out
 
 
@@ -91,14 +120,14 @@ def score_sections(qwords, secs):
         return []
     N = len(secs)
     df = Counter()
-    for _, (title, bag) in secs.items():
+    for _, bag, _ in secs.values():
         for w in bag:
             df[w] += 1
     idf = {w: math.log(1 + N / d) for w, d in df.items()}
-    lens = {sid: sum(bag.values()) for sid, (t, bag) in secs.items()}
+    lens = {sid: sum(bag.values()) for sid, (t, bag, hw) in secs.items()}
     avg = sum(lens.values()) / max(N, 1) or 1
     out = []
-    for sid, (title, bag) in secs.items():
+    for sid, (title, bag, headw) in secs.items():
         norm = 0.4 + 0.6 * (lens[sid] / avg)
         titlew = set(stem(w) for w in tokens(title))
         s = 0.0
@@ -109,6 +138,8 @@ def score_sections(qwords, secs):
             s += c * idf.get(w, 0) * tf
             if w in titlew:
                 s += c * idf.get(w, 0) * 4.0
+            elif w in headw:
+                s += c * idf.get(w, 0) * 2.5
         out.append((sid, s / norm))
     out.sort(key=lambda kv: -kv[1])
     return out
@@ -174,7 +205,11 @@ def main(codes):
             s['sec'], s['secConf'] = None, None
 
         for q in p['mcq']:
-            if q.get('ch') and q.get('chConf', 0) >= CH_CONF_MIN:
+            pin = SEC_PIN.get((p['diet'], p['subject'], 'mcq', q['n']))
+            if pin:
+                q['sec'], q['secConf'] = pin, 1.0
+                stats['mcq_placed'] += 1
+            elif q.get('ch') and q.get('chConf', 0) >= CH_CONF_MIN:
                 parts = flatten(q['stem'], []) + flatten(q['options'], []) + q.get('pre', [])
                 sec_idx = idx_for(p['subject'], q['ch'])
                 sid, m = assign(parts, sec_idx)
@@ -185,7 +220,11 @@ def main(codes):
                     stats['mcq_unplaced'] += 1
         sol = {s['n']: s for s in p['saq_solutions']}
         for q in p['saq']:
-            if q.get('ch') and q.get('chConf', 0) >= CH_CONF_MIN:
+            pin = SEC_PIN.get((p['diet'], p['subject'], 'saq', q['n']))
+            if pin:
+                q['sec'], q['secConf'] = pin, 1.0
+                stats['saq_placed'] += 1
+            elif q.get('ch') and q.get('chConf', 0) >= CH_CONF_MIN:
                 parts = q['body'] + q.get('pre', []) + (sol[q['n']]['body'] if q['n'] in sol else [])
                 sec_idx = idx_for(p['subject'], q['ch'])
                 sid, m = assign(parts, sec_idx)
@@ -195,7 +234,11 @@ def main(codes):
                 else:
                     stats['saq_unplaced'] += 1
         for s in p['secb_solutions']:
-            if s.get('ch') and s.get('chConf', 0) >= CH_CONF_MIN:
+            pin = SEC_PIN.get((p['diet'], p['subject'], 'secb', s['n']))
+            if pin:
+                s['sec'], s['secConf'] = pin, 1.0
+                stats['secb_placed'] += 1
+            elif s.get('ch') and s.get('chConf', 0) >= CH_CONF_MIN:
                 sec_idx = idx_for(p['subject'], s['ch'])
                 sid, m = assign(s['solution'][:60], sec_idx)
                 if sid and m >= MARGIN_MIN:

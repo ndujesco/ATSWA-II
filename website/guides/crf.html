@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Consolidated Revenue Fund — ATSWA PS Study Guide</title>
+<meta name="description" content="A full guide to Nigeria's Consolidated Revenue Fund: sources of income, what it finances, the warrant system, the Development/Contingency Funds, fund-type classification, and every past ATSWA question on the topic.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E5C42'/%3E%3Cpath d='M7 6h18v6H13v5h11v6H13v6H7z' fill='%23F6F1E6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F6F1E6;
+    --paper-raised:#FBF8F1;
+    --ink:#1B231E;
+    --ink-soft:#4E5951;
+    --ink-faint:#7C877E;
+    --green:#1E5C42;
+    --green-deep:#123B2B;
+    --green-wash:#E7EEE7;
+    --gold:#96742A;
+    --gold-wash:#F1E7CE;
+    --rule:rgba(27,35,30,0.14);
+    --rule-strong:rgba(27,35,30,0.28);
+    --shadow:0 1px 2px rgba(27,35,30,0.06);
+    --warn-bg:#FBEEEA;
+    --warn-ink:#8A3B24;
+    --warn-rule:#D9B7A8;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1613;
+      --paper-raised:#151E19;
+      --ink:#EAE6DA;
+      --ink-soft:#B8C2BA;
+      --ink-faint:#7E8B82;
+      --green:#5FA983;
+      --green-deep:#DCEFE5;
+      --green-wash:#17251E;
+      --gold:#D3AE5C;
+      --gold-wash:#26210F;
+      --rule:rgba(234,230,218,0.14);
+      --rule-strong:rgba(234,230,218,0.26);
+      --shadow:0 1px 2px rgba(0,0,0,0.35);
+      --warn-bg:#241611;
+      --warn-ink:#E3AC93;
+      --warn-rule:#4A2E23;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1613;
+    --paper-raised:#151E19;
+    --ink:#EAE6DA;
+    --ink-soft:#B8C2BA;
+    --ink-faint:#7E8B82;
+    --green:#5FA983;
+    --green-deep:#DCEFE5;
+    --green-wash:#17251E;
+    --gold:#D3AE5C;
+    --gold-wash:#26210F;
+    --rule:rgba(234,230,218,0.14);
+    --rule-strong:rgba(234,230,218,0.26);
+    --shadow:0 1px 2px rgba(0,0,0,0.35);
+    --warn-bg:#241611;
+    --warn-ink:#E3AC93;
+    --warn-rule:#4A2E23;
+  }
+
+  *{box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    margin:0;
+  }
+  ::selection{background:var(--gold-wash);}
+
+  .topbar{
+    position:sticky;top:0;z-index:5;
+    background:var(--paper);border-bottom:1px solid var(--rule);
+  }
+  .topbar .in{
+    max-width:760px;margin:0 auto;padding:12px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  .topbar a.back{
+    font-family:var(--font-mono);font-size:12.5px;color:var(--ink-soft);
+    text-decoration:none;display:flex;align-items:center;gap:6px;
+  }
+  .topbar a.back:hover{color:var(--green);}
+  .topbar a.back .arrow{color:var(--gold);}
+  .topbar .kicker{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);
+    text-transform:uppercase;
+  }
+
+  .page{max-width:760px;margin:0 auto;padding:40px 24px 96px;}
+
+  /* ---- masthead ---- */
+  .masthead{
+    display:flex;flex-direction:column;gap:10px;
+    padding-bottom:28px;margin-bottom:36px;
+    border-bottom:2px solid var(--ink);
+  }
+  .masthead .eyebrow{
+    font-family:var(--font-mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--green);display:flex;align-items:center;gap:10px;
+  }
+  .masthead .eyebrow::before{content:'§';font-size:14px;color:var(--gold);}
+  .masthead h1{
+    font-family:var(--font-display);font-weight:600;
+    font-size:clamp(32px,5.2vw,44px);line-height:1.08;letter-spacing:-.01em;
+    margin:2px 0 0;text-wrap:balance;
+  }
+  .masthead .dek{
+    font-size:16.5px;color:var(--ink-soft);max-width:60ch;margin-top:2px;
+  }
+  .masthead .cite{
+    font-family:var(--font-mono);font-size:12px;color:var(--ink-faint);
+    display:flex;gap:18px;flex-wrap:wrap;margin-top:6px;
+  }
+  .masthead .cite b{color:var(--ink-soft);font-weight:600;}
+
+  /* ---- section spine ---- */
+  section{position:relative;padding-left:26px;margin-bottom:44px;}
+  section::before{
+    content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;
+    background:var(--rule);
+  }
+  section.primary::before{background:var(--green);width:3px;left:-1px;}
+
+  .sec-tag{
+    display:inline-flex;align-items:baseline;gap:7px;
+    font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;
+    color:var(--green);margin-bottom:6px;
+  }
+  .sec-tag .num{
+    background:var(--green-wash);color:var(--green);
+    padding:2px 7px;border-radius:3px;font-weight:600;
+  }
+  h2{
+    font-family:var(--font-display);font-weight:600;font-size:26px;
+    letter-spacing:-.005em;margin:0 0 4px;text-wrap:balance;
+  }
+  h3{
+    font-family:var(--font-display);font-weight:600;font-size:19px;
+    margin:26px 0 10px;color:var(--ink);
+  }
+  h4{
+    font-family:var(--font-mono);font-weight:600;font-size:12px;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);
+    margin:20px 0 9px;
+  }
+  p{margin:0 0 13px;max-width:66ch;}
+  .lede{font-size:15.5px;color:var(--ink-soft);max-width:64ch;}
+
+  strong{font-weight:600;color:var(--ink);}
+  .term{color:var(--green);font-weight:600;}
+  .fig{font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+
+  a{color:var(--green);text-decoration-color:var(--rule-strong);text-underline-offset:2px;}
+
+  /* ---- definition capsule ---- */
+  .defcap{
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:8px;
+    padding:16px 18px;margin:14px 0 18px;box-shadow:var(--shadow);
+  }
+  .defcap .k{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--gold);display:block;margin-bottom:5px;
+  }
+  .defcap p{margin:0;font-size:15px;}
+
+  /* ---- tables: ledger style ---- */
+  .twrap{overflow-x:auto;margin:14px 0 20px;border:1px solid var(--rule);border-radius:8px;}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--paper-raised);}
+  caption{
+    text-align:left;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-faint);padding:10px 14px 0;
+  }
+  th{
+    text-align:left;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-soft);font-weight:600;
+    padding:10px 14px;border-bottom:1px solid var(--rule-strong);background:var(--green-wash);
+  }
+  td{padding:9px 14px;border-bottom:1px solid var(--rule);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td.num, th.num{text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+  tr.total td{font-weight:600;border-top:1px solid var(--rule-strong);}
+  tr.sub td{color:var(--ink-soft);}
+
+  /* ---- lists ---- */
+  ul,ol{margin:0 0 14px;padding-left:22px;}
+  li{margin-bottom:7px;max-width:62ch;}
+  ul.plain{list-style:none;padding-left:0;}
+  ul.plain li{
+    padding-left:18px;position:relative;
+  }
+  ul.plain li::before{
+    content:'—';position:absolute;left:0;color:var(--gold);
+  }
+
+  /* ---- warn / trap box ---- */
+  .trap{
+    background:var(--warn-bg);border:1px solid var(--warn-rule);border-radius:8px;
+    padding:15px 18px;margin:16px 0;
+  }
+  .trap .k{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--warn-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px;font-weight:600;
+  }
+  .trap .k::before{content:'⚠';font-size:12px;}
+  .trap p{margin:0;color:var(--ink);font-size:14.5px;}
+  .trap strong{color:var(--warn-ink);}
+
+  /* ---- companion funds grid ---- */
+  .companions{display:flex;flex-direction:column;gap:14px;margin:16px 0 4px;}
+  .companion{
+    border-left:3px solid var(--gold);background:var(--paper-raised);
+    border-radius:0 8px 8px 0;padding:14px 18px;box-shadow:var(--shadow);
+  }
+  .companion .name{
+    font-family:var(--font-display);font-weight:600;font-size:17px;
+    display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:6px;
+  }
+  .companion .name .basis{
+    font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);font-weight:400;
+    letter-spacing:.03em;
+  }
+  .companion p{margin:0;font-size:14.5px;}
+  .companion p+p{margin-top:8px;}
+
+  /* ---- confusion pair ---- */
+  .confuse{
+    display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch;
+    margin:16px 0;
+  }
+  .confuse .side{
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:8px;
+    padding:14px 16px;
+  }
+  .confuse .side .t{font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--green);margin-bottom:6px;}
+  .confuse .side p{font-size:14px;margin:0;}
+  .confuse .vs{
+    align-self:center;font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);
+    letter-spacing:.1em;
+  }
+  @media (max-width:560px){
+    .confuse{grid-template-columns:1fr;}
+    .confuse .vs{display:none;}
+  }
+
+  /* ---- flow steps (warrants) ---- */
+  .flow{display:flex;flex-direction:column;margin:14px 0;}
+  .flowstep{
+    display:grid;grid-template-columns:26px 1fr;gap:14px;padding:10px 0;
+    border-bottom:1px dashed var(--rule);
+  }
+  .flowstep:last-child{border-bottom:none;}
+  .flowstep .dot{
+    width:26px;height:26px;border-radius:50%;background:var(--green);color:var(--paper-raised);
+    display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);
+    font-size:11px;font-weight:600;margin-top:2px;
+  }
+  .flowstep .name{font-weight:600;color:var(--ink);margin-bottom:2px;}
+  .flowstep p{margin:0;font-size:14px;color:var(--ink-soft);}
+
+  /* ---- worked illustration ---- */
+  .illus-head{
+    display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;
+    margin-bottom:10px;
+  }
+  .illus-head .tag{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  /* ---- closing / key-takeaways ---- */
+  .takeaways{
+    background:var(--green-deep);color:var(--paper);
+    border-radius:10px;padding:22px 24px;margin-top:8px;
+  }
+  :root:not([data-theme="light"]) .takeaways,
+  :root[data-theme="dark"] .takeaways{color:var(--green-deep);background:var(--green-wash);border:1px solid var(--rule-strong);}
+  .takeaways h3{color:inherit;margin-top:0;}
+  .takeaways ol{padding-left:20px;}
+  .takeaways li{margin-bottom:9px;max-width:60ch;}
+  .takeaways strong{color:inherit;}
+
+  /* ---- past questions ---- */
+  .pq-group{margin-bottom:8px;}
+  .pq-group h4{margin-top:28px;}
+  .pq{
+    border-top:1px solid var(--rule);padding:13px 0;
+  }
+  .pq:last-child{padding-bottom:0;}
+  .pq .diets{
+    font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;color:var(--gold);
+    margin-bottom:5px;display:block;
+  }
+  .pq .qtext{font-size:14.5px;margin:0 0 6px;max-width:64ch;}
+  .pq .opts{
+    display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13.5px;color:var(--ink-soft);
+    margin:0;padding:0;list-style:none;
+  }
+  .pq .opts li{margin:0;max-width:none;}
+  .pq .opts li.correct{color:var(--green);font-weight:600;}
+  .pq .opts li.correct::after{content:' ✓';}
+  .pq .answer{
+    font-size:13.5px;margin-top:4px;
+  }
+  .pq .answer .lbl{
+    font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--ink-faint);margin-right:6px;
+  }
+  .pq .answer b{color:var(--green);}
+  .pq-note{
+    font-size:13px;color:var(--ink-faint);font-style:italic;margin:14px 0 0;
+  }
+
+  footer{
+    margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);
+    font-family:var(--font-mono);font-size:11.5px;color:var(--ink-faint);
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  }
+
+  @media (max-width:600px){
+    .page{padding:32px 18px 80px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="in">
+  <a class="back" href="../index.html#/s/PS/9"><span class="arrow">&larr;</span> Back to PS Chapter 9</a>
+  <span class="kicker">Study guide</span>
+</div></div>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Public Sector Accounting &middot; Funds of the Federation</div>
+    <h1>The Consolidated Revenue Fund</h1>
+    <p class="dek">What feeds it, what it pays for, how money legally leaves it, and how it relates to the Development Fund, the Contingency Fund and the Federation Account.</p>
+    <div class="cite"><span><b>Basis:</b> 1999 Constitution s.80(1)</span><span><b>Managed by:</b> Accountant&#8209;General of the Federation</span><span><b>Reported in:</b> Statement of Consolidated Revenue Fund</span></div>
+  </header>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">§80(1)</span>Constitution of the Federal Republic of Nigeria, 1999</div>
+    <h2>What the CRF is</h2>
+    <p class="lede">The Consolidated Revenue Fund (CRF) is the Federal Government's own central account. Every revenue the Federation collects is paid into it, <em>except</em> revenue a specific law has earmarked for another fund.</p>
+
+    <div class="defcap">
+      <span class="k">Definition</span>
+      <p>A self-balancing account into which all revenue of the Federation is paid unless another fund has been established by law to receive it, and out of which no money may be withdrawn except as authorised by an Appropriation Act, a Supplementary Appropriation Act, or a law made under s.81 &mdash; the constitutional basis for the entire warrant system below.</p>
+    </div>
+
+    <div class="trap">
+      <span class="k">The commonest confusion in this whole area</span>
+      <p>The <strong>Federation Account</strong> (s.162) and the <strong>Consolidated Revenue Fund</strong> (s.80) are not the same thing, and examiners lean on this hard.</p>
+    </div>
+
+    <div class="confuse">
+      <div class="side">
+        <div class="t">s.162 &middot; Federation Account</div>
+        <p>The <strong>shared pool</strong>. Centrally-collected revenue lands here first, then splits three ways by the vertical formula &mdash; Federal, State, Local.</p>
+      </div>
+      <div class="vs">feeds&nbsp;&rarr;</div>
+      <div class="side">
+        <div class="t">s.80 &middot; Consolidated Revenue Fund</div>
+        <p>The Federal Government's <strong>own</strong> account. Its Federation Account share lands here, alongside every other Federal revenue.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">In&nbsp;&middot;&nbsp;</span>Sources of income</div>
+    <h2>What feeds the CRF</h2>
+    <p>Eleven categories of receipt, drawn from the study text's own worked illustration of a Federal month:</p>
+
+    <div class="twrap">
+      <table>
+        <thead><tr><th>Source</th><th>Typical items</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Federation Account share</strong></td><td>The Federal Government's portion under the prevailing vertical formula</td></tr>
+          <tr><td><strong>Direct taxes</strong></td><td>PAYE of Armed Forces, Police and Foreign Service personnel</td></tr>
+          <tr><td><strong>Licences &amp; internal revenue</strong></td><td>Arms/ammunition, goldsmith and gold-dealer licences, radio/TV licence fees</td></tr>
+          <tr><td><strong>Mining</strong></td><td>Mining fees, rent of crown lands, royalties on gold, tin, iron ore, coal</td></tr>
+          <tr><td><strong>Fees</strong></td><td>Court fees, court fines, medical fees</td></tr>
+          <tr><td><strong>Earnings &amp; sales</strong></td><td>Sale of inventories, publications, stamps; money-order commission</td></tr>
+          <tr><td><strong>Rent of government property</strong></td><td>Government quarters, land and buildings</td></tr>
+          <tr><td><strong>Interest &amp; loan repayments</strong></td><td>On loans the Federal Government made to individuals, corporations, government companies and States</td></tr>
+          <tr><td><strong>Armed Forces sales</strong></td><td>Disposal of old vehicles and stores</td></tr>
+          <tr><td><strong>Reimbursements</strong></td><td>Refunds for services Federal officers rendered to States, LGs, statutory bodies &mdash; audit fees, overpayment refunds</td></tr>
+          <tr><td><strong>Miscellaneous</strong></td><td>Overpayments refunded, lapsed deposits</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="trap">
+      <span class="k">Also feeds in, on top of ordinary revenue</span>
+      <p>Under the Fiscal Responsibility Act 2007, scheduled government-owned corporations must remit <strong>80% of their operating surplus</strong> to the CRF, computed on the Commission's own template.</p>
+    </div>
+  </section>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">Out&nbsp;&middot;&nbsp;</span>Charges against the fund</div>
+    <h2>What the CRF finances</h2>
+    <p>Every Naira leaving the CRF falls into one of three groups &mdash; and the second group is the one worth memorising by name, since it is charged <strong>directly</strong>, outside the annual appropriation process entirely.</p>
+
+    <h4>1 &middot; Recurrent expenditure</h4>
+    <p>Every recurrent head in the approved annual estimates &mdash; personnel cost, overhead cost, debt service &mdash; released through the ordinary warrant system.</p>
+
+    <h4>2 &middot; Statutory (first-charge) officers &mdash; no appropriation needed</h4>
+    <p>Salaries and consolidated allowances that are a <strong>direct charge</strong> on the CRF, protected from the ordinary budget process to protect the office-holder's independence:</p>
+    <ul class="plain">
+      <li>The President; Justices of the Court of Appeal; the Chief Judge and Justices of the Federal High Court and the Supreme Court</li>
+      <li>The Auditor-General for the Federation</li>
+      <li>The Independent National Electoral Commission (INEC)</li>
+      <li>The Police Service Commission &middot; Public Service Commission &middot; Public Complaints Commission</li>
+      <li>The Nigerian Law Reform Commission</li>
+    </ul>
+    <div class="trap">
+      <span class="k">Why it matters</span>
+      <p>The Auditor-General audits the very officers who control appropriation &mdash; so his own salary is deliberately placed <strong>beyond their reach</strong>, charged directly on the CRF under s.84(3), not subject to the annual vote.</p>
+    </div>
+
+    <h4>3 &middot; Pensions and gratuities</h4>
+    <p>Of statutory and non-statutory officers, including the Armed Forces.</p>
+  </section>
+
+  <section class="primary">
+    <div class="sec-tag"><span class="num">§82&nbsp;&middot;&nbsp;</span>How money legally leaves</div>
+    <h2>Getting cash out: the warrant system</h2>
+    <p>An Appropriation Act is a <em>legal authority</em> to spend &mdash; it does not itself move cash. A <strong class="term">warrant</strong>, issued by the Minister of Finance, is what actually releases funds from the CRF to an officer controlling a vote. Every warrant is issued in duplicate: the original to the Accountant-General, the copy to the Auditor-General, and notice is gazetted.</p>
+
+    <div class="flow">
+      <div class="flowstep"><div class="dot">1</div><div><div class="name">Provisional General Warrant (PGW)</div><p>Issued <em>before</em> the Appropriation Act, under s.82 &mdash; keeps essential services running on last year's scale, for a maximum of <strong>six months</strong> or until the Act takes effect, whichever comes first.</p></div></div>
+      <div class="flowstep"><div class="dot">2</div><div><div class="name">Annual General Warrant (AGW)</div><p>Issued <em>after</em> the Act &mdash; the main release for personal emoluments and services in the approved budget.</p></div></div>
+      <div class="flowstep"><div class="dot">3</div><div><div class="name">Supplementary General Warrant (SGW)</div><p>For additional emoluments/services provided for in the approved supplementary estimates.</p></div></div>
+      <div class="flowstep"><div class="dot">4</div><div><div class="name">Reserve Expenditure Warrant (REW)</div><p>Releases items the Minister deliberately withheld from the AGW/SGW for special control.</p></div></div>
+      <div class="flowstep"><div class="dot">5</div><div><div class="name">Virement Warrant</div><p>Moves savings between sub-heads of the <em>same</em> head. Cannot create a new sub-head or raise the total appropriated &mdash; that needs a further Act.</p></div></div>
+      <div class="flowstep"><div class="dot">6</div><div><div class="name">Supplementary (Contingencies) Warrant</div><p>For urgent needs that cannot wait for a Supplementary Appropriation Act. First a Contingencies Fund Warrant moves money <em>into</em> the CRF from the Contingency Fund; only then is expenditure authorised against the relevant head.</p></div></div>
+    </div>
+
+    <p style="margin-top:16px">Capital expenditure never draws on the CRF at all &mdash; it is released separately, by a <strong>Development Fund General Warrant</strong>, against the Development Fund below.</p>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">§14.1&nbsp;&middot;&nbsp;</span>Reporting</div>
+    <h3>How the CRF shows up in the accounts</h3>
+    <p>The <strong>Statement of Consolidated Revenue Fund</strong> is one of the statutory statements required under Cash Basis IPSAS: opening balance, revenue for the period, recurrent expenditure, transfers out (to the Development Fund, to the Contingency Fund), and the closing balance carried forward. Its capital counterpart is the <strong>Statement of Capital Development Fund</strong>.</p>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">Related&nbsp;&middot;&nbsp;</span>The other three funds</div>
+    <h2>Where CRF money goes next</h2>
+    <p>Three funds sit alongside the CRF in the constitutional scheme. Two of them are fed <em>from</em> it.</p>
+
+    <div class="companions">
+      <div class="companion">
+        <div class="name">Development Fund <span class="basis">s.81(2) &middot; also Finance (Control &amp; Management) Act 1958 s.25</span></div>
+        <p><strong>Finances:</strong> capital development &mdash; roads, bridges, dams, barracks, staff housing, hospitals, vehicles; loans to State Governments for their own development; external financial obligations.</p>
+        <p><strong>Fed by:</strong> a yearly contribution from the CRF, external grants, external loans (e.g. IMF), and internal borrowing &mdash; development stocks (long-term), Treasury Certificates (2-year), Treasury Bills (91-day).</p>
+      </div>
+      <div class="companion">
+        <div class="name">Contingency Fund <span class="basis">s.83</span></div>
+        <p><strong>Finances:</strong> unforeseen, urgent expenditure &mdash; a natural disaster, say &mdash; where virement is impossible and the need cannot wait for a Supplementary Appropriation Act.</p>
+        <p><strong>Fed by:</strong> the CRF. Every advance is temporary: it is replaced by a supplementary estimate as soon as one can be passed, restoring the fund.</p>
+      </div>
+      <div class="companion">
+        <div class="name">Federation Account <span class="basis">s.162</span></div>
+        <p><strong>Finances:</strong> nothing directly &mdash; it is a distribution pool, not a spending fund. It exists only to split centrally-collected revenue Federal / State / Local by the vertical formula before each tier's share moves on to its own CRF-equivalent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">§9.5&nbsp;&middot;&nbsp;</span>The same funds, generic names</div>
+    <h2>Where the "types of fund" list fits in</h2>
+    <p>The Finance (Control and Management) Act 1958 also classifies funds by <em>generic accounting type</em>, independently of the Constitution's own naming. Two of these generic types are not new funds at all &mdash; they are <strong>the same CRF and Development Fund above, under a different name</strong>. This is the pairing worth not confusing them for separate things:</p>
+
+    <div class="confuse">
+      <div class="side">
+        <div class="t">"General fund"</div>
+        <p>Generic name, s.5 of the Act, for general administration and services. <strong>This is the Consolidated Revenue Fund</strong> &mdash; not a fifth fund.</p>
+      </div>
+      <div class="vs">=&nbsp;is&nbsp;the</div>
+      <div class="side">
+        <div class="t">Consolidated Revenue Fund</div>
+        <p>The one and only fund this whole document is about.</p>
+      </div>
+    </div>
+    <div class="confuse">
+      <div class="side">
+        <div class="t">"Capital project fund"</div>
+        <p>Generic name, s.18 of the Act, for acquiring capital assets/facilities. <strong>This is the Development Fund</strong> &mdash; also seen written as the "Capital Development Fund" in the financial-statements literature.</p>
+      </div>
+      <div class="vs">=&nbsp;is&nbsp;the</div>
+      <div class="side">
+        <div class="t">Development Fund</div>
+        <p>Covered above &mdash; capital expenditure, fed yearly from the CRF.</p>
+      </div>
+    </div>
+
+    <p>The Act's full classification runs to eight generic types in total &mdash; the remaining six name funds that sit <em>outside</em> the CRF/Development Fund pair entirely, each for its own distinct purpose:</p>
+    <div class="twrap">
+      <table>
+        <thead><tr><th>Generic type</th><th>Purpose</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Special fund</strong></td><td>Created for one specific, named purpose</td><td>South African Relief Fund; African Staff Housing Scheme Fund</td></tr>
+          <tr><td><strong>Trust fund</strong></td><td>Held as trustee; spent only per the trust deed</td><td>Petroleum Technology Development Fund (PTDF); Research Foundation Fund</td></tr>
+          <tr><td><strong>Contingency fund</strong></td><td>Uncertain amount and timing of need</td><td>Natural-disaster relief (s.15 &mdash; the same Contingency Fund as above)</td></tr>
+          <tr><td><strong>Inter-governmental service fund</strong></td><td>Provides a service <em>to other funds</em></td><td>Government Clearance Fund, netting Federal/State transactions</td></tr>
+          <tr><td><strong>Revolving (working capital) fund</strong></td><td>Finances a service one unit provides to others</td><td>A Revolving Loan Fund</td></tr>
+          <tr><td><strong>Self-liquidating fund</strong></td><td>Periodic transfers in; balance moves to a current fund</td><td>A Deposit Fund holding third-party money</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>One level up, the same Act also groups every fund &mdash; generic or constitutional &mdash; into three broader families by <em>where the resources come from</em>:</p>
+    <ul class="plain">
+      <li><strong>Government funds</strong> &mdash; from general tax/revenue powers (the CRF and Development Fund both live here)</li>
+      <li><strong>Proprietary funds</strong> &mdash; from the business activities of parastatals and government agencies</li>
+      <li><strong>Fiduciary funds</strong> &mdash; held as custodian/trustee (PTDF, Trust and Agency Fund, Pension Trust Fund)</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">§9.9&nbsp;&middot;&nbsp;</span>Ghana's parallel system</div>
+    <h2>Ghana's own funds &mdash; and its own confusion pair</h2>
+    <p>The study text also covers Ghana's (unitary, not federal) system side by side with Nigeria's. It has its own version of nearly everything above, under its own names &mdash; and its own, very deliberate trap: two funds whose names differ by a <strong>single inserted word</strong>.</p>
+
+    <div class="defcap">
+      <span class="k">The umbrella term</span>
+      <p><strong>"Public funds"</strong> (Article 175 of Ghana's Constitution; s.5 of the Financial Administration Act) is the generic term for <em>all</em> public money together &mdash; the Consolidated Fund, the Contingency Fund, and every other fund Parliament establishes by its own Act: the Road Fund (1997), GETFund (2000), the District Assemblies Common Fund (1993), the Ghana Investment Fund (2002), the Venture Capital Trust Fund (2004), the Business Assistance Fund, the HIPC Fund, and the Social Investment Fund. Every fund on this page is a <em>subset</em> of "public funds" &mdash; never a rival to it.</p>
+    </div>
+
+    <div class="trap">
+      <span class="k">The pair that looks like a typo but isn't</span>
+      <p>The <strong>Contingency Fund</strong> and the <strong>Contingency Reserve Fund</strong> are two genuinely different things, not the same fund written two ways. This is very likely the pairing worth double-checking if a fund-types list ever looked to you like "one name, and the same name with an extra word."</p>
+    </div>
+
+    <div class="confuse">
+      <div class="side">
+        <div class="t">Contingency Fund</div>
+        <p>The <strong>constitutional</strong> fund (Article 177). Parliament votes money into it; every advance out of it is later replaced by a <strong>supplementary estimate</strong> presented to Parliament. Sits under Parliament's Finance Committee, not the Executive.</p>
+      </div>
+      <div class="vs">not&nbsp;the&nbsp;same</div>
+      <div class="side">
+        <div class="t">Contingency <em>Reserve</em> Fund</div>
+        <p>A slice of the <strong>Executive's own already-approved budget</strong>, set aside internally (a fixed % of votes/estimates) as a first line of relief. No Parliamentary supplementary estimate is involved at all &mdash; it is entirely within the Executive's own control.</p>
+      </div>
+    </div>
+
+    <p>The rest of Ghana's named funds, several of which are the exact same generic <em>type</em> as one of Nigeria's eight (just with Ghanaian examples):</p>
+    <div class="twrap">
+      <table>
+        <thead><tr><th>Fund</th><th>What it is</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Consolidated Fund</strong></td><td>Ghana's CRF-equivalent &mdash; all central government money except what is legally payable into another named fund, or legally retained by the department/agency that collected it</td></tr>
+          <tr><td><strong>District Assemblies' Common Fund (DACF)</strong></td><td>At least <strong>5%</strong> of Ghana's total annual revenue, paid quarterly to districts for development projects; overseen by a DACF Administrator — also called the <strong>Local Government Fund</strong></td></tr>
+          <tr><td><strong>National loans fund</strong> / <strong>Debt service (sinking) fund</strong></td><td>Receives contracted loans and services their principal/interest — an alternative to holding loans inside the Consolidated Fund itself</td></tr>
+          <tr><td><strong>Trust and Agency Fund</strong></td><td>Money government holds as trustee/agent for another body — e.g. peacekeeping rewards for the armed forces (Nigeria's "Trust fund" type, same idea)</td></tr>
+          <tr><td><strong>Counterpart fund</strong></td><td>Supports a foreign-donor-financed project, matched with government's own contribution</td></tr>
+          <tr><td><strong>Intra-governmental service fund</strong></td><td>One unit supplies a service (e.g. stationery) to other departments (Nigeria's "Inter-governmental service fund" type, same idea)</td></tr>
+          <tr><td><strong>Revolving (Working Capital) fund</strong></td><td>What it finances generates income that is paid back in to fund the next cycle — e.g. Ghana Education Service textbook sales</td></tr>
+          <tr><td><strong>Asset renewal fund</strong></td><td>Replaces local-government equipment — harvesters, tractors, bulldozers</td></tr>
+          <tr><td><strong>Stabilisation fund</strong></td><td>Also called the <strong>Revenue Fund</strong> — set aside against a future fall in revenue</td></tr>
+          <tr><td><strong>Special fund</strong></td><td>For one named purpose — Education Fund, National Housing Fund, SMEF, Agricultural Development Fund (Nigeria's "Special fund" type, same idea)</td></tr>
+          <tr><td><strong>Self-liquidating fund</strong></td><td>Balance left after periodic transfers moves to a current fund — e.g. a Deposit Fund (identical to Nigeria's type of the same name)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="trap">
+      <span class="k">Two countries, two systems &mdash; don't blend them</span>
+      <p>Nigeria and Ghana each have their <em>own</em> Contingency Fund, their own CRF-equivalent, and their own fund-type classification. They rhyme deliberately (the study text teaches them side by side), but an exam question naming a specific section number or a specific % figure is always asking about <strong>one</strong> country's system — check which one before answering.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">Worked&nbsp;&middot;&nbsp;</span>Putting it together</div>
+    <h2>A month in the life of the CRF</h2>
+    <p>Adapted from the study text's own illustration. Vertical formula: Federal 52.68% &middot; State 26.72% &middot; Local 20.60%.</p>
+
+    <div class="illus-head"><span class="tag">Step 1</span></div>
+    <div class="twrap">
+      <table>
+        <caption>Federation Account for the month</caption>
+        <thead><tr><th>Item</th><th class="num">&#8358;</th></tr></thead>
+        <tbody>
+          <tr><td>Import duties</td><td class="num fig">400,000</td></tr>
+          <tr><td>Export duties</td><td class="num fig">300,000</td></tr>
+          <tr><td>Excise duties</td><td class="num fig">200,000</td></tr>
+          <tr><td>Petroleum profits tax</td><td class="num fig">80,000,000</td></tr>
+          <tr><td>Companies income tax</td><td class="num fig">71,000,000</td></tr>
+          <tr class="total"><td>Total income</td><td class="num fig">151,900,000</td></tr>
+          <tr class="sub"><td>&rarr; Federal Government, 52.68%</td><td class="num fig">80,020,920</td></tr>
+          <tr class="sub"><td>&rarr; State Governments, 26.72%</td><td class="num fig">40,587,680</td></tr>
+          <tr class="sub"><td>&rarr; Local Governments, 20.60%</td><td class="num fig">31,291,400</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="illus-head" style="margin-top:22px"><span class="tag">Step 2 &mdash; the Federal share now enters the CRF</span></div>
+    <div class="twrap">
+      <table>
+        <caption>Consolidated Revenue Fund for the month</caption>
+        <thead><tr><th>Item</th><th class="num">&#8358;</th></tr></thead>
+        <tbody>
+          <tr><td>PAYE &mdash; Armed Forces</td><td class="num fig">400,000</td></tr>
+          <tr><td>PAYE &mdash; Police</td><td class="num fig">30,000</td></tr>
+          <tr><td>Dividends, FGN investments</td><td class="num fig">120,000</td></tr>
+          <tr><td>Share from Federation Account</td><td class="num fig">80,020,920</td></tr>
+          <tr class="total"><td>Total income</td><td class="num fig">80,570,920</td></tr>
+          <tr><td>Less: remuneration of statutory officers</td><td class="num fig">(13,800,000)</td></tr>
+          <tr><td>Less: recurrent expenditure</td><td class="num fig">(1,500,000)</td></tr>
+          <tr><td>Less: transfer to Development Fund</td><td class="num fig">(2,500,000)</td></tr>
+          <tr><td>Less: transfer to Contingency Fund</td><td class="num fig">(20,000)</td></tr>
+          <tr class="total"><td>Balance carried forward</td><td class="num fig">62,750,920</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-tag"><span class="num">24 diets&nbsp;&middot;&nbsp;</span>Every past question on this topic</div>
+    <h2>Past questions on the fund system</h2>
+    <p class="lede">Every ATSWA Part&nbsp;II past question (March 2014 &ndash; March 2026) that tests the CRF, the Federation Account, the Development/Contingency Funds, or the fund-type classification &mdash; pulled together in one place, grouped by what each one is really asking, with the examiner's own answer. Where the same question was repeated almost word-for-word across diets, the diets are listed together rather than the question printed twice.</p>
+
+    <div class="pq-group">
+      <h4>A &middot; Establishing the funds &mdash; which section, which fund</h4>
+
+      <div class="pq"><span class="diets">2014-09</span>
+        <p class="qtext">Section 80(1) of the 1999 Constitution requires that all revenues should be paid into the CRF, <strong>except</strong>:</p>
+        <ul class="opts"><li>Royalties from mining</li><li>Licences and internal revenue</li><li>Direct taxes</li><li>Indirect taxes</li><li class="correct">Armed Forces taxes</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2015-09</span>
+        <p class="qtext">Specific areas of the 1999 Constitution which deal particularly with Public Sector Accounting include all of the following <strong>except</strong>:</p>
+        <ul class="opts"><li>Creation of the Contingency Fund</li><li>Declaration of assets/liabilities by Ministers</li><li>Audit of public accounts</li><li>NASS power to investigate and procure evidence</li><li class="correct">Investigation of Financial Crimes/Advance Fee Fraud cases</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2025-09</span>
+        <p class="qtext">Which is NOT a type of Fund?</p>
+        <ul class="opts"><li>General fund</li><li>Capital project fund</li><li>Special fund</li><li>Contingency fund</li><li class="correct">Government fund</li></ul>
+        <p class="answer"><span class="lbl">Why</span>"Government fund" is one of the three broad <em>families</em> (with Proprietary and Fiduciary) that the eight named types sit inside &mdash; it is not itself one of the eight.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2025-09</span>
+        <p class="qtext">The Act that governs the management and operation of government funds, and regulates the accounting system and books of account, is the:</p>
+        <ul class="opts"><li>Financial Reporting Council Act 2011</li><li>Money Laundering (Prohibition) Act</li><li>Pension Reform Act 2014</li><li class="correct">Finance (Control and Management) Act 1958, Cap. F.26 LFN 2004</li><li>Code of Conduct Bureau and Tribunal Act</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2019-09</span>
+        <p class="qtext">The second schedule of the Finance (Control and Management) Act 1958 stipulates that the money set aside for capital projects/facilities is the &hellip;</p>
+        <p class="answer"><b>Development Fund</b></p>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>B &middot; Sources of Federation Account &amp; CRF income</h4>
+
+      <div class="pq"><span class="diets">2016-09 &middot; 2024-03</span>
+        <p class="qtext">The following are sources of revenue for the Federation Account, <strong>except</strong>:</p>
+        <ul class="opts"><li>Petroleum Profit Tax</li><li>Company Income Tax</li><li>Royalty on Oil</li><li class="correct">Rent on government property</li><li>Excise Duties</li></ul>
+        <p class="answer"><span class="lbl">Why</span>Rent on government property is a <em>CRF</em> receipt, not a Federation Account one &mdash; the classic trap this pair of questions is built on.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2022-09</span>
+        <p class="qtext">Which of the following is a SOURCE of revenue into the Federation Account?</p>
+        <ul class="opts"><li class="correct">Petroleum Profit Taxes (PPT)</li><li>Rent of government properties</li><li>Arms selling licence fees</li><li>Reimbursements</li><li>Court fees</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2026-03</span>
+        <p class="qtext">Which taxable/non-taxable revenue is NOT a source of federation accounts?</p>
+        <ul class="opts"><li class="correct">PAYE of Armed Forces personnel</li><li>Royalties from oil field or well</li><li>Customs and excise duties</li><li>Companies' income tax</li><li>Stamp duties</li></ul>
+        <p class="answer"><span class="lbl">Why</span>Armed Forces PAYE is a direct <em>CRF</em> receipt (see the sources table above), never routed through the Federation Account.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2023-09 &middot; 2026-03</span>
+        <p class="qtext">Which of the following is NOT a source of government revenue?</p>
+        <ul class="opts"><li>Statutory Allocation</li><li class="correct">Consolidated Revenue Fund (CRF) charges &mdash; Pensions and Gratuities</li><li>Aid &amp; Grants</li><li>Capital Receipts</li><li>Value Added Tax</li></ul>
+        <p class="answer"><span class="lbl">Why</span>Pensions/gratuities are an <em>outflow</em> (a charge) from the CRF, not a revenue source into it.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2018-03 &middot; 2021-03</span>
+        <p class="qtext">Into what account are the proceeds of the PAYE of the Armed Forces, Foreign Service officers and FCT residents paid?</p>
+        <ul class="opts"><li>Contingency Fund Account</li><li class="correct">Consolidated Revenue Fund Account</li><li>Development Fund Account</li><li>Special Fund Account</li><li>Federation Account</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2021-03</span>
+        <p class="qtext">List FOUR examples of Fees and Fines under the Consolidated Revenue Fund.</p>
+        <p class="answer"><b>Court fees &middot; court fines &middot; medical fees</b> (and any other prescribed fee) &mdash; see the sources table above.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2020-03</span>
+        <p class="qtext">List TEN sources of revenue payable into the Consolidated Revenue Fund. <span style="color:var(--ink-faint)">(Section B, 10 marks)</span></p>
+        <p class="answer"><span class="lbl">Answer</span>The eleven-row sources table at the top of this document <em>is</em> the model answer to this exact question &mdash; any ten of those rows score full marks.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2023-09</span>
+        <p class="qtext">(a) Briefly explain "Consolidated Revenue Fund" (CRF). (b) List FOUR major sources of revenue to the CRF. <span style="color:var(--ink-faint)">(Section B)</span></p>
+      </div>
+
+      <div class="pq"><span class="diets">2023-09</span>
+        <p class="qtext">The name of the account under the Constitution established for Investment Receipts is &hellip;</p>
+        <p class="answer"><b>Consolidated Revenue Fund</b></p>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>C &middot; Charges (outflows) against the CRF</h4>
+
+      <div class="pq"><span class="diets">2014-03</span>
+        <p class="qtext">Under s.84 of the 1999 Constitution, which officer's remuneration is a direct charge on the CRF?</p>
+        <ul class="opts"><li>Chief Justice of Nigeria</li><li>President</li><li class="correct">Inspector-General of Police</li><li>President and Judge of the Customary Court of Appeal</li><li>Auditor-General for the Federation</li></ul>
+        <p class="answer"><span class="lbl">Note</span>The examiner's own key names the Inspector-General here; the study text's own statutory-officers list (reproduced earlier in this document) is the fuller, more reliable list to learn from.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2022-03</span>
+        <p class="qtext">Which constitutional provision does NOT insulate the Auditor-General from being compromised?</p>
+        <ul class="opts"><li>Not subject to direction/control of any other authority</li><li>Cannot be removed before retiring age</li><li>Remuneration drawn on the CRF</li><li>Salary/conditions of service cannot be altered to his detriment</li><li class="correct">Responsible for preparing the financial statements</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2015-09</span>
+        <p class="qtext">The remuneration of the Auditor-General for the Federation shall be drawn from the &hellip; Fund.</p>
+        <p class="answer"><b>Consolidated Revenue Fund</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2017-03</span>
+        <p class="qtext">The Federal Government's contributions to the retirement benefits of public-service employees are charged on the &hellip;</p>
+        <p class="answer"><b>Consolidated Revenue Fund</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2024-09</span>
+        <p class="qtext">Which of the following is a charge from the Consolidated Revenue Fund?</p>
+        <ul class="opts"><li>External Capital Grants</li><li>Internally Generated Revenue</li><li>Direct Taxes</li><li class="correct">Salaries and consolidated allowances of the Chief Justice and Justices of the Supreme Court</li><li>VAT payment</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2025-09</span>
+        <p class="qtext">The &hellip; is the public fund used for the payment of statutory officers' personnel cost and other direct charges.</p>
+        <p class="answer"><b>Consolidated Revenue Fund charges</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2026-03</span>
+        <p class="qtext">Which of the following is NOT an outflow from the CRF?</p>
+        <ul class="opts"><li>Transfer to Contingency Fund</li><li>Consolidated Revenue Fund charges</li><li>Non-recurrent expenditure</li><li>Transfer to Development Fund</li><li class="correct">Redemption of Treasury Bills</li></ul>
+        <p class="answer"><span class="lbl">Why</span>Treasury Bill redemption is a Development Fund financing transaction, not a CRF outflow.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2019-03</span>
+        <p class="qtext">In the Allocation of Revenue (Federation Account) Act, "Investments" in general does NOT include investment:</p>
+        <ul class="opts"><li>Forming part of the CRF</li><li>Held in respect of the Public Fund of the Federation</li><li>Held in respect of the Contingency Fund</li><li>Held in respect of the Development Fund</li><li class="correct">Held by public offer on a stock exchange</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2017-09</span>
+        <p class="qtext">Expense items such as wages/salaries, defence and internal security are likely to be classified as &hellip; expenditure.</p>
+        <ul class="opts"><li class="correct">Administration</li><li>Economic services</li><li>Social and community services</li><li>Committed expenditure</li><li>Consolidated Revenue Fund</li></ul>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>D &middot; The Contingency Fund</h4>
+
+      <div class="pq"><span class="diets">2017-03</span>
+        <p class="qtext">In which of the following situations should the Contingency Fund NOT be used? <span style="color:var(--ink-faint)">(see this document's Contingency Fund entry for the test to apply)</span></p>
+      </div>
+
+      <div class="pq"><span class="diets">2018-03</span>
+        <p class="qtext">The Contingency Fund derives its inflow from the &hellip;</p>
+        <p class="answer"><b>Consolidated Revenue Fund (CRF)</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2020-09</span>
+        <p class="qtext">The specific provisions of Sections 83 and 162 of the 1999 Constitution are &hellip; and &hellip; respectively.</p>
+        <p class="answer"><b>Contingencies Fund; Federation Accounts</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2022-03</span>
+        <p class="qtext">The public fund set aside to mitigate unforeseen circumstances such as Ebola or COVID-19 is the &hellip;</p>
+        <p class="answer"><b>Contingency Fund</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2024-09</span>
+        <p class="qtext">The public fund provided for unbudgeted expenditure is called:</p>
+        <ul class="opts"><li>Contingency Reserve Fund</li><li class="correct">Contingency Fund</li><li>Capital Project Fund</li><li>Trust and Agency Fund</li><li>General Fund</li></ul>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>E &middot; The Development / Capital Development Fund</h4>
+
+      <div class="pq"><span class="diets">2018-03</span>
+        <p class="qtext">The fund set aside by government to support projects financed by foreign donation is:</p>
+        <ul class="opts"><li>Revolving Fund</li><li>Intra-Governmental Service Fund</li><li>Debt Service Fund</li><li class="correct">Counterpart Fund</li><li>Capital Project Fund</li></ul>
+        <p class="answer"><span class="lbl">Note</span>"Counterpart Fund" (government's own matching contribution alongside a foreign donor) is a specific term the site's fund-types list doesn't separately carry &mdash; worth noting alongside Special Fund, which is the closer generic category.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2019-09</span>
+        <p class="qtext">The instrument used to re-vote capital expenditure that had lapsed over the years is the Development Fund &hellip;</p>
+        <ul class="opts"><li>Special Warrant</li><li>General Warrant</li><li class="correct">Supplementary Warrant</li><li>Reserve Expenditure Warrant</li><li>Virement Warrant</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2018-09</span>
+        <p class="qtext">The four major statements newly adopted by Federal/State/Local Governments in Nigeria are all of the following <strong>except</strong>:</p>
+        <ul class="opts"><li>Cash flow statement</li><li>Statement of Capital Development Fund</li><li>Statement of Assets and Liabilities</li><li class="correct">Statement of cash and bank balances</li><li>Statement of Consolidated Revenue Fund</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2022-03</span>
+        <p class="qtext">The Accountant-General prepares and presents Financial Statements to the relevant authorities. Which pairing is correct?</p>
+        <ul class="opts"><li>Statement 1: Cashflow</li><li>Statement 2: Assets and Liabilities</li><li>Statement 3: Consolidated Revenue Fund</li><li>Statement 4: Development Fund</li><li class="correct">Statement 5: Public Debt and Personnel Cost</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2014-09</span>
+        <p class="qtext">Statement 3 of the Federal Government of Nigeria's financial statements is a statement of:</p>
+        <ul class="opts"><li>Assets and Liabilities</li><li>Cash flows</li><li>Responsibility for the Financial Statements</li><li class="correct">Consolidated Revenue Fund</li><li>Capital Development Fund</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2021-03</span>
+        <p class="qtext">"Statement No. 2, Assets and Liabilities" comprises all of the following, <strong>except</strong>:</p>
+        <ul class="opts"><li>Consolidated Revenue Fund balance</li><li>Pension accounts with the Central Bank of Nigeria</li><li>Imprest</li><li>Advances</li><li class="correct">Police Reward Funds</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2021-09</span>
+        <p class="qtext">Which of the following is NOT a liability in "Statement No. 2"?</p>
+        <ul class="opts"><li>Development funds</li><li>External Loans: FGN only</li><li>Loan stock</li><li class="correct">Grant-in-aid</li><li>Internal loan</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2023-03</span>
+        <p class="qtext">The statement which shows funds transferred from the CRF and other borrowings for capital projects is the &hellip;</p>
+        <p class="answer"><b>Statement of Capital Development / Development Fund</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2017-03</span>
+        <p class="qtext">"Capital Development Fund is a very important fund for every country's public expenditure. It provides facilities for industrial development and improved &hellip;" <span style="color:var(--ink-faint)">(Section B essay)</span></p>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>F &middot; FAAC and the Federation Account distribution mechanics</h4>
+
+      <div class="pq"><span class="diets">2017-09 &middot; 2022-03</span>
+        <p class="qtext">The Committee set up under Section 162(6) of the Constitution to administer/distribute the Federation Account is the &hellip;</p>
+        <p class="answer"><b>Federation Accounts Allocation Committee (FAAC)</b> &mdash; also called the Joint Accounts Allocation Committee in one diet's answer key.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2021-09 &middot; 2023-03</span>
+        <p class="qtext">FAAC meetings are normally divided into two sessions: &hellip; and &hellip;</p>
+        <p class="answer"><b>Technical Session and Plenary Session</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2021-09 &middot; 2024-09</span>
+        <p class="qtext">Which of the following is NOT a member of the FAAC plenary section?</p>
+        <ul class="opts"><li>Hon. Minister of Finance</li><li>State Commissioner of Finance</li><li>Accountant-General of the Federation</li><li>State Accountants-General</li><li class="correct">Auditor-General for the Federation</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2021-09</span>
+        <p class="qtext">The distribution from the Federation Account shall be rendered to both Houses of the National Assembly, not later than 90 days after each year, by the &hellip;</p>
+        <p class="answer"><b>Federation Account Allocation Committee</b> (also given in another diet as: the Minister of Finance)</p>
+      </div>
+
+      <div class="pq"><span class="diets">2022-09</span>
+        <p class="qtext">The Federal Government's share out of the Federation Account is further distributed among the following, <strong>except</strong>:</p>
+        <ul class="opts"><li>Development of Natural Resources</li><li class="correct">Consolidated Revenue Fund (CRF)</li><li>State Governments in Nigeria</li><li>Share of Derivation and Ecology</li><li>Federal Capital Territory</li></ul>
+        <p class="answer"><span class="lbl">Why</span>A trap in the other direction: the Federal share <em>becomes</em> CRF income; CRF is not one of the further internal splits of that share.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2025-03</span>
+        <p class="qtext">Which is NOT the implementation strategy for an MDA category funded from the Federation Account?</p>
+        <ul class="opts"><li>All federation revenue generated by agencies paid into Federation Account at CBN</li><li>Independent revenue paid into CRF/TSA</li><li>Approved cost of collection paid into linked CBN sub-accounts</li><li>Platform configured for budget-based access</li><li class="correct">MDAs open additional commercial-bank accounts to pay in such revenues</li></ul>
+      </div>
+    </div>
+
+    <div class="pq-group">
+      <h4>G &middot; Fund management and administration</h4>
+
+      <div class="pq"><span class="diets">2014-09</span>
+        <p class="qtext">State the TWO categories of officers responsible for managing government funds.</p>
+        <p class="answer"><b>Officers who attained their position by promotion</b> and officers appointed directly on technical/professional qualification (the examiner's own answer distinguishes career-track from direct-entry appointees).</p>
+      </div>
+
+      <div class="pq"><span class="diets">2025-09</span>
+        <p class="qtext">Which is NOT a control function of the funds department in the Office of the Accountant-General?</p>
+        <ul class="opts"><li>Loan servicing</li><li class="correct">Collating/analysing internal audit reports from ministries and agencies</li><li>Cash backing and cash management</li><li>Managing the Federation Accounts, the CRF and other public funds</li><li>Regular reconciliation of government accounts with banks</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2026-03</span>
+        <p class="qtext">The &hellip; department in the Office of the Accountant-General manages the federation accounts, the CRF and other public funds.</p>
+        <p class="answer"><b>Federation Accounts (department)</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2026-03</span>
+        <p class="qtext">The agency solely responsible for management of the Consolidated Revenue Fund is the &hellip;</p>
+        <p class="answer"><b>Office of the Accountant-General of the Federation</b></p>
+      </div>
+
+      <div class="pq"><span class="diets">2021-09 &middot; 2025-03</span>
+        <p class="qtext">The Minister of Finance is NOT authorised by law to:</p>
+        <ul class="opts"><li>Manage the CRF</li><li>Authorise issue from the CRF</li><li class="correct">Suspend an issued warrant for statutory first-line charges</li><li>Suspend an issued warrant for appropriate expenditure</li><li>Correct erroneous receipts into the CRF</li></ul>
+        <p class="answer"><span class="lbl">Why</span>The statutory first-charge items (§C above) are deliberately placed beyond the Minister's power to suspend &mdash; that independence is the whole point of the category.</p>
+      </div>
+
+      <div class="pq"><span class="diets">2024-09</span>
+        <p class="qtext">Which tier of government funds the Fiscal Responsibility Commission?</p>
+        <ul class="opts"><li>The National Assembly</li><li>The Federal Executive Council</li><li>The State Government</li><li class="correct">The Federal Government</li><li>The Local Government</li></ul>
+      </div>
+
+      <div class="pq"><span class="diets">2026-03</span>
+        <p class="qtext">Which MDA is NOT funded by the budget, and is instead expected to pay 25% of its operating surplus to government?</p>
+        <ul class="opts"><li class="correct">FAAN</li><li>NASRDA</li><li>NTA</li><li>SURE-P</li><li>NYSC</li></ul>
+      </div>
+    </div>
+
+    <p class="pq-note">A handful of questions elsewhere in the past papers mention a fund only in passing while really testing a different chapter &mdash; Pension Fund Administrator investment rules (Pensions), Government Business Enterprise characteristics (Parastatals), the Treasury Single Account as a payments mechanism (Emerging Issues) &mdash; and are left for those chapters' own revision material rather than repeated here.</p>
+  </section>
+
+  <section style="padding-left:0;margin-bottom:0;">
+    <div class="takeaways">
+      <h3>Six facts worth over-learning</h3>
+      <ol>
+        <li><strong>s.80</strong> is the CRF; <strong>s.162</strong> is the Federation Account. The Federal share of the second flows into the first &mdash; they are related, never interchangeable.</li>
+        <li>No appropriation act at year-start? The President may still spend from the CRF for up to <strong>six months</strong> (s.82), via a Provisional General Warrant.</li>
+        <li>A warrant releases cash; an Appropriation Act only authorises it. Capital spending never touches the CRF &mdash; it runs through the <strong>Development Fund</strong> instead.</li>
+        <li>The <strong>Auditor-General's</strong> own pay is a direct CRF charge, outside the budget vote entirely &mdash; by design, so the auditor is never financially beholden to what he audits.</li>
+        <li>Scheduled corporations must remit <strong>80%</strong> of their operating surplus to the CRF, on top of ordinary revenue.</li>
+        <li>The <strong>Contingency Fund</strong> only ever <em>lends</em> to the CRF &mdash; every advance is repaid by a supplementary estimate, restoring the fund for the next emergency.</li>
+        <li>"<strong>General fund</strong>" and "<strong>capital project fund</strong>" are not extra funds &mdash; they are the CRF and the Development Fund under their generic Finance Act names. Don't count them twice on a list-all-the-funds question.</li>
+        <li>Ghana's <strong>Contingency Fund</strong> and <strong>Contingency <em>Reserve</em> Fund</strong> are genuinely different (Parliament-controlled vs Executive's own set-aside) &mdash; the closest thing in this whole topic to "the same name with a word added", and worth learning as a pair for exactly that reason.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <span>Sources: 1999 Constitution ss.80&ndash;83, 162 &middot; Finance (Control &amp; Management) Act 1958 &middot; Fiscal Responsibility Act 2007 &middot; Cash Basis IPSAS</span>
+    <span>ATSWA Part II &middot; Public Sector Accounting</span>
+  </footer>
+
+</div>
+</body>
+</html>

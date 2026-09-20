@@ -325,6 +325,11 @@ CH = {
 
   {'n': '9.8', 't': 'The Consolidated Revenue Fund, Development Fund and Contingency Fund',
    'b': [
+    {'note': '[Read the full study guide on the fund system →](guides/crf.html) — sources of '
+             'CRF income, what it finances, the full warrant system, how the Development and '
+             'Contingency Funds fit in, Ghana\'s parallel system with its own Contingency Fund '
+             '/ Contingency **Reserve** Fund trap, and every past exam question on the topic '
+             'with answers, all in one page.'},
     {'def': {'t': 'Consolidated Revenue Fund (CRF)', 'd': 'established by section 80 of the '
              '1999 Constitution. Every revenue item not specifically designated to another '
              'fund is paid into the CRF.'}},
@@ -461,7 +466,17 @@ CH = {
     {'p': 'Public funds comprise the **Consolidated Fund**, the **Contingency Fund**, and '
           'any other fund Parliament establishes by Act — e.g. the Road Fund (1997), '
           'GETFund (2000), District Assemblies Common Fund (1993), Ghana Investment Fund '
-          '(2002), Venture Capital Trust Fund (2004).'},
+          '(2002), Venture Capital Trust Fund (2004), the Business Assistance Fund, the '
+          'HIPC Fund, and the Social Investment Fund. "Public funds" is the generic, '
+          'umbrella term for all of these together — every fund below is a *subset* of it, '
+          'not a rival to it.'},
+    {'warn': 'Two of the funds below share almost the same name and are easy to mix up on an '
+             'exam: the **Contingency Fund** is the constitutional fund (Article 177 in '
+             'Ghana; s.83/s.123 in Nigeria) that Parliament/the National Assembly funds and '
+             'controls, replenished by a **supplementary estimate** after each advance. The '
+             '**Contingency *Reserve* Fund** is a completely different thing — a slice of the '
+             '**Executive\'s own already-approved budget**, set aside internally as a first '
+             'line of relief, with no Parliamentary supplementary estimate involved at all.'},
     {'table': {'align': 'll', 'head': ['Fund', 'Purpose'], 'rows': [
       ['**Consolidated Fund**', 'All central-government money except that legally payable '
        'into another fund or retained by a department/agency'],

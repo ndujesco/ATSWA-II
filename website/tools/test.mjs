@@ -86,6 +86,13 @@ t('home page lists all four subjects', () => {
   ok(v.indexOf('undefined') < 0, 'contains "undefined"');
 });
 
+t('home page links to all three study guides', () => {
+  const v = view(w, '#/');
+  has(v, 'Study guides');
+  ['guides/crf.html', 'guides/ipsas.html', 'guides/statements.html'].forEach(href =>
+    has(v, 'href="' + href + '"'));
+});
+
 t('FA subject page shows 16 chapters', () => {
   const v = view(w, '#/s/FA');
   has(v, 'Accounting for Non-Current Assets');
@@ -149,12 +156,20 @@ t('every QA chapter quiz builds', () => {
   }
 });
 
-t('PS and IT degrade gracefully while unwritten', () => {
-  ['#/s/PS', '#/s/IT', '#/s/PS/1'].forEach(r => {
-    const v = view(w, r);
-    ok(v.indexOf('undefined') < 0, r + ' contains "undefined"');
-    ok(v.length > 200, r + ' rendered almost nothing');
-  });
+t('PS subject page shows all 23 chapters', () => {
+  const v = view(w, '#/s/PS');
+  ok(count(v, 'class="chrow"') === 23, 'expected 23 chapter rows, got ' + count(v, 'class="chrow"'));
+});
+
+t('IT subject page shows all 6 chapters', () => {
+  const v = view(w, '#/s/IT');
+  ok(count(v, 'class="chrow"') === 6, 'expected 6 chapter rows, got ' + count(v, 'class="chrow"'));
+});
+
+t('PS chapter 1 renders (a legitimate "undefined" in its own prose is not a bug)', () => {
+  const v = view(w, '#/s/PS/1');
+  ok(v.length > 2000, 'PS ch1 rendered almost nothing');
+  ok(/left completely undefined until then/.test(v), 'expected prose sentence missing — page may not have rendered ch1 at all');
 });
 
 t('exams index lists all 20 papers', () => {
@@ -179,6 +194,41 @@ t('progress page renders', () => {
   const v = view(w, '#/progress');
   ok(v.length > 500, 'progress page nearly empty');
   ok(v.indexOf('undefined') < 0, 'contains "undefined"');
+});
+
+t('revision subject picker lists all four subjects', () => {
+  const v = view(w, '#/revision');
+  ['Financial Accounting', 'Public Sector Accounting', 'Quantitative Analysis',
+   'Information Technology'].forEach(s => has(v, s));
+  ok(v.indexOf('undefined') < 0, 'contains "undefined"');
+});
+
+t('revision type picker shows MCQ/short-answer/essay for PS', () => {
+  const v = view(w, '#/revision/PS');
+  ['Multiple choice', 'Short answer', 'Essay'].forEach(s => has(v, s));
+  ok(/#\/revision\/PS\/mcq/.test(v), 'missing link to the MCQ list');
+  ok(v.indexOf('undefined') < 0, 'contains "undefined"');
+});
+
+t('revision MCQ list for PS renders questions, most-asked first', () => {
+  const v = view(w, '#/revision/PS/mcq');
+  ok(v.indexOf('undefined') < 0, 'contains "undefined"');
+  ok(v.length > 5000, 'list looks truncated: ' + v.length + ' chars');
+  ok(count(v, 'class="bq"') > 100, 'fewer than 100 MCQ rendered');
+  const freqs = [...v.matchAll(/ASKED (\d+)\s*[×x]/g)].map(m => +m[1]);
+  ok(freqs.length > 10, 'no frequency badges found');
+  for (let i = 1; i < freqs.length; i++)
+    ok(freqs[i] <= freqs[i - 1], 'not sorted most-asked-first at index ' + i);
+});
+
+t('revision short-answer and essay lists render for every subject', () => {
+  ['FA', 'PS', 'QA', 'IT'].forEach(code => {
+    ['saq', 'essay'].forEach(kind => {
+      const v = view(w, '#/revision/' + code + '/' + kind);
+      ok(v.indexOf('undefined') < 0, code + '/' + kind + ' contains "undefined"');
+      ok(v.length > 2000, code + '/' + kind + ' looks truncated: ' + v.length + ' chars');
+    });
+  });
 });
 
 console.log('\n' + pass + ' passed, ' + fail + ' failed\n');

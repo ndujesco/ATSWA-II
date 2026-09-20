@@ -163,6 +163,10 @@ nav.tabs a[aria-current]{background:var(--accent-bg);color:var(--accent);}
 .panel p{font-size:15.5px;color:var(--ink2);line-height:1.55;}
 .panel b{color:var(--ink);font-weight:600;}
 
+.ghead{margin:0;}
+.ghead h2{font-size:clamp(24px,3.4vw,32px);letter-spacing:-.025em;}
+.ghead p{color:var(--ink2);max-width:62ch;margin-top:8px;font-size:16px;}
+
 /* ══ subject page ════════════════════════════════════════════════════ */
 .shead{padding:44px 0 26px;border-bottom:1px solid var(--rule);}
 .shead .code{font-family:var(--mono);font-size:11px;font-weight:600;
@@ -678,6 +682,19 @@ var SUBJECTS = [
     blurb: 'Statistics, mathematics of finance, calculus and operations research — every method set out as worked mathematics.' },
   { code: 'IT', file: 'it', n: 6, name: 'Information Technology',
     blurb: 'Systems and data, hardware, software, processing, networks, and the development and security of information systems.' }
+];
+
+/* Standalone one-topic reference pages under guides/ — plain static HTML,
+   not part of the hash-routed app, so linked with a real href rather than
+   a #/ route. Add an entry here to have a new guide show up on the home
+   page automatically. */
+var GUIDES = [
+  { tag: 'PS · Ch 9', href: 'guides/crf.html', title: 'The Consolidated Revenue Fund',
+    blurb: 'Every source of CRF income, what it finances, the full warrant system, the Development and Contingency Funds, Ghana’s parallel system, and every past question on the topic.' },
+  { tag: 'PS · Ch 2', href: 'guides/ipsas.html', title: 'IPSAS in this course',
+    blurb: 'Every IPSAS the syllabus treats, indexed by number and by theme, with Nigeria’s own adoption timeline and exactly which chapter covers which standard.' },
+  { tag: 'PS · Ch 14 & 16', href: 'guides/statements.html', title: 'Cash vs accrual statements',
+    blurb: 'Every required financial statement, cash basis and accrual basis side by side, with worked-example checkpoints and every past question on the topic.' }
 ];
 /* ── TeX → MathML ─────────────────────────────────────────────────────
    A subset of LaTeX, big enough for everything the ATSWA syllabus needs:
@@ -1440,6 +1457,12 @@ var ATSWA = (function () {
       document.body.setAttribute('data-sub', p[2]);
       return VIEWS.paper(p[1], p[2]);
     }
+    if (p[0] === 'revision') {
+      if (!p[1]) return VIEWS.revision();
+      document.body.setAttribute('data-sub', p[1]);
+      if (!p[2]) return VIEWS.revisionSub(p[1]);
+      return VIEWS.revisionList(p[1], p[2]);
+    }
     if (p[0] === 'formulas') return VIEWS.formulas();
     if (p[0] === 'progress') return VIEWS.progress();
     if (p[0] === 'about') return VIEWS.about();
@@ -1454,6 +1477,7 @@ var ATSWA = (function () {
              '>' + esc(s.name) + '</a>';
     });
     out.push('<a href="#/exams"' + (p[0] === 'exams' ? ' aria-current="page"' : '') + '>Past papers</a>');
+    out.push('<a href="#/revision"' + (p[0] === 'revision' ? ' aria-current="page"' : '') + '>Final Revision</a>');
     out.push('<a href="#/formulas"' + (p[0] === 'formulas' ? ' aria-current="page"' : '') + '>Formulas</a>');
     out.push('<a href="#/progress"' + (p[0] === 'progress' ? ' aria-current="page"' : '') + '>Progress</a>');
     el('tabs').innerHTML = out.join('');
@@ -1509,7 +1533,17 @@ var ATSWA = (function () {
       '<div class="panel"><h3>Sit a whole paper</h3><p>24 diets, four papers each, three hours on ' +
       'the clock. Section A marks itself; Section B gives you the official solution and the ' +
       'examiner&rsquo;s report once you have written yours.</p></div>' +
-      '</div></div>');
+      '</div>' +
+      '<section class="ghead"><h2>Study guides</h2><p>One topic, everything about it, in one ' +
+      'page — pulled together across chapters, with every past question that touches it.</p>' +
+      '</section>' +
+      '<div class="subs">' + GUIDES.map(function (g) {
+        return '<a class="subcard" href="' + g.href + '">' +
+          '<div class="r1"><span class="code">' + esc(g.tag) + '</span></div>' +
+          '<h2>' + esc(g.title) + '</h2>' +
+          '<div class="sub">' + esc(g.blurb) + '</div></a>';
+      }).join('') + '</div>' +
+      '</div>');
   };
 
   VIEWS.about = function () {
@@ -2185,6 +2219,149 @@ var ATSWA = (function () {
   ATSWA.quizStart = start;
   ATSWA.quizClear = function () { Q = null; };
   ATSWA.chapterQuestions = chapterQuestions;
+})();
+/* -- Final Revision: every past question, grouped by course, then by
+   question type, then ordered by how often-ish it's been asked. Data comes
+   pre-clustered from tools/final_revision.py (data/revision.js). ---------- */
+(function () {
+  var A = ATSWA, V = A.VIEWS;
+
+  function withRevision(cb) {
+    A.loading('Final Revision');
+    A.need('REVISION', 'revision', function (rev) {
+      if (!rev) return A.h('<div class="wrap"><p style="padding:60px 0">Could not load the ' +
+        'revision bank. Serve this folder over http:// rather than opening the file directly.</p></div>');
+      cb(rev);
+    });
+  }
+
+  function chBadge(subj, ch, sec) {
+    if (!ch) return '';
+    if (sec) return '<a class="ch" href="#/s/' + subj + '/' + ch + '?sec=' +
+      String(sec).replace(/\./g, '-') + '">Chapter ' + ch + ' &rarr;</a>';
+    return '<a class="ch" href="#/s/' + subj + '/' + ch + '">Chapter ' + ch + '</a>';
+  }
+
+  function freqBadge(freq) {
+    return '<span class="mono" style="font-size:10px;letter-spacing:.08em;color:var(--ink3);' +
+      'white-space:nowrap">ASKED ' + freq + '&times;</span>';
+  }
+
+  /* ---- subject picker ------------------------------------------------ */
+  V.revision = function () {
+    withRevision(function (rev) {
+      var cards = SUBJECTS.map(function (s) {
+        var d = rev[s.code];
+        var total = d ? d.mcq.length + d.saq.length + d.essay.length : 0;
+        return '<a class="subcard" href="#/revision/' + s.code + '" data-sub="' + s.code + '">' +
+          '<div class="r1"><span class="code">' + s.code + '</span>' +
+          '<span class="cnt">' + total + ' questions</span></div>' +
+          '<h2>' + A.esc(s.name) + '</h2>' +
+          '<div class="sub">' + A.esc(s.blurb) + '</div></a>';
+      }).join('');
+      A.h('<div class="wrap"><section class="shead" style="border:none">' +
+        '<div class="code">Final Revision</div><h1>Every past question, ranked by how ' +
+        'often it comes up</h1>' +
+        '<p>All 24 diets\' MCQ, short-answer and Section B questions, grouped by subject, ' +
+        'then by question type, near-duplicates across diets merged and ordered most-asked ' +
+        'first. Pick a subject.</p></section>' +
+        '<div class="subs">' + cards + '</div><div style="height:60px"></div></div>');
+    });
+  };
+
+  /* ---- type picker ----------------------------------------------------- */
+  V.revisionSub = function (code) {
+    var s = A.subOf(code);
+    if (!s) return V.revision();
+    withRevision(function (rev) {
+      var d = rev[code];
+      if (!d) return V.revision();
+      var kinds = [
+        { key: 'mcq', label: 'Multiple choice', d: 'Every past MCQ, options and the ' +
+          'examiner\'s own answer, most-repeated first.', n: d.mcq.length },
+        { key: 'saq', label: 'Short answer', d: 'Fill-in-the-blank and one-line questions, ' +
+          'with the official answer, most-repeated first.', n: d.saq.length },
+        { key: 'essay', label: 'Essay (Section B)', d: 'Full Section B questions with the ' +
+          'official worked solution, most-repeated first.', n: d.essay.length },
+      ];
+      var cards = kinds.map(function (k) {
+        return '<a class="subcard" href="#/revision/' + code + '/' + k.key + '">' +
+          '<div class="r1"><span class="cnt">' + k.n + ' questions</span></div>' +
+          '<h2>' + k.label + '</h2><div class="sub">' + k.d + '</div></a>';
+      }).join('');
+      A.h('<div class="wrap"><section class="shead" style="border:none">' +
+        '<div class="code">Final Revision &middot; ' + code + '</div><h1>' + A.esc(s.name) + '</h1>' +
+        '<div class="sbar"><a class="btn" href="#/revision">All subjects</a></div>' +
+        '</section><div class="subs">' + cards + '</div><div style="height:60px"></div></div>');
+    });
+  };
+
+  /* ---- full list, one question type -------------------------------- */
+  V.revisionList = function (code, kind) {
+    var s = A.subOf(code);
+    if (!s) return V.revision();
+    withRevision(function (rev) {
+      var d = rev[code];
+      if (!d || !d[kind]) return V.revisionSub(code);
+      var list = d[kind];
+      var title = kind === 'mcq' ? 'Multiple choice' :
+                  kind === 'saq' ? 'Short answer' : 'Essay (Section B)';
+      var body;
+      if (kind === 'mcq') {
+        body = list.map(function (q) {
+          return '<div class="bq"><div class="h"><span class="n">' + q.n + '</span>' +
+            freqBadge(q.freq) + chBadge(code, q.ch, q.sec) + '</div>' +
+            '<div class="body">' + A.preBlock(q.pre) + A.stemHTML(q) +
+            '<div style="margin-top:10px">' + q.options.map(function (o, k) {
+              var on = k === q.a;
+              return '<div style="display:flex;gap:10px;padding:4px 0' +
+                (on ? ';color:var(--ok);font-weight:600' : '') + '">' +
+                '<span class="mono" style="width:1.4em;flex:none">' + 'ABCDE'[k] + '</span>' +
+                '<span style="flex:1">' + A.optText(o) + '</span>' +
+                (on ? '<span class="mono" style="font-size:10px;letter-spacing:.1em">ANSWER</span>' : '') +
+                '</div>';
+            }).join('') + '</div></div></div>';
+        }).join('');
+      } else if (kind === 'saq') {
+        body = list.map(function (q) {
+          return '<div class="saqrow"><span class="n">' + q.n + '</span><div class="b">' +
+            A.preBlock(q.pre) +
+            '<div style="display:flex;justify-content:space-between;gap:14px;align-items:baseline">' +
+            '<div style="flex:1">' + R.inl(q.body.join(' ')) + '</div>' + freqBadge(q.freq) + '</div>' +
+            (q.ans ? '<div class="ans"><div class="lbl">Official answer</div>' +
+                     R.inl(q.ans.join(' ')) + '</div>' : '') +
+            (chBadge(code, q.ch, q.sec) ? '<div style="margin-top:8px">' +
+              chBadge(code, q.ch, q.sec) + '</div>' : '') +
+            '</div></div>';
+        }).join('');
+      } else {
+        body = list.map(function (b) {
+          var rid = 'rev' + code + kind + b.n;
+          return '<div class="bq"><div class="h"><span class="n">Question ' + b.n + '</span>' +
+            freqBadge(b.freq) + chBadge(code, b.ch, b.sec) + '</div>' +
+            (b.q && b.q.length ? '<div class="body"><div class="pre">' +
+              A.esc(b.q.join('\n')) + '</div></div>' : '') +
+            '<button class="reveal" data-reveal="' + rid + '">Show the official solution</button>' +
+            '<div class="sol hid" id="' + rid + '">' +
+            '<div class="pre">' + A.esc(b.solution.join('\n')) + '</div>' +
+            (b.examiner && b.examiner.length
+              ? '<div class="exm"><div class="lbl">Examiner&rsquo;s report</div>' +
+                A.esc(b.examiner.join(' ')) + '</div>' : '') +
+            '</div></div>';
+        }).join('');
+      }
+      A.h('<div class="wrap"><section class="paperhead">' +
+        '<div class="code">Final Revision &middot; ' + code + '</div>' +
+        '<h1 style="font-size:clamp(28px,4.4vw,42px);letter-spacing:-.032em;margin-top:8px">' +
+        title + '</h1>' +
+        '<p>' + list.length + ' questions, most-asked first. "Asked N&times;" counts how many ' +
+        'diets carried a near-identical version of that question.</p>' +
+        '<div class="sbar"><a class="btn" href="#/revision/' + code + '">' + A.esc(s.name) + '</a>' +
+        '<a class="btn" href="#/revision">All subjects</a>' +
+        (kind === 'essay' ? '<button class="btn" data-revealall="1">Reveal every solution</button>' : '') +
+        '</div></section>' + body + '<div style="height:60px"></div></div>');
+    });
+  };
 })();
 /* -- past papers, search, formulas, progress, boot --------------------- */
 (function () {
