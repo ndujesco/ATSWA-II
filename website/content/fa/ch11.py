@@ -179,6 +179,10 @@ CH = {
           'consideration is then distributed to the partners in settlement of their capital '
           'accounts. Shares are usually divided in the final capital account ratio, which need '
           'not equal the profit sharing ratio.'},
+    {'note': 'In the **new company\'s own books** (the acquirer\'s side, not the partnership\'s), '
+             'the entry when the purchase consideration is paid is: **Dr** the Assets account(s) '
+             'taken over, with any goodwill on acquisition; **Cr** Cash/Bank, Share Capital and '
+             'Share Premium, for the consideration given.'},
   ]},
 
   {'n': '11.7', 't': 'The study text\'s worked illustrations', 'b': [

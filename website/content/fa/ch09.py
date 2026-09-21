@@ -156,6 +156,10 @@ CH = {
           'impairment) or the **revaluation model** (fair value at the date of revaluation less '
           'subsequent depreciation and impairment). Once chosen, the model applies to the whole '
           '**class** of assets, not to a single item.'},
+    {'def': {'t': 'Impairment loss', 'd': 'the amount by which the carrying amount of an asset '
+                  '(or a cash-generating unit) exceeds its recoverable amount — the higher of '
+                  'fair value less costs to sell and value in use. It is recognised immediately '
+                  'in profit or loss (or first against any revaluation surplus on that asset).'}},
     {'h3': 'Accounting for a surplus'},
     {'ul': [
       'The increase is credited to **other comprehensive income** and accumulated in equity as a '

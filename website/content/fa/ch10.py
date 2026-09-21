@@ -9,6 +9,7 @@ CH = {
    'Prepare the appropriation account',
    'Compute interest on capital, interest on drawings, salaries and shares of profit',
    'Deal with a guaranteed minimum share of profit',
+   'Distinguish a joint venture from a partnership and prepare a memorandum joint venture account',
  ],
  'secs': [
   {'n': '10.1', 't': 'The partnership and its agreement', 'b': [
@@ -71,7 +72,8 @@ CH = {
       'Add interest charged on drawings — it increases the amount available to share.',
       'Deduct interest allowed on capital.',
       'Deduct partners\' salaries.',
-      'Share the residue in the profit sharing ratio.',
+      'Share the residue in the profit sharing ratio — each partner\'s **share of profits** is '
+      'debited to the appropriation account and credited to their current account.',
     ]},
     {'tex': '\\begin{aligned}'
             '\\text{Residual profit} &= \\text{Net profit} + \\text{Interest on drawings} \\\\'
@@ -370,6 +372,63 @@ CH = {
                'surplus belongs to the **old** partners in their old ratio, before Shola is '
                'admitted (Chapter 11 §11.3).'}]}},
   ]},
+
+  {'n': '10.7', 't': 'Joint venture accounts', 'b': [
+    {'def': {'t': 'Joint venture', 'd': 'an arrangement between two or more persons (**venturers**) '
+                  'to carry out a single, specific business undertaking — commonly buying and '
+                  'selling a batch of goods, or a one-off contract — and to share the resulting '
+                  'profit or loss in an agreed ratio.'}},
+    {'p': 'A joint venture is **not** a partnership, though it is examined alongside partnerships '
+          'because the profit-sharing mechanics are similar. The differences are tested directly:'},
+    {'table': {'head': ['', 'Partnership', 'Joint venture'], 'align': 'lll', 'rows': [
+      ['Duration', 'Ongoing, until dissolved', 'Usually **for a limited period** — ends when the '
+       'venture is complete'],
+      ['Name/firm', 'Trades under a firm name', 'No firm name; each venturer usually trades in '
+       'their own name'],
+      ['Books of account', 'A full set of books is kept', 'Often **no separate books** — each '
+       'venturer records only their own transactions'],
+      ['Relationship', 'Partners are agents of the firm and each other generally', 'Venturers are '
+       'agents of each other **only for the venture\'s transactions**'],
+      ['Governing law', 'Partnership law/agreement', 'Ordinary contract law — there is no '
+       '"Joint Venture Act"'],
+    ]}},
+    {'h3': 'Recording the venture'},
+    {'p': 'Two situations arise in practice, and past papers test both:'},
+    {'ol': [
+      'One venturer keeps a full **Joint Venture Account** (like a mini trading account) recording '
+      'everyone\'s contributions, and personal accounts for the other venturer(s).',
+      'Where each venturer keeps records only of what **they personally** paid or received, a '
+      '**Memorandum Joint Venture Account** is prepared (by any venturer, or jointly) purely to '
+      'work out the venture\'s total profit or loss — it is memorandum only and does not form '
+      'part of any venturer\'s double-entry books. Each venturer separately debits their own '
+      'purchases/expenses and credits their own sales in this memorandum account; the balancing '
+      'figure is the profit, split in the agreed ratio and entered in each venturer\'s **own** '
+      'books as the amount due to or from the other venturer(s).',
+    ]},
+    {'key': 'The Memorandum Joint Venture Account exists **only to determine the profit or loss** '
+            'to be shared — "why is it needed?" is a recurring exam question, and this is the '
+            'answer. It is never posted anywhere; only each venturer\'s own share of the result '
+            'is.'},
+    {'eg': {'t': 'A memorandum joint venture', 'q': [
+      {'p': 'Alao and Bello enter a joint venture, sharing profits or losses 5 : 3. Alao buys '
+            'goods for ₦20,000 and pays expenses of ₦5,000. He sells all the goods for ₦40,000. '
+            'Bello pays expenses of ₦2,000 on the venture. Show the Memorandum Joint Venture '
+            'Account and each venturer\'s share of profit.'}],
+      'a': [
+      {'tacc': {'t': 'Memorandum Joint Venture Account (₦)', 'dr': [
+          ['Alao — purchases', 20000], ['Alao — expenses', 5000], ['Bello — expenses', 2000],
+          ['Profit: Alao (5/8)', 8125], ['Profit: Bello (3/8)', 4875],
+          ['', 40000, '@tot']],
+        'cr': [['Alao — sales', 40000], ['', 40000, '@tot']]}},
+      {'p': 'Total cost of the venture $= 20{,}000+5{,}000+2{,}000=27{,}000$. Profit '
+            '$=40{,}000-27{,}000=13{,}000$, split 5 : 8 and 3 : 8: Alao '
+            '$=13{,}000\\times\\frac58=₦8{,}125$; Bello $=13{,}000\\times\\frac38=₦4{,}875$.'},
+      {'note': 'In his **own** books, Alao debits the ₦20,000 purchases and ₦5,000 expenses as '
+               'usual, credits the ₦40,000 sale, and — since he received all the cash — owes '
+               'Bello his ₦2,000 expenses reimbursement **plus** his ₦4,875 profit share: a '
+               'payment of ₦6,875. Bello\'s own books show only his ₦2,000 expense and a ₦6,875 '
+               'receivable from Alao.'}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Residual profit for sharing',
@@ -381,6 +440,9 @@ CH = {
   {'lb': 'Closing current account',
    'tex': '\\text{Closing} = \\text{Opening} + \\text{Interest on capital} + \\text{Salary} '
           '+ \\text{Share of profit} - \\text{Drawings} - \\text{Interest on drawings}'},
+  {'lb': 'Joint venture profit',
+   'tex': '\\text{Profit} = \\text{Total sales proceeds} - \\text{Total cost (goods and expenses '
+          'of all venturers)}'},
  ],
  'focus':
    'Partnership appears in Section B nearly every diet, split between this chapter and Chapter 11. '
@@ -396,6 +458,8 @@ CH = {
    'Scaling down interest on capital and salaries when the profit is insufficient.',
    'Dividing a guarantee shortfall using the original denominators rather than the guarantors\' '
    'ratio between themselves.',
+   'Treating a joint venture as a partnership, or forgetting that the Memorandum Joint Venture '
+   'Account is never posted to any venturer\'s actual books.',
  ],
  'quiz': {
   'mcq': [
@@ -437,6 +501,22 @@ CH = {
          'interest on drawings have exceeded the partner\'s entitlements, so the partner owes '
          'the firm.',
     'src': 'Chapter 10.2', 'sec': '10.2'},
+   {'q': 'A memorandum joint venture account is needed by venturers mainly',
+    'o': ['to record cash movements between venturers', 'for profit or loss determination',
+          'to satisfy company law', 'to replace each venturer\'s own cash book',
+          'to compute interest on capital'],
+    'a': 1,
+    'w': 'It is memorandum only — never posted to any venturer\'s actual books — and exists purely '
+         'to work out the venture\'s total profit or loss, which is then split in the agreed ratio.',
+    'src': 'Chapter 10.7', 'sec': '10.7'},
+   {'q': 'A joint venture differs from a partnership in that a joint venture',
+    'o': ['is always more profitable', 'is usually for a limited period',
+          'must be registered with the Corporate Affairs Commission',
+          'always uses a joint bank account', 'cannot involve more than two persons'],
+    'a': 1,
+    'w': 'A joint venture is a single, specific undertaking that ends once it is complete, unlike '
+         'an ongoing partnership; it also has no firm name and often no separate set of books.',
+    'src': 'Chapter 10.7', 'sec': '10.7'},
   ],
   'theory': [
    {'q': 'State SIX matters that should be dealt with in a partnership agreement, and state the '

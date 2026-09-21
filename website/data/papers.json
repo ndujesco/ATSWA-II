@@ -55,7 +55,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.097,
+    "chConf": 0.093,
     "sec": null,
     "secConf": null
    },
@@ -90,7 +90,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.068,
+    "chConf": 0.069,
     "sec": null,
     "secConf": null
    },
@@ -130,7 +130,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.335,
+    "chConf": 0.332,
     "sec": "12.5",
     "secConf": 0.823
    },
@@ -158,7 +158,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.507,
+    "chConf": 0.505,
     "sec": null,
     "secConf": null
    },
@@ -221,9 +221,9 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.11,
-    "sec": "13.6",
-    "secConf": 0.878
+    "chConf": 0.061,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 8,
@@ -249,7 +249,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.094,
+    "chConf": 0.088,
     "sec": null,
     "secConf": null
    },
@@ -305,7 +305,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.111,
+    "chConf": 0.11,
     "sec": "7.4",
     "secConf": 0.146
    },
@@ -341,9 +341,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.33,
+    "chConf": 0.317,
     "sec": "10.2",
-    "secConf": 0.406
+    "secConf": 0.361
    },
    {
     "n": 12,
@@ -369,9 +369,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.483,
+    "chConf": 0.457,
     "sec": "10.4",
-    "secConf": 0.513
+    "secConf": 0.505
    },
    {
     "n": 13,
@@ -426,9 +426,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.351,
+    "chConf": 0.361,
     "sec": "11.5",
-    "secConf": 0.312
+    "secConf": 0.31
    },
    {
     "n": 14,
@@ -464,7 +464,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.774,
+    "chConf": 0.773,
     "sec": "8.3",
     "secConf": 0.634
    },
@@ -502,7 +502,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.61,
+    "chConf": 0.609,
     "sec": "8.3",
     "secConf": 0.559
    },
@@ -572,9 +572,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.135,
+    "chConf": 0.12,
     "sec": "14.5",
-    "secConf": 0.503
+    "secConf": 0.525
    },
    {
     "n": 18,
@@ -635,7 +635,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.343,
+    "chConf": 0.387,
     "sec": "15.4",
     "secConf": 0.458
    },
@@ -663,7 +663,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.017,
+    "chConf": 0.024,
     "sec": null,
     "secConf": null
    },
@@ -691,9 +691,9 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.136,
-    "sec": "15.3",
-    "secConf": 0.513
+    "chConf": 0.098,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 22,
@@ -719,7 +719,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.34,
+    "chConf": 0.338,
     "sec": null,
     "secConf": null
    },
@@ -760,7 +760,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.038,
+    "chConf": 0.041,
     "sec": null,
     "secConf": null
    },
@@ -809,7 +809,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.085,
+    "chConf": 0.081,
     "sec": null,
     "secConf": null
    },
@@ -865,7 +865,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.799,
+    "chConf": 0.798,
     "sec": "8.2",
     "secConf": 0.574
    },
@@ -956,7 +956,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.265,
+    "chConf": 0.261,
     "sec": "11.5",
     "secConf": 0.194
    },
@@ -991,7 +991,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.573,
+    "chConf": 0.596,
     "sec": "8.6",
     "secConf": 0.122
    }
@@ -1038,7 +1038,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.01,
+    "chConf": 0.043,
     "sec": null,
     "secConf": null
    },
@@ -1050,7 +1050,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.285,
+    "chConf": 0.287,
     "sec": "15.2",
     "secConf": 0.262
    },
@@ -1062,7 +1062,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.836,
+    "chConf": 0.837,
     "sec": "8.2",
     "secConf": 0.618
    },
@@ -1073,9 +1073,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.661,
+    "chConf": 0.665,
     "sec": "9.2",
-    "secConf": 0.425
+    "secConf": 0.424
    },
    {
     "n": 5,
@@ -1085,7 +1085,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.384,
+    "chConf": 0.389,
     "sec": "12.2",
     "secConf": 0.584
    },
@@ -1098,9 +1098,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.334,
+    "chConf": 0.333,
     "sec": "9.5",
-    "secConf": 0.24
+    "secConf": 0.238
    },
    {
     "n": 7,
@@ -1115,7 +1115,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.02,
+    "chConf": 0.024,
     "sec": null,
     "secConf": null
    },
@@ -1127,7 +1127,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.406,
+    "chConf": 0.407,
     "sec": "13.6",
     "secConf": 0.428
    },
@@ -1139,9 +1139,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.715,
+    "chConf": 0.7,
     "sec": "10.1",
-    "secConf": 0.149
+    "secConf": 0.118
    },
    {
     "n": 10,
@@ -1150,7 +1150,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.549,
+    "chConf": 0.527,
     "sec": null,
     "secConf": null
    },
@@ -1162,9 +1162,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.283,
+    "chConf": 0.244,
     "sec": "10.2",
-    "secConf": 0.295
+    "secConf": 0.251
    },
    {
     "n": 12,
@@ -1174,7 +1174,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.678,
+    "chConf": 0.677,
     "sec": "8.3",
     "secConf": 0.281
    },
@@ -1188,8 +1188,8 @@
      "                                      INSIGHT"
     ],
     "pre": [],
-    "ch": 10,
-    "chConf": 0.03,
+    "ch": 8,
+    "chConf": 0.007,
     "sec": null,
     "secConf": null
    },
@@ -1201,7 +1201,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.407,
+    "chConf": 0.334,
     "sec": "13.1",
     "secConf": 0.293
    },
@@ -1212,7 +1212,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.011,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -1224,7 +1224,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.35,
+    "chConf": 0.351,
     "sec": "13.6",
     "secConf": 0.675
    },
@@ -1236,7 +1236,7 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.405,
+    "chConf": 0.164,
     "sec": null,
     "secConf": null
    },
@@ -1248,7 +1248,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.425,
+    "chConf": 0.427,
     "sec": "12.3",
     "secConf": 0.333
    },
@@ -1260,7 +1260,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.182,
+    "chConf": 0.181,
     "sec": "3.5",
     "secConf": 0.123
    },
@@ -1708,7 +1708,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.051,
+    "chConf": 0.067,
     "sec": null,
     "secConf": null
    },
@@ -1874,9 +1874,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.391,
+    "chConf": 0.349,
     "sec": "10.6",
-    "secConf": 0.324
+    "secConf": 0.306
    },
    {
     "n": 4,
@@ -1934,7 +1934,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.564,
+    "chConf": 0.583,
     "sec": "15.7",
     "secConf": 0.403
    },
@@ -1994,7 +1994,7 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.095,
+    "chConf": 0.084,
     "sec": null,
     "secConf": null
    },
@@ -2043,7 +2043,7 @@
     ],
     "examiner": [],
     "ch": 8,
-    "chConf": 0.8,
+    "chConf": 0.799,
     "sec": "8.4",
     "secConf": 0.371
    }
@@ -7645,7 +7645,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.059,
+    "chConf": 0.06,
     "sec": null,
     "secConf": null
    },
@@ -7707,8 +7707,8 @@
       ]
      }
     ],
-    "ch": 14,
-    "chConf": 0.015,
+    "ch": 13,
+    "chConf": 0.002,
     "sec": null,
     "secConf": null
    },
@@ -7736,7 +7736,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.391,
+    "chConf": 0.4,
     "sec": null,
     "secConf": null
    },
@@ -7764,7 +7764,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.655,
+    "chConf": 0.653,
     "sec": "8.6",
     "secConf": 0.251
    },
@@ -7799,7 +7799,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.062,
+    "chConf": 0.058,
     "sec": null,
     "secConf": null
    },
@@ -7834,9 +7834,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.238,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.256,
+    "sec": "14.1",
+    "secConf": 0.22
    },
    {
     "n": 8,
@@ -7862,9 +7862,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.425,
+    "chConf": 0.424,
     "sec": "9.8",
-    "secConf": 0.199
+    "secConf": 0.247
    },
    {
     "n": 9,
@@ -7890,7 +7890,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.396,
+    "chConf": 0.394,
     "sec": "2.1",
     "secConf": 0.257
    },
@@ -7918,7 +7918,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.072,
+    "chConf": 0.085,
     "sec": null,
     "secConf": null
    },
@@ -7953,7 +7953,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.023,
+    "chConf": 0.039,
     "sec": null,
     "secConf": null
    },
@@ -7981,7 +7981,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.06,
+    "chConf": 0.03,
     "sec": null,
     "secConf": null
    },
@@ -8009,9 +8009,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.61,
+    "chConf": 0.595,
     "sec": "10.4",
-    "secConf": 0.626
+    "secConf": 0.634
    },
    {
     "n": 14,
@@ -8037,7 +8037,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.827,
+    "chConf": 0.833,
     "sec": "8.2",
     "secConf": 0.342
    },
@@ -8110,7 +8110,7 @@
     "ch": 14,
     "chConf": 0.527,
     "sec": "14.3",
-    "secConf": 0.389
+    "secConf": 0.269
    },
    {
     "n": 17,
@@ -8158,7 +8158,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.032,
+    "chConf": 0.08,
     "sec": null,
     "secConf": null
    },
@@ -8186,7 +8186,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.179,
+    "chConf": 0.176,
     "sec": null,
     "secConf": null
    },
@@ -8221,7 +8221,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.653,
+    "chConf": 0.652,
     "sec": null,
     "secConf": null
    },
@@ -8277,7 +8277,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.233,
+    "chConf": 0.243,
     "sec": null,
     "secConf": null
    },
@@ -8305,7 +8305,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.161,
+    "chConf": 0.163,
     "sec": "9.2",
     "secConf": 0.208
    },
@@ -8340,7 +8340,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.264,
+    "chConf": 0.266,
     "sec": "3.4",
     "secConf": 0.103
    },
@@ -8368,7 +8368,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.027,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -8396,9 +8396,9 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.229,
-    "sec": "3.2",
-    "secConf": 0.371
+    "chConf": 0.078,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 26,
@@ -8424,7 +8424,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.544,
+    "chConf": 0.562,
     "sec": "8.2",
     "secConf": 0.153
    },
@@ -8452,9 +8452,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.148,
+    "chConf": 0.101,
     "sec": "10.5",
-    "secConf": 0.397
+    "secConf": 0.419
    },
    {
     "n": 28,
@@ -8487,9 +8487,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.559,
+    "chConf": 0.542,
     "sec": "10.1",
-    "secConf": 0.217
+    "secConf": 0.206
    },
    {
     "n": 29,
@@ -8521,9 +8521,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.477,
+    "chConf": 0.467,
     "sec": "10.1",
-    "secConf": 0.375
+    "secConf": 0.35
    },
    {
     "n": 30,
@@ -8555,9 +8555,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.61,
+    "chConf": 0.601,
     "sec": "10.1",
-    "secConf": 0.257
+    "secConf": 0.26
    }
   ],
   "mcq_key": {
@@ -8604,7 +8604,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.31,
+    "chConf": 0.313,
     "sec": "3.4",
     "secConf": 0.482
    },
@@ -8616,7 +8616,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.285,
+    "chConf": 0.287,
     "sec": "15.2",
     "secConf": 0.262
    },
@@ -8632,9 +8632,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.164,
+    "chConf": 0.105,
     "sec": "10.2",
-    "secConf": 0.271
+    "secConf": 0.285
    },
    {
     "n": 4,
@@ -8644,7 +8644,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.541,
+    "chConf": 0.54,
     "sec": "8.2",
     "secConf": 0.768
    },
@@ -8656,9 +8656,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.551,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.553,
+    "sec": "9.4",
+    "secConf": 0.134
    },
    {
     "n": 6,
@@ -8676,7 +8676,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.272,
+    "chConf": 0.271,
     "sec": "4.3",
     "secConf": 0.465
    },
@@ -8688,9 +8688,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.278,
+    "chConf": 0.277,
     "sec": "9.5",
-    "secConf": 0.145
+    "secConf": 0.144
    },
    {
     "n": 8,
@@ -8700,7 +8700,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.411,
+    "chConf": 0.409,
     "sec": "9.5",
     "secConf": 0.145
    },
@@ -8713,9 +8713,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.492,
+    "chConf": 0.463,
     "sec": "10.1",
-    "secConf": 0.179
+    "secConf": 0.13
    },
    {
     "n": 10,
@@ -8725,7 +8725,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.613,
+    "chConf": 0.621,
     "sec": null,
     "secConf": null
    },
@@ -8737,9 +8737,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.275,
+    "chConf": 0.298,
     "sec": "10.1",
-    "secConf": 0.733
+    "secConf": 0.578
    },
    {
     "n": 12,
@@ -8761,9 +8761,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.727,
+    "chConf": 0.724,
     "sec": "14.5",
-    "secConf": 0.486
+    "secConf": 0.497
    },
    {
     "n": 14,
@@ -8773,9 +8773,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.501,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.53,
+    "sec": "9.4",
+    "secConf": 0.388
    },
    {
     "n": 15,
@@ -8789,7 +8789,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.041,
+    "chConf": 0.033,
     "sec": null,
     "secConf": null
    },
@@ -8801,9 +8801,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.341,
+    "chConf": 0.331,
     "sec": "14.5",
-    "secConf": 0.78
+    "secConf": 0.823
    },
    {
     "n": 17,
@@ -8813,9 +8813,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.309,
-    "sec": "10.1",
-    "secConf": 0.39
+    "chConf": 0.775,
+    "sec": "10.7",
+    "secConf": 0.843
    },
    {
     "n": 18,
@@ -8824,7 +8824,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.384,
+    "chConf": 0.392,
     "sec": null,
     "secConf": null
    },
@@ -8836,9 +8836,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.295,
+    "chConf": 0.285,
     "sec": "14.5",
-    "secConf": 0.627
+    "secConf": 0.622
    },
    {
     "n": 20,
@@ -8848,7 +8848,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.022,
+    "chConf": 0.018,
     "sec": null,
     "secConf": null
    }
@@ -9281,7 +9281,7 @@
     ],
     "examiner": [],
     "ch": 6,
-    "chConf": 0.205,
+    "chConf": 0.204,
     "sec": "6.5",
     "secConf": 0.239
    },
@@ -9353,9 +9353,9 @@
     ],
     "examiner": [],
     "ch": 2,
-    "chConf": 0.226,
+    "chConf": 0.199,
     "sec": "2.7",
-    "secConf": 0.249
+    "secConf": 0.239
    },
    {
     "n": 3,
@@ -9507,9 +9507,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.179,
+    "chConf": 0.16,
     "sec": "10.5",
-    "secConf": 0.31
+    "secConf": 0.314
    },
    {
     "n": 5,
@@ -9560,7 +9560,7 @@
     ],
     "examiner": [],
     "ch": 5,
-    "chConf": 0.195,
+    "chConf": 0.193,
     "sec": null,
     "secConf": null
    },
@@ -9624,7 +9624,7 @@
     ],
     "examiner": [],
     "ch": 12,
-    "chConf": 0.008,
+    "chConf": 0.003,
     "sec": null,
     "secConf": null
    }
@@ -15366,9 +15366,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.057,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.131,
+    "sec": "9.7",
+    "secConf": 0.186
    },
    {
     "n": 2,
@@ -15394,9 +15394,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.534,
+    "chConf": 0.533,
     "sec": "9.5",
-    "secConf": 0.54
+    "secConf": 0.538
    },
    {
     "n": 3,
@@ -15466,7 +15466,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.08,
+    "chConf": 0.081,
     "sec": null,
     "secConf": null
    },
@@ -15494,7 +15494,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.817,
+    "chConf": 0.816,
     "sec": "8.2",
     "secConf": 0.177
    },
@@ -15522,9 +15522,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.343,
+    "chConf": 0.355,
     "sec": "14.1",
-    "secConf": 0.787
+    "secConf": 0.754
    },
    {
     "n": 7,
@@ -15578,9 +15578,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.421,
+    "chConf": 0.415,
     "sec": "14.4",
-    "secConf": 0.119
+    "secConf": 0.172
    },
    {
     "n": 9,
@@ -15606,7 +15606,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.342,
+    "chConf": 0.341,
     "sec": "7.3",
     "secConf": 0.121
    },
@@ -15634,9 +15634,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.361,
+    "chConf": 0.363,
     "sec": "9.4",
-    "secConf": 0.845
+    "secConf": 0.837
    },
    {
     "n": 11,
@@ -15669,7 +15669,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.035,
+    "chConf": 0.081,
     "sec": null,
     "secConf": null
    },
@@ -15697,9 +15697,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.548,
+    "chConf": 0.526,
     "sec": "10.1",
-    "secConf": 0.269
+    "secConf": 0.231
    },
    {
     "n": 13,
@@ -15725,7 +15725,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.809,
+    "chConf": 0.808,
     "sec": "8.1",
     "secConf": 1.0
    },
@@ -15753,7 +15753,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.228,
+    "chConf": 0.227,
     "sec": "8.4",
     "secConf": 0.216
    },
@@ -15834,7 +15834,7 @@
     "ch": 2,
     "chConf": 0.234,
     "sec": "2.7",
-    "secConf": 0.176
+    "secConf": 0.169
    },
    {
     "n": 17,
@@ -15860,9 +15860,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.61,
+    "chConf": 0.605,
     "sec": "14.3",
-    "secConf": 0.434
+    "secConf": 0.419
    },
    {
     "n": 18,
@@ -15916,7 +15916,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.548,
+    "chConf": 0.573,
     "sec": "15.2",
     "secConf": 0.27
    },
@@ -15944,7 +15944,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.217,
+    "chConf": 0.215,
     "sec": "12.2",
     "secConf": 0.142
    },
@@ -15972,7 +15972,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.347,
+    "chConf": 0.346,
     "sec": null,
     "secConf": null
    },
@@ -16000,7 +16000,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.059,
+    "chConf": 0.086,
     "sec": null,
     "secConf": null
    },
@@ -16033,10 +16033,10 @@
       "t": "L$11,250"
      }
     ],
-    "ch": 15,
-    "chConf": 0.063,
-    "sec": null,
-    "secConf": null
+    "ch": 10,
+    "chConf": 0.238,
+    "sec": "10.7",
+    "secConf": 0.634
    },
    {
     "n": 24,
@@ -16067,10 +16067,10 @@
       "t": "L$6,750"
      }
     ],
-    "ch": 15,
-    "chConf": 0.063,
-    "sec": null,
-    "secConf": null
+    "ch": 10,
+    "chConf": 0.238,
+    "sec": "10.7",
+    "secConf": 0.634
    },
    {
     "n": 25,
@@ -16096,7 +16096,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.431,
+    "chConf": 0.429,
     "sec": "12.4",
     "secConf": 0.355
    },
@@ -16124,7 +16124,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.425,
+    "chConf": 0.42,
     "sec": "2.5",
     "secConf": 0.306
    },
@@ -16152,7 +16152,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.449,
+    "chConf": 0.433,
     "sec": "13.2",
     "secConf": 0.296
    },
@@ -16180,7 +16180,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.157,
+    "chConf": 0.136,
     "sec": "13.2",
     "secConf": 0.162
    },
@@ -16208,7 +16208,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.343,
+    "chConf": 0.312,
     "sec": "12.5",
     "secConf": 0.138
    },
@@ -16236,7 +16236,7 @@
      }
     ],
     "ch": 1,
-    "chConf": 0.729,
+    "chConf": 0.673,
     "sec": "1.1",
     "secConf": 0.945
    }
@@ -16285,7 +16285,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.205,
+    "chConf": 0.21,
     "sec": null,
     "secConf": null
    },
@@ -16297,7 +16297,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.285,
+    "chConf": 0.287,
     "sec": "15.2",
     "secConf": 0.262
    },
@@ -16308,7 +16308,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.526,
+    "chConf": 0.525,
     "sec": "9.2",
     "secConf": 0.438
    },
@@ -16320,7 +16320,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.617,
+    "chConf": 0.615,
     "sec": "8.2",
     "secConf": 0.321
    },
@@ -16345,9 +16345,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.6,
+    "chConf": 0.599,
     "sec": "9.9",
-    "secConf": 0.136
+    "secConf": 0.139
    },
    {
     "n": 7,
@@ -16370,7 +16370,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.382,
+    "chConf": 0.372,
     "sec": null,
     "secConf": null
    },
@@ -16382,9 +16382,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.498,
-    "sec": "10.2",
-    "secConf": 0.114
+    "chConf": 0.481,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 10,
@@ -16394,9 +16394,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.308,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.262,
+    "sec": "10.2",
+    "secConf": 0.151
    },
    {
     "n": 11,
@@ -16405,7 +16405,7 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.139,
+    "chConf": 0.182,
     "sec": null,
     "secConf": null
    },
@@ -16417,7 +16417,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.827,
+    "chConf": 0.826,
     "sec": "8.2",
     "secConf": 0.511
    },
@@ -16429,7 +16429,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.209,
+    "chConf": 0.208,
     "sec": "13.4",
     "secConf": 0.715
    },
@@ -16441,7 +16441,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.106,
+    "chConf": 0.108,
     "sec": "15.5",
     "secConf": 0.676
    },
@@ -16453,9 +16453,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.668,
+    "chConf": 0.672,
     "sec": "14.3",
-    "secConf": 0.348
+    "secConf": 0.323
    },
    {
     "n": 16,
@@ -16465,7 +16465,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.206,
+    "chConf": 0.204,
     "sec": "8.3",
     "secConf": 0.158
    },
@@ -16477,7 +16477,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.203,
+    "chConf": 0.191,
     "sec": "8.4",
     "secConf": 0.448
    },
@@ -16500,7 +16500,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.061,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -16516,7 +16516,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.058,
+    "chConf": 0.06,
     "sec": null,
     "secConf": null
    }
@@ -16985,7 +16985,7 @@
      "                                                        INSIGHT"
     ],
     "examiner": [],
-    "ch": 10,
+    "ch": 3,
     "chConf": 0.021,
     "sec": null,
     "secConf": null
@@ -17032,7 +17032,7 @@
      "        displayed poor understanding of the knowledge required to answer the question."
     ],
     "ch": 13,
-    "chConf": 0.516,
+    "chConf": 0.511,
     "sec": "13.2",
     "secConf": 0.142
    },
@@ -17134,9 +17134,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.393,
+    "chConf": 0.356,
     "sec": "10.2",
-    "secConf": 0.278
+    "secConf": 0.283
    },
    {
     "n": 4,
@@ -17203,7 +17203,7 @@
     ],
     "examiner": [],
     "ch": 4,
-    "chConf": 0.246,
+    "chConf": 0.253,
     "sec": "4.8",
     "secConf": 0.196
    },
@@ -17278,7 +17278,7 @@
     ],
     "examiner": [],
     "ch": 12,
-    "chConf": 0.042,
+    "chConf": 0.041,
     "sec": null,
     "secConf": null
    },
@@ -17342,9 +17342,9 @@
     ],
     "examiner": [],
     "ch": 11,
-    "chConf": 0.158,
+    "chConf": 0.193,
     "sec": "11.7",
-    "secConf": 0.303
+    "secConf": 0.301
    }
   ],
   "dietName": "March 2015"
@@ -22963,9 +22963,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.057,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.131,
+    "sec": "9.7",
+    "secConf": 0.186
    },
    {
     "n": 2,
@@ -22991,9 +22991,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.534,
+    "chConf": 0.533,
     "sec": "9.5",
-    "secConf": 0.54
+    "secConf": 0.538
    },
    {
     "n": 3,
@@ -23103,7 +23103,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.817,
+    "chConf": 0.816,
     "sec": "8.2",
     "secConf": 0.177
    },
@@ -23131,9 +23131,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.343,
+    "chConf": 0.355,
     "sec": "14.1",
-    "secConf": 0.787
+    "secConf": 0.754
    },
    {
     "n": 7,
@@ -23187,9 +23187,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.421,
+    "chConf": 0.415,
     "sec": "14.4",
-    "secConf": 0.119
+    "secConf": 0.172
    },
    {
     "n": 9,
@@ -23215,7 +23215,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.364,
+    "chConf": 0.362,
     "sec": "7.3",
     "secConf": 0.121
    },
@@ -23243,9 +23243,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.361,
+    "chConf": 0.363,
     "sec": "9.4",
-    "secConf": 0.845
+    "secConf": 0.837
    },
    {
     "n": 11,
@@ -23279,9 +23279,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.439,
+    "chConf": 0.459,
     "sec": "10.1",
-    "secConf": 0.651
+    "secConf": 0.435
    },
    {
     "n": 12,
@@ -23307,9 +23307,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.548,
+    "chConf": 0.526,
     "sec": "10.1",
-    "secConf": 0.269
+    "secConf": 0.231
    },
    {
     "n": 13,
@@ -23335,7 +23335,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.809,
+    "chConf": 0.808,
     "sec": "8.1",
     "secConf": 1.0
    },
@@ -23363,7 +23363,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.233,
+    "chConf": 0.232,
     "sec": "8.4",
     "secConf": 0.216
    },
@@ -23451,7 +23451,7 @@
     "ch": 2,
     "chConf": 0.234,
     "sec": "2.7",
-    "secConf": 0.176
+    "secConf": 0.169
    },
    {
     "n": 17,
@@ -23477,9 +23477,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.61,
+    "chConf": 0.605,
     "sec": "14.3",
-    "secConf": 0.434
+    "secConf": 0.419
    },
    {
     "n": 18,
@@ -23533,7 +23533,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.548,
+    "chConf": 0.573,
     "sec": "15.2",
     "secConf": 0.27
    },
@@ -23589,7 +23589,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.345,
+    "chConf": 0.344,
     "sec": "3.4",
     "secConf": 0.116
    },
@@ -23651,10 +23651,10 @@
       "t": "L$11,250"
      }
     ],
-    "ch": 15,
-    "chConf": 0.063,
-    "sec": null,
-    "secConf": null
+    "ch": 10,
+    "chConf": 0.238,
+    "sec": "10.7",
+    "secConf": 0.634
    },
    {
     "n": 24,
@@ -23686,10 +23686,10 @@
       "t": "L$6,750"
      }
     ],
-    "ch": 15,
-    "chConf": 0.063,
-    "sec": null,
-    "secConf": null
+    "ch": 10,
+    "chConf": 0.238,
+    "sec": "10.7",
+    "secConf": 0.634
    },
    {
     "n": 25,
@@ -23715,7 +23715,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.422,
+    "chConf": 0.42,
     "sec": "12.4",
     "secConf": 0.165
    },
@@ -23743,7 +23743,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.425,
+    "chConf": 0.42,
     "sec": "2.5",
     "secConf": 0.306
    },
@@ -23771,7 +23771,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.449,
+    "chConf": 0.433,
     "sec": "13.2",
     "secConf": 0.296
    },
@@ -23799,7 +23799,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.157,
+    "chConf": 0.136,
     "sec": "13.2",
     "secConf": 0.162
    },
@@ -23827,7 +23827,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.343,
+    "chConf": 0.312,
     "sec": "12.5",
     "secConf": 0.138
    },
@@ -23855,7 +23855,7 @@
      }
     ],
     "ch": 1,
-    "chConf": 0.729,
+    "chConf": 0.673,
     "sec": "1.1",
     "secConf": 0.945
    }
@@ -23904,7 +23904,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.205,
+    "chConf": 0.21,
     "sec": null,
     "secConf": null
    },
@@ -23916,7 +23916,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.285,
+    "chConf": 0.287,
     "sec": "15.2",
     "secConf": 0.262
    },
@@ -23928,7 +23928,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.526,
+    "chConf": 0.525,
     "sec": "9.2",
     "secConf": 0.438
    },
@@ -23940,7 +23940,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.6,
+    "chConf": 0.599,
     "sec": "8.2",
     "secConf": 0.321
    },
@@ -23953,7 +23953,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.201,
+    "chConf": 0.2,
     "sec": null,
     "secConf": null
    },
@@ -23967,9 +23967,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.6,
+    "chConf": 0.599,
     "sec": "9.9",
-    "secConf": 0.136
+    "secConf": 0.139
    },
    {
     "n": 7,
@@ -23993,7 +23993,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.382,
+    "chConf": 0.372,
     "sec": null,
     "secConf": null
    },
@@ -24006,9 +24006,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.498,
-    "sec": "10.2",
-    "secConf": 0.114
+    "chConf": 0.481,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 10,
@@ -24018,9 +24018,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.308,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.262,
+    "sec": "10.2",
+    "secConf": 0.151
    },
    {
     "n": 11,
@@ -24030,7 +24030,7 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.139,
+    "chConf": 0.182,
     "sec": null,
     "secConf": null
    },
@@ -24042,7 +24042,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.827,
+    "chConf": 0.826,
     "sec": "8.2",
     "secConf": 0.511
    },
@@ -24055,7 +24055,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.209,
+    "chConf": 0.208,
     "sec": "13.4",
     "secConf": 0.715
    },
@@ -24071,7 +24071,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.091,
+    "chConf": 0.093,
     "sec": null,
     "secConf": null
    },
@@ -24084,9 +24084,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.668,
+    "chConf": 0.672,
     "sec": "14.3",
-    "secConf": 0.348
+    "secConf": 0.323
    },
    {
     "n": 16,
@@ -24096,7 +24096,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.206,
+    "chConf": 0.204,
     "sec": "8.3",
     "secConf": 0.158
    },
@@ -24108,7 +24108,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.203,
+    "chConf": 0.191,
     "sec": "8.4",
     "secConf": 0.448
    },
@@ -24132,7 +24132,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.061,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -24144,7 +24144,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.075,
+    "chConf": 0.077,
     "sec": null,
     "secConf": null
    }
@@ -24660,7 +24660,7 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.046,
+    "chConf": 0.004,
     "sec": null,
     "secConf": null
    },
@@ -24713,7 +24713,7 @@
      "knowledge required to answer the question."
     ],
     "ch": 13,
-    "chConf": 0.506,
+    "chConf": 0.504,
     "sec": "13.2",
     "secConf": 0.156
    },
@@ -24818,9 +24818,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.432,
+    "chConf": 0.398,
     "sec": "10.2",
-    "secConf": 0.269
+    "secConf": 0.277
    },
    {
     "n": 4,
@@ -24887,7 +24887,7 @@
     ],
     "examiner": [],
     "ch": 4,
-    "chConf": 0.237,
+    "chConf": 0.244,
     "sec": "4.8",
     "secConf": 0.196
    },
@@ -25034,9 +25034,9 @@
     ],
     "examiner": [],
     "ch": 11,
-    "chConf": 0.145,
+    "chConf": 0.181,
     "sec": "11.7",
-    "secConf": 0.315
+    "secConf": 0.312
    }
   ],
   "dietName": "September 2015"
@@ -30699,9 +30699,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.351,
+    "chConf": 0.352,
     "sec": "14.2",
-    "secConf": 0.527
+    "secConf": 0.5
    },
    {
     "n": 2,
@@ -30727,7 +30727,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.011,
+    "chConf": 0.036,
     "sec": null,
     "secConf": null
    },
@@ -30764,7 +30764,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.324,
+    "chConf": 0.353,
     "sec": "6.1",
     "secConf": 0.128
    },
@@ -30792,9 +30792,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.494,
+    "chConf": 0.504,
     "sec": "9.5",
-    "secConf": 0.171
+    "secConf": 0.17
    },
    {
     "n": 5,
@@ -30820,9 +30820,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.742,
+    "chConf": 0.739,
     "sec": "14.3",
-    "secConf": 0.381
+    "secConf": 0.359
    },
    {
     "n": 6,
@@ -30848,7 +30848,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.673,
+    "chConf": 0.672,
     "sec": "3.3",
     "secConf": 0.333
    },
@@ -30876,9 +30876,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.214,
+    "chConf": 0.202,
     "sec": "10.1",
-    "secConf": 0.416
+    "secConf": 0.385
    },
    {
     "n": 8,
@@ -30910,9 +30910,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.142,
+    "chConf": 0.114,
     "sec": "10.3",
-    "secConf": 0.161
+    "secConf": 0.205
    },
    {
     "n": 9,
@@ -30944,7 +30944,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.293,
+    "chConf": 0.29,
     "sec": "13.2",
     "secConf": 0.29
    },
@@ -30972,7 +30972,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.706,
+    "chConf": 0.708,
     "sec": null,
     "secConf": null
    },
@@ -31000,7 +31000,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.521,
+    "chConf": 0.522,
     "sec": "7.2",
     "secConf": 0.374
    },
@@ -31028,7 +31028,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.416,
+    "chConf": 0.419,
     "sec": "3.5",
     "secConf": 0.426
    },
@@ -31056,7 +31056,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.498,
+    "chConf": 0.499,
     "sec": "3.6",
     "secConf": 0.166
    },
@@ -31084,7 +31084,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.349,
+    "chConf": 0.35,
     "sec": null,
     "secConf": null
    },
@@ -31112,9 +31112,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.331,
-    "sec": "10.4",
-    "secConf": 0.222
+    "chConf": 0.524,
+    "sec": "10.7",
+    "secConf": 0.654
    },
    {
     "n": 16,
@@ -31140,9 +31140,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.578,
+    "chConf": 0.57,
     "sec": "14.3",
-    "secConf": 0.163
+    "secConf": 0.165
    },
    {
     "n": 17,
@@ -31168,7 +31168,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.154,
+    "chConf": 0.156,
     "sec": null,
     "secConf": null
    },
@@ -31196,7 +31196,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.062,
+    "chConf": 0.046,
     "sec": null,
     "secConf": null
    },
@@ -31224,7 +31224,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.339,
+    "chConf": 0.337,
     "sec": "7.2",
     "secConf": 0.411
    },
@@ -31252,7 +31252,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.335,
+    "chConf": 0.315,
     "sec": "13.2",
     "secConf": 0.563
    },
@@ -31292,9 +31292,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.482,
+    "chConf": 0.455,
     "sec": "10.1",
-    "secConf": 0.384
+    "secConf": 0.357
    },
    {
     "n": 22,
@@ -31332,9 +31332,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.475,
+    "chConf": 0.448,
     "sec": "10.1",
-    "secConf": 0.347
+    "secConf": 0.325
    },
    {
     "n": 23,
@@ -31373,7 +31373,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.752,
+    "chConf": 0.751,
     "sec": "3.5",
     "secConf": 0.346
    },
@@ -31430,8 +31430,8 @@
     ],
     "ch": 14,
     "chConf": 0.627,
-    "sec": "14.3",
-    "secConf": 0.117
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 26,
@@ -31457,7 +31457,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.128,
+    "chConf": 0.129,
     "sec": "15.3",
     "secConf": 0.355
    },
@@ -31485,7 +31485,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.326,
+    "chConf": 0.324,
     "sec": null,
     "secConf": null
    },
@@ -31516,7 +31516,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.18,
+    "chConf": 0.181,
     "sec": "12.5",
     "secConf": 0.247
    },
@@ -31544,7 +31544,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.038,
+    "chConf": 0.033,
     "sec": null,
     "secConf": null
    },
@@ -31572,9 +31572,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.684,
+    "chConf": 0.681,
     "sec": "14.3",
-    "secConf": 0.133
+    "secConf": 0.137
    }
   ],
   "mcq_key": {
@@ -31669,9 +31669,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.231,
+    "chConf": 0.263,
     "sec": "11.5",
-    "secConf": 0.643
+    "secConf": 0.642
    },
    {
     "n": 2,
@@ -31685,9 +31685,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.434,
+    "chConf": 0.428,
     "sec": "14.3",
-    "secConf": 0.385
+    "secConf": 0.363
    },
    {
     "n": 3,
@@ -31710,7 +31710,7 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.346,
+    "chConf": 0.298,
     "sec": "1.1",
     "secConf": 0.735
    },
@@ -31724,7 +31724,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.308,
+    "chConf": 0.229,
     "sec": "12.5",
     "secConf": 0.237
    },
@@ -31756,7 +31756,7 @@
      "      Goods are transferred to the branch at cost plus 20%."
     ],
     "ch": 12,
-    "chConf": 0.261,
+    "chConf": 0.256,
     "sec": "12.5",
     "secConf": 0.102
    },
@@ -31777,7 +31777,7 @@
      "      bag. Yomie sold 2,500 bags of Cocoa to customers."
     ],
     "ch": 15,
-    "chConf": 0.568,
+    "chConf": 0.476,
     "sec": "15.5",
     "secConf": 0.888
    },
@@ -31798,7 +31798,7 @@
      "      bag. Yomie sold 2,500 bags of Cocoa to customers."
     ],
     "ch": 15,
-    "chConf": 0.495,
+    "chConf": 0.454,
     "sec": "15.5",
     "secConf": 0.827
    },
@@ -31811,9 +31811,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.187,
+    "chConf": 0.201,
     "sec": "11.3",
-    "secConf": 0.653
+    "secConf": 0.657
    },
    {
     "n": 11,
@@ -31836,9 +31836,9 @@
      "      Z ₦6,250,000 (Dr.)"
     ],
     "ch": 10,
-    "chConf": 0.31,
+    "chConf": 0.3,
     "sec": "10.1",
-    "secConf": 0.298
+    "secConf": 0.287
    },
    {
     "n": 12,
@@ -31860,9 +31860,9 @@
      "      Z ₦6,250,000 (Dr.)"
     ],
     "ch": 10,
-    "chConf": 0.44,
-    "sec": "10.1",
-    "secConf": 0.123
+    "chConf": 0.428,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 13,
@@ -31872,7 +31872,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.212,
+    "chConf": 0.206,
     "sec": "6.1",
     "secConf": 0.126
    },
@@ -31886,9 +31886,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.299,
+    "chConf": 0.252,
     "sec": "10.2",
-    "secConf": 0.351
+    "secConf": 0.385
    },
    {
     "n": 15,
@@ -31898,9 +31898,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.101,
-    "sec": "9.1",
-    "secConf": 0.666
+    "chConf": 0.069,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 16,
@@ -31909,7 +31909,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.133,
+    "chConf": 0.134,
     "sec": "15.5",
     "secConf": 0.684
    },
@@ -31921,9 +31921,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.081,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.122,
+    "sec": "10.2",
+    "secConf": 0.276
    },
    {
     "n": 18,
@@ -31934,9 +31934,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.303,
+    "chConf": 0.287,
     "sec": "10.4",
-    "secConf": 0.853
+    "secConf": 0.849
    },
    {
     "n": 19,
@@ -31947,7 +31947,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.039,
+    "chConf": 0.002,
     "sec": null,
     "secConf": null
    },
@@ -31960,7 +31960,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.544,
+    "chConf": 0.5,
     "sec": "13.6",
     "secConf": 0.711
    }
@@ -32486,9 +32486,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.184,
-    "sec": "10.4",
-    "secConf": 0.484
+    "chConf": 0.585,
+    "sec": "10.7",
+    "secConf": 0.648
    },
    {
     "n": 2,
@@ -32635,7 +32635,7 @@
     ],
     "examiner": [],
     "ch": 9,
-    "chConf": 0.292,
+    "chConf": 0.291,
     "sec": null,
     "secConf": null
    },
@@ -32796,7 +32796,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.229,
+    "chConf": 0.233,
     "sec": "3.5",
     "secConf": 0.122
    },
@@ -32888,9 +32888,9 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.263,
+    "chConf": 0.297,
     "sec": "14.3",
-    "secConf": 0.292
+    "secConf": 0.259
    }
   ],
   "dietName": "September 2016"
@@ -38947,7 +38947,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.094,
+    "chConf": 0.099,
     "sec": null,
     "secConf": null
    },
@@ -39031,7 +39031,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.424,
+    "chConf": 0.432,
     "sec": "12.1",
     "secConf": 0.651
    },
@@ -39059,9 +39059,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.374,
+    "chConf": 0.368,
     "sec": "14.3",
-    "secConf": 0.159
+    "secConf": 0.124
    },
    {
     "n": 6,
@@ -39087,7 +39087,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.634,
+    "chConf": 0.645,
     "sec": null,
     "secConf": null
    },
@@ -39115,7 +39115,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.097,
+    "chConf": 0.045,
     "sec": null,
     "secConf": null
    },
@@ -39143,9 +39143,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.273,
-    "sec": "10.1",
-    "secConf": 0.113
+    "chConf": 0.234,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 9,
@@ -39171,7 +39171,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.544,
+    "chConf": 0.542,
     "sec": "9.5",
     "secConf": 0.549
    },
@@ -39199,7 +39199,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.159,
+    "chConf": 0.162,
     "sec": "4.9",
     "secConf": 0.606
    },
@@ -39227,9 +39227,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.198,
-    "sec": "10.2",
-    "secConf": 0.206
+    "chConf": 0.764,
+    "sec": "10.7",
+    "secConf": 0.705
    },
    {
     "n": 12,
@@ -39255,7 +39255,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.421,
+    "chConf": 0.427,
     "sec": "13.2",
     "secConf": 0.385
    },
@@ -39288,7 +39288,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.408,
+    "chConf": 0.391,
     "sec": "15.2",
     "secConf": 0.19
    },
@@ -39349,7 +39349,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.165,
+    "chConf": 0.167,
     "sec": "6.3",
     "secConf": 0.284
    },
@@ -39377,7 +39377,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.18,
+    "chConf": 0.195,
     "sec": "4.4",
     "secConf": 0.407
    },
@@ -39405,9 +39405,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.127,
+    "chConf": 0.173,
     "sec": "11.4",
-    "secConf": 0.467
+    "secConf": 0.466
    },
    {
     "n": 18,
@@ -39433,7 +39433,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.412,
+    "chConf": 0.41,
     "sec": "8.2",
     "secConf": 0.732
    },
@@ -39461,7 +39461,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.156,
+    "chConf": 0.157,
     "sec": "3.5",
     "secConf": 0.196
    },
@@ -39489,9 +39489,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.537,
-    "sec": "10.4",
-    "secConf": 0.543
+    "chConf": 0.562,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 21,
@@ -39517,7 +39517,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.804,
+    "chConf": 0.812,
     "sec": null,
     "secConf": null
    },
@@ -39545,9 +39545,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.424,
+    "chConf": 0.401,
     "sec": "10.4",
-    "secConf": 0.585
+    "secConf": 0.592
    },
    {
     "n": 23,
@@ -39586,7 +39586,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.086,
+    "chConf": 0.087,
     "sec": null,
     "secConf": null
    },
@@ -39627,7 +39627,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.009,
+    "chConf": 0.011,
     "sec": null,
     "secConf": null
    },
@@ -39655,7 +39655,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.238,
+    "chConf": 0.263,
     "sec": null,
     "secConf": null
    },
@@ -39683,9 +39683,9 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.096,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.127,
+    "sec": "13.1",
+    "secConf": 0.242
    },
    {
     "n": 27,
@@ -39799,7 +39799,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.064,
+    "chConf": 0.066,
     "sec": null,
     "secConf": null
    },
@@ -39826,8 +39826,8 @@
       "t": "DR - Cash Book CR - Profit or Loss Account INSIGHT"
      }
     ],
-    "ch": 6,
-    "chConf": 0.057,
+    "ch": 10,
+    "chConf": 0.02,
     "sec": null,
     "secConf": null
    }
@@ -39920,7 +39920,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.601,
+    "chConf": 0.625,
     "sec": "15.7",
     "secConf": 0.364
    },
@@ -39932,7 +39932,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.166,
+    "chConf": 0.17,
     "sec": "3.3",
     "secConf": 0.152
    },
@@ -39944,9 +39944,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.76,
+    "chConf": 0.757,
     "sec": "14.3",
-    "secConf": 0.52
+    "secConf": 0.514
    },
    {
     "n": 4,
@@ -39956,7 +39956,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.079,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -39968,7 +39968,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.766,
+    "chConf": 0.772,
     "sec": "13.3",
     "secConf": 0.292
    },
@@ -39992,9 +39992,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.71,
+    "chConf": 0.717,
     "sec": "9.4",
-    "secConf": 0.163
+    "secConf": 0.31
    },
    {
     "n": 8,
@@ -40003,9 +40003,9 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.193,
+    "chConf": 0.194,
     "sec": "2.7",
-    "secConf": 0.334
+    "secConf": 0.321
    },
    {
     "n": 9,
@@ -40016,9 +40016,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.356,
+    "chConf": 0.357,
     "sec": "14.2",
-    "secConf": 0.718
+    "secConf": 0.555
    },
    {
     "n": 10,
@@ -40043,7 +40043,7 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.751,
+    "chConf": 0.755,
     "sec": "11.5",
     "secConf": 0.775
    },
@@ -40055,7 +40055,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.042,
+    "chConf": 0.039,
     "sec": null,
     "secConf": null
    },
@@ -40067,7 +40067,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.372,
+    "chConf": 0.37,
     "sec": "12.1",
     "secConf": 0.132
    },
@@ -40080,7 +40080,7 @@
     ],
     "pre": [],
     "ch": 5,
-    "chConf": 0.022,
+    "chConf": 0.026,
     "sec": null,
     "secConf": null
    },
@@ -40092,9 +40092,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.234,
+    "chConf": 0.252,
     "sec": "11.8",
-    "secConf": 0.214
+    "secConf": 0.222
    },
    {
     "n": 16,
@@ -40105,7 +40105,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.558,
+    "chConf": 0.559,
     "sec": "12.3",
     "secConf": 0.734
    },
@@ -40122,7 +40122,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.696,
+    "chConf": 0.698,
     "sec": "3.4",
     "secConf": 0.656
    },
@@ -40134,7 +40134,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.437,
+    "chConf": 0.456,
     "sec": "15.4",
     "secConf": 0.34
    },
@@ -40147,9 +40147,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.364,
+    "chConf": 0.354,
     "sec": "14.5",
-    "secConf": 0.78
+    "secConf": 0.823
    },
    {
     "n": 20,
@@ -40160,7 +40160,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.232,
+    "chConf": 0.195,
     "sec": "13.6",
     "secConf": 0.885
    }
@@ -40594,7 +40594,7 @@
     ],
     "examiner": [],
     "ch": 5,
-    "chConf": 0.181,
+    "chConf": 0.179,
     "sec": "5.2",
     "secConf": 0.292
    },
@@ -40650,7 +40650,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.237,
+    "chConf": 0.235,
     "sec": "13.2",
     "secConf": 0.364
    },
@@ -40702,7 +40702,7 @@
     ],
     "examiner": [],
     "ch": 6,
-    "chConf": 0.121,
+    "chConf": 0.173,
     "sec": "6.5",
     "secConf": 0.207
    },
@@ -40772,7 +40772,7 @@
     ],
     "examiner": [],
     "ch": 5,
-    "chConf": 0.386,
+    "chConf": 0.378,
     "sec": "5.8",
     "secConf": 0.642
    },
@@ -40852,7 +40852,7 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.065,
+    "chConf": 0.06,
     "sec": null,
     "secConf": null
    },
@@ -40936,7 +40936,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.383,
+    "chConf": 0.379,
     "sec": "13.6",
     "secConf": 0.141
    }
@@ -47093,7 +47093,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.292,
+    "chConf": 0.306,
     "sec": "4.8",
     "secConf": 0.377
    },
@@ -47121,7 +47121,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.341,
+    "chConf": 0.34,
     "sec": "5.1",
     "secConf": 0.324
    },
@@ -47149,7 +47149,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.789,
+    "chConf": 0.787,
     "sec": "8.2",
     "secConf": 0.219
    },
@@ -47177,7 +47177,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.036,
+    "chConf": 0.043,
     "sec": null,
     "secConf": null
    },
@@ -47205,7 +47205,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.654,
+    "chConf": 0.655,
     "sec": null,
     "secConf": null
    },
@@ -47233,7 +47233,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.6,
+    "chConf": 0.599,
     "sec": "8.2",
     "secConf": 0.47
    },
@@ -47261,7 +47261,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.194,
+    "chConf": 0.189,
     "sec": "6.5",
     "secConf": 0.255
    },
@@ -47289,7 +47289,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.306,
+    "chConf": 0.309,
     "sec": "12.1",
     "secConf": 0.205
    },
@@ -47317,9 +47317,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.262,
-    "sec": "10.1",
-    "secConf": 0.685
+    "chConf": 0.628,
+    "sec": "10.7",
+    "secConf": 0.687
    },
    {
     "n": 10,
@@ -47353,7 +47353,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.475,
+    "chConf": 0.472,
     "sec": "12.5",
     "secConf": 0.138
    },
@@ -47381,7 +47381,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.083,
+    "chConf": 0.078,
     "sec": null,
     "secConf": null
    },
@@ -47417,9 +47417,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.266,
+    "chConf": 0.261,
     "sec": "14.3",
-    "secConf": 0.261
+    "secConf": 0.23
    },
    {
     "n": 13,
@@ -47445,7 +47445,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.307,
+    "chConf": 0.308,
     "sec": "15.2",
     "secConf": 0.424
    },
@@ -47473,7 +47473,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.356,
+    "chConf": 0.355,
     "sec": "13.2",
     "secConf": 0.254
    },
@@ -47516,7 +47516,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.339,
+    "chConf": 0.35,
     "sec": "13.2",
     "secConf": 0.318
    },
@@ -47544,7 +47544,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.521,
+    "chConf": 0.535,
     "sec": "13.2",
     "secConf": 0.28
    },
@@ -47572,9 +47572,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.63,
+    "chConf": 0.626,
     "sec": "14.3",
-    "secConf": 0.491
+    "secConf": 0.482
    },
    {
     "n": 18,
@@ -47600,9 +47600,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.61,
+    "chConf": 0.591,
     "sec": "10.3",
-    "secConf": 0.14
+    "secConf": 0.192
    },
    {
     "n": 19,
@@ -47628,9 +47628,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.222,
+    "chConf": 0.235,
     "sec": "11.6",
-    "secConf": 0.498
+    "secConf": 0.467
    },
    {
     "n": 20,
@@ -47656,9 +47656,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.645,
+    "chConf": 0.627,
     "sec": "10.4",
-    "secConf": 0.685
+    "secConf": 0.695
    },
    {
     "n": 21,
@@ -47684,7 +47684,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.032,
+    "chConf": 0.099,
     "sec": null,
     "secConf": null
    },
@@ -47714,7 +47714,7 @@
     "ch": 11,
     "chConf": 0.506,
     "sec": "11.5",
-    "secConf": 0.536
+    "secConf": 0.568
    },
    {
     "n": 23,
@@ -47747,9 +47747,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.17,
+    "chConf": 0.131,
     "sec": "11.6",
-    "secConf": 0.145
+    "secConf": 0.216
    },
    {
     "n": 24,
@@ -47775,7 +47775,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.086,
+    "chConf": 0.084,
     "sec": null,
     "secConf": null
    },
@@ -47803,7 +47803,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.027,
+    "chConf": 0.014,
     "sec": null,
     "secConf": null
    },
@@ -47831,9 +47831,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.674,
+    "chConf": 0.673,
     "sec": "2.3",
-    "secConf": 0.472
+    "secConf": 0.473
    },
    {
     "n": 27,
@@ -47887,7 +47887,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.168,
+    "chConf": 0.167,
     "sec": "12.3",
     "secConf": 0.198
    },
@@ -47915,7 +47915,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.256,
+    "chConf": 0.257,
     "sec": "3.2",
     "secConf": 0.235
    },
@@ -47943,7 +47943,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.28,
+    "chConf": 0.281,
     "sec": "12.5",
     "secConf": 0.473
    }
@@ -48030,7 +48030,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.375,
+    "chConf": 0.382,
     "sec": "3.6",
     "secConf": 0.113
    },
@@ -48045,7 +48045,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.339,
+    "chConf": 0.338,
     "sec": "4.9",
     "secConf": 0.354
    },
@@ -48056,7 +48056,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.495,
+    "chConf": 0.497,
     "sec": "3.6",
     "secConf": 0.608
    },
@@ -48068,7 +48068,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.52,
+    "chConf": 0.57,
     "sec": "12.4",
     "secConf": 0.915
    },
@@ -48080,7 +48080,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.334,
+    "chConf": 0.337,
     "sec": "12.1",
     "secConf": 0.213
    },
@@ -48094,7 +48094,7 @@
     ],
     "pre": [],
     "ch": 5,
-    "chConf": 0.504,
+    "chConf": 0.159,
     "sec": "5.8",
     "secConf": 0.347
    },
@@ -48106,7 +48106,7 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.704,
+    "chConf": 0.705,
     "sec": "1.1",
     "secConf": 0.842
    },
@@ -48119,7 +48119,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.065,
+    "chConf": 0.066,
     "sec": null,
     "secConf": null
    },
@@ -48133,9 +48133,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.634,
+    "chConf": 0.629,
     "sec": "14.3",
-    "secConf": 0.357
+    "secConf": 0.34
    },
    {
     "n": 11,
@@ -48146,7 +48146,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.579,
+    "chConf": 0.604,
     "sec": "15.4",
     "secConf": 0.499
    },
@@ -48158,7 +48158,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.774,
+    "chConf": 0.78,
     "sec": "13.3",
     "secConf": 0.292
    },
@@ -48171,7 +48171,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.014,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -48183,7 +48183,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.725,
+    "chConf": 0.726,
     "sec": "2.3",
     "secConf": 0.53
    },
@@ -48207,7 +48207,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.289,
+    "chConf": 0.293,
     "sec": "3.2",
     "secConf": 0.157
    },
@@ -48220,9 +48220,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.261,
+    "chConf": 0.282,
     "sec": "11.5",
-    "secConf": 0.427
+    "secConf": 0.426
    },
    {
     "n": 18,
@@ -48232,7 +48232,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.274,
+    "chConf": 0.259,
     "sec": null,
     "secConf": null
    },
@@ -48244,9 +48244,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.336,
+    "chConf": 0.301,
     "sec": "10.2",
-    "secConf": 0.497
+    "secConf": 0.483
    },
    {
     "n": 20,
@@ -48258,9 +48258,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.545,
+    "chConf": 0.523,
     "sec": "10.4",
-    "secConf": 0.732
+    "secConf": 0.731
    }
   ],
   "saq_solutions": [
@@ -48742,7 +48742,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.027,
+    "chConf": 0.052,
     "sec": null,
     "secConf": null
    },
@@ -48859,9 +48859,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.443,
+    "chConf": 0.426,
     "sec": "10.1",
-    "secConf": 0.432
+    "secConf": 0.413
    },
    {
     "n": 4,
@@ -48945,7 +48945,7 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.047,
+    "chConf": 0.078,
     "sec": null,
     "secConf": null
    },
@@ -49029,9 +49029,9 @@
     ],
     "examiner": [],
     "ch": 2,
-    "chConf": 0.471,
+    "chConf": 0.468,
     "sec": "2.6",
-    "secConf": 0.228
+    "secConf": 0.245
    }
   ],
   "dietName": "September 2017"
@@ -54974,7 +54974,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.549,
+    "chConf": 0.541,
     "sec": "2.3",
     "secConf": 0.623
    },
@@ -55030,7 +55030,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.341,
+    "chConf": 0.342,
     "sec": null,
     "secConf": null
    },
@@ -55058,7 +55058,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.314,
+    "chConf": 0.295,
     "sec": "13.2",
     "secConf": 0.557
    },
@@ -55119,7 +55119,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.19,
+    "chConf": 0.166,
     "sec": null,
     "secConf": null
    },
@@ -55152,7 +55152,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.141,
+    "chConf": 0.109,
     "sec": "13.5",
     "secConf": 0.11
    },
@@ -55246,7 +55246,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.249,
+    "chConf": 0.248,
     "sec": "5.2",
     "secConf": 0.21
    },
@@ -55274,7 +55274,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.414,
+    "chConf": 0.419,
     "sec": "3.6",
     "secConf": 0.837
    },
@@ -55302,7 +55302,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.731,
+    "chConf": 0.744,
     "sec": "4.7",
     "secConf": 0.196
    },
@@ -55330,9 +55330,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.543,
+    "chConf": 0.515,
     "sec": "10.1",
-    "secConf": 0.261
+    "secConf": 0.231
    },
    {
     "n": 14,
@@ -55358,7 +55358,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.452,
+    "chConf": 0.421,
     "sec": null,
     "secConf": null
    },
@@ -55386,7 +55386,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.711,
+    "chConf": 0.702,
     "sec": null,
     "secConf": null
    },
@@ -55414,9 +55414,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.186,
+    "chConf": 0.159,
     "sec": "10.5",
-    "secConf": 0.172
+    "secConf": 0.139
    },
    {
     "n": 17,
@@ -55442,9 +55442,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.655,
-    "sec": "10.5",
-    "secConf": 0.117
+    "chConf": 0.637,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 18,
@@ -55470,9 +55470,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.21,
-    "sec": "10.1",
-    "secConf": 0.357
+    "chConf": 0.245,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 19,
@@ -55498,7 +55498,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.215,
+    "chConf": 0.21,
     "sec": "13.2",
     "secConf": 0.395
    },
@@ -55526,7 +55526,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.552,
+    "chConf": 0.531,
     "sec": "13.2",
     "secConf": 0.24
    },
@@ -55582,7 +55582,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.417,
+    "chConf": 0.425,
     "sec": "12.1",
     "secConf": 0.613
    },
@@ -55610,7 +55610,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.041,
+    "chConf": 0.043,
     "sec": null,
     "secConf": null
    },
@@ -55706,7 +55706,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.409,
+    "chConf": 0.393,
     "sec": "13.2",
     "secConf": 0.388
    },
@@ -55734,7 +55734,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.171,
+    "chConf": 0.185,
     "sec": "12.3",
     "secConf": 0.1
    },
@@ -55762,9 +55762,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.303,
+    "chConf": 0.304,
     "sec": "2.7",
-    "secConf": 0.205
+    "secConf": 0.215
    },
    {
     "n": 29,
@@ -55789,10 +55789,10 @@
       "t": "Joint Venture Bank Account"
      }
     ],
-    "ch": 5,
-    "chConf": 0.336,
-    "sec": "5.3",
-    "secConf": 0.241
+    "ch": 10,
+    "chConf": 0.519,
+    "sec": "10.7",
+    "secConf": 0.867
    },
    {
     "n": 30,
@@ -55818,7 +55818,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.223,
+    "chConf": 0.234,
     "sec": "6.1",
     "secConf": 0.612
    }
@@ -55868,9 +55868,9 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.341,
+    "chConf": 0.338,
     "sec": "2.6",
-    "secConf": 0.399
+    "secConf": 0.4
    },
    {
     "n": 2,
@@ -55880,9 +55880,9 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.765,
+    "chConf": 0.764,
     "sec": "2.3",
-    "secConf": 0.364
+    "secConf": 0.365
    },
    {
     "n": 3,
@@ -55905,7 +55905,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.386,
+    "chConf": 0.382,
     "sec": "13.4",
     "secConf": 0.391
    },
@@ -55917,7 +55917,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.715,
+    "chConf": 0.714,
     "sec": "13.4",
     "secConf": 0.871
    },
@@ -55930,7 +55930,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.577,
+    "chConf": 0.576,
     "sec": "12.1",
     "secConf": 0.667
    },
@@ -55947,9 +55947,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.111,
-    "sec": "14.2",
-    "secConf": 0.132
+    "chConf": 0.097,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 8,
@@ -55959,7 +55959,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.039,
+    "chConf": 0.037,
     "sec": null,
     "secConf": null
    },
@@ -55973,7 +55973,7 @@
     "ch": 9,
     "chConf": 0.58,
     "sec": "9.5",
-    "secConf": 0.129
+    "secConf": 0.128
    },
    {
     "n": 10,
@@ -55983,7 +55983,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.271,
+    "chConf": 0.29,
     "sec": null,
     "secConf": null
    },
@@ -55995,7 +55995,7 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.355,
+    "chConf": 0.358,
     "sec": "1.1",
     "secConf": 0.803
    },
@@ -56006,10 +56006,10 @@
      "      the double entry system is referred to as……………………………………"
     ],
     "pre": [],
-    "ch": 3,
-    "chConf": 0.36,
-    "sec": "3.4",
-    "secConf": 0.667
+    "ch": 10,
+    "chConf": 0.391,
+    "sec": "10.7",
+    "secConf": 0.907
    },
    {
     "n": 13,
@@ -56053,7 +56053,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.46,
+    "chConf": 0.453,
     "sec": "13.5",
     "secConf": 0.183
    },
@@ -56065,7 +56065,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.107,
+    "chConf": 0.109,
     "sec": "15.3",
     "secConf": 0.251
    },
@@ -56076,9 +56076,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.193,
+    "chConf": 0.153,
     "sec": "10.1",
-    "secConf": 0.783
+    "secConf": 0.766
    },
    {
     "n": 18,
@@ -56088,9 +56088,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.101,
+    "chConf": 0.194,
     "sec": "10.1",
-    "secConf": 0.204
+    "secConf": 0.206
    },
    {
     "n": 19,
@@ -56099,9 +56099,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.621,
+    "chConf": 0.599,
     "sec": "10.1",
-    "secConf": 0.577
+    "secConf": 0.545
    },
    {
     "n": 20,
@@ -56115,7 +56115,7 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.06,
+    "chConf": 0.065,
     "sec": null,
     "secConf": null
    }
@@ -56690,8 +56690,8 @@
      "attempted it scored below average marks."
     ],
     "examiner": [],
-    "ch": 13,
-    "chConf": 0.001,
+    "ch": 15,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -56812,7 +56812,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.076,
+    "chConf": 0.08,
     "sec": null,
     "secConf": null
    },
@@ -56882,9 +56882,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.135,
+    "chConf": 0.105,
     "sec": "10.2",
-    "secConf": 0.276
+    "secConf": 0.301
    },
    {
     "n": 5,
@@ -56972,9 +56972,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.129,
+    "chConf": 0.108,
     "sec": "10.6",
-    "secConf": 0.47
+    "secConf": 0.466
    },
    {
     "n": 6,
@@ -57044,9 +57044,9 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.271,
+    "chConf": 0.268,
     "sec": "14.4",
-    "secConf": 0.216
+    "secConf": 0.304
    }
   ],
   "dietName": "March 2018"
@@ -63315,7 +63315,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.112,
+    "chConf": 0.109,
     "sec": null,
     "secConf": null
    },
@@ -63343,9 +63343,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.547,
+    "chConf": 0.522,
     "sec": "10.3",
-    "secConf": 0.252
+    "secConf": 0.274
    },
    {
     "n": 3,
@@ -63371,9 +63371,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.232,
+    "chConf": 0.265,
     "sec": "10.1",
-    "secConf": 0.506
+    "secConf": 0.481
    },
    {
     "n": 4,
@@ -63415,8 +63415,8 @@
       ]
      }
     ],
-    "ch": 10,
-    "chConf": 0.032,
+    "ch": 11,
+    "chConf": 0.014,
     "sec": null,
     "secConf": null
    },
@@ -63444,9 +63444,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.182,
+    "chConf": 0.144,
     "sec": "10.1",
-    "secConf": 0.242
+    "secConf": 0.258
    },
    {
     "n": 6,
@@ -63472,9 +63472,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.447,
+    "chConf": 0.421,
     "sec": "10.2",
-    "secConf": 0.184
+    "secConf": 0.181
    },
    {
     "n": 7,
@@ -63500,7 +63500,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.067,
+    "chConf": 0.068,
     "sec": null,
     "secConf": null
    },
@@ -63528,7 +63528,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.215,
+    "chConf": 0.214,
     "sec": "5.4",
     "secConf": 0.168
    },
@@ -63604,7 +63604,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.227,
+    "chConf": 0.231,
     "sec": "3.4",
     "secConf": 0.128
    },
@@ -63660,7 +63660,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.502,
+    "chConf": 0.531,
     "sec": "4.7",
     "secConf": 0.427
    },
@@ -63697,9 +63697,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.647,
+    "chConf": 0.644,
     "sec": "14.3",
-    "secConf": 0.391
+    "secConf": 0.368
    },
    {
     "n": 14,
@@ -63725,7 +63725,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.341,
+    "chConf": 0.342,
     "sec": "4.4",
     "secConf": 0.135
    },
@@ -63753,7 +63753,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.663,
+    "chConf": 0.662,
     "sec": "9.2",
     "secConf": 0.19
    },
@@ -63781,7 +63781,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.521,
+    "chConf": 0.522,
     "sec": "7.2",
     "secConf": 0.374
    },
@@ -63836,8 +63836,8 @@
       "t": "Assets values and profit are both overstated"
      }
     ],
-    "ch": 10,
-    "chConf": 0.027,
+    "ch": 2,
+    "chConf": 0.015,
     "sec": null,
     "secConf": null
    },
@@ -63865,7 +63865,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.221,
+    "chConf": 0.222,
     "sec": null,
     "secConf": null
    },
@@ -63901,7 +63901,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.269,
+    "chConf": 0.271,
     "sec": "13.5",
     "secConf": 0.7
    },
@@ -63929,7 +63929,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.262,
+    "chConf": 0.255,
     "sec": null,
     "secConf": null
    },
@@ -63957,7 +63957,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.561,
+    "chConf": 0.558,
     "sec": null,
     "secConf": null
    },
@@ -64114,7 +64114,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.206,
+    "chConf": 0.191,
     "sec": "16.3",
     "secConf": 0.253
    },
@@ -64142,9 +64142,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.174,
-    "sec": "10.4",
-    "secConf": 0.577
+    "chConf": 0.777,
+    "sec": "10.7",
+    "secConf": 0.785
    },
    {
     "n": 29,
@@ -64210,7 +64210,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.337,
+    "chConf": 0.329,
     "sec": "6.4",
     "secConf": 0.188
    }
@@ -64259,7 +64259,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.079,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -64273,7 +64273,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.244,
+    "chConf": 0.246,
     "sec": "4.3",
     "secConf": 0.385
    },
@@ -64285,7 +64285,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.089,
+    "chConf": 0.088,
     "sec": null,
     "secConf": null
    },
@@ -64297,9 +64297,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.764,
+    "chConf": 0.761,
     "sec": "14.3",
-    "secConf": 0.515
+    "secConf": 0.509
    },
    {
     "n": 5,
@@ -64312,9 +64312,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.383,
+    "chConf": 0.386,
     "sec": "14.1",
-    "secConf": 0.254
+    "secConf": 0.276
    },
    {
     "n": 6,
@@ -64326,7 +64326,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.553,
+    "chConf": 0.554,
     "sec": "12.3",
     "secConf": 0.725
    },
@@ -64351,7 +64351,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.451,
+    "chConf": 0.452,
     "sec": "15.6",
     "secConf": 0.121
    },
@@ -64363,9 +64363,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.661,
+    "chConf": 0.677,
     "sec": "11.5",
-    "secConf": 0.354
+    "secConf": 0.407
    },
    {
     "n": 10,
@@ -64376,7 +64376,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.313,
+    "chConf": 0.306,
     "sec": "13.4",
     "secConf": 0.208
    },
@@ -64388,7 +64388,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.283,
+    "chConf": 0.282,
     "sec": null,
     "secConf": null
    },
@@ -64401,9 +64401,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.355,
+    "chConf": 0.311,
     "sec": "10.1",
-    "secConf": 0.283
+    "secConf": 0.265
    },
    {
     "n": 13,
@@ -64414,7 +64414,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.656,
+    "chConf": 0.664,
     "sec": "3.6",
     "secConf": 0.652
    },
@@ -64440,7 +64440,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.68,
+    "chConf": 0.679,
     "sec": "8.6",
     "secConf": 0.515
    },
@@ -64463,9 +64463,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.19,
+    "chConf": 0.18,
     "sec": "14.5",
-    "secConf": 0.593
+    "secConf": 0.587
    },
    {
     "n": 18,
@@ -64476,7 +64476,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.501,
+    "chConf": 0.493,
     "sec": null,
     "secConf": null
    },
@@ -64487,10 +64487,10 @@
      "      form part of the double entry?"
     ],
     "pre": [],
-    "ch": 3,
-    "chConf": 0.314,
-    "sec": "3.4",
-    "secConf": 0.538
+    "ch": 10,
+    "chConf": 0.421,
+    "sec": "10.7",
+    "secConf": 0.867
    },
    {
     "n": 20,
@@ -64501,7 +64501,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.508,
+    "chConf": 0.509,
     "sec": "12.3",
     "secConf": 0.552
    }
@@ -65020,7 +65020,7 @@
     ],
     "examiner": [],
     "ch": 1,
-    "chConf": 0.111,
+    "chConf": 0.113,
     "sec": "1.7",
     "secConf": 0.579
    },
@@ -65077,7 +65077,7 @@
     ],
     "examiner": [],
     "ch": 9,
-    "chConf": 0.162,
+    "chConf": 0.161,
     "sec": "9.7",
     "secConf": 0.139
    },
@@ -65199,7 +65199,7 @@
     ],
     "examiner": [],
     "ch": 6,
-    "chConf": 0.118,
+    "chConf": 0.144,
     "sec": "6.5",
     "secConf": 0.176
    },
@@ -65287,7 +65287,7 @@
     ],
     "examiner": [],
     "ch": 11,
-    "chConf": 0.095,
+    "chConf": 0.087,
     "sec": null,
     "secConf": null
    },
@@ -65375,9 +65375,9 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.209,
+    "chConf": 0.206,
     "sec": "14.3",
-    "secConf": 0.184
+    "secConf": 0.148
    },
    {
     "n": 6,
@@ -65430,7 +65430,7 @@
     ],
     "examiner": [],
     "ch": 12,
-    "chConf": 0.027,
+    "chConf": 0.024,
     "sec": null,
     "secConf": null
    }
@@ -71808,7 +71808,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.277,
+    "chConf": 0.273,
     "sec": "6.7",
     "secConf": 0.267
    },
@@ -71836,7 +71836,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.474,
+    "chConf": 0.473,
     "sec": "12.1",
     "secConf": 0.674
    },
@@ -71864,9 +71864,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.567,
+    "chConf": 0.566,
     "sec": "9.5",
-    "secConf": 0.277
+    "secConf": 0.294
    },
    {
     "n": 4,
@@ -71892,7 +71892,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.285,
+    "chConf": 0.286,
     "sec": "5.6",
     "secConf": 0.16
    },
@@ -71948,9 +71948,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.707,
+    "chConf": 0.704,
     "sec": "14.3",
-    "secConf": 0.205
+    "secConf": 0.2
    },
    {
     "n": 7,
@@ -72015,7 +72015,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.608,
+    "chConf": 0.607,
     "sec": "5.4",
     "secConf": 0.202
    },
@@ -72054,7 +72054,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.492,
+    "chConf": 0.491,
     "sec": "5.4",
     "secConf": 0.171
    },
@@ -72082,7 +72082,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.552,
+    "chConf": 0.57,
     "sec": "4.7",
     "secConf": 0.226
    },
@@ -72120,7 +72120,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.766,
+    "chConf": 0.772,
     "sec": "4.7",
     "secConf": 0.266
    },
@@ -72163,7 +72163,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.319,
+    "chConf": 0.331,
     "sec": "6.4",
     "secConf": 0.147
    },
@@ -72191,9 +72191,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.503,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.47,
+    "sec": "10.3",
+    "secConf": 0.134
    },
    {
     "n": 14,
@@ -72219,9 +72219,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.58,
+    "chConf": 0.573,
     "sec": "11.6",
-    "secConf": 0.588
+    "secConf": 0.596
    },
    {
     "n": 15,
@@ -72247,7 +72247,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.635,
+    "chConf": 0.62,
     "sec": null,
     "secConf": null
    },
@@ -72285,7 +72285,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.405,
+    "chConf": 0.404,
     "sec": "7.1",
     "secConf": 0.17
    },
@@ -72313,9 +72313,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.433,
-    "sec": "10.4",
-    "secConf": 0.102
+    "chConf": 0.409,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 18,
@@ -72341,9 +72341,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.113,
+    "chConf": 0.156,
     "sec": "10.1",
-    "secConf": 0.632
+    "secConf": 0.423
    },
    {
     "n": 19,
@@ -72369,7 +72369,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.011,
+    "chConf": 0.024,
     "sec": null,
     "secConf": null
    },
@@ -72396,10 +72396,10 @@
       "t": "Revaluation accounts"
      }
     ],
-    "ch": 13,
-    "chConf": 0.391,
-    "sec": "13.6",
-    "secConf": 0.593
+    "ch": 14,
+    "chConf": 1.0,
+    "sec": "14.2",
+    "secConf": 0.24
    },
    {
     "n": 21,
@@ -72434,7 +72434,7 @@
      }
     ],
     "ch": 1,
-    "chConf": 0.091,
+    "chConf": 0.092,
     "sec": null,
     "secConf": null
    },
@@ -72462,9 +72462,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.221,
+    "chConf": 0.228,
     "sec": "2.8",
-    "secConf": 0.27
+    "secConf": 0.287
    },
    {
     "n": 23,
@@ -72557,7 +72557,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.116,
+    "chConf": 0.121,
     "sec": null,
     "secConf": null
    },
@@ -72613,7 +72613,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.16,
+    "chConf": 0.161,
     "sec": null,
     "secConf": null
    },
@@ -72669,7 +72669,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.072,
+    "chConf": 0.075,
     "sec": null,
     "secConf": null
    },
@@ -72697,9 +72697,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.149,
-    "sec": "10.1",
-    "secConf": 0.78
+    "chConf": 0.695,
+    "sec": "10.7",
+    "secConf": 0.661
    }
   ],
   "mcq_key": {
@@ -72745,7 +72745,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.402,
+    "chConf": 0.404,
     "sec": "13.2",
     "secConf": 0.609
    },
@@ -72757,7 +72757,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.363,
+    "chConf": 0.341,
     "sec": "13.2",
     "secConf": 0.298
    },
@@ -72769,9 +72769,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.517,
+    "chConf": 0.518,
     "sec": "14.3",
-    "secConf": 0.468
+    "secConf": 0.455
    },
    {
     "n": 4,
@@ -72781,9 +72781,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.674,
+    "chConf": 0.67,
     "sec": "14.3",
-    "secConf": 0.502
+    "secConf": 0.474
    },
    {
     "n": 5,
@@ -72802,9 +72802,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.237,
+    "chConf": 0.199,
     "sec": "10.1",
-    "secConf": 0.352
+    "secConf": 0.363
    },
    {
     "n": 6,
@@ -72816,9 +72816,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.293,
+    "chConf": 0.341,
     "sec": "10.2",
-    "secConf": 0.37
+    "secConf": 0.391
    },
    {
     "n": 7,
@@ -72828,7 +72828,7 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.424,
+    "chConf": 0.46,
     "sec": null,
     "secConf": null
    },
@@ -72841,9 +72841,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.237,
+    "chConf": 0.258,
     "sec": "11.6",
-    "secConf": 0.599
+    "secConf": 0.566
    },
    {
     "n": 9,
@@ -72867,7 +72867,7 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.462,
+    "chConf": 0.463,
     "sec": "1.7",
     "secConf": 0.573
    },
@@ -72879,7 +72879,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.48,
+    "chConf": 0.478,
     "sec": null,
     "secConf": null
    },
@@ -72892,9 +72892,9 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.288,
+    "chConf": 0.286,
     "sec": "2.5",
-    "secConf": 0.225
+    "secConf": 0.226
    },
    {
     "n": 13,
@@ -72904,7 +72904,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.267,
+    "chConf": 0.268,
     "sec": null,
     "secConf": null
    },
@@ -72916,9 +72916,9 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.216,
-    "sec": "1.6",
-    "secConf": 0.463
+    "chConf": 0.073,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 15,
@@ -72929,7 +72929,7 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.14,
+    "chConf": 0.143,
     "sec": "1.7",
     "secConf": 0.208
    },
@@ -72943,7 +72943,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.501,
+    "chConf": 0.5,
     "sec": "15.2",
     "secConf": 0.164
    },
@@ -72984,7 +72984,7 @@
      "      Estimated scrap value                       4,000"
     ],
     "ch": 9,
-    "chConf": 0.481,
+    "chConf": 0.48,
     "sec": null,
     "secConf": null
    },
@@ -73496,7 +73496,7 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.069,
+    "chConf": 0.026,
     "sec": null,
     "secConf": null
    },
@@ -73596,7 +73596,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.171,
+    "chConf": 0.17,
     "sec": "3.6",
     "secConf": 0.537
    },
@@ -73682,7 +73682,7 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.264,
+    "chConf": 0.255,
     "sec": null,
     "secConf": null
    },
@@ -73748,7 +73748,7 @@
     ],
     "examiner": [],
     "ch": 6,
-    "chConf": 0.015,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -73806,9 +73806,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.282,
+    "chConf": 0.277,
     "sec": "10.1",
-    "secConf": 0.572
+    "secConf": 0.489
    },
    {
     "n": 6,
@@ -73867,7 +73867,7 @@
     ],
     "examiner": [],
     "ch": 12,
-    "chConf": 0.568,
+    "chConf": 0.571,
     "sec": "12.2",
     "secConf": 0.375
    }
@@ -80066,7 +80066,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.436,
+    "chConf": 0.435,
     "sec": "13.6",
     "secConf": 0.685
    },
@@ -80094,9 +80094,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.382,
+    "chConf": 0.393,
     "sec": "14.1",
-    "secConf": 0.782
+    "secConf": 0.747
    },
    {
     "n": 3,
@@ -80122,9 +80122,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.226,
+    "chConf": 0.227,
     "sec": "2.7",
-    "secConf": 0.164
+    "secConf": 0.158
    },
    {
     "n": 4,
@@ -80150,7 +80150,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.619,
+    "chConf": 0.64,
     "sec": "15.2",
     "secConf": 0.404
    },
@@ -80178,7 +80178,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.02,
+    "chConf": 0.021,
     "sec": null,
     "secConf": null
    },
@@ -80206,7 +80206,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.18,
+    "chConf": 0.181,
     "sec": "12.5",
     "secConf": 0.247
    },
@@ -80234,9 +80234,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.622,
+    "chConf": 0.603,
     "sec": "10.4",
-    "secConf": 0.755
+    "secConf": 0.761
    },
    {
     "n": 8,
@@ -80262,9 +80262,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.438,
-    "sec": "10.4",
-    "secConf": 0.102
+    "chConf": 0.414,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 9,
@@ -80298,9 +80298,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.152,
+    "chConf": 0.109,
     "sec": "10.1",
-    "secConf": 0.635
+    "secConf": 0.627
    },
    {
     "n": 10,
@@ -80357,9 +80357,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.202,
+    "chConf": 0.173,
     "sec": "11.3",
-    "secConf": 0.691
+    "secConf": 0.69
    },
    {
     "n": 11,
@@ -80400,9 +80400,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.656,
+    "chConf": 0.64,
     "sec": "10.3",
-    "secConf": 0.135
+    "secConf": 0.177
    },
    {
     "n": 12,
@@ -80443,9 +80443,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.636,
+    "chConf": 0.618,
     "sec": "10.3",
-    "secConf": 0.2
+    "secConf": 0.246
    },
    {
     "n": 13,
@@ -80478,7 +80478,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.878,
+    "chConf": 0.877,
     "sec": "8.3",
     "secConf": 0.34
    },
@@ -80513,7 +80513,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.869,
+    "chConf": 0.867,
     "sec": "8.3",
     "secConf": 0.317
    },
@@ -80548,7 +80548,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.686,
+    "chConf": 0.697,
     "sec": "8.6",
     "secConf": 0.377
    },
@@ -80576,7 +80576,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.807,
+    "chConf": 0.806,
     "sec": "8.6",
     "secConf": 0.593
    },
@@ -80632,7 +80632,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.198,
+    "chConf": 0.196,
     "sec": "8.6",
     "secConf": 0.775
    },
@@ -80675,9 +80675,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.214,
+    "chConf": 0.251,
     "sec": "9.5",
-    "secConf": 0.16
+    "secConf": 0.161
    },
    {
     "n": 20,
@@ -80718,9 +80718,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.378,
+    "chConf": 0.408,
     "sec": "9.5",
-    "secConf": 0.295
+    "secConf": 0.294
    },
    {
     "n": 21,
@@ -80746,7 +80746,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.18,
+    "chConf": 0.181,
     "sec": "12.5",
     "secConf": 0.247
    },
@@ -80809,7 +80809,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.128,
+    "chConf": 0.103,
     "sec": "5.6",
     "secConf": 0.198
    },
@@ -80837,7 +80837,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.512,
+    "chConf": 0.506,
     "sec": null,
     "secConf": null
    },
@@ -80871,7 +80871,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.038,
+    "chConf": 0.041,
     "sec": null,
     "secConf": null
    },
@@ -80905,7 +80905,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.155,
+    "chConf": 0.151,
     "sec": "12.5",
     "secConf": 0.449
    },
@@ -80933,7 +80933,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.194,
+    "chConf": 0.207,
     "sec": "12.3",
     "secConf": 0.125
    },
@@ -80961,7 +80961,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.046,
+    "chConf": 0.047,
     "sec": null,
     "secConf": null
    },
@@ -81001,7 +81001,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.133,
+    "chConf": 0.139,
     "sec": "6.1",
     "secConf": 0.423
    },
@@ -81029,7 +81029,7 @@
      }
     ],
     "ch": 1,
-    "chConf": 0.313,
+    "chConf": 0.331,
     "sec": "1.7",
     "secConf": 0.224
    }
@@ -81079,7 +81079,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.169,
+    "chConf": 0.174,
     "sec": "3.6",
     "secConf": 0.33
    },
@@ -81092,7 +81092,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.404,
+    "chConf": 0.406,
     "sec": "3.6",
     "secConf": 0.241
    },
@@ -81105,7 +81105,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.375,
+    "chConf": 0.403,
     "sec": "4.3",
     "secConf": 0.171
    },
@@ -81130,7 +81130,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.457,
+    "chConf": 0.456,
     "sec": "12.1",
     "secConf": 0.128
    },
@@ -81142,7 +81142,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.364,
+    "chConf": 0.365,
     "sec": null,
     "secConf": null
    },
@@ -81154,7 +81154,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.047,
+    "chConf": 0.06,
     "sec": null,
     "secConf": null
    },
@@ -81166,9 +81166,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.713,
+    "chConf": 0.71,
     "sec": "14.5",
-    "secConf": 0.511
+    "secConf": 0.519
    },
    {
     "n": 9,
@@ -81179,7 +81179,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.324,
+    "chConf": 0.333,
     "sec": null,
     "secConf": null
    },
@@ -81191,9 +81191,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.606,
+    "chConf": 0.59,
     "sec": "10.4",
-    "secConf": 0.652
+    "secConf": 0.65
    },
    {
     "n": 11,
@@ -81207,7 +81207,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.753,
+    "chConf": 0.752,
     "sec": "8.2",
     "secConf": 0.703
    },
@@ -81231,7 +81231,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.13,
+    "chConf": 0.137,
     "sec": "7.3",
     "secConf": 0.309
    },
@@ -81243,7 +81243,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.033,
+    "chConf": 0.043,
     "sec": null,
     "secConf": null
    },
@@ -81255,7 +81255,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.124,
+    "chConf": 0.112,
     "sec": "13.6",
     "secConf": 0.908
    },
@@ -81266,7 +81266,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.245,
+    "chConf": 0.244,
     "sec": "12.1",
     "secConf": 0.328
    },
@@ -81280,7 +81280,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.259,
+    "chConf": 0.249,
     "sec": "13.2",
     "secConf": 0.117
    },
@@ -81294,7 +81294,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.574,
+    "chConf": 0.55,
     "sec": null,
     "secConf": null
    },
@@ -81307,9 +81307,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.134,
+    "chConf": 0.118,
     "sec": "10.2",
-    "secConf": 0.336
+    "secConf": 0.399
    },
    {
     "n": 20,
@@ -81323,9 +81323,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.463,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.438,
+    "sec": "10.3",
+    "secConf": 0.147
    }
   ],
   "saq_solutions": [
@@ -81838,7 +81838,7 @@
     ],
     "examiner": [],
     "ch": 8,
-    "chConf": 0.462,
+    "chConf": 0.461,
     "sec": "8.2",
     "secConf": 0.161
    },
@@ -81962,7 +81962,7 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.038,
+    "chConf": 0.026,
     "sec": null,
     "secConf": null
    },
@@ -82041,9 +82041,9 @@
     ],
     "examiner": [],
     "ch": 9,
-    "chConf": 0.096,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.103,
+    "sec": "9.9",
+    "secConf": 0.134
    },
    {
     "n": 5,
@@ -82135,9 +82135,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.138,
+    "chConf": 0.136,
     "sec": "10.2",
-    "secConf": 0.27
+    "secConf": 0.291
    },
    {
     "n": 6,
@@ -82216,7 +82216,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.059,
+    "chConf": 0.061,
     "sec": null,
     "secConf": null
    }
@@ -88300,9 +88300,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.436,
+    "chConf": 0.41,
     "sec": "10.1",
-    "secConf": 0.486
+    "secConf": 0.448
    },
    {
     "n": 2,
@@ -88343,7 +88343,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.239,
+    "chConf": 0.282,
     "sec": null,
     "secConf": null
    },
@@ -88371,9 +88371,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.077,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.12,
+    "sec": "11.3",
+    "secConf": 0.378
    },
    {
     "n": 4,
@@ -88399,9 +88399,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.394,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.359,
+    "sec": "10.2",
+    "secConf": 0.122
    },
    {
     "n": 5,
@@ -88427,7 +88427,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.03,
+    "chConf": 0.041,
     "sec": null,
     "secConf": null
    },
@@ -88455,9 +88455,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.442,
+    "chConf": 0.429,
     "sec": "10.2",
-    "secConf": 0.187
+    "secConf": 0.245
    },
    {
     "n": 7,
@@ -88488,9 +88488,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.119,
-    "sec": "10.3",
-    "secConf": 0.161
+    "chConf": 0.09,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 8,
@@ -88521,7 +88521,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.288,
+    "chConf": 0.286,
     "sec": "13.2",
     "secConf": 0.297
    },
@@ -88549,7 +88549,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.33,
+    "chConf": 0.331,
     "sec": null,
     "secConf": null
    },
@@ -88587,7 +88587,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.026,
+    "chConf": 0.027,
     "sec": null,
     "secConf": null
    },
@@ -88615,9 +88615,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.319,
+    "chConf": 0.314,
     "sec": "14.3",
-    "secConf": 0.247
+    "secConf": 0.198
    },
    {
     "n": 12,
@@ -88643,7 +88643,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.011,
+    "chConf": 0.036,
     "sec": null,
     "secConf": null
    },
@@ -88671,7 +88671,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.068,
+    "chConf": 0.054,
     "sec": null,
     "secConf": null
    },
@@ -88727,7 +88727,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.156,
+    "chConf": 0.157,
     "sec": "3.4",
     "secConf": 0.334
    },
@@ -88755,9 +88755,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.24,
+    "chConf": 0.239,
     "sec": "2.7",
-    "secConf": 0.15
+    "secConf": 0.157
    },
    {
     "n": 17,
@@ -88792,7 +88792,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.031,
+    "chConf": 0.032,
     "sec": null,
     "secConf": null
    },
@@ -88829,7 +88829,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.045,
+    "chConf": 0.017,
     "sec": null,
     "secConf": null
    },
@@ -88857,9 +88857,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.201,
-    "sec": "10.2",
-    "secConf": 0.206
+    "chConf": 0.744,
+    "sec": "10.7",
+    "secConf": 0.719
    },
    {
     "n": 20,
@@ -88936,9 +88936,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.108,
+    "chConf": 0.107,
     "sec": "9.1",
-    "secConf": 0.134
+    "secConf": 0.133
    },
    {
     "n": 22,
@@ -88972,7 +88972,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.341,
+    "chConf": 0.351,
     "sec": "9.2",
     "secConf": 0.268
    },
@@ -89015,9 +89015,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.538,
+    "chConf": 0.537,
     "sec": "14.3",
-    "secConf": 0.275
+    "secConf": 0.269
    },
    {
     "n": 24,
@@ -89043,7 +89043,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.346,
+    "chConf": 0.344,
     "sec": null,
     "secConf": null
    },
@@ -89081,7 +89081,7 @@
     "ch": 9,
     "chConf": 0.672,
     "sec": "9.2",
-    "secConf": 0.184
+    "secConf": 0.182
    },
    {
     "n": 26,
@@ -89115,9 +89115,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.737,
+    "chConf": 0.741,
     "sec": "9.2",
-    "secConf": 0.204
+    "secConf": 0.206
    },
    {
     "n": 27,
@@ -89187,9 +89187,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.154,
+    "chConf": 0.193,
     "sec": "14.1",
-    "secConf": 0.508
+    "secConf": 0.426
    },
    {
     "n": 29,
@@ -89220,7 +89220,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.008,
+    "chConf": 0.014,
     "sec": null,
     "secConf": null
    },
@@ -89359,7 +89359,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.777,
+    "chConf": 0.778,
     "sec": "8.6",
     "secConf": 0.572
    },
@@ -89371,7 +89371,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.145,
+    "chConf": 0.146,
     "sec": null,
     "secConf": null
    },
@@ -89407,7 +89407,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.451,
+    "chConf": 0.45,
     "sec": "3.3",
     "secConf": 0.54
    },
@@ -89419,9 +89419,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.371,
+    "chConf": 0.373,
     "sec": "9.4",
-    "secConf": 0.303
+    "secConf": 0.31
    },
    {
     "n": 7,
@@ -89436,7 +89436,7 @@
      "      straight line method of depreciation"
     ],
     "ch": 9,
-    "chConf": 0.648,
+    "chConf": 0.647,
     "sec": "9.2",
     "secConf": 0.182
    },
@@ -89465,7 +89465,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.13,
+    "chConf": 0.137,
     "sec": "7.3",
     "secConf": 0.309
    },
@@ -89477,7 +89477,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.517,
+    "chConf": 0.519,
     "sec": "13.2",
     "secConf": 0.13
    },
@@ -89500,7 +89500,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.133,
+    "chConf": 0.134,
     "sec": "15.5",
     "secConf": 0.684
    },
@@ -89526,7 +89526,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.008,
+    "chConf": 0.026,
     "sec": null,
     "secConf": null
    },
@@ -89537,7 +89537,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.131,
+    "chConf": 0.122,
     "sec": null,
     "secConf": null
    },
@@ -89549,7 +89549,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.465,
+    "chConf": 0.464,
     "sec": "13.3",
     "secConf": 0.672
    },
@@ -89560,8 +89560,8 @@
      "      dissolution of a partnership."
     ],
     "pre": [],
-    "ch": 10,
-    "chConf": 0.014,
+    "ch": 11,
+    "chConf": 0.031,
     "sec": null,
     "secConf": null
    },
@@ -89574,7 +89574,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.545,
+    "chConf": 0.541,
     "sec": "13.4",
     "secConf": 0.145
    },
@@ -89585,9 +89585,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.545,
+    "chConf": 0.557,
     "sec": "10.3",
-    "secConf": 0.195
+    "secConf": 0.229
    },
    {
     "n": 20,
@@ -89597,9 +89597,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.354,
+    "chConf": 0.333,
     "sec": "10.1",
-    "secConf": 0.742
+    "secConf": 0.679
    }
   ],
   "saq_solutions": [
@@ -89996,7 +89996,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.263,
+    "chConf": 0.297,
     "sec": "15.2",
     "secConf": 0.39
    },
@@ -90071,10 +90071,10 @@
      "examination."
     ],
     "examiner": [],
-    "ch": 6,
-    "chConf": 0.189,
-    "sec": "6.7",
-    "secConf": 0.17
+    "ch": 10,
+    "chConf": 0.321,
+    "sec": "10.7",
+    "secConf": 0.565
    },
    {
     "n": 3,
@@ -90164,9 +90164,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.215,
+    "chConf": 0.179,
     "sec": "10.6",
-    "secConf": 0.356
+    "secConf": 0.42
    },
    {
     "n": 4,
@@ -90243,7 +90243,7 @@
     ],
     "examiner": [],
     "ch": 4,
-    "chConf": 0.067,
+    "chConf": 0.105,
     "sec": null,
     "secConf": null
    },
@@ -90312,9 +90312,9 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.19,
+    "chConf": 0.232,
     "sec": "14.1",
-    "secConf": 0.147
+    "secConf": 0.337
    },
    {
     "n": 6,
@@ -90382,7 +90382,7 @@
     ],
     "examiner": [],
     "ch": 1,
-    "chConf": 0.13,
+    "chConf": 0.134,
     "sec": "1.7",
     "secConf": 0.263
    }
@@ -96459,7 +96459,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.61,
+    "chConf": 0.608,
     "sec": "9.2",
     "secConf": 0.262
    },
@@ -96492,7 +96492,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.632,
+    "chConf": 0.636,
     "sec": "9.2",
     "secConf": 0.292
    },
@@ -96520,7 +96520,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.075,
+    "chConf": 0.096,
     "sec": null,
     "secConf": null
    },
@@ -96548,9 +96548,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.186,
+    "chConf": 0.188,
     "sec": "14.2",
-    "secConf": 0.447
+    "secConf": 0.482
    },
    {
     "n": 5,
@@ -96576,9 +96576,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.35,
+    "chConf": 0.322,
     "sec": "10.4",
-    "secConf": 0.652
+    "secConf": 0.65
    },
    {
     "n": 6,
@@ -96604,7 +96604,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.035,
+    "chConf": 0.033,
     "sec": null,
     "secConf": null
    },
@@ -96660,9 +96660,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.738,
+    "chConf": 0.735,
     "sec": "14.3",
-    "secConf": 0.613
+    "secConf": 0.612
    },
    {
     "n": 9,
@@ -96702,7 +96702,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.028,
+    "chConf": 0.041,
     "sec": null,
     "secConf": null
    },
@@ -96740,7 +96740,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.296,
+    "chConf": 0.29,
     "sec": "13.6",
     "secConf": 0.524
    },
@@ -96768,7 +96768,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.01,
+    "chConf": 0.021,
     "sec": null,
     "secConf": null
    },
@@ -96845,7 +96845,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.378,
+    "chConf": 0.379,
     "sec": "3.6",
     "secConf": 0.724
    },
@@ -96873,7 +96873,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.44,
+    "chConf": 0.444,
     "sec": null,
     "secConf": null
    },
@@ -96950,7 +96950,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.019,
+    "chConf": 0.022,
     "sec": null,
     "secConf": null
    },
@@ -97027,7 +97027,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.146,
+    "chConf": 0.144,
     "sec": "12.5",
     "secConf": 0.102
    },
@@ -97076,9 +97076,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.512,
+    "chConf": 0.545,
     "sec": "11.3",
-    "secConf": 0.56
+    "secConf": 0.473
    },
    {
     "n": 20,
@@ -97125,9 +97125,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.145,
+    "chConf": 0.191,
     "sec": "11.5",
-    "secConf": 0.267
+    "secConf": 0.266
    },
    {
     "n": 21,
@@ -97153,9 +97153,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.451,
+    "chConf": 0.455,
     "sec": "11.6",
-    "secConf": 0.713
+    "secConf": 0.73
    },
    {
     "n": 22,
@@ -97181,9 +97181,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.175,
+    "chConf": 0.17,
     "sec": "9.6",
-    "secConf": 0.184
+    "secConf": 0.182
    },
    {
     "n": 23,
@@ -97209,7 +97209,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.193,
+    "chConf": 0.19,
     "sec": "15.5",
     "secConf": 0.633
    },
@@ -97237,7 +97237,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.067,
+    "chConf": 0.068,
     "sec": null,
     "secConf": null
    },
@@ -97277,9 +97277,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.35,
+    "chConf": 0.346,
     "sec": "14.1",
-    "secConf": 0.188
+    "secConf": 0.139
    },
    {
     "n": 26,
@@ -97317,9 +97317,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.375,
+    "chConf": 0.371,
     "sec": "14.1",
-    "secConf": 0.251
+    "secConf": 0.206
    },
    {
     "n": 27,
@@ -97366,7 +97366,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.268,
+    "chConf": 0.234,
     "sec": "13.1",
     "secConf": 0.245
    },
@@ -97394,9 +97394,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.309,
+    "chConf": 0.332,
     "sec": "14.2",
-    "secConf": 0.544
+    "secConf": 0.275
    },
    {
     "n": 29,
@@ -97422,7 +97422,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.683,
+    "chConf": 0.682,
     "sec": "8.2",
     "secConf": 0.245
    },
@@ -97450,7 +97450,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.823,
+    "chConf": 0.824,
     "sec": "8.5",
     "secConf": 0.553
    }
@@ -97567,7 +97567,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.543,
+    "chConf": 0.54,
     "sec": "9.3",
     "secConf": 0.301
    },
@@ -97579,7 +97579,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.015,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -97594,9 +97594,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.53,
-    "sec": "11.5",
-    "secConf": 0.15
+    "chConf": 0.529,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 5,
@@ -97605,7 +97605,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.116,
+    "chConf": 0.12,
     "sec": "6.5",
     "secConf": 0.223
    },
@@ -97629,7 +97629,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.215,
+    "chConf": 0.26,
     "sec": null,
     "secConf": null
    },
@@ -97641,7 +97641,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.274,
+    "chConf": 0.278,
     "sec": "2.6",
     "secConf": 0.335
    },
@@ -97652,7 +97652,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.208,
+    "chConf": 0.155,
     "sec": "6.3",
     "secConf": 0.104
    },
@@ -97664,7 +97664,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.474,
+    "chConf": 0.471,
     "sec": null,
     "secConf": null
    },
@@ -97676,7 +97676,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.143,
+    "chConf": 0.099,
     "sec": null,
     "secConf": null
    },
@@ -97700,7 +97700,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.038,
+    "chConf": 0.021,
     "sec": null,
     "secConf": null
    },
@@ -97712,7 +97712,7 @@
     ],
     "pre": [],
     "ch": 5,
-    "chConf": 0.437,
+    "chConf": 0.435,
     "sec": null,
     "secConf": null
    },
@@ -97724,9 +97724,9 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.098,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.104,
+    "sec": "16.3",
+    "secConf": 0.523
    },
    {
     "n": 16,
@@ -97734,10 +97734,10 @@
      "In a memorandum joint venture accounts, sales is……………… entry?"
     ],
     "pre": [],
-    "ch": 6,
-    "chConf": 0.102,
-    "sec": "6.1",
-    "secConf": 0.436
+    "ch": 10,
+    "chConf": 0.092,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 17,
@@ -97748,7 +97748,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.563,
+    "chConf": 0.557,
     "sec": null,
     "secConf": null
    },
@@ -97760,7 +97760,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.159,
+    "chConf": 0.158,
     "sec": "6.1",
     "secConf": 0.271
    },
@@ -97772,7 +97772,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.351,
+    "chConf": 0.325,
     "sec": "7.3",
     "secConf": 0.338
    },
@@ -97784,7 +97784,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.754,
+    "chConf": 0.755,
     "sec": "2.3",
     "secConf": 0.574
    }
@@ -98258,7 +98258,7 @@
     ],
     "examiner": [],
     "ch": 5,
-    "chConf": 0.055,
+    "chConf": 0.075,
     "sec": null,
     "secConf": null
    },
@@ -98399,7 +98399,7 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.608,
+    "chConf": 0.591,
     "sec": null,
     "secConf": null
    },
@@ -98480,7 +98480,7 @@
     ],
     "examiner": [],
     "ch": 9,
-    "chConf": 0.33,
+    "chConf": 0.316,
     "sec": "9.9",
     "secConf": 0.255
    },
@@ -98582,7 +98582,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.336,
+    "chConf": 0.352,
     "sec": "15.4",
     "secConf": 0.458
    },
@@ -98659,9 +98659,9 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.153,
-    "sec": "14.1",
-    "secConf": 0.384
+    "chConf": 0.087,
+    "sec": null,
+    "secConf": null
    }
   ],
   "dietName": "September 2020"
@@ -104655,7 +104655,7 @@
      }
     ],
     "ch": 1,
-    "chConf": 0.332,
+    "chConf": 0.328,
     "sec": "1.8",
     "secConf": 0.627
    },
@@ -104683,7 +104683,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.683,
+    "chConf": 0.686,
     "sec": "8.6",
     "secConf": 0.376
    },
@@ -104711,7 +104711,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.194,
+    "chConf": 0.195,
     "sec": "4.8",
     "secConf": 0.202
    },
@@ -104752,7 +104752,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.455,
+    "chConf": 0.43,
     "sec": null,
     "secConf": null
    },
@@ -104793,7 +104793,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.49,
+    "chConf": 0.467,
     "sec": null,
     "secConf": null
    },
@@ -104829,9 +104829,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.741,
+    "chConf": 0.74,
     "sec": "2.7",
-    "secConf": 0.165
+    "secConf": 0.146
    },
    {
     "n": 7,
@@ -104857,9 +104857,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.491,
+    "chConf": 0.488,
     "sec": "14.3",
-    "secConf": 0.496
+    "secConf": 0.487
    },
    {
     "n": 8,
@@ -104904,9 +104904,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.62,
+    "chConf": 0.619,
     "sec": "2.3",
-    "secConf": 0.667
+    "secConf": 0.666
    },
    {
     "n": 9,
@@ -104932,9 +104932,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.18,
+    "chConf": 0.161,
     "sec": "10.3",
-    "secConf": 0.172
+    "secConf": 0.19
    },
    {
     "n": 11,
@@ -104960,9 +104960,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.145,
+    "chConf": 0.149,
     "sec": "14.2",
-    "secConf": 0.291
+    "secConf": 0.149
    },
    {
     "n": 12,
@@ -104988,7 +104988,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.743,
+    "chConf": 0.741,
     "sec": "8.2",
     "secConf": 0.276
    },
@@ -105025,7 +105025,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.833,
+    "chConf": 0.832,
     "sec": "8.1",
     "secConf": 0.677
    },
@@ -105053,7 +105053,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.868,
+    "chConf": 0.867,
     "sec": "8.2",
     "secConf": 0.128
    },
@@ -105109,7 +105109,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.82,
+    "chConf": 0.812,
     "sec": "8.5",
     "secConf": 0.115
    },
@@ -105158,7 +105158,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.086,
+    "chConf": 0.091,
     "sec": null,
     "secConf": null
    },
@@ -105186,7 +105186,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.249,
+    "chConf": 0.25,
     "sec": "3.2",
     "secConf": 0.183
    },
@@ -105263,9 +105263,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.47,
+    "chConf": 0.468,
     "sec": "2.6",
-    "secConf": 0.426
+    "secConf": 0.427
    },
    {
     "n": 21,
@@ -105311,10 +105311,10 @@
       ]
      }
     ],
-    "ch": 6,
-    "chConf": 0.109,
-    "sec": "6.7",
-    "secConf": 0.422
+    "ch": 10,
+    "chConf": 0.551,
+    "sec": "10.7",
+    "secConf": 0.918
    },
    {
     "n": 22,
@@ -105340,9 +105340,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.35,
+    "chConf": 0.346,
     "sec": "9.9",
-    "secConf": 0.451
+    "secConf": 0.452
    },
    {
     "n": 23,
@@ -105404,7 +105404,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.207,
+    "chConf": 0.216,
     "sec": "13.2",
     "secConf": 0.286
    },
@@ -105432,9 +105432,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.134,
+    "chConf": 0.129,
     "sec": "14.1",
-    "secConf": 0.35
+    "secConf": 0.233
    },
    {
     "n": 26,
@@ -105466,7 +105466,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.079,
+    "chConf": 0.08,
     "sec": null,
     "secConf": null
    },
@@ -105500,7 +105500,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.049,
+    "chConf": 0.003,
     "sec": null,
     "secConf": null
    },
@@ -105538,7 +105538,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.116,
+    "chConf": 0.121,
     "sec": null,
     "secConf": null
    },
@@ -105566,7 +105566,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.257,
+    "chConf": 0.245,
     "sec": "5.3",
     "secConf": 0.24
    },
@@ -105594,7 +105594,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.18,
+    "chConf": 0.181,
     "sec": "12.5",
     "secConf": 0.247
    }
@@ -105670,7 +105670,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.604,
+    "chConf": 0.609,
     "sec": null,
     "secConf": null
    },
@@ -105692,9 +105692,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.377,
+    "chConf": 0.347,
     "sec": "10.1",
-    "secConf": 0.729
+    "secConf": 0.737
    },
    {
     "n": 4,
@@ -105711,7 +105711,7 @@
      "      Assuming the cash book shows a credit balance of ₦610,000"
     ],
     "ch": 5,
-    "chConf": 0.534,
+    "chConf": 0.533,
     "sec": null,
     "secConf": null
    },
@@ -105730,7 +105730,7 @@
      "      Assuming the cash book shows a credit balance of ₦610,000"
     ],
     "ch": 5,
-    "chConf": 0.489,
+    "chConf": 0.488,
     "sec": null,
     "secConf": null
    },
@@ -105741,7 +105741,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.609,
+    "chConf": 0.611,
     "sec": "12.1",
     "secConf": 0.231
    },
@@ -105753,7 +105753,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.014,
+    "chConf": 0.011,
     "sec": null,
     "secConf": null
    },
@@ -105764,7 +105764,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.617,
+    "chConf": 0.621,
     "sec": "15.3",
     "secConf": 0.464
    },
@@ -105776,7 +105776,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.164,
+    "chConf": 0.137,
     "sec": "13.6",
     "secConf": 0.498
    },
@@ -105787,7 +105787,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.579,
+    "chConf": 0.604,
     "sec": "15.4",
     "secConf": 0.499
    },
@@ -105798,7 +105798,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.089,
+    "chConf": 0.088,
     "sec": null,
     "secConf": null
    },
@@ -105810,7 +105810,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.06,
+    "chConf": 0.058,
     "sec": null,
     "secConf": null
    },
@@ -105822,7 +105822,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.113,
+    "chConf": 0.103,
     "sec": "13.6",
     "secConf": 0.72
    },
@@ -105841,7 +105841,7 @@
      "      million DR."
     ],
     "ch": 11,
-    "chConf": 0.146,
+    "chConf": 0.156,
     "sec": "11.5",
     "secConf": 0.526
    },
@@ -105859,7 +105859,7 @@
      "      million DR."
     ],
     "ch": 10,
-    "chConf": 0.265,
+    "chConf": 0.256,
     "sec": null,
     "secConf": null
    },
@@ -105871,7 +105871,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.601,
+    "chConf": 0.612,
     "sec": "13.3",
     "secConf": 0.485
    },
@@ -105883,7 +105883,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.221,
+    "chConf": 0.246,
     "sec": "9.5",
     "secConf": 0.611
    },
@@ -105897,7 +105897,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.033,
+    "chConf": 0.041,
     "sec": null,
     "secConf": null
    },
@@ -105912,9 +105912,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.584,
+    "chConf": 0.563,
     "sec": "10.1",
-    "secConf": 0.214
+    "secConf": 0.178
    },
    {
     "n": 20,
@@ -105923,7 +105923,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.443,
+    "chConf": 0.446,
     "sec": null,
     "secConf": null
    }
@@ -106461,7 +106461,7 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.071,
+    "chConf": 0.024,
     "sec": null,
     "secConf": null
    },
@@ -106637,7 +106637,7 @@
     ],
     "examiner": [],
     "ch": 5,
-    "chConf": 0.149,
+    "chConf": 0.147,
     "sec": null,
     "secConf": null
    },
@@ -106832,7 +106832,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.422,
+    "chConf": 0.452,
     "sec": "15.4",
     "secConf": 0.191
    },
@@ -107049,7 +107049,7 @@
     ],
     "examiner": [],
     "ch": 9,
-    "chConf": 0.037,
+    "chConf": 0.019,
     "sec": null,
     "secConf": null
    }
@@ -113561,7 +113561,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.27,
+    "chConf": 0.248,
     "sec": "13.2",
     "secConf": 0.608
    },
@@ -113622,9 +113622,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.325,
+    "chConf": 0.319,
     "sec": "14.3",
-    "secConf": 0.466
+    "secConf": 0.453
    },
    {
     "n": 5,
@@ -113650,9 +113650,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.394,
+    "chConf": 0.388,
     "sec": "9.5",
-    "secConf": 0.119
+    "secConf": 0.117
    },
    {
     "n": 6,
@@ -113680,7 +113680,7 @@
     "ch": 2,
     "chConf": 0.104,
     "sec": "2.7",
-    "secConf": 0.452
+    "secConf": 0.444
    },
    {
     "n": 7,
@@ -113720,7 +113720,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.693,
+    "chConf": 0.692,
     "sec": null,
     "secConf": null
    },
@@ -113757,7 +113757,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.569,
+    "chConf": 0.568,
     "sec": "4.8",
     "secConf": 0.16
    },
@@ -113809,7 +113809,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.64,
+    "chConf": 0.639,
     "sec": null,
     "secConf": null
    },
@@ -113852,7 +113852,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.043,
+    "chConf": 0.074,
     "sec": null,
     "secConf": null
    },
@@ -113895,7 +113895,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.086,
+    "chConf": 0.088,
     "sec": null,
     "secConf": null
    },
@@ -113923,7 +113923,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.489,
+    "chConf": 0.521,
     "sec": "15.4",
     "secConf": 0.431
    },
@@ -113951,7 +113951,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.091,
+    "chConf": 0.097,
     "sec": null,
     "secConf": null
    },
@@ -113979,9 +113979,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.249,
+    "chConf": 0.239,
     "sec": "10.1",
-    "secConf": 0.608
+    "secConf": 0.598
    },
    {
     "n": 15,
@@ -114007,7 +114007,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.195,
+    "chConf": 0.213,
     "sec": "13.6",
     "secConf": 0.204
    },
@@ -114035,9 +114035,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.366,
-    "sec": "10.1",
-    "secConf": 0.685
+    "chConf": 0.736,
+    "sec": "10.7",
+    "secConf": 0.794
    },
    {
     "n": 17,
@@ -114067,7 +114067,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.522,
+    "chConf": 0.548,
     "sec": "15.5",
     "secConf": 0.146
    },
@@ -114095,7 +114095,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.135,
+    "chConf": 0.138,
     "sec": null,
     "secConf": null
    },
@@ -114123,7 +114123,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.123,
+    "chConf": 0.12,
     "sec": "13.4",
     "secConf": 0.297
    },
@@ -114151,7 +114151,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.008,
+    "chConf": 0.021,
     "sec": null,
     "secConf": null
    },
@@ -114193,7 +114193,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.498,
+    "chConf": 0.497,
     "sec": "3.6",
     "secConf": 0.172
    },
@@ -114229,9 +114229,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.351,
+    "chConf": 0.298,
     "sec": "9.2",
-    "secConf": 0.376
+    "secConf": 0.375
    },
    {
     "n": 23,
@@ -114257,7 +114257,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.27,
+    "chConf": 0.28,
     "sec": "13.2",
     "secConf": 0.223
    },
@@ -114293,7 +114293,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.182,
+    "chConf": 0.161,
     "sec": "3.4",
     "secConf": 0.174
    },
@@ -114326,7 +114326,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.23,
+    "chConf": 0.185,
     "sec": "13.6",
     "secConf": 0.6
    },
@@ -114354,7 +114354,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.251,
+    "chConf": 0.257,
     "sec": "15.3",
     "secConf": 0.106
    },
@@ -114382,9 +114382,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.47,
+    "chConf": 0.464,
     "sec": "10.1",
-    "secConf": 0.489
+    "secConf": 0.495
    },
    {
     "n": 28,
@@ -114410,9 +114410,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.783,
+    "chConf": 0.781,
     "sec": "14.3",
-    "secConf": 0.408
+    "secConf": 0.388
    },
    {
     "n": 29,
@@ -114438,7 +114438,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.207,
+    "chConf": 0.208,
     "sec": "15.3",
     "secConf": 0.469
    },
@@ -114570,7 +114570,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.233,
+    "chConf": 0.209,
     "sec": "13.6",
     "secConf": 0.686
    },
@@ -114582,7 +114582,7 @@
     ],
     "pre": [],
     "ch": 5,
-    "chConf": 0.508,
+    "chConf": 0.507,
     "sec": null,
     "secConf": null
    },
@@ -114594,7 +114594,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.195,
+    "chConf": 0.193,
     "sec": "8.3",
     "secConf": 0.291
    },
@@ -114606,9 +114606,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.14,
+    "chConf": 0.11,
     "sec": "9.4",
-    "secConf": 0.341
+    "secConf": 0.338
    },
    {
     "n": 6,
@@ -114630,9 +114630,9 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.393,
+    "chConf": 0.406,
     "sec": "2.7",
-    "secConf": 0.2
+    "secConf": 0.381
    },
    {
     "n": 8,
@@ -114643,7 +114643,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.732,
+    "chConf": 0.731,
     "sec": "2.3",
     "secConf": 0.319
    },
@@ -114655,7 +114655,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.656,
+    "chConf": 0.635,
     "sec": null,
     "secConf": null
    },
@@ -114679,9 +114679,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.206,
+    "chConf": 0.155,
     "sec": "10.3",
-    "secConf": 0.102
+    "secConf": 0.164
    },
    {
     "n": 12,
@@ -114693,7 +114693,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.503,
+    "chConf": 0.498,
     "sec": "14.4",
     "secConf": 1.0
    },
@@ -114706,7 +114706,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.049,
+    "chConf": 0.028,
     "sec": null,
     "secConf": null
    },
@@ -114718,7 +114718,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.17,
+    "chConf": 0.168,
     "sec": null,
     "secConf": null
    },
@@ -114741,7 +114741,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.079,
+    "chConf": 0.016,
     "sec": null,
     "secConf": null
    },
@@ -114752,7 +114752,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.321,
+    "chConf": 0.328,
     "sec": "4.9",
     "secConf": 0.904
    },
@@ -114763,10 +114763,10 @@
      "    memorandum joint venture method is headed as …………………. account"
     ],
     "pre": [],
-    "ch": 5,
-    "chConf": 0.213,
-    "sec": "5.6",
-    "secConf": 0.144
+    "ch": 10,
+    "chConf": 0.751,
+    "sec": "10.7",
+    "secConf": 0.929
    },
    {
     "n": 19,
@@ -114775,7 +114775,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.226,
+    "chConf": 0.232,
     "sec": "4.8",
     "secConf": 0.29
    },
@@ -114789,7 +114789,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.103,
+    "chConf": 0.102,
     "sec": "8.2",
     "secConf": 0.148
    }
@@ -115380,7 +115380,7 @@
     ],
     "examiner": [],
     "ch": 6,
-    "chConf": 0.024,
+    "chConf": 0.03,
     "sec": null,
     "secConf": null
    },
@@ -115491,7 +115491,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.389,
+    "chConf": 0.388,
     "sec": "15.6",
     "secConf": 0.146
    },
@@ -115589,9 +115589,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.222,
+    "chConf": 0.184,
     "sec": "10.6",
-    "secConf": 0.216
+    "secConf": 0.21
    },
    {
     "n": 5,
@@ -115670,9 +115670,9 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.298,
-    "sec": "14.3",
-    "secConf": 0.109
+    "chConf": 0.302,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 6,
@@ -115889,7 +115889,7 @@
     ],
     "examiner": [],
     "ch": 8,
-    "chConf": 0.694,
+    "chConf": 0.693,
     "sec": "8.4",
     "secConf": 0.608
    }
@@ -122242,9 +122242,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.151,
+    "chConf": 0.149,
     "sec": "9.5",
-    "secConf": 0.319
+    "secConf": 0.317
    },
    {
     "n": 3,
@@ -122270,7 +122270,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.156,
+    "chConf": 0.158,
     "sec": null,
     "secConf": null
    },
@@ -122312,9 +122312,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.664,
+    "chConf": 0.644,
     "sec": "10.3",
-    "secConf": 0.169
+    "secConf": 0.155
    },
    {
     "n": 5,
@@ -122354,9 +122354,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.68,
+    "chConf": 0.661,
     "sec": "10.3",
-    "secConf": 0.181
+    "secConf": 0.165
    },
    {
     "n": 6,
@@ -122408,7 +122408,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.674,
+    "chConf": 0.655,
     "sec": null,
     "secConf": null
    },
@@ -122436,7 +122436,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.226,
+    "chConf": 0.233,
     "sec": "12.3",
     "secConf": 0.125
    },
@@ -122464,9 +122464,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.631,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.628,
+    "sec": "14.4",
+    "secConf": 0.131
    },
    {
     "n": 9,
@@ -122492,7 +122492,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.082,
+    "chConf": 0.083,
     "sec": null,
     "secConf": null
    },
@@ -122534,7 +122534,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.182,
+    "chConf": 0.243,
     "sec": null,
     "secConf": null
    },
@@ -122576,7 +122576,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.086,
+    "chConf": 0.084,
     "sec": null,
     "secConf": null
    },
@@ -122604,7 +122604,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.091,
+    "chConf": 0.092,
     "sec": null,
     "secConf": null
    },
@@ -122639,7 +122639,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.491,
+    "chConf": 0.489,
     "sec": "9.5",
     "secConf": 0.577
    },
@@ -122695,9 +122695,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.363,
+    "chConf": 0.405,
     "sec": "10.1",
-    "secConf": 0.766
+    "secConf": 0.566
    },
    {
     "n": 16,
@@ -122723,7 +122723,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.539,
+    "chConf": 0.531,
     "sec": "4.7",
     "secConf": 0.328
    },
@@ -122750,8 +122750,8 @@
       "t": "GH₵125,000"
      }
     ],
-    "ch": 13,
-    "chConf": 0.005,
+    "ch": 10,
+    "chConf": 0.129,
     "sec": null,
     "secConf": null
    },
@@ -122807,9 +122807,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.284,
-    "sec": "9.5",
-    "secConf": 0.32
+    "chConf": 0.314,
+    "sec": "9.4",
+    "secConf": 0.108
    },
    {
     "n": 20,
@@ -122835,9 +122835,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.743,
+    "chConf": 0.728,
     "sec": "10.5",
-    "secConf": 0.259
+    "secConf": 0.247
    },
    {
     "n": 21,
@@ -122863,9 +122863,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.116,
+    "chConf": 0.111,
     "sec": "9.7",
-    "secConf": 0.164
+    "secConf": 0.165
    },
    {
     "n": 22,
@@ -122899,7 +122899,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.596,
+    "chConf": 0.615,
     "sec": "13.2",
     "secConf": 0.295
    },
@@ -122927,7 +122927,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.277,
+    "chConf": 0.278,
     "sec": "7.4",
     "secConf": 0.308
    },
@@ -122966,7 +122966,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.453,
+    "chConf": 0.415,
     "sec": "5.3",
     "secConf": 0.423
    },
@@ -122994,7 +122994,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.23,
+    "chConf": 0.206,
     "sec": "15.3",
     "secConf": 0.408
    },
@@ -123022,7 +123022,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.133,
+    "chConf": 0.125,
     "sec": null,
     "secConf": null
    },
@@ -123090,8 +123090,8 @@
       "t": "Other income, interest paid, cash and bank"
      }
     ],
-    "ch": 10,
-    "chConf": 0.032,
+    "ch": 13,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -123119,7 +123119,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.507,
+    "chConf": 0.48,
     "sec": null,
     "secConf": null
    },
@@ -123147,7 +123147,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.154,
+    "chConf": 0.148,
     "sec": "7.2",
     "secConf": 0.45
    }
@@ -123238,7 +123238,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.116,
+    "chConf": 0.114,
     "sec": "8.2",
     "secConf": 0.725
    },
@@ -123251,7 +123251,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.486,
+    "chConf": 0.484,
     "sec": "3.6",
     "secConf": 0.335
    },
@@ -123263,7 +123263,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.458,
+    "chConf": 0.459,
     "sec": "3.1",
     "secConf": 0.455
    },
@@ -123275,7 +123275,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.032,
+    "chConf": 0.031,
     "sec": null,
     "secConf": null
    },
@@ -123299,7 +123299,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.559,
+    "chConf": 0.567,
     "sec": "15.4",
     "secConf": 0.32
    },
@@ -123311,7 +123311,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.586,
+    "chConf": 0.585,
     "sec": "8.6",
     "secConf": 0.734
    },
@@ -123323,7 +123323,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.802,
+    "chConf": 0.801,
     "sec": "4.7",
     "secConf": 0.414
    },
@@ -123335,9 +123335,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.788,
+    "chConf": 0.786,
     "sec": "14.3",
-    "secConf": 0.455
+    "secConf": 0.443
    },
    {
     "n": 10,
@@ -123348,7 +123348,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.081,
+    "chConf": 0.065,
     "sec": null,
     "secConf": null
    },
@@ -123360,7 +123360,7 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.023,
+    "chConf": 0.047,
     "sec": null,
     "secConf": null
    },
@@ -123373,7 +123373,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.319,
+    "chConf": 0.325,
     "sec": "13.1",
     "secConf": 0.239
    },
@@ -123385,7 +123385,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.453,
+    "chConf": 0.454,
     "sec": "15.4",
     "secConf": 0.1
    },
@@ -123398,7 +123398,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.264,
+    "chConf": 0.26,
     "sec": null,
     "secConf": null
    },
@@ -123410,7 +123410,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.2,
+    "chConf": 0.201,
     "sec": "6.1",
     "secConf": 0.353
    },
@@ -123422,7 +123422,7 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.021,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -123434,7 +123434,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.267,
+    "chConf": 0.268,
     "sec": "15.2",
     "secConf": 0.391
    },
@@ -123446,9 +123446,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.14,
+    "chConf": 0.11,
     "sec": "9.4",
-    "secConf": 0.341
+    "secConf": 0.338
    },
    {
     "n": 19,
@@ -123458,7 +123458,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.079,
+    "chConf": 0.068,
     "sec": null,
     "secConf": null
    },
@@ -123470,7 +123470,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.117,
+    "chConf": 0.112,
     "sec": "15.4",
     "secConf": 0.35
    }
@@ -123925,7 +123925,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.026,
+    "chConf": 0.033,
     "sec": null,
     "secConf": null
    },
@@ -123975,7 +123975,7 @@
     ],
     "examiner": [],
     "ch": 12,
-    "chConf": 0.34,
+    "chConf": 0.339,
     "sec": "12.1",
     "secConf": 0.111
    },
@@ -124047,7 +124047,7 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.624,
+    "chConf": 0.607,
     "sec": null,
     "secConf": null
    },
@@ -124366,7 +124366,7 @@
     ],
     "examiner": [],
     "ch": 2,
-    "chConf": 0.003,
+    "chConf": 0.004,
     "sec": null,
     "secConf": null
    },
@@ -124505,7 +124505,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.301,
+    "chConf": 0.312,
     "sec": null,
     "secConf": null
    }
@@ -130719,7 +130719,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.098,
+    "chConf": 0.083,
     "sec": null,
     "secConf": null
    },
@@ -130747,7 +130747,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.592,
+    "chConf": 0.591,
     "sec": "8.6",
     "secConf": 0.166
    },
@@ -130775,9 +130775,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.371,
+    "chConf": 0.353,
     "sec": "10.1",
-    "secConf": 0.331
+    "secConf": 0.281
    },
    {
     "n": 4,
@@ -130803,7 +130803,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.443,
+    "chConf": 0.454,
     "sec": null,
     "secConf": null
    },
@@ -130887,7 +130887,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.017,
+    "chConf": 0.005,
     "sec": null,
     "secConf": null
    },
@@ -130956,7 +130956,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.685,
+    "chConf": 0.669,
     "sec": "8.4",
     "secConf": 0.798
    },
@@ -130984,7 +130984,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.053,
+    "chConf": 0.034,
     "sec": null,
     "secConf": null
    },
@@ -131040,9 +131040,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.637,
-    "sec": "10.5",
-    "secConf": 0.114
+    "chConf": 0.622,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 13,
@@ -131068,7 +131068,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.074,
+    "chConf": 0.073,
     "sec": null,
     "secConf": null
    },
@@ -131096,7 +131096,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.485,
+    "chConf": 0.514,
     "sec": null,
     "secConf": null
    },
@@ -131124,7 +131124,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.277,
+    "chConf": 0.274,
     "sec": null,
     "secConf": null
    },
@@ -131152,7 +131152,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.657,
+    "chConf": 0.656,
     "sec": "3.3",
     "secConf": 0.601
    },
@@ -131180,9 +131180,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.329,
+    "chConf": 0.33,
     "sec": "2.5",
-    "secConf": 0.13
+    "secConf": 0.134
    },
    {
     "n": 18,
@@ -131208,7 +131208,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.347,
+    "chConf": 0.341,
     "sec": "3.6",
     "secConf": 0.75
    },
@@ -131264,7 +131264,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.158,
+    "chConf": 0.172,
     "sec": "4.3",
     "secConf": 0.148
    },
@@ -131292,7 +131292,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.011,
+    "chConf": 0.024,
     "sec": null,
     "secConf": null
    },
@@ -131320,9 +131320,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.487,
+    "chConf": 0.482,
     "sec": "14.3",
-    "secConf": 0.484
+    "secConf": 0.496
    },
    {
     "n": 23,
@@ -131348,9 +131348,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.449,
+    "chConf": 0.445,
     "sec": "14.3",
-    "secConf": 0.341
+    "secConf": 0.318
    },
    {
     "n": 24,
@@ -131404,7 +131404,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.016,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -131444,7 +131444,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.121,
+    "chConf": 0.12,
     "sec": null,
     "secConf": null
    },
@@ -131472,7 +131472,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.32,
+    "chConf": 0.315,
     "sec": "13.2",
     "secConf": 0.418
    },
@@ -131500,7 +131500,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.305,
+    "chConf": 0.303,
     "sec": "13.6",
     "secConf": 0.15
    },
@@ -131528,7 +131528,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.358,
+    "chConf": 0.359,
     "sec": "12.1",
     "secConf": 0.178
    },
@@ -131556,9 +131556,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.503,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.47,
+    "sec": "10.3",
+    "secConf": 0.134
    }
   ],
   "mcq_key": {
@@ -131604,7 +131604,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.251,
+    "chConf": 0.241,
     "sec": "15.3",
     "secConf": 0.188
    },
@@ -131628,9 +131628,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.067,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.131,
+    "sec": "11.5",
+    "secConf": 0.149
    },
    {
     "n": 4,
@@ -131639,7 +131639,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.419,
+    "chConf": 0.424,
     "sec": "13.1",
     "secConf": 0.337
    },
@@ -131651,7 +131651,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.399,
+    "chConf": 0.401,
     "sec": "3.6",
     "secConf": 0.638
    },
@@ -131663,7 +131663,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.536,
+    "chConf": 0.532,
     "sec": "13.1",
     "secConf": 0.224
    },
@@ -131675,9 +131675,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.772,
+    "chConf": 0.77,
     "sec": "14.5",
-    "secConf": 0.395
+    "secConf": 0.449
    },
    {
     "n": 8,
@@ -131687,7 +131687,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.525,
+    "chConf": 0.526,
     "sec": "3.6",
     "secConf": 0.582
    },
@@ -131699,7 +131699,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.464,
+    "chConf": 0.463,
     "sec": "3.5",
     "secConf": 0.128
    },
@@ -131710,7 +131710,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.071,
+    "chConf": 0.002,
     "sec": null,
     "secConf": null
    },
@@ -131722,9 +131722,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.768,
+    "chConf": 0.765,
     "sec": "14.3",
-    "secConf": 0.516
+    "secConf": 0.51
    },
    {
     "n": 12,
@@ -131744,7 +131744,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.275,
+    "chConf": 0.277,
     "sec": "15.3",
     "secConf": 0.387
    },
@@ -131756,7 +131756,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.481,
+    "chConf": 0.48,
     "sec": "3.5",
     "secConf": 0.549
    },
@@ -131768,9 +131768,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.645,
+    "chConf": 0.644,
     "sec": "10.3",
-    "secConf": 0.344
+    "secConf": 0.374
    },
    {
     "n": 16,
@@ -131781,7 +131781,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.926,
+    "chConf": 0.925,
     "sec": "16.2",
     "secConf": 0.78
    },
@@ -131817,7 +131817,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.535,
+    "chConf": 0.507,
     "sec": "13.6",
     "secConf": 0.705
    },
@@ -131828,9 +131828,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.118,
+    "chConf": 0.161,
     "sec": "9.5",
-    "secConf": 0.762
+    "secConf": 0.763
    }
   ],
   "saq_solutions": [
@@ -132275,7 +132275,7 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.499,
+    "chConf": 0.508,
     "sec": null,
     "secConf": null
    },
@@ -132369,7 +132369,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.301,
+    "chConf": 0.302,
     "sec": "3.4",
     "secConf": 0.257
    },
@@ -132442,7 +132442,7 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.2,
+    "chConf": 0.158,
     "sec": null,
     "secConf": null
    },
@@ -132499,9 +132499,9 @@
     ],
     "examiner": [],
     "ch": 2,
-    "chConf": 0.613,
+    "chConf": 0.612,
     "sec": "2.3",
-    "secConf": 0.281
+    "secConf": 0.283
    },
    {
     "n": 5,
@@ -132626,7 +132626,7 @@
     ],
     "examiner": [],
     "ch": 16,
-    "chConf": 0.709,
+    "chConf": 0.708,
     "sec": null,
     "secConf": null
    }
@@ -139167,7 +139167,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.326,
+    "chConf": 0.327,
     "sec": null,
     "secConf": null
    },
@@ -139195,7 +139195,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.318,
+    "chConf": 0.302,
     "sec": "13.2",
     "secConf": 0.559
    },
@@ -139279,7 +139279,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.088,
+    "chConf": 0.081,
     "sec": null,
     "secConf": null
    },
@@ -139307,9 +139307,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.476,
+    "chConf": 0.474,
     "sec": "14.1",
-    "secConf": 0.418
+    "secConf": 0.447
    },
    {
     "n": 7,
@@ -139348,7 +139348,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.474,
+    "chConf": 0.511,
     "sec": "5.6",
     "secConf": 0.42
    },
@@ -139376,7 +139376,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.418,
+    "chConf": 0.425,
     "sec": "12.2",
     "secConf": 0.642
    },
@@ -139423,8 +139423,8 @@
       ]
      }
     ],
-    "ch": 10,
-    "chConf": 0.043,
+    "ch": 15,
+    "chConf": 0.01,
     "sec": null,
     "secConf": null
    },
@@ -139452,9 +139452,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.581,
+    "chConf": 0.56,
     "sec": "10.2",
-    "secConf": 0.189
+    "secConf": 0.175
    },
    {
     "n": 11,
@@ -139508,9 +139508,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.612,
+    "chConf": 0.615,
     "sec": "14.3",
-    "secConf": 0.336
+    "secConf": 0.312
    },
    {
     "n": 13,
@@ -139536,9 +139536,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.093,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.121,
+    "sec": "11.5",
+    "secConf": 0.152
    },
    {
     "n": 14,
@@ -139564,7 +139564,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.142,
+    "chConf": 0.138,
     "sec": "13.5",
     "secConf": 0.554
    },
@@ -139592,7 +139592,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.423,
+    "chConf": 0.419,
     "sec": "16.3",
     "secConf": 0.287
    },
@@ -139620,7 +139620,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.012,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -139648,7 +139648,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.399,
+    "chConf": 0.4,
     "sec": "3.3",
     "secConf": 0.425
    },
@@ -139676,7 +139676,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.193,
+    "chConf": 0.189,
     "sec": "7.3",
     "secConf": 0.15
    },
@@ -139704,7 +139704,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.794,
+    "chConf": 0.804,
     "sec": "15.4",
     "secConf": 0.254
    },
@@ -139732,9 +139732,9 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.085,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.101,
+    "sec": "4.8",
+    "secConf": 0.349
    },
    {
     "n": 21,
@@ -139770,7 +139770,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.244,
+    "chConf": 0.246,
     "sec": "6.8",
     "secConf": 0.118
    },
@@ -139798,7 +139798,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.302,
+    "chConf": 0.301,
     "sec": null,
     "secConf": null
    },
@@ -139850,7 +139850,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.257,
+    "chConf": 0.259,
     "sec": null,
     "secConf": null
    },
@@ -139878,7 +139878,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.022,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -139926,9 +139926,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.184,
+    "chConf": 0.145,
     "sec": "10.6",
-    "secConf": 0.152
+    "secConf": 0.17
    },
    {
     "n": 26,
@@ -139977,7 +139977,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.335,
+    "chConf": 0.369,
     "sec": "13.2",
     "secConf": 0.251
    },
@@ -140005,7 +140005,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.325,
+    "chConf": 0.324,
     "sec": null,
     "secConf": null
    },
@@ -140046,7 +140046,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.259,
+    "chConf": 0.258,
     "sec": null,
     "secConf": null
    },
@@ -140073,10 +140073,10 @@
       "t": "Changes in equity and Financial position"
      }
     ],
-    "ch": 13,
-    "chConf": 0.454,
-    "sec": "13.6",
-    "secConf": 0.801
+    "ch": 14,
+    "chConf": 1.0,
+    "sec": "14.2",
+    "secConf": 0.382
    },
    {
     "n": 30,
@@ -140102,7 +140102,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.507,
+    "chConf": 0.534,
     "sec": "15.4",
     "secConf": 0.468
    }
@@ -140150,7 +140150,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.542,
+    "chConf": 0.541,
     "sec": "2.3",
     "secConf": 0.115
    },
@@ -140162,7 +140162,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.346,
+    "chConf": 0.345,
     "sec": null,
     "secConf": null
    },
@@ -140174,7 +140174,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.062,
+    "chConf": 0.063,
     "sec": null,
     "secConf": null
    },
@@ -140186,7 +140186,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.179,
+    "chConf": 0.184,
     "sec": null,
     "secConf": null
    },
@@ -140198,7 +140198,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.272,
+    "chConf": 0.242,
     "sec": "7.3",
     "secConf": 0.312
    },
@@ -140221,7 +140221,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.404,
+    "chConf": 0.394,
     "sec": "13.6",
     "secConf": 0.869
    },
@@ -140233,7 +140233,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.407,
+    "chConf": 0.416,
     "sec": null,
     "secConf": null
    },
@@ -140243,8 +140243,8 @@
      "The formula for calculating working capital is....................................................."
     ],
     "pre": [],
-    "ch": 10,
-    "chConf": 0.029,
+    "ch": 15,
+    "chConf": 0.039,
     "sec": null,
     "secConf": null
    },
@@ -140255,7 +140255,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.213,
+    "chConf": 0.221,
     "sec": "8.2",
     "secConf": 0.678
    },
@@ -140269,7 +140269,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.048,
+    "chConf": 0.068,
     "sec": null,
     "secConf": null
    },
@@ -140285,9 +140285,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.168,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.166,
+    "sec": "9.2",
+    "secConf": 0.117
    },
    {
     "n": 13,
@@ -140319,7 +140319,7 @@
      "      shoes for ₦1,282,000."
     ],
     "ch": 12,
-    "chConf": 0.112,
+    "chConf": 0.108,
     "sec": "12.1",
     "secConf": 0.153
    },
@@ -140349,9 +140349,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.47,
+    "chConf": 0.453,
     "sec": "10.4",
-    "secConf": 0.22
+    "secConf": 0.213
    },
    {
     "n": 17,
@@ -140360,7 +140360,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.059,
+    "chConf": 0.084,
     "sec": null,
     "secConf": null
    },
@@ -140371,7 +140371,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.425,
+    "chConf": 0.427,
     "sec": null,
     "secConf": null
    },
@@ -140384,7 +140384,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.166,
+    "chConf": 0.165,
     "sec": null,
     "secConf": null
    },
@@ -140395,7 +140395,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.297,
+    "chConf": 0.295,
     "sec": "13.6",
     "secConf": 0.833
    }
@@ -140835,7 +140835,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.56,
+    "chConf": 0.572,
     "sec": "15.6",
     "secConf": 0.111
    },
@@ -140931,9 +140931,9 @@
     ],
     "examiner": [],
     "ch": 9,
-    "chConf": 0.387,
+    "chConf": 0.376,
     "sec": "9.4",
-    "secConf": 0.347
+    "secConf": 0.339
    },
    {
     "n": 3,
@@ -141021,7 +141021,7 @@
     ],
     "examiner": [],
     "ch": 16,
-    "chConf": 0.375,
+    "chConf": 0.372,
     "sec": "16.3",
     "secConf": 0.771
    },
@@ -147703,7 +147703,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.768,
+    "chConf": 0.767,
     "sec": "8.6",
     "secConf": 0.213
    },
@@ -147731,7 +147731,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.866,
+    "chConf": 0.865,
     "sec": null,
     "secConf": null
    },
@@ -147857,7 +147857,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.093,
+    "chConf": 0.084,
     "sec": null,
     "secConf": null
    },
@@ -147885,7 +147885,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.089,
+    "chConf": 0.092,
     "sec": null,
     "secConf": null
    },
@@ -147941,9 +147941,9 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.13,
-    "sec": "13.6",
-    "secConf": 0.808
+    "chConf": 0.057,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 10,
@@ -147969,7 +147969,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.646,
+    "chConf": 0.645,
     "sec": "9.2",
     "secConf": 0.189
    },
@@ -148004,7 +148004,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.775,
+    "chConf": 0.782,
     "sec": "13.2",
     "secConf": 0.174
    },
@@ -148039,7 +148039,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.674,
+    "chConf": 0.68,
     "sec": "13.2",
     "secConf": 0.336
    },
@@ -148067,7 +148067,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.011,
+    "chConf": 0.024,
     "sec": null,
     "secConf": null
    },
@@ -148094,10 +148094,10 @@
       "t": "Control account"
      }
     ],
-    "ch": 13,
-    "chConf": 0.376,
-    "sec": "13.6",
-    "secConf": 0.531
+    "ch": 14,
+    "chConf": 1.0,
+    "sec": "14.2",
+    "secConf": 0.41
    },
    {
     "n": 15,
@@ -148123,7 +148123,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.447,
+    "chConf": 0.44,
     "sec": "13.6",
     "secConf": 0.44
    },
@@ -148151,7 +148151,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.138,
+    "chConf": 0.139,
     "sec": null,
     "secConf": null
    },
@@ -148179,7 +148179,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.097,
+    "chConf": 0.098,
     "sec": null,
     "secConf": null
    },
@@ -148207,9 +148207,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.21,
+    "chConf": 0.213,
     "sec": "2.6",
-    "secConf": 0.415
+    "secConf": 0.416
    },
    {
     "n": 19,
@@ -148235,7 +148235,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.228,
+    "chConf": 0.224,
     "sec": null,
     "secConf": null
    },
@@ -148263,9 +148263,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.204,
+    "chConf": 0.205,
     "sec": "2.7",
-    "secConf": 0.212
+    "secConf": 0.203
    },
    {
     "n": 21,
@@ -148319,7 +148319,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.591,
+    "chConf": 0.599,
     "sec": "16.3",
     "secConf": 0.737
    },
@@ -148375,7 +148375,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.331,
+    "chConf": 0.333,
     "sec": "16.3",
     "secConf": 0.942
    },
@@ -148403,9 +148403,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.201,
+    "chConf": 0.202,
     "sec": "2.7",
-    "secConf": 0.303
+    "secConf": 0.289
    },
    {
     "n": 26,
@@ -148431,7 +148431,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.136,
+    "chConf": 0.131,
     "sec": null,
     "secConf": null
    },
@@ -148459,7 +148459,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.373,
+    "chConf": 0.374,
     "sec": "3.6",
     "secConf": 0.584
    },
@@ -148487,7 +148487,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.471,
+    "chConf": 0.47,
     "sec": "13.5",
     "secConf": 0.423
    },
@@ -148532,7 +148532,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.789,
+    "chConf": 0.795,
     "sec": "4.7",
     "secConf": 0.236
    },
@@ -148560,9 +148560,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.24,
+    "chConf": 0.239,
     "sec": "2.7",
-    "secConf": 0.15
+    "secConf": 0.157
    }
   ],
   "mcq_key": {
@@ -148628,7 +148628,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.36,
+    "chConf": 0.362,
     "sec": "8.2",
     "secConf": 0.775
    },
@@ -148639,7 +148639,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.757,
+    "chConf": 0.756,
     "sec": "8.6",
     "secConf": 0.663
    },
@@ -148651,7 +148651,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.619,
+    "chConf": 0.628,
     "sec": "8.2",
     "secConf": 0.253
    },
@@ -148663,7 +148663,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.016,
+    "chConf": 0.017,
     "sec": null,
     "secConf": null
    },
@@ -148675,7 +148675,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.52,
+    "chConf": 0.528,
     "sec": null,
     "secConf": null
    },
@@ -148686,7 +148686,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.033,
+    "chConf": 0.043,
     "sec": null,
     "secConf": null
    },
@@ -148698,7 +148698,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.015,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -148710,7 +148710,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.184,
+    "chConf": 0.186,
     "sec": "2.6",
     "secConf": 0.468
    },
@@ -148721,7 +148721,7 @@
     ],
     "pre": [],
     "ch": 1,
-    "chConf": 0.15,
+    "chConf": 0.153,
     "sec": "1.7",
     "secConf": 0.427
    },
@@ -148733,7 +148733,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.457,
+    "chConf": 0.478,
     "sec": null,
     "secConf": null
    },
@@ -148747,7 +148747,7 @@
     "ch": 2,
     "chConf": 0.878,
     "sec": "2.3",
-    "secConf": 0.829
+    "secConf": 0.83
    },
    {
     "n": 12,
@@ -148757,7 +148757,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.576,
+    "chConf": 0.577,
     "sec": "7.5",
     "secConf": 0.343
    },
@@ -148769,7 +148769,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.548,
+    "chConf": 0.532,
     "sec": "16.3",
     "secConf": 0.882
    },
@@ -148781,7 +148781,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.51,
+    "chConf": 0.508,
     "sec": "16.3",
     "secConf": 0.804
    },
@@ -148793,7 +148793,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.658,
+    "chConf": 0.647,
     "sec": null,
     "secConf": null
    },
@@ -148805,7 +148805,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.693,
+    "chConf": 0.692,
     "sec": "3.6",
     "secConf": 0.52
    },
@@ -148816,7 +148816,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.362,
+    "chConf": 0.353,
     "sec": "13.6",
     "secConf": 0.853
    },
@@ -148828,7 +148828,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.027,
+    "chConf": 0.024,
     "sec": null,
     "secConf": null
    },
@@ -148840,7 +148840,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.341,
+    "chConf": 0.359,
     "sec": "13.2",
     "secConf": 0.469
    },
@@ -148851,7 +148851,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.858,
+    "chConf": 0.862,
     "sec": null,
     "secConf": null
    }
@@ -149397,7 +149397,7 @@
     ],
     "examiner": [],
     "ch": 2,
-    "chConf": 0.057,
+    "chConf": 0.056,
     "sec": null,
     "secConf": null
    },
@@ -149524,7 +149524,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.172,
+    "chConf": 0.175,
     "sec": "3.2",
     "secConf": 0.157
    },
@@ -149594,7 +149594,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.397,
+    "chConf": 0.405,
     "sec": "15.3",
     "secConf": 0.423
    },
@@ -149705,7 +149705,7 @@
     ],
     "examiner": [],
     "ch": 1,
-    "chConf": 0.36,
+    "chConf": 0.364,
     "sec": "1.8",
     "secConf": 0.745
    }
@@ -156342,7 +156342,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.138,
+    "chConf": 0.118,
     "sec": "13.6",
     "secConf": 0.53
    },
@@ -156370,7 +156370,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.289,
+    "chConf": 0.291,
     "sec": "15.3",
     "secConf": 0.521
    },
@@ -156402,7 +156402,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.424,
+    "chConf": 0.425,
     "sec": null,
     "secConf": null
    },
@@ -156432,7 +156432,7 @@
     "ch": 2,
     "chConf": 0.858,
     "sec": "2.3",
-    "secConf": 0.859
+    "secConf": 0.86
    },
    {
     "n": 5,
@@ -156458,7 +156458,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.008,
+    "chConf": 0.017,
     "sec": null,
     "secConf": null
    },
@@ -156515,7 +156515,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.031,
+    "chConf": 0.026,
     "sec": null,
     "secConf": null
    },
@@ -156572,7 +156572,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.023,
+    "chConf": 0.021,
     "sec": null,
     "secConf": null
    },
@@ -156600,7 +156600,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.633,
+    "chConf": 0.632,
     "sec": null,
     "secConf": null
    },
@@ -156628,7 +156628,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.008,
+    "chConf": 0.007,
     "sec": null,
     "secConf": null
    },
@@ -156691,9 +156691,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.164,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.153,
+    "sec": "14.5",
+    "secConf": 0.198
    },
    {
     "n": 12,
@@ -156731,9 +156731,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.519,
+    "chConf": 0.485,
     "sec": "14.4",
-    "secConf": 0.878
+    "secConf": 0.886
    },
    {
     "n": 13,
@@ -156759,9 +156759,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.159,
+    "chConf": 0.16,
     "sec": "14.4",
-    "secConf": 0.187
+    "secConf": 0.245
    },
    {
     "n": 14,
@@ -156811,9 +156811,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.568,
+    "chConf": 0.547,
     "sec": "10.1",
-    "secConf": 0.149
+    "secConf": 0.132
    },
    {
     "n": 15,
@@ -156895,9 +156895,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.284,
+    "chConf": 0.287,
     "sec": "2.7",
-    "secConf": 0.183
+    "secConf": 0.164
    },
    {
     "n": 18,
@@ -156943,7 +156943,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.146,
+    "chConf": 0.144,
     "sec": "12.5",
     "secConf": 0.102
    },
@@ -157034,9 +157034,9 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.065,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.129,
+    "sec": "15.4",
+    "secConf": 0.484
    },
    {
     "n": 22,
@@ -157081,7 +157081,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.032,
+    "chConf": 0.034,
     "sec": null,
     "secConf": null
    },
@@ -157109,7 +157109,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.021,
+    "chConf": 0.023,
     "sec": null,
     "secConf": null
    },
@@ -157165,7 +157165,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.381,
+    "chConf": 0.384,
     "sec": "3.3",
     "secConf": 0.311
    },
@@ -157221,7 +157221,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.32,
+    "chConf": 0.321,
     "sec": "7.4",
     "secConf": 0.484
    },
@@ -157249,9 +157249,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.119,
+    "chConf": 0.121,
     "sec": "14.1",
-    "secConf": 0.704
+    "secConf": 0.649
    },
    {
     "n": 29,
@@ -157277,7 +157277,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.429,
+    "chConf": 0.431,
     "sec": "8.2",
     "secConf": 0.477
    },
@@ -157315,7 +157315,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.151,
+    "chConf": 0.153,
     "sec": null,
     "secConf": null
    }
@@ -157378,10 +157378,10 @@
      "      present financial statements are known as………………………."
     ],
     "pre": [],
-    "ch": 16,
-    "chConf": 0.013,
-    "sec": null,
-    "secConf": null
+    "ch": 1,
+    "chConf": 1.0,
+    "sec": "1.7",
+    "secConf": 0.362
    },
    {
     "n": 2,
@@ -157392,9 +157392,9 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.126,
+    "chConf": 0.127,
     "sec": "2.1",
-    "secConf": 0.209
+    "secConf": 0.208
    },
    {
     "n": 3,
@@ -157405,7 +157405,7 @@
     "ch": 14,
     "chConf": 0.252,
     "sec": "14.2",
-    "secConf": 0.681
+    "secConf": 0.49
    },
    {
     "n": 4,
@@ -157414,9 +157414,9 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.272,
+    "chConf": 0.269,
     "sec": "2.7",
-    "secConf": 0.158
+    "secConf": 0.145
    },
    {
     "n": 5,
@@ -157426,7 +157426,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.36,
+    "chConf": 0.358,
     "sec": "9.8",
     "secConf": 0.187
    },
@@ -157444,7 +157444,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.29,
+    "chConf": 0.288,
     "sec": "3.6",
     "secConf": 0.742
    },
@@ -157455,7 +157455,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.146,
+    "chConf": 0.147,
     "sec": "3.5",
     "secConf": 0.171
    },
@@ -157466,9 +157466,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.103,
-    "sec": "10.2",
-    "secConf": 0.451
+    "chConf": 0.047,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 9,
@@ -157478,9 +157478,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.716,
+    "chConf": 0.713,
     "sec": "14.5",
-    "secConf": 0.511
+    "secConf": 0.519
    },
    {
     "n": 10,
@@ -157491,9 +157491,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.19,
+    "chConf": 0.178,
     "sec": "14.3",
-    "secConf": 0.362
+    "secConf": 0.333
    },
    {
     "n": 11,
@@ -157502,7 +157502,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.487,
+    "chConf": 0.519,
     "sec": "15.4",
     "secConf": 0.426
    },
@@ -157514,7 +157514,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.548,
+    "chConf": 0.54,
     "sec": "13.6",
     "secConf": 0.366
    },
@@ -157527,7 +157527,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.419,
+    "chConf": 0.417,
     "sec": "2.6",
     "secConf": 0.486
    },
@@ -157538,7 +157538,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.273,
+    "chConf": 0.254,
     "sec": "13.6",
     "secConf": 0.853
    },
@@ -157550,7 +157550,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.653,
+    "chConf": 0.648,
     "sec": "12.2",
     "secConf": 0.522
    },
@@ -157562,7 +157562,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.744,
+    "chConf": 0.743,
     "sec": "16.2",
     "secConf": 0.664
    },
@@ -157574,7 +157574,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.782,
+    "chConf": 0.787,
     "sec": "16.1",
     "secConf": 0.399
    },
@@ -157596,7 +157596,7 @@
      "Share capital.                  50"
     ],
     "ch": 15,
-    "chConf": 0.051,
+    "chConf": 0.052,
     "sec": null,
     "secConf": null
    },
@@ -157618,7 +157618,7 @@
      "Share capital.                  50"
     ],
     "ch": 14,
-    "chConf": 0.073,
+    "chConf": 0.069,
     "sec": null,
     "secConf": null
    },
@@ -157630,7 +157630,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.232,
+    "chConf": 0.233,
     "sec": "3.6",
     "secConf": 0.698
    }
@@ -158092,7 +158092,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.243,
+    "chConf": 0.247,
     "sec": "13.6",
     "secConf": 0.416
    },
@@ -158191,7 +158191,7 @@
     ],
     "examiner": [],
     "ch": 1,
-    "chConf": 0.127,
+    "chConf": 0.129,
     "sec": "1.7",
     "secConf": 0.375
    },
@@ -158298,7 +158298,7 @@
     "ch": 9,
     "chConf": 0.481,
     "sec": "9.9",
-    "secConf": 0.132
+    "secConf": 0.135
    },
    {
     "n": 5,
@@ -158365,9 +158365,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.636,
+    "chConf": 0.62,
     "sec": "10.2",
-    "secConf": 0.27
+    "secConf": 0.263
    },
    {
     "n": 6,
@@ -158436,7 +158436,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.219,
+    "chConf": 0.214,
     "sec": "3.8",
     "secConf": 0.335
    }
@@ -164516,7 +164516,7 @@
      }
     ],
     "ch": 1,
-    "chConf": 0.402,
+    "chConf": 0.397,
     "sec": "1.4",
     "secConf": 0.569
    },
@@ -164572,7 +164572,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.01,
+    "chConf": 0.008,
     "sec": null,
     "secConf": null
    },
@@ -164628,7 +164628,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.796,
+    "chConf": 0.795,
     "sec": "16.2",
     "secConf": 0.903
    },
@@ -164704,7 +164704,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.634,
+    "chConf": 0.652,
     "sec": "4.7",
     "secConf": 0.192
    },
@@ -164739,7 +164739,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.743,
+    "chConf": 0.742,
     "sec": null,
     "secConf": null
    },
@@ -164774,7 +164774,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.645,
+    "chConf": 0.644,
     "sec": "4.8",
     "secConf": 0.161
    },
@@ -164802,7 +164802,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.55,
+    "chConf": 0.573,
     "sec": null,
     "secConf": null
    },
@@ -164830,7 +164830,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.439,
+    "chConf": 0.419,
     "sec": "13.6",
     "secConf": 0.173
    },
@@ -164878,7 +164878,7 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.096,
+    "chConf": 0.077,
     "sec": null,
     "secConf": null
    },
@@ -164920,9 +164920,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.663,
+    "chConf": 0.644,
     "sec": "10.3",
-    "secConf": 0.224
+    "secConf": 0.23
    },
    {
     "n": 14,
@@ -164962,9 +164962,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.681,
+    "chConf": 0.663,
     "sec": "10.3",
-    "secConf": 0.133
+    "secConf": 0.162
    },
    {
     "n": 15,
@@ -165010,7 +165010,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.201,
+    "chConf": 0.204,
     "sec": "6.6",
     "secConf": 0.848
    },
@@ -165049,7 +165049,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.863,
+    "chConf": 0.864,
     "sec": "8.3",
     "secConf": 0.353
    },
@@ -165088,7 +165088,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.696,
+    "chConf": 0.697,
     "sec": "8.3",
     "secConf": 0.416
    },
@@ -165116,7 +165116,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.388,
+    "chConf": 0.389,
     "sec": null,
     "secConf": null
    },
@@ -165144,7 +165144,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.323,
+    "chConf": 0.305,
     "sec": null,
     "secConf": null
    },
@@ -165200,7 +165200,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.128,
+    "chConf": 0.155,
     "sec": "15.2",
     "secConf": 0.217
    },
@@ -165228,7 +165228,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.559,
+    "chConf": 0.563,
     "sec": "15.3",
     "secConf": 0.46
    },
@@ -165283,9 +165283,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.188,
+    "chConf": 0.172,
     "sec": "14.5",
-    "secConf": 0.347
+    "secConf": 0.378
    },
    {
     "n": 24,
@@ -165323,9 +165323,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.471,
+    "chConf": 0.463,
     "sec": "14.5",
-    "secConf": 0.299
+    "secConf": 0.36
    },
    {
     "n": 25,
@@ -165351,7 +165351,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.303,
+    "chConf": 0.304,
     "sec": null,
     "secConf": null
    },
@@ -165379,7 +165379,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.411,
+    "chConf": 0.412,
     "sec": "16.2",
     "secConf": 0.709
    },
@@ -165407,7 +165407,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.485,
+    "chConf": 0.483,
     "sec": "16.3",
     "secConf": 0.903
    },
@@ -165435,7 +165435,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.108,
+    "chConf": 0.107,
     "sec": "8.2",
     "secConf": 0.433
    },
@@ -165463,7 +165463,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.374,
+    "chConf": 0.376,
     "sec": "3.3",
     "secConf": 0.34
    },
@@ -165491,9 +165491,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.514,
+    "chConf": 0.513,
     "sec": "9.5",
-    "secConf": 0.415
+    "secConf": 0.414
    }
   ],
   "mcq_key": {
@@ -165609,7 +165609,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.093,
+    "chConf": 0.092,
     "sec": null,
     "secConf": null
    },
@@ -165621,7 +165621,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.058,
+    "chConf": 0.081,
     "sec": null,
     "secConf": null
    },
@@ -165633,9 +165633,9 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.409,
+    "chConf": 0.406,
     "sec": "2.6",
-    "secConf": 0.27
+    "secConf": 0.271
    },
    {
     "n": 4,
@@ -165645,7 +165645,7 @@
     ],
     "pre": [],
     "ch": 5,
-    "chConf": 0.024,
+    "chConf": 0.028,
     "sec": null,
     "secConf": null
    },
@@ -165657,9 +165657,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.435,
+    "chConf": 0.424,
     "sec": "14.5",
-    "secConf": 0.364
+    "secConf": 0.355
    },
    {
     "n": 6,
@@ -165669,9 +165669,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.346,
+    "chConf": 0.343,
     "sec": "9.9",
-    "secConf": 0.193
+    "secConf": 0.194
    },
    {
     "n": 7,
@@ -165681,7 +165681,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.173,
+    "chConf": 0.176,
     "sec": "3.6",
     "secConf": 0.234
    },
@@ -165707,9 +165707,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.209,
+    "chConf": 0.266,
     "sec": "11.6",
-    "secConf": 0.236
+    "secConf": 0.425
    },
    {
     "n": 10,
@@ -165720,7 +165720,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.222,
+    "chConf": 0.224,
     "sec": "6.1",
     "secConf": 0.288
    },
@@ -165733,9 +165733,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.45,
-    "sec": "11.5",
-    "secConf": 0.175
+    "chConf": 0.425,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 12,
@@ -165760,7 +165760,7 @@
      "                           2022 -?"
     ],
     "ch": 8,
-    "chConf": 0.834,
+    "chConf": 0.833,
     "sec": "8.3",
     "secConf": 0.351
    },
@@ -165798,7 +165798,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.564,
+    "chConf": 0.57,
     "sec": "12.2",
     "secConf": 0.407
    },
@@ -165833,7 +165833,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.316,
+    "chConf": 0.311,
     "sec": null,
     "secConf": null
    },
@@ -165844,7 +165844,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.073,
+    "chConf": 0.075,
     "sec": null,
     "secConf": null
    },
@@ -165858,9 +165858,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.105,
-    "sec": "10.3",
-    "secConf": 0.518
+    "chConf": 0.12,
+    "sec": "10.7",
+    "secConf": 0.175
    },
    {
     "n": 19,
@@ -165870,9 +165870,9 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.309,
+    "chConf": 0.339,
     "sec": "14.1",
-    "secConf": 0.261
+    "secConf": 0.305
    },
    {
     "n": 20,
@@ -165882,7 +165882,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.362,
+    "chConf": 0.361,
     "sec": "16.3",
     "secConf": 0.85
    }
@@ -166451,7 +166451,7 @@
     ],
     "examiner": [],
     "ch": 8,
-    "chConf": 0.418,
+    "chConf": 0.427,
     "sec": "8.6",
     "secConf": 0.516
    },
@@ -166584,7 +166584,7 @@
     ],
     "examiner": [],
     "ch": 16,
-    "chConf": 0.767,
+    "chConf": 0.766,
     "sec": "16.1",
     "secConf": 0.41
    },
@@ -166627,7 +166627,7 @@
     ],
     "examiner": [],
     "ch": 4,
-    "chConf": 0.014,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -166722,7 +166722,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.316,
+    "chConf": 0.306,
     "sec": "13.2",
     "secConf": 0.303
    }
@@ -173467,7 +173467,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.012,
+    "chConf": 0.019,
     "sec": null,
     "secConf": null
    },
@@ -173495,9 +173495,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.537,
+    "chConf": 0.532,
     "sec": "14.3",
-    "secConf": 0.211
+    "secConf": 0.173
    },
    {
     "n": 3,
@@ -173523,7 +173523,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.628,
+    "chConf": 0.627,
     "sec": null,
     "secConf": null
    },
@@ -173551,7 +173551,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.191,
+    "chConf": 0.213,
     "sec": "9.5",
     "secConf": 0.357
    },
@@ -173579,7 +173579,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.392,
+    "chConf": 0.391,
     "sec": "3.6",
     "secConf": 0.681
    },
@@ -173607,7 +173607,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.222,
+    "chConf": 0.25,
     "sec": "6.2",
     "secConf": 0.535
    },
@@ -173635,9 +173635,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.569,
+    "chConf": 0.566,
     "sec": "14.3",
-    "secConf": 0.367
+    "secConf": 0.347
    },
    {
     "n": 8,
@@ -173663,7 +173663,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.443,
+    "chConf": 0.437,
     "sec": "13.6",
     "secConf": 0.495
    },
@@ -173691,7 +173691,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.047,
+    "chConf": 0.03,
     "sec": null,
     "secConf": null
    },
@@ -173719,7 +173719,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.583,
+    "chConf": 0.582,
     "sec": "13.5",
     "secConf": 0.363
    },
@@ -173775,7 +173775,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.058,
+    "chConf": 0.054,
     "sec": null,
     "secConf": null
    },
@@ -173803,7 +173803,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.391,
+    "chConf": 0.396,
     "sec": "5.2",
     "secConf": 0.325
    },
@@ -173830,10 +173830,10 @@
       "t": "Statement of value added"
      }
     ],
-    "ch": 13,
-    "chConf": 0.38,
-    "sec": "13.6",
-    "secConf": 0.858
+    "ch": 14,
+    "chConf": 1.0,
+    "sec": "14.2",
+    "secConf": 0.191
    },
    {
     "n": 15,
@@ -173859,7 +173859,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.108,
+    "chConf": 0.107,
     "sec": "8.2",
     "secConf": 0.433
    },
@@ -173887,7 +173887,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.378,
+    "chConf": 0.379,
     "sec": "3.3",
     "secConf": 0.342
    },
@@ -173915,9 +173915,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.386,
+    "chConf": 0.383,
     "sec": "9.5",
-    "secConf": 0.307
+    "secConf": 0.306
    },
    {
     "n": 18,
@@ -173943,9 +173943,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.257,
+    "chConf": 0.268,
     "sec": "11.3",
-    "secConf": 0.467
+    "secConf": 0.466
    },
    {
     "n": 19,
@@ -173971,7 +173971,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.307,
+    "chConf": 0.35,
     "sec": "15.4",
     "secConf": 0.31
    },
@@ -173999,7 +173999,7 @@
      }
     ],
     "ch": 12,
-    "chConf": 0.18,
+    "chConf": 0.181,
     "sec": "12.5",
     "secConf": 0.247
    },
@@ -174027,9 +174027,9 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.192,
+    "chConf": 0.198,
     "sec": "2.8",
-    "secConf": 0.338
+    "secConf": 0.353
    },
    {
     "n": 22,
@@ -174055,9 +174055,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.467,
+    "chConf": 0.473,
     "sec": "9.2",
-    "secConf": 0.491
+    "secConf": 0.49
    },
    {
     "n": 23,
@@ -174111,7 +174111,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.017,
+    "chConf": 0.005,
     "sec": null,
     "secConf": null
    },
@@ -174241,9 +174241,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.455,
+    "chConf": 0.453,
     "sec": "14.3",
-    "secConf": 0.453
+    "secConf": 0.43
    },
    {
     "n": 29,
@@ -174279,7 +174279,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.171,
+    "chConf": 0.16,
     "sec": "13.6",
     "secConf": 0.862
    },
@@ -174307,7 +174307,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.502,
+    "chConf": 0.524,
     "sec": null,
     "secConf": null
    }
@@ -174392,7 +174392,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.015,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -174404,7 +174404,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.033,
+    "chConf": 0.032,
     "sec": null,
     "secConf": null
    },
@@ -174418,9 +174418,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.522,
+    "chConf": 0.528,
     "sec": "9.9",
-    "secConf": 0.188
+    "secConf": 0.189
    },
    {
     "n": 6,
@@ -174431,7 +174431,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.179,
+    "chConf": 0.181,
     "sec": "2.6",
     "secConf": 0.346
    },
@@ -174443,7 +174443,7 @@
     ],
     "pre": [],
     "ch": 2,
-    "chConf": 0.484,
+    "chConf": 0.485,
     "sec": "2.3",
     "secConf": 0.366
    },
@@ -174455,7 +174455,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.206,
+    "chConf": 0.204,
     "sec": "3.6",
     "secConf": 0.237
    },
@@ -174469,7 +174469,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.084,
+    "chConf": 0.071,
     "sec": null,
     "secConf": null
    },
@@ -174481,7 +174481,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.229,
+    "chConf": 0.234,
     "sec": "13.5",
     "secConf": 0.641
    },
@@ -174493,7 +174493,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.147,
+    "chConf": 0.134,
     "sec": "14.2",
     "secConf": 0.829
    },
@@ -174504,7 +174504,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.632,
+    "chConf": 0.653,
     "sec": "15.1",
     "secConf": 0.352
    },
@@ -174516,7 +174516,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.141,
+    "chConf": 0.147,
     "sec": "3.5",
     "secConf": 0.486
    },
@@ -174528,9 +174528,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.577,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.567,
+    "sec": "10.3",
+    "secConf": 0.143
    },
    {
     "n": 15,
@@ -174552,9 +174552,9 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.391,
+    "chConf": 0.432,
     "sec": "11.5",
-    "secConf": 0.233
+    "secConf": 0.239
    },
    {
     "n": 17,
@@ -174564,7 +174564,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.844,
+    "chConf": 0.843,
     "sec": "8.2",
     "secConf": 0.682
    },
@@ -174576,7 +174576,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.016,
+    "chConf": 0.017,
     "sec": null,
     "secConf": null
    },
@@ -174587,7 +174587,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.02,
+    "chConf": 0.013,
     "sec": null,
     "secConf": null
    },
@@ -174599,7 +174599,7 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.056,
+    "chConf": 0.049,
     "sec": null,
     "secConf": null
    }
@@ -175008,7 +175008,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.289,
+    "chConf": 0.292,
     "sec": "15.3",
     "secConf": 0.298
    },
@@ -175124,7 +175124,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.3,
+    "chConf": 0.306,
     "sec": "3.4",
     "secConf": 0.299
    },
@@ -175220,9 +175220,9 @@
     ],
     "examiner": [],
     "ch": 2,
-    "chConf": 0.205,
+    "chConf": 0.209,
     "sec": "2.7",
-    "secConf": 0.216
+    "secConf": 0.228
    },
    {
     "n": 5,
@@ -175280,9 +175280,9 @@
     ],
     "examiner": [],
     "ch": 10,
-    "chConf": 0.143,
-    "sec": "10.6",
-    "secConf": 0.76
+    "chConf": 0.086,
+    "sec": null,
+    "secConf": null
    },
    {
     "n": 6,
@@ -175389,7 +175389,7 @@
     ],
     "examiner": [],
     "ch": 6,
-    "chConf": 0.067,
+    "chConf": 0.095,
     "sec": null,
     "secConf": null
    }
@@ -181202,7 +181202,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.558,
+    "chConf": 0.559,
     "sec": "3.6",
     "secConf": 0.398
    },
@@ -181230,7 +181230,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.348,
+    "chConf": 0.349,
     "sec": "3.6",
     "secConf": 0.289
    },
@@ -181258,7 +181258,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.315,
+    "chConf": 0.316,
     "sec": null,
     "secConf": null
    },
@@ -181286,7 +181286,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.037,
+    "chConf": 0.038,
     "sec": null,
     "secConf": null
    },
@@ -181342,7 +181342,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.887,
+    "chConf": 0.886,
     "sec": "16.1",
     "secConf": 0.713
    },
@@ -181370,7 +181370,7 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.353,
+    "chConf": 0.354,
     "sec": "14.6",
     "secConf": 0.794
    },
@@ -181398,7 +181398,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.754,
+    "chConf": 0.753,
     "sec": "16.3",
     "secConf": 0.611
    },
@@ -181426,7 +181426,7 @@
      }
     ],
     "ch": 2,
-    "chConf": 0.506,
+    "chConf": 0.504,
     "sec": "2.2",
     "secConf": 0.513
    },
@@ -181454,7 +181454,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.307,
+    "chConf": 0.305,
     "sec": "16.3",
     "secConf": 0.631
    },
@@ -181482,7 +181482,7 @@
      }
     ],
     "ch": 1,
-    "chConf": 0.53,
+    "chConf": 0.528,
     "sec": "1.8",
     "secConf": 0.772
    },
@@ -181510,7 +181510,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.605,
+    "chConf": 0.608,
     "sec": "13.2",
     "secConf": 0.586
    },
@@ -181538,9 +181538,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.098,
-    "sec": null,
-    "secConf": null
+    "chConf": 0.157,
+    "sec": "10.1",
+    "secConf": 0.198
    },
    {
     "n": 14,
@@ -181566,7 +181566,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.055,
+    "chConf": 0.054,
     "sec": null,
     "secConf": null
    },
@@ -181594,7 +181594,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.013,
+    "chConf": 0.012,
     "sec": null,
     "secConf": null
    },
@@ -181650,7 +181650,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.591,
+    "chConf": 0.613,
     "sec": "15.4",
     "secConf": 0.324
    },
@@ -181706,7 +181706,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.558,
+    "chConf": 0.575,
     "sec": "15.2",
     "secConf": 0.361
    },
@@ -181734,7 +181734,7 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.657,
+    "chConf": 0.656,
     "sec": null,
     "secConf": null
    },
@@ -181762,7 +181762,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.097,
+    "chConf": 0.096,
     "sec": null,
     "secConf": null
    },
@@ -181790,7 +181790,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.098,
+    "chConf": 0.099,
     "sec": null,
     "secConf": null
    },
@@ -181830,9 +181830,9 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.344,
+    "chConf": 0.354,
     "sec": "11.3",
-    "secConf": 0.41
+    "secConf": 0.408
    },
    {
     "n": 24,
@@ -181858,7 +181858,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.307,
+    "chConf": 0.312,
     "sec": "8.5",
     "secConf": 0.17
    },
@@ -181975,9 +181975,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.668,
+    "chConf": 0.649,
     "sec": "10.3",
-    "secConf": 0.258
+    "secConf": 0.264
    },
    {
     "n": 28,
@@ -182015,9 +182015,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.686,
+    "chConf": 0.668,
     "sec": "10.3",
-    "secConf": 0.172
+    "secConf": 0.199
    },
    {
     "n": 29,
@@ -182057,7 +182057,7 @@
     "ch": 11,
     "chConf": 0.335,
     "sec": "11.3",
-    "secConf": 0.531
+    "secConf": 0.395
    },
    {
     "n": 30,
@@ -182083,7 +182083,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.298,
+    "chConf": 0.299,
     "sec": "15.3",
     "secConf": 0.185
    }
@@ -182131,7 +182131,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.419,
+    "chConf": 0.418,
     "sec": "8.6",
     "secConf": 0.667
    },
@@ -182143,10 +182143,10 @@
      "     …………………….."
     ],
     "pre": [],
-    "ch": 13,
-    "chConf": 0.102,
-    "sec": "13.6",
-    "secConf": 0.764
+    "ch": 3,
+    "chConf": 1.0,
+    "sec": "3.8",
+    "secConf": 0.657
    },
    {
     "n": 3,
@@ -182156,7 +182156,7 @@
     ],
     "pre": [],
     "ch": 3,
-    "chConf": 0.384,
+    "chConf": 0.385,
     "sec": "3.3",
     "secConf": 0.413
    },
@@ -182168,7 +182168,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.661,
+    "chConf": 0.66,
     "sec": "13.3",
     "secConf": 0.229
    },
@@ -182179,7 +182179,7 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.705,
+    "chConf": 0.689,
     "sec": null,
     "secConf": null
    },
@@ -182190,7 +182190,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.588,
+    "chConf": 0.581,
     "sec": "16.1",
     "secConf": 0.827
    },
@@ -182201,7 +182201,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.841,
+    "chConf": 0.804,
     "sec": "16.2",
     "secConf": 0.249
    },
@@ -182226,7 +182226,7 @@
     ],
     "pre": [],
     "ch": 12,
-    "chConf": 0.062,
+    "chConf": 0.06,
     "sec": null,
     "secConf": null
    },
@@ -182238,7 +182238,7 @@
     ],
     "pre": [],
     "ch": 15,
-    "chConf": 0.788,
+    "chConf": 0.802,
     "sec": null,
     "secConf": null
    },
@@ -182250,7 +182250,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.552,
+    "chConf": 0.555,
     "sec": null,
     "secConf": null
    },
@@ -182262,7 +182262,7 @@
     ],
     "pre": [],
     "ch": 7,
-    "chConf": 0.306,
+    "chConf": 0.304,
     "sec": null,
     "secConf": null
    },
@@ -182275,9 +182275,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.348,
+    "chConf": 0.321,
     "sec": "10.1",
-    "secConf": 0.572
+    "secConf": 0.587
    },
    {
     "n": 14,
@@ -182295,7 +182295,7 @@
      "     The business maintains a margin of 25% on sales."
     ],
     "ch": 6,
-    "chConf": 0.418,
+    "chConf": 0.421,
     "sec": "6.6",
     "secConf": 0.423
    },
@@ -182315,7 +182315,7 @@
      "     The business maintains a margin of 25% on sales."
     ],
     "ch": 6,
-    "chConf": 0.229,
+    "chConf": 0.231,
     "sec": "6.6",
     "secConf": 0.445
    },
@@ -182328,7 +182328,7 @@
     ],
     "pre": [],
     "ch": 11,
-    "chConf": 0.62,
+    "chConf": 0.602,
     "sec": null,
     "secConf": null
    },
@@ -182354,7 +182354,7 @@
     "ch": 2,
     "chConf": 0.52,
     "sec": "2.2",
-    "secConf": 0.119
+    "secConf": 0.118
    },
    {
     "n": 19,
@@ -182376,7 +182376,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.069,
+    "chConf": 0.063,
     "sec": null,
     "secConf": null
    }
@@ -182797,7 +182797,7 @@
     ],
     "examiner": [],
     "ch": 3,
-    "chConf": 0.149,
+    "chConf": 0.153,
     "sec": "3.4",
     "secConf": 0.224
    },
@@ -182885,9 +182885,9 @@
     ],
     "examiner": [],
     "ch": 14,
-    "chConf": 0.278,
+    "chConf": 0.27,
     "sec": "14.3",
-    "secConf": 0.364
+    "secConf": 0.34
    },
    {
     "n": 3,
@@ -182941,7 +182941,7 @@
     ],
     "examiner": [],
     "ch": 16,
-    "chConf": 0.688,
+    "chConf": 0.686,
     "sec": "16.2",
     "secConf": 0.408
    },
@@ -183028,7 +183028,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.364,
+    "chConf": 0.386,
     "sec": "13.2",
     "secConf": 0.307
    },
@@ -183090,7 +183090,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.403,
+    "chConf": 0.393,
     "sec": "13.6",
     "secConf": 0.418
    },
@@ -183203,7 +183203,7 @@
     ],
     "examiner": [],
     "ch": 15,
-    "chConf": 0.026,
+    "chConf": 0.1,
     "sec": null,
     "secConf": null
    }
@@ -190017,7 +190017,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.329,
+    "chConf": 0.328,
     "sec": null,
     "secConf": null
    },
@@ -190095,7 +190095,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.04,
+    "chConf": 0.083,
     "sec": null,
     "secConf": null
    },
@@ -190123,7 +190123,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.057,
+    "chConf": 0.054,
     "sec": null,
     "secConf": null
    },
@@ -190151,7 +190151,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.241,
+    "chConf": 0.246,
     "sec": null,
     "secConf": null
    },
@@ -190222,7 +190222,7 @@
      }
     ],
     "ch": 3,
-    "chConf": 0.433,
+    "chConf": 0.434,
     "sec": "3.6",
     "secConf": 0.325
    },
@@ -190249,8 +190249,8 @@
       "t": "limited reciprocal attack"
      }
     ],
-    "ch": 1,
-    "chConf": 0.02,
+    "ch": 2,
+    "chConf": 0.005,
     "sec": null,
     "secConf": null
    },
@@ -190362,7 +190362,7 @@
      }
     ],
     "ch": 4,
-    "chConf": 0.168,
+    "chConf": 0.167,
     "sec": "4.2",
     "secConf": 0.161
    },
@@ -190390,9 +190390,9 @@
      }
     ],
     "ch": 10,
-    "chConf": 0.399,
+    "chConf": 0.355,
     "sec": "10.2",
-    "secConf": 0.438
+    "secConf": 0.445
    },
    {
     "n": 14,
@@ -190446,7 +190446,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.709,
+    "chConf": 0.716,
     "sec": "16.1",
     "secConf": 0.693
    },
@@ -190474,7 +190474,7 @@
      }
     ],
     "ch": 7,
-    "chConf": 0.071,
+    "chConf": 0.066,
     "sec": null,
     "secConf": null
    },
@@ -190502,9 +190502,9 @@
      }
     ],
     "ch": 9,
-    "chConf": 0.341,
+    "chConf": 0.342,
     "sec": "9.4",
-    "secConf": 0.722
+    "secConf": 0.712
    },
    {
     "n": 18,
@@ -190530,7 +190530,7 @@
      }
     ],
     "ch": 16,
-    "chConf": 0.14,
+    "chConf": 0.136,
     "sec": "16.3",
     "secConf": 0.148
    },
@@ -190586,7 +190586,7 @@
      }
     ],
     "ch": 5,
-    "chConf": 0.102,
+    "chConf": 0.11,
     "sec": "5.2",
     "secConf": 0.397
    },
@@ -190614,7 +190614,7 @@
      }
     ],
     "ch": 15,
-    "chConf": 0.451,
+    "chConf": 0.482,
     "sec": "15.7",
     "secConf": 0.135
    },
@@ -190642,7 +190642,7 @@
      }
     ],
     "ch": 11,
-    "chConf": 0.006,
+    "chConf": 0.042,
     "sec": null,
     "secConf": null
    },
@@ -190708,7 +190708,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.87,
+    "chConf": 0.835,
     "sec": "6.1",
     "secConf": 0.367
    },
@@ -190777,7 +190777,7 @@
      }
     ],
     "ch": 6,
-    "chConf": 0.44,
+    "chConf": 0.439,
     "sec": "6.1",
     "secConf": 0.227
    },
@@ -190805,7 +190805,7 @@
      }
     ],
     "ch": 8,
-    "chConf": 0.44,
+    "chConf": 0.442,
     "sec": "8.2",
     "secConf": 0.477
    },
@@ -190833,7 +190833,7 @@
      }
     ],
     "ch": 13,
-    "chConf": 0.573,
+    "chConf": 0.572,
     "sec": "13.6",
     "secConf": 0.652
    },
@@ -190898,9 +190898,9 @@
      }
     ],
     "ch": 14,
-    "chConf": 0.48,
+    "chConf": 0.473,
     "sec": "14.4",
-    "secConf": 0.471
+    "secConf": 0.478
    }
   ],
   "mcq_key": {
@@ -190962,7 +190962,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.001,
+    "chConf": 0.011,
     "sec": null,
     "secConf": null
    },
@@ -190988,9 +190988,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.527,
+    "chConf": 0.529,
     "sec": "9.5",
-    "secConf": 0.265
+    "secConf": 0.225
    },
    {
     "n": 4,
@@ -191000,7 +191000,7 @@
     ],
     "pre": [],
     "ch": 4,
-    "chConf": 0.009,
+    "chConf": 0.031,
     "sec": null,
     "secConf": null
    },
@@ -191013,7 +191013,7 @@
     ],
     "pre": [],
     "ch": 14,
-    "chConf": 0.039,
+    "chConf": 0.067,
     "sec": null,
     "secConf": null
    },
@@ -191049,7 +191049,7 @@
     ],
     "pre": [],
     "ch": 8,
-    "chConf": 0.692,
+    "chConf": 0.691,
     "sec": "8.6",
     "secConf": 0.613
    },
@@ -191061,7 +191061,7 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.618,
+    "chConf": 0.622,
     "sec": "9.3",
     "secConf": 0.347
    },
@@ -191073,9 +191073,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.336,
+    "chConf": 0.341,
     "sec": "9.4",
-    "secConf": 0.856
+    "secConf": 0.854
    },
    {
     "n": 11,
@@ -191086,9 +191086,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.187,
+    "chConf": 0.205,
     "sec": "10.1",
-    "secConf": 0.752
+    "secConf": 0.678
    },
    {
     "n": 12,
@@ -191098,7 +191098,7 @@
     ],
     "pre": [],
     "ch": 16,
-    "chConf": 0.668,
+    "chConf": 0.669,
     "sec": "16.4",
     "secConf": 0.792
    },
@@ -191111,7 +191111,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.34,
+    "chConf": 0.339,
     "sec": "6.1",
     "secConf": 0.651
    },
@@ -191125,9 +191125,9 @@
     ],
     "pre": [],
     "ch": 10,
-    "chConf": 0.554,
+    "chConf": 0.535,
     "sec": "10.1",
-    "secConf": 0.299
+    "secConf": 0.284
    },
    {
     "n": 15,
@@ -191150,7 +191150,7 @@
     ],
     "pre": [],
     "ch": 13,
-    "chConf": 0.169,
+    "chConf": 0.145,
     "sec": "13.6",
     "secConf": 0.897
    },
@@ -191166,7 +191166,7 @@
      "     the business maintains a markup of 33⅓% of the cost of goods sold."
     ],
     "ch": 6,
-    "chConf": 0.255,
+    "chConf": 0.256,
     "sec": "6.6",
     "secConf": 0.215
    },
@@ -191182,7 +191182,7 @@
      "     the business maintains a markup of 33⅓% of the cost of goods sold."
     ],
     "ch": 6,
-    "chConf": 0.258,
+    "chConf": 0.259,
     "sec": "6.6",
     "secConf": 0.203
    },
@@ -191195,7 +191195,7 @@
     ],
     "pre": [],
     "ch": 6,
-    "chConf": 0.033,
+    "chConf": 0.034,
     "sec": null,
     "secConf": null
    },
@@ -191207,9 +191207,9 @@
     ],
     "pre": [],
     "ch": 9,
-    "chConf": 0.295,
+    "chConf": 0.284,
     "sec": "9.4",
-    "secConf": 0.501
+    "secConf": 0.491
    }
   ],
   "saq_solutions": [
@@ -191617,7 +191617,7 @@
     "ch": 9,
     "chConf": 0.227,
     "sec": "9.4",
-    "secConf": 0.283
+    "secConf": 0.246
    },
    {
     "n": 2,
@@ -191670,7 +191670,7 @@
     ],
     "examiner": [],
     "ch": 16,
-    "chConf": 0.807,
+    "chConf": 0.808,
     "sec": "16.1",
     "secConf": 0.262
    },
@@ -191723,7 +191723,7 @@
     ],
     "examiner": [],
     "ch": 8,
-    "chConf": 0.85,
+    "chConf": 0.849,
     "sec": "8.4",
     "secConf": 0.683
    },
@@ -191787,7 +191787,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.068,
+    "chConf": 0.066,
     "sec": null,
     "secConf": null
    },
@@ -191834,7 +191834,7 @@
     ],
     "examiner": [],
     "ch": 13,
-    "chConf": 0.335,
+    "chConf": 0.321,
     "sec": "13.6",
     "secConf": 0.694
    },
@@ -191943,7 +191943,7 @@
     ],
     "examiner": [],
     "ch": 16,
-    "chConf": 0.668,
+    "chConf": 0.667,
     "sec": "16.3",
     "secConf": 0.411
    }

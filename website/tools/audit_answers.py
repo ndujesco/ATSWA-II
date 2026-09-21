@@ -21,8 +21,10 @@ import importlib.util, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-CONTENT = ROOT / 'website' / 'content' / 'ps'
 DATA = ROOT / 'website' / 'data'
+SUBJECT = (sys.argv[1] if len(sys.argv) > 1 else 'PS').upper()
+CONTENT = ROOT / 'website' / 'content' / SUBJECT.lower()
+MAXCH = {'PS': 23, 'FA': 16, 'QA': 20, 'IT': 6}[SUBJECT]
 
 STOP = set('''a an the and or but if of to in on at by for with from as is are was were be been
 being it its this that these those which who whom what when where how why not no nor so than
@@ -46,7 +48,7 @@ def load_chapter(n):
     path = CONTENT / f'ch{n:02d}.py'
     if not path.exists():
         return None
-    spec = importlib.util.spec_from_file_location(f'PS_{n}', path)
+    spec = importlib.util.spec_from_file_location(f'{SUBJECT}_{n}', path)
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod.CH
@@ -117,7 +119,7 @@ def check_answer(ans_text, chapters_text, cur_ch, results):
 
 def main():
     chapters_text = {}   # n -> normalised full chapter text
-    for n in range(1, 24):
+    for n in range(1, MAXCH + 1):
         ch = load_chapter(n)
         if not ch:
             continue
@@ -132,7 +134,7 @@ def main():
     NEG = re.compile(r'\bnot\b|\bexcept\b|\bcannot\b|\bnota\b|\bnotan\b', re.I)
 
     for p in papers:
-        if p['subject'] != 'PS':
+        if p['subject'] != SUBJECT:
             continue
         key = p['mcq_key']
         for q in p['mcq']:
@@ -190,7 +192,7 @@ def main():
 
     print(f"OK (answer found in currently-assigned chapter): {results['ok']}")
     print(f"Skipped (answer too short/generic/numeric/NOT-style to search): {results['skipped']}")
-    print(f'\n=== CONTENT GAPS — answer phrase not found in ANY PS chapter ({len(gaps)}) ===')
+    print(f'\n=== CONTENT GAPS — answer phrase not found in ANY {SUBJECT} chapter ({len(gaps)}) ===')
     for typ, diet, n, ch, sec, ans, stem in gaps:
         print(f'{typ} {diet} Q{n}  currently ch={ch} sec={sec}  ANSWER="{ans}"  STEM: {stem}')
     print(f'\n=== MISLINKS — answer found in exactly ONE chapter, differs from tag ({len(mislinks)}) ===')

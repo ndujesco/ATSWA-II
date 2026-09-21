@@ -13,6 +13,13 @@ CH = {
  ],
  'secs': [
   {'n': '14.1', 't': 'The statement of profit or loss', 'b': [
+    {'p': 'A **complete set of financial statements** under IAS 1 comprises: a statement of '
+          'financial position; a statement of profit or loss and other comprehensive income; a '
+          'statement of changes in equity; a statement of cash flows; and **notes to the '
+          'financial statements**, comprising significant accounting policies and other '
+          'explanatory information. Proposed (not-yet-declared) dividends are disclosed only in '
+          'the **notes**, not recognised as a liability, since they are not an obligation at the '
+          'reporting date.'},
     {'stmt': {'t': 'Statement of profit or loss and other comprehensive income',
       'sub': 'for the year ended 31 December 2024 (₦\'000)', 'rows': [
       ['Revenue', 486000],

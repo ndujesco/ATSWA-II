@@ -226,6 +226,13 @@ PIN = {
                                         # has its own "GIFMIS stands for" quiz item)
     ('2021-03', 'PS', 'mcq', 30): 1,   # IFAC -> ch1 §1.7
     ('2019-09', 'PS', 'saq', 20): 3,   # GPFRs -> ch3 §3.2
+    # 2026-09-21 pass — FA precision answer-text audit (tools/audit_answers.py FA).
+    ('2024-03', 'FA', 'saq', 1): 1,    # GAAP -> ch1, not ch16 (ethics)
+    ('2025-09', 'FA', 'saq', 2): 3,    # Chart of accounts -> ch3, not ch13 (share capital)
+    ('2019-03', 'FA', 'mcq', 20): 14,  # Components of financial statements / notes -> ch14 §14.1
+    ('2023-03', 'FA', 'mcq', 29): 14,  # Notes to the financial statements (proposed dividends) -> ch14 §14.1
+    ('2023-09', 'FA', 'mcq', 14): 14,  # Notes to the financial statements -> ch14 §14.1
+    ('2025-03', 'FA', 'mcq', 14): 14,  # Notes to the financial statements (proposed dividend) -> ch14 §14.1
 }
 
 # Same idea as PIN, one level down: an explicit section for a question whose
@@ -251,4 +258,24 @@ FLAGS = {
      'of the options — it appears to be a short-answer solution set in the wrong '
      'column. No official letter is available; the answer given here is worked '
      'from the study text. Verify with your tutor.',
+ ('2014-03', 'FA', 'mcq', 15):
+     'Total current assets at 31 Dec 2013 = subscriptions due not yet received '
+     '(GH₵180,000) + insurance prepaid (GH₵84,000) = GH₵264,000, which is option B, '
+     'not the printed answer E (GH₵236,000) — a likely digit transposition '
+     '(264 ↔ 236) in the printed key, since no other figure in the given data '
+     'produces GH₵236,000. Verify with your tutor.',
+ ('2019-09', 'FA', 'mcq', 7):
+     'Mike\'s raw 1/9 share of ₦2,800,000 is ₦311,111, short of his ₦423,000 '
+     'guarantee by ₦111,889; since only Mansa guaranteed him, Mansa alone absorbs '
+     'that shortfall from her own raw 5/9 share (₦1,555,556), giving '
+     '₦1,443,667 — which does not match any of the five printed options, '
+     'including the printed answer (₦1,425,000). The figures in this question as '
+     'extracted may not be exactly as printed. Verify with your tutor.',
+ ('2020-09', 'FA', 'mcq', 23):
+     'The printed key says "Segment reporting" is featured in the IFRS for SMEs. '
+     'In fact the IFRS for SMEs standard explicitly exempts SMEs from segment '
+     'reporting, earnings-per-share and interim financial reporting (all offered '
+     'as other options here) precisely because they are not publicly '
+     'accountable — of the five options, "Related party disclosures" is the one '
+     'genuinely required. Verify with your tutor.',
 }

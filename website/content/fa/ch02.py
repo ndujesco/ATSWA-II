@@ -586,7 +586,9 @@ CH = {
     ]}},
     {'p': 'Examples of current assets include inventories, trade and other receivables, and cash '
           'and cash equivalents. Examples of current liabilities include trade and other payables '
-          'and current tax liabilities.'},
+          'and current tax liabilities. Anything that does not meet the current-liability tests — '
+          'in particular, a liability **payable more than one year** after the reporting date, '
+          'such as a long-term loan — is a **non-current liability**.'},
     {'h3': 'The minimum line items in the statement of financial position'},
     {'table': {'head': ['Assets', 'Liabilities and equity'], 'align': 'll', 'rows': [
       ['Property, plant and equipment', 'Trade and other payables'],
