@@ -299,9 +299,20 @@ def parse_numbered(block, limit=40, expect=1):
     numbers it names (see pre_range_end / parse_mcq above) — not just the
     single question right after it (which would leave the rest of the
     range with no shared data at all) and not forever (which would smear
-    it onto every later question until, if ever, a new preamble appears)."""
+    it onto every later question until, if ever, a new preamble appears).
+
+    Once the first item has matched arabic or roman numbering, that choice
+    is locked in for the rest of the block. Without this, a multi-part
+    answer's own "i. / ii. / iii. ..." sub-bullets are indistinguishable
+    from top-level roman question numbers whenever a sub-bullet's roman
+    value happens to coincide with the next expected arabic question
+    number — e.g. an arabic item 3's third sub-bullet "iii." is read as a
+    new roman-numbered item 3, silently shredding that item's own answer
+    across the two neighbouring items and shifting everything after it by
+    one. Confirmed live on FA 2024-03's short-answer key (items 2-5)."""
     items, cur, pre, pending = [], None, [], []
     pre_end = None
+    scheme = None  # locked to 'arabic' or 'roman' once item 1 is found
     for raw in block:
         line = raw.rstrip()
         if not line.strip():
@@ -311,8 +322,9 @@ def parse_numbered(block, limit=40, expect=1):
                 pending.append('')
             continue
 
-        m = RE_QNUM.match(line)
+        m = RE_QNUM.match(line) if scheme != 'roman' else None
         if m and int(m.group(1)) == expect and expect <= limit:
+            scheme = 'arabic'
             if cur:
                 items.append(cur)
             if pending:
@@ -325,8 +337,9 @@ def parse_numbered(block, limit=40, expect=1):
             expect += 1
             continue
 
-        mr = RE_QNUM_ROMAN.match(line)
+        mr = RE_QNUM_ROMAN.match(line) if scheme != 'arabic' else None
         if mr and ROMAN_VAL.get(mr.group(1).lower()) == expect and expect <= limit:
+            scheme = 'roman'
             if cur:
                 items.append(cur)
             if pending:

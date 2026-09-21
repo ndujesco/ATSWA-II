@@ -115,6 +115,48 @@ def cluster(items, threshold, min_len=8):
     return clusters
 
 
+def split_by_answer(idxs, items, answer_fn, threshold=0.5):
+    """A stem-similarity cluster can wrongly merge different questions that
+    share a templated stem ("The necessary accounting entries required to
+    record X in a partnership are...") but ask about different X — which
+    then surfaces as one repeated-question entry with a single answer that
+    contradicts what a candidate remembers seeing for the "same" question in
+    another diet. This splits a stem cluster into sub-clusters that also
+    agree on the answer, using the same anchored-seed Jaccard approach as
+    cluster() so a repeated question with reworded or reordered-option
+    phrasing of the *same* answer still merges, while genuinely different
+    answers split apart. Confirmed live: roughly half of FA's multi-member
+    MCQ and short-answer clusters had at least two distinct answers before
+    this split."""
+    by_norm = {}
+    for i in idxs:
+        by_norm.setdefault(norm(answer_fn(items[i])), []).append(i)
+    texts = sorted(by_norm.keys(), key=len, reverse=True)
+    tok = {t: frozenset(tokens(t)) - STOP for t in texts}
+    seeds = []
+    for t in texts:
+        a = tok[t]
+        best_j, best_sim = -1, 0.0
+        for j, (seed_t, _) in enumerate(seeds):
+            b = tok[seed_t]
+            if not a or not b:
+                continue
+            jac = len(a & b) / len(a | b)
+            if jac > best_sim:
+                best_sim, best_j = jac, j
+        if best_j >= 0 and best_sim >= threshold:
+            seeds[best_j][1].append(t)
+        else:
+            seeds.append((t, [t]))
+    out = []
+    for _, member_texts in seeds:
+        sub = []
+        for t in member_texts:
+            sub.extend(by_norm[t])
+        out.append(sub)
+    return out
+
+
 def best_of(idxs, items, prefer_keys=()):
     """Pick the clearest representative of a cluster: prefer one with a
     confident chapter/section link, then the longest text (least likely to
@@ -157,7 +199,13 @@ def build_mcq(papers, code):
                 'norm': norm(stem_txt),
                 'norm_full': norm(stem_txt + ' ' + opt_txt),
             })
-    clusters = cluster(items, threshold=0.55)
+    def ans_text(it):
+        if it['aIdx'] is None or it['aIdx'] >= len(it['options']):
+            return ''
+        return txt_of(it['options'][it['aIdx']])
+
+    clusters = [sub for idxs in cluster(items, threshold=0.55)
+                for sub in split_by_answer(idxs, items, ans_text)]
     out = []
     for idxs in clusters:
         rep = best_of(idxs, items)
@@ -190,7 +238,8 @@ def build_saq(papers, code):
                 'ch': q.get('ch'), 'sec': q.get('sec'),
                 'norm': norm(body_txt),
             })
-    clusters = cluster(items, threshold=0.50)
+    clusters = [sub for idxs in cluster(items, threshold=0.50)
+                for sub in split_by_answer(idxs, items, lambda it: ' '.join(it['ans']))]
     out = []
     for idxs in clusters:
         rep = best_of(idxs, items)
