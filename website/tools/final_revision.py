@@ -13,11 +13,25 @@ Reads data/exams.js (already chapter/section-tagged by aim.py/aim_sec.py and
 merged with official answers by build_exams.py) so it stays in sync with
 whatever the app itself ships. Run after build_exams.py, before build.sh.
 """
-import json, re, sys
+import importlib.util, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
+CONTENT = ROOT / 'content'
+
+
+def chapter_titles(code):
+    """Chapter number -> its own title, for grouping the short-answer bank
+    by topic instead of showing a bare chapter number."""
+    out = {}
+    for path in sorted((CONTENT / code.lower()).glob('ch*.py')):
+        n = int(path.stem[2:])
+        spec = importlib.util.spec_from_file_location(f'{code}_{n}_title', path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out[n] = mod.CH.get('t', f'Chapter {n}')
+    return out
 
 STOP = {
     'the', 'a', 'an', 'of', 'to', 'in', 'is', 'are', 'and', 'or', 'for',
@@ -249,7 +263,26 @@ def build_saq(papers, code):
             'ch': it['ch'], 'sec': it['sec'],
             'freq': len(diets_of(idxs, items)), 'diets': diets_of(idxs, items),
         })
-    out.sort(key=lambda x: (-x['freq'], norm(' '.join(x['body']))))
+    # Topical grouping, not a flat most-asked list: order chapters by how
+    # much that chapter's material has been asked as a short answer overall
+    # (the sum of each of its clusters' own "asked N times" count) — the
+    # best available signal for which topics examiners keep coming back to
+    # — then within a chapter keep the most-repeated question first, so the
+    # "leave the most-asked at the top" behaviour holds inside every topic.
+    # Chapters that could not be confidently tagged fall in one final group,
+    # themselves most-asked first.
+    weight = {}
+    for o in out:
+        if o['ch']:
+            weight[o['ch']] = weight.get(o['ch'], 0) + o['freq']
+
+    def sort_key(o):
+        ch = o['ch']
+        if not ch:
+            return (1, 0, 0, -o['freq'], norm(' '.join(o['body'])))
+        return (0, -weight[ch], ch, -o['freq'], norm(' '.join(o['body'])))
+
+    out.sort(key=sort_key)
     for i, o in enumerate(out):
         o['n'] = i + 1
     return out
@@ -296,7 +329,8 @@ def main():
         mcq = build_mcq(papers, code)
         saq = build_saq(papers, code)
         essay = build_essay(papers, code)
-        result[code] = {'mcq': mcq, 'saq': saq, 'essay': essay}
+        result[code] = {'mcq': mcq, 'saq': saq, 'essay': essay,
+                         'chapters': chapter_titles(code)}
         print(f"{code}: {len(mcq)} MCQ clusters, {len(saq)} short-answer clusters, "
               f"{len(essay)} essay clusters "
               f"(top MCQ freq {mcq[0]['freq'] if mcq else 0}, "

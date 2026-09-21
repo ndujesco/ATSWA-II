@@ -588,6 +588,14 @@ a.cite:hover{text-decoration:underline;}
 .saqrow .ans.hid{display:none;}
 .saqrow .ans .lbl{font-family:var(--mono);font-size:9px;letter-spacing:.13em;
   text-transform:uppercase;color:var(--ok);margin-bottom:5px;}
+.revtopic{display:flex;align-items:baseline;gap:10px;padding:22px 0 8px;margin-top:8px;
+  border-bottom:1px solid var(--rule);font-family:var(--sans);}
+.revtopic:first-child{margin-top:0;}
+.revtopic .mono{font-family:var(--mono);font-size:11px;color:var(--ink3);flex:none;}
+.revtopic a,.revtopic span:not(.mono){font-size:15px;font-weight:600;letter-spacing:-.01em;
+  color:var(--ink);}
+.revtopic a{text-decoration:none;}
+.revtopic a:hover{color:var(--accent);}
 
 /* ── past questions matched to a chapter (§ "Examined before") ───────── */
 .pqgroup{border:1px solid var(--rule);border-radius:3px;overflow:hidden;margin-top:10px;}

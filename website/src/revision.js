@@ -58,7 +58,8 @@
         { key: 'mcq', label: 'Multiple choice', d: 'Every past MCQ, options and the ' +
           'examiner\'s own answer, most-repeated first.', n: d.mcq.length },
         { key: 'saq', label: 'Short answer', d: 'Fill-in-the-blank and one-line questions, ' +
-          'with the official answer, most-repeated first.', n: d.saq.length },
+          'with the official answer, grouped by topic — most-tested topics and most-' +
+          'repeated questions first.', n: d.saq.length },
         { key: 'essay', label: 'Essay (Section B)', d: 'Full Section B questions with the ' +
           'official worked solution, most-repeated first.', n: d.essay.length },
       ];
@@ -101,14 +102,31 @@
             }).join('') + '</div></div></div>';
         }).join('');
       } else if (kind === 'saq') {
+        // Topically grouped (see tools/final_revision.py): the list already
+        // arrives ordered by topic, most-tested topics first, so a header
+        // whenever the chapter changes is enough to render the grouping —
+        // no client-side re-sorting needed.
+        var lastCh = undefined, topicN = 0;
         body = list.map(function (q) {
-          return '<div class="saqrow"><span class="n">' + q.n + '</span><div class="b">' +
+          var head = '';
+          if (q.ch !== lastCh) {
+            lastCh = q.ch;
+            topicN++;
+            var label = q.ch ? ('Chapter ' + q.ch + ' &middot; ' +
+              A.esc((d.chapters && d.chapters[q.ch]) || '')) : 'Unclassified';
+            head = '<div class="revtopic"><span class="mono">' +
+              (String(topicN).length < 2 ? '0' : '') + topicN + '</span>' +
+              (q.ch ? '<a href="#/s/' + code + '/' + q.ch + '">' + label + '</a>' :
+                '<span>' + label + '</span>') + '</div>';
+          }
+          return head +
+            '<div class="saqrow"><span class="n">' + q.n + '</span><div class="b">' +
             A.preBlock(q.pre) +
             '<div style="display:flex;justify-content:space-between;gap:14px;align-items:baseline">' +
             '<div style="flex:1">' + R.inl(q.body.join(' ')) + '</div>' + freqBadge(q.freq) + '</div>' +
             (q.ans ? '<div class="ans"><div class="lbl">Official answer</div>' +
                      R.inl(q.ans.join(' ')) + '</div>' : '') +
-            (chBadge(code, q.ch, q.sec) ? '<div style="margin-top:8px">' +
+            (q.sec ? '<div style="margin-top:8px">' +
               chBadge(code, q.ch, q.sec) + '</div>' : '') +
             '</div></div>';
         }).join('');
@@ -132,8 +150,12 @@
         '<div class="code">Final Revision &middot; ' + code + '</div>' +
         '<h1 style="font-size:clamp(28px,4.4vw,42px);letter-spacing:-.032em;margin-top:8px">' +
         title + '</h1>' +
-        '<p>' + list.length + ' questions, most-asked first. "Asked N&times;" counts how many ' +
-        'diets carried a near-identical version of that question.</p>' +
+        '<p>' + list.length + (kind === 'saq' ?
+          ' questions, grouped by topic — the most-tested topics first, and the most-' +
+          'repeated question within each topic first.' :
+          ' questions, most-asked first.') +
+        ' "Asked N&times;" counts how many diets carried a near-identical version of ' +
+        'that question.</p>' +
         '<div class="sbar"><a class="btn" href="#/revision/' + code + '">' + A.esc(s.name) + '</a>' +
         '<a class="btn" href="#/revision">All subjects</a>' +
         (kind === 'essay' ? '<button class="btn" data-revealall="1">Reveal every solution</button>' : '') +
