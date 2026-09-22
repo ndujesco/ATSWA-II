@@ -1,350 +1,243 @@
 CH = {
  'n': 14,
  't': 'Introduction to Operations Research',
- 'brief': 'The nature and history of operations research, the stages of an OR study, the types '
-          'of model used, the main techniques and where each applies, and the benefits and '
-          'limitations of the approach.',
+ 'brief': 'Why decision-making needs an objective, scientific method; the stages of an operations '
+          'research (OR) study, from identifying the problem to implementation; and where OR is '
+          'relevant in business, including to the accountant.',
  'outcomes': [
-   'Define operations research and explain its essential characteristics',
-   'Describe the stages of an operations research study',
-   'Classify models as iconic, analogue or symbolic, and as deterministic or stochastic',
-   'Match the principal OR techniques to the problems they solve',
-   'Discuss the benefits and limitations of operations research',
+   'Understand the concept of operations research (OR)',
+   'Understand the major stages in an OR study',
+   'Know the various situations where OR can be applied',
  ],
  'secs': [
-  {'n': '14.1', 't': 'What operations research is', 'b': [
-    {'def': {'t': 'Operations research',
-             'd': 'The application of scientific method — in particular mathematical and '
-                  'statistical modelling — to the analysis of complex operational problems, in '
-                  'order to provide managers with a quantitative basis for decisions.'}},
-    {'p': 'The discipline grew out of the Second World War, when interdisciplinary teams of '
-          'scientists were asked to improve the effectiveness of military operations: convoy '
-          'sizes, radar deployment, bombing patterns. After 1945 the same methods were carried '
-          'into industry, and the growth of computing from the 1960s made large-scale models '
-          'practicable. It is variously known as operational research, management science and '
-          'decision science.'},
-    {'h4': 'Characteristics'},
-    {'ul': [
-      '**System orientation.** The problem is viewed as part of a whole. A decision that '
-      'optimises one department may damage the organisation — minimising inventory cost at the '
-      'cost of stockouts in production is the classic example.',
-      '**Interdisciplinary team approach.** Accountants, engineers, statisticians and '
-      'operational managers bring different views of the same problem.',
-      '**Scientific method.** Observation, hypothesis, model construction, testing against '
-      'data, and revision.',
-      '**Quantitative basis for decisions.** The output is a number or a policy, not an '
-      'opinion.',
-      '**Use of models.** The real system is represented by an abstraction that can be '
-      'manipulated safely and cheaply.',
-      '**Search for an optimum.** OR seeks the best feasible solution, not merely a workable '
-      'one — subject to the constraints actually faced.',
-      '**Decision support, not decision replacement.** The model informs the manager, who '
-      'retains responsibility for factors the model omits.',
-    ]},
+  {'n': '14.1', 't': 'Introduction', 'b': [
+    {'p': 'Decision-making is a day-to-day activity: individuals, societies, government and '
+          'business organisations all make decisions, in order to benefit the decision-maker and, '
+          'in most cases, those the decision affects.'},
+    {'p': 'A problem must exist before a decision is made. Decision-making is a **response to an '
+          'identified problem** — a problem that arises from a discrepancy between existing '
+          'conditions and the organisation\'s set objectives. Making a decision requires weighing '
+          'a lot of factors, to ensure the decision is the best one both under existing conditions '
+          'and for the near future.'},
+    {'p': 'Decision-making is not an easy task. A manager confronted with a problem has to decide '
+          'a course of action, taking on some risk, since there is always some uncertainty '
+          '(however little) about the consequences — and will want to reduce that risk to the '
+          'barest minimum.'},
+    {'key': 'There is therefore a need for a method that assists in making decisions that are '
+            '**objective and scientific**. That method is called **Operations Research**.'},
   ]},
 
-  {'n': '14.2', 't': 'Stages of an OR study', 'b': [
+  {'n': '14.2', 't': 'The stages and relevance of operations research', 'b': [
+    {'h3': 'Main stages of OR'},
     {'steps': [
-      '**Formulate the problem.** Identify the decision-maker, the objective, the decision '
-      'variables under his control, the constraints, and the measure of effectiveness. This is '
-      'the hardest stage and the one most often skimped.',
-      '**Construct the model.** Express the objective and the constraints as mathematical '
-      'relationships among the variables — for example a linear objective function subject to '
-      'linear inequalities.',
-      '**Collect data and derive a solution.** Obtain the parameter values and solve the model '
-      'analytically, by an algorithm such as the simplex method, or by simulation.',
-      '**Test the model and the solution (validation).** Check the model against historical '
-      'data: does it reproduce known outcomes? Perform sensitivity analysis to see how far the '
-      'solution depends on uncertain parameters.',
-      '**Establish controls over the solution.** Identify the parameters that would change the '
-      'decision if they moved, and set up monitoring so that the model is revisited when they '
-      'do.',
-      '**Implement the solution.** Convert the result into operating instructions, secure the '
-      'co-operation of the people who must follow them, and review performance in operation.',
+      '**Identification of problems and objectives.** The problem for which a decision is '
+      'sought must first be defined, and the objectives clearly spelt out.',
+      '**Identification of variables.** Both the **controllable (decision) variables** and the '
+      '**uncontrollable variables** of the system must be identified. The constraints on the '
+      'variables and the system are taken into account, and the "bounds" of the system and the '
+      'options open must also be established.',
+      '**Construction of a model.** The central aspect of an OR project — a model is needed '
+      'because it is impossible to experiment with the real-life situation. A suitable model '
+      'must specify quantitative relationships for the objective and constraints of the problem '
+      'in terms of the controllable variables, and it must be decided whether the system is to '
+      'be treated as **deterministic** or **probabilistic**.',
+      '**Solution of the model.** Once built, various mathematical methods are used to '
+      'manipulate the model to obtain a solution — an **optimal** solution where an analytic '
+      'solution is possible, or only a **"good"** solution where a simulation or heuristic '
+      'model is used.',
+      '**Testing the model.** The model and its solution are validated to see whether the model '
+      'can reliably predict the actual system\'s performance, reacting to change the way the '
+      'real system does. Past data for the system may be used for this: the model may be '
+      'considered valid if, under similar input conditions, it reproduces the system\'s past '
+      'performance to a reasonable extent.',
+      '**Implementation.** Those who will implement the result should ideally be part of the OR '
+      'team; if not, the team should remain on hand to advise if difficulties arise during '
+      'implementation. A set of operating instructions may be necessary.',
     ]},
-    {'note': 'Examiners very often ask for these stages by name. Learn them as a sequence with '
-             'a one-line explanation each; the marks are given for the explanation, not the '
-             'list.'},
-  ]},
-
-  {'n': '14.3', 't': 'Types of model', 'b': [
-    {'h4': 'By degree of abstraction'},
-    {'table': {'align': 'lll', 'head': ['Type', 'Description', 'Example'], 'rows': [
-      ['**Iconic**', 'A physical, scaled representation that looks like the real thing',
-       'A scale model of a factory layout; a globe'],
-      ['**Analogue**', 'Uses one property to represent another',
-       'An organisation chart; a graph; a thermometer'],
-      ['**Symbolic (mathematical)**', 'Uses symbols and equations; the most abstract and the '
-       'most flexible', 'A linear programme; the EOQ formula'],
+    {'h4': 'Model types met in constructing a model'},
+    {'p': 'A model can be **mathematical** or **heuristic**. Mathematical models are mostly used '
+          'for OR, on the assumption that all the relevant variables are quantifiable, so the '
+          'model becomes a mathematical function describing the system under study. Some '
+          'mathematical models are:'},
+    {'table': {'align': 'll', 'head': ['Model', 'Concerned with'], 'rows': [
+      ['**Allocation models**', 'Sharing scarce resources among various competing activities '
+       '— linear programming, transportation and assignment are examples'],
+      ['**Inventory models**', 'Policies for holding stocks of finished goods, ordering '
+       'quantities and re-order level'],
+      ['**Queuing models**', 'Arrivals at, and departures from, service points, and the '
+       'resulting queues of customers waiting for service'],
+      ['**Replacement models**', 'Determining an optimal policy for replacing "failed" items'],
+      ['**Simulation models**', 'Based on the probabilities of certain input values taking on '
+       '(imitating) a particular value — random numbers are used most of the time'],
     ]}},
-    {'h4': 'By treatment of uncertainty'},
+    {'note': 'Allocation models and inventory models are treated in detail in the chapters that '
+             'follow; queuing, replacement and simulation models — beyond queuing, which is '
+             'outside the scope of this study pack — are also developed later.'},
+    {'p': '**Heuristic models** are models that employ intuitive rules to generate new '
+          'strategies, which hopefully will yield improved solutions.'},
+    {'h3': 'Relevance of OR'},
+    {'p': 'OR has a very wide area of application in business, engineering, industry, government '
+          'and science. It will always be relevant in any situation where resources do not meet '
+          'the needs or requirements — and even where resources are enough, there is still a need '
+          'to allocate them in the best (an **optimal**) way.'},
     {'ul': [
-      '**Deterministic** — every parameter is known with certainty. Linear programming, EOQ '
-      'in its basic form, critical path analysis.',
-      '**Stochastic (probabilistic)** — one or more parameters is a random variable. Queueing '
-      'theory, simulation, PERT, decision trees.',
-    ]},
-    {'h4': 'By other criteria'},
-    {'ul': [
-      '**Static** (a single point in time) against **dynamic** (evolving over periods).',
-      '**Descriptive** (shows what happens, e.g. simulation) against **normative or '
-      'optimising** (shows what should be done, e.g. linear programming).',
-      '**Analytical** (solved by formula) against **numerical or iterative** (solved by '
-      'repeated computation, e.g. the simplex method).',
+      'In **production planning**, OR may be used to allocate materials to production schedules '
+      'in an optimal way; in **transportation problems**, to decide on the best routes — those '
+      'with minimum cost.',
+      'An **accountant** may apply OR to investment decisions where the funds available are not '
+      'sufficient for all available projects — **capital rationing**.',
+      'An accountant can also apply OR in any situation calling for **cost-benefit analysis**.',
     ]},
   ]},
 
-  {'n': '14.4', 't': 'The principal techniques', 'b': [
-    {'table': {'align': 'lll',
-      'head': ['Technique', 'Problem it addresses', 'Chapter'], 'rows': [
-      ['Linear programming', 'Allocating scarce resources among competing uses to maximise '
-       'contribution or minimise cost', '15'],
-      ['Inventory control (EOQ)', 'How much to order and when, balancing ordering against '
-       'holding cost', '16'],
-      ['Network analysis (CPM/PERT)', 'Scheduling the activities of a project and identifying '
-       'those that control its duration', '17'],
-      ['Replacement analysis', 'When to replace an asset that deteriorates, or a population of '
-       'items that fail', '18'],
-      ['Transportation and assignment', 'Distributing goods from sources to destinations, and '
-       'allocating jobs to workers, at least cost', '19'],
-      ['Simulation', 'Systems too complex or too uncertain for an analytical solution', '20'],
-      ['Queueing theory', 'Balancing the cost of service capacity against the cost of waiting',
-       '—'],
-      ['Decision theory', 'Choosing among alternatives under risk or uncertainty', '7'],
-      ['Game theory', 'Decisions where the outcome depends on a competitor\'s response', '—'],
-      ['Markov analysis', 'Systems moving between states with fixed transition probabilities, '
-       'such as brand switching or receivables ageing', '—'],
-    ]}},
-  ]},
-
-  {'n': '14.5', 't': 'Benefits and limitations', 'b': [
-    {'h4': 'Benefits'},
-    {'ul': [
-      '**Better decisions.** Choices rest on analysis of the actual constraints rather than on '
-      'intuition or precedent.',
-      '**Better co-ordination.** A model spanning several departments exposes the effect of one '
-      'department\'s decisions on another.',
-      '**Better control.** Standards produced by the model give management a yardstick against '
-      'which to measure operations.',
-      '**Better systems.** The discipline of building the model frequently reveals that data '
-      'are not collected, or that the objective was never clearly stated.',
-      '**Cost saving.** Alternatives are tested on the model rather than on the real system, '
-      'which is cheaper and carries no operational risk.',
-    ]},
-    {'h4': 'Limitations'},
-    {'ul': [
-      '**Cost and time.** Building, validating and maintaining a model is expensive, and for a '
-      'small or one-off problem the cost may exceed the benefit.',
-      '**Simplifying assumptions.** Linearity, certainty, constant demand and independence are '
-      'assumed for tractability and are often false. The solution is optimal for the model, not '
-      'necessarily for the world.',
-      '**Data dependence.** Results are only as good as the parameters. Where costs are '
-      'estimated or demand forecast, apparent precision is misleading.',
-      '**Intangible factors.** Staff morale, customer goodwill, reputation and legal or ethical '
-      'constraints resist quantification and are therefore usually left out.',
-      '**Communication gap.** Managers may not understand the model and so distrust its output, '
-      'while analysts may not understand the operation.',
-      '**Resistance to implementation.** A technically sound solution that ignores the people '
-      'who must operate it will fail.',
-    ]},
-    {'key': 'The standard examination answer on limitations should end with a balancing '
-            'sentence: OR does not replace managerial judgement, it informs it. The model '
-            'handles the quantifiable, and the manager weighs that against the factors no model '
-            'contains.'},
-  ]},
-
-  {'n': '14.6', 't': 'Worksheet summary — definitions and key lists', 'b': [
-    {'note': 'This chapter has no formulae of its own; it is defined vocabulary and lists.'},
+  {'n': '14.3', 't': 'Worksheet summary — every stage and model type', 'b': [
     {'h3': 'Section-by-section checklist'},
     {'ol': [
-      '**§14.1 What OR is** — scientific/mathematical modelling applied to operational '
-      'problems for a quantitative decision basis; grew out of WWII interdisciplinary teams, '
-      'moved into industry after 1945. Characteristics: system orientation (a local optimum '
-      'can harm the whole), an interdisciplinary team, the scientific method, a quantitative '
-      'output, the use of models, a search for the **optimum** (not merely workable), and '
-      'decision **support**, not replacement.',
-      '**§14.2 Stages of an OR study** — formulate (objective, variables, constraints, '
-      'effectiveness measure — the hardest, most-skimped stage); construct the model; collect '
-      'data and derive a solution; **test/validate** (against historical data, plus '
-      'sensitivity analysis); establish controls (monitor the parameters that would change the '
-      'decision); implement. Examiners ask for these **by name with a one-line explanation '
-      'each** — the marks are in the explanation, not the bare list.',
-      '**§14.3 Types of model** — by abstraction: iconic (physical likeness), analogue (one '
-      'property stands for another, e.g. a graph), symbolic/mathematical (equations, most '
-      'abstract and flexible). By uncertainty: deterministic (LP, basic EOQ, CPM) vs '
-      'stochastic (queueing, simulation, PERT, decision trees). Also: static vs dynamic; '
-      'descriptive vs normative/optimising; analytical vs numerical/iterative.',
-      '**§14.4 The principal techniques** — match each to its problem: linear programming '
-      '(scarce-resource allocation), EOQ/inventory control (order quantity and timing), '
-      'network analysis/CPM/PERT (project scheduling), replacement analysis (when to replace '
-      'deteriorating/failing assets), transportation/assignment (least-cost distribution/'
-      'allocation), simulation (systems too complex for an analytical solution), plus queueing '
-      'theory, decision theory, game theory and Markov analysis.',
-      '**§14.5 Benefits and limitations** — benefits: better decisions, co-ordination, control '
-      'and systems, and cost saving from testing on the model rather than reality. '
-      'Limitations: cost/time, simplifying assumptions, data dependence, intangible factors '
-      'left out, the communication gap, and resistance to implementation. Standard closing '
-      'line: OR **informs** managerial judgement, it does not replace it.',
+      '**§14.1 Introduction** — decision-making is a response to an identified problem (a '
+      'discrepancy between existing conditions and the organisation\'s objectives); it is '
+      'risky and uncertain, so an **objective and scientific method** is needed — that method '
+      'is Operations Research.',
+      '**§14.2 Stages** — (1) identify problems and objectives; (2) identify controllable and '
+      'uncontrollable variables, constraints and bounds; (3) construct a model (mathematical or '
+      'heuristic; deterministic or probabilistic) — mathematical models include allocation, '
+      'inventory, queuing, replacement and simulation models; (4) solve the model — optimal '
+      '(analytic) or "good" (simulation/heuristic); (5) test the model against past data to '
+      'validate it; (6) implement, ideally with the implementers on the OR team.',
+      '**Relevance** — wide application across business, engineering, industry, government and '
+      'science; relevant wherever resources don\'t meet needs, or must still be optimally '
+      'allocated even where sufficient. Accountant\'s own uses: **capital rationing** and '
+      '**cost-benefit analysis**.',
     ]},
-    {'h3': 'All the terms'},
+    {'h3': 'The five mathematical model types, at a glance'},
     {'ul': [
-      '**Operations research (OR)** — the application of scientific method (especially '
-      'mathematical modelling) to management problems, to help decision-making. Also called '
-      '*operational research* / *management science*.',
-      '**Model** — a simplified representation of a real system.',
-      '**Iconic model** — a physical scaled likeness (a prototype, a scale building).',
-      '**Analogue model** — one property represents another (a graph, a hydraulic model of an '
-      'economy).',
-      '**Symbolic (mathematical) model** — variables and equations (an LP, an EOQ formula).',
-      '**Deterministic model** — no probabilities; inputs known with certainty.',
-      '**Stochastic (probabilistic) model** — contains random variables.',
-      '**Decision variables** — what the decision-maker controls. **Objective function** — the '
-      'quantity to be maximised or minimised. **Constraints** — the limits on the variables. '
-      '**Parameters** — fixed known values.',
-      '**Feasible solution** — one satisfying all constraints. **Optimal solution** — the '
-      'feasible solution with the best objective value.',
+      'Allocation — scarce resources among competing activities (LP, transportation, '
+      'assignment)',
+      'Inventory — stockholding policy, order quantity, re-order level',
+      'Queuing — arrivals/departures at service points',
+      'Replacement — optimal policy for replacing failed items',
+      'Simulation — imitates input-value probabilities, using random numbers',
     ]},
-    {'h3': 'Stages of an OR study'},
-    {'ol': [
-      'Formulate the problem (define objective, variables, constraints).',
-      'Construct the model.',
-      'Derive a solution from the model.',
-      'Test the model and the solution (validation).',
-      'Establish controls over the solution.',
-      'Implement the solution.',
-    ]},
-    {'h3': 'The principal OR techniques (technique → problem)'},
-    {'ul': [
-      'Linear programming — allocating scarce resources to maximise profit / minimise cost',
-      'Transportation & assignment — least-cost distribution / one-to-one allocation',
-      'Network analysis (CPM / PERT) — project planning, scheduling and control',
-      'Inventory control (EOQ / EBQ) — how much to order and when',
-      'Replacement analysis — when to replace equipment',
-      'Queuing (waiting-line) theory — service-level vs cost of waiting',
-      'Simulation — modelling complex stochastic systems numerically',
-      'Decision theory — choosing under risk / uncertainty (expected value, decision trees)',
-      'Game theory — competitive decision situations',
-      'Dynamic programming — multi-stage decision problems',
-    ]},
-    {'h3': 'Benefits and limitations (one line each)'},
-    {'ul': [
-      '**Benefits** — structured analysis; better use of resources; quantified comparison of '
-      'options; improved decisions; identifies the critical factors.',
-      '**Limitations** — a model only captures the quantifiable; data may be poor or costly; '
-      'expensive and time-consuming; assumptions may not hold; does not replace managerial '
-      'judgement, only informs it.',
-    ]},
+  ]},
+
+  {'n': '14.4', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'Decision-making is important in order to (A) Make profit for a business (B) Solve an '
+        'identified problem (C) Please the customers (D) Perform a task (E) Please the '
+        'management',
+        'A simulation model is a (A) Mathematical model (B) Probabilistic model (C) Non-'
+        'mathematical model (D) Constant model (E) Non-probabilistic model',
+        'Operations Research is relevant because (A) Resources do not always merge the needs '
+        '(B) Resources have to be allocated (C) All activities have to be taken care of '
+        '(D) In any operation, research is important (E) Resources have to be allocated in an '
+        'optimal way',
+        'One of the following is NOT a mathematical model (A) Allocation model (B) Inventory '
+        'model (C) Queuing model (D) Additive model (E) Replacement model',
+        'Operations Research is a method which assists in making decisions that are '
+        '…................. and …………….',
+        'A model should specify quantitative relationships for the ……..…… and ……….. of the '
+        'problem in terms of controllable variables.',
+        'In the financial circle, OR is used for ……................... rationing.',
+        'In OR, the transportation problem can also be referred to as an ……........... problem.',
+        'OR assists to reduce the ……................. involved in decision-making.',
+        'OR will always be relevant in any situation where ……................. do not merge the '
+        'needs.',
+      ]}],
+      'a': [
+      {'ol': [
+        '**B** — decision-making exists to solve an identified problem.',
+        '**A** — a simulation model is a mathematical model, based on the probabilities of '
+        'input values.',
+        '**E** — resources have to be allocated in an optimal way.',
+        '**D** — "additive model" is not one of the five mathematical models (allocation, '
+        'inventory, queuing, replacement, simulation).',
+        '**Objective and scientific** (either order).',
+        '**Objective and constraints.**',
+        '**Capital** rationing.',
+        '**Allocation** problem.',
+        '**Risks.**',
+        '**Resources.**',
+      ]}]}},
   ]},
  ],
  'formulas': [],
  'focus':
-   'One or two Section A marks on definitions, the stages of a study, or the classification of '
-   'models. It also supplies the discussion part of a Section B question whose calculation is '
-   'drawn from a later chapter — typically "state the assumptions of the model you have used" '
-   'or "comment on the limitations of your solution". Those parts are pure recall and should '
-   'never be left blank.',
+   'One or two Section A marks on the stages of an OR study, the five mathematical model types, '
+   'or the accountant\'s own use of OR (capital rationing, cost-benefit analysis). Learn the six '
+   'stages as a sequence — identify problem/objectives, identify variables, construct the model, '
+   'solve it, test it, implement it — since past questions test them both as a list and as '
+   'fill-in-the-blank fragments of it.',
  'errors': [
-   'Confusing analogue models with iconic models; an organisation chart is analogue, a scale '
-   'model is iconic.',
-   'Listing the stages of an OR study without explaining any of them.',
-   'Describing OR as replacing management decision-making rather than supporting it.',
-   'Omitting validation and implementation, which are the two stages examiners most often '
-   'test.',
+   'Treating "identification of problems" and "identification of variables" as one stage rather '
+   'than two separate ones.',
+   'Forgetting that a simulation model, despite imitating real-world randomness, is still '
+   'classed as a **mathematical** model in this chapter.',
+   'Confusing "allocation" (scarce resources among competing activities) with "additive", which '
+   'is not one of the five named mathematical model types.',
+   'Missing the accountant-specific relevance points: capital rationing and cost-benefit '
+   'analysis.',
  ],
  'quiz': {
   'mcq': [
-   {'q': 'A model that uses one property to represent another, such as a graph or an '
-         'organisation chart, is described as',
-    'o': ['iconic', 'analogue', 'symbolic', 'stochastic', 'normative'],
+   {'q': 'The central aspect of an OR project, needed because it is impossible to experiment '
+         'with the real-life situation, is',
+    'o': ['identification of variables', 'construction of a model', 'testing the model',
+          'implementation', 'identification of the problem'],
     'a': 1,
-    'w': 'Analogue models substitute one property for another. Iconic models physically '
-         'resemble the original; symbolic models use equations.',
-    'src': 'Chapter 14.3', 'sec': '14.3'},
-   {'q': 'Which of the following is a deterministic model?',
-    'o': ['Simulation', 'Linear programming', 'Queueing theory', 'PERT', 'Markov analysis'],
-    'a': 1,
-    'w': 'Linear programming assumes all coefficients are known with certainty. The others all '
-         'involve random variables.',
-    'src': 'Chapter 14.3', 'sec': '14.3'},
-   {'q': 'Operations research first developed as a discipline during',
-    'o': ['the Industrial Revolution', 'the Second World War', 'the 1970s oil crisis',
-          'the dot-com era', 'the Great Depression'],
-    'a': 1,
-    'w': 'Interdisciplinary teams were formed to improve military operations, and the methods '
-         'were carried into industry after 1945.',
-    'src': 'Chapter 14.1', 'sec': '14.1'},
-   {'q': 'In an operations research study, checking the model against historical data to see '
-         'whether it reproduces known outcomes is called',
-    'o': ['formulation', 'validation', 'implementation', 'optimisation', 'sensitivity'],
-    'a': 1,
-    'w': 'Validation tests whether the model is an adequate representation before its output '
-         'is relied on.',
+    'w': 'A model represents the system so it can be manipulated safely; the study text calls '
+         'this "the central aspect of an OR project."',
     'src': 'Chapter 14.2', 'sec': '14.2'},
-   {'q': 'The technique most appropriate for allocating scarce resources among competing '
-         'products to maximise contribution is',
-    'o': ['network analysis', 'linear programming', 'simulation',
-          'the economic order quantity model', 'replacement analysis'],
+   {'q': 'Where an analytic solution to an OR model is not possible and a simulation or '
+         'heuristic model is used instead, the result obtained can only be described as a',
+    'o': ['optimal solution', '"good" solution', 'deterministic solution', 'feasible region',
+          'controllable variable'],
     'a': 1,
-    'w': 'Linear programming maximises a linear objective subject to linear resource '
-         'constraints.',
-    'src': 'Chapter 14.4', 'sec': '14.4'},
+    'w': 'Analytic solutions give an optimal solution; simulation/heuristic models give only a '
+         '"good" solution.',
+    'src': 'Chapter 14.2', 'sec': '14.2'},
+   {'q': 'Which of the following is one of the five mathematical models named in this chapter?',
+    'o': ['Additive model', 'Regression model', 'Queuing model', 'Correlation model',
+          'Index model'],
+    'a': 2,
+    'w': 'The five are allocation, inventory, queuing, replacement and simulation models.',
+    'src': 'Chapter 14.2', 'sec': '14.2'},
+   {'q': 'An accountant is most likely to apply operations research to investment decisions '
+         'where available funds are insufficient for all worthwhile projects — this is called',
+    'o': ['cost-benefit analysis', 'capital rationing', 'replacement analysis',
+          'sensitivity analysis', 'queuing analysis'],
+    'a': 1,
+    'w': 'The study text names capital rationing as one of the accountant\'s own applications '
+         'of OR.',
+    'src': 'Chapter 14.2', 'sec': '14.2'},
   ],
   'theory': [
-   {'q': 'Define operations research and outline the stages involved in an operations research '
-         'study. State four limitations of the approach.',
-    'marks': 15,
+   {'q': 'Outline the main stages involved in an operations research study, and state two '
+         'situations in which an accountant may apply operations research.',
+    'marks': 10,
     'a': [
-      {'h4': 'Definition'},
-      {'p': 'Operations research is the application of scientific method, and in particular of '
-            'mathematical and statistical modelling, to the analysis of complex operational '
-            'problems, so as to give management a quantitative basis for decision-making. It is '
-            'characterised by a systems view of the problem, an interdisciplinary team, the use '
-            'of models in place of experiment on the real system, and a search for the optimal '
-            'feasible solution rather than merely an acceptable one.'},
-      {'h4': 'Stages of a study'},
       {'ol': [
-        '**Formulation of the problem.** The analyst identifies who the decision-maker is, what '
-        'objective is to be pursued, which variables are under the decision-maker\'s control, '
-        'what constraints bind, and what measure of effectiveness will be used. A problem badly '
-        'formulated cannot be rescued by good mathematics later.',
-        '**Construction of the model.** The relationships among the variables are expressed '
-        'mathematically — an objective function to be maximised or minimised, subject to a set '
-        'of constraints. Simplifying assumptions are made deliberately and recorded.',
-        '**Deriving a solution.** Data are collected for the parameters and the model is solved, '
-        'either analytically by formula, by an iterative algorithm such as the simplex method, '
-        'or numerically by simulation where no closed-form solution exists.',
-        '**Testing the model and evaluating the solution (validation).** The model is run '
-        'against historical data to see whether it reproduces outcomes already known. '
-        'Sensitivity analysis establishes how far the recommended solution depends on '
-        'parameters that were estimated.',
-        '**Establishing controls over the solution.** The parameters whose movement would change '
-        'the decision are identified and monitored, so that the model can be revised when '
-        'conditions change rather than being applied indefinitely.',
-        '**Implementation.** The solution is translated into operating instructions, the staff '
-        'who must apply it are trained and their co-operation secured, and performance is '
-        'reviewed in operation. Many technically sound studies fail at this stage.',
+        '**Identification of problems and objectives** — the problem for which a decision is '
+        'sought is defined, and the objectives clearly spelt out.',
+        '**Identification of variables** — the controllable and uncontrollable variables, '
+        'constraints and "bounds" of the system are established.',
+        '**Construction of a model** — a mathematical (or heuristic) model is built, specifying '
+        'quantitative relationships for the objective and constraints, and deciding whether the '
+        'system is deterministic or probabilistic.',
+        '**Solution of the model** — mathematical methods are applied to obtain an optimal '
+        'solution (or, for simulation/heuristic models, a "good" solution).',
+        '**Testing the model** — the model and its solution are validated against past data, to '
+        'check it can reliably predict the system\'s actual performance.',
+        '**Implementation** — the result is put into effect, ideally with those who will '
+        'implement it included in the OR team, supported by a set of operating instructions.',
       ]},
-      {'h4': 'Limitations'},
+      {'h4': 'Two accountant applications'},
       {'ul': [
-        '**Simplifying assumptions.** Models assume linearity, certainty, constant rates and '
-        'independence in order to remain solvable. Where those assumptions do not hold, the '
-        'solution is optimal for the model but not necessarily for the real system.',
-        '**Dependence on data quality.** The output can be no more reliable than the parameters '
-        'fed in. Where costs are apportioned estimates or demand is a forecast, a solution '
-        'quoted to four significant figures conveys a false impression of precision.',
-        '**Cost and time.** Model building, data collection, validation and maintenance require '
-        'skilled staff and computing resources. For a small or non-recurring problem the cost '
-        'of the study may exceed the value of the improved decision.',
-        '**Omission of intangible factors.** Staff morale, industrial relations, customer '
-        'goodwill, environmental impact and legal or ethical considerations do not enter a '
-        'mathematical objective function, yet may be decisive.',
-        '**The communication gap and resistance to change.** Managers who do not understand the '
-        'model may distrust its recommendations, and staff whose working practices are altered '
-        'may resist implementation.',
-      ]},
-      {'p': 'These limitations argue for using operations research as an aid to judgement rather '
-            'than a substitute for it. The model quantifies what can be quantified; the manager '
-            'weighs that result against everything the model necessarily left out.'}],
-    'src': 'Chapter 14.1–14.5', 'sec': '14.1'},
+        '**Capital rationing** — applying OR to investment decisions where the funds available '
+        'are not sufficient for all the projects available.',
+        '**Cost-benefit analysis** — applying OR to any situation calling for a comparison of '
+        'costs and benefits.',
+      ]}],
+    'src': 'Chapter 14.2', 'sec': '14.2'},
   ]},
 }

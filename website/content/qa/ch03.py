@@ -8,7 +8,7 @@ CH = {
    'Compute the mean deviation for grouped and ungrouped data',
    'Compute the variance and standard deviation by both the definition and the working formula',
    'Compute and interpret the coefficient of variation',
-   'Compute Pearson\'s and Bowley\'s coefficients of skewness',
+   'Compute Pearson\'s coefficient of skewness',
  ],
  'secs': [
   {'n': '3.1', 't': 'Why variation matters', 'b': [
@@ -30,13 +30,39 @@ CH = {
       {'lb': 'Range, grouped',
        'tex': 'R = \\text{Upper boundary of last class} - \\text{Lower boundary of first class}'},
       {'lb': 'Quartile deviation (semi-interquartile range)',
-       'tex': 'QD = \\frac{Q_3 - Q_1}{2}'},
-      {'lb': 'Coefficient of quartile deviation',
-       'tex': '\\frac{Q_3 - Q_1}{Q_3 + Q_1} \\times 100\\%'},
+       'tex': 'QD = \\frac{Q_1 - Q_3}{2}',
+       'nt': 'The study text writes it $Q_1 - Q_3$, but always evaluates it the ordinary way, '
+             'with $Q_3$ (the larger value) first — see the worked example below.'},
     ]}},
     {'p': 'The range uses only two observations and is destroyed by a single outlier. The quartile '
           'deviation ignores the extreme quarter at each end, so it is far more stable, but it '
           'still ignores the magnitude of most of the data.'},
+    {'eg': {'tag': 'Study text', 't': 'Example 3.9 — standard deviation and semi-interquartile '
+      'range', 'open': True, 'q': [
+      {'p': 'Determine (a) the standard deviation and (b) the semi-interquartile range for the '
+            'income distribution of SAO company employees:'},
+      {'table': {'align': 'lr', 'head': ['Income class (₦\'000)', 'Frequency'], 'rows': [
+        ['10 – 20', '7'], ['20 – 30', '10'], ['30 – 40', '8'], ['40 – 50', '5'],
+      ]}}],
+      'a': [
+      {'table': {'align': 'lrrrrr', 'head': ['Class', '$f$', '$x$', '$fx$', '$fx^2$', 'Cf'],
+        'rows': [
+        ['10 – 20', '7', '15', '105', '1,575', '7'],
+        ['20 – 30', '10', '25', '250', '6,250', '17'],
+        ['30 – 40', '8', '35', '280', '9,800', '25'],
+        ['40 – 50', '5', '45', '225', '10,125', '30'],
+        ['Total', '30', '', '860', '27,750', '', '@tot'],
+      ]}},
+      {'tex': '\\bar{x} = \\frac{860}{30} = 28.667'},
+      {'tex': 's = \\sqrt{\\frac{27{,}750}{30} - (28.667)^2} = \\sqrt{925 - 821.79} = \\sqrt{103.22} '
+              '= 10.16'},
+      {'p': '**(b)** Position of $Q_1 = N/4 = 30/4 = 7.5$th, falling in the 20–30 class '
+            '($L=20$, cumulative frequency before it $=7$, class frequency $=10$, width $=10$):'},
+      {'tex': 'Q_1 = 20 + \\frac{7.5 - 7}{10}(10) = 20 + 0.5 = 20.50'},
+      {'p': 'Position of $Q_3 = 3N/4 = 22.5$th, falling in the 30–40 class ($L=30$, cumulative '
+            'frequency before it $=17$, class frequency $=8$, width $=10$):'},
+      {'tex': 'Q_3 = 30 + \\frac{22.5 - 17}{8}(10) = 30 + 6.88 = 36.88'},
+      {'tex': 'SIR = \\frac{Q_3 - Q_1}{2} = \\frac{36.88 - 20.50}{2} = \\frac{16.38}{2} = 8.19'}]}},
   ]},
 
   {'n': '3.3', 't': 'Mean deviation', 'b': [
@@ -72,9 +98,10 @@ CH = {
        'tex': '\\sigma^2 = \\frac{\\sum f x^2}{\\sum f} - '
               '\\left(\\frac{\\sum f x}{\\sum f}\\right)^2'},
       {'lb': 'Standard deviation', 'tex': '\\sigma = \\sqrt{\\sigma^2}'},
-      {'lb': 'Sample variance (unbiased)',
-       'tex': 's^2 = \\frac{\\sum (x - \\bar{x})^2}{n - 1}',
-       'nt': 'Divide by $n-1$ when the data is a sample and the population variance is being estimated.'},
+      {'lb': 'Sample standard deviation',
+       'tex': 's = \\sqrt{\\frac{\\sum (x - \\bar{x})^2}{n}}',
+       'nt': 'The study text uses the same divisor $n$ for a sample as for a population — it '
+             'does not apply the $n-1$ (Bessel) correction some other texts use.'},
     ]}},
     {'eg': {'t': 'Standard deviation, both ways', 'q': [
       {'p': 'Compute the standard deviation of 1, 2, 5, 7, 10.'}],
@@ -147,26 +174,19 @@ CH = {
       {'lb': "Pearson's second coefficient",
        'tex': 'SK_2 = \\frac{3(\\bar{x} - \\text{Median})}{\\sigma}',
        'nt': 'Used when the mode is ill-defined; follows from the empirical relationship.'},
-      {'lb': "Bowley's (quartile) coefficient",
-       'tex': 'SK_B = \\frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}',
-       'nt': 'Bounded between −1 and +1.'},
     ]}},
     {'eg': {'t': 'Measuring skewness', 'q': [
       {'p': 'For the grouped distribution above: mean 38.1, median 37.5, mode 36.17, standard '
-            'deviation 13.08, $Q_1 = 28.94$, $Q_3 = 47.42$. Compute Pearson\'s two coefficients '
-            'and Bowley\'s coefficient, and comment.'}],
+            'deviation 13.08. Compute Pearson\'s two coefficients of skewness, and comment.'}],
       'a': [
       {'tex': 'SK_1 = \\frac{38.1 - 36.17}{13.08} = \\frac{1.93}{13.08} = 0.148'},
       {'tex': 'SK_2 = \\frac{3(38.1 - 37.5)}{13.08} = \\frac{1.8}{13.08} = 0.138'},
-      {'tex': 'SK_B = \\frac{47.42 + 28.94 - 2(37.5)}{47.42 - 28.94} = \\frac{1.36}{18.48} '
-              '= 0.074'},
-      {'p': 'All three are small and **positive**, so the distribution is mildly **positively '
+      {'p': 'Both are small and **positive**, so the distribution is mildly **positively '
             'skewed** — it has a slightly longer tail to the right, consistent with mean > median '
             '> mode.'},
-      {'note': 'The three coefficients need not agree closely because they measure different '
-               'things: the Pearson coefficients use the whole distribution through $\\sigma$, '
-               'while Bowley\'s uses only the middle half. The **sign** is what matters, and here '
-               'they all agree.'}]}},
+      {'note': 'The two Pearson coefficients need not agree exactly in size, since one uses the '
+               'mode and the other the median — but the **sign** is what matters for the shape '
+               'verdict, and here they agree.'}]}},
   ]},
 
   {'n': '3.7', 't': 'Worksheet summary — definitions and every formula', 'b': [
@@ -185,17 +205,16 @@ CH = {
       '**§3.4 Variance and standard deviation** — definitional formula '
       '$\\sigma^2=\\sum(x-\\bar{x})^2/n$ and the faster working formula '
       '$\\sigma^2=\\sum x^2/n-(\\sum x/n)^2$ give identical answers; grouped uses $fx^2$ meaning '
-      '$f\\times x^2$, **not** $(fx)^2$ — the commonest error in the chapter. Sample variance '
-      'divides by $n-1$, not $n$, when estimating a population variance from a sample.',
+      '$f\\times x^2$, **not** $(fx)^2$ — the commonest error in the chapter. The study text '
+      'uses the same divisor $n$ for both a population and a sample standard deviation.',
       '**§3.5 Coefficient of variation** — $CV=\\sigma/\\bar{x}\\times100\\%$, dimensionless, so '
       'it can compare the spread of two *differently scaled* data sets; the **lower** CV is the '
       'more consistent/lower-risk series, even if its absolute standard deviation is larger.',
       '**§3.6 Skewness** — symmetrical: mean = median = mode, coefficient zero; positively '
-      'skewed: mean > median > mode, coefficient positive; negatively skewed: the reverse. '
-      'Three coefficients: Pearson\'s first $(\\bar{x}-\\text{Mode})/\\sigma$, Pearson\'s second '
-      '$3(\\bar{x}-\\text{Median})/\\sigma$ (used when the mode is ill-defined), and Bowley\'s '
-      '$(Q_3+Q_1-2Q_2)/(Q_3-Q_1)$ (bounded −1 to +1, uses only the middle half of the data). '
-      'They needn\'t agree closely in size — only the **sign** matters for the shape verdict.',
+      'skewed: mean > mode (median between the two), coefficient positive; negatively skewed: '
+      'the reverse. Two Pearsonian coefficients: $(\\bar{x}-\\text{Mode})/\\sigma$, or '
+      '$3(\\bar{x}-\\text{Median})/\\sigma$ (used when the mode is ill-defined). They needn\'t '
+      'agree exactly in size — only the **sign** matters for the shape verdict.',
     ]},
     {'h3': 'Definitions'},
     {'ul': [
@@ -278,13 +297,44 @@ CH = {
        'tex': 'SK = \\dfrac{\\bar{x} - \\text{Mode}}{s}'},
       {'lb': 'Pearson, second coefficient',
        'tex': 'SK = \\dfrac{3(\\bar{x} - \\text{Median})}{s}'},
-      {'lb': 'Bowley (quartile) coefficient',
-       'tex': 'SK_B = \\dfrac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}',
-       'nt': '$Q_2$ = median. Lies between −1 and +1.'},
     ]}},
     {'note': 'Comparing two distributions: the one with the **larger absolute** coefficient of '
              'skewness is "more skewed"; the one with the **smaller CV** is more '
              'consistent / reliable.'},
+  ]},
+
+  {'n': '3.8', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'For a set of data, the difference between the highest and the lowest number is known '
+        'as … (A) Mean  (B) Variance  (C) Range  (D) Interquartile range  (E) Mean deviation',
+        'The main difference between the mean deviation and variance is … (A) That differences '
+        'between the data set and mean are zero  (B) That differences between the data set and '
+        'the mean are squared before being summarised in variance  (C) That the square roots of '
+        'differences between the data set and the mean are obtained  (D) The difference in the '
+        'order of arrangement  (E) That differences between the data set and the mean are in '
+        'geometric order',
+        'Semi-interquartile range is determined by (A) $(Q_3-Q_2)/2$  (B) $(Q_3-Q_1)/2$  '
+        '(C) $(Q_3-Q_2)/2$  (D) $(Q_1-Q_3)/2$  (E) $(Q_2-Q_1)/2$',
+        'For a non-skewed distribution, the coefficient of skewness is (A) 1  (B) −1  (C) 0  '
+        '(D) 2  (E) −2',
+      ]},
+      {'p': 'Use the data 3, 7, 2, 8, 5, 6, 4 to answer questions 5 to 10.'},
+      {'ol': [
+        'Determine the range.', 'Determine the mean deviation.',
+        'Determine the standard deviation.', 'Determine $Q_1$.', 'Determine $Q_3$.',
+        'Determine the semi-interquartile range.',
+      ]}],
+      'a': [
+      {'ol': ['**C**', '**B**', '**B**', '**C**']},
+      {'p': '(Ordered: 2, 3, 4, 5, 6, 7, 8.)'},
+      {'ol': [
+        '**Range $=8-2=5$.**',
+        '**Mean deviation $=2$.**',
+        '**Standard deviation:** $\\sqrt{40/7} = \\sqrt{5.714} = 2.39$.',
+        '**$Q_1 = 2$.**', '**$Q_3 = 6$.**',
+        '**SIR** $= (Q_3-Q_1)/2 = (6-2)/2 = 2$.']}]}},
   ]},
  ],
  'formulas': [
@@ -315,8 +365,6 @@ CH = {
    'tex': 'SK = \\frac{\\bar{x} - \\text{Mode}}{s}'},
   {'lb': "Pearson's coefficient of skewness (2nd)",
    'tex': 'SK = \\frac{3(\\bar{x} - \\text{Median})}{s}'},
-  {'lb': "Bowley's coefficient of skewness",
-   'tex': 'SK_B = \\frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}'},
  ],
  'focus':
    'Appears in Section A every diet and often as half a Section B question, usually paired with '
@@ -329,8 +377,6 @@ CH = {
    'Omitting the absolute value in the mean deviation, giving zero.',
    'Comparing standard deviations of series with different means instead of using the coefficient '
    'of variation.',
-   'Dividing by $n-1$ when the data is the whole population, or by $n$ when it is a sample and an '
-   'estimate is required.',
    'Forgetting the factor of 3 in Pearson\'s second coefficient.',
  ],
  'quiz': {

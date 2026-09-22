@@ -1,355 +1,378 @@
 CH = {
  'n': 6,
  't': 'Index Numbers',
- 'brief': 'Measuring change over time: simple and weighted price and quantity indices, Laspeyres, '
-          'Paasche and Fisher, and the consumer price index.',
+ 'brief': 'Measuring change over time: unweighted price relatives and aggregates, and the four '
+          'weighted indices — Laspeyre, Paasche, Fisher and Marshall–Edgeworth.',
  'outcomes': [
-   'Explain the uses and problems of index numbers',
-   'Compute simple price and quantity relatives and aggregate indices',
-   'Compute Laspeyres, Paasche, Marshall-Edgeworth and Fisher indices',
-   'Change the base of an index and deflate a money series',
+   'Understand the concept of index numbers',
+   'Differentiate between price indices and price relatives',
+   'Know the differences between unweighted and weighted index numbers',
+   'Compute and handle problems on index numbers using Laspeyre, Paasche, Fisher and '
+   'Marshall–Edgeworth methods',
  ],
  'secs': [
-  {'n': '6.1', 't': 'What an index number is', 'b': [
-    {'def': {'t': 'Index number', 'd': 'a statistical measure expressing the change in a variable, '
-                  'or a group of variables, relative to a base period taken as 100.'}},
-    {'h3': 'Uses'},
-    {'ul': [
-      'Measuring **inflation** through the consumer price index.',
-      '**Deflating** a money series to obtain real values.',
-      'Adjusting wages and pensions for changes in the cost of living.',
-      'Comparing production, trade or prices between periods or regions.',
-      'Providing a basis for economic policy and for business forecasting.',
-    ]},
-    {'h3': 'Problems in construction'},
+  {'n': '6.1', 't': 'Introduction', 'b': [
+    {'def': {'t': 'Index number (Spiegel)', 'd': 'a statistical measure designed to show changes '
+                  'in a variable or a group of variables with respect to time, geographical '
+                  'location or other characteristics.'}},
+    {'p': 'It is usual practice in business, the economy and other areas of life to find the '
+          'average change in the price, quantity or value of a related group of items over a '
+          'period of time, or across geographical locations. The index number is the statistical '
+          'device used to measure that change.'},
+    {'p': 'By the principle of index numbers, the statistical device measures:'},
     {'ol': [
-      'Choice of the **base period** — it must be normal, not a boom or a slump, and not too remote.',
-      'Selection of **items** to include — the basket must be representative and manageable.',
-      'Choice of **weights** and how often to revise them.',
-      'Choice of the **formula** — Laspeyres, Paasche and Fisher give different answers.',
-      'Obtaining reliable and consistent **price data** across periods.',
-      '**Quality changes** — a phone costing the same as last year is not the same phone.',
-      'Handling items that **disappear** from the market or are newly introduced.',
+      'the differences in the general level of a group of related variables;',
+      'the differences that may have to do with the **price** of commodities; and',
+      'the **physical quantity** of goods produced, marketed or consumed, in order to make a '
+      'comparison between periods of time, schools, places, etc.',
+    ]},
+    {'p': 'Based on this principle, index numbers are broadly categorised by the variable they '
+          'measure into **Price Index Numbers** — consisting of retail price indices and the '
+          'like — which is the type this chapter develops in full.'},
+  ]},
+
+  {'n': '6.2', 't': 'Index numbers and their uses', 'b': [
+    {'p': 'It is important to state the following uses of index numbers:'},
+    {'ol': [
+      'to deflate a value series in order to convert it into physical terms;',
+      'to keep abreast of current business conditions — it acts as a business or economic '
+      'barometer;',
+      'to give the trend movement in business or the economy;',
+      'to forecast, by using a series of the indices;',
+      'to assess the worth of the purchasing power of money;',
+      'to compare the standard of living in various areas/countries or geographical locations; '
+      'and',
+      'to compare readers\' intelligence in various schools or countries.',
     ]},
   ]},
 
-  {'n': '6.2', 't': 'Unweighted indices', 'b': [
-    {'fbox': {'h': 'Simple (unweighted) indices', 'rows': [
-      {'lb': 'Price relative',
-       'tex': 'P_{01} = \\frac{p_1}{p_0} \\times 100'},
-      {'lb': 'Quantity relative',
-       'tex': 'Q_{01} = \\frac{q_1}{q_0} \\times 100'},
-      {'lb': 'Simple aggregate price index',
-       'tex': 'P = \\frac{\\sum p_1}{\\sum p_0} \\times 100',
-       'nt': 'Flawed: the answer depends on the units in which each item is quoted.'},
-      {'lb': 'Simple average of price relatives',
-       'tex': 'P = \\frac{1}{n}\\sum \\left(\\frac{p_1}{p_0} \\times 100\\right)',
-       'nt': 'Free of the units problem, but still treats every item as equally important.'},
-    ]}},
-    {'warn': 'The simple aggregate index is unsound. If rice is quoted per bag and salt per gram, '
-             'rice dominates the index for no reason but the choice of unit. Never use it where a '
-             'weighted index is available.'},
+  {'n': '6.3', 't': 'Problems in constructing an index number', 'b': [
+    {'p': 'The following are among the problems usually encountered in constructing an index '
+          'number:'},
+    {'ol': [
+      'definition of the **purpose** for which the index number is being compiled or '
+      'constructed;',
+      'selection of **commodities/items** to include — what type, quantity and quality are to '
+      'be selected;',
+      'selection of the **source of data** — it must be reliable, so utmost care is needed;',
+      '**method of collecting data** — once the source is settled, an efficient and effective '
+      'collection method must be decided, depending on whether the data is primary or '
+      'secondary;',
+      'selection of the **base year** — the reference period against which other data is '
+      'compared. It should be economically stable and free from abnormalities such as '
+      'inflation, depression, famine or boom, and should not be too far from the current '
+      'period;',
+      '**method of combining the data** — the appropriate method depends on the purpose of the '
+      'index and the data available, and it dictates which formula is used; and',
+      'choice of **weight** — the relative importance attached to the various items must be '
+      'taken into account for a fair, accurate index.',
+    ]},
+    {'h4': 'Construction methods of price index numbers'},
+    {'p': 'The Price Index number measures the change in the general level of prices for a given '
+          'number or group of commodities — it could be a wholesale price index, a retail price '
+          'index, or an index of the prices of manufactured products. The construction methods '
+          'fall broadly into two:'},
+    {'ul': ['the use of **unweighted** price index numbers; and', 'the use of **weighted** price '
+      'index numbers.']},
   ]},
 
-  {'n': '6.3', 't': 'Weighted indices', 'b': [
-    {'p': 'Weighting solves both problems at once: items enter in proportion to how much is '
-          'bought. The question is only **which period\'s quantities** to use as weights.'},
-    {'fbox': {'h': 'Weighted price indices', 'rows': [
-      {'lb': 'Laspeyres (base-year weights)',
-       'tex': 'P_L = \\frac{\\sum p_1 q_0}{\\sum p_0 q_0} \\times 100',
-       'nt': 'Weights fixed at the base. Easy to compute and to update, but overstates inflation '
-             'because it ignores substitution away from items that have become dear.'},
-      {'lb': 'Paasche (current-year weights)',
-       'tex': 'P_P = \\frac{\\sum p_1 q_1}{\\sum p_0 q_1} \\times 100',
-       'nt': 'Weights revised each period. More current, but expensive and understates inflation.'},
-      {'lb': 'Marshall–Edgeworth',
-       'tex': 'P_{ME} = \\frac{\\sum p_1 (q_0 + q_1)}{\\sum p_0 (q_0 + q_1)} \\times 100'},
-      {'lb': "Fisher's ideal index",
-       'tex': 'P_F = \\sqrt{P_L \\times P_P}',
-       'nt': 'The geometric mean of the other two. Called *ideal* because it satisfies both the '
-             'time reversal and factor reversal tests.'},
+  {'n': '6.4', 't': 'Unweighted index numbers and their calculation', 'b': [
+    {'p': 'In an unweighted index number, equal importance is attached to every item in the '
+          'index. Three unweighted indices are considered:'},
+    {'ul': ['Simple Price Relative Index Number (SPRI);', 'Simple Aggregate Price Index (SAPI); '
+      'and', 'Simple Average of Relative Price Index (SARPI).']},
+    {'fbox': {'h': 'Unweighted price indices', 'rows': [
+      {'lb': 'Simple Price Relative Index (SPRI)',
+       'tex': 'SPRI = \\frac{p_{ti}}{p_{0i}} \\times 100',
+       'nt': 'The simplest of all index numbers: the ratio of a single commodity\'s current-year '
+             'price $p_{ti}$ to its base-year price $p_{0i}$.'},
+      {'lb': 'Simple Aggregate Price Index (SAPI)',
+       'tex': 'SAPI = \\frac{\\sum p_{ti}}{\\sum p_{0i}} \\times 100',
+       'nt': 'Uses only the arithmetic mean, ignoring the relative importance of the '
+             'commodities: total prices at the current period as a percentage of total prices '
+             'at the base period.'},
+      {'lb': 'Simple Average of Relative Price Index (SARPI)',
+       'tex': 'SARPI = \\frac{\\sum \\left(\\frac{p_{ti}}{p_{0i}} \\times 100\\right)}{n}',
+       'nt': 'Removes the unit-dependence of SAPI: the average of the individual price '
+             'relatives, where $n$ is the number of items.'},
     ]}},
-    {'p': 'The quantity indices are the mirror images, with $p$ and $q$ interchanged:'},
-    {'tex': 'Q_L = \\frac{\\sum q_1 p_0}{\\sum q_0 p_0} \\times 100 \\qquad '
-            'Q_P = \\frac{\\sum q_1 p_1}{\\sum q_0 p_1} \\times 100'},
-    {'eg': {'t': 'Laspeyres, Paasche and Fisher', 'q': [
-      {'p': 'Compute the three price indices for Year 1 with Year 0 as base.'},
-      {'table': {'align': 'lrrrr',
-        'head': ['Item', '$p_0$', '$q_0$', '$p_1$', '$q_1$'], 'rows': [
-        ['Rice (bag)', '18,000', '40', '24,000', '35'],
-        ['Beans (bag)', '25,000', '20', '32,000', '18'],
-        ['Oil (litre)', '1,200', '150', '1,500', '160'],
-        ['Salt (kg)', '400', '60', '450', '65'],
+    {'eg': {'tag': 'Study text', 't': 'Example 6.1 — SPRI, SAPI and SARPI', 'open': True, 'q': [
+      {'p': 'Determine the SPRI, SAPI and SARPI for the following table, using 2004 as the base '
+            'year.'},
+      {'table': {'align': 'lrrr', 'head': ['Item', '2004 (₦/₵)', '2005', '2006'], 'rows': [
+        ['A', '20', '30', '60'], ['B', '30', '42', '55'],
+        ['C', '10', '15', '20'], ['D', '6', '8', '15'],
       ]}}],
       'a': [
-      {'h4': 'The four products'},
+      {'h4': '(i) SPRI'},
       {'table': {'align': 'lrrrr',
-        'head': ['Item', '$p_0q_0$', '$p_1q_0$', '$p_0q_1$', '$p_1q_1$'], 'rows': [
-        ['Rice', '720,000', '960,000', '630,000', '840,000'],
-        ['Beans', '500,000', '640,000', '450,000', '576,000'],
-        ['Oil', '180,000', '225,000', '192,000', '240,000'],
-        ['Salt', '24,000', '27,000', '26,000', '29,250'],
-        ['Total', '1,424,000', '1,852,000', '1,298,000', '1,685,250', '@tot'],
+        'head': ['Item', '$p_0$ (2004)', '$p_1$ (2005)', '$p_2$ (2006)', 'SPRI 2005 / 2006 (%)'],
+        'rows': [
+        ['A', '20', '30', '60', '150 / 300'],
+        ['B', '30', '42', '55', '140 / 183'],
+        ['C', '10', '15', '20', '150 / 200'],
+        ['D', '6', '8', '15', '130 / 250'],
       ]}},
-      {'tex': 'P_L = \\frac{\\sum p_1 q_0}{\\sum p_0 q_0} \\times 100 '
-              '= \\frac{1{,}852{,}000}{1{,}424{,}000} \\times 100 = 130.06'},
-      {'tex': 'P_P = \\frac{\\sum p_1 q_1}{\\sum p_0 q_1} \\times 100 '
-              '= \\frac{1{,}685{,}250}{1{,}298{,}000} \\times 100 = 129.84'},
-      {'tex': 'P_F = \\sqrt{P_L \\times P_P} = \\sqrt{130.06 \\times 129.84} '
-              '= \\sqrt{16{,}887.0} = 129.95'},
-      {'p': 'Prices rose by about **30%** on all three measures. As theory predicts, Laspeyres '
-            '(130.06) exceeds Paasche (129.84), with Fisher between them — consumers shifted '
-            'away from rice and beans, whose prices rose most.'},
-      {'note': 'Set the four product columns out as a single table. Every index is then just a '
-               'ratio of two column totals, and one table answers all three parts of the question.'}]}},
+      {'h4': '(ii) SAPI, using 2004 as base ($\\sum p_0 = 66$)'},
+      {'p': '$\\sum p_1 = 95$ (2005), $\\sum p_2 = 150$ (2006).'},
+      {'tex': 'SAPI_{2005} = \\frac{95}{66} \\times 100 = 143.94 \\approx 144\\% \\qquad '
+              'SAPI_{2006} = \\frac{150}{66} \\times 100 = 227.27 \\approx 227\\%'},
+      {'h4': '(iii) SARPI'},
+      {'table': {'align': 'lrrrr', 'head': ['Item', '$p_0$', '$p_1/p_0$', '$p_2/p_0$', ''],
+        'rows': [
+        ['A', '20', '1.50', '3.00', ''], ['B', '30', '1.40', '1.83', ''],
+        ['C', '10', '1.50', '2.00', ''], ['D', '6', '1.30', '2.50', ''],
+        ['Total', '', '5.70', '9.33', '@tot'],
+      ]}},
+      {'tex': 'SARPI_{2005} = \\frac{5.70 \\times 100}{4} = 142.5 \\approx 143\\% \\qquad '
+              'SARPI_{2006} = \\frac{9.33 \\times 100}{4} = 233.25 \\approx 233\\%'}]}},
   ]},
 
-  {'n': '6.4', 't': 'Using an index', 'b': [
-    {'h3': 'The consumer price index'},
-    {'p': 'The CPI measures the change in the cost of a fixed basket of goods and services bought '
-          'by a typical household. It is the standard measure of **inflation** and is a weighted '
-          'price index, normally of Laspeyres form.'},
-    {'tex': '\\text{Inflation rate} = \\frac{\\text{CPI}_1 - \\text{CPI}_0}{\\text{CPI}_0} '
-            '\\times 100\\%', 'tag': '(6.1)'},
-    {'h3': 'Deflating a money series'},
-    {'p': 'A money (nominal) series is converted to a real series at base-year prices by dividing '
-          'by the index:'},
-    {'tex': '\\text{Real value} = \\frac{\\text{Money value}}{\\text{Price index}} \\times 100',
-     'tag': '(6.2)'},
-    {'eg': {'t': 'Real wages', 'q': [
-      {'p': 'A worker\'s wage rose from ₦180,000 a month in 2020 to ₦300,000 in 2024. The CPI '
-            'rose from 100 to 195 over the same period. Has the worker gained?'}],
+  {'n': '6.5', 't': 'Weighted index numbers and their calculation', 'b': [
+    {'p': 'In a weighted index, weights are attached to each item on the assumption that they '
+          'denote the item\'s relative importance. Weighted indices fall into two broad groups: '
+          '**Weighted Aggregative Indices** and **Weighted Average of Relative Indices**. Four '
+          'weighted aggregative methods, each using a different weighting technique, are '
+          'considered: Laspeyre, Paasche, Fisher and Marshall–Edgeworth.'},
+    {'fbox': {'h': 'Weighted price indices', 'rows': [
+      {'lb': "Laspeyre's index (1864)",
+       'tex': 'I_L = \\frac{\\sum p_i q_0}{\\sum p_0 q_0} \\times 100',
+       'nt': 'Uses base-year quantities $q_0$ as weights. Easy and widely used, since it is '
+             'based on fixed base-year weights, but it has an **upward bias**.'},
+      {'lb': "Paasche's index (1874)",
+       'tex': 'I_P = \\frac{\\sum p_i q_i}{\\sum p_0 q_i} \\times 100',
+       'nt': 'Introduced by the German statistician Paasche. Uses current/given-year quantities '
+             '$q_i$ as weights. Tedious to compute and has a **downward bias**.'},
+      {'lb': "Fisher's Ideal index",
+       'tex': 'I_F = \\sqrt{I_L \\times I_P}',
+       'nt': 'The geometric mean of Laspeyre and Paasche. Theoretically better than the other '
+             'methods because it overcomes their shortcomings.'},
+      {'lb': 'Marshall–Edgeworth index',
+       'tex': 'I_M = \\frac{\\sum p_i \\left(\\frac{q_0+q_i}{2}\\right)}'
+              '{\\sum p_0 \\left(\\frac{q_0+q_i}{2}\\right)} \\times 100 = '
+              '\\frac{\\sum p_i q_0 + \\sum p_i q_i}{\\sum p_0 q_0 + \\sum p_0 q_i} \\times 100',
+       'nt': 'Uses the **average of base and current-year quantities** as weights.'},
+    ]}},
+    {'note': 'Notation throughout: $p_0$ = base-year price, $q_0$ = base-year quantity; $p_i$ = '
+             'current/given-year price, $q_i$ = current/given-year quantity.'},
+    {'eg': {'tag': 'Study text', 't': 'Example 6.2 — all four weighted indices', 'open': True,
+      'q': [
+      {'p': 'Use the table below to calculate the price index for 2016, taking 2011 as base '
+            'year, by (a) Laspeyre, (b) Paasche, (c) Fisher, and (d) Marshall–Edgeworth.'},
+      {'table': {'align': 'lrrrr', 'head': ['Item', '2011 price', '2011 qty', '2016 price', '2016 qty'],
+        'rows': [
+        ['A', '14', '45', '20', '35'], ['B', '13', '15', '19', '20'],
+        ['C', '12', '10', '14', '10'], ['D', '10', '5', '12', '8'],
+      ]}}],
       'a': [
-      {'tex': '\\text{Real wage in 2024 at 2020 prices} = \\frac{300{,}000}{195} \\times 100 '
-              '= ₦153{,}846'},
-      {'p': 'In money terms the wage rose 66.7%; in real terms it **fell** from ₦180,000 to '
-            '₦153,846, a decline of about **14.5%**. The worker is worse off.'},
-      {'tex': '\\text{Real change} = \\frac{153{,}846 - 180{,}000}{180{,}000} \\times 100 '
-              '= -14.5\\%'},
-      {'note': 'This is the single most useful thing index numbers do, and the examiner returns '
-               'to it regularly. The money figure went up; the answer is that the worker is worse '
-               'off, and the deflation shows why.'}]}},
-    {'h3': 'Changing the base'},
-    {'tex': '\\text{New index} = \\frac{\\text{Old index}}{\\text{Old index of the new base year}} '
-            '\\times 100', 'tag': '(6.3)'},
-    {'p': 'This is called **splicing** where two series with different bases are joined. The '
-          'assumption is that the relative movements within each series are correct even though '
-          'the bases differ.'},
+      {'table': {'align': 'lrrrr', 'head': ['Item', '$p_0q_0$', '$p_iq_0$', '$p_iq_i$', '$p_0q_i$'],
+        'rows': [
+        ['A', '630', '900', '700', '490'], ['B', '195', '285', '380', '300'],
+        ['C', '120', '140', '140', '100'], ['D', '50', '60', '96', '40'],
+        ['Total', '995', '1,385', '1,316', '930', '@tot'],
+      ]}},
+      {'tex': 'I_L = \\frac{1{,}385}{995} \\times 100 = 139.20\\% \\qquad '
+              'I_P = \\frac{1{,}316}{930} \\times 100 = 141.51\\%'},
+      {'tex': 'I_F = \\sqrt{139.20 \\times 141.51} = \\sqrt{19{,}696.6} = 140.34\\%'},
+      {'p': 'For Marshall–Edgeworth, sum $p_iq_0+p_iq_i$ and $p_0q_0+p_0q_i$ item by item: '
+            '$1{,}385+1{,}316=2{,}701$ and $995+930=1{,}925$.'},
+      {'tex': 'I_M = \\frac{2{,}701}{1{,}925} \\times 100 = 140.31\\%'},
+      {'note': 'All four methods put the rise in prices at roughly **139–141%** — as expected, '
+               'Laspeyre and Paasche bracket the true movement, with Fisher and '
+               'Marshall–Edgeworth falling between them.'}]}},
   ]},
 
-  {'n': '6.5', 't': 'Worksheet summary — definitions and every formula', 'b': [
+  {'n': '6.6', 't': 'Worksheet summary — every term and formula', 'b': [
     {'h3': 'Section-by-section checklist'},
     {'ol': [
-      '**§6.1 What an index number is** — measures change in a variable relative to a base '
-      'period = 100. Uses: inflation (CPI), deflating money series, wage/pension adjustment, '
-      'comparison across time/region, policy/forecasting. Construction problems: choosing a '
-      'normal (not boom/slump, not too remote) base period; a representative, manageable item '
-      'basket; the weights and how often to revise them; which formula (Laspeyres/Paasche/'
-      'Fisher give different answers); reliable price data; quality changes; and items that '
-      'disappear or are newly introduced.',
-      '**§6.2 Unweighted indices** — price/quantity relative $=p_1/p_0\\times100$; the simple '
-      '**aggregate** index $\\sum p_1/\\sum p_0\\times100$ is unsound (unit-dependent — never '
-      'use it where a weighted index is available); the simple **average of relatives** fixes '
-      'the unit problem but still weights every item equally.',
-      '**§6.3 Weighted indices** — **Laspeyres** (base-year quantity weights, overstates '
-      'inflation — ignores substitution); **Paasche** (current-year weights, understates '
-      'inflation, costlier to compute); **Marshall-Edgeworth** ($q_0+q_1$ weights); '
-      '**Fisher\'s ideal** $=\\sqrt{P_L\\times P_P}$ (satisfies time- and factor-reversal '
-      'tests). Quantity indices mirror the price ones with $p$ and $q$ swapped. Laspeyres is '
-      'always $\\ge$ Paasche when prices rise and consumers substitute away from dearer items.',
-      '**§6.4 Using an index** — the **CPI** is normally a Laspeyres-form weighted price '
-      'index measuring inflation; inflation rate $=(\\text{CPI}_1-\\text{CPI}_0)/'
-      '\\text{CPI}_0\\times100$. **Deflating**: real value $=$ money value $\\div$ price index '
-      '$\\times100$ — a money figure can rise while the real (deflated) figure falls, which is '
-      'the chapter\'s most-examined idea. **Changing the base** (splicing): new index $=$ old '
-      'index $\\div$ old index of the new base year $\\times100$, joining two differently-'
-      'based series on the assumption their internal relative movements are correct.',
+      '**§6.1 Introduction** — Spiegel\'s definition; the principle measures (a) differences in '
+      'the level of related variables, (b) differences in commodity price, (c) physical '
+      'quantity comparisons. Classified by the study text into Price Index Numbers, which this '
+      'chapter develops.',
+      '**§6.2 Uses** — deflate a value series; act as a business/economic barometer; show '
+      'trend movement; forecast from a series of indices; assess the purchasing power of '
+      'money; compare standards of living across areas/countries; compare intelligence across '
+      'schools/countries.',
+      '**§6.3 Problems in construction** — purpose; selection of commodities/items; selection '
+      'of the source of data; method of collecting data; selection of the base year; method of '
+      'combining data (dictates the formula); choice of weight. Construction methods split into '
+      'unweighted and weighted price index numbers.',
+      '**§6.4 Unweighted indices** — SPRI $=p_{ti}/p_{0i}\\times100$ (single commodity); SAPI '
+      '$=\\sum p_{ti}/\\sum p_{0i}\\times100$ (ignores relative importance); SARPI $=\\sum('
+      'p_{ti}/p_{0i}\\times100)/n$ (average of the relatives).',
+      '**§6.5 Weighted indices** — Laspeyre $I_L=\\sum p_iq_0/\\sum p_0q_0\\times100$ '
+      '(base-year weights, **upward** bias); Paasche $I_P=\\sum p_iq_i/\\sum p_0q_i\\times100$ '
+      '(current-year weights, **downward** bias); Fisher $I_F=\\sqrt{I_L\\times I_P}$ '
+      '(geometric mean, theoretically the best of the four); Marshall–Edgeworth (average of '
+      'base and current quantities as weights).',
     ]},
     {'h3': 'Definitions'},
     {'ul': [
-      '**Index number** — a statistical measure showing the change in a variable, or a group of '
-      'variables, relative to time, geographical location or another characteristic (Spiegel).',
-      '**Base year** — the reference period other periods are compared with; should be '
-      'economically stable and not too distant. Its index is 100.',
-      '**Price relative** — the ratio of a single commodity\'s current-year price to its '
-      'base-year price, $\\times 100$.',
-      '**Price index** — a measure of the change in the *general* price level of a group of '
-      'commodities.',
-      '**Weights** — the relative importance attached to each item.',
-      '**Unweighted index** — equal importance to every item. **Weighted index** — items '
-      'weighted by quantity (or value).',
-      '**Deflating** — dividing a money value series by a price index to express it in real '
-      '(constant-price) terms.',
-      '**Splicing** — joining two index series that have different base years.',
+      '**Index number** — a statistical measure designed to show changes in a variable or a '
+      'group of variables with respect to time, geographical location or other '
+      'characteristics (Spiegel).',
+      '**Base year** — the reference period against which other periods are compared; should '
+      'be economically stable and not too remote.',
+      '**Weight** — the relative importance attached to an item in the index.',
+      '**Unweighted index** — equal importance given to every item. **Weighted index** — items '
+      'weighted by quantity.',
     ]},
-    {'h3': 'Uses of index numbers'},
-    {'ul': [
-      'deflate a value series into real / physical terms;',
-      'act as a business / economic barometer;',
-      'show the trend of business or the economy;',
-      'forecast, from a series of indices;',
-      'assess the purchasing power of money;',
-      'compare the standard of living across areas or countries.',
-    ]},
-    {'h3': 'Problems in constructing an index number'},
-    {'ul': [
-      'defining the purpose of the index;',
-      'selecting the commodities / items (type, quantity, quality);',
-      'selecting a reliable source of data;',
-      'choosing the method of collecting data;',
-      'choosing the base year;',
-      'choosing the method of combining the data (which dictates the formula);',
-      'choosing the weights.',
-    ]},
-    {'h3': 'Notation'},
-    {'p': '$p_0$, $q_0$ = base-year price and quantity; $p_1$ (or $p_i$, $p_t$), $q_1$ = '
-          'current-year price and quantity; $n$ = number of commodities; $\\sum$ over the '
-          'commodities.'},
-    {'h3': 'A. Unweighted indices (type + formula)'},
-    {'fbox': {'h': 'Unweighted price indices', 'rows': [
-      {'lb': 'Simple price relative (SPRI)', 'tex': '\\dfrac{p_1}{p_0} \\times 100'},
-      {'lb': 'Simple aggregate price index (SAPI)',
-       'tex': '\\dfrac{\\sum p_1}{\\sum p_0} \\times 100'},
-      {'lb': 'Simple average of relatives (SARPI)',
-       'tex': '\\dfrac{\\sum \\left(\\dfrac{p_1}{p_0} \\times 100\\right)}{n}'},
-    ]}},
-    {'h3': 'B. Weighted aggregative indices (type + formula)'},
-    {'fbox': {'h': 'Weighted price indices', 'rows': [
-      {'lb': 'Laspeyres (base-year quantities; upward bias)',
-       'tex': 'P_L = \\dfrac{\\sum p_1 q_0}{\\sum p_0 q_0} \\times 100'},
-      {'lb': 'Paasche (current-year quantities; downward bias)',
-       'tex': 'P_P = \\dfrac{\\sum p_1 q_1}{\\sum p_0 q_1} \\times 100'},
-      {'lb': "Fisher's ideal (geometric mean of L and P)",
-       'tex': 'P_F = \\sqrt{P_L \\times P_P} = \\sqrt{\\dfrac{\\sum p_1 q_0}{\\sum p_0 q_0} '
-              '\\times \\dfrac{\\sum p_1 q_1}{\\sum p_0 q_1}} \\times 100'},
-      {'lb': 'Marshall–Edgeworth (average of base & current quantities)',
-       'tex': 'P_{ME} = \\dfrac{\\sum p_1(q_0 + q_1)}{\\sum p_0(q_0 + q_1)} \\times 100 '
-              '= \\dfrac{\\sum p_1 q_0 + \\sum p_1 q_1}{\\sum p_0 q_0 + \\sum p_0 q_1} '
-              '\\times 100'},
-    ]}},
-    {'note': 'The column set for a weighted-index question: $p_0, q_0, p_1, q_1, \\; p_0 q_0, '
-             '\\; p_1 q_0, \\; p_1 q_1, \\; p_0 q_1$. Every weighted index above is a ratio of '
-             'two of those column totals.'},
-    {'h3': 'C. A quantity index'},
-    {'p': 'Swap the roles of $p$ and $q$: e.g. Laspeyres quantity index '
-          '$= \\dfrac{\\sum q_1 p_0}{\\sum q_0 p_0} \\times 100$.'},
-    {'h3': 'D. Using an index'},
-    {'fbox': {'h': 'Deflation and base change', 'rows': [
-      {'lb': 'Real (deflated) value',
-       'tex': '\\text{Real} = \\dfrac{\\text{Money value}}{\\text{Price index}} \\times 100'},
-      {'lb': 'Purchasing power of the naira',
-       'tex': '\\text{PP} = \\dfrac{100}{\\text{Price index}}'},
-      {'lb': 'Change of base / splicing',
-       'tex': '\\text{New index} = \\dfrac{\\text{Old index}}'
-              '{\\text{Old index of the new base year}} \\times 100'},
-    ]}},
+  ]},
+
+  {'n': '6.7', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'Which of the following is NOT one of the uses of an index number? (A) To deflate a '
+        'value series in order to convert it into real physical terms  (B) To compare '
+        'students’ intelligence in various schools or countries  (C) To select the '
+        'commodities sources  (D) To forecast by using series of the indices  (E) To assess '
+        'the worth of purchasing power of money',
+        'Which of the following is NOT a problem in the construction of an index number? '
+        '(A) Selection of sources of data  (B) Definition of the purpose for which index is '
+        'needed  (C) Method of collecting data for index  (D) Method of combining the data  '
+        '(E) Unweighted average price index',
+        'Which of the following is NOT a weighted price index number? (A) Laspeyre Index  '
+        '(B) Simple Aggregate Price Index  (C) Fisher Ideal Index  (D) Marshall-Edgeworth '
+        'Index  (E) Paasche Index',
+        'The Weighted Aggregative Index with a downward bias is _________ (A) Laspeyre Index  '
+        '(B) Simple Aggregate Price Index  (C) Fisher Ideal Index  (D) Marshall-Edgeworth '
+        'Index  (E) Paasche Index',
+        'Which of the following is the formula for the Unweighted Price Index? '
+        '(A) $\\sum q_{ti}/\\sum q_{0i} \\times 100$  '
+        '(B) $q_{ti}/q_{0i} \\times 100$  '
+        '(C) $\\sum p_iq_0/\\sum p_0q_0 \\times 100$  '
+        '(D) $\\sum p_{ti}/\\sum p_{0i} \\times 100$  '
+        '(E) $\\sum p_i(q_0+q_i)/2 \\div \\sum p_0(q_0+q_i)/2 \\times 100$',
+      ]},
+      {'p': 'Use the following table (2000 as base year) to answer questions 6 and 7.'},
+      {'table': {'align': 'lrr', 'head': ['Item', '2000 price', '2005 price'], 'rows': [
+        ['A', '50', '80'], ['B', '70', '100'], ['C', '90', '100'], ['D', '100', '120'],
+      ]}},
+      {'ol': [
+        'F. The Simple Aggregate Price Index of the above table, using 2000 as base year, is …',
+        'G. The Simple Average of Relative Price Index, with 2000 as base year, is …',
+      ]},
+      {'p': 'Use the following table (2001 as base year) to answer questions 8 to 10.'},
+      {'table': {'align': 'lrrrr', 'head': ['Item', '2001 price', '2001 qty', '2006 price', '2006 qty'],
+        'rows': [
+        ['A', '80', '50', '100', '60'], ['B', '90', '60', '100', '70'],
+        ['C', '100', '70', '120', '90'],
+      ]}},
+      {'ol': [
+        'H. Using 2001 as base year, the Laspeyre price index for 2006 is …',
+        'I. Using 2001 as base year, the Paasche price index for 2006 is …',
+        'J. Fisher’s Ideal price index of the above table is …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**C** — selecting commodity sources is not listed among the construction problems.',
+        '**E** — the unweighted average price index is itself one of the unweighted methods, '
+        'not a listed *problem*.',
+        '**B** — Simple Aggregate Price Index is **unweighted**.',
+        '**E** — Paasche has the downward bias (Laspeyre has the upward bias).',
+        '**D** — $\\sum p_{ti}/\\sum p_{0i}\\times100$ is the (unweighted) simple aggregate '
+        'price index formula.',
+      ]},
+      {'p': '$\\sum p_0 = 310$, $\\sum p_1 = 400$.'},
+      {'tex': 'F.\\; SAPI = \\frac{400}{310} \\times 100 = 129.03\\%'},
+      {'p': 'Price relatives: $80/50=1.6$, $100/70=1.429$, $100/90=1.111$, $120/100=1.2$; sum '
+            '$=5.340$.'},
+      {'tex': 'G.\\; SARPI = \\frac{5.340}{4} \\times 100 = 133.50\\%'},
+      {'p': '$\\sum p_0q_0 = 16{,}400$, $\\sum p_iq_0 = 14{,}400$, $\\sum p_0q_i = 20{,}100$, '
+            '$\\sum p_iq_i = 23{,}800$.'},
+      {'tex': 'H.\\; I_L = \\frac{14{,}400}{16{,}400} \\times 100 = 118.29\\% \\qquad '
+              'I.\\; I_P = \\frac{23{,}800}{20{,}100} \\times 100 = 118.41\\%'},
+      {'tex': 'J.\\; I_F = \\sqrt{118.29 \\times 118.41} = 118.35\\%'}]}},
   ]},
  ],
  'formulas': [
-  {'lb': 'Simple price relative (SPRI)', 'tex': '\\frac{p_1}{p_0} \\times 100'},
-  {'lb': 'Simple aggregate price index (SAPI)',
-   'tex': '\\frac{\\sum p_1}{\\sum p_0} \\times 100'},
-  {'lb': 'Simple average of relatives (SARPI)',
-   'tex': '\\frac{\\sum \\left(\\frac{p_1}{p_0}\\times 100\\right)}{n}'},
-  {'lb': 'Laspeyres price index (base-year quantities)',
-   'tex': 'P_L = \\frac{\\sum p_1 q_0}{\\sum p_0 q_0} \\times 100'},
-  {'lb': 'Paasche price index (current-year quantities)',
-   'tex': 'P_P = \\frac{\\sum p_1 q_1}{\\sum p_0 q_1} \\times 100'},
-  {'lb': "Fisher's ideal index", 'tex': 'P_F = \\sqrt{P_L \\times P_P}'},
+  {'lb': 'Simple Price Relative Index (SPRI)', 'tex': '\\frac{p_{ti}}{p_{0i}} \\times 100'},
+  {'lb': 'Simple Aggregate Price Index (SAPI)',
+   'tex': '\\frac{\\sum p_{ti}}{\\sum p_{0i}} \\times 100'},
+  {'lb': 'Simple Average of Relative Price Index (SARPI)',
+   'tex': '\\frac{\\sum \\left(\\frac{p_{ti}}{p_{0i}}\\times 100\\right)}{n}'},
+  {'lb': "Laspeyre's price index (base-year quantities, upward bias)",
+   'tex': 'I_L = \\frac{\\sum p_i q_0}{\\sum p_0 q_0} \\times 100'},
+  {'lb': "Paasche's price index (current-year quantities, downward bias)",
+   'tex': 'I_P = \\frac{\\sum p_i q_i}{\\sum p_0 q_i} \\times 100'},
+  {'lb': "Fisher's Ideal index", 'tex': 'I_F = \\sqrt{I_L \\times I_P}'},
   {'lb': 'Marshall–Edgeworth index',
-   'tex': 'P_{ME} = \\frac{\\sum p_1(q_0 + q_1)}{\\sum p_0(q_0 + q_1)} \\times 100'},
-  {'lb': 'Laspeyres quantity index',
-   'tex': '\\frac{\\sum q_1 p_0}{\\sum q_0 p_0} \\times 100'},
-  {'lb': 'Deflating a money series',
-   'tex': '\\text{Real} = \\frac{\\text{Money}}{\\text{Price index}} \\times 100'},
-  {'lb': 'Purchasing power of money',
-   'tex': '\\text{PP} = \\frac{100}{\\text{Price index}}'},
-  {'lb': 'Changing the base / splicing',
-   'tex': '\\text{New} = \\frac{\\text{Old index}}{\\text{Old index at new base}} \\times 100'},
+   'tex': 'I_M = \\frac{\\sum p_i q_0 + \\sum p_i q_i}{\\sum p_0 q_0 + \\sum p_0 q_i} \\times 100'},
  ],
  'focus':
    'A dependable Section B question: a table of prices and quantities for four or five items and '
-   'a request for Laspeyres, Paasche and Fisher. Build the four product columns once and read all '
-   'three indices off the totals. Section A tests which index uses which weights, and the '
-   'deflation calculation. Remember Laspeyres uses **base**-year quantities — the mnemonic is '
-   'that L comes before P in the alphabet as the base comes before the current period.',
+   'a request for two or more of Laspeyre, Paasche, Fisher and Marshall–Edgeworth. Build the four '
+   'product columns ($p_0q_0$, $p_iq_0$, $p_iq_i$, $p_0q_i$) once and read every index off the '
+   'column totals. Section A tests which index uses which weights and bias, and the list of uses '
+   'and construction problems verbatim.',
  'errors': [
-   'Swapping the weights of Laspeyres and Paasche.',
+   'Swapping the weights (and the bias direction) of Laspeyre and Paasche.',
    'Taking the arithmetic mean instead of the geometric mean for Fisher\'s index.',
-   'Multiplying by the index instead of dividing when deflating a money series.',
-   'Using the simple aggregate index where quantities are given.',
-   'Forgetting to multiply by 100, giving an index of 1.30 instead of 130.',
+   'Using the simple aggregate index where quantities are actually given (a weighted index is '
+   'available and should be preferred).',
+   'Forgetting to multiply by 100, giving an index of 1.40 instead of 140.',
+   'Treating Simple Aggregate Price Index as a weighted method — it is unweighted.',
  ],
  'quiz': {
   'mcq': [
-   {'q': "Laspeyres' price index uses quantities of the",
+   {'q': "Laspeyre's price index uses the quantities of the",
     'o': ['current year', 'base year', 'average of both years', 'preceding year',
           'year with the highest output'],
     'a': 1,
-    'w': 'Laspeyres holds the basket fixed at base-year quantities, which is why it is cheap to '
-         'maintain but overstates inflation by ignoring substitution.',
-    'src': 'Chapter 6.3', 'sec': '6.3'},
-   {'q': "If Laspeyres' index is 121 and Paasche's is 116, Fisher's ideal index is",
+    'w': 'Laspeyre holds the basket fixed at base-year quantities $q_0$, which is cheap to '
+         'maintain but gives the index an upward bias.',
+    'src': 'Chapter 6.5', 'sec': '6.5'},
+   {'q': "If Laspeyre's index is 121 and Paasche's is 116, Fisher's Ideal index is",
     'o': ['118.5', '118.47', '237.0', '116.0', '121.0'],
     'a': 1,
     'w': "Fisher's index is the geometric mean of the other two.",
-    'calc': 'P_F = \\sqrt{121 \\times 116} = \\sqrt{14{,}036} = 118.47',
-    'src': 'Chapter 6.3', 'sec': '6.3'},
-   {'q': 'A salary of ₦450,000 is earned when the price index is 180 (base 100). Its real value '
-         'at base-year prices is',
-    'o': ['₦810,000', '₦250,000', '₦270,000', '₦450,000', '₦2,500'],
-    'a': 1,
-    'w': 'Deflate by dividing the money value by the index and multiplying by 100.',
-    'calc': '\\frac{450{,}000}{180} \\times 100 = 250{,}000',
-    'src': 'Chapter 6.4', 'sec': '6.4'},
-   {'q': 'The main defect of the simple aggregate price index is that',
+    'calc': 'I_F = \\sqrt{121 \\times 116} = \\sqrt{14{,}036} = 118.47',
+    'src': 'Chapter 6.5', 'sec': '6.5'},
+   {'q': 'The main defect of the Simple Aggregate Price Index is that',
     'o': ['it is difficult to compute', 'it requires quantity data',
           'its value depends on the units in which the items are quoted',
           'it cannot be expressed as a percentage', 'it always exceeds 100'],
     'a': 2,
     'w': 'Adding prices quoted in different units lets the item with the largest unit dominate '
-         'the index for reasons unconnected with its importance. Weighting removes the problem.',
-    'src': 'Chapter 6.2', 'sec': '6.2'},
-   {'q': 'The CPI rose from 148 to 172 over a year. The rate of inflation was',
-    'o': ['24%', '16.22%', '13.95%', '86%', '116.22%'],
+         'the index for reasons unconnected with its true importance — it ignores relative '
+         'importance altogether.',
+    'src': 'Chapter 6.4', 'sec': '6.4'},
+   {'q': 'Which weighted index uses the average of base-year and current-year quantities as '
+         'its weights?',
+    'o': ["Laspeyre's index", "Paasche's index", "Fisher's Ideal index",
+          'Marshall–Edgeworth index', 'Simple Average of Relatives'],
+    'a': 3,
+    'w': 'Marshall–Edgeworth weights each item by $(q_0+q_i)/2$, splitting the difference '
+         'between the base and current baskets.',
+    'src': 'Chapter 6.5', 'sec': '6.5'},
+   {'q': 'Given $\\sum p_0=200$, $\\sum p_1=260$ for four items of equal importance, the Simple '
+         'Aggregate Price Index for the current year is',
+    'o': ['76.92', '130.00', '60.00', '13.00', '200.00'],
     'a': 1,
-    'w': 'Express the increase as a percentage of the earlier index.',
-    'calc': '\\frac{172 - 148}{148} \\times 100 = \\frac{24}{148} \\times 100 = 16.22\\%',
+    'w': 'SAPI is the ratio of the two price totals, expressed as a percentage.',
+    'calc': 'SAPI = \\frac{260}{200} \\times 100 = 130.00',
     'src': 'Chapter 6.4', 'sec': '6.4'},
   ],
   'theory': [
-   {'q': "Distinguish between Laspeyres' and Paasche's price indices, stating one advantage and "
-         "one disadvantage of each, and explain why Fisher's index is described as ideal.",
+   {'q': "Distinguish between Laspeyre's and Paasche's price indices, stating the bias of each, "
+         "and explain how Fisher's index is derived from them.",
     'marks': 8,
     'a': [
-      {'tex': 'P_L = \\frac{\\sum p_1 q_0}{\\sum p_0 q_0} \\times 100 \\qquad '
-              'P_P = \\frac{\\sum p_1 q_1}{\\sum p_0 q_1} \\times 100'},
-      {'table': {'head': ['', 'Laspeyres', 'Paasche'], 'align': 'lll', 'rows': [
-        ['Weights', 'Base-year quantities $q_0$', 'Current-year quantities $q_1$'],
-        ['Basket', 'Fixed', 'Revised every period'],
-        ['Advantage', 'Cheap: quantities are collected once, so the series is easily extended '
-         'and directly comparable over time',
-         'Reflects the current pattern of consumption, so it is more representative of what '
-         'people actually buy now'],
-        ['Disadvantage', 'Overstates the rise in prices, because it ignores substitution away '
-         'from goods whose prices have risen',
-         'Expensive, since quantities must be re-surveyed each period; and it understates the '
-         'rise, because the current basket already reflects substitution. Earlier years are not '
-         'directly comparable'],
+      {'tex': 'I_L = \\frac{\\sum p_i q_0}{\\sum p_0 q_0} \\times 100 \\qquad '
+              'I_P = \\frac{\\sum p_i q_i}{\\sum p_0 q_i} \\times 100'},
+      {'table': {'head': ['', "Laspeyre's index", "Paasche's index"], 'align': 'lll', 'rows': [
+        ['Weights', 'Base-year quantities $q_0$', 'Current-year quantities $q_i$'],
+        ['Introduced by', 'Laspeyre, 1864', 'Paasche (German statistician), 1874'],
+        ['Ease of computation', 'Easy — fixed base-year weights collected once',
+         'Tedious — quantities must be re-collected every period'],
+        ['Bias', '**Upward**', '**Downward**'],
       ]}},
-      {'h4': "Fisher's ideal index"},
-      {'tex': 'P_F = \\sqrt{P_L \\times P_P}'},
-      {'p': 'It is the geometric mean of the two, so it lies between them and splits the '
-            'difference between the upward bias of Laspeyres and the downward bias of Paasche. '
-            'It is called **ideal** because it satisfies two formal tests that neither of the '
-            'others satisfies:'},
-      {'ul': [
-        'the **time reversal test** — the index for period 1 on base 0, multiplied by the index '
-        'for period 0 on base 1, equals unity; and',
-        'the **factor reversal test** — the price index multiplied by the corresponding quantity '
-        'index equals the change in total value.']},
-      {'p': 'Its practical drawback is that it requires both sets of quantities, so it costs as '
-            'much to compute as Paasche and is less easily interpreted.'}],
-    'src': 'Chapter 6.3', 'sec': '6.3'},
+      {'h4': "Fisher's Ideal index"},
+      {'tex': 'I_F = \\sqrt{I_L \\times I_P}'},
+      {'p': 'It is the geometric mean of Laspeyre and Paasche, so it lies between the two and is '
+            'theoretically better than either because it overcomes their individual '
+            'shortcomings — the upward bias of one offsetting the downward bias of the other.'}],
+    'src': 'Chapter 6.5', 'sec': '6.5'},
   ]},
 }

@@ -4,10 +4,10 @@ CH = {
  'brief': 'Mean, median and mode for grouped and ungrouped data, the assumed-mean shortcut, and '
           'the measures of partition — quartiles, deciles and percentiles.',
  'outcomes': [
-   'Compute the arithmetic, geometric and harmonic means',
+   'Know the meaning of measures of central tendency',
    'Compute the mean of a grouped distribution, including by the assumed mean method',
    'Compute the median and mode of grouped and ungrouped data',
-   'Apply the empirical relationship between mean, median and mode',
+   'Apply the mean/median/mode skewness relationship',
    'Compute quartiles, deciles and percentiles',
  ],
  'secs': [
@@ -52,16 +52,6 @@ CH = {
       {'note': 'All three give 38.1, as they must. The step deviation method turns five-figure '
                'multiplications into single-digit ones, which is worth knowing when you have no '
                'calculator memory to spare.'}]}},
-    {'h3': 'Other means'},
-    {'fbox': {'h': 'Geometric and harmonic means', 'rows': [
-      {'lb': 'Geometric mean',
-       'tex': 'GM = \\sqrt[n]{x_1 x_2 \\cdots x_n} = \\left(\\prod_{i=1}^{n} x_i\\right)^{1/n}',
-       'nt': 'Used for average rates of growth and for index numbers.'},
-      {'lb': 'Harmonic mean',
-       'tex': 'HM = \\frac{n}{\\sum \\frac{1}{x_i}}',
-       'nt': 'Used for averaging rates such as speed over equal distances.'},
-    ]}},
-    {'p': 'For any set of positive numbers not all equal, $HM < GM < \\bar{x}$.'},
   ]},
 
   {'n': '2.2', 't': 'The median', 'b': [
@@ -92,11 +82,30 @@ CH = {
                'have a 1-unit gap (10–19, 20–29, …) so the boundary is half a unit below the '
                'limit; if the classes had been written 10–20, 20–30, … the limit *would* be the '
                'boundary. §2.5 sets out exactly when the two differ.'}]}},
+    {'h3': 'Graphical method — reading the median from an ogive'},
+    {'ol': [
+      'Draw the ogive (cumulative frequency curve) of the given distribution;',
+      'Locate the point $\\frac{N}{2}$ on the cumulative frequency axis; and',
+      'Draw a line across to the curve at that height, then a perpendicular line down to the '
+      'horizontal axis, to read off the median.',
+    ]},
+    {'note': 'The same graphical approach estimates the quartiles, deciles and percentiles — '
+             'only the cumulative-frequency value traced differs (§2.4).'},
   ]},
 
   {'n': '2.3', 't': 'The mode', 'b': [
-    {'p': 'The mode is the most frequently occurring value. A distribution may have no mode, one '
-          '(unimodal), two (bimodal) or more.'},
+    {'p': 'The mode is the most frequently occurring value. Where no measured value in the data '
+          'set is repeated, there is no mode.'},
+    {'h3': 'Graphical method — reading the mode from a histogram'},
+    {'ol': [
+      'Draw the histogram of the given distribution;',
+      'Identify the highest bar — the modal class;',
+      'Identify the two bars flanking the modal class (the one before it and the one after it);',
+      'Use the two flanking bars to draw diagonals across the modal bar; and',
+      'From the point where the diagonals intersect, draw a vertical line down to the '
+      'horizontal axis to read off the mode.',
+    ]},
+    {'h3': 'By formula'},
     {'tex': '\\text{Mode} = L + \\left(\\frac{\\Delta_1}{\\Delta_1 + \\Delta_2}\\right) c',
      'tag': '(2.1)'},
     {'p': 'where $\\Delta_1$ is the excess of the modal class frequency over the class before it, '
@@ -108,21 +117,27 @@ CH = {
             '$\\Delta_2 = 15 - 12 = 3$, $c = 10$.'},
       {'tex': '\\text{Mode} = 29.5 + \\left(\\frac{6}{6 + 3}\\right)(10) = 29.5 + '
               '\\frac{60}{9} = 29.5 + 6.67 = 36.17'}]}},
-    {'h3': 'The empirical relationship'},
-    {'tex': '\\text{Mean} - \\text{Mode} = 3(\\text{Mean} - \\text{Median})', 'tag': '(2.2)'},
-    {'p': 'or equivalently $\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}$. It holds '
-          'approximately for a moderately skewed distribution, and questions use it to find a '
-          'third measure when two are given.'},
-    {'p': 'Check it here: $3(37.5) - 2(38.1) = 112.5 - 76.2 = 36.3$, against the computed mode of '
-          '36.17 — close, as expected for a mildly skewed distribution.'},
-    {'table': {'cap': 'Choosing a measure', 'head': ['Measure', 'Advantages', 'Disadvantages'],
-     'align': 'lll', 'rows': [
-      ['Mean', 'Uses all the data; suited to further algebra; unique',
-       'Distorted by extreme values; may not be an actual value; cannot be found for open-ended classes'],
-      ['Median', 'Not affected by extremes; can be found for open-ended distributions',
-       'Ignores the magnitude of most observations; awkward algebraically'],
-      ['Mode', 'The most typical value; unaffected by extremes; applies to qualitative data',
-       'May not exist or may not be unique; ignores most of the data'],
+    {'h3': 'Relationship among mean, mode and median'},
+    {'p': 'The three measures of central tendency are approximately equal in a **Normal '
+          'distribution**. In a **skewed distribution**, their relationship is:'},
+    {'ul': [
+      '**Mean $>$ Median $>$ Mode** if the distribution is **right-skewed**; and',
+      '**Mean $<$ Median $<$ Mode** if the distribution is **left-skewed**.',
+    ]},
+    {'note': 'The three computed here — mean 38.1, median 37.5, mode 36.17 — satisfy '
+             '$\\text{Mean} > \\text{Median} > \\text{Mode}$, so the distribution is mildly '
+             '**right-skewed**. These relationships are useful when statistical data are being '
+             'analysed and interpreted.'},
+    {'h3': 'Characteristics of each measure'},
+    {'table': {'cap': 'Features of the mean, median and mode', 'head': ['Measure', 'Features'],
+     'align': 'll', 'rows': [
+      ['Mean', 'Takes all observations into consideration; is used for further statistical '
+       'calculations; is affected by extreme values.'],
+      ['Median', 'Does not take all observations into consideration; is not affected by extreme '
+       'values; is not used for further statistical calculations.'],
+      ['Mode', 'Does not take all observations into consideration; is not affected by extreme '
+       'values; is not used for further statistical calculations; can be used by manufacturers '
+       'to know where to concentrate production; may not be unique (it may be multimodal).'],
     ]}},
   ]},
 
@@ -276,9 +291,6 @@ CH = {
       'recognised shortcoming of the mean, not an error.',
       '**Even $n$, ungrouped median** — average the two middle values (Example 2.12: 6.5th '
       'position → mean of the 6th and 7th values $= (3+4)/2 = 3.5$).',
-      '**Empirical (skewness) relationship** — $\\text{Mean} - \\text{Mode} = 3(\\text{Mean} - '
-      '\\text{Median})$, i.e. $\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}$. Holds '
-      'approximately for a moderately skewed distribution.',
       '**Skew direction** — right- (positively) skewed: $\\text{Mean} > \\text{Median} > '
       '\\text{Mode}$; left- (negatively) skewed: $\\text{Mean} < \\text{Median} < '
       '\\text{Mode}$; symmetrical/normal: all three coincide.',
@@ -341,21 +353,17 @@ CH = {
       '**§2.1 The arithmetic mean** — ungrouped $\\bar{x}=\\sum x/n$; grouped $\\sum fx/\\sum '
       'f$; assumed-mean $\\bar{x}=A+\\sum fd/\\sum f$ ($d=x-A$); step-deviation '
       '$\\bar{x}=A+(\\sum fu/\\sum f)c$ ($u=(x-A)/c$) — all three give the identical answer, '
-      'step-deviation just keeps the arithmetic in small integers. Other means: geometric '
-      '$GM=\\sqrt[n]{\\prod x_i}$ (growth rates, index numbers), harmonic $HM=n/\\sum(1/x_i)$ '
-      '(rates like speed); for positive unequal values $HM<GM<\\bar{x}$.',
+      'step-deviation just keeps the arithmetic in small integers.',
       '**§2.2 The median** — the middle value; ungrouped odd-$n$ position $(n+1)/2$, even-$n$ '
       'average the two middle values; grouped $L+((N/2-CF)/f_m)\\,c$ using the lower '
       '**boundary** and the cumulative frequency **before** the median class. Unaffected by '
       'extreme values, unlike the mean.',
-      '**§2.3 The mode** — the most frequent value; grouped '
-      '$L+(\\Delta_1/(\\Delta_1+\\Delta_2))\\,c$ where $\\Delta_1,\\Delta_2$ are the modal '
-      'frequency\'s **excess** over the classes before/after (not the neighbouring frequencies '
-      'themselves). Empirical relationship: $\\text{Mean}-\\text{Mode}='
-      '3(\\text{Mean}-\\text{Median})$, used to find any one of the three from the other two '
-      'in a moderately skewed distribution. Mean is best for further algebra but distorted by '
-      'extremes; median survives extremes and open-ended classes; mode suits qualitative data '
-      'but may not exist or be unique.',
+      '**§2.3 The mode** — the most frequent value; graphically, from a histogram\'s modal bar '
+      'and its two flanking bars; by formula, $L+(\\Delta_1/(\\Delta_1+\\Delta_2))\\,c$ where '
+      '$\\Delta_1,\\Delta_2$ are the modal frequency\'s **excess** over the classes before/'
+      'after (not the neighbouring frequencies themselves). The three measures are '
+      'approximately equal in a Normal distribution; $\\text{Mean}>\\text{Median}>\\text{Mode}$ '
+      'if right-skewed, $\\text{Mean}<\\text{Median}<\\text{Mode}$ if left-skewed.',
       '**§2.4 Measures of partition** — one formula family for quartiles/deciles/percentiles, '
       'only the fraction of $N$ changes ($kN/4$, $kN/10$, $kN/100$); identities '
       '$Q_2=D_5=P_{50}=$ median, $Q_1=P_{25}$, $Q_3=P_{75}$, $D_k=P_{10k}$. Read from an '
@@ -380,10 +388,6 @@ CH = {
       '**Measures of location (central tendency)** — a single value taken as representative '
       'of a whole set of data: the **mean**, **median** and **mode**.',
       '**Arithmetic mean** — the sum of all the values divided by how many there are.',
-      '**Geometric mean** — the $n$th root of the product of $n$ values; used for average '
-      'rates of growth and for index numbers.',
-      '**Harmonic mean** — the number of values divided by the sum of their reciprocals; '
-      'used for averaging rates such as speed over equal distances.',
       '**Median** — the value of the middle item when the data is arranged in order of '
       'magnitude; unaffected by extreme values.',
       '**Mode** — the most frequently occurring value; a distribution may have no mode '
@@ -395,8 +399,6 @@ CH = {
       '**Class boundary** — the true limit of a class, halfway between its stated limit and '
       'the stated limit of the neighbouring class; equal to the stated limit only when '
       'classes are written continuously (no gap), e.g. 0–10, 10–20.',
-      '**Empirical relationship** — an approximate link between the mean, median and mode '
-      'for a moderately skewed distribution.',
     ]},
     {'h3': 'The arithmetic mean'},
     {'fbox': {'h': 'Arithmetic mean', 'rows': [
@@ -414,13 +416,6 @@ CH = {
        'tex': '\\bar{x} = A + \\left(\\frac{\\sum fu}{\\sum f}\\right) c',
        'nt': '$c$ is the common class width; all three methods give the identical answer.'},
     ]}},
-    {'h3': 'Other means'},
-    {'fbox': {'h': 'Geometric and harmonic means', 'rows': [
-      {'lb': 'Geometric mean',
-       'tex': 'GM = \\sqrt[n]{x_1 x_2 \\cdots x_n} = \\left(\\prod_{i=1}^{n} x_i\\right)^{1/n}'},
-      {'lb': 'Harmonic mean', 'tex': 'HM = \\frac{n}{\\sum \\frac{1}{x_i}}'},
-    ]}},
-    {'key': 'For any set of positive numbers not all equal: $HM < GM < \\bar{x}$.'},
     {'h3': 'The median'},
     {'fbox': {'h': 'Median', 'rows': [
       {'lb': 'Ungrouped, $n$ odd', 'tex': '\\text{Median} = x_{\\left(\\frac{n+1}{2}\\right)}'},
@@ -443,13 +438,12 @@ CH = {
        'tex': '\\text{Mode} = L + \\left(\\frac{\\Delta_1}{\\Delta_1 + \\Delta_2}\\right) c',
        'nt': '$L$ = lower **boundary** of the modal class; $c$ = its width.'},
     ]}},
-    {'h3': 'The empirical relationship'},
-    {'fbox': {'h': 'Mean, median and mode', 'rows': [
-      {'lb': 'Stated as a difference',
-       'tex': '\\text{Mean} - \\text{Mode} = 3(\\text{Mean} - \\text{Median})'},
-      {'lb': 'Rearranged for the mode',
-       'tex': '\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}'},
-    ]}},
+    {'h3': 'Relationship among mean, median and mode'},
+    {'ul': [
+      'Approximately **equal** in a Normal distribution.',
+      '**Mean $>$ Median $>$ Mode** — right- (positively) skewed distribution.',
+      '**Mean $<$ Median $<$ Mode** — left- (negatively) skewed distribution.',
+    ]},
     {'h3': 'Measures of partition — quartiles, deciles, percentiles'},
     {'fbox': {'h': 'Quantiles for grouped data — one formula, three fractions of $N$', 'rows': [
       {'lb': 'Quartile $k$ ($k = 1, 2, 3$)',
@@ -480,8 +474,6 @@ CH = {
   {'lb': 'Step deviation method',
    'tex': '\\bar{x} = A + \\left(\\frac{\\sum fu}{\\sum f}\\right) c, '
           '\\quad u = \\frac{x - A}{c}'},
-  {'lb': 'Geometric mean', 'tex': 'GM = \\sqrt[n]{x_1 x_2 \\cdots x_n}'},
-  {'lb': 'Harmonic mean', 'tex': 'HM = \\frac{n}{\\sum \\frac{1}{x}}'},
   {'lb': 'Median, ungrouped ($n$ odd)',
    'tex': '\\text{Median} = x_{\\left(\\frac{n+1}{2}\\right)}'},
   {'lb': 'Median, ungrouped ($n$ even)',
@@ -490,8 +482,6 @@ CH = {
    'tex': '\\text{Median} = L + \\left(\\frac{\\frac{N}{2} - CF}{f_m}\\right) c'},
   {'lb': 'Mode, grouped',
    'tex': '\\text{Mode} = L + \\left(\\frac{\\Delta_1}{\\Delta_1 + \\Delta_2}\\right) c'},
-  {'lb': 'Empirical relationship',
-   'tex': '\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}'},
   {'lb': 'Quartile $k$', 'tex': 'Q_k = L + \\left(\\frac{\\frac{kN}{4} - CF}{f_q}\\right) c'},
   {'lb': 'Decile $k$', 'tex': 'D_k = L + \\left(\\frac{\\frac{kN}{10} - CF}{f_d}\\right) c'},
   {'lb': 'Percentile $k$',
@@ -502,7 +492,8 @@ CH = {
  ],
  'focus':
    'Guaranteed marks in both sections. Section A asks for a mean, median or mode from a small '
-   'grouped table, or applies the empirical relationship. Section B often asks for a full set of '
+   'grouped table, or for the skew direction from a mean/median/mode comparison. Section B '
+   'often asks for a full set of '
    'measures from one distribution and then for the standard deviation from the same table, so '
    'set the table up once with columns for $f$, $x$, $fx$, $fx^2$ and cumulative $f$ and use it '
    'throughout. The single most common error is using class limits where boundaries are required.',
@@ -521,12 +512,12 @@ CH = {
     'w': 'Sum the values and divide by how many there are.',
     'calc': '\\bar{x} = \\frac{15 + 17 + 14 + 16 + 18}{5} = \\frac{80}{5} = 16',
     'src': 'Chapter 2.1', 'sec': '2.1'},
-   {'q': 'A distribution has a mean of 48 and a median of 45. Using the empirical relationship, '
-         'the mode is approximately',
-    'o': ['39', '42', '46.5', '51', '54'],
-    'a': 0,
-    'w': 'Apply Mode = 3 Median − 2 Mean.',
-    'calc': '\\text{Mode} = 3(45) - 2(48) = 135 - 96 = 39',
+   {'q': 'A distribution has Mean $= 48$, Median $= 45$ and Mode $= 39$. This distribution is',
+    'o': ['symmetrical (Normal)', 'right- (positively) skewed', 'left- (negatively) skewed',
+          'bimodal', 'impossible to classify from this information'],
+    'a': 1,
+    'w': 'Mean $>$ Median $>$ Mode ($48 > 45 > 39$) is the signature of a right-skewed '
+         'distribution.',
     'src': 'Chapter 2.3', 'sec': '2.3'},
    {'q': 'For a distribution with total frequency 50, the cumulative frequency traced on the ogive '
          'to give the 70th percentile is',
@@ -549,12 +540,12 @@ CH = {
     'w': 'The arithmetic mean uses every observation, so a single very large or very small value '
          'pulls it. The median and mode are positional and are unaffected.',
     'src': 'Chapter 2.3', 'sec': '2.3'},
-   {'q': 'For any set of positive numbers that are not all equal, the correct ordering is',
-    'o': ['$\\bar{x} < GM < HM$', '$HM < GM < \\bar{x}$', '$GM < HM < \\bar{x}$',
-          '$\\bar{x} < HM < GM$', 'they are always equal'],
-    'a': 1,
-    'w': 'The harmonic mean is smallest, the arithmetic mean largest, with the geometric mean '
-         'between them. Equality holds only when every value is the same.',
+   {'q': 'Using the assumed mean method with $A = 25$, a distribution gives $\\sum fd = -130$ '
+         'and $\\sum f = 40$. The arithmetic mean is',
+    'o': ['21.75', '28.25', '25.00', '3.25', '-3.25'],
+    'a': 0,
+    'w': 'Add the correction term $\\sum fd / \\sum f$ to the assumed mean $A$.',
+    'calc': '\\bar{x} = 25 + \\frac{-130}{40} = 25 - 3.25 = 21.75',
     'src': 'Chapter 2.1', 'sec': '2.1'},
    {'q': 'A grouped distribution has classes 5 – 9, 10 – 14, 15 – 19, … The lower class '
          'boundary of the class 15 – 19, for use in the median and mode formulas, is',

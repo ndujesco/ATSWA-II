@@ -1,238 +1,227 @@
 CH = {
  'n': 9,
- 't': 'Profit or Loss Based on Cost or Selling Price',
- 'brief': 'Mark-up and margin and the conversion between them, trade and cash discounts, '
-          'commission, and the use of a margin to reconstruct cost of sales.',
+ 't': 'Profit or Loss, Based on Sales',
+ 'brief': 'Cost price, selling price, profit and loss percentages (all on cost price), '
+          'discounting, and the marked-price relationship.',
  'outcomes': [
-   'Distinguish mark-up (on cost) from margin (on selling price)',
-   'Convert a mark-up to a margin and back',
-   'Compute selling price, cost and profit from any one of them plus a percentage',
-   'Apply trade and cash discounts in the right order',
-   'Use a gross profit percentage to reconstruct cost of sales or closing inventory',
+   'Understand the meaning of cost price, selling price, profit and loss',
+   'Calculate profit and loss percentages',
+   'Understand the concept of discounting and its calculation',
+   'Understand the concept of marked price and its calculation',
+   'Understand the relationship among selling price, discount and marked price',
  ],
  'secs': [
-  {'n': '9.1', 't': 'Mark-up and margin', 'b': [
-    {'p': 'Both express the same profit as a percentage, but of different bases. Getting the '
-          'base wrong is the single largest source of lost marks in this chapter and in the '
-          'inventory questions of Financial Accounting.'},
-    {'def': {'t': 'Mark-up',
-             'd': 'Gross profit as a percentage of **cost**. A 25% mark-up on a cost of ₦100 '
-                  'gives a profit of ₦25 and a selling price of ₦125.'}},
-    {'def': {'t': 'Margin',
-             'd': 'Gross profit as a percentage of **selling price**. A 25% margin on a selling '
-                  'price of ₦100 gives a profit of ₦25 and a cost of ₦75.'}},
-    {'fbox': {'h': 'The relationships', 'rows': [
-      {'lb': 'Mark-up', 'tex': 'm = \\frac{\\text{Gross profit}}{\\text{Cost}} \\times 100'},
-      {'lb': 'Margin', 'tex': 'g = \\frac{\\text{Gross profit}}{\\text{Sales}} \\times 100'},
-      {'lb': 'Mark-up to margin', 'tex': 'g = \\frac{m}{1 + m}'},
-      {'lb': 'Margin to mark-up', 'tex': 'm = \\frac{g}{1 - g}'},
-      {'lb': 'From cost', 'tex': '\\text{Selling price} = \\text{Cost} \\times (1 + m)'},
-      {'lb': 'From selling price', 'tex': '\\text{Cost} = \\text{Selling price} \\times (1 - g)'},
+  {'n': '9.1', 't': 'Introduction', 'b': [
+    {'p': 'The branch of business mathematics that deals with the study of profit and loss in a '
+          'business transaction is known as **profit and loss**. In the accounting world, the '
+          'summary of a business\'s trading transactions showing whether it made a profit or '
+          'loss during a period of account is found in the profit and loss account.'},
+  ]},
+
+  {'n': '9.2', 't': 'Concept of profit and loss', 'b': [
+    {'p': 'The fundamental objective of any business is to make a profit. **Profit** is the '
+          'amount gained by selling an item for more than its cost price; **loss** is the '
+          'amount lost by selling an item for less than its cost price. The final selling price '
+          'of a product is the difference between the marked price and the discount.'},
+    {'def': {'t': 'Cost price (CP)', 'd': 'the price at which an item is purchased by the '
+             'buyer, or the amount paid by a consumer to the wholesaler/manufacturer to acquire '
+             'goods. It splits into **fixed cost** (constant, does not vary) and **variable '
+             'cost** (varies with other factors and the number of units).'}},
+    {'def': {'t': 'Selling price (SP)', 'd': 'the price at which an item is sold to the buyer '
+             'by the seller — in effect, the sum of the cost price and the target gross '
+             'profit.'}},
+    {'p': 'When SP is greater than CP, the seller has made a **profit**; when SP is less than '
+          'CP, the seller has incurred a **loss**. The comparison of CP with SP is always made '
+          'first to know which applies.'},
+    {'fbox': {'h': 'Profit and loss percentage (both on cost price)', 'rows': [
+      {'lb': 'Profit %', 'tex': '\\text{Profit\\%} = \\frac{\\text{SP} - \\text{CP}}{\\text{CP}} '
+             '\\times 100 = \\frac{\\text{Profit}}{\\text{CP}} \\times 100'},
+      {'lb': 'Loss %', 'tex': '\\text{Loss\\%} = \\frac{\\text{CP} - \\text{SP}}{\\text{CP}} '
+             '\\times 100 = \\frac{\\text{Loss}}{\\text{CP}} \\times 100'},
     ]}},
-    {'key': 'The arithmetic trick is to think in **thirds and quarters of a common whole**. A '
-            'mark-up of $\\frac{1}{4}$ on cost means cost 4, profit 1, sales 5 — so the margin '
-            'is $\\frac{1}{5}$. A margin of $\\frac{1}{4}$ means sales 4, profit 1, cost 3 — so '
-            'the mark-up is $\\frac{1}{3}$. Set out cost : profit : sales and read off whichever '
-            'ratio is wanted.'},
-    {'eg': {'t': 'Converting between the two', 'q': [
-      {'p': 'Goods costing ₦40,000 are sold at a mark-up of 25%. Determine the selling price, '
-            'the gross profit and the gross margin.'}],
+    {'note': 'If an item is sold at a profit of $x\\%$, then $\\text{SP} = (100+x)\\%$ of CP; if '
+             'sold at a loss of $x\\%$, then $\\text{SP} = (100-x)\\%$ of CP.'},
+    {'eg': {'tag': 'Study text', 't': 'Example 9.1 — a straight profit', 'open': True, 'q': [
+      {'p': 'A petty trader bought an article for ₦1,500 and sold it for ₦1,800. Calculate the '
+            'trader\'s profit or loss.'}],
       'a': [
-      {'tex': '\\text{Gross profit} = 40{,}000 \\times 0.25 = ₦10{,}000'},
-      {'tex': '\\text{Selling price} = 40{,}000 + 10{,}000 = ₦50{,}000'},
-      {'tex': '\\text{Margin} = \\frac{10{,}000}{50{,}000} \\times 100 = 20\\%'},
-      {'p': 'Or directly from the formula:'},
-      {'tex': 'g = \\frac{m}{1+m} = \\frac{0.25}{1.25} = 0.20 = 20\\%'},
-      {'note': 'A 25% mark-up is **not** a 25% margin. The mark-up is always the larger of the '
-               'two, because it is a percentage of the smaller base.'}]}},
+      {'p': 'Since SP $>$ CP, the trader made a profit.'},
+      {'tex': '\\text{Profit} = \\text{SP} - \\text{CP} = 1{,}800 - 1{,}500 = \\text{\\textnaira}300'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 9.2 — percentage loss', 'open': True, 'q': [
+      {'p': 'A fruit seller bought 5 baskets of oranges at ₦1,200 per basket and sold them for '
+            '₦1,100 per basket. Calculate the percentage loss.'}],
+      'a': [
+      {'tex': '\\text{CP} = 5 \\times 1{,}200 = \\text{\\textnaira}6{,}000 \\qquad '
+              '\\text{SP} = 5 \\times 1{,}100 = \\text{\\textnaira}5{,}500'},
+      {'p': 'Since CP $>$ SP, a loss was incurred:'},
+      {'tex': '\\text{Loss} = 6{,}000 - 5{,}500 = 500 \\qquad '
+              '\\text{Loss\\%} = \\frac{500}{6{,}000} \\times 100 = 8.33\\%'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 9.3 — selling price from a loss percentage',
+      'open': True, 'q': [
+      {'p': 'A motor spare-parts dealer buys a cooling fan for ₦12,000 and sells it at a loss of '
+            '7.5%. What is the selling price?'}],
+      'a': [
+      {'p': 'CP is 100%; SP is $(100 - 7.5)\\% = 92.5\\%$ of CP.'},
+      {'tex': '\\text{SP} = \\frac{\\text{CP} \\times 92.5}{100} = '
+              '\\frac{12{,}000 \\times 92.5}{100} = \\text{\\textnaira}11{,}100'}]}},
   ]},
 
-  {'n': '9.2', 't': 'Working back from sales', 'b': [
-    {'p': 'Questions frequently give the sales figure and the margin and ask for the cost of '
-          'sales — the standard route to a closing inventory figure when the inventory itself '
-          'has been destroyed or not counted.'},
-    {'eg': {'t': 'Reconstructing cost of sales', 'q': [
-      {'p': 'Sales for the year were ₦2,400,000 and the gross margin was 30%. Compute the gross '
-            'profit, the cost of sales, and the equivalent mark-up on cost.'}],
+  {'n': '9.3', 't': 'Discounting', 'b': [
+    {'def': {'t': 'Discount', 'd': 'a reduction given on the marked price of an item, usually '
+             'to attract customers and increase sales; also given to clear out old inventory '
+             'and create space for new stock, or to encourage early payment.'}},
+    {'p': 'The price of a product **after** a discount is always taken as the selling price of '
+          'the product.'},
+    {'fbox': {'h': 'Discount formulas', 'rows': [
+      {'lb': 'Discount from a rate', 'tex': '\\text{Discount} = \\text{Discount\\%} \\text{ of '
+             'Marked price}'},
+      {'lb': 'Discount from prices', 'tex': '\\text{Discount} = \\text{Marked price (MP)} - '
+             '\\text{Actual selling price (SP)}'},
+      {'lb': 'Discount percentage', 'tex': '\\text{Discount\\%} = \\frac{\\text{Discount}}'
+             '{\\text{Marked price}} \\times 100'},
+    ]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 9.4 — discount percentage from prices',
+      'open': True, 'q': [
+      {'p': 'A bicycle marked at ₦25,000 was sold for ₦23,000. Calculate the discount percent '
+            'given by the seller.'}],
       'a': [
-      {'tex': '\\text{Gross profit} = 2{,}400{,}000 \\times 0.30 = ₦720{,}000'},
-      {'tex': '\\text{Cost of sales} = 2{,}400{,}000 - 720{,}000 = ₦1{,}680{,}000'},
-      {'p': 'Or directly: $\\text{Cost} = \\text{Sales} \\times (1 - g) = 2{,}400{,}000 '
-            '\\times 0.70 = ₦1{,}680{,}000$.'},
-      {'tex': 'm = \\frac{720{,}000}{1{,}680{,}000} \\times 100 = 42.86\\%'},
-      {'p': 'Which agrees with $m = \\dfrac{g}{1-g} = \\dfrac{0.30}{0.70} = 0.4286$.'}]}},
-    {'eg': {'t': 'Estimating inventory lost in a fire', 'q': [
-      {'p': 'A trader\'s warehouse was destroyed by fire on 30 September. The records show '
-            'opening inventory ₦300,000, purchases to the date of the fire ₦1,500,000 and sales '
-            '₦1,800,000. The gross margin has consistently been 25%. Goods with a salvage value '
-            'of ₦60,000 were recovered. Compute the amount of the insurance claim.'}],
+      {'tex': '\\text{Discount} = 25{,}000 - 23{,}000 = \\text{\\textnaira}2{,}000'},
+      {'tex': '\\text{Discount\\%} = \\frac{2{,}000}{25{,}000} \\times 100 = 8\\%'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 9.5 — discount amount from a rate', 'open': True,
+      'q': [
+      {'p': 'A wedding gown marked at ₦45,000 was sold at a discount of 15%. Calculate the '
+            'discount given.'}],
       'a': [
-      {'p': 'Cost of sales is found from the margin:'},
-      {'tex': '\\text{Cost of sales} = 1{,}800{,}000 \\times (1 - 0.25) = ₦1{,}350{,}000'},
-      {'p': 'Goods available for sale, then the balancing figure for inventory at the date of '
-            'the fire:'},
-      {'stmt': {'t': 'Inventory at date of fire', 'rows': [
-        ['Opening inventory', 300000],
-        ['Add: Purchases', 1500000],
-        ['Goods available for sale@sub', 1800000],
-        ['Less: Cost of sales', -1350000],
-        ['Inventory at 30 September@tot', 450000],
-      ]}},
-      {'stmt': {'t': 'Insurance claim', 'rows': [
-        ['Inventory destroyed', 450000],
-        ['Less: Salvage value recovered', -60000],
-        ['Amount of claim@tot', 390000],
-      ]}},
-      {'note': 'The coincidence that goods available for sale (₦1,800,000) equals sales '
-               '(₦1,800,000) is accidental and does not affect the method. The logic is always: '
-               'opening + purchases − cost of sales = closing.'}]}},
+      {'tex': '\\text{Discount} = \\frac{15 \\times 45{,}000}{100} = \\text{\\textnaira}6{,}750'}]}},
   ]},
 
-  {'n': '9.3', 't': 'Discounts and commission', 'b': [
-    {'ul': [
-      '**Trade discount** — a reduction off the list price given to a customer in the trade. It '
-      'is deducted before the invoice is raised and never appears in the accounts.',
-      '**Cash (settlement) discount** — a reduction for prompt payment, applied to the invoice '
-      'value, i.e. **after** trade discount.',
-      '**Quantity discount** — a trade discount whose rate rises with the order size.',
-    ]},
-    {'warn': 'The two discounts are applied in sequence, not added. A 15% trade discount '
-             'followed by a 2.5% cash discount is a total reduction of $1 - (0.85 \\times '
-             '0.975) = 17.125\\%$, not 17.5%.'},
-    {'eg': {'t': 'Trade then cash discount', 'q': [
-      {'p': 'Goods with a list price of ₦500,000 are sold subject to a trade discount of 15%. '
-            'The customer pays within the settlement period and takes a further cash discount '
-            'of 2.5%. Compute the invoice value and the amount actually received.'}],
+  {'n': '9.4', 't': 'Marked price', 'b': [
+    {'def': {'t': 'Marked price (MP)', 'd': 'the price quoted on a product, appearing as a '
+             'label — also called market price, retail price or list price. It is the price on '
+             'which discount is normally given, and is set at a specific percentage above the '
+             'cost price. It may or may not equal the selling price: if a product is sold at '
+             'its marked price, MP and SP are the same and no discount was offered.'}},
+    {'tex': '\\text{Marked price (MP)} = \\text{Selling price (SP)} + \\text{Discount}',
+     'tag': '(9.1)'},
+    {'eg': {'tag': 'Study text', 't': 'Example 9.6 — marked price from a selling price and a '
+      'discount rate', 'open': True, 'q': [
+      {'p': 'A dress is sold for ₦9,000 after a discount of 10% is allowed. Calculate its '
+            'marked price.'}],
       'a': [
-      {'tex': '\\text{Invoice value} = 500{,}000 \\times (1 - 0.15) = ₦425{,}000'},
-      {'tex': '\\text{Cash received} = 425{,}000 \\times (1 - 0.025) = ₦414{,}375'},
-      {'p': 'The cash discount of ₦10,625 is a charge in profit or loss; the trade discount of '
-            '₦75,000 is recorded nowhere — sales are simply recognised at ₦425,000.'}]}},
-    {'eg': {'t': 'Commission on a sliding scale', 'q': [
-      {'p': 'A sales representative earns commission of 5% on the first ₦2,000,000 of sales and '
-            '8% on sales above that figure. Compute the commission on sales of ₦3,500,000.'}],
+      {'p': 'Let MP be the marked price. $\\text{MP} = \\text{SP} + 10\\%$ of MP:'},
+      {'tex': '\\text{MP} = 9{,}000 + 0.1\\,\\text{MP} \\;\\Rightarrow\\; 0.9\\,\\text{MP} = '
+              '9{,}000 \\;\\Rightarrow\\; \\text{MP} = \\frac{9{,}000}{0.9} = '
+              '\\text{\\textnaira}10{,}000'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 9.7 — marked price from a cost, a profit rate '
+      'and a discount rate', 'open': True, 'q': [
+      {'p': 'A retailer allows a discount of 15% on a product to customers and still makes a '
+            'profit of 25%. Calculate the marked price of the product, which costs the retailer '
+            '₦2,500.'}],
       'a': [
-      {'tex': '\\text{On the first } ₦2{,}000{,}000: \\quad 2{,}000{,}000 \\times 0.05 '
-              '= ₦100{,}000'},
-      {'tex': '\\text{On the excess } ₦1{,}500{,}000: \\quad 1{,}500{,}000 \\times 0.08 '
-              '= ₦120{,}000'},
-      {'tex': '\\text{Total commission} = 100{,}000 + 120{,}000 = ₦220{,}000'},
-      {'note': 'A sliding scale applies each rate only to its own band. Applying 8% to the whole '
-               '₦3,500,000 would give ₦280,000 and is the standard trap.'}]}},
+      {'p': 'First find the selling price the 25% profit requires:'},
+      {'tex': '\\text{SP} = \\frac{\\text{CP}(100+25)}{100} = \\frac{2{,}500 \\times 125}{100} '
+              '= \\text{\\textnaira}3{,}125'},
+      {'p': 'That SP must also equal marked price less a 15% discount, $\\text{SP} = 0.85\\,'
+            '\\text{MP}$:'},
+      {'tex': '\\text{MP} = \\frac{3{,}125}{0.85} = \\text{\\textnaira}3{,}676.47'}]}},
   ]},
 
-  {'n': '9.4', 't': 'Losses', 'b': [
-    {'p': 'A loss is handled identically, with a negative profit. Note that a given percentage '
-          'loss on cost is a **larger** percentage of selling price, because the selling price '
-          'is now the smaller figure — the reverse of the profit case.'},
-    {'eg': {'t': 'Loss on cost and on selling price', 'q': [
-      {'p': 'Goods costing ₦80,000 are sold at a loss of 12.5% on cost. Compute the selling '
-            'price and express the loss as a percentage of selling price.'}],
-      'a': [
-      {'tex': '\\text{Loss} = 80{,}000 \\times 0.125 = ₦10{,}000'},
-      {'tex': '\\text{Selling price} = 80{,}000 - 10{,}000 = ₦70{,}000'},
-      {'tex': '\\text{Loss on selling price} = \\frac{10{,}000}{70{,}000} \\times 100 '
-              '= 14.29\\%'}]}},
-  ]},
-
-  {'n': '9.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
-    {'note': 'The study text works **profit % and loss % on cost price** throughout (not on '
-             'sales). "Mark-up on cost" in §9.1 is the same thing as the study text\'s '
-             '"profit %"; "margin" is the sales-based version this chapter adds for the '
-             'inventory questions of Financial Accounting.'},
+  {'n': '9.5', 't': 'Worksheet summary — every term and formula', 'b': [
     {'h3': 'Section-by-section checklist'},
     {'ol': [
-      '**§9.1 Mark-up and margin** — mark-up $m=\\text{GP}/\\text{Cost}$; margin '
-      '$g=\\text{GP}/\\text{Sales}$; convert with $g=m/(1+m)$ and $m=g/(1-g)$; the mark-up is '
-      '**always the larger** number since it is a percentage of the smaller base (cost). Trick: '
-      'set out cost : profit : sales as a whole-number ratio and read off whichever is wanted.',
-      '**§9.2 Working back from sales** — reconstructs cost of sales (and so closing inventory) '
-      'from sales and a **margin**: $\\text{Cost of sales}=\\text{Sales}\\times(1-g)$. Standard '
-      'use: estimating inventory destroyed by fire/theft via '
-      '$\\text{Opening}+\\text{Purchases}-\\text{Cost of sales}=\\text{Closing}$, then deduct '
-      'any salvage value recovered to reach the insurance claim.',
-      '**§9.3 Discounts and commission** — trade discount is deducted *before* invoicing and '
-      '**never enters the accounts**; cash (settlement) discount is a further reduction on the '
-      'invoiced amount for prompt payment, applied *after* trade discount — the two are applied '
-      'in **sequence** (multiplied), never added. A sliding-scale commission applies each rate '
-      'only to its own band, not the whole amount.',
-      '**§9.4 Losses** — handled as a negative profit; a given percentage **loss on cost** is a '
-      '**larger** percentage of selling price (the reverse of the profit case, because selling '
-      'price is now the smaller figure).',
+      '**§9.2 Concept of profit and loss** — CP and SP defined; profit if $\\text{SP}>\\text{CP}$, '
+      'loss if $\\text{SP}<\\text{CP}$; $\\text{Profit\\%}=(\\text{SP}-\\text{CP})/\\text{CP}'
+      '\\times100$, $\\text{Loss\\%}=(\\text{CP}-\\text{SP})/\\text{CP}\\times100$ — **both on '
+      'cost price**. At a profit of $x\\%$, $\\text{SP}=(100+x)\\%$ of CP; at a loss of $x\\%$, '
+      '$\\text{SP}=(100-x)\\%$ of CP.',
+      '**§9.3 Discounting** — a reduction on the marked price; '
+      '$\\text{Discount}=\\text{Discount\\%}\\times\\text{MP}=\\text{MP}-\\text{SP}$; '
+      '$\\text{Discount\\%}=\\text{Discount}/\\text{MP}\\times100$. The price after discount '
+      '**is** the selling price.',
+      '**§9.4 Marked price** — set at a percentage above cost; '
+      '$\\text{MP}=\\text{SP}+\\text{Discount}$. Where both a profit rate (on cost) and a '
+      'discount rate (on MP) are given, find SP from CP and the profit rate first, then MP from '
+      'SP and the discount rate.',
     ]},
     {'h3': 'All the terms'},
     {'ul': [
-      '**Cost price (CP)** — the price the buyer pays to acquire the item. Made up of **fixed '
-      'cost** (constant) and **variable cost** (varies with output / other factors).',
-      '**Selling price (SP)** — the price at which the item is actually sold; $= \\text{CP} + '
-      '\\text{target gross profit}$.',
-      '**Profit / gain** — the excess of SP over CP ($\\text{SP} > \\text{CP}$).',
-      '**Loss** — the shortfall of SP below CP ($\\text{SP} < \\text{CP}$).',
-      '**Profit % / loss %** — profit or loss as a percentage **of cost price**.',
-      '**Marked price (MP)** — the price labelled/quoted on the product; also called *market '
-      'price, retail price, list price*. Discount is calculated on this. Set at a percentage '
-      'above cost.',
-      '**Discount** — a rebate off the marked price to attract customers or clear old stock; '
-      'the price after discount **is** the selling price.',
-      '**Discount %** — discount as a percentage of the marked price.',
-      '**Mark-up** — gross profit as a percentage of **cost** (this chapter, §9.1).',
-      '**Margin** — gross profit as a percentage of **selling price** (this chapter, §9.1).',
-      '**Trade discount** — a reduction off list price for the trade, deducted *before* '
-      'invoicing. **Cash (settlement) discount** — a reduction for prompt payment, on the '
-      'invoiced amount.',
+      '**Cost price (CP)** — the price paid to acquire the item; **fixed cost** (constant) plus '
+      '**variable cost** (varies with output/other factors).',
+      '**Selling price (SP)** — the price the item is actually sold for; $=\\text{CP}+$ target '
+      'gross profit.',
+      '**Profit** — the excess of SP over CP. **Loss** — the shortfall of SP below CP.',
+      '**Profit % / Loss %** — profit or loss as a percentage of **cost price**.',
+      '**Discount** — a rebate off the marked price.',
+      '**Marked price (MP)** — the labelled price, also called market price, retail price or '
+      'list price; the base on which discount is calculated.',
     ]},
-    {'h3': 'A. Profit and loss (study text — all on cost price)'},
-    {'fbox': {'h': 'Profit / loss', 'rows': [
-      {'lb': 'Profit', 'tex': '\\text{Profit} = \\text{SP} - \\text{CP} \\quad (\\text{SP} > '
-              '\\text{CP})'},
-      {'lb': 'Loss', 'tex': '\\text{Loss} = \\text{CP} - \\text{SP} \\quad (\\text{CP} > '
-              '\\text{SP})'},
-      {'lb': 'Profit percentage',
-       'tex': '\\text{Profit\\%} = \\dfrac{\\text{SP} - \\text{CP}}{\\text{CP}} \\times 100 '
-              '= \\dfrac{\\text{Profit}}{\\text{CP}} \\times 100'},
-      {'lb': 'Loss percentage',
-       'tex': '\\text{Loss\\%} = \\dfrac{\\text{CP} - \\text{SP}}{\\text{CP}} \\times 100 '
-              '= \\dfrac{\\text{Loss}}{\\text{CP}} \\times 100'},
-      {'lb': 'SP from CP and profit $x\\%$',
-       'tex': '\\text{SP} = \\dfrac{(100 + x)}{100} \\times \\text{CP}'},
-      {'lb': 'SP from CP and loss $x\\%$',
-       'tex': '\\text{SP} = \\dfrac{(100 - x)}{100} \\times \\text{CP}'},
-      {'lb': 'CP from SP and profit $x\\%$',
-       'tex': '\\text{CP} = \\dfrac{100}{100 + x} \\times \\text{SP}'},
-      {'lb': 'CP from SP and loss $x\\%$',
-       'tex': '\\text{CP} = \\dfrac{100}{100 - x} \\times \\text{SP}'},
+    {'fbox': {'h': 'Every formula in this chapter', 'rows': [
+      {'lb': 'Profit', 'tex': '\\text{Profit} = \\text{SP} - \\text{CP}'},
+      {'lb': 'Loss', 'tex': '\\text{Loss} = \\text{CP} - \\text{SP}'},
+      {'lb': 'Profit %', 'tex': '\\text{Profit\\%} = \\dfrac{\\text{SP}-\\text{CP}}{\\text{CP}} '
+             '\\times 100'},
+      {'lb': 'Loss %', 'tex': '\\text{Loss\\%} = \\dfrac{\\text{CP}-\\text{SP}}{\\text{CP}} '
+             '\\times 100'},
+      {'lb': 'SP from CP and profit $x\\%$', 'tex': '\\text{SP} = \\dfrac{(100+x)}{100}\\,'
+             '\\text{CP}'},
+      {'lb': 'SP from CP and loss $x\\%$', 'tex': '\\text{SP} = \\dfrac{(100-x)}{100}\\,'
+             '\\text{CP}'},
+      {'lb': 'Discount', 'tex': '\\text{Discount} = \\text{MP} - \\text{SP} = '
+             '\\text{Discount\\%} \\times \\text{MP}'},
+      {'lb': 'Discount %', 'tex': '\\text{Discount\\%} = \\dfrac{\\text{Discount}}{\\text{MP}} '
+             '\\times 100'},
+      {'lb': 'Marked price identity', 'tex': '\\text{MP} = \\text{SP} + \\text{Discount}'},
     ]}},
-    {'h3': 'B. Discount and marked price'},
-    {'fbox': {'h': 'Discount / marked price', 'rows': [
-      {'lb': 'Discount from a rate', 'tex': '\\text{Discount} = \\text{Discount\\%} \\times '
-              '\\text{MP}'},
-      {'lb': 'Discount from prices', 'tex': '\\text{Discount} = \\text{MP} - \\text{SP}'},
-      {'lb': 'Discount percentage',
-       'tex': '\\text{Discount\\%} = \\dfrac{\\text{Discount}}{\\text{MP}} \\times 100'},
-      {'lb': 'The key identity', 'tex': '\\text{MP} = \\text{SP} + \\text{Discount}'},
-      {'lb': 'SP after a discount rate $d\\%$',
-       'tex': '\\text{SP} = \\text{MP}\\,(1 - d) = \\dfrac{(100 - d)}{100} \\times \\text{MP}'},
-      {'lb': 'MP from SP and discount rate $d\\%$',
-       'tex': '\\text{MP} = \\dfrac{\\text{SP}}{1 - d}'},
-      {'lb': 'MP giving profit $x\\%$ **and** discount $d\\%$ on cost $C$',
-       'tex': '\\text{MP} = \\dfrac{C\\,(1 + \\tfrac{x}{100})}{1 - \\tfrac{d}{100}} '
-              '\\quad \\left(\\text{since } \\text{SP} = C(1+\\tfrac{x}{100}) = '
-              '\\text{MP}(1-\\tfrac{d}{100})\\right)'},
-    ]}},
-    {'h3': 'C. Mark-up and margin (§9.1)'},
-    {'fbox': {'h': 'Mark-up / margin', 'rows': [
-      {'lb': 'Mark-up (on cost)',
-       'tex': 'm = \\dfrac{\\text{Gross profit}}{\\text{Cost}}'},
-      {'lb': 'Margin (on sales)',
-       'tex': 'g = \\dfrac{\\text{Gross profit}}{\\text{Sales}}'},
-      {'lb': 'Mark-up → margin', 'tex': 'g = \\dfrac{m}{1 + m}'},
-      {'lb': 'Margin → mark-up', 'tex': 'm = \\dfrac{g}{1 - g}'},
-      {'lb': 'Selling price from cost', 'tex': '\\text{SP} = \\text{Cost}\\,(1 + m)'},
-      {'lb': 'Cost from selling price', 'tex': '\\text{Cost} = \\text{SP}\\,(1 - g)'},
-      {'lb': 'Cost of sales identity',
-       'tex': '\\text{Opening inventory} + \\text{Purchases} - \\text{Closing inventory} '
-              '= \\text{Cost of sales}'},
-    ]}},
+  ]},
+
+  {'n': '9.6', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'A storekeeper bought a used car for ₦90,000 and sold it for ₦81,000. What is the '
+        'storekeeper\'s profit or loss %? (A) 9% loss  (B) 9% profit  (C) 10% loss  '
+        '(D) 10% profit  (E) 15% profit',
+        'Which of the following represents the relationship among marked price (MP), selling '
+        'price (SP) and discount (D)? (A) SP = MP − D  (B) MP = SP − D  (C) SP = MP + D  '
+        '(D) MP = SP − D  (E) D = MP − SP',
+        'A fruit seller sold a basket of oranges for ₦3,000 at a profit of 10%. What is the cost '
+        'price of the basket of oranges? (A) ₦300  (B) ₦700  (C) ₦2,700  (D) ₦2,727  (E) ₦3,300',
+        'The formula to find the selling price (SP) of an item, given the cost price (CP) and '
+        'the loss% (say $x\\%$), is (A) $\\text{SP}=(100+x)\\%$ of CP  '
+        '(B) $\\text{SP}=(100-x)\\%$ of CP  (C) $\\text{SP}=x\\%$ of CP  '
+        '(D) $\\text{SP}=\\text{CP}+(100-x)\\%$ of CP  '
+        '(E) $\\text{SP}=\\text{CP}-(100+x)\\%$ of CP',
+        'A dozen crates of egg at marked price ₦8,000 are available at a discount of 10%. How '
+        'many crates of eggs can be bought for ₦2,400? (A) 2  (B) 4  (C) 6  (D) 8  (E) 10',
+      ]},
+      {'p': 'Short answer:'},
+      {'ol': [
+        'The marked price of an item is also known as …',
+        'A trader is said to have incurred a loss by selling a product if the selling price is '
+        '… the cost price.',
+        'Discount is the reduction given on the … of an item.',
+        'The selling price of a product is the difference between the … and … .',
+        'When the marked price of a product equals its selling price then … was given on the '
+        'product.',
+      ]}],
+      'a': [
+      {'ol': [
+        '**C — 10% loss.** $(90{,}000-81{,}000)/90{,}000 \\times 100 = 10\\%$.',
+        '**A — SP = MP − D.**',
+        '**E — ₦3,300.** $\\text{CP} = \\dfrac{100}{110}\\times3{,}000 = 2{,}727.27$ — the study '
+        'text\'s own printed answer is E; the more precise arithmetic gives ₦2,727 (option D), '
+        'so double-check this one against your own working.',
+        '**B — $\\text{SP}=(100-x)\\%$ of CP.**',
+        '**B — 4.** Discounted price per dozen $= 8{,}000\\times0.9 = 7{,}200$, i.e. ₦600/crate; '
+        '$2{,}400\\div600=4$ crates.',
+      ]},
+      {'ol': [
+        'Market price, retail price or list price.',
+        'Less than.',
+        'Marked price (market price / retail price / list price).',
+        'Marked price and discount (in that order).',
+        'No discount.',
+      ]}]}},
   ]},
  ],
  'formulas': [
@@ -249,106 +238,70 @@ CH = {
   {'lb': 'Discount %',
    'tex': '\\text{Discount\\%} = \\frac{\\text{Discount}}{\\text{MP}} \\times 100'},
   {'lb': 'Marked price identity', 'tex': '\\text{MP} = \\text{SP} + \\text{Discount}'},
-  {'lb': 'SP after discount $d\\%$', 'tex': '\\text{SP} = \\text{MP}\\,(1 - d)'},
-  {'lb': 'MP from SP and discount $d\\%$', 'tex': '\\text{MP} = \\frac{\\text{SP}}{1 - d}'},
-  {'lb': 'Mark-up (on cost)', 'tex': 'm = \\frac{\\text{GP}}{\\text{Cost}}'},
-  {'lb': 'Margin (on sales)', 'tex': 'g = \\frac{\\text{GP}}{\\text{Sales}}'},
-  {'lb': 'Mark-up to margin', 'tex': 'g = \\frac{m}{1+m}'},
-  {'lb': 'Margin to mark-up', 'tex': 'm = \\frac{g}{1-g}'},
-  {'lb': 'Selling price from cost', 'tex': 'S = C(1 + m)'},
-  {'lb': 'Cost from selling price', 'tex': 'C = S(1 - g)'},
-  {'lb': 'Cost of sales identity',
-   'tex': '\\text{Opening} + \\text{Purchases} - \\text{Closing} = \\text{Cost of sales}'},
  ],
  'focus':
-   'One or two Section A marks nearly every diet, usually a straight mark-up-to-margin '
-   'conversion or a selling price from a cost. The material reappears in Financial Accounting '
-   'in incomplete-records and fire-claim questions, so the reconstruction of cost of sales from '
-   'a margin is worth more practice than its own chapter weighting suggests.',
+   'One or two Section A marks nearly every diet: a straight profit/loss % on cost, a discount '
+   'percentage, or working back from a stated profit and discount rate to find the marked price '
+   '(Example 9.7\'s pattern — find SP from CP first, then MP from SP). Always confirm a stated '
+   'percentage is on **cost price**, since this chapter never expresses profit or loss on sales.',
  'errors': [
-   'Treating a mark-up percentage as though it were a margin, or the reverse.',
-   'Adding trade and cash discount percentages instead of applying them in sequence.',
-   'Applying the top commission rate to the whole of sales rather than to the excess band.',
-   'Recording trade discount in the ledger; it never enters the accounts.',
-   'Forgetting that a percentage loss on cost is a larger percentage of selling price.',
+   'Expressing profit or loss as a percentage of selling price instead of cost price.',
+   'Confusing marked price with selling price when no discount is stated.',
+   'Applying the discount rate to the selling price instead of the marked price.',
+   'In a combined profit-then-discount question, solving for MP before first finding SP from CP.',
  ],
  'quiz': {
   'mcq': [
-   {'q': 'Goods costing ₦60,000 are sold at a mark-up of 20%. The selling price is',
+   {'q': 'Goods costing ₦60,000 are sold at a profit of 20% on cost. The selling price is',
     'o': ['₦48,000', '₦72,000', '₦75,000', '₦12,000', '₦50,000'],
     'a': 1,
-    'w': 'Mark-up is a percentage of cost, so add 20% of ₦60,000 to the cost.',
-    'calc': 'S = 60{,}000 \\times 1.20 = ₦72{,}000',
-    'src': 'Chapter 9.1', 'sec': '9.1'},
-   {'q': 'A mark-up of 25% on cost is equivalent to a margin on selling price of',
-    'o': ['25%', '20%', '33⅓%', '30%', '75%'],
-    'a': 1,
-    'w': 'Cost 4, profit 1, sales 5, so the profit is one fifth of sales.',
-    'calc': 'g = \\frac{m}{1+m} = \\frac{0.25}{1.25} = 0.20 = 20\\%',
-    'src': 'Chapter 9.1', 'sec': '9.1'},
-   {'q': 'Sales are ₦900,000 and the gross margin is 20%. The cost of sales is',
-    'o': ['₦180,000', '₦720,000', '₦750,000', '₦1,080,000', '₦680,000'],
-    'a': 1,
-    'w': 'Cost of sales is the complement of the margin applied to sales.',
-    'calc': '\\text{Cost of sales} = 900{,}000 \\times 0.80 = ₦720{,}000',
+    'w': 'Profit % in this chapter is always on cost price, so add 20% of ₦60,000 to the cost.',
+    'calc': '\\text{SP} = 60{,}000 \\times 1.20 = \\text{\\textnaira}72{,}000',
     'src': 'Chapter 9.2', 'sec': '9.2'},
-   {'q': 'A margin of 20% on selling price corresponds to a mark-up on cost of',
-    'o': ['20%', '25%', '16⅔%', '80%', '125%'],
-    'a': 1,
-    'w': 'Sales 5, profit 1, cost 4, so the profit is one quarter of cost.',
-    'calc': 'm = \\frac{g}{1-g} = \\frac{0.20}{0.80} = 0.25 = 25\\%',
-    'src': 'Chapter 9.1', 'sec': '9.1'},
-   {'q': 'Goods listed at ₦200,000 carry a trade discount of 10% and a cash discount of 5%. '
-         'The amount received on prompt payment is',
-    'o': ['₦170,000', '₦171,000', '₦180,000', '₦190,000', '₦185,000'],
-    'a': 1,
-    'w': 'Apply the discounts in sequence: trade discount first to give the invoice value, then '
-         'cash discount on that value.',
-    'calc': '200{,}000 \\times 0.90 \\times 0.95 = 180{,}000 \\times 0.95 = ₦171{,}000',
-    'src': 'Chapter 9.3', 'sec': '9.3'},
    {'q': 'An article costing ₦2,500 is sold for ₦2,000. The loss as a percentage of cost is',
     'o': ['25%', '20%', '15%', '10%', '80%'],
     'a': 1,
-    'w': 'The loss is ₦500; expressed on cost the base is ₦2,500.',
-    'calc': '\\frac{500}{2{,}500} \\times 100 = 20\\%',
+    'w': 'The loss is ₦500, expressed on the cost price of ₦2,500.',
+    'calc': '\\text{Loss\\%} = \\frac{500}{2{,}500} \\times 100 = 20\\%',
+    'src': 'Chapter 9.2', 'sec': '9.2'},
+   {'q': 'A television marked at ₦150,000 is sold for ₦127,500. The discount percentage is',
+    'o': ['15%', '17.6%', '22.5%', '12.5%', '10%'],
+    'a': 0,
+    'w': 'Discount = MP − SP, expressed as a percentage of MP.',
+    'calc': '\\text{Discount\\%} = \\frac{150{,}000-127{,}500}{150{,}000} \\times 100 = 15\\%',
+    'src': 'Chapter 9.3', 'sec': '9.3'},
+   {'q': 'A shirt is sold for ₦6,000 after a discount of 20% is allowed on the marked price. '
+         'The marked price was',
+    'o': ['₦7,200', '₦7,500', '₦6,500', '₦4,800', '₦8,000'],
+    'a': 1,
+    'w': '$\\text{MP} = \\text{SP} + 20\\%$ of MP, so $0.8\\,\\text{MP} = \\text{SP}$.',
+    'calc': '\\text{MP} = \\frac{6{,}000}{0.8} = \\text{\\textnaira}7{,}500',
+    'src': 'Chapter 9.4', 'sec': '9.4'},
+   {'q': 'A retailer allows a discount of 10% on an item and still makes a profit of 15% on a '
+         'cost of ₦4,000. The marked price is approximately',
+    'o': ['₦4,600', '₦5,111', '₦5,111.11', '₦4,400', '₦5,000'],
+    'a': 2,
+    'w': 'First find SP from CP and the profit rate, then MP from SP and the discount rate.',
+    'calc': '\\text{SP} = 4{,}000 \\times 1.15 = 4{,}600; \\quad '
+            '\\text{MP} = \\frac{4{,}600}{0.9} = \\text{\\textnaira}5{,}111.11',
     'src': 'Chapter 9.4', 'sec': '9.4'},
   ],
   'theory': [
-   {'q': 'Distinguish between mark-up and margin, and explain why the distinction matters when '
-         'the closing inventory of a business has to be estimated rather than counted.',
-    'marks': 8,
+   {'q': 'A trader buys goods for ₦18,000 and wishes to mark them up so that, after allowing a '
+         'discount of 10% on the marked price, he still makes a profit of 25% on cost. '
+         'Calculate (a) the required selling price and (b) the marked price.',
+    'marks': 6,
     'a': [
-      {'h4': 'The distinction'},
-      {'p': 'Both express gross profit as a percentage, but they use different denominators.'},
-      {'table': {'align': 'lll', 'head': ['', 'Mark-up', 'Margin'], 'rows': [
-        ['Base', 'Cost', 'Selling price'],
-        ['Formula', '$\\text{GP} \\div \\text{Cost}$', '$\\text{GP} \\div \\text{Sales}$'],
-        ['On GP ₦25, cost ₦100', '25%', '20%'],
-        ['Relative size', 'Always the larger', 'Always the smaller'],
-      ]}},
-      {'p': 'Because cost is smaller than selling price whenever a profit is made, the same '
-            'naira of profit is always a larger percentage of cost than of sales. The two are '
-            'linked by:'},
-      {'tex': 'g = \\frac{m}{1+m} \\qquad\\text{and}\\qquad m = \\frac{g}{1-g}'},
-      {'h4': 'Why it matters for estimated inventory'},
-      {'p': 'Closing inventory has to be estimated where there has been a fire or theft, where '
-            'records are incomplete, or where an interim figure is needed without a physical '
-            'count. The method relies on the cost of sales identity:'},
-      {'tex': '\\text{Opening inventory} + \\text{Purchases} - \\text{Closing inventory} '
-              '= \\text{Cost of sales}'},
-      {'p': 'rearranged to give closing inventory as the balancing figure. Cost of sales itself '
-            'is not known directly; it is derived from sales using the profit percentage. If '
-            'the percentage is a **margin**, cost of sales is $\\text{Sales} \\times (1 - g)$. '
-            'If it is a **mark-up**, cost of sales is $\\text{Sales} \\div (1 + m)$.'},
-      {'p': 'Using the wrong one produces a wrong cost of sales, and because closing inventory '
-            'is the balancing figure the whole of that error lands on the inventory. On sales '
-            'of ₦1,000,000 with a stated 25%, treating a mark-up as a margin gives cost of '
-            'sales of ₦750,000 instead of ₦800,000 — an inventory figure overstated by '
-            '₦50,000, and an insurance claim or a set of accounts overstated by the same '
-            'amount.'},
-      {'note': 'When a question says only "profit of 25% on sales" or "25% on cost", the '
-               'preposition is doing all the work. Underline it before starting the '
-               'computation.'}],
-    'src': 'Chapter 9.1–9.2', 'sec': '9.1'},
+      {'h4': '(a) Selling price required'},
+      {'tex': '\\text{SP} = \\text{CP} \\times \\frac{100+25}{100} = 18{,}000 \\times 1.25 = '
+              '\\text{\\textnaira}22{,}500'},
+      {'h4': '(b) Marked price'},
+      {'p': 'The selling price is the marked price less the 10% discount, so '
+            '$\\text{SP} = 0.9\\,\\text{MP}$:'},
+      {'tex': '\\text{MP} = \\frac{22{,}500}{0.9} = \\text{\\textnaira}25{,}000'},
+      {'note': 'Always find the required **selling price** from cost and profit% first; only '
+               'then work back to the **marked price** using the discount%, exactly as in the '
+               'study text\'s own Example 9.7.'}],
+    'src': 'Chapter 9.4', 'sec': '9.4'},
   ]},
 }

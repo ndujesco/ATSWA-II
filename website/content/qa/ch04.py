@@ -7,37 +7,38 @@ CH = {
    'Draw and interpret a scatter diagram',
    "Compute Pearson's product moment correlation coefficient",
    "Compute Spearman's rank correlation coefficient, including with tied ranks",
-   'Interpret the coefficient of determination',
-   'Fit a least squares regression line and use it to predict',
+   'Fit a simple linear regression line by the graphical method and by the algebraic '
+   '(least squares) method, and use it to predict',
  ],
  'secs': [
   {'n': '4.1', 't': 'Correlation', 'b': [
-    {'p': 'Correlation measures the **strength and direction** of the linear relationship between '
-          'two variables. It ranges from $-1$ to $+1$.'},
-    {'table': {'head': ['Value of $r$', 'Interpretation'], 'align': 'll', 'rows': [
-      ['$+1$', 'Perfect positive linear relationship'],
-      ['$+0.7$ to $+0.99$', 'Strong positive'],
-      ['$+0.4$ to $+0.69$', 'Moderate positive'],
-      ['$0$', 'No linear relationship'],
-      ['$-0.4$ to $-0.69$', 'Moderate negative'],
-      ['$-1$', 'Perfect negative linear relationship'],
-    ]}},
-    {'warn': '**Correlation is not causation.** A high $r$ between two series may reflect a causal '
-             'link either way, a common third cause, or pure coincidence (a spurious correlation). '
-             'Saying so is worth a mark whenever an interpretation is asked for.'},
+    {'p': 'Two variables are **correlated** or related when a change in one results in a change '
+          'in the other. Correlation measures the **degree of association** between them. The '
+          'degree of correlation $r$ is a real number between $-1$ and $+1$ inclusive.'},
+    {'ul': [
+      'Positive correlation — $0 < r < 1$ (the two variables move in the same direction, e.g. '
+      'income and expenditure of a family).',
+      'Perfect positive correlation — $r = 1$.',
+      'Negative correlation — $-1 < r < 0$ (the variables move in opposite directions — e.g. '
+      'number of labourers and time to complete a job; demand and price of a commodity).',
+      'Perfect negative correlation — $r = -1$.',
+      'Zero correlation — $r = 0$ (no fixed pattern between the two variables).',
+    ]},
+    {'note': 'Interpretation, by how close $r$ is to $\\pm 1$: $r=+0.92$ is good/strong positive '
+             'correlation; $r=-0.96$ is good/strong negative correlation; $r=-0.12$ or $r=+0.26$ '
+             'is poor or non-existent correlation; $r=0$ is no correlation at all. The same scale '
+             'is used to read Spearman\'s $R$.'},
     {'fbox': {'h': 'Correlation coefficients', 'rows': [
       {'lb': "Pearson's product moment correlation coefficient",
        'tex': 'r = \\frac{n\\sum xy - \\sum x \\sum y}'
               '{\\sqrt{\\left[n\\sum x^2 - (\\sum x)^2\\right]\\left[n\\sum y^2 - '
               '(\\sum y)^2\\right]}}',
-       'nt': 'For measured (interval or ratio) data.'},
+       'nt': 'For measured (interval or ratio) data. Also written as covariance$(x,y)$ over '
+             '$\\sqrt{\\text{Var}(x)\\,\\text{Var}(y)}$.'},
       {'lb': "Spearman's rank correlation coefficient",
        'tex': 'r_s = 1 - \\frac{6\\sum d^2}{n(n^2 - 1)}',
        'nt': '$d$ is the difference between the two ranks of the same item. For ranked or '
              'ordinal data.'},
-      {'lb': 'Coefficient of determination',
-       'tex': 'r^2',
-       'nt': 'The proportion of the variation in $y$ explained by the variation in $x$.'},
     ]}},
     {'eg': {'t': "Pearson's correlation coefficient", 'q': [
       {'p': 'Compute $r$ for the following data.'},
@@ -58,9 +59,8 @@ CH = {
       {'tex': '= \\frac{555 - 450}{\\sqrt{(275 - 225)(1150 - 900)}} '
               '= \\frac{105}{\\sqrt{50 \\times 250}} = \\frac{105}{\\sqrt{12500}}'},
       {'tex': '= \\frac{105}{111.803} = 0.939'},
-      {'p': 'A **strong positive** linear relationship. The coefficient of determination is '
-            '$r^2 = 0.882$, so about **88%** of the variation in $y$ is explained by the '
-            'variation in $x$.'}]}},
+      {'p': 'Since $r=0.939$ is close to $+1$, this is a **good, strong positive correlation** '
+            'between $x$ and $y$.'}]}},
     {'eg': {'t': "Spearman's rank correlation", 'q': [
       {'p': 'Two judges ranked five contestants as follows. Compute the rank correlation.'},
       {'table': {'align': 'lrrrrr',
@@ -89,21 +89,53 @@ CH = {
   ]},
 
   {'n': '4.2', 't': 'Regression', 'b': [
-    {'p': 'Regression fits the straight line $y = a + bx$ that minimises the sum of the squared '
-          'vertical distances from the points to the line — the **least squares** line.'},
+    {'p': 'Where correlation measures the *degree* of association, regression looks at the '
+          '*nature* of the relationship between $x$ and $y$ — expressed as a mathematical model '
+          'called the **regression equation**, $y = a + bx$, where $a$ is the intercept on the '
+          '$y$-axis and $b$ (the regression coefficient) is the slope, indicating the type of '
+          'correlation between the variables. Unlike correlation, regression **requires** the '
+          'independent and dependent variables to be distinguished.'},
+    {'h3': 'Two methods of fitting the line'},
+    {'h4': '(a) Graphical method'},
+    {'ol': [
+      'draw the scatter diagram for the data;',
+      'draw a straight line through two points on the diagram — one of the points should be '
+      '$(\\bar{x}, \\bar{y})$;',
+      'read the constants $a$ and $b$ off the graph, where $a$ is the intercept on the $y$-axis '
+      'and $b = \\dfrac{\\text{vertical length}}{\\text{horizontal length}}$ of the line drawn;',
+      'state the regression line $y = a + bx$.',
+    ]},
+    {'eg': {'tag': 'Study text', 't': 'Example 4.8/4.9 — graphical and algebraic methods agree',
+      'open': True, 'q': [
+      {'p': 'Find the relationship between $y$ and $x$: $x=1,2,3,4,5$; $y=3,5,7,9,11$ — first '
+            'graphically, then algebraically.'}],
+      'a': [
+      {'p': 'Graphically, a line through the points has intercept $a=1$ and slope '
+            '$b=\\dfrac{11-5}{5-2}=\\dfrac{6}{3}=2$, giving $y=1+2x$.'},
+      {'table': {'align': 'rrrr', 'head': ['$x$', '$y$', '$xy$', '$x^2$'], 'rows': [
+        ['1', '3', '3', '1'], ['2', '5', '10', '4'], ['3', '7', '21', '9'],
+        ['4', '9', '36', '16'], ['5', '11', '55', '25'],
+        ['15', '35', '125', '55', '@tot'],
+      ]}},
+      {'tex': 'b = \\frac{n\\sum xy - \\sum x \\sum y}{n\\sum x^2 - (\\sum x)^2} = '
+              '\\frac{5(125) - (15)(35)}{5(55) - 15^2} = \\frac{625-525}{275-225} = '
+              '\\frac{100}{50} = 2'},
+      {'tex': 'a = \\bar{y} - b\\bar{x} = \\frac{35}{5} - 2\\left(\\frac{15}{5}\\right) = 7 - 6 = 1'},
+      {'note': 'Both methods give $y = 1 + 2x$ — as they must, since they fit the same data.'}]}},
+    {'h4': '(b) Algebraic (least squares) method'},
+    {'p': 'The normal equations, derived by the method of least squares, are:'},
+    {'tex': 'an + b\\sum x = \\sum y \\qquad\\text{and}\\qquad a\\sum x + b\\sum x^2 = \\sum xy'},
+    {'p': 'Solving these simultaneously for the line of $y$ on $x$:'},
     {'fbox': {'h': 'Least squares regression of $y$ on $x$', 'rows': [
       {'lb': 'Slope (regression coefficient)',
        'tex': 'b = \\frac{n\\sum xy - \\sum x \\sum y}{n\\sum x^2 - (\\sum x)^2}'},
       {'lb': 'Intercept',
        'tex': 'a = \\bar{y} - b\\bar{x} = \\frac{\\sum y - b\\sum x}{n}'},
       {'lb': 'The fitted line', 'tex': 'y = a + bx'},
-      {'lb': 'Relationship with correlation',
-       'tex': 'r = \\pm\\sqrt{b_{yx} \\cdot b_{xy}}',
-       'nt': '$r$ and $b$ always carry the same sign.'},
     ]}},
     {'p': 'In $y = a + bx$, $y$ is the **dependent** variable (the one being predicted) and $x$ '
-          'the **independent** or explanatory variable. The line always passes through the point '
-          '$(\\bar{x}, \\bar{y})$, which is a useful check.'},
+          'the **independent** or explanatory variable. It is important to distinguish these — '
+          'this is not necessary for correlation.'},
     {'eg': {'t': 'Fitting a regression line', 'q': [
       {'p': 'Fit the line $y = a + bx$ to the data:'},
       {'table': {'align': 'lrrr', 'head': ['', '', '', ''], 'rows': [
@@ -126,14 +158,49 @@ CH = {
       {'note': 'A **negative** $b$ means the line slopes downward: as $x$ rises, $y$ falls. The '
                'magnitude of $b$ is the change in $y$ for a one-unit change in $x$ — a steep '
                'upward line has a large positive gradient.'}]}},
-    {'h3': 'Prediction and its limits'},
-    {'ul': [
-      '**Interpolation** — predicting within the range of the observed $x$ values. Reasonably safe.',
-      '**Extrapolation** — predicting outside that range. Unreliable, because there is no evidence '
-      'the relationship continues to hold.',
-      'The line of $y$ on $x$ is **not** the same as the line of $x$ on $y$; use the one that '
-      'predicts the variable the question asks for.',
-    ]},
+    {'h3': 'Regression of $x$ on $y$'},
+    {'p': 'Sections above fit $y$ on $x$ (predicting $y$ from a given $x$). Sometimes the '
+          'reverse is wanted: $x = a\' + b\'y$, treating $y$ as independent and $x$ as '
+          'dependent.'},
+    {'fbox': {'h': 'Least squares regression of $x$ on $y$', 'rows': [
+      {'lb': "Slope", 'tex': "b' = \\frac{n\\sum xy - \\sum x \\sum y}{n\\sum y^2 - (\\sum y)^2}"},
+      {'lb': 'Intercept', 'tex': "a' = \\bar{x} - b'\\bar{y}"},
+    ]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 4.10/4.11 — regression of $y$ on $x$ AND of $x$ '
+      'on $y$, from the same data', 'open': True, 'q': [
+      {'p': 'A trader\'s income ($x$, ₦\'000) and expenditure ($y$, ₦\'000) over 10 months:'},
+      {'table': {'align': 'lrrrrrrrrrr', 'head': ['', '1', '2', '3', '4', '5', '6', '7', '8',
+        '9', '10'], 'rows': [
+        ['$x$', '8', '18', '52', '38', '26', '60', '40', '50', '82', '75'],
+        ['$y$', '2', '4', '5', '7', '9', '11', '13', '15', '20', '23'],
+      ]}},
+      {'p': 'Fit (a) the regression line of $y$ on $x$, and (b) the regression line of $x$ on '
+            '$y$.'}],
+      'a': [
+      {'p': 'From the raw data: $n=10$, $\\sum x=449$, $\\sum y=109$, $\\sum xy=6143$, '
+            '$\\sum x^2=25{,}261$, $\\sum y^2=1{,}619$.'},
+      {'h4': '(a) $y$ on $x$'},
+      {'tex': 'b = \\frac{10(6143) - (449)(109)}{10(25{,}261) - 449^2} = '
+              '\\frac{61{,}430 - 48{,}941}{252{,}610 - 201{,}601} = \\frac{12{,}489}{51{,}009} '
+              '= 0.2448'},
+      {'tex': '\\bar{x} = 44.9, \\quad \\bar{y} = 10.9 \\quad\\Rightarrow\\quad '
+              'a = 10.9 - 0.2448(44.9) = 10.9 - 10.9915 = -0.0915'},
+      {'p': 'Regression line of $y$ on $x$: $\\;y = -0.0915 + 0.2448x$.'},
+      {'h4': '(b) $x$ on $y$'},
+      {'tex': "b' = \\frac{10(6143) - (449)(109)}{10(1{,}619) - 109^2} = "
+              "\\frac{12{,}489}{16{,}190 - 11{,}881} = \\frac{12{,}489}{4{,}309} = 2.898"},
+      {'tex': "a' = 44.9 - 2.898(10.9) = 44.9 - 31.59 = 13.31"},
+      {'p': 'Regression line of $x$ on $y$: $\\;x = 13.31 + 2.898y$.'},
+      {'warn': 'Comparing the two lines shows they have **nothing in common** — regression of '
+               '$y$ on $x$ is definitely different from regression of $x$ on $y$; one is not '
+               'simply a rearrangement of the other.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 4.13 — predicting from a fitted line',
+      'open': True, 'q': [
+      {'p': 'Using $y = -0.09 + 0.2448x$ from the example above, estimate expenditure when '
+            'income is ₦29,000.'}],
+      'a': [
+      {'tex': 'y = -0.09 + 0.2448(29) = -0.09 + 7.10 = 7.01'},
+      {'p': 'Estimated expenditure $\\approx$ **₦7,010**.'}]}},
   ]},
 
   {'n': '4.3', 't': 'Worksheet summary — definitions and every formula', 'b': [

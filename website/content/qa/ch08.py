@@ -61,81 +61,69 @@ CH = {
 
   {'n': '8.3', 't': 'Choosing the test statistic', 'b': [
     {'fbox': {'h': 'Test statistics', 'rows': [
-      {'lb': 'Mean, $\\sigma$ known or $n \\ge 30$',
-       'tex': 'z = \\frac{\\bar{x} - \\mu}{\\sigma / \\sqrt{n}}'},
-      {'lb': 'Mean, $\\sigma$ unknown and $n < 30$',
-       'tex': 't = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}}, \\quad \\nu = n - 1'},
+      {'lb': 'Mean, large sample ($n > 30$)',
+       'tex': 'z_{cal} = \\frac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}}',
+       'nt': 'If $\\sigma$ is not given, use the sample standard deviation $s$ for large '
+             'samples.'},
+      {'lb': 'Mean, small sample ($n < 30$)',
+       'tex': 't_{cal} = \\frac{\\bar{x} - \\mu_0}{s / \\sqrt{n}}, \\quad s^2 = '
+              '\\frac{\\sum(x-\\bar x)^2}{n-1}, \\quad \\nu = n - 1'},
       {'lb': 'Proportion',
-       'tex': 'z = \\frac{p - \\pi}{\\sqrt{\\dfrac{\\pi(1-\\pi)}{n}}}'},
-      {'lb': 'Difference of two means',
-       'tex': 'z = \\frac{\\bar{x}_1 - \\bar{x}_2}'
-              '{\\sqrt{\\dfrac{\\sigma_1^2}{n_1} + \\dfrac{\\sigma_2^2}{n_2}}}'},
+       'tex': 'z_{cal} = \\frac{p - P_0}{\\sqrt{\\dfrac{P_0(1-P_0)}{n}}}, \\quad p = \\frac{x}{n}'},
     ]}},
     {'p': 'The denominator in every case is the **standard error** — the standard deviation of '
           'the sampling distribution of the statistic. The test statistic is simply "how many '
           'standard errors is the sample result from the claimed value".'},
-    {'warn': 'In the proportion test the standard error uses $\\pi$, the **hypothesised** '
-             'proportion, not the sample proportion $p$. Under $H_0$ we assume $\\pi$ is true, '
-             'so it is $\\pi$ that generates the sampling distribution.'},
+    {'warn': 'In the proportion test the standard error uses $P_0$, the **hypothesised** '
+             'proportion, not the sample proportion $p$. Under $H_0$ we assume $P_0$ is true, '
+             'so it is $P_0$ that generates the sampling distribution.'},
   ]},
 
   {'n': '8.4', 't': 'Worked tests', 'b': [
-    {'eg': {'t': 'Two-tailed test of a mean (large sample)', 'q': [
-      {'p': 'A manufacturer claims that its bags of cement weigh 500 kg on average. A random '
-            'sample of 64 bags has a mean weight of 496 kg with a standard deviation of 12 kg. '
-            'Test at the 5% level whether the mean weight differs from the claim.'}],
+    {'eg': {'tag': 'Study text', 't': 'Example 8.1 — two-tailed z-test of a mean (large sample)',
+      'open': True, 'q': [
+      {'p': 'In a university, a sample of 225 male students had a computed average height of '
+            '184.0 cm, while the population mean height was 178.5 cm with a standard deviation '
+            'of 120 cm. Show whether the sample mean is significantly different from the '
+            'population mean, at the 5% significance level.'}],
       'a': [
-      {'p': '**Step 1.** The word "differs" gives a two-tailed test.'},
-      {'tex': 'H_0: \\mu = 500 \\qquad H_1: \\mu \\ne 500'},
-      {'p': '**Step 2.** At $\\alpha = 0.05$, two-tailed, the critical values are '
-            '$z = \\pm 1.96$.'},
-      {'p': '**Step 3.** $n = 64 \\ge 30$, so use $z$ with $s$ in place of $\\sigma$:'},
-      {'tex': 'z = \\frac{\\bar{x} - \\mu}{s/\\sqrt{n}} = \\frac{496 - 500}{12/\\sqrt{64}} '
-              '= \\frac{-4}{12/8} = \\frac{-4}{1.5} = -2.67'},
-      {'p': '**Step 4.** $|-2.67| = 2.67 > 1.96$, so the statistic falls in the critical '
-            'region.'},
-      {'p': '**Step 5.** Reject $H_0$. There is significant evidence at the 5% level that the '
-            'mean weight of the bags differs from 500 kg; on this sample they are '
-            '**underweight**.'},
-      {'note': 'Note how the conclusion names the cement, not just $H_0$. At the 1% level the '
-               'critical value is $\\pm 2.58$ and $2.67$ still exceeds it, so the conclusion '
-               'would be unchanged — worth a sentence if the question asks you to comment.'}]}},
+      {'tex': 'H_0: \\mu = \\bar{x} \\; (178.5 = 184.0) \\qquad H_1: \\mu \\ne \\bar{x}'},
+      {'tex': 'z_{cal} = \\frac{184.0 - 178.5}{120/\\sqrt{225}} = \\frac{5.5}{120/15} '
+              '= \\frac{5.5}{8} = 0.6875'},
+      {'p': 'Table value of $z$ at the 5% level (two-tailed) $= 1.96$.'},
+      {'p': 'Since $z_{cal} < z_{tab}$ ($0.6875 < 1.96$), do not reject $H_0$: there is no '
+            'significant difference between the sample mean and the population mean.'}]}},
 
-    {'eg': {'t': 'Small sample: the t test', 'q': [
-      {'p': 'A supplier claims that its cable has a mean breaking strain of 50 kg. A sample of '
-            '16 lengths gives a mean of 51.2 kg with a standard deviation of 3.2 kg. Test at '
-            'the 5% level whether the breaking strain differs from the claim.'}],
+    {'eg': {'tag': 'Study text', 't': 'Example 8.2 — one-tailed t-test of a mean (small sample)',
+      'open': True, 'q': [
+      {'p': 'SAO, a manufacturing company, believes the average number of items sold per '
+            'worker per week is 11; the company secretary thinks the true value is higher. A '
+            'random sample of 11 workers sold: 13, 4, 17, 9, 3, 20, 16, 12, 8, 18, 12 items. '
+            'Set up a suitable hypothesis and test it at the 5% level.'}],
       'a': [
-      {'tex': 'H_0: \\mu = 50 \\qquad H_1: \\mu \\ne 50'},
-      {'p': '$\\sigma$ is unknown and $n = 16 < 30$, so use $t$ with '
-            '$\\nu = 16 - 1 = 15$ degrees of freedom. From tables, '
-            '$t_{0.025,\\,15} = \\pm 2.131$.'},
-      {'tex': 't = \\frac{51.2 - 50}{3.2/\\sqrt{16}} = \\frac{1.2}{3.2/4} '
-              '= \\frac{1.2}{0.8} = 1.50'},
-      {'p': '$1.50 < 2.131$, so the statistic is **not** in the critical region.'},
-      {'p': 'Do not reject $H_0$. There is no significant evidence at the 5% level that the mean '
-            'breaking strain differs from 50 kg.'},
-      {'warn': 'Say "**do not reject** $H_0$", never "accept $H_0$". Failing to find evidence '
-               'against a claim is not proof that the claim is true — the sample may simply be '
-               'too small to detect a real difference.'}]}},
+      {'tex': 'H_0: \\mu = 11 \\qquad H_1: \\mu > 11, \\qquad \\alpha = 0.05, \\; n = 11'},
+      {'p': 'Since $n = 11 < 30$, use the $t$-test. $\\bar{x} = \\dfrac{132}{11} = 12$.'},
+      {'p': 'The sum of squared deviations $\\sum(x-\\bar x)^2 = 312$, so '
+            '$s^2 = \\dfrac{312}{11-1} = 31.2$, giving $s = 5.6$ (to 1 d.p.).'},
+      {'tex': 't_{cal} = \\frac{12 - 11}{5.6/\\sqrt{11}} = \\frac{1}{1.6884} \\approx 0.59'},
+      {'p': 'Table value of $t$ at the 5% level, one-tailed, $\\nu=10$, is $1.81$.'},
+      {'p': 'Since $t_{cal} < t_{tab}$ ($0.59 < 1.81$), do not reject (accept) $H_0$: there is '
+            'no significant difference between the sample mean and the population mean.'}]}},
 
-    {'eg': {'t': 'Test of a proportion (one-tailed)', 'q': [
-      {'p': 'A bank believes that more than 20% of its customers use the mobile app weekly. In '
-            'a random sample of 400 customers, 96 do so. Test the belief at the 5% level.'}],
+    {'eg': {'tag': 'Study text', 't': 'Example 8.4 — two-tailed z-test of a proportion',
+      'open': True, 'q': [
+      {'p': 'A demographer claims that pupils in all primary schools in a State constitute 30% '
+            'of the State\'s total population. A random sample of 400 pupils from the State\'s '
+            'primary schools shows 25% are primary-school pupils. Test the claim at the 5% '
+            'level.'}],
       'a': [
-      {'p': 'The belief to be supported is "more than 20%", so that becomes $H_1$ and the test '
-            'is one-tailed to the right.'},
-      {'tex': 'H_0: \\pi = 0.20 \\qquad H_1: \\pi > 0.20'},
-      {'p': 'Critical value at 5%, one-tailed: $z = 1.645$. Sample proportion:'},
-      {'tex': 'p = \\frac{96}{400} = 0.24'},
-      {'tex': 'z = \\frac{p - \\pi}{\\sqrt{\\dfrac{\\pi(1-\\pi)}{n}}} '
-              '= \\frac{0.24 - 0.20}{\\sqrt{\\dfrac{0.20 \\times 0.80}{400}}} '
-              '= \\frac{0.04}{\\sqrt{0.0004}} = \\frac{0.04}{0.02} = 2.00'},
-      {'p': '$2.00 > 1.645$, so reject $H_0$. There is significant evidence at the 5% level '
-            'that more than 20% of the bank\'s customers use the mobile app weekly.'},
-      {'note': 'At the 1% level the critical value is $2.33$ and $2.00 < 2.33$, so the evidence '
-               'would **not** be strong enough. The conclusion depends on the significance '
-               'level, which is exactly why it must be fixed in advance.'}]}},
+      {'tex': 'H_0: P_0 = P \\; (0.30 = 0.25) \\qquad H_1: P_0 \\ne P'},
+      {'tex': 'z_{cal} = \\frac{0.25 - 0.30}{\\sqrt{\\dfrac{0.30(1-0.30)}{400}}} '
+              '= \\frac{-0.05}{\\sqrt{0.000525}} = \\frac{-0.05}{0.0229} = -2.1834'},
+      {'p': 'Two-tailed test: at $\\alpha = 0.05$, $\\alpha/2 = 0.025$ and the table value of '
+            '$z = 1.96$.'},
+      {'p': 'Since $|z_{cal}| > z_{tab}$ ($2.1834 > 1.96$), $H_0$ is rejected: the data do not '
+            'support the demographer\'s claim.'}]}},
   ]},
 
   {'n': '8.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
@@ -154,13 +142,14 @@ CH = {
       'less than" → one-tailed.',
       '**§8.3 Choosing the test statistic** — $z=(\\bar{x}-\\mu)/(\\sigma/\\sqrt{n})$ when '
       '$\\sigma$ is known or $n\\ge30$; $t=(\\bar{x}-\\mu)/(s/\\sqrt{n})$, $\\nu=n-1$, when '
-      '$\\sigma$ is unknown and $n<30$; proportion $z=(p-\\pi)/\\sqrt{\\pi(1-\\pi)/n}$ — using '
-      'the **hypothesised** $\\pi$, not the sample $p$, in the standard error, since $H_0$ '
-      'assumes $\\pi$ true. The denominator is always the standard error of the statistic.',
-      '**§8.4 Worked tests** — three full worked examples (two-tailed mean/large sample, '
-      't-test/small sample, one-tailed proportion) demonstrating the five steps end to end. '
-      'Always say "**do not reject** $H_0$", never "accept $H_0$" — failing to find evidence '
-      'against a claim is not proof the claim is true.',
+      '$\\sigma$ is unknown and $n<30$; proportion $z_{cal}=(p-P_0)/\\sqrt{P_0(1-P_0)/n}$ — using '
+      'the **hypothesised** $P_0$, not the sample $p$, in the standard error, since $H_0$ '
+      'assumes $P_0$ true. The denominator is always the standard error of the statistic.',
+      '**§8.4 Worked tests** — the study text\'s own three worked examples: a two-tailed '
+      'z-test of a mean (large sample, university heights), a one-tailed t-test of a mean '
+      '(small sample, items sold per worker), and a two-tailed z-test of a proportion '
+      '(demographer\'s claim). Always say "**do not reject** $H_0$", never "accept $H_0$" — '
+      'failing to find evidence against a claim is not proof the claim is true.',
     ]},
     {'h3': 'All the terms'},
     {'ul': [
@@ -188,8 +177,8 @@ CH = {
       '**Two-tailed (two-sided) test** — $H_1$ is $\\mu \\neq \\mu_0$; $\\alpha$ is split, '
       '$\\alpha/2$ in each tail.',
       '**Degrees of freedom $\\nu$** — for the one-sample $t$-test, $\\nu = n - 1$.',
-      '**Large sample** — $n > 30$: use the $z$-test (normal). **Small sample** — $n \\le 30$ '
-      '(study text: $n < 30$): use the $t$-test.',
+      '**Large sample** — $n > 30$: use the $z$-test (normal). **Small sample** — $n < 30$: '
+      'use the $t$-test.',
       '**Sample proportion** — $p = x/n$, where $x$ items out of $n$ have the attribute; '
       '$P_0$ is the claimed population proportion.',
     ]},
@@ -220,7 +209,7 @@ CH = {
       {'lb': 'Large sample ($n > 30$), $z$-test',
        'tex': 'z_{cal} = \\dfrac{\\bar{x} - \\mu_0}{\\sigma/\\sqrt{n}}',
        'nt': 'If $\\sigma$ is unknown, use $s$ (large sample).'},
-      {'lb': 'Small sample ($n \\le 30$), $t$-test, $\\nu = n - 1$',
+      {'lb': 'Small sample ($n < 30$), $t$-test, $\\nu = n - 1$',
        'tex': 't_{cal} = \\dfrac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}'},
       {'lb': 'Sample mean', 'tex': '\\bar{x} = \\dfrac{\\sum x}{n}'},
       {'lb': 'Sample variance (with $n - 1$)',
@@ -238,9 +227,52 @@ CH = {
       {'lb': 'alternative form (using $p$ in the standard error)',
        'tex': 'z_{cal} = \\dfrac{p - P_0}{\\sqrt{\\dfrac{p(1 - p)}{n}}}'},
     ]}},
-    {'h3': 'C. Confidence interval for a mean'},
-    {'tex': '\\bar{x} \\pm z_{\\alpha/2}\\,\\dfrac{\\sigma}{\\sqrt{n}} \\qquad '
-            '(\\text{small sample: } \\bar{x} \\pm t_{\\alpha/2, \\, n-1}\\,\\dfrac{s}{\\sqrt{n}})'},
+  ]},
+
+  {'n': '8.6', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'Rejection of the null hypothesis when it should have been accepted is known as … '
+        '(A) Type II error  (B) Standard error  (C) Percentage error  (D) Hypothesis error  '
+        '(E) Type I error',
+        'Significance level is referred to as the risk of committing (A) Sampling error  '
+        '(B) Non-sampling error  (C) Bias error  (D) Type I error  (E) Type II error',
+        'Which of the following hypotheses is NOT for a one-tailed test? (A) $H_1: \\mu>\\mu_0$  '
+        '(B) $H_1: \\mu>\\mu_0$  (C) $H_1: \\mu<\\mu_0$  (D) $H_1: \\mu<\\mu_0$  '
+        '(E) $H_1: \\mu \\ne \\mu_0$',
+        '4 (SAQ). The test statistic for a large sample in the hypothesis testing of a mean '
+        'is …',
+        '5 (SAQ). The degrees of freedom for a $t$-test with $n$ samples is …',
+        '6 (SAQ). The test statistic for a proportion is …',
+      ]},
+      {'p': 'Use the following (a sample of 4 items, weights in kg: 6, 8, 12, 14) to answer '
+            'questions 7 to 10.'},
+      {'ol': [
+        '7 (SAQ). Determine the mean weight of the sample.',
+        '8 (SAQ). Determine the standard deviation of the sample.',
+        '9 (SAQ). If the mean weight on increasing the sample to 5 is 10 kg, what is the '
+        'weight of the fifth item?',
+        '10 (SAQ). If the population mean $\\mu = 9$, compute the test statistic for the data.',
+      ]}],
+      'a': [
+      {'ol': [
+        '**E** — Type I error.', '**D** — Type I error.', '**E** — $H_1: \\mu \\ne \\mu_0$ is '
+        'two-tailed; all the others are one-directional.',
+      ]},
+      {'tex': '4.\\; z_{cal} = \\frac{\\bar{x}-\\mu_0}{\\sigma/\\sqrt n} \\qquad '
+              '5.\\; \\nu = n-1 \\qquad '
+              '6.\\; z_{cal} = \\frac{p - P_0}{\\sqrt{P_0(1-P_0)/n}}'},
+      {'p': '7. Mean $= \\dfrac{6+8+12+14}{4} = 10$ kg.'},
+      {'tex': '8.\\; s = \\sqrt{\\frac{(6-10)^2+(8-10)^2+(12-10)^2+(14-10)^2}{4}} = '
+              '\\sqrt{\\frac{16+4+4+16}{4}} = \\sqrt{10} = 3.16'},
+      {'p': '9. $\\dfrac{6+8+12+14+x}{5}=10 \\Rightarrow 40+x=50 \\Rightarrow x=10$ kg.'},
+      {'tex': '10.\\; t_{cal} = \\frac{\\bar x - \\mu_0}{s/\\sqrt n} = \\frac{10-9}{3.16/\\sqrt9} '
+              '= \\frac{1}{1.053} = 0.95'},
+      {'note': 'The printed solution uses $n=9$ in this last step, though the sample described '
+               'in questions 7–9 has 4 (or 5) items — reproduced here exactly as printed in the '
+               'study text\'s own answer key; treat the method as the point of the question, and '
+               'verify the figure with your tutor.'}]}},
   ]},
  ],
  'formulas': [
@@ -255,8 +287,6 @@ CH = {
    'tex': 'z_{cal} = \\frac{p - P_0}{\\sqrt{P_0(1-P_0)/n}}'},
   {'lb': 'Standard error of the mean',
    'tex': '\\text{SE}(\\bar{x}) = \\frac{\\sigma}{\\sqrt{n}}'},
-  {'lb': 'Confidence interval for a mean',
-   'tex': '\\bar{x} \\pm z_{\\alpha/2}\\,\\frac{\\sigma}{\\sqrt{n}}'},
  ],
  'focus':
    'One or two Section A marks on the meaning of a Type I or Type II error, or on identifying '
@@ -266,7 +296,7 @@ CH = {
  'errors': [
    'Stating $H_0$ as an inequality; it is always an equality.',
    'Using 1.96 for a one-tailed test (it should be 1.645) or 1.645 for a two-tailed test.',
-   'Using the sample proportion $p$ instead of $\\pi$ inside the standard error.',
+   'Using the sample proportion $p$ instead of $P_0$ inside the standard error.',
    'Using $z$ when the sample is small and $\\sigma$ unknown, or forgetting $\\nu = n-1$.',
    'Writing "accept $H_0$" rather than "do not reject $H_0$".',
    'Stopping at "reject $H_0$" without a sentence in the context of the question.',

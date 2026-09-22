@@ -1,395 +1,469 @@
 CH = {
  'n': 12,
  't': 'Mathematics of Finance',
- 'brief': 'Simple and compound interest, arithmetic and geometric progressions, annuities and '
-          'perpetuities, sinking funds, amortisation, and the appraisal of capital projects by '
-          'net present value and internal rate of return.',
+ 'brief': 'Sequences and series (AP and GP), simple and compound interest applied to business, '
+          'and Net Present Value (NPV) and Internal Rate of Return (IRR).',
  'outcomes': [
-   'Compute simple and compound interest and the effective annual rate',
-   'Sum an arithmetic or geometric progression',
-   'Value an annuity and a perpetuity, in advance and in arrears',
-   'Compute a sinking fund instalment and prepare an amortisation schedule',
-   'Appraise a project using net present value',
-   'Estimate an internal rate of return by interpolation',
+   'Define sequences and series',
+   'Identify Arithmetic Progression (AP) and Geometric Progression (GP)',
+   'Find the nth term and sum of the first n terms of an AP and a GP',
+   'Understand simple interest and compound interest',
+   'Define and understand annuities',
+   'Calculate Present Value (PV), NPV and IRR',
+   'Apply all of the above to economic and business problems',
  ],
  'secs': [
-  {'n': '12.1', 't': 'Simple and compound interest', 'b': [
-    {'fbox': {'h': 'Interest', 'rows': [
-      {'lb': 'Simple interest', 'tex': 'I = Prt'},
-      {'lb': 'Amount, simple interest', 'tex': 'A = P(1 + rt)'},
-      {'lb': 'Compound amount', 'tex': 'A = P(1 + r)^{n}'},
-      {'lb': 'Compounded $m$ times a year',
-       'tex': 'A = P\\left(1 + \\frac{r}{m}\\right)^{mn}'},
-      {'lb': 'Effective annual rate',
-       'tex': 'i = \\left(1 + \\frac{r}{m}\\right)^{m} - 1'},
-      {'lb': 'Present value', 'tex': 'P = \\frac{A}{(1+r)^{n}} = A(1+r)^{-n}'},
-    ]}},
-    {'p': 'Under **simple interest** the interest each period is calculated on the original '
-          'principal only, so the amount grows linearly. Under **compound interest** interest '
-          'is added to the principal and itself earns interest, so the amount grows '
-          'geometrically. Over one period the two are identical; the gap widens with time.'},
-    {'eg': {'t': 'Simple against compound', 'q': [
-      {'p': '₦500,000 is invested for 5 years at 12% per annum. Compute the amount under '
-            '(a) simple interest and (b) interest compounded annually, and comment.'}],
-      'a': [
-      {'p': '**(a) Simple interest**'},
-      {'tex': 'I = Prt = 500{,}000 \\times 0.12 \\times 5 = ₦300{,}000'},
-      {'tex': 'A = 500{,}000 + 300{,}000 = ₦800{,}000'},
-      {'p': '**(b) Compound interest**'},
-      {'tex': 'A = P(1+r)^n = 500{,}000 (1.12)^5 = 500{,}000 \\times 1.762342 = ₦881{,}170.84'},
-      {'p': 'Compounding produces ₦81,170.84 more — the interest earned on interest. The gap '
-            'is not the rate but the reinvestment: at simple interest the ₦60,000 earned in '
-            'year 1 lies idle, while under compounding it earns 12% for the remaining four '
-            'years.'}]}},
-    {'eg': {'t': 'Nominal against effective rate', 'q': [
-      {'p': 'A bank quotes 18% per annum compounded quarterly. Compute the effective annual '
-            'rate.'}],
-      'a': [
-      {'tex': 'i = \\left(1 + \\frac{0.18}{4}\\right)^{4} - 1 = (1.045)^4 - 1'},
-      {'tex': '= 1.192519 - 1 = 0.192519 = 19.25\\% \\text{ per annum}'},
-      {'note': 'The **nominal** rate of 18% understates the true cost. Whenever two offers are '
-               'compounded at different frequencies, convert both to effective annual rates '
-               'before comparing them.'}]}},
+  {'n': '12.1', 't': 'Sequences and series', 'b': [
+    {'def': {'t': 'Sequence', 'd': 'a set of numbers that follow a definite pattern — e.g. '
+                  '7, 12, 17, 22, ... (each term is the one before it, plus 5), or 256, 64, 16, '
+                  '4, ... (each term is the one before it, divided by 4).'}},
+    {'def': {'t': 'Series', 'd': 'the sum obtained when the terms of a sequence are connected by '
+                  'plus or minus signs — e.g. $7+12+17+22+\\cdots$.'}},
   ]},
 
-  {'n': '12.2', 't': 'Progressions', 'b': [
-    {'fbox': {'h': 'Arithmetic and geometric progressions', 'rows': [
-      {'lb': 'AP: $n$th term', 'tex': 'T_n = a + (n-1)d'},
-      {'lb': 'AP: sum of $n$ terms',
-       'tex': 'S_n = \\frac{n}{2}\\big[2a + (n-1)d\\big] = \\frac{n}{2}(a + l)'},
-      {'lb': 'GP: $n$th term', 'tex': 'T_n = ar^{\\,n-1}'},
-      {'lb': 'GP: sum of $n$ terms',
-       'tex': 'S_n = \\frac{a(r^n - 1)}{r - 1}, \\quad r \\ne 1'},
-      {'lb': 'GP: sum to infinity',
-       'tex': 'S_\\infty = \\frac{a}{1-r}, \\quad |r| < 1'},
+  {'n': '12.2', 't': 'Arithmetic Progression (AP)', 'b': [
+    {'def': {'t': 'Arithmetic Progression', 'd': 'a sequence in which each term increases or '
+                  'decreases from the one before it by a constant number, called the **common '
+                  'difference** $d$. The first term is $a$.'}},
+    {'p': 'An AP has the general form $a,\\ a+d,\\ a+2d,\\ a+3d, \\ldots$, so the $n$th term is '
+          '$a+(n-1)d$.'},
+    {'fbox': {'h': 'Arithmetic Progression', 'rows': [
+      {'lb': '$n$th term', 'tex': 'T_n = a + (n-1)d'},
+      {'lb': 'Sum of the first $n$ terms',
+       'tex': 'S_n = \\frac{n}{2}\\{2a+(n-1)d\\} = \\frac{n}{2}(a+l)',
+       'nt': '$l$ is the last term.'},
     ]}},
-    {'key': 'An **AP** has a constant *difference* between terms — straight-line depreciation, '
-            'a salary rising by a fixed naira amount. A **GP** has a constant *ratio* — '
-            'reducing-balance depreciation, compound interest, a salary rising by a fixed '
-            'percentage. Deciding which model applies is usually worth more marks than the '
-            'summation itself.'},
-    {'eg': {'t': 'An arithmetic progression', 'q': [
-      {'p': 'An employee starts on ₦5,000,000 a year and receives an increase of ₦500,000 at '
-            'the end of each year. Compute the salary in the twelfth year and the total earned '
-            'over twelve years.'}],
+    {'eg': {'tag': 'Study text', 't': 'Example 12.1 — nth term, sum, and finding n', 'open': True,
+      'q': [
+      {'ol': [
+        'Find the 12th term of the AP $7, 13, 19, 25, \\ldots$',
+        'Find the difference between the 8th and 52nd terms of the AP $210, 205, 200, \\ldots$',
+        'Find the sum of the first 10 terms of the APs in (a) and (b).',
+        'How many terms of the series $15+18+21+\\cdots$ are needed to obtain a sum of 870?',
+      ]}],
       'a': [
-      {'p': 'Here $a = 5{,}000{,}000$, $d = 500{,}000$, $n = 12$ (in ₦ thousand for brevity: '
-            '$a = 5{,}000$, $d = 500$).'},
-      {'tex': 'T_{12} = a + (n-1)d = 5{,}000 + 11(500) = ₦10{,}500\\text{k}'},
-      {'tex': 'S_{12} = \\frac{12}{2}\\big[2(5{,}000) + 11(500)\\big] = 6(10{,}000 + 5{,}500) '
-              '= 6 \\times 15{,}500 = ₦93{,}000\\text{k}'},
-      {'p': 'The twelfth-year salary is **₦10.5 million** and total earnings over the period '
-            '**₦93 million**.'}]}},
-    {'eg': {'t': 'A geometric progression', 'q': [
-      {'p': 'A company deposits ₦100,000 at the end of each year for 10 years into an account '
-            'paying 10% per annum compound. Compute the accumulated sum.'}],
+      {'p': '**(a)** $a=7$, $d=6$, $n=12$: $T_{12}=7+(12-1)6=73$.'},
+      {'p': '**(b)** $a=210$, $d=-5$: $T_8=210+7(-5)=175$; $T_{52}=210+51(-5)=-45$. Difference '
+            '$=175-(-45)=220$.'},
+      {'p': '**(c)** For (a): $S_{10}=\\frac{10}{2}\\{2(7)+9(6)\\}=340$. For (b): '
+            '$S_{10}=\\frac{10}{2}\\{2(210)+9(-5)\\}=1{,}875$.'},
+      {'p': '**(d)** $a=15$, $d=3$, $S_n=870$: $870=\\frac{n}{2}\\{30+(n-1)3\\}$, which reduces '
+            'to $n^2+9n-580=0$, i.e. $(n-20)(n+29)=0$. Since $n$ cannot be negative, '
+            '$n=20$.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.2 — a salary and gratuity AP', 'open': True,
+      'q': [
+      {'p': 'Mr. Emeka earns ₦240,000 per annum with an annual constant increment of ₦25,000.'},
+      {'ol': [
+        'How much will his annual salary be in the eighth year?',
+        'What will his monthly salary be during the 15th year?',
+        'If he retires after 30 years, and his gratuity is 250% of his terminal annual salary, '
+        'how much will he be paid as gratuity?',
+      ]}],
       'a': [
-      {'p': 'The last deposit earns no interest, the one before earns interest for one year, '
-            'and so on. The deposits therefore form a GP with $a = 100{,}000$ and $r = 1.10$:'},
-      {'tex': 'S_{10} = \\frac{a(r^{n} - 1)}{r - 1} = \\frac{100{,}000\\big[(1.10)^{10} - 1\\big]}'
-              '{0.10}'},
-      {'tex': '= \\frac{100{,}000 (2.593742 - 1)}{0.10} = 100{,}000 \\times 15.937425 '
-              '= ₦1{,}593{,}742'},
-      {'note': 'This quantity, $\\dfrac{(1+r)^n - 1}{r}$, is the **future value of an annuity '
-               'factor**. Ten deposits of ₦100,000 accumulate to ₦1,593,742 rather than '
-               '₦1,000,000; the ₦593,742 difference is compound interest.'}]}},
+      {'p': '$a=240{,}000$, $d=25{,}000$.'},
+      {'p': '**(a)** $T_8=240{,}000+7(25{,}000)=\\text{\\textnaira}415{,}000$.'},
+      {'p': '**(b)** $T_{15}=240{,}000+14(25{,}000)=\\text{\\textnaira}590{,}000$ a year, so '
+            'monthly $=590{,}000/12=\\text{\\textnaira}49{,}166.67$.'},
+      {'p': '**(c)** $T_{30}=240{,}000+29(25{,}000)=\\text{\\textnaira}965{,}000$ (terminal '
+            'salary). Gratuity $=250\\%\\times965{,}000=\\text{\\textnaira}2{,}412{,}500$.'}]}},
   ]},
 
-  {'n': '12.3', 't': 'Annuities, perpetuities and sinking funds', 'b': [
-    {'def': {'t': 'Annuity',
-             'd': 'A series of equal payments made at equal intervals. An **ordinary annuity** '
-                  '(annuity in arrears) pays at the *end* of each period; an **annuity due** '
-                  '(in advance) pays at the *beginning*.'}},
-    {'fbox': {'h': 'Annuity and sinking-fund formulae', 'rows': [
-      {'lb': 'PV of an ordinary annuity',
-       'tex': 'PV = A \\left[\\frac{1 - (1+r)^{-n}}{r}\\right]'},
-      {'lb': 'FV of an ordinary annuity',
-       'tex': 'FV = A \\left[\\frac{(1+r)^{n} - 1}{r}\\right]'},
-      {'lb': 'Annuity due (either case)',
-       'tex': '\\text{Ordinary value} \\times (1 + r)'},
-      {'lb': 'Perpetuity', 'tex': 'PV = \\frac{A}{r}'},
-      {'lb': 'Growing perpetuity',
-       'tex': 'PV = \\frac{A}{r - g}, \\quad g < r'},
-      {'lb': 'Sinking-fund instalment',
-       'tex': 'A = S \\left[\\frac{r}{(1+r)^{n} - 1}\\right]'},
-      {'lb': 'Loan instalment (amortisation)',
-       'tex': 'A = P \\left[\\frac{r}{1 - (1+r)^{-n}}\\right]'},
+  {'n': '12.3', 't': 'Geometric Progression (GP)', 'b': [
+    {'def': {'t': 'Geometric Progression', 'd': 'a sequence in which each term increases or '
+                  'decreases from the one before it by a constant ratio, called the **common '
+                  'ratio** $r$. The first term is $a$.'}},
+    {'p': 'A GP has the general form $a,\\ ar,\\ ar^2,\\ ar^3,\\ldots$, so the $n$th term is '
+          '$ar^{n-1}$.'},
+    {'fbox': {'h': 'Geometric Progression', 'rows': [
+      {'lb': '$n$th term', 'tex': 'T_n = ar^{\\,n-1}'},
+      {'lb': 'Sum of the first $n$ terms ($r<1$)', 'tex': 'S_n = \\frac{a(1-r^n)}{1-r}'},
+      {'lb': 'Sum of the first $n$ terms ($r>1$)', 'tex': 'S_n = \\frac{a(r^n-1)}{r-1}'},
+      {'lb': 'Sum to infinity ($|r|<1$)', 'tex': 'S_\\infty = \\frac{a}{1-r}',
+       'nt': 'As $n\\to\\infty$ with $r<1$, $r^n\\to0$, so $S_n$ converges to this value.'},
     ]}},
-    {'eg': {'t': 'Present value of an annuity', 'q': [
-      {'p': 'What is the present value of ₦200,000 receivable at the end of each year for six '
-            'years, if the required rate of return is 10% per annum?'}],
+    {'eg': {'tag': 'Study text', 't': 'Example 12.3 — nth term, sum, and sum to infinity',
+      'open': True, 'q': [
+      {'ol': [
+        'Find the 7th term of the GP $8, 16, 32, \\ldots$',
+        'Find the 6th term of the GP $243, 81, 27, \\ldots$',
+        'Find the sum of the first 15 terms of the GPs in (a) and (b).',
+        'Find the sum to infinity for the GPs in (a) and (b).',
+      ]}],
       'a': [
-      {'tex': 'PV = 200{,}000 \\left[\\frac{1 - (1.10)^{-6}}{0.10}\\right]'},
-      {'tex': '(1.10)^{-6} = \\frac{1}{1.771561} = 0.564474'},
-      {'tex': 'PV = 200{,}000 \\times \\frac{1 - 0.564474}{0.10} = 200{,}000 \\times 4.355261 '
-              '= ₦871{,}052'},
-      {'p': 'Six receipts totalling ₦1,200,000 are worth only ₦871,052 today, because money '
-            'received later is worth less.'},
-      {'note': 'If the receipts were at the **beginning** of each year, multiply by $1.10$: '
-               '$871{,}052 \\times 1.10 = ₦958{,}157$. Each receipt arrives one year earlier, '
-               'so each is discounted one period less.'}]}},
-    {'eg': {'t': 'Sinking fund', 'q': [
-      {'p': 'A company must replace an asset costing ₦5,000,000 in five years\' time. Equal '
-            'annual amounts are to be set aside at the end of each year in a fund earning 8% '
-            'per annum. Compute the annual instalment.'}],
+      {'p': '**(a)** $a=8$, $r=2$: $T_7=8(2)^6=512$.'},
+      {'p': '**(b)** $a=243$, $r=1/3$: $T_6=243(1/3)^5=1$.'},
+      {'p': '**(c)(i)** $r=2>1$: $S_{15}=\\dfrac{8(2^{15}-1)}{2-1}=262{,}136$.'},
+      {'p': '**(c)(ii)** $r=1/3<1$: $S_{15}=\\dfrac{243(1-(1/3)^{15})}{1-1/3}=364.5$.'},
+      {'p': '**(d)(i)** $r=2$: no sum to infinity exists, since $S_\\infty$ requires $|r|<1$.'},
+      {'p': '**(d)(ii)** $r=1/3$: $S_\\infty=\\dfrac{243}{1-1/3}=364.5$ — note this already '
+            'equals $S_{15}$, i.e. the series has effectively converged by $n=15$.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.7 — the same asset, two depreciation methods',
+      'open': True, 'q': [
+      {'p': 'GODSLOVE Enterprises purchased a machine for ₦930,000, expected to last 25 years, '
+            'with a scrap value of ₦65,000.'},
+      {'ol': [
+        'How much should be provided each year if depreciation is on the straight-line method?',
+        'What depreciation rate is required if depreciation is on the reducing-balance method?',
+      ]}],
       'a': [
-      {'tex': 'A = S\\left[\\frac{r}{(1+r)^n - 1}\\right] '
-              '= 5{,}000{,}000 \\left[\\frac{0.08}{(1.08)^5 - 1}\\right]'},
-      {'tex': '(1.08)^5 = 1.469328 \\quad\\Rightarrow\\quad (1.08)^5 - 1 = 0.469328'},
-      {'tex': 'A = 5{,}000{,}000 \\times \\frac{0.08}{0.469328} = 5{,}000{,}000 \\times 0.170456 '
-              '= ₦852{,}282'},
-      {'p': 'Five instalments of ₦852,282 total ₦4,261,410; the remaining ₦738,590 is interest '
-            'earned within the fund.'}]}},
-    {'eg': {'t': 'Perpetuity', 'q': [
-      {'p': 'A trust is to pay a scholarship of ₦50,000 a year in perpetuity. If the fund earns '
-            '8% per annum, what capital sum is required?'}],
-      'a': [
-      {'tex': 'PV = \\frac{A}{r} = \\frac{50{,}000}{0.08} = ₦625{,}000'},
-      {'p': 'At 8%, ₦625,000 generates exactly ₦50,000 a year for ever without touching the '
-            'capital.'}]}},
+      {'note': 'The number of terms is **one more** than the number of years, because the cost '
+               'is the value at the start of year 1 and the scrap value is at the end of the '
+               'final year: $a=930{,}000$, $n=26$.'},
+      {'p': '**(a) Straight line — an AP.** $65{,}000=a+(n-1)d=930{,}000+25d$, so '
+            '$d=\\dfrac{65{,}000-930{,}000}{25}=-\\text{\\textnaira}34{,}600$ (provide '
+            '₦34,600 a year).'},
+      {'p': '**(b) Reducing balance — a GP.** $65{,}000=ar^{n-1}=930{,}000\\,r^{25}$, so '
+            '$r=(65{,}000/930{,}000)^{1/25}=0.90$. The depreciation rate is $1-0.90=10\\%$.'}]}},
   ]},
 
-  {'n': '12.4', 't': 'Investment appraisal', 'b': [
-    {'fbox': {'h': 'Discounted cash flow', 'rows': [
-      {'lb': 'Discount factor', 'tex': 'DF = (1 + r)^{-n}'},
-      {'lb': 'Net present value',
-       'tex': 'NPV = \\sum_{t=0}^{n} \\frac{C_t}{(1+r)^t}'},
-      {'lb': 'IRR by interpolation',
-       'tex': 'IRR \\approx r_1 + \\frac{NPV_1}{NPV_1 - NPV_2}(r_2 - r_1)'},
-      {'lb': 'Profitability index',
-       'tex': 'PI = \\frac{\\text{PV of inflows}}{\\text{Initial outlay}}'},
-    ]}},
-    {'ul': [
-      '**NPV > 0** — accept: the project earns more than the cost of capital and increases '
-      'shareholder wealth.',
-      '**NPV = 0** — indifferent: the project earns exactly the required return.',
-      '**NPV < 0** — reject.',
-      '**IRR** is the discount rate at which $NPV = 0$; accept if the IRR exceeds the cost of '
-      'capital.',
-    ]},
-    {'eg': {'t': 'NPV and IRR of a project', 'q': [
-      {'p': 'A project requires an immediate outlay of ₦1,000,000 and generates net cash inflows '
-            'of ₦400,000 at the end of each of the next four years. The cost of capital is 15%. '
-            'Compute the NPV and estimate the IRR.'}],
+  {'n': '12.4', 't': 'Simple interest', 'b': [
+    {'def': {'t': 'Simple interest', 'd': 'the interest that accrues on the principal (the '
+                  'original money invested or borrowed) for the period for which the money is '
+                  'invested or borrowed. If $P$ is the principal, $r$ the rate of interest and '
+                  '$n$ the number of periods, $I = Prn$; the amount at the end of period $n$ is '
+                  '$A_n = P+I = P(1+rn)$.'}},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.8 — interest, amount, and time to triple',
+      'open': True, 'q': [
+      {'ol': [
+        'What is the interest that will accrue on ₦25,000 at 12% simple interest at the end of '
+        '15 years, and how much will it amount to?',
+        'How long will it take money to triple itself at 9.5% simple interest?',
+      ]}],
       'a': [
-      {'h4': 'Net present value at 15%'},
-      {'p': 'The inflows are a four-year annuity, so use the annuity factor rather than '
-            'discounting each year separately:'},
-      {'tex': 'AF_{4,15\\%} = \\frac{1 - (1.15)^{-4}}{0.15} = \\frac{1 - 0.571753}{0.15} '
-              '= 2.854978'},
-      {'stmt': {'t': 'NPV at 15%', 'rows': [
-        ['Present value of inflows (400,000 × 2.854978)', 1141991],
-        ['Less: Initial outlay', -1000000],
-        ['Net present value@tot', 141991],
-      ]}},
-      {'p': 'The NPV is positive, so on this criterion the project should be **accepted**.'},
-      {'h4': 'Internal rate of return'},
-      {'p': 'A second, higher rate is needed to produce a negative NPV. Try 25%:'},
-      {'tex': 'AF_{4,25\\%} = \\frac{1 - (1.25)^{-4}}{0.25} = \\frac{1 - 0.4096}{0.25} '
-              '= 2.3616'},
-      {'tex': 'NPV_{25\\%} = 400{,}000(2.3616) - 1{,}000{,}000 = 944{,}640 - 1{,}000{,}000 '
-              '= -₦55{,}360'},
-      {'p': 'Interpolate between the two:'},
-      {'tex': 'IRR \\approx 15 + \\frac{141{,}991}{141{,}991 + 55{,}360} \\times (25 - 15)'},
-      {'tex': '= 15 + \\frac{141{,}991}{197{,}351} \\times 10 = 15 + 7.19 = 22.19\\%'},
-      {'p': 'The IRR of about **22.2%** comfortably exceeds the 15% cost of capital, confirming '
-            'the accept decision.'},
-      {'warn': 'Interpolation assumes the NPV falls in a straight line between the two rates, '
-               'but the true NPV curve is convex. The estimate is therefore slightly **below** '
-               'the true IRR, and the error grows as the two trial rates move further apart. '
-               'Keep them within about ten percentage points of each other.'}]}},
+      {'p': '**(a)** $I=Prn=25{,}000(0.12)(15)=\\text{\\textnaira}45{,}000$. Amount '
+            '$=A_{15}=25{,}000+45{,}000=\\text{\\textnaira}70{,}000$ (equivalently '
+            '$25{,}000\\{1+(0.12)(15)\\}$).'},
+      {'p': '**(b)** For $P$ to become $3P$: $3P=P(1+rn)$, so $3=1+0.095n$, giving '
+            '$n=\\dfrac{2}{0.095}=21.05$ years.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.9 — present value under simple interest',
+      'open': True, 'q': [
+      {'p': 'Mohammed wants to buy a house for ₦1.80m in 5 years\' time. The interest rate is a '
+            'constant 10% per annum, simple interest. How much should he invest now?'}],
+      'a': [
+      {'tex': 'A_n = P(1+rn) \\;\\Rightarrow\\; P = \\frac{A_n}{1+rn}'},
+      {'tex': 'P = \\frac{1.80\\text{m}}{1+(0.10)(5)} = \\frac{1.80\\text{m}}{1.5} = '
+              '\\text{\\textnaira}1.20\\text{m}'},
+      {'note': '₦1.20m is the **present value** of ₦1.80m under these conditions — equivalently, '
+               'the present value of ₦1.80m at 10% simple interest over 5 years.'}]}},
   ]},
 
-  {'n': '12.5', 't': 'Amortisation', 'b': [
-    {'p': 'A loan repaid by equal instalments is the mirror image of an annuity: the lender '
-          'pays out a lump sum today and receives an annuity. Each instalment covers the '
-          'interest for the period, and the balance reduces the principal. Because the '
-          'principal falls, the interest element falls and the capital element rises over the '
-          'life of the loan.'},
-    {'eg': {'t': 'Loan instalment and schedule', 'q': [
-      {'p': 'A loan of ₦1,000,000 is to be repaid by three equal annual instalments at 10% per '
-            'annum. Compute the instalment and prepare the amortisation schedule.'}],
+  {'n': '12.5', 't': 'Compound interest', 'b': [
+    {'def': {'t': 'Compound interest', 'd': 'interest calculated on the principal **and** on '
+                  'interest already earned — "multi-stage single-period simple interest". The '
+                  'interest for one period is added to the principal to form the new principal '
+                  'for the next period, and so on. It is the type of interest commonly used by '
+                  'banks and financial institutions.'}},
+    {'fbox': {'h': 'Compound interest', 'rows': [
+      {'lb': 'Amount after $n$ periods', 'tex': 'A_n = P(1+r)^n'},
+      {'lb': 'Present value', 'tex': 'P = \\frac{A_n}{(1+r)^n}',
+       'nt': 'This rearrangement is the basis of every discounted cash flow (DCF) technique, '
+             'including NPV.'},
+    ]}},
+    {'note': 'The accrued amount under compound interest is always **more** than under simple '
+             'interest, because simple interest is charged repeatedly on the same, unchanging '
+             'principal, while compound interest is charged on a principal that itself grows '
+             'each period.'},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.10 — building up the amount year by year',
+      'open': True, 'q': [
+      {'p': 'How much will ₦200,000 amount to at 8% per annum compound interest over 5 '
+            'years?'}],
       'a': [
-      {'tex': 'AF_{3,10\\%} = \\frac{1 - (1.10)^{-3}}{0.10} = \\frac{1 - 0.751315}{0.10} '
-              '= 2.486852'},
-      {'tex': 'A = \\frac{1{,}000{,}000}{2.486852} = ₦402{,}114.80'},
-      {'table': {'align': 'lrrrr',
-        'head': ['Year', 'Opening (₦)', 'Interest 10% (₦)', 'Instalment (₦)', 'Closing (₦)'],
+      {'table': {'align': 'lrrr', 'head': ['Year', 'Principal (₦)', 'Interest (₦)', 'Amount (₦)'],
         'rows': [
-        ['1', '1,000,000.00', '100,000.00', '402,114.80', '697,885.20'],
-        ['2', '697,885.20', '69,788.52', '402,114.80', '365,558.92'],
-        ['3', '365,558.92', '36,555.89', '402,114.80', '0.01'],
+        ['1', '200,000.0', '16,000.0', '216,000.0'],
+        ['2', '216,000.0', '17,280.0', '233,280.0'],
+        ['3', '233,280.0', '18,662.4', '251,942.4'],
+        ['4', '251,942.4', '20,155.4', '272,097.8'],
+        ['5', '272,097.8', '21,767.8', '293,865.6'],
       ]}},
-      {'p': 'The closing balance of ₦0.01 is rounding in the instalment and would be absorbed '
-            'in the final payment. Note how the interest element falls from ₦100,000 to '
-            '₦36,556 while the capital element rises from ₦302,115 to ₦365,559.'},
-      {'note': 'Only the interest column is an expense in profit or loss. The capital element '
-               'reduces the liability in the statement of financial position — a point that '
-               'links directly to the lease and loan questions in Financial Accounting.'}]}},
+      {'p': 'The required amount is **₦293,865.60**. By contrast, at simple interest '
+            '$A_5=200{,}000\\{1+(0.08)(5)\\}=\\text{\\textnaira}280{,}000$ — less than the '
+            'compound-interest amount, as expected.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.11 — the compound interest formula direct',
+      'open': True, 'q': [
+      {'ol': [
+        'Use the compound interest formula to calculate the amount for Example 12.10.',
+        'What compound interest rate is required to obtain ₦230,000 after 6 years from an '
+        'initial principal of ₦120,000?',
+        'How long will it take a sum of money to triple itself at 9.5% compound interest?',
+        'How much will ₦250,000 amount to in 3 years if the interest rate is 12% per annum, '
+        'compounded quarterly?',
+      ]}],
+      'a': [
+      {'p': '**(a)** $A_5=200{,}000(1.08)^5=200{,}000(1.469328)=\\text{\\textnaira}293{,}865.60$ '
+            '— matches Example 12.10.'},
+      {'p': '**(b)** $230{,}000=120{,}000(1+r)^6 \\Rightarrow (1+r)^6=1.916667 \\Rightarrow '
+            '1+r=1.916667^{1/6}=1.1145$, so $r\\approx11.5\\%$.'},
+      {'p': '**(c)** $3P=P(1.095)^n \\Rightarrow n=\\dfrac{\\log3}{\\log1.095}=12.11$ years — '
+            'markedly less than the 21.05 years needed under **simple** interest (Example 12.8) '
+            'for the same 9.5% rate to triple a sum.'},
+      {'p': '**(d)** Quarterly compounding over 3 years: $r=0.12/4=0.03$ per quarter, '
+            '$n=4\\times3=12$ quarters. $A_{12}=250{,}000(1.03)^{12}=\\text{\\textnaira}'
+            '356{,}440.22$.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.12 — present value under compound interest',
+      'open': True, 'q': [
+      {'p': 'Calculate the sum of money that needs to be invested now at 9% compound interest '
+            'to yield ₦320,000 at the end of 8 years.'}],
+      'a': [
+      {'tex': 'P = \\frac{A_n}{(1+r)^n} = \\frac{320{,}000}{(1.09)^8} = '
+              '\\text{\\textnaira}160{,}597.21'},
+      {'note': '₦160,597.21 is the present value of ₦320,000 under these conditions.'}]}},
   ]},
 
-  {'n': '12.6', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+  {'n': '12.6', 't': 'Annuities', 'b': [
+    {'def': {'t': 'Annuity', 'd': 'a sequence of constant cash flows received or paid — e.g. '
+                  'weekly/monthly wages, hire-purchase payments, or mortgage payments.'}},
+    {'h4': 'Types of annuity'},
+    {'ul': [
+      '**Ordinary annuity** — paid at the **end** of each payment period; the one most '
+      'commonly used.',
+      '**Annuity due (due annuity)** — paid at the **beginning** of each payment period (i.e. '
+      'in advance).',
+      '**Certain annuity** — a term that begins and ends on fixed dates.',
+      '**Perpetual annuity (perpetuity)** — one that goes on indefinitely.',
+    ]},
+    {'h4': 'Sum of an ordinary annuity (sinking fund)'},
+    {'p': 'The sum $S$ of an ordinary annuity of payment $A$ at interest rate $r$ per annum, '
+          'compounded over $n$ periods, is $S=A+A(1+r)+A(1+r)^2+\\cdots+A(1+r)^{n-1}$ — a GP '
+          'with first term $A$ and common ratio $(1+r)$, giving:'},
+    {'tex': 'S = A\\left[\\frac{(1+r)^n - 1}{r}\\right]'},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.13 — sinking fund, both directions', 'open': True,
+      'q': [
+      {'ol': [
+        'Find the amount of an annuity of ₦50,000 per year at 4% interest per annum for 7 '
+        'years.',
+        'Calculate the annual amount to be paid over 4 years for a sinking fund of ₦2,886,555 '
+        'if the compound interest rate is 7.5% per annum.',
+      ]}],
+      'a': [
+      {'p': '**(a)** $A=50{,}000$, $r=0.04$, $n=7$: '
+            '$S=50{,}000\\left[\\dfrac{(1.04)^7-1}{0.04}\\right]=\\text{\\textnaira}394{,}914.72$.'},
+      {'p': '**(b)** $S=2{,}886{,}555$, $r=0.075$, $n=4$, solve for $A$: '
+            '$A=\\dfrac{2{,}886{,}555\\times0.075}{(1.075)^4-1}=\\text{\\textnaira}174{,}267.22$.'}]}},
+    {'h4': 'Present value of an annuity'},
+    {'p': 'The present value of an annuity is the sum of the present values of all the '
+          'periodical payments — itself a GP with common ratio $\\dfrac{1}{1+r}$, giving:'},
+    {'tex': 'P = \\frac{A\\left[1-(1+r)^{-n}\\right]}{r}'},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.14 — present value of an annuity', 'open': True,
+      'q': [
+      {'p': 'Determine the present value of an annuity of ₦45,000 for 9 years at 5.5% '
+            'compounded annually.'}],
+      'a': [
+      {'tex': 'P = \\frac{45{,}000\\left[1-(1.055)^{-9}\\right]}{0.055} = '
+              '\\text{\\textnaira}312{,}848.79'}]}},
+  ]},
+
+  {'n': '12.7', 't': 'Net Present Value (NPV) and Internal Rate of Return (IRR)', 'b': [
+    {'def': {'t': 'Net Present Value (NPV)', 'd': 'the sum of the present values of all future '
+                  'net cash flows of an investment (each may be positive or negative). If the '
+                  'NPV is positive the investment is desirable; if negative, it is not worth '
+                  'it.'}},
+    {'tex': 'NPV = A_0 + \\frac{A_1}{1+r} + \\frac{A_2}{(1+r)^2} + \\frac{A_3}{(1+r)^3} + '
+            '\\cdots'},
+    {'p': '$A_0$ is the cost of the investment at year 0, always recorded as a **negative** '
+          '(cash outflow) in the NPV calculation; $A_1, A_2, \\ldots, A_n$ are the expected net '
+          'cash flows for years 1, 2, ..., $n$.'},
+    {'p': 'A project is assessed by assuming a discount rate, then finding the present value of '
+          'every flow of money in and out; the total present value of the money in (revenue) '
+          'less the total present value of the money out (costs) is the NPV.'},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.15 — NPV computed year by year', 'open': True,
+      'q': [
+      {'p': 'A project is presently estimated to cost ₦1.1m. The net cash flows for the first 4 '
+            'years are estimated at ₦225,000, ₦475,000, ₦655,000 and ₦300,000. The discount '
+            'rate is 12%.'},
+      {'ol': [
+        'Calculate the NPV for the project.',
+        'Is the project desirable?',
+        'If ₦95,000 and ₦125,000 were spent on the project during the second and fourth years '
+        'respectively, will the project still be desirable?',
+      ]}],
+      'a': [
+      {'table': {'align': 'lrrr',
+        'head': ['Year', 'Net cash flow (₦)', 'DF at 12%', 'PV (₦)'], 'rows': [
+        ['0', '(1,100,000)', '1.0000', '(1,100,000.0)'],
+        ['1', '225,000', '0.8929', '200,902.5'],
+        ['2', '475,000', '0.7972', '378,770.0'],
+        ['3', '655,000', '0.7118', '466,229.0'],
+        ['4', '300,000', '0.6355', '190,650.0'],
+        ['NPV', '', '', '136,551.5'],
+      ]}},
+      {'p': '**(a)** NPV $=\\text{\\textnaira}136{,}551.50$. **(b)** Since the NPV is positive, '
+            'the project is **desirable**.'},
+      {'p': '**(c)** New net cash flow, year 2 $=475{,}000-95{,}000=380{,}000$; year 4 '
+            '$=300{,}000-125{,}000=175{,}000$.'},
+      {'table': {'align': 'lrrr',
+        'head': ['Year', 'Net cash flow (₦)', 'DF at 12%', 'PV (₦)'], 'rows': [
+        ['0', '(1,100,000)', '1.0000', '(1,100,000.0)'],
+        ['1', '225,000', '0.8929', '200,902.5'],
+        ['2', '380,000', '0.7972', '302,936.0'],
+        ['3', '655,000', '0.7118', '466,229.0'],
+        ['4', '175,000', '0.6355', '111,212.5'],
+        ['NPV', '', '', '(18,720.0)'],
+      ]}},
+      {'p': 'The NPV is now **negative**, so the project is **not desirable**.'}]}},
+    {'h4': 'Internal Rate of Return (IRR)'},
+    {'def': {'t': 'Internal Rate of Return (IRR)', 'd': 'the discount rate at which a project\'s '
+                  'net present value is zero. If an investor can earn more than the IRR '
+                  'elsewhere, or must pay more than the IRR to borrow to finance the project, '
+                  'the project is not worthwhile.'}},
+    {'eg': {'tag': 'Study text', 't': 'Example 12.16–12.18 — narrowing in on the IRR', 'open': True,
+      'q': [
+      {'p': 'A company can buy a machine now for ₦2.5m, to manufacture an order paying ₦1.75m '
+            'after 2 years and ₦1.25m after 3 years.'},
+      {'ol': [
+        'At a 5% discount rate, calculate the NPV.',
+        'Recompute the NPV at 7%, and again at 8%.',
+        'Estimate the internal rate of return.',
+      ]}],
+      'a': [
+      {'p': '**At 5%:**'},
+      {'table': {'align': 'lrr', 'head': ['End of year', 'Net cash flow', 'PV (₦)'], 'rows': [
+        ['0', '(2,500,000)', '(2,500,000.0)'],
+        ['2', '+1,750,000', '1,587,301.6'],
+        ['3', '+1,250,000', '1,079,797.0'],
+        ['NPV', '', '167,098.6'],
+      ]}},
+      {'p': 'NPV is positive (₦167,098.60), so the machine purchase is worthwhile at 5%.'},
+      {'p': '**At 7%:** NPV falls to **₦48,890.10** (still positive, but much smaller). '
+            '**At 8%:** NPV falls to **-₦7,366.80** (now negative).'},
+      {'p': 'The project therefore breaks even — NPV $=0$ — at a discount rate between 7% and '
+            '8%: this break-even rate is the **IRR**.'},
+      {'note': 'Where a project has just one future cash inflow, the IRR can be found directly '
+               'by algebra instead of narrowing between two trial rates: if a financial group '
+               'invests ₦85m now and receives ₦100m in 2 years\' time, '
+               '$-85\\text{m}+\\dfrac{100\\text{m}}{(1+i)^2}=0 \\Rightarrow (1+i)^2=\\dfrac{100}'
+               '{85} \\Rightarrow i=\\left(\\dfrac{100}{85}\\right)^{1/2}-1=0.084652$, an IRR of '
+               'about **8.47%**.'}]}},
+  ]},
+
+  {'n': '12.8', 't': 'Worksheet summary — every term and formula', 'b': [
     {'h3': 'Section-by-section checklist'},
     {'ol': [
-      '**§12.1 Simple and compound interest** — simple $I=Prt$, $A=P(1+rt)$ (grows linearly); '
-      'compound $A=P(1+r)^n$ (grows geometrically — interest earns interest); $m$ times a year '
-      '$A=P(1+r/m)^{mn}$; effective annual rate $i=(1+r/m)^m-1$ **exceeds** the nominal rate — '
-      'always convert to effective rates before comparing differently-compounded offers; '
-      'present value $P=A(1+r)^{-n}$.',
-      '**§12.2 Progressions** — AP has a constant **difference** $d$ (straight-line '
-      'depreciation, a fixed-naira pay rise): $T_n=a+(n-1)d$, $S_n=(n/2)[2a+(n-1)d]$. GP has a '
-      'constant **ratio** $r$ (reducing-balance depreciation, compound interest, a fixed-%% pay '
-      'rise): $T_n=ar^{n-1}$, $S_n=a(r^n-1)/(r-1)$, $S_\\infty=a/(1-r)$ for $|r|<1$. Deciding '
-      'AP vs GP is usually worth more marks than the summation itself. A stream of equal '
-      'deposits earning compound interest is itself a GP, and its sum is the future-value-of-'
-      'an-annuity factor.',
-      '**§12.3 Annuities, perpetuities and sinking funds** — annuity = equal payments at equal '
-      'intervals; **ordinary** (in arrears) pays at period-**end**, **due** (in advance) pays '
-      'at period-**start** — an annuity-due value is the ordinary value $\\times(1+r)$. PV of '
-      'an ordinary annuity $A[1-(1+r)^{-n}]/r$; FV $A[(1+r)^n-1]/r$; perpetuity $PV=A/r$; '
-      'growing perpetuity $PV=A/(r-g)$, $g<r$; sinking-fund instalment '
-      '$A=S[r/((1+r)^n-1)]$; loan instalment $A=P[r/(1-(1+r)^{-n})]$.',
-      '**§12.4 Investment appraisal** — discount factor $(1+r)^{-n}$; $NPV=\\sum C_t/(1+r)^t$ — '
-      'accept if $NPV>0$; IRR = the rate where $NPV=0$, estimated by interpolation between a '
-      'positive- and negative-NPV trial rate — accept if IRR exceeds the cost of capital. '
-      'Profitability index $=$ PV of inflows $\\div$ initial outlay. Interpolation '
-      'under-estimates the true IRR slightly because the real NPV/rate curve is convex — keep '
-      'the two trial rates within about ten points of each other.',
-      '**§12.5 Amortisation** — a loan repaid by equal instalments is the mirror of an '
-      'annuity; each instalment splits into an **interest** element (an expense — falls over '
-      'the loan\'s life as the principal shrinks) and a **capital/principal** element (reduces '
-      'the statement-of-financial-position liability — rises over the loan\'s life). Only the '
-      'interest element hits profit or loss.',
+      '**§12.1 Sequences and series** — a sequence follows a definite pattern; a series is the '
+      'sum of its terms.',
+      '**§12.2 AP** — constant **difference** $d$; $T_n=a+(n-1)d$; $S_n=\\frac n2\\{2a+(n-1)d\\}'
+      '=\\frac n2(a+l)$.',
+      '**§12.3 GP** — constant **ratio** $r$; $T_n=ar^{n-1}$; $S_n=a(1-r^n)/(1-r)$ (for $r<1$) '
+      'or $a(r^n-1)/(r-1)$ (for $r>1$); sum to infinity $S_\\infty=a/(1-r)$, only for $|r|<1$. '
+      'Straight-line depreciation is an AP (constant naira amount); reducing-balance '
+      'depreciation is a GP (constant rate/ratio) — the **same** asset can be modelled either '
+      'way, with a term count of (years $+$ 1) since cost is at the start of year 1 and scrap '
+      'value at the end of the final year.',
+      '**§12.4 Simple interest** — $I=Prn$; $A_n=P(1+rn)$; $P=A_n/(1+rn)$.',
+      '**§12.5 Compound interest** — "multi-stage single-period simple interest"; '
+      '$A_n=P(1+r)^n$; $P=A_n/(1+r)^n$ (the basis of every discounted cash flow technique). '
+      'The compound amount always exceeds the simple-interest amount over the same term.',
+      '**§12.6 Annuities** — a sequence of constant cash flows: **ordinary** (end of period), '
+      '**due** (start of period, in advance), **certain** (fixed start/end dates), **perpetual** '
+      '(goes on indefinitely). Sum (sinking fund) $S=A[(1+r)^n-1]/r$; present value '
+      '$P=A[1-(1+r)^{-n}]/r$ — both derived as a GP.',
+      '**§12.7 NPV and IRR** — $NPV=A_0+\\sum A_t/(1+r)^t$, $A_0$ always negative; positive NPV '
+      '$\\Rightarrow$ desirable. IRR is the discount rate at which NPV $=0$ — found either by '
+      'narrowing between a positive- and a negative-NPV trial rate, or (for a single future '
+      'cash flow) directly by algebra.',
     ]},
     {'h3': 'All the terms'},
     {'ul': [
-      '**Sequence (progression)** — an ordered list of numbers; **series** — their sum.',
-      '**Arithmetic progression (AP)** — successive terms differ by a constant **common '
-      'difference $d$**. First term $a$, last term $l$.',
-      '**Geometric progression (GP)** — successive terms are in a constant ratio, the **common '
-      'ratio $r$**.',
-      '**Principal $P$** — the sum invested or borrowed. **Rate $r$** — interest rate per '
-      'period (as a decimal). **$n$** — number of periods. **Amount $A$** — principal plus '
-      'interest.',
-      '**Simple interest** — interest on the original principal only.',
-      '**Compound interest** — interest earns interest ("multi-stage single-period simple '
-      'interest").',
-      '**Nominal rate** — the stated annual rate; **effective (annual) rate** — the rate '
-      'actually earned once compounding within the year is allowed for.',
-      '**Present value (PV)** — the amount now equivalent to a future sum, found by '
-      '*discounting*. **Future value (FV)** — the accumulated amount later.',
-      '**Annuity** — a sequence of equal periodic cash flows. **Ordinary annuity** — paid at '
-      'the *end* of each period; **annuity due** — at the *beginning*; **annuity certain** — '
-      'fixed start and end dates; **perpetuity** — continues indefinitely.',
-      '**Sinking fund** — a series of equal deposits accumulated at compound interest to reach '
-      'a target sum.',
-      '**Amortisation** — repaying a loan by equal instalments, each part interest and part '
-      'capital.',
-      '**Net present value (NPV)** — the present value of all a project\'s cash inflows less '
-      'all its outflows. NPV $> 0$ → accept.',
-      '**Internal rate of return (IRR)** — the discount rate at which NPV $= 0$.',
-      '**Discount factor** — $(1 + r)^{-n}$, the PV of ₦1 receivable in $n$ periods.',
+      '**Sequence** — a set of numbers following a definite pattern. **Series** — their sum.',
+      '**Arithmetic Progression (AP)** — constant common **difference** $d$; first term $a$.',
+      '**Geometric Progression (GP)** — constant common **ratio** $r$; first term $a$.',
+      '**Simple interest** — interest on the original principal only, $I=Prn$.',
+      '**Compound interest** — interest earned on interest already accrued, $A_n=P(1+r)^n$.',
+      '**Present value (PV)** — the current worth of a future amount, based on prevailing '
+      'conditions.',
+      '**Annuity** — a sequence of constant cash flows, received or paid.',
+      '**Ordinary annuity / annuity in arrears** — paid at the end of each period.',
+      '**Annuity due** — paid at the beginning of each period (in advance).',
+      '**Certain annuity** — fixed start and end dates. **Perpetuity** — continues '
+      'indefinitely.',
+      '**Net Present Value (NPV)** — the sum of the present values of all a project\'s future '
+      'net cash flows.',
+      '**Internal Rate of Return (IRR)** — the discount rate at which NPV $=0$.',
     ]},
-    {'h3': 'A. Progressions'},
-    {'fbox': {'h': 'Arithmetic progression', 'rows': [
-      {'lb': '$n$-th term', 'tex': 'T_n = a + (n - 1)d'},
-      {'lb': 'Sum of $n$ terms',
-       'tex': 'S_n = \\dfrac{n}{2}\\bigl[2a + (n - 1)d\\bigr] = \\dfrac{n}{2}(a + l)'},
-    ]}},
-    {'fbox': {'h': 'Geometric progression', 'rows': [
-      {'lb': '$n$-th term', 'tex': 'T_n = ar^{\\,n-1}'},
-      {'lb': 'Sum of $n$ terms',
-       'tex': 'S_n = \\dfrac{a(1 - r^{n})}{1 - r} \\ (r < 1) \\quad\\text{or}\\quad '
-              '\\dfrac{a(r^{n} - 1)}{r - 1} \\ (r > 1)'},
-      {'lb': 'Sum to infinity', 'tex': 'S_\\infty = \\dfrac{a}{1 - r} \\quad (|r| < 1)'},
-    ]}},
-    {'h3': 'B. Simple interest'},
-    {'fbox': {'h': 'Simple interest', 'rows': [
-      {'lb': 'Interest', 'tex': 'I = Prn'},
-      {'lb': 'Amount', 'tex': 'A = P(1 + rn)'},
-      {'lb': 'Present value', 'tex': 'P = \\dfrac{A}{1 + rn}'},
-    ]}},
-    {'h3': 'C. Compound interest'},
-    {'fbox': {'h': 'Compound interest', 'rows': [
-      {'lb': 'Amount (annual compounding)', 'tex': 'A = P(1 + r)^{n}'},
-      {'lb': 'Compounding $m$ times a year',
-       'tex': 'A = P\\left(1 + \\dfrac{r}{m}\\right)^{mn}'},
-      {'lb': 'Compound interest earned', 'tex': 'I = A - P = P\\bigl[(1 + r)^{n} - 1\\bigr]'},
-      {'lb': 'Present value', 'tex': 'P = A(1 + r)^{-n} = \\dfrac{A}{(1 + r)^{n}}'},
-      {'lb': 'Effective annual rate',
-       'tex': 'i = \\left(1 + \\dfrac{r}{m}\\right)^{m} - 1'},
-      {'lb': 'Finding $n$', 'tex': 'n = \\dfrac{\\log(A/P)}{\\log(1 + r)}'},
-    ]}},
-    {'h3': 'D. Annuities, perpetuities, sinking funds'},
-    {'fbox': {'h': 'Annuity formulae (ordinary annuity, payment $A$)', 'rows': [
-      {'lb': 'Future value (amount)',
-       'tex': 'S = A\\left[\\dfrac{(1 + r)^{n} - 1}{r}\\right]'},
-      {'lb': 'Present value',
-       'tex': 'PV = A\\left[\\dfrac{1 - (1 + r)^{-n}}{r}\\right]'},
-      {'lb': 'Perpetuity', 'tex': 'PV = \\dfrac{A}{r}'},
-      {'lb': 'Sinking fund deposit (to accumulate $S$)',
-       'tex': 'A = S\\left[\\dfrac{r}{(1 + r)^{n} - 1}\\right]'},
-      {'lb': 'Loan instalment (amortisation of loan $L$)',
-       'tex': 'A = L\\left[\\dfrac{r}{1 - (1 + r)^{-n}}\\right]'},
-      {'lb': 'Annuity due (multiply the ordinary result by $(1+r)$)',
-       'tex': 'PV_{due} = PV_{ordinary}\\,(1 + r)'},
-    ]}},
-    {'h3': 'E. Investment appraisal'},
-    {'fbox': {'h': 'NPV and IRR', 'rows': [
-      {'lb': 'Net present value',
-       'tex': 'NPV = -A_0 + \\sum_{t=1}^{n} \\dfrac{A_t}{(1 + r)^{t}}'},
-      {'lb': 'Decision rule', 'tex': 'NPV > 0 \\Rightarrow \\text{accept}; \\ NPV < 0 '
-              '\\Rightarrow \\text{reject}'},
-      {'lb': 'IRR by linear interpolation',
-       'tex': 'IRR \\approx r_1 + \\dfrac{NPV_1}{NPV_1 - NPV_2}\\,(r_2 - r_1)',
-       'nt': '$r_1$ gives a positive $NPV_1$, $r_2$ a negative $NPV_2$.'},
-    ]}},
-    {'note': 'For a growing/declining cash stream (fixed % change each period) the terms form a '
-             '**GP**; for a fixed-amount change each period they form an **AP**.'},
+  ]},
+
+  {'n': '12.9', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'If the 4th term of a geometric progression is $-108$ and the 6th term is $-972$, the '
+        'common ratio is (A) $+3$  (B) $-3$  (C) $3$  (D) $9$  (E) $-9$',
+        'Determine the present value of ¢450,000 in 3 years\' time if the discount rate is 6% '
+        'compounded annually. (A) ¢377,826.68  (B) ¢386,772.68  (C) ¢268,386.68  '
+        '(D) ¢338,277.68  (E) ¢287,768.68',
+        'The lifespan of a machine costing ₦2.5m is 15 years and has a scrap value of '
+        '₦150,000. If depreciation is on the straight line method, the amount to be provided '
+        'each year is (A) ₦157,666.67  (B) ₦167,666.67  (C) ₦156,777.67  (D) ₦156,666.67  '
+        '(E) ₦167,777.67',
+        'Mr. Nokoe earns ¢50,000 per month with an annual increment of 5%. What will his annual '
+        'salary be in the 4th year? (A) ¢561,500  (B) ¢651,500  (C) ¢515,500  (D) ¢615,500  '
+        '(E) ¢661,500',
+        'If the discount rate of 6% in Question 2 is compounded six-monthly, the present value '
+        'will be …',
+        'A project is said to be desirable if the net present value is …',
+        'The present value of ₦2.8m at 15% simple interest rate over six years is …',
+        'The time that a sum of money will take to triple itself using simple interest is '
+        '… than that of compound interest.',
+        'An annuity is a sequence of … cash flows … or paid.',
+        'The discount rate that occurs when the net present value is zero is known as …',
+      ]}],
+      'a': [
+      {'ol': [
+        '**B** — $ar^5/ar^3=r^2=(-972)/(-108)=9 \\Rightarrow r=\\pm3$; since $ar^3=-108$ '
+        '(negative) with an even power of a negative $r$ giving a negative result, '
+        '$r=-3$.',
+        '**A** — $P=450{,}000/(1.06)^3=$ ¢377,826.68 (option A, once rounding is carried '
+        'through consistently).',
+        '**D** — $a=2{,}500{,}000$, $n=16$ (15 years $+$ 1), scrap $=150{,}000$: '
+        '$d=(150{,}000-2{,}500{,}000)/15=$ ₦156,666.67.',
+        '**E** — ¢50,000/month $=$ ¢600,000/annum; $a=600{,}000$, $r=1.05$: '
+        '$T_4=ar^3=600{,}000(1.05)^3=$ ¢661,500.',
+        'PV $=450{,}000/(1.03)^6=$ ₦317,232.24 (rate halved, periods doubled for six-monthly '
+        'compounding).',
+        '**Positive.**',
+        '$A_n=P(1+rn)$: $2.8\\text{m}=P\\{1+(0.15)(6)\\}=1.9P \\Rightarrow P=2.8\\text{m}/1.9='
+        '\\text{\\textnaira}1.47\\text{m}$.',
+        '**More** (simple interest takes longer to triple a sum than compound interest — '
+        '21.05 years against 12.11 years at 9.5%, per Examples 12.8 and 12.11).',
+        '**Constant**, **received** (in that order).',
+        '**Internal Rate of Return (IRR).**',
+      ]}]}},
   ]},
  ],
  'formulas': [
+  {'lb': 'AP: $n$th term', 'tex': 'T_n = a + (n-1)d'},
+  {'lb': 'AP: sum of $n$ terms', 'tex': 'S_n = \\frac{n}{2}\\{2a+(n-1)d\\} = \\frac{n}{2}(a+l)'},
+  {'lb': 'GP: $n$th term', 'tex': 'T_n = ar^{\\,n-1}'},
+  {'lb': 'GP: sum of $n$ terms',
+   'tex': 'S_n = \\frac{a(1-r^n)}{1-r} \\ (r<1) \\quad\\text{or}\\quad \\frac{a(r^n-1)}{r-1} '
+          '\\ (r>1)'},
+  {'lb': 'GP: sum to infinity', 'tex': 'S_\\infty = \\frac{a}{1-r} \\ (|r|<1)'},
   {'lb': 'Simple interest', 'tex': 'I = Prn'},
-  {'lb': 'Simple interest amount', 'tex': 'A = P(1 + rn)'},
-  {'lb': 'Simple interest present value', 'tex': 'P = \\frac{A}{1 + rn}'},
-  {'lb': 'Compound amount', 'tex': 'A = P(1+r)^n'},
-  {'lb': 'Compounding $m$ times a year',
-   'tex': 'A = P\\left(1+\\frac{r}{m}\\right)^{mn}'},
-  {'lb': 'Compound interest earned', 'tex': 'I = P[(1+r)^n - 1]'},
-  {'lb': 'Effective annual rate',
-   'tex': 'i = \\left(1+\\frac{r}{m}\\right)^{m} - 1'},
-  {'lb': 'Present value (compound)', 'tex': 'P = A(1+r)^{-n}'},
-  {'lb': 'Number of periods', 'tex': 'n = \\frac{\\log(A/P)}{\\log(1+r)}'},
-  {'lb': 'AP: $n$-th term', 'tex': 'T_n = a + (n-1)d'},
-  {'lb': 'AP: sum', 'tex': 'S_n = \\frac{n}{2}[2a + (n-1)d] = \\frac{n}{2}(a + l)'},
-  {'lb': 'GP: $n$-th term', 'tex': 'T_n = ar^{\\,n-1}'},
-  {'lb': 'GP: sum', 'tex': 'S_n = \\frac{a(r^n-1)}{r-1} = \\frac{a(1-r^n)}{1-r}'},
-  {'lb': 'GP: sum to infinity', 'tex': 'S_\\infty = \\frac{a}{1-r}'},
-  {'lb': 'PV of an annuity',
-   'tex': 'PV = A\\left[\\frac{1-(1+r)^{-n}}{r}\\right]'},
-  {'lb': 'FV of an annuity',
-   'tex': 'FV = A\\left[\\frac{(1+r)^{n}-1}{r}\\right]'},
-  {'lb': 'Perpetuity', 'tex': 'PV = \\frac{A}{r}'},
-  {'lb': 'Sinking fund', 'tex': 'A = S\\left[\\frac{r}{(1+r)^n-1}\\right]'},
-  {'lb': 'IRR by interpolation',
-   'tex': 'IRR \\approx r_1 + \\frac{NPV_1}{NPV_1-NPV_2}(r_2-r_1)'},
+  {'lb': 'Simple interest amount', 'tex': 'A_n = P(1+rn)'},
+  {'lb': 'Compound interest amount', 'tex': 'A_n = P(1+r)^n'},
+  {'lb': 'Present value (compound)', 'tex': 'P = \\frac{A_n}{(1+r)^n}'},
+  {'lb': 'Sum of an ordinary annuity (sinking fund)',
+   'tex': 'S = A\\left[\\frac{(1+r)^n-1}{r}\\right]'},
+  {'lb': 'Present value of an ordinary annuity',
+   'tex': 'P = \\frac{A\\left[1-(1+r)^{-n}\\right]}{r}'},
+  {'lb': 'Net present value', 'tex': 'NPV = A_0 + \\sum_{t=1}^{n} \\frac{A_t}{(1+r)^t}'},
  ],
  'focus':
-   'The single most heavily examined chapter in the paper. Expect three or four Section A marks '
-   'on compound amounts, annuity factors and discount factors, and a full Section B question '
-   'most diets on NPV and IRR or on a sinking fund. Learn to recognise an annuity so you can '
-   'use one factor instead of discounting four separate years — it saves several minutes and '
-   'removes most of the arithmetic risk.',
+   'The single most heavily examined chapter in the paper. Expect Section A marks on AP/GP terms '
+   'and sums, simple-vs-compound interest, and sinking-fund/annuity present values, plus a full '
+   'Section B question most diets on NPV (often built up year by year exactly as the study text '
+   'does it, with a discount-factor column) or occasionally IRR. Learn to recognise whether a '
+   'salary/depreciation/cash-flow pattern is an AP (constant naira change) or a GP (constant % '
+   'change) before reaching for a formula.',
  'errors': [
-   'Using $n$ = number of years when interest is compounded quarterly; the exponent is $mn$ '
-   'and the rate $r/m$.',
-   'Comparing nominal rates of different compounding frequencies without converting to '
-   'effective rates.',
-   'Applying the ordinary annuity factor to payments made in advance (multiply by $1+r$).',
-   'Confusing the sinking-fund factor $r/[(1+r)^n-1]$ with the loan-repayment factor '
-   '$r/[1-(1+r)^{-n}]$.',
-   'Discounting the year-0 outlay; it is already a present value.',
-   'Interpolating an IRR between two rates that are far apart, or between two positive NPVs.',
+   'Using the wrong number of terms in a depreciation AP/GP — remember it is (years $+$ 1), '
+   'since cost sits at the start of year 1 and scrap value at the end of the final year.',
+   'Confusing the AP common difference with the GP common ratio.',
+   'Forgetting that $A_0$ (the initial outlay) is always negative in an NPV calculation and is '
+   'already a present value — it is never itself discounted.',
+   'Mixing up simple interest ($I=Prn$, grows linearly) with compound interest ($A=P(1+r)^n$, '
+   'grows geometrically) when computing how long money takes to triple.',
+   'Applying the sum-to-infinity formula when $r>1$ (no sum to infinity exists in that case).',
  ],
  'quiz': {
   'mcq': [
@@ -398,19 +472,13 @@ CH = {
     'a': 1,
     'w': 'Compound interest multiplies by $(1+r)$ each year.',
     'calc': 'A = 100{,}000(1.10)^3 = 100{,}000 \\times 1.331 = ₦133{,}100',
-    'src': 'Chapter 12.1', 'sec': '12.1'},
+    'src': 'Chapter 12.5', 'sec': '12.5'},
    {'q': 'The present value of ₦1,000,000 receivable in 2 years at a discount rate of 10% is',
     'o': ['₦800,000', '₦826,446', '₦900,000', '₦909,091', '₦1,210,000'],
     'a': 1,
     'w': 'Divide by $(1.10)^2 = 1.21$.',
-    'calc': 'PV = \\frac{1{,}000{,}000}{1.21} = ₦826{,}446',
-    'src': 'Chapter 12.1', 'sec': '12.1'},
-   {'q': 'A perpetuity of ₦30,000 per annum at a discount rate of 12% has a present value of',
-    'o': ['₦360,000', '₦250,000', '₦300,000', '₦240,000', '₦336,000'],
-    'a': 1,
-    'w': 'The present value of a perpetuity is the annual amount divided by the rate.',
-    'calc': 'PV = \\frac{30{,}000}{0.12} = ₦250{,}000',
-    'src': 'Chapter 12.3', 'sec': '12.3'},
+    'calc': 'P = \\frac{1{,}000{,}000}{1.21} = ₦826{,}446',
+    'src': 'Chapter 12.5', 'sec': '12.5'},
    {'q': 'The 10th term of the arithmetic progression 7, 11, 15, … is',
     'o': ['39', '43', '47', '40', '44'],
     'a': 1,
@@ -420,82 +488,46 @@ CH = {
    {'q': 'The internal rate of return of a project is the discount rate at which',
     'o': ['the payback period is shortest', 'the net present value is zero',
           'total inflows equal total outflows undiscounted',
-          'the profitability index is zero', 'the accounting rate of return is maximised'],
+          'depreciation is at its lowest', 'the accounting rate of return is maximised'],
     'a': 1,
     'w': 'By definition the IRR is the break-even discount rate — the rate at which the present '
          'value of inflows exactly equals the outlay.',
-    'src': 'Chapter 12.4', 'sec': '12.4'},
-   {'q': 'A nominal rate of 12% per annum compounded semi-annually gives an effective annual '
-         'rate of',
-    'o': ['12.00%', '12.36%', '12.68%', '24.00%', '6.00%'],
-    'a': 1,
-    'w': 'Two periods of 6% each: $(1.06)^2 = 1.1236$.',
-    'calc': 'i = (1.06)^2 - 1 = 0.1236 = 12.36\\%',
-    'src': 'Chapter 12.1', 'sec': '12.1'},
+    'src': 'Chapter 12.7', 'sec': '12.7'},
    {'q': 'The sum to infinity of the geometric progression $8 + 4 + 2 + 1 + \\cdots$ is',
     'o': ['15', '16', '20', '32', 'infinite'],
     'a': 1,
     'w': 'The common ratio is ½, which is less than 1, so the series converges.',
     'calc': 'S_\\infty = \\frac{a}{1-r} = \\frac{8}{1-0.5} = 16',
-    'src': 'Chapter 12.2', 'sec': '12.2'},
+    'src': 'Chapter 12.3', 'sec': '12.3'},
+   {'q': 'Simple interest on ₦300,000 at 8% per annum for 4 years is',
+    'o': ['₦96,000', '₦24,000', '₦108,000', '₦300,000', '₦408,000'],
+    'a': 0,
+    'w': 'Simple interest is $I=Prn$, a single calculation with no compounding.',
+    'calc': 'I = 300{,}000 \\times 0.08 \\times 4 = ₦96{,}000',
+    'src': 'Chapter 12.4', 'sec': '12.4'},
   ],
   'theory': [
-   {'q': 'Oyo Manufacturing Limited is considering a project requiring an immediate investment '
-         'of ₦2,400,000 in plant, which will have a residual value of ₦200,000 at the end of '
-         'its four-year life. Net cash inflows before depreciation are expected to be '
-         '₦900,000, ₦1,000,000, ₦800,000 and ₦600,000 in years 1 to 4 respectively. The cost '
-         'of capital is 16%. (a) Compute the net present value. (b) Advise the company. '
-         '(c) State three advantages of the net present value method over the payback period.',
-    'marks': 15,
+   {'q': 'A businessman deposits ₦100,000 at the end of each year for 6 years into a fund '
+         'earning 8% per annum compound. (a) Compute the amount accumulated at the end of the '
+         '6th year. (b) A project requires an immediate outlay of ₦1,000,000 and is expected '
+         'to produce net cash flows of ₦400,000 a year for the next 4 years. At a discount rate '
+         'of 12%, compute the NPV and advise whether the project should be accepted.',
+    'marks': 12,
     'a': [
-      {'h4': '(a) Net present value at 16%'},
-      {'p': 'The residual value is a year-4 inflow and is discounted with the year-4 cash flow. '
-            'Discount factors at 16% are $(1.16)^{-n}$:'},
-      {'table': {'align': 'lrrr',
-        'head': ['Year', 'Cash flow (₦)', 'DF at 16%', 'Present value (₦)'], 'rows': [
-        ['0', '(2,400,000)', '1.0000', '(2,400,000)'],
-        ['1', '900,000', '0.8621', '775,890'],
-        ['2', '1,000,000', '0.7432', '743,200'],
-        ['3', '800,000', '0.6407', '512,560'],
-        ['4', '600,000', '0.5523', '331,380'],
-        ['4 (residual value)', '200,000', '0.5523', '110,460'],
-        ['Net present value', '', '', '73,490'],
-      ]}},
-      {'p': 'Sum of the positive present values: $775{,}890 + 743{,}200 + 512{,}560 + 331{,}380 '
-            '+ 110{,}460 = ₦2{,}473{,}490$. Deducting the outlay of ₦2,400,000 gives:'},
-      {'tex': 'NPV = 2{,}473{,}490 - 2{,}400{,}000 = ₦73{,}490'},
-      {'h4': '(b) Advice'},
-      {'p': 'The net present value is **positive at ₦73,490**, so the project earns more than '
-            'the 16% cost of capital and should be **accepted**. In wealth terms, undertaking '
-            'the project makes the shareholders ₦73,490 better off in today\'s money than '
-            'investing the same ₦2,400,000 at 16% elsewhere.'},
-      {'p': 'The margin is thin, however — about 3% of the outlay. Two cautions follow. First, '
-            'the decision is sensitive to the estimates: a shortfall of much more than ₦100,000 '
-            'in undiscounted inflows, or a rise in the cost of capital of two or three '
-            'percentage points, would turn the NPV negative. A sensitivity analysis should be '
-            'run before committing. Second, the residual value contributes ₦110,460 — more than '
-            'the whole of the NPV — so the reliability of that estimate matters '
-            'disproportionately.'},
-      {'h4': '(c) Advantages of NPV over payback'},
-      {'ol': [
-        '**It recognises the time value of money.** Every cash flow is discounted to a common '
-        'date, so ₦1 received in year 4 is not treated as equal to ₦1 received in year 1. '
-        'Payback, in its simple form, adds undiscounted flows.',
-        '**It considers the whole life of the project.** Payback ignores every cash flow '
-        'arising after the payback date, so it would ignore the ₦600,000 in year 4 and the '
-        'residual value entirely if the outlay were recovered earlier. A project with large '
-        'later inflows is systematically undervalued by payback.',
-        '**It measures the absolute increase in shareholder wealth** in naira, so competing '
-        'projects can be ranked directly and the results of several projects can be added '
-        'together. Payback yields a period, which says nothing about profitability.',
-        '**It explicitly incorporates the cost of capital and risk**, since the discount rate '
-        'can be raised for a riskier project. Payback treats risk only crudely, by preferring '
-        'a shorter recovery period.',
-      ]},
-      {'note': 'Payback is not worthless — it is simple, it is understood by non-financial '
-               'managers, and it is a rough guide to liquidity and to risk where cash is '
-               'tight. The usual recommendation is to use it as a screening device alongside '
-               'NPV, not instead of it.'}],
-    'src': 'Chapter 12.4', 'sec': '12.4'},
+      {'h4': '(a) Sinking fund (future value of an ordinary annuity)'},
+      {'tex': 'S = A\\left[\\frac{(1+r)^n-1}{r}\\right] = 100{,}000\\left[\\frac{(1.08)^6-1}'
+              '{0.08}\\right]'},
+      {'tex': '(1.08)^6 = 1.586874 \\;\\Rightarrow\\; S = 100{,}000 \\times \\frac{0.586874}'
+              '{0.08} = ₦733{,}592.50'},
+      {'h4': '(b) NPV at 12%'},
+      {'p': 'The four inflows are an ordinary annuity, so use the annuity present-value '
+            'formula rather than discounting each year separately:'},
+      {'tex': 'P = A\\left[\\frac{1-(1+r)^{-n}}{r}\\right] = 400{,}000\\left['
+              '\\frac{1-(1.12)^{-4}}{0.12}\\right]'},
+      {'tex': '= 400{,}000 \\times 3.037349 = ₦1{,}214{,}940'},
+      {'tex': 'NPV = 1{,}214{,}940 - 1{,}000{,}000 = ₦214{,}940'},
+      {'p': 'The NPV is **positive**, so the project should be **accepted**: at a 12% cost of '
+            'capital it leaves the business better off by ₦214,940 in today\'s money.'}],
+    'src': 'Chapter 12.6', 'sec': '12.6'},
   ]},
 }
