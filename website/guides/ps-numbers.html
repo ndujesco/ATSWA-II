@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PS By the Numbers — ATSWA PS Study Guide</title>
+<meta name="description" content="Every numeric rule in the ATSWA Part II Public Sector Accounting syllabus — years of service, thresholds, percentages, deadlines — in one place, by theme, with the exact chapter and section for each.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E5C42'/%3E%3Cpath d='M7 6h18v6H13v5h11v6H13v6H7z' fill='%23F6F1E6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F6F1E6; --paper-raised:#FBF8F1;
+    --ink:#1B231E; --ink-soft:#4E5951; --ink-faint:#7C877E;
+    --green:#1E5C42; --green-deep:#123B2B; --green-wash:#E7EEE7;
+    --gold:#96742A; --gold-wash:#F1E7CE;
+    --rule:rgba(27,35,30,0.14); --rule-strong:rgba(27,35,30,0.28);
+    --shadow:0 1px 2px rgba(27,35,30,0.06);
+    --warn-bg:#FBEEEA; --warn-ink:#8A3B24; --warn-rule:#D9B7A8;
+    --super-bg:#EEF1FB; --super-ink:#2E3E86; --super-rule:#C7D0EE;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1613; --paper-raised:#151E19;
+      --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+      --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+      --gold:#D3AE5C; --gold-wash:#26210F;
+      --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+      --shadow:0 1px 2px rgba(0,0,0,0.35);
+      --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+      --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1613; --paper-raised:#151E19;
+    --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+    --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+    --gold:#D3AE5C; --gold-wash:#26210F;
+    --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+    --shadow:0 1px 2px rgba(0,0,0,0.35);
+    --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+    --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+  }
+
+  *{box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{
+    background:var(--paper); color:var(--ink); font-family:var(--font-body);
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; margin:0;
+  }
+  ::selection{background:var(--gold-wash);}
+
+  .topbar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);}
+  .topbar .in{max-width:920px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .topbar a.back{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-soft);text-decoration:none;display:flex;align-items:center;gap:6px;}
+  .topbar a.back:hover{color:var(--green);}
+  .topbar a.back .arrow{color:var(--gold);}
+  .topbar .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase;}
+
+  .page{max-width:920px;margin:0 auto;padding:40px 20px 96px;}
+
+  .masthead{display:flex;flex-direction:column;gap:10px;padding-bottom:28px;margin-bottom:30px;border-bottom:2px solid var(--ink);}
+  .masthead .eyebrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:10px;}
+  .masthead .eyebrow::before{content:'§';font-size:14px;color:var(--gold);}
+  .masthead h1{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,4.6vw,44px);line-height:1.08;letter-spacing:-.01em;margin:2px 0 0;text-wrap:balance;}
+  .masthead .dek{font-size:16px;color:var(--ink-soft);max-width:70ch;margin-top:2px;}
+
+  .jump{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:40px;}
+  .jump a{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.02em;color:var(--ink-soft);
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:20px;padding:6px 12px;text-decoration:none;}
+  .jump a:hover{color:var(--green);border-color:var(--green);}
+  .jump a b{color:var(--gold);font-weight:600;margin-right:1px;}
+
+  section{position:relative;padding-left:22px;margin-bottom:42px;scroll-margin-top:64px;}
+  section::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--rule);}
+  section.primary::before{background:var(--green);width:3px;left:-1px;}
+  .sec-tag{display:inline-flex;align-items:baseline;gap:7px;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;color:var(--green);margin-bottom:6px;}
+  .sec-tag .num{background:var(--green-wash);color:var(--green);padding:2px 7px;border-radius:3px;font-weight:600;}
+  h2{font-family:var(--font-display);font-weight:600;font-size:24px;letter-spacing:-.005em;margin:0 0 4px;text-wrap:balance;}
+  h3{font-family:var(--font-display);font-weight:600;font-size:17.5px;margin:22px 0 9px;}
+  h4{font-family:var(--font-mono);font-weight:600;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:18px 0 8px;}
+  p{margin:0 0 12px;max-width:72ch;}
+  .lede{font-size:15px;color:var(--ink-soft);max-width:70ch;}
+  strong{font-weight:600;color:var(--ink);}
+  a{color:var(--green);text-decoration-color:var(--rule-strong);text-underline-offset:2px;}
+
+  .defcap{background:var(--paper-raised);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;margin:12px 0 16px;box-shadow:var(--shadow);}
+  .defcap .k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:5px;}
+  .defcap p{margin:0;font-size:14.5px;}
+
+  .twrap{overflow-x:auto;margin:12px 0 18px;border:1px solid var(--rule);border-radius:8px;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--paper-raised);}
+  th{text-align:left;font-family:var(--font-mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;padding:8px 11px;border-bottom:1px solid var(--rule-strong);background:var(--green-wash);white-space:nowrap;}
+  td{padding:8px 11px;border-bottom:1px solid var(--rule);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td.n{font-family:var(--font-mono);font-weight:600;color:var(--green);white-space:nowrap;}
+  td.loc{white-space:nowrap;font-family:var(--font-mono);font-size:12px;}
+
+  ul,ol{margin:0 0 13px;padding-left:20px;}
+  li{margin-bottom:6px;max-width:68ch;}
+  ul.plain{list-style:none;padding-left:0;}
+  ul.plain li{padding-left:17px;position:relative;font-size:14.5px;}
+  ul.plain li::before{content:'—';position:absolute;left:0;color:var(--gold);}
+  ul.plain li b{color:var(--green);font-family:var(--font-mono);font-weight:600;}
+
+  .trap{background:var(--warn-bg);border:1px solid var(--warn-rule);border-radius:8px;padding:14px 16px;margin:14px 0;}
+  .trap .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--warn-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px;font-weight:600;}
+  .trap .k::before{content:'⚠';font-size:12px;}
+  .trap p{margin:0;color:var(--ink);font-size:14px;}
+  .trap p+p{margin-top:8px;}
+  .trap strong{color:var(--warn-ink);}
+
+  .timeline{display:flex;flex-direction:column;margin:12px 0;}
+  .tstep{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:9px 0;border-bottom:1px dashed var(--rule);}
+  .tstep:last-child{border-bottom:none;}
+  .tstep .yr{font-family:var(--font-mono);font-weight:600;color:var(--green);font-size:14px;}
+  .tstep .name{font-weight:600;color:var(--ink);margin-bottom:2px;font-size:14.5px;}
+  .tstep p{margin:0;font-size:13.5px;color:var(--ink-soft);}
+
+  .clusters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 4px;}
+  @media (max-width:640px){.clusters{grid-template-columns:1fr;}}
+  .cluster{border-left:3px solid var(--gold);background:var(--paper-raised);border-radius:0 8px 8px 0;padding:11px 14px;box-shadow:var(--shadow);}
+  .cluster .t{font-family:var(--font-display);font-weight:600;font-size:14.5px;margin-bottom:4px;}
+  .cluster .nums{font-family:var(--font-mono);font-size:16px;color:var(--gold);font-weight:600;display:block;margin-bottom:3px;}
+  .cluster p{margin:0;font-size:13px;color:var(--ink-soft);}
+
+  footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule);font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  @media (max-width:600px){
+    .page{padding:28px 14px 72px;}
+    .tstep{grid-template-columns:1fr;}
+    section{padding-left:16px;}
+    h2{font-size:21px;}
+    table{font-size:12.5px;}
+    th,td{padding:7px 8px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="in">
+  <a class="back" href="../index.html#/s/PS/1"><span class="arrow">&larr;</span> Back to PS Chapter 1</a>
+  <span class="kicker">Study guide</span>
+</div></div>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Public Sector Accounting &middot; Numeric Reference</div>
+    <h1>PS by the numbers</h1>
+    <p class="dek">Every memorisable numeric rule the syllabus actually tests — years of service, approval thresholds, percentages, deadlines, tenure lengths — gathered from all 23 chapters into one page, grouped by theme with the exact section behind each figure. This is not a calculation cheat-sheet; every number below is a <strong>rule</strong>, the kind of fact an objective or short-answer question states directly and asks you to name back.</p>
+  </header>
+
+  <nav class="jump">
+    <a href="#pension"><b>1</b> Pension &amp; gratuity</a>
+    <a href="#benefits"><b>2</b> Employee benefits</a>
+    <a href="#budget"><b>3</b> Budgeting &amp; MTEF</a>
+    <a href="#officers"><b>4</b> Financial officers &amp; warrants</a>
+    <a href="#procurement"><b>5</b> Procurement</a>
+    <a href="#stores"><b>6</b> Stores &amp; Board of Survey</a>
+    <a href="#revenue"><b>7</b> Revenue-sharing formulas</a>
+    <a href="#localgov"><b>8</b> Local government finance</a>
+    <a href="#cash"><b>9</b> Cash, imprest &amp; records</a>
+    <a href="#ethics"><b>10</b> Ethics &middot; ICPC &middot; EFCC &middot; CCB</a>
+    <a href="#audit"><b>11</b> Audit-query response times</a>
+    <a href="#traps"><b>12</b> Easily-swapped pairs</a>
+  </nav>
+
+  <section class="primary" id="pension">
+    <div class="sec-tag"><span class="num">Ch 4&nbsp;&middot;&nbsp;</span>also Ch1 §1.4</div>
+    <h2>1&nbsp;&middot;&nbsp;Pension &amp; gratuity</h2>
+    <p class="lede">The single most exam-friendly numeric fact in the whole syllabus — and the one most often deliberately swapped between options.</p>
+
+    <div class="defcap">
+      <span class="k">The core rule</span>
+      <p><strong>5 years'</strong> service is the minimum to qualify for <strong>gratuity</strong> alone ("withdrawal of service"). <strong>10 years'</strong> service is the minimum to qualify for <strong>both gratuity and pension</strong> ("retirement"). Pension itself is then payable for a minimum of <strong>5 years or till death</strong>, whichever is longer.</p>
+    </div>
+
+    <h3>Armed Forces Pension Act</h3>
+    <ul class="plain">
+      <li>Government contributes <b>12.5%</b>, military staff <b>8%</b> of basic salary + allowances.</li>
+      <li>War-service years count <b>double</b>; a period of ordinary service longer than 6 months rounds up to a full year.</li>
+    </ul>
+
+    <h3>Pension Reform Act 2014 (Contributory Pension Scheme)</h3>
+    <ul class="plain">
+      <li>Minimum contribution: <b>employer 10%</b> + <b>employee 8%</b> = <b>18%</b> of monthly emolument (basic + housing + transport only).</li>
+      <li>If the employer takes on full responsibility alone, it must contribute at least <b>20%</b>.</li>
+      <li>Scheme applies to private-sector employers with <b>15 or more</b> employees. Under 3 employees, or self-employed &rarr; Micro Pension Plan instead.</li>
+      <li>Employer must maintain group life insurance of at least <b>3&times;</b> annual total emolument.</li>
+      <li>Exemption available to a pre-25 June 2004 scheme member with <b>3 years or fewer</b> left to retirement.</li>
+      <li>RSA (Retirement Savings Account) normal withdrawal age: <b>50 years</b> (earlier only on medical incapacity/permanent disability, or under the terms of employment).</li>
+      <li>An early retiree unable to secure work within <b>4 months</b> may withdraw a lump sum, capped at <b>25%</b> of the RSA balance, only after <b>6 months</b> of retirement.</li>
+      <li>Voluntary contributions are taxed if withdrawn within <b>5 years</b>.</li>
+      <li>Employer must remit contributions within <b>7 working days</b> of paying salary; late remittance penalty is at least <b>2% of the unpaid amount per month</b>.</li>
+      <li>A new employee must open an RSA within <b>6 months</b> of starting duty, else the employer/PFA opens a nominal one.</li>
+      <li>An RSA may be transferred between PFAs at most <b>once a year</b>.</li>
+      <li>Fitness-for-work review by the Medical Board: every <b>2 years</b>.</li>
+      <li>A Pension Fund Custodian (PFC) must notify the PFA within <b>24 hours</b> of receiving a contribution, and must report an employer's default beyond <b>14 days</b> to the Commission.</li>
+    </ul>
+
+    <h3>PenCom &amp; the Pension Fund Custodian</h3>
+    <ul class="plain">
+      <li>PenCom's part-time Chairman and Director-General each require at least <b>20 years'</b> relevant experience (plus a first degree for the Chairman); the <b>4 full-time Commissioners</b> each require the same 20-year minimum.</li>
+      <li>A PFC's minimum net worth is <b>&#8358;25,000,000,000</b>.</li>
+      <li>Statutory Reserve Fund = <b>12.5%</b> of the PFA's net profit after tax.</li>
+      <li>Pension Protection Fund is funded partly by <b>1%</b> of the Federal public service's total monthly wage bill.</li>
+      <li>A PFA/PFC licence revocation requires at least <b>7 calendar days'</b> notice.</li>
+    </ul>
+
+    <h3>Offences &amp; penalties</h3>
+    <ul class="plain">
+      <li>General offence: fine of at least <b>&#8358;250,000</b> or imprisonment of at least <b>1 year</b>.</li>
+      <li>A PFA/PFC reimbursing a staff member's fine: at least <b>&#8358;5,000,000</b>.</li>
+      <li>Misappropriation of pension funds: <b>10 years'</b> imprisonment plus a fine of <b>3&times;</b> the amount involved.</li>
+      <li>PFC-specific offence: <b>&#8358;10,000,000</b> minimum (or the lesser combination of &#8358;5,000,000 and 5 years).</li>
+      <li>False or misleading information: at least <b>&#8358;200,000</b> or <b>3 years</b>, plus a continuing penalty of <b>&#8358;100,000 a day</b>.</li>
+    </ul>
+
+    <h3>Micro Pension Plan</h3>
+    <ul class="plain">
+      <li>Eligible from age <b>18</b>.</li>
+      <li>Contributions split <b>40%</b> contingent / <b>60%</b> retirement.</li>
+      <li>Contingent portion accessible <b>3 months</b> after the first contribution, thereafter at most <b>once a week</b>, paid within <b>2 working days</b>.</li>
+      <li>Admin fee: <b>&#8358;80</b> on contributions of &#8358;4,000 or more, <b>&#8358;20</b> below that.</li>
+      <li>EFCC must be notified of single lodgements of <b>&#8358;5,000,000</b> or more.</li>
+    </ul>
+
+    <h3>The Constitution's own pension rules</h3>
+    <p>Section 173(3): pensions are reviewed <strong>every 5 years</strong>, or with any civil-service salary review, whichever comes first. Section 173(4): pensions are <strong>not taxed</strong>.</p>
+  </section>
+
+  <section id="benefits">
+    <div class="sec-tag"><span class="num">Ch 5&nbsp;&middot;&nbsp;</span>Employee Benefits (IPSAS 39)</div>
+    <h2>2&nbsp;&middot;&nbsp;Employee benefits</h2>
+    <ul class="plain">
+      <li>The <b>12-month</b> test is what separates a short-term benefit (undiscounted) from an "other long-term" benefit (discounted).</li>
+      <li>Under the old IPSAS 25, a transitional liability could be spread over <b>up to 5 years</b>.</li>
+      <li>Retirement-benefit-plan disclosure flags any single investment exceeding <b>5%</b> of net assets available for benefits (or 5% of any one class of security).</li>
+    </ul>
+  </section>
+
+  <section id="budget">
+    <div class="sec-tag"><span class="num">Ch 2 &amp; Ch 6&nbsp;&middot;&nbsp;</span>Fiscal framework &amp; budgeting</div>
+    <h2>3&nbsp;&middot;&nbsp;Budgeting &amp; the MTEF</h2>
+    <ul class="plain">
+      <li>Fiscal Responsibility Act 2007 deficit ceiling: <b>&le;3%</b> of GDP (an excess needs National Assembly approval).</li>
+      <li>Scheduled corporations must remit <b>80%</b> of their operating surplus to the Consolidated Revenue Fund.</li>
+      <li>The <b>first</b> Medium-Term Expenditure Framework had to be laid before the National Assembly within <b>6 months</b> of the Act's commencement; every MTEF after that must be laid at least <b>4 months</b> before the new financial year.</li>
+      <li>The Minister must present the MTEF to the Federal Executive Council <b>before the end of the second quarter</b> of each year.</li>
+      <li>The annual budget must be accompanied by an <b>18-month</b> actual-vs-budget performance report, running up to June of the preceding year.</li>
+      <li>A <strong>Provisional General Warrant</strong> — issued before the Appropriation Act is passed — is capped at the previous year's level and is valid for a <b>maximum of 6 months</b> (Constitution s.82). The Development Fund's own provisional warrant carries the same 6-month cap.</li>
+    </ul>
+    <div class="timeline">
+      <div class="tstep"><div class="yr">1976</div><div><div class="name">Zero-based budgeting popularised</div><p>Introduced by Peter Pyhrr, popularised in government by US President Jimmy Carter.</p></div></div>
+      <div class="tstep"><div class="yr">1990</div><div><div class="name">Nigeria's Rolling Plan begins</div><p>The 3-year rolling planning approach the syllabus treats in Chapter 6.</p></div></div>
+    </div>
+  </section>
+
+  <section id="officers">
+    <div class="sec-tag"><span class="num">Ch 7&nbsp;&middot;&nbsp;</span>Financial officers &amp; warrants</div>
+    <h2>4&nbsp;&middot;&nbsp;Financial officers &amp; warrants</h2>
+    <ul class="plain">
+      <li>The Auditor-General for the Federation (s.86(1)) leaves office at <b>35 years'</b> service or age <b>60</b>, whichever comes first.</li>
+      <li>Removing the AuGF (s.87(1)) needs the President to act on an address supported by a <b>two-thirds majority</b> of the Senate.</li>
+      <li>The AuGF must submit the report to the National Assembly within <b>90 days</b> of receiving the Accountant-General's financial statements (s.85(5)).</li>
+      <li>A State Auditor-General (s.126(1)) is appointed by the Governor on the State Civil Service Commission's recommendation, confirmed by the State House of Assembly.</li>
+      <li>Every warrant is issued in <b>2 copies</b> — original to the Accountant-General of the Federation, duplicate to the Auditor-General — and gazetted.</li>
+    </ul>
+  </section>
+
+  <section class="primary" id="procurement">
+    <div class="sec-tag"><span class="num">Ch 10&nbsp;&middot;&nbsp;</span>Public Procurement Act</div>
+    <h2>5&nbsp;&middot;&nbsp;Public procurement — the richest single topic for numbers</h2>
+    <ul class="plain">
+      <li>Founding legislation: the Public Procurement Act, <b>2007</b>.</li>
+      <li>The National Council on Public Procurement is chaired by the Minister of Finance, plus <b>6</b> part-time members.</li>
+      <li>A "Request for Quotations" needs at least <b>3</b> written quotations from unrelated suppliers.</li>
+      <li>A Permanent Secretary/parastatal CEO may approve a contract up to <b>&#8358;5,000,000</b> without open tender, provided at least 3 written quotations are obtained and a quarterly return is made.</li>
+      <li>Procurement records are retained for <b>7 years</b> from project completion/handover.</li>
+      <li>Retention fee on a contract: around <b>5%</b> of the contract sum, withheld for <b>6 months</b> after completion.</li>
+      <li>Electronic contractor payment has been mandatory since <b>January 2009</b>.</li>
+      <li>A complaint to the accounting officer must be answered within <b>15 working days</b>; an escalation to the Bureau of Public Procurement (BPP) is decided within <b>21 working days</b>.</li>
+      <li>Penalty for an offence under the Act: a natural person gets <b>at least 5 years'</b> imprisonment with no option of a fine; a body corporate gets a fine of <b>at least 25%</b> of the procurement value, plus possible debarment.</li>
+    </ul>
+
+    <h3>Processing timelines (working days, start to finish)</h3>
+    <div class="twrap"><table>
+      <thead><tr><th>Method</th><th>Total working days</th></tr></thead>
+      <tbody>
+        <tr><td>National Competitive Bidding (NCB)</td><td class="n">91</td></tr>
+        <tr><td>International Competitive Bidding (ICB)</td><td class="n">107</td></tr>
+        <tr><td>Consultancy</td><td class="n">128</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>Approval thresholds by tier — headline figures</h3>
+    <p>The full circular (Ref. 59780/S.2/B/532, 27 May 2025) runs from Accounting Officer level up through Permanent Secretary/Head, the Parastatal Tenders' Board, the Ministerial Tenders' Board, a BPP certificate, and finally BPP-plus-FEC/NASS approval — separately for goods/services, works, non-consultancy services and consultancy. The figures that matter most for recall are the two ends of the scale:</p>
+    <div class="twrap"><table>
+      <thead><tr><th>Value band</th><th>Procurement method</th></tr></thead>
+      <tbody>
+        <tr><td>&ge; &#8358;1bn (goods) &middot; &ge; &#8358;5bn (works)</td><td>International/National Competitive Bidding</td></tr>
+        <tr><td>&#8358;30m &ndash; &#8358;1bn</td><td>National Competitive Bidding</td></tr>
+        <tr><td>&lt; &#8358;30m</td><td>Request for Quotations</td></tr>
+        <tr><td>&lt; &#8358;5m</td><td>Single-source procurement</td></tr>
+        <tr><td>&ge; &#8358;500m (goods) &middot; &ge; &#8358;1bn (works)</td><td>Prequalification of bidders required</td></tr>
+        <tr><td>&#8358;5bn+ (goods/services/consultancy) &middot; &#8358;10bn+ (works)</td><td>FEC-level approval required</td></tr>
+      </tbody>
+    </table></div>
+    <p>NNPCL runs its own, separate dollar-denominated thresholds under a different circular — from Accounting Officer level below <b>US$0.10m</b> up to BPP-plus-FEC approval at <b>US$20m</b> and above.</p>
+  </section>
+
+  <section id="stores">
+    <div class="sec-tag"><span class="num">Ch 11&nbsp;&middot;&nbsp;</span>Stores, losses &amp; the Board of Survey</div>
+    <h2>6&nbsp;&middot;&nbsp;Stores, losses &amp; the Board of Survey</h2>
+    <ul class="plain">
+      <li>A Board of Survey has <b>3</b> officers: a President at <b>Grade Level 08</b> or above, and at least 2 members at <b>Grade Level 06</b> or above.</li>
+      <li>An accounting officer may personally surcharge a cash loss of up to <b>&#8358;50,000</b> where no fraud is involved.</li>
+      <li>A loss is reported on Treasury Form 146, prepared in <b>quintuplicate</b> (5 copies).</li>
+    </ul>
+  </section>
+
+  <section id="revenue">
+    <div class="sec-tag"><span class="num">Ch 9&nbsp;&middot;&nbsp;</span>Revenue-sharing formulas</div>
+    <h2>7&nbsp;&middot;&nbsp;Revenue-sharing formulas</h2>
+    <div class="clusters">
+      <div class="cluster"><span class="nums">52.68 / 26.72 / 20.60</span><div class="t">Federation Account (vertical)</div><p>Federal / State / Local Government split, in %.</p></div>
+      <div class="cluster"><span class="nums">15 / 50 / 35</span><div class="t">VAT pool (vertical)</div><p>Federal / State / Local Government split, in %.</p></div>
+      <div class="cluster"><span class="nums">&ge; 13%</span><div class="t">Derivation principle (s.162(2))</div><p>Minimum share of natural-resource revenue returned to the producing state.</p></div>
+      <div class="cluster"><span class="nums">4%</span><div class="t">Customs Service retention</div><p>Free-on-board retention under the 2023/2025 reforms — replaces the old 7% cost-of-collection deduction, now scrapped.</p></div>
+    </div>
+    <h3>RMAFC horizontal (inter-state) formula</h3>
+    <ul class="plain">
+      <li>Equality of states: <b>40%</b></li>
+      <li>Population: <b>30%</b></li>
+      <li>Internally-generated-revenue effort: <b>10%</b></li>
+      <li>Land mass/terrain: <b>10%</b></li>
+      <li>Social development: <b>10%</b></li>
+    </ul>
+    <p>Ghana comparator: the District Assemblies' Common Fund is at least <strong>5%</strong> of total national revenue.</p>
+  </section>
+
+  <section id="localgov">
+    <div class="sec-tag"><span class="num">Ch 12&nbsp;&middot;&nbsp;</span>Local government finance</div>
+    <h2>8&nbsp;&middot;&nbsp;Local government finance</h2>
+    <ul class="plain">
+      <li><b>774</b> local government councils share the 20.60% Federation Account tranche.</li>
+      <li>Councils commonly receive <b>10%</b> of a State's internally generated revenue (s.162(7)).</li>
+      <li>Spending is capped by an IGR band — at the top band (IGR above &#8358;2m), a Chairman may approve up to <b>&#8358;250,000</b>, a Vice-Chairman up to <b>&#8358;50,000</b>, a Head of Personnel Management up to <b>&#8358;10,000</b>, and a Head of Department up to <b>&#8358;5,000</b> (two further, lower IGR bands set smaller limits again). Every approval must be reported within a <b>week</b>.</li>
+    </ul>
+  </section>
+
+  <section id="cash">
+    <div class="sec-tag"><span class="num">Ch 13&nbsp;&middot;&nbsp;</span>Cash, imprest &amp; records</div>
+    <h2>9&nbsp;&middot;&nbsp;Cash, imprest &amp; records</h2>
+    <ul class="plain">
+      <li>An imprest holder must be at least <b>Grade Level 04</b>.</li>
+      <li>Cash of <b>&#8358;50,000 or more</b> must be banked, and petty-cash approval by the accounting officer is capped at the same <b>&#8358;50,000</b>.</li>
+      <li>Collectors' cash books and vouchers are retained for <b>7 years</b>; Local Purchase Order and transport-warrant copies for <b>2 years</b>.</li>
+    </ul>
+  </section>
+
+  <section id="ethics">
+    <div class="sec-tag"><span class="num">Ch 22&nbsp;&middot;&nbsp;</span>Ethics &middot; ICPC &middot; EFCC &middot; CCB</div>
+    <h2>10&nbsp;&middot;&nbsp;Ethics, ICPC, EFCC &amp; the Code of Conduct Bureau</h2>
+    <ul class="plain">
+      <li>Most ICPC gratification/bribery offences carry <b>7 years'</b> imprisonment; bribery of a public officer specifically is <b>5 years with hard labour</b>; personal-gratification misuse of office is <b>5 years, no fine option</b>; postal offences run <b>3&ndash;7 years</b>.</li>
+      <li>Code of Conduct Bureau: the <b>Chairman serves 5 years</b> (renewable once); <b>other members serve 4 years</b> (renewable once).</li>
+      <li>Asset declaration is due within <b>3 months</b> of taking office, then <b>every 4 years</b>, and again at the end of the term.</li>
+      <li>EFCC Commissioners are appointed by the National Assembly for <b>3 years</b>, renewable.</li>
+      <li>A cash transaction of <b>&#8358;5,000,000 or more</b> (individual — higher for a corporate body) is reportable under money-laundering rules within <b>7 days</b>; records are preserved for <b>10 years</b>.</li>
+      <li>General economic/financial crime carries <b>15&ndash;25 years'</b> imprisonment.</li>
+      <li>The FRCN receives annual reports within <b>60 days</b> of Board approval (cross-referenced in Chapter 1).</li>
+    </ul>
+  </section>
+
+  <section class="primary" id="audit">
+    <div class="sec-tag"><span class="num">Ch 23 §23.9&nbsp;&middot;&nbsp;</span>Financial Regulations 2009, ch. 31</div>
+    <h2>11&nbsp;&middot;&nbsp;Audit-query response times</h2>
+    <p class="lede">Arguably the single richest "numbers" table in the whole syllabus: every type of audit query carries its own statutory number of days to respond. Learn the table as a table, not as isolated facts — several pairs are only a few days apart and are exactly what an exam option swaps.</p>
+    <div class="twrap"><table>
+      <thead><tr><th>Query</th><th>Response time</th></tr></thead>
+      <tbody>
+        <tr><td>Loss of cash (cashier)</td><td class="n">7 days</td></tr>
+        <tr><td>No reply received on a revenue-collection failure</td><td class="n">7 days</td></tr>
+        <tr><td>Inflation of contracts</td><td class="n">5 days</td></tr>
+        <tr><td>Loss of stores (storekeeper)</td><td class="n">14 days</td></tr>
+        <tr><td>Unauthorised contract variation</td><td class="n">21 days</td></tr>
+        <tr><td>Payment on a false completion certificate</td><td class="n">21 days</td></tr>
+        <tr><td>Irregular or wrong payment</td><td class="n">21 days</td></tr>
+        <tr><td>Assets paid for but not supplied</td><td class="n">21 days</td></tr>
+        <tr><td>Overpayment of salaries</td><td class="n">21 days</td></tr>
+        <tr><td>Failure to collect revenue</td><td class="n">21 days</td></tr>
+        <tr><td>Non-rendition of monthly transcript</td><td class="n">21 days</td></tr>
+        <tr><td>Non-retirement of an advance/imprest</td><td class="n">21 days</td></tr>
+        <tr><td>Poor quality of work</td><td class="n">42 days</td></tr>
+        <tr><td>Payment for a job not executed</td><td class="n">30 days</td></tr>
+        <tr><td>Non-payment for use of government property</td><td class="n">30 days</td></tr>
+        <tr><td>Non-rendition of returns</td><td class="n">30 days</td></tr>
+      </tbody>
+    </table></div>
+    <div class="trap">
+      <span class="k">The 5/7/14/21/30/42-day ladder</span>
+      <p>Notice the pattern: the <strong>shortest</strong> windows (5&ndash;7 days) attach to cash and revenue-reply failures — the most immediately reversible/traceable issues. <strong>21 days</strong> is the default for most substantive irregularities. <strong>30 and 42 days</strong> are reserved for the queries that genuinely need more time to investigate (non-performance of work, poor quality). If an option looks plausible but the number feels "too short" for a complex query like poor-quality work, it is probably the wrong pairing.</p>
+    </div>
+  </section>
+
+  <section id="traps">
+    <div class="sec-tag"><span class="num">Cross-cutting&nbsp;&middot;&nbsp;</span>Easily-swapped pairs</div>
+    <h2>12&nbsp;&middot;&nbsp;Numbers examiners love to swap</h2>
+    <div class="trap">
+      <span class="k">5 years vs 10 years</span>
+      <p><strong>5 years</strong> of service &rarr; gratuity only. <strong>10 years</strong> of service &rarr; gratuity <em>and</em> pension. An option will happily offer "10 years for gratuity" as bait.</p>
+    </div>
+    <div class="trap">
+      <span class="k">2014 vs 2016</span>
+      <p>Nigeria's Cash Basis IPSAS took effect <strong>2014</strong>; the Accrual Basis suite took effect <strong>2016</strong>. See the <a href="ipsas.html">IPSAS guide</a> for the full timeline.</p>
+    </div>
+    <div class="trap">
+      <span class="k">10% employer + 8% employee (2014 Act) vs the superseded 7.5% + 7.5% (2004 Act)</span>
+      <p>The current Pension Reform Act 2014 minimums are asymmetric (10%/8%); the 2004 Act it replaced was symmetric (7.5%/7.5%). A past-question option lifted from an older diet may still use the 2004 figures.</p>
+    </div>
+    <div class="trap">
+      <span class="k">6-month provisional warrant vs 90-day audit report</span>
+      <p>The Provisional General Warrant cap (<strong>6 months</strong>, Constitution s.82) and the Auditor-General's own reporting deadline (<strong>90 days</strong>, s.85(5)) are two completely different clocks that a hurried read can conflate.</p>
+    </div>
+    <div class="trap">
+      <span class="k">CCB Chairman (5 years) vs CCB members (4 years)</span>
+      <p>Both renewable once — but only once each, and the Chairman's term is the longer of the two.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Sources: Pension Reform Act 2014, Public Procurement Act 2007, Fiscal Responsibility Act 2007, the 1999 Constitution (as amended), Financial Regulations 2009, ICPC/EFCC/CCB Acts, and the ATSWA Part&nbsp;II study text.</span>
+    <span>ATSWA Part II &middot; Public Sector Accounting</span>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1004,6 +1004,9 @@ CH = {
              'under the old defined benefit rules, or under a stated scheme rule, and will give '
              'you the formula — typically a percentage of final annual salary for each year '
              'of pensionable service. Read the rule given in the question; do not import one.'},
+    {'note': '[Every numeric rule in this chapter, and every other chapter, in one place →]'
+             '(guides/ps-numbers.html) — years of service, contribution rates, thresholds and '
+             'deadlines, gathered from all 23 chapters.'},
   ]},
 
   {'n': '4.21', 't': 'Further reading', 'b': [

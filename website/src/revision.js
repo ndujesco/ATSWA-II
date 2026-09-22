@@ -25,6 +25,73 @@
       'white-space:nowrap">ASKED ' + freq + '&times;</span>';
   }
 
+  /* Every diet a cluster was asked in ('2019-03', '2020-09', ...) reduced to
+     its distinct years, for the year-range sorter below. */
+  function yearsOf(diets) {
+    var seen = {}, out = [];
+    (diets || []).forEach(function (d) {
+      var y = d.slice(0, 4);
+      if (!seen[y]) { seen[y] = 1; out.push(y); }
+    });
+    return out;
+  }
+
+  /* ---- year-range sorter, mcq/saq/essay lists ------------------------ */
+  function yearFilterBar(list) {
+    var all = {};
+    list.forEach(function (q) { yearsOf(q.diets).forEach(function (y) { all[y] = 1; }); });
+    var years = Object.keys(all).sort();
+    if (years.length < 2) return '';
+    var opts = years.map(function (y) { return '<option value="' + y + '">' + y + '</option>'; }).join('');
+    return '<div class="revfilter">' +
+      '<span class="lbl">Diet years</span>' +
+      '<select id="revYearFrom" aria-label="From year">' + opts + '</select>' +
+      '<span class="to">&ndash;</span>' +
+      '<select id="revYearTo" aria-label="To year">' + opts + '</select>' +
+      '<span class="mono revcount" id="revCount"></span>' +
+      '<button class="btn sm" id="revYearReset" type="button">Reset</button>' +
+      '</div>';
+  }
+
+  function wireYearFilter() {
+    var from = A.el('revYearFrom'), to = A.el('revYearTo'), reset = A.el('revYearReset');
+    if (!from || !to) return;
+    to.value = to.options[to.options.length - 1].value; // default: full range
+    var items = [].slice.call(document.querySelectorAll('[data-years]'));
+    var topics = [].slice.call(document.querySelectorAll('.revtopic'));
+    function apply() {
+      var lo = from.value, hi = to.value;
+      if (lo > hi) { var t = lo; lo = hi; hi = t; }
+      var shown = 0;
+      items.forEach(function (el) {
+        var ys = el.getAttribute('data-years').split(' ');
+        var inRange = ys.some(function (y) { return y >= lo && y <= hi; });
+        el.classList.toggle('hid', !inRange);
+        if (inRange) shown++;
+      });
+      // A topic header (short-answer grouping) hides itself when every
+      // question in that topic has been filtered out.
+      topics.forEach(function (h) {
+        var sib = h.nextElementSibling, anyShown = false;
+        while (sib && !sib.classList.contains('revtopic')) {
+          if (sib.hasAttribute('data-years') && !sib.classList.contains('hid')) anyShown = true;
+          sib = sib.nextElementSibling;
+        }
+        h.classList.toggle('hid', !anyShown);
+      });
+      var cnt = A.el('revCount');
+      if (cnt) cnt.textContent = shown + ' of ' + items.length + ' shown';
+    }
+    from.addEventListener('change', apply);
+    to.addEventListener('change', apply);
+    if (reset) reset.addEventListener('click', function () {
+      from.value = from.options[0].value;
+      to.value = to.options[to.options.length - 1].value;
+      apply();
+    });
+    apply();
+  }
+
   /* ---- subject picker ------------------------------------------------ */
   V.revision = function () {
     withRevision(function (rev) {
@@ -88,7 +155,8 @@
       var body;
       if (kind === 'mcq') {
         body = list.map(function (q) {
-          return '<div class="bq"><div class="h"><span class="n">' + q.n + '</span>' +
+          return '<div class="bq" data-years="' + yearsOf(q.diets).join(' ') + '">' +
+            '<div class="h"><span class="n">' + q.n + '</span>' +
             freqBadge(q.freq) + chBadge(code, q.ch, q.sec) + '</div>' +
             '<div class="body">' + A.preBlock(q.pre) + A.stemHTML(q) +
             '<div style="margin-top:10px">' + q.options.map(function (o, k) {
@@ -120,7 +188,8 @@
                 '<span>' + label + '</span>') + '</div>';
           }
           return head +
-            '<div class="saqrow"><span class="n">' + q.n + '</span><div class="b">' +
+            '<div class="saqrow" data-years="' + yearsOf(q.diets).join(' ') + '">' +
+            '<span class="n">' + q.n + '</span><div class="b">' +
             A.preBlock(q.pre) +
             '<div style="display:flex;justify-content:space-between;gap:14px;align-items:baseline">' +
             '<div style="flex:1">' + R.inl(q.body.join(' ')) + '</div>' + freqBadge(q.freq) + '</div>' +
@@ -133,7 +202,8 @@
       } else {
         body = list.map(function (b) {
           var rid = 'rev' + code + kind + b.n;
-          return '<div class="bq"><div class="h"><span class="n">Question ' + b.n + '</span>' +
+          return '<div class="bq" data-years="' + yearsOf(b.diets).join(' ') + '">' +
+            '<div class="h"><span class="n">Question ' + b.n + '</span>' +
             freqBadge(b.freq) + chBadge(code, b.ch, b.sec) + '</div>' +
             (b.q && b.q.length ? '<div class="body"><div class="pre">' +
               A.esc(b.q.join('\n')) + '</div></div>' : '') +
@@ -159,7 +229,9 @@
         '<div class="sbar"><a class="btn" href="#/revision/' + code + '">' + A.esc(s.name) + '</a>' +
         '<a class="btn" href="#/revision">All subjects</a>' +
         (kind === 'essay' ? '<button class="btn" data-revealall="1">Reveal every solution</button>' : '') +
-        '</div></section>' + body + '<div style="height:60px"></div></div>');
+        '</div>' + yearFilterBar(list) +
+        '</section>' + body + '<div style="height:60px"></div></div>');
+      wireYearFilter();
     });
   };
 })();

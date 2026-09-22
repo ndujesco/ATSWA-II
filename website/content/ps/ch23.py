@@ -361,6 +361,9 @@ CH = {
        'organisation\'s budget allocation is suspended; the officer is treated as having '
        'committed gross misconduct and disciplined'],
     ]}},
+    {'note': '[This response-time ladder, alongside every other numeric rule in the syllabus →]'
+             '(guides/ps-numbers.html) — years of service, thresholds and deadlines from all 23 '
+             'chapters, in one place.'},
   ]},
 
   {'n': '23.10', 't': 'End-of-chapter questions (study text)', 'b': [

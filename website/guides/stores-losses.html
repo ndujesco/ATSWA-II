@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stores, Losses &amp; the Board of Survey — ATSWA PS Study Guide</title>
+<meta name="description" content="The most-repeated topic in the whole Public Sector Accounting past-question bank: every store document, the Board of Survey vs Board of Enquiry distinction, and the full loss-and-surcharge procedure, in one reference.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E5C42'/%3E%3Cpath d='M7 6h18v6H13v5h11v6H13v6H7z' fill='%23F6F1E6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F6F1E6; --paper-raised:#FBF8F1;
+    --ink:#1B231E; --ink-soft:#4E5951; --ink-faint:#7C877E;
+    --green:#1E5C42; --green-deep:#123B2B; --green-wash:#E7EEE7;
+    --gold:#96742A; --gold-wash:#F1E7CE;
+    --rule:rgba(27,35,30,0.14); --rule-strong:rgba(27,35,30,0.28);
+    --shadow:0 1px 2px rgba(27,35,30,0.06);
+    --warn-bg:#FBEEEA; --warn-ink:#8A3B24; --warn-rule:#D9B7A8;
+    --super-bg:#EEF1FB; --super-ink:#2E3E86; --super-rule:#C7D0EE;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1613; --paper-raised:#151E19;
+      --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+      --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+      --gold:#D3AE5C; --gold-wash:#26210F;
+      --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+      --shadow:0 1px 2px rgba(0,0,0,0.35);
+      --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+      --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1613; --paper-raised:#151E19;
+    --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+    --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+    --gold:#D3AE5C; --gold-wash:#26210F;
+    --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+    --shadow:0 1px 2px rgba(0,0,0,0.35);
+    --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+    --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+  }
+
+  *{box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{
+    background:var(--paper); color:var(--ink); font-family:var(--font-body);
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; margin:0;
+  }
+  ::selection{background:var(--gold-wash);}
+
+  .topbar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);}
+  .topbar .in{max-width:920px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .topbar a.back{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-soft);text-decoration:none;display:flex;align-items:center;gap:6px;}
+  .topbar a.back:hover{color:var(--green);}
+  .topbar a.back .arrow{color:var(--gold);}
+  .topbar .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase;}
+
+  .page{max-width:920px;margin:0 auto;padding:40px 20px 96px;}
+
+  .masthead{display:flex;flex-direction:column;gap:10px;padding-bottom:28px;margin-bottom:30px;border-bottom:2px solid var(--ink);}
+  .masthead .eyebrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:10px;}
+  .masthead .eyebrow::before{content:'§';font-size:14px;color:var(--gold);}
+  .masthead h1{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,4.4vw,42px);line-height:1.1;letter-spacing:-.01em;margin:2px 0 0;text-wrap:balance;}
+  .masthead .dek{font-size:16px;color:var(--ink-soft);max-width:70ch;margin-top:2px;}
+
+  .jump{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:40px;}
+  .jump a{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.02em;color:var(--ink-soft);
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:20px;padding:6px 12px;text-decoration:none;}
+  .jump a:hover{color:var(--green);border-color:var(--green);}
+  .jump a b{color:var(--gold);font-weight:600;margin-right:1px;}
+
+  section{position:relative;padding-left:22px;margin-bottom:42px;scroll-margin-top:64px;}
+  section::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--rule);}
+  section.primary::before{background:var(--green);width:3px;left:-1px;}
+  .sec-tag{display:inline-flex;align-items:baseline;gap:7px;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;color:var(--green);margin-bottom:6px;}
+  .sec-tag .num{background:var(--green-wash);color:var(--green);padding:2px 7px;border-radius:3px;font-weight:600;}
+  h2{font-family:var(--font-display);font-weight:600;font-size:24px;letter-spacing:-.005em;margin:0 0 4px;text-wrap:balance;}
+  h3{font-family:var(--font-display);font-weight:600;font-size:17.5px;margin:22px 0 9px;}
+  h4{font-family:var(--font-mono);font-weight:600;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:18px 0 8px;}
+  p{margin:0 0 12px;max-width:72ch;}
+  .lede{font-size:15px;color:var(--ink-soft);max-width:70ch;}
+  strong{font-weight:600;color:var(--ink);}
+  a{color:var(--green);text-decoration-color:var(--rule-strong);text-underline-offset:2px;}
+
+  .defcap{background:var(--paper-raised);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;margin:12px 0 16px;box-shadow:var(--shadow);}
+  .defcap .k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:5px;}
+  .defcap p{margin:0;font-size:14.5px;}
+
+  .twrap{overflow-x:auto;margin:12px 0 18px;border:1px solid var(--rule);border-radius:8px;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--paper-raised);}
+  th{text-align:left;font-family:var(--font-mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;padding:8px 11px;border-bottom:1px solid var(--rule-strong);background:var(--green-wash);}
+  td{padding:8px 11px;border-bottom:1px solid var(--rule);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td.n{font-family:var(--font-mono);font-weight:600;color:var(--green);white-space:nowrap;}
+
+  ul,ol{margin:0 0 13px;padding-left:20px;}
+  li{margin-bottom:6px;max-width:68ch;}
+  ul.plain{list-style:none;padding-left:0;}
+  ul.plain li{padding-left:17px;position:relative;font-size:14.5px;}
+  ul.plain li::before{content:'—';position:absolute;left:0;color:var(--gold);}
+  ol.steps{padding-left:0;list-style:none;counter-reset:step;}
+  ol.steps li{counter-increment:step;padding-left:30px;position:relative;font-size:14.5px;}
+  ol.steps li::before{content:counter(step);position:absolute;left:0;top:0;width:20px;height:20px;
+    border-radius:50%;background:var(--green-wash);color:var(--green);font-family:var(--font-mono);
+    font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center;}
+
+  .trap{background:var(--warn-bg);border:1px solid var(--warn-rule);border-radius:8px;padding:14px 16px;margin:14px 0;}
+  .trap .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--warn-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px;font-weight:600;}
+  .trap .k::before{content:'⚠';font-size:12px;}
+  .trap p{margin:0;color:var(--ink);font-size:14px;}
+  .trap strong{color:var(--warn-ink);}
+
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin:14px 0;}
+  @media (max-width:640px){.vs{grid-template-columns:1fr;}}
+  .vs > div{background:var(--paper-raised);padding:14px 16px;}
+  .vs h4{margin-top:0;}
+  .vs .t{font-family:var(--font-display);font-weight:600;font-size:16px;color:var(--ink);margin-bottom:8px;}
+  .vs ul{margin:0;padding-left:16px;}
+  .vs li{font-size:13.5px;margin-bottom:5px;}
+
+  footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule);font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  @media (max-width:600px){
+    .page{padding:28px 14px 72px;}
+    section{padding-left:16px;}
+    h2{font-size:21px;}
+    table{font-size:12.5px;}
+    th,td{padding:7px 8px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="in">
+  <a class="back" href="../index.html#/s/PS/11"><span class="arrow">&larr;</span> Back to PS Chapter 11</a>
+  <span class="kicker">Study guide</span>
+</div></div>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Public Sector Accounting &middot; Chapter 11</div>
+    <h1>Stores, losses &amp; the Board of Survey</h1>
+    <p class="dek">The single most-repeated topic across every PS past paper on this site — more short-answer and objective questions trace back to this one chapter than to any other. This guide pulls together the three things examiners keep asking: which document does what, how a Board of Survey differs from a Board of Enquiry, and exactly what happens, step by step, when cash or stores go missing.</p>
+  </header>
+
+  <nav class="jump">
+    <a href="#classify"><b>1</b> Classifying stores</a>
+    <a href="#docs"><b>2</b> Document glossary</a>
+    <a href="#verify"><b>3</b> Stock verification</a>
+    <a href="#boards"><b>4</b> Board of Survey vs Board of Enquiry</a>
+    <a href="#loss"><b>5</b> The loss procedure</a>
+    <a href="#committee"><b>6</b> Federal Losses Committee</a>
+  </nav>
+
+  <section class="primary" id="classify">
+    <div class="sec-tag"><span class="num">§11.1&nbsp;&middot;&nbsp;</span>Classification</div>
+    <h2>1&nbsp;&middot;&nbsp;Classifying stores — two independent splits</h2>
+    <p class="lede">Every store falls into one class on <strong>when it's charged to the vote</strong>, and a separate class on <strong>whether it's returnable</strong>. These are two different axes, not four alternatives — a single item is one of each.</p>
+    <div class="twrap"><table>
+      <thead><tr><th>Class</th><th>Meaning</th><th>Charged to the vote</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Allocated</strong></td><td>Bought for, and charged directly to, a particular vote or job</td><td>Immediately, on purchase — no store ledger value carried</td></tr>
+        <tr><td><strong>Unallocated</strong></td><td>Bought in bulk, held for future issue to whichever vote needs it — stationery, fuel, spare parts, drugs</td><td>On issue — held at cost in the store ledger until then</td></tr>
+        <tr><td><strong>Expendable</strong></td><td>Consumed in use, not returnable — stationery, cleaning materials, drugs, fuel</td><td>Written off on issue</td></tr>
+        <tr><td><strong>Non-expendable</strong></td><td>Durable, returnable after use — tools, furniture, equipment, vehicles</td><td>Carried on an inventory/asset register until disposal</td></tr>
+      </tbody>
+    </table></div>
+    <div class="defcap"><span class="k">The recurring one-line test</span><p>"Store items purchased for general use, whose eventual vote isn't known at purchase" &rarr; <strong>unallocated</strong>. If a past question just says "for accounting purposes stores are classified into two" without qualifying which axis, it means <strong>allocated / unallocated</strong> — that pairing, not expendable/non-expendable, is the one the study text presents as the primary accounting split.</p></div>
+  </section>
+
+  <section class="primary" id="docs">
+    <div class="sec-tag"><span class="num">§11.2, §11.6&nbsp;&middot;&nbsp;</span>Records and documents</div>
+    <h2>2&nbsp;&middot;&nbsp;Document glossary — "which document does X?"</h2>
+    <p class="lede">This exact phrasing — name the document that does a specific job — is the most common single question type on this chapter. Learn the table, not just the individual entries; several are deliberately similar-sounding.</p>
+    <div class="twrap"><table>
+      <thead><tr><th>Document</th><th>What it does</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Local Purchase Order (LPO)</strong></td><td>Authorises a supplier to deliver goods</td></tr>
+        <tr><td><strong>Store Receipt Voucher (SRV)</strong></td><td>Evidences receipt into store after inspection — authority for the receipt side of the ledger</td></tr>
+        <tr><td><strong>Store Issue Voucher (SIV)</strong></td><td>Authorises and evidences issue from store — authority for the issue side</td></tr>
+        <tr><td><strong>Bin card / tally card</strong></td><td>Kept <em>by the storekeeper</em>, at the bin. <strong>Quantities only.</strong></td></tr>
+        <tr><td><strong>Store ledger (stock card)</strong></td><td>Kept <em>in the accounts section</em>. <strong>Quantity and value</strong> — the basis of the stores account.</td></tr>
+        <tr><td><strong>Requisition</strong></td><td>The using department's own request for stores</td></tr>
+        <tr><td><strong>Inventory / asset register</strong></td><td>Lists non-expendable items, their location and the officer responsible</td></tr>
+        <tr><td><strong>Store Adjustment Voucher</strong></td><td>Records an approved surplus, shortage, revaluation or conversion</td></tr>
+        <tr><td><strong>Inventory transfer voucher</strong></td><td>Raised in duplicate to move stores <em>between</em> warehouses</td></tr>
+        <tr><td><strong>Inventory issue voucher</strong></td><td>Supports every issue against a signed requisition; the storekeeper posts the tally card at this point</td></tr>
+        <tr><td><strong>Conversion voucher</strong></td><td>Evidences stores issued <em>within the same store</em> for manufacture/conversion — doubles as the finished article's own issue voucher when it's returned to store</td></tr>
+        <tr><td><strong>Store Form 10</strong></td><td>Jointly signed by outgoing and incoming officers on handing over</td></tr>
+        <tr><td><strong>Treasury Form 146</strong></td><td>"Report on Loss of Funds or Inventories" — Part II, in quintuplicate</td></tr>
+      </tbody>
+    </table></div>
+    <div class="trap">
+      <span class="k">The pairing to never mix up</span>
+      <p><strong>Bin card</strong> = storekeeper, quantity only. <strong>Store ledger</strong> = accounts section, quantity <em>and</em> value. They are two independent records of the same movement, kept by different officers, and made to agree — the entire point is that neither officer can quietly alter the record alone.</p>
+    </div>
+  </section>
+
+  <section id="verify">
+    <div class="sec-tag"><span class="num">§11.3&nbsp;&middot;&nbsp;</span>Stock verification</div>
+    <h2>3&nbsp;&middot;&nbsp;Stock verification — surplus vs shortage</h2>
+    <p>Carried out by <strong>stock verifiers independent of the storekeeper</strong>, periodically and without notice, and in full at year end — to confirm existence/quantity, catch pilferage, flag obsolete items for write-off, test the ledgers, and confirm safe custody.</p>
+    <div class="vs">
+      <div><div class="t">Surplus</div><p style="font-size:13.5px;margin:0">Physical count <strong>exceeds</strong> the record. Usually an unrecorded receipt or a double-recorded issue. Investigated, then the ledger is adjusted by a Store Adjustment Voucher.</p></div>
+      <div><div class="t">Shortage</div><p style="font-size:13.5px;margin:0">Record <strong>exceeds</strong> the physical count. Treated as a <strong>loss</strong> — the §11.4 procedure applies. Within a normal wastage allowance, it may be written off on the accounting officer's own certificate; beyond it, a Board of Enquiry is needed.</p></div>
+    </div>
+  </section>
+
+  <section class="primary" id="boards">
+    <div class="sec-tag"><span class="num">§11.5&nbsp;&middot;&nbsp;</span>Boards of Survey and Boards of Enquiry</div>
+    <h2>4&nbsp;&middot;&nbsp;Board of Survey vs Board of Enquiry</h2>
+    <div class="defcap"><span class="k">The one-line test</span><p>A <strong>Board of Survey verifies what is there.</strong> A <strong>Board of Enquiry investigates what is missing.</strong></p></div>
+    <div class="vs">
+      <div>
+        <div class="t">Board of Survey</div>
+        <ul>
+          <li><strong>When:</strong> routinely — year end, or when a cash office/store changes hands</li>
+          <li><strong>Convened by:</strong> the Accountant-General of the Federation</li>
+          <li><strong>Composition:</strong> a President (<strong>Grade Level 08+</strong>) and at least <strong>two members</strong> (<strong>Grade Level 06+</strong>) — a single-member board only where unavoidable, with the reason stated on the report</li>
+          <li><strong>Does:</strong> counts cash/stamps against the cash book; confirms bank balances by direct bank certificate; verifies stores against ledgers/bin cards; examines unserviceable/obsolete/surplus items and recommends disposal; checks safe custody; reports discrepancies</li>
+          <li><strong>Output:</strong> a survey report to the accounting officer, copied to the Accountant-General and Auditor-General</li>
+        </ul>
+      </div>
+      <div>
+        <div class="t">Board of Enquiry</div>
+        <ul>
+          <li><strong>When:</strong> only on the occurrence of a specific loss</li>
+          <li><strong>Composition:</strong> senior officers independent of where the loss occurred, sometimes with external/professional members</li>
+          <li><strong>Does:</strong> establishes the amount, the cause, whether Financial Regulations were followed, whether negligence contributed, and who is responsible</li>
+          <li><strong>Output:</strong> findings and recommendations on surcharge, discipline and prevention, to the accounting officer</li>
+        </ul>
+      </div>
+    </div>
+    <p><strong>Annual</strong> Board of Survey (year end, supports the cash/stores figures in the financial statements) vs <strong>special</strong> Board of Survey (on a change of custody, so the incoming officer takes over a verified balance and neither officer can be blamed for the other's shortfall) are the two occasions the study text names for convening one.</p>
+  </section>
+
+  <section class="primary" id="loss">
+    <div class="sec-tag"><span class="num">§11.4&nbsp;&middot;&nbsp;</span>Losses of cash and stores</div>
+    <h2>5&nbsp;&middot;&nbsp;What actually happens when something goes missing</h2>
+    <p class="lede">This sequence is tested both as a "state the procedure" essay and as individual short-answer/objective fragments of it. Learn it as one chain.</p>
+    <ol class="steps">
+      <li>The officer who discovers the loss reports it <strong>immediately, in writing</strong>, to the supervising officer and the accounting officer.</li>
+      <li>The accounting officer reports at once to the <strong>Accountant-General</strong> and the <strong>Auditor-General</strong> — and to the <strong>Police</strong> if theft or fraud is suspected.</li>
+      <li>The loss is entered in the <strong>Register of Losses</strong> with full particulars.</li>
+      <li>The officer suspected of responsibility may be <strong>interdicted</strong> pending investigation.</li>
+      <li>A <strong>Board of Enquiry</strong> is constituted to establish the amount, cause, compliance with Financial Regulations, negligence and responsibility.</li>
+      <li>The Board reports its findings and recommendations to the accounting officer.</li>
+      <li>Where <strong>negligence or misconduct</strong> is established, the officer is <strong>surcharged</strong> and faces discipline — and prosecution, if the conduct is criminal.</li>
+      <li>The irrecoverable balance is <strong>written off</strong> by whichever authority is competent for the amount — the accounting officer, the Minister of Finance, or the National Assembly.</li>
+      <li>The <strong>control weakness</strong> that allowed the loss is identified and remedied.</li>
+    </ol>
+    <div class="trap">
+      <span class="k">Write-off and surcharge are two different decisions</span>
+      <p><strong>Write-off</strong> clears the accounting record. <strong>Surcharge</strong> fixes personal liability. One does not discharge the other — an officer can be surcharged even after the loss itself has been written off. A question on "the treatment of a loss" wants both halves of this, explicitly.</p>
+    </div>
+  </section>
+
+  <section id="committee">
+    <div class="sec-tag"><span class="num">§11.9&nbsp;&middot;&nbsp;</span>Loss of government fund</div>
+    <h2>6&nbsp;&middot;&nbsp;The accounting officer's own power, and the Federal Losses Committee</h2>
+    <div class="defcap"><span class="k">The accounting officer's surcharge threshold</span><p>Where a <strong>cash loss of &#8358;50,000 or less</strong> involves no fraud, the accounting officer may personally <strong>surcharge the responsible officer up to the full amount</strong>, and is personally responsible for seeing it done. (See the full numeric picture, alongside every other threshold in the syllabus, in <a href="ps-numbers.html">PS by the numbers</a>.)</p></div>
+    <p>The officer in whose office the loss occurred must report immediately to the head of unit, report to the Police if fraud/theft is suspected, complete <strong>Treasury Form 146</strong> Part II in quintuplicate, fix any control weakness found, and ensure the entries are made.</p>
+    <div class="defcap">
+      <span class="k">Federal Losses Committee</span>
+      <p>A <strong>standing committee</strong> considering every case of loss of cash, stores and vehicles. Chaired by a representative of the <strong>Auditor-General</strong>, with representatives of the <strong>Accountant-General</strong>, the administration department of the ministry/agency concerned, the <strong>Inspector-General of Police</strong>, and the <strong>EFCC</strong>; the Inspectorate Department of the Accountant-General's office is the secretariat. It examines the Board of Enquiry report and the relevant files to <strong>apportion blame</strong> and recommend <strong>surcharge, write-off or preventive measures</strong>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Source: ATSWA Part&nbsp;II Public Sector Accounting study text, Chapter 11, plus the site's own past-question analysis.</span>
+    <span>ATSWA Part II &middot; Public Sector Accounting</span>
+  </footer>
+
+</div>
+</body>
+</html>

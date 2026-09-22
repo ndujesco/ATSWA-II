@@ -21,5 +21,9 @@ var GUIDES = [
   { tag: 'PS · Ch 2', href: 'guides/ipsas.html', title: 'IPSAS in this course',
     blurb: 'Every IPSAS the syllabus treats, indexed by number and by theme, with Nigeria’s own adoption timeline and exactly which chapter covers which standard.' },
   { tag: 'PS · Ch 14 & 16', href: 'guides/statements.html', title: 'Cash vs accrual statements',
-    blurb: 'Every required financial statement, cash basis and accrual basis side by side, with worked-example checkpoints and every past question on the topic.' }
+    blurb: 'Every required financial statement, cash basis and accrual basis side by side, with worked-example checkpoints and every past question on the topic.' },
+  { tag: 'PS · All chapters', href: 'guides/ps-numbers.html', title: 'PS by the numbers',
+    blurb: 'Every memorisable numeric rule in the syllabus — years of service for gratuity/pension, procurement thresholds, board tenures, audit-query response times — grouped by theme with its exact chapter and section.' },
+  { tag: 'PS · Ch 11', href: 'guides/stores-losses.html', title: 'Stores, losses & the Board of Survey',
+    blurb: 'The single most-repeated topic in the whole PS past-question bank: the full store-document glossary, Board of Survey vs Board of Enquiry, and the step-by-step procedure when cash or stores go missing.' }
 ];

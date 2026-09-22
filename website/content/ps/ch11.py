@@ -183,6 +183,9 @@ CH = {
           'and neither officer can be blamed for the other\'s shortfall.'},
     {'key': 'The single sentence that best distinguishes them: a **Board of Survey verifies what '
             'is there**; a **Board of Enquiry investigates what is missing**.'},
+    {'note': '[Every document, both Boards and the full loss procedure, in one reference →]'
+             '(guides/stores-losses.html) — this is the most-repeated topic in the entire PS '
+             'past-question bank.'},
   ]},
 
   {'n': '11.6', 't': 'The storekeeper, procurement and handing over', 'b': [

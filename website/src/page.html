@@ -596,6 +596,20 @@ a.cite:hover{text-decoration:underline;}
   color:var(--ink);}
 .revtopic a{text-decoration:none;}
 .revtopic a:hover{color:var(--accent);}
+.revtopic.hid,.bq.hid,.saqrow.hid{display:none;}
+.revfilter{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:16px;
+  padding-top:16px;border-top:1px solid var(--rule);}
+.revfilter .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink3);}
+.revfilter select{font-family:var(--sans);font-size:13.5px;font-weight:500;
+  padding:7px 10px;border:1px solid var(--rule);border-radius:4px;color:var(--ink);
+  background:var(--paper);}
+.revfilter .to{color:var(--ink3);}
+.revfilter .revcount{color:var(--ink3);font-size:11px;margin-left:auto;white-space:nowrap;}
+@media (max-width:600px){
+  .revfilter{gap:8px;}
+  .revfilter .revcount{margin-left:0;width:100%;order:5;}
+}
 
 /* ── past questions matched to a chapter (§ "Examined before") ───────── */
 .pqgroup{border:1px solid var(--rule);border-radius:3px;overflow:hidden;margin-top:10px;}
