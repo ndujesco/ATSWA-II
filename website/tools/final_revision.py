@@ -231,7 +231,14 @@ def build_mcq(papers, code):
             'a': it['aIdx'], 'ch': it['ch'], 'sec': it['sec'],
             'freq': len(diets_of(idxs, items)), 'diets': diets_of(idxs, items),
         })
-    out.sort(key=lambda x: (-x['freq'], norm(txt_of(x['stem']))))
+    # Most-recent-diet first — the primary sort. freq and stem text are only
+    # stable-sort tiebreakers (applied in reverse priority order, since
+    # Python's sort is stable): a question last asked in 2026-03 always
+    # outranks one last asked in 2025-09, however many times each has
+    # repeated historically.
+    out.sort(key=lambda x: norm(txt_of(x['stem'])))
+    out.sort(key=lambda x: -x['freq'])
+    out.sort(key=lambda x: max(x['diets']), reverse=True)
     for i, o in enumerate(out):
         o['n'] = i + 1
     return out
@@ -263,24 +270,26 @@ def build_saq(papers, code):
             'ch': it['ch'], 'sec': it['sec'],
             'freq': len(diets_of(idxs, items)), 'diets': diets_of(idxs, items),
         })
-    # Topical grouping, not a flat most-asked list: order chapters by how
-    # much that chapter's material has been asked as a short answer overall
-    # (the sum of each of its clusters' own "asked N times" count) — the
-    # best available signal for which topics examiners keep coming back to
-    # — then within a chapter keep the most-repeated question first, so the
-    # "leave the most-asked at the top" behaviour holds inside every topic.
-    # Chapters that could not be confidently tagged fall in one final group,
-    # themselves most-asked first.
+    # Topical grouping, not a flat list: order chapters by how much that
+    # chapter's material has been asked as a short answer overall (the sum
+    # of each of its clusters' own "asked N times" count) — the best
+    # available signal for which topics examiners keep coming back to —
+    # then within a chapter, most-recently-asked question first. Chapters
+    # that could not be confidently tagged fall in one final group.
     weight = {}
     for o in out:
         if o['ch']:
             weight[o['ch']] = weight.get(o['ch'], 0) + o['freq']
 
+    def diet_num(d):
+        return int(d.replace('-', ''))
+
     def sort_key(o):
         ch = o['ch']
+        recency = -max(diet_num(d) for d in o['diets'])
         if not ch:
-            return (1, 0, 0, -o['freq'], norm(' '.join(o['body'])))
-        return (0, -weight[ch], ch, -o['freq'], norm(' '.join(o['body'])))
+            return (1, 0, 0, recency, -o['freq'], norm(' '.join(o['body'])))
+        return (0, -weight[ch], ch, recency, -o['freq'], norm(' '.join(o['body'])))
 
     out.sort(key=sort_key)
     for i, o in enumerate(out):
@@ -314,7 +323,9 @@ def build_essay(papers, code):
             'ch': it['ch'], 'sec': it['sec'],
             'freq': len(diets_of(idxs, items)), 'diets': diets_of(idxs, items),
         })
-    out.sort(key=lambda x: (-x['freq'], norm(' '.join(x['q']))))
+    out.sort(key=lambda x: norm(' '.join(x['q'])))
+    out.sort(key=lambda x: -x['freq'])
+    out.sort(key=lambda x: max(x['diets']), reverse=True)
     for i, o in enumerate(out):
         o['n'] = i + 1
     return out

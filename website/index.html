@@ -2398,11 +2398,11 @@ var ATSWA = (function () {
           '<div class="sub">' + A.esc(s.blurb) + '</div></a>';
       }).join('');
       A.h('<div class="wrap"><section class="shead" style="border:none">' +
-        '<div class="code">Final Revision</div><h1>Every past question, ranked by how ' +
-        'often it comes up</h1>' +
+        '<div class="code">Final Revision</div><h1>Every past question, most recently ' +
+        'asked first</h1>' +
         '<p>All 24 diets\' MCQ, short-answer and Section B questions, grouped by subject, ' +
-        'then by question type, near-duplicates across diets merged and ordered most-asked ' +
-        'first. Pick a subject.</p></section>' +
+        'then by question type, near-duplicates across diets merged and ordered by the '  +
+        'most recent diet each was asked in. Pick a subject.</p></section>' +
         '<div class="subs">' + cards + '</div><div style="height:60px"></div></div>');
     });
   };
@@ -2416,12 +2416,12 @@ var ATSWA = (function () {
       if (!d) return V.revision();
       var kinds = [
         { key: 'mcq', label: 'Multiple choice', d: 'Every past MCQ, options and the ' +
-          'examiner\'s own answer, most-repeated first.', n: d.mcq.length },
+          'examiner\'s own answer, most recently asked first.', n: d.mcq.length },
         { key: 'saq', label: 'Short answer', d: 'Fill-in-the-blank and one-line questions, ' +
-          'with the official answer, grouped by topic — most-tested topics and most-' +
-          'repeated questions first.', n: d.saq.length },
+          'with the official answer, grouped by topic — most-tested topics first, most ' +
+          'recently asked within each topic.', n: d.saq.length },
         { key: 'essay', label: 'Essay (Section B)', d: 'Full Section B questions with the ' +
-          'official worked solution, most-repeated first.', n: d.essay.length },
+          'official worked solution, most recently asked first.', n: d.essay.length },
       ];
       var cards = kinds.map(function (k) {
         return '<a class="subcard" href="#/revision/' + code + '/' + k.key + '">' +
@@ -2514,9 +2514,9 @@ var ATSWA = (function () {
         '<h1 style="font-size:clamp(28px,4.4vw,42px);letter-spacing:-.032em;margin-top:8px">' +
         title + '</h1>' +
         '<p>' + list.length + (kind === 'saq' ?
-          ' questions, grouped by topic — the most-tested topics first, and the most-' +
-          'repeated question within each topic first.' :
-          ' questions, most-asked first.') +
+          ' questions, grouped by topic — the most-tested topics first, and the most ' +
+          'recently asked question within each topic first.' :
+          ' questions, most recently asked first.') +
         ' "Asked N&times;" counts how many diets carried a near-identical version of ' +
         'that question.</p>' +
         '<div class="sbar"><a class="btn" href="#/revision/' + code + '">' + A.esc(s.name) + '</a>' +

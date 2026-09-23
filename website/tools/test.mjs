@@ -223,15 +223,21 @@ t('revision type picker shows MCQ/short-answer/essay for PS', () => {
   ok(v.indexOf('undefined') < 0, 'contains "undefined"');
 });
 
-t('revision MCQ list for PS renders questions, most-asked first', () => {
+t('revision MCQ list for PS renders questions, most recently asked first', () => {
   const v = view(w, '#/revision/PS/mcq');
   ok(v.indexOf('undefined') < 0, 'contains "undefined"');
   ok(v.length > 5000, 'list looks truncated: ' + v.length + ' chars');
   ok(count(v, 'class="bq"') > 100, 'fewer than 100 MCQ rendered');
   const freqs = [...v.matchAll(/ASKED (\d+)\s*[×x]/g)].map(m => +m[1]);
   ok(freqs.length > 10, 'no frequency badges found');
-  for (let i = 1; i < freqs.length; i++)
-    ok(freqs[i] <= freqs[i - 1], 'not sorted most-asked-first at index ' + i);
+  // Ordering is by most-recent diet first (freq is only a tiebreaker), so
+  // pull each card's own year set (data-years) and check the latest year
+  // per card is non-increasing down the list.
+  const yearSets = [...v.matchAll(/data-years="([^"]*)"/g)].map(m => m[1].split(' ').map(Number));
+  ok(yearSets.length > 10, 'no data-years attributes found');
+  const latest = yearSets.map(ys => Math.max(...ys));
+  for (let i = 1; i < latest.length; i++)
+    ok(latest[i] <= latest[i - 1], 'not sorted most-recent-first at index ' + i);
 });
 
 t('revision short-answer and essay lists render for every subject', () => {
