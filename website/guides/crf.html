@@ -237,6 +237,17 @@
   .companion p{margin:0;font-size:14.5px;}
   .companion p+p{margin-top:8px;}
 
+  /* ---- clusters (governing bodies etc.) ---- */
+  .clusters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 4px;}
+  @media (max-width:640px){.clusters{grid-template-columns:1fr;}}
+  .cluster{
+    border-left:3px solid var(--gold);background:var(--paper-raised);
+    border-radius:0 8px 8px 0;padding:12px 16px;box-shadow:var(--shadow);
+  }
+  .cluster .t{font-family:var(--font-display);font-weight:600;font-size:15.5px;margin-bottom:4px;}
+  .cluster .nums{font-family:var(--font-mono);font-size:12px;color:var(--gold);margin-bottom:5px;display:block;}
+  .cluster p{margin:0;font-size:14px;}
+
   /* ---- confusion pair ---- */
   .confuse{
     display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch;
@@ -477,8 +488,75 @@
       </div>
       <div class="companion">
         <div class="name">Federation Account <span class="basis">s.162</span></div>
-        <p><strong>Finances:</strong> nothing directly &mdash; it is a distribution pool, not a spending fund. It exists only to split centrally-collected revenue Federal / State / Local by the vertical formula before each tier's share moves on to its own CRF-equivalent.</p>
+        <p><strong>Finances:</strong> nothing directly &mdash; it is a distribution pool, not a spending fund. It exists only to split centrally-collected revenue Federal / State / Local before each tier's share moves on to its own CRF-equivalent. <a href="#fedaccount">Full treatment below &rarr;</a></p>
       </div>
+    </div>
+  </section>
+
+  <section class="primary" id="fedaccount">
+    <div class="sec-tag"><span class="num">§9.2&nbsp;&middot;&nbsp;</span>The upstream pool the CRF's own share comes from</div>
+    <h2>The Federation Account, in full</h2>
+    <p>Section 162(1) of the Constitution requires the Federation to maintain a special account, the <strong>Federation Account</strong>, into which is paid <strong>all revenue collected by the Government of the Federation</strong> &mdash; with one named exception. Everything that lands in the Federation Account gets split three ways before any tier can touch it; the exception goes <strong>straight into the CRF</strong>, never passing through the Account at all.</p>
+
+    <div class="trap">
+      <span class="k">The one exception &mdash; the exact thing worth memorising</span>
+      <p>Personal income tax (PAYE) of <strong>Armed Forces personnel, the Nigeria Police Force, the Ministry of Foreign Affairs, and residents of the Federal Capital Territory</strong> bypasses the Federation Account entirely and is paid <strong>directly into the Consolidated Revenue Fund</strong>. Every other centrally-collected revenue &mdash; petroleum profits tax, companies income tax, import/export/excise duties, royalties &mdash; goes into the Federation Account first and is shared.</p>
+    </div>
+
+    <h4>How the money moves, start to finish</h4>
+    <div class="flow">
+      <div class="flowstep"><div class="dot">1</div><div><div class="name">Collection</div><p>The Federal Inland Revenue Service (now the Nigeria Revenue Service), the Nigeria Customs Service, the Nigerian Upstream Petroleum Regulatory Commission and NNPC collect the revenue and pay it into the Federation Account.</p></div></div>
+      <div class="flowstep"><div class="dot">2</div><div><div class="name">First-line charges</div><p>The collecting agencies' own cost of collection, and certain other statutory deductions, come off the top before distribution is calculated.</p></div></div>
+      <div class="flowstep"><div class="dot">3</div><div><div class="name">FAAC meets</div><p>The Federation Accounts Allocation Committee meets <strong>monthly</strong>, reviews the inflows, and determines the amount available for distribution.</p></div></div>
+      <div class="flowstep"><div class="dot">4</div><div><div class="name">Vertical split</div><p>The balance is shared Federal / State / Local on the vertical formula below.</p></div></div>
+      <div class="flowstep"><div class="dot">5</div><div><div class="name">Horizontal split, and onward</div><p>Each state's and each local government's share is then split again on the horizontal formula. The <strong>Federal share is paid into the Consolidated Revenue Fund</strong>; each state's share into its <strong>own</strong> consolidated revenue fund; the local government share into the <strong>State Joint Local Government Account</strong> for onward distribution to the councils.</p></div></div>
+    </div>
+
+    <h4>Vertical allocation &mdash; sharing between the three tiers</h4>
+    <div class="twrap">
+      <table>
+        <thead><tr><th>Tier</th><th class="num">Share</th></tr></thead>
+        <tbody>
+          <tr><td>Federal Government</td><td class="num fig">52.68%</td></tr>
+          <tr><td>State Governments</td><td class="num fig">26.72%</td></tr>
+          <tr><td>Local Governments</td><td class="num fig">20.60%</td></tr>
+          <tr class="total"><td>Total</td><td class="num fig">100.00%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>These are the percentages following the Supreme Court judgment of 2002 and later modification orders. The formula itself is reviewed from time to time by the RMAFC, whose recommendations require an Act of the National Assembly to take effect.</p>
+
+    <h4>Horizontal allocation &mdash; sharing among states, and among local governments</h4>
+    <div class="twrap">
+      <table>
+        <thead><tr><th>Principle</th><th class="num">Weight</th></tr></thead>
+        <tbody>
+          <tr><td>Equality of states</td><td class="num fig">40%</td></tr>
+          <tr><td>Population</td><td class="num fig">30%</td></tr>
+          <tr><td>Internal revenue generation effort</td><td class="num fig">10%</td></tr>
+          <tr><td>Land mass and terrain</td><td class="num fig">10%</td></tr>
+          <tr><td>Social development factor (education, health, water)</td><td class="num fig">10%</td></tr>
+          <tr class="total"><td>Total</td><td class="num fig">100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="trap">
+      <span class="k">The derivation principle runs first, separately</span>
+      <p>Section 162(2) requires that <strong>not less than 13%</strong> of the revenue accruing to the Federation Account <strong>directly from any natural resource</strong> be paid to the state it was derived from, as a first charge &mdash; before the horizontal formula above is even applied to what's left.</p>
+    </div>
+
+    <div class="defcap">
+      <span class="k">See it worked through with real figures</span>
+      <p>The full Federation-Account-then-CRF worked example, month by month, is below in <a href="#worked">"A month in the life of the CRF."</a> The Federal share of ₦80,020,920 there dwarfs the ₦430,000 that reaches the CRF directly (PAYE for Armed Forces and Police) &mdash; in practice the Federation Account route carries almost all Federal revenue; the direct-to-CRF exception is narrow but exam-favourite precisely because it's easy to forget.</p>
+    </div>
+
+    <h4>The bodies that govern the Federation Account</h4>
+    <div class="clusters">
+      <div class="cluster"><span class="nums">FAAC</span><div class="t">Federation Accounts Allocation Committee</div><p>Meets monthly in two sessions &mdash; a <strong>technical session</strong> (chaired by the Accountant-General of the Federation) that deliberates and recommends, and a <strong>plenary session</strong> (chaired by the Minister of Finance) that ensures allocations are promptly paid into each tier's treasury and reports annually to the National Assembly.</p></div>
+      <div class="cluster"><span class="nums">SJLGAAC</span><div class="t">State Joint Local Gov't Account Allocation Cttee</div><p>Historically ensured the local government share, plus 10% of a state's own IGR, reached the State Joint Local Government Account and on to the councils. <strong>Since the Supreme Court judgment of 11 July 2024</strong>, local government allocations are paid <strong>directly</strong> into each council's own account instead &mdash; a recent, examinable change.</p></div>
+      <div class="cluster"><span class="nums">RMAFC</span><div class="t">Revenue Mobilisation, Allocation and Fiscal Commission</div><p>Monitors accruals to and disbursement from the Federation Account, periodically reviews the allocation formula, recommends office-holder remuneration, and is a statutory member of FAAC, SJLGAAC, the JRB, the Niger-Delta Development Commission and the <strong>Ecological Fund Commission</strong>.</p></div>
+      <div class="cluster"><span class="nums">JRB</span><div class="t">Joint Revenue Board of Nigeria</div><p>Created by the Joint Revenue Board (Establishment) Act 2025 (the 2025 tax reform) to coordinate tax policy/administration across all three tiers &mdash; standard-setting, cross-tier dispute resolution, the unified national TIN database, and taxpayer redress via the Tax Appeal Tribunal.</p></div>
     </div>
   </section>
 
@@ -586,7 +664,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="worked">
     <div class="sec-tag"><span class="num">Worked&nbsp;&middot;&nbsp;</span>Putting it together</div>
     <h2>A month in the life of the CRF</h2>
     <p>Adapted from the study text's own illustration. Vertical formula: Federal 52.68% &middot; State 26.72% &middot; Local 20.60%.</p>

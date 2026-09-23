@@ -710,6 +710,9 @@ CH = {
             'learn which bucket a given fact belongs to. An exam question naming "objectives" '
             'wants the five-item list above, not the much longer "functions" list, even though '
             'both talk about broadly similar things.'},
+    {'note': '[Every abbreviation in the syllabus, in one place →](guides/ps-abbreviations.html) '
+             '— bodies, the Acts that create them, digital systems and technical terms, '
+             'organised by chapter.'},
   ]},
 
   {'n': '1.8', 't': 'Fund accounting — a compact preview ahead of Chapter 2', 'b': [

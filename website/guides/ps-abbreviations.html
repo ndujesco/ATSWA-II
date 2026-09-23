@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PS Abbreviations</title>
+<meta name="description" content="Every abbreviation and acronym in the ATSWA Part II Public Sector Accounting syllabus — bodies, Acts, systems and terms — with what each one stands for, what it does, and where it's covered.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E5C42'/%3E%3Cpath d='M7 6h18v6H13v5h11v6H13v6H7z' fill='%23F6F1E6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F6F1E6; --paper-raised:#FBF8F1;
+    --ink:#1B231E; --ink-soft:#4E5951; --ink-faint:#7C877E;
+    --green:#1E5C42; --green-deep:#123B2B; --green-wash:#E7EEE7;
+    --gold:#96742A; --gold-wash:#F1E7CE;
+    --rule:rgba(27,35,30,0.14); --rule-strong:rgba(27,35,30,0.28);
+    --shadow:0 1px 2px rgba(27,35,30,0.06);
+    --warn-bg:#FBEEEA; --warn-ink:#8A3B24; --warn-rule:#D9B7A8;
+    --super-bg:#EEF1FB; --super-ink:#2E3E86; --super-rule:#C7D0EE;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1613; --paper-raised:#151E19;
+      --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+      --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+      --gold:#D3AE5C; --gold-wash:#26210F;
+      --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+      --shadow:0 1px 2px rgba(0,0,0,0.35);
+      --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+      --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1613; --paper-raised:#151E19;
+    --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+    --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+    --gold:#D3AE5C; --gold-wash:#26210F;
+    --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+    --shadow:0 1px 2px rgba(0,0,0,0.35);
+    --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+    --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+  }
+
+  *{box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{
+    background:var(--paper); color:var(--ink); font-family:var(--font-body);
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; margin:0;
+  }
+  ::selection{background:var(--gold-wash);}
+
+  .topbar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);}
+  .topbar .in{max-width:960px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .topbar a.back{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-soft);text-decoration:none;display:flex;align-items:center;gap:6px;}
+  .topbar a.back:hover{color:var(--green);}
+  .topbar a.back .arrow{color:var(--gold);}
+  .topbar .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase;}
+
+  .page{max-width:960px;margin:0 auto;padding:40px 20px 96px;}
+
+  .masthead{display:flex;flex-direction:column;gap:10px;padding-bottom:28px;margin-bottom:30px;border-bottom:2px solid var(--ink);}
+  .masthead .eyebrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:10px;}
+  .masthead .eyebrow::before{content:'§';font-size:14px;color:var(--gold);}
+  .masthead h1{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,4.6vw,44px);line-height:1.08;letter-spacing:-.01em;margin:2px 0 0;text-wrap:balance;}
+  .masthead .dek{font-size:16px;color:var(--ink-soft);max-width:72ch;margin-top:2px;}
+
+  .jump{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:40px;}
+  .jump a{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.02em;color:var(--ink-soft);
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:20px;padding:6px 12px;text-decoration:none;}
+  .jump a:hover{color:var(--green);border-color:var(--green);}
+  .jump a b{color:var(--gold);font-weight:600;margin-right:1px;}
+
+  section{position:relative;padding-left:22px;margin-bottom:40px;scroll-margin-top:64px;}
+  section::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--rule);}
+  section.primary::before{background:var(--green);width:3px;left:-1px;}
+  .sec-tag{display:inline-flex;align-items:baseline;gap:7px;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;color:var(--green);margin-bottom:6px;}
+  .sec-tag .num{background:var(--green-wash);color:var(--green);padding:2px 7px;border-radius:3px;font-weight:600;}
+  h2{font-family:var(--font-display);font-weight:600;font-size:23px;letter-spacing:-.005em;margin:0 0 4px;text-wrap:balance;}
+  h3{font-family:var(--font-display);font-weight:600;font-size:17px;margin:20px 0 8px;}
+  p{margin:0 0 12px;max-width:74ch;}
+  .lede{font-size:15px;color:var(--ink-soft);max-width:72ch;}
+  strong{font-weight:600;color:var(--ink);}
+  a{color:var(--green);text-decoration-color:var(--rule-strong);text-underline-offset:2px;}
+
+  .glossary{display:flex;flex-direction:column;margin-top:8px;}
+  .term{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:10px 0;border-bottom:1px solid var(--rule);}
+  .term:last-child{border-bottom:none;}
+  .term .abbr{font-family:var(--font-mono);font-weight:700;font-size:14px;color:var(--green);white-space:normal;}
+  .term .full{font-weight:600;color:var(--ink);font-size:14.5px;display:block;margin-bottom:2px;}
+  .term .desc{font-size:14px;color:var(--ink-soft);margin:0;}
+  .term .loc{font-family:var(--font-mono);font-size:10.5px;color:var(--ink-faint);margin-left:6px;white-space:nowrap;}
+  @media (max-width:560px){
+    .term{grid-template-columns:1fr;gap:2px;}
+    .term .abbr{padding-bottom:1px;}
+  }
+
+  .trap{background:var(--warn-bg);border:1px solid var(--warn-rule);border-radius:8px;padding:14px 16px;margin:14px 0;}
+  .trap .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--warn-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px;font-weight:600;}
+  .trap .k::before{content:'⚠';font-size:12px;}
+  .trap p{margin:0;color:var(--ink);font-size:14px;}
+  .trap p+p{margin-top:8px;}
+  .trap strong{color:var(--warn-ink);}
+
+  .actlist{display:flex;flex-direction:column;margin-top:8px;}
+  .actrow{padding:12px 0;border-bottom:1px solid var(--rule);}
+  .actrow:last-child{border-bottom:none;}
+  .actrow .name{font-weight:600;color:var(--ink);font-size:15px;font-family:var(--font-display);margin-bottom:3px;}
+  .actrow .body{font-size:13.5px;color:var(--ink-soft);}
+  .actrow .body b{color:var(--green);font-weight:600;}
+
+  ul,ol{margin:0 0 13px;padding-left:20px;}
+  li{margin-bottom:6px;max-width:70ch;}
+
+  footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule);font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  @media (max-width:600px){
+    .page{padding:28px 14px 72px;}
+    section{padding-left:16px;}
+    h2{font-size:20px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="in">
+  <a class="back" href="../index.html#/s/PS/1"><span class="arrow">&larr;</span> Back to PS Chapter 1</a>
+  <span class="kicker">Study guide</span>
+</div></div>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Public Sector Accounting &middot; Glossary</div>
+    <h1>PS abbreviations</h1>
+    <p class="dek">Every abbreviation used anywhere in the syllabus — bodies, the Acts that create them, systems, taxes, funds and technical terms — with what each one stands for, a one-line description, and where it's covered. Organisations first, then everything else, exactly as it comes up across all 23 chapters.</p>
+  </header>
+
+  <nav class="jump">
+    <a href="#intl"><b>1</b> International standards bodies</a>
+    <a href="#revenue"><b>2</b> Revenue &amp; Federation Account bodies</a>
+    <a href="#procurement"><b>3</b> Procurement</a>
+    <a href="#treasury"><b>4</b> Treasury, warrants &amp; audit</a>
+    <a href="#digital"><b>5</b> Digital reform systems</a>
+    <a href="#ethics"><b>6</b> Anti-corruption &amp; ethics</a>
+    <a href="#pension"><b>7</b> Pensions</a>
+    <a href="#gfs"><b>8</b> Classification &amp; reporting terms</a>
+    <a href="#budgeting"><b>9</b> Budgeting techniques</a>
+    <a href="#acts"><b>10</b> The Acts, and what each creates</a>
+    <a href="#misc"><b>11</b> Other bodies &amp; general terms</a>
+    <a href="#ghana"><b>12</b> Ghana-specific</a>
+    <a href="#collisions"><b>13</b> Same letters, different things</a>
+  </nav>
+
+  <section class="primary" id="intl">
+    <div class="sec-tag"><span class="num">Ch 1&nbsp;&middot;&nbsp;</span>International standards &amp; professional bodies</div>
+    <h2>1&nbsp;&middot;&nbsp;International standards bodies</h2>
+    <div class="glossary">
+      <div class="term"><span class="abbr">IASC</span><div><span class="full">International Accounting Standards Committee</span><p class="desc">Formed 1973 — the first international standard-setter; reorganised in 2001 into the IASB.</p></div></div>
+      <div class="term"><span class="abbr">IASB</span><div><span class="full">International Accounting Standards Board</span><p class="desc">The IASC's successor — the independent board that sets international (private-sector) accounting standards.</p></div></div>
+      <div class="term"><span class="abbr">IFAC</span><div><span class="full">International Federation of Accountants</span><p class="desc">Global body for the accountancy profession, founded 1977 — 173 members/associates across 129 countries. Issues IPSAS through its own board, the IPSASB.</p></div></div>
+      <div class="term"><span class="abbr">IPSASB</span><div><span class="full">International Public Sector Accounting Standards Board</span><p class="desc">IFAC's standard-setting board for the public sector (formerly the Public Sector Committee, PSC) — 18 members, 15 nominated by IFAC member bodies plus 3 public members.</p></div></div>
+      <div class="term"><span class="abbr">IPSAS</span><div><span class="full">International Public Sector Accounting Standards</span><p class="desc">The standards themselves — high-quality global standards for public-sector entities, other than Government Business Enterprises (GBEs). See <a href="ipsas.html">the full IPSAS index</a>.</p></div></div>
+      <div class="term"><span class="abbr">AICPA</span><div><span class="full">American Institute of Certified Public Accountants</span><p class="desc">US professional body — historically recommended GAAP-based financial statements for governmental units.</p></div></div>
+      <div class="term"><span class="abbr">INTOSAI</span><div><span class="full">International Organisation of Supreme Audit Institutions</span><p class="desc">Worldwide association of every country's Auditor-General equivalent — sets audit-practice resolutions and standards.</p></div></div>
+      <div class="term"><span class="abbr">PAFA</span><div><span class="full">Pan African Federation of Accountants</span><p class="desc">Continental accountancy body, established May 2011 — drives the development of Africa's accountancy profession in support of AU Agenda 2063.</p></div></div>
+      <div class="term"><span class="abbr">API</span><div><span class="full">African Professionalisation Initiative</span><p class="desc">Partnership of Accountants-General, professional accountancy bodies and Supreme Audit Institutions to professionalise public-sector accounting across Africa.</p></div></div>
+      <div class="term"><span class="abbr">FRCN</span><div><span class="full">Financial Reporting Council of Nigeria</span><p class="desc">Statutory Nigerian body enforcing accounting, auditing, corporate-governance and financial-reporting standards. <span class="loc">Ch1 §1.7</span></p></div></div>
+      <div class="term"><span class="abbr">GAAFR</span><div><span class="full">Government Accounting, Auditing and Financial Reporting</span><p class="desc">Known as "The Blue Book" — the US National Committee on Government Accounting's manual setting basic public-sector accounting principles.</p></div></div>
+      <div class="term"><span class="abbr">SDGs</span><div><span class="full">Sustainable Development Goals</span><p class="desc">The UN's global goals, referenced alongside AU Agenda 2063 as an aim PAFA works toward.</p></div></div>
+    </div>
+  </section>
+
+  <section class="primary" id="revenue">
+    <div class="sec-tag"><span class="num">Ch 9&nbsp;&middot;&nbsp;</span>Sources of Government Revenue</div>
+    <h2>2&nbsp;&middot;&nbsp;Revenue collection &amp; Federation Account bodies</h2>
+    <p class="lede">See also <a href="crf.html#fedaccount">the full Federation Account treatment</a> and <a href="ps-numbers.html">every numeric threshold</a> in the other two guides — this list is the who's-who behind those numbers.</p>
+    <div class="glossary">
+      <div class="term"><span class="abbr">NRS</span><div><span class="full">Nigeria Revenue Service</span><p class="desc">Formerly the <strong>FIRS</strong> (Federal Inland Revenue Service) — renamed under the 2025 tax-reform Acts. Collects Companies Income Tax, Petroleum Profits Tax, VAT, and the PAYE/Capital Gains Tax/Stamp Duties of Armed Forces, Police, Foreign Affairs and FCT staff.</p></div></div>
+      <div class="term"><span class="abbr">NNPCL</span><div><span class="full">NNPC Limited</span><p class="desc">Incorporated under CAMA per the Petroleum Industry Act 2021 — collects crude oil/gas sales revenue on the Federal Government's behalf.</p></div></div>
+      <div class="term"><span class="abbr">NUPRC</span><div><span class="full">Nigerian Upstream Petroleum Regulatory Commission</span><p class="desc">Regulates upstream petroleum operations; collects royalties, gas-flare penalties and signature bonuses. Absorbed the old DPR's upstream functions.</p></div></div>
+      <div class="term"><span class="abbr">NMDPRA</span><div><span class="full">Nigerian Midstream and Downstream Petroleum Regulatory Authority</span><p class="desc">Licenses and prices midstream/downstream operations and sets the Domestic Supply Obligation (DSO). Absorbed DPR's downstream side, PPPRA and the Petroleum Equalisation Fund.</p></div></div>
+      <div class="term"><span class="abbr">DPR</span><div><span class="full">Department of Petroleum Resources</span><p class="desc">The predecessor regulator, now split between NUPRC (upstream) and NMDPRA (downstream).</p></div></div>
+      <div class="term"><span class="abbr">PPPRA</span><div><span class="full">Petroleum Products Pricing Regulatory Agency</span><p class="desc">Predecessor pricing body, absorbed into NMDPRA.</p></div></div>
+      <div class="term"><span class="abbr">PIA</span><div><span class="full">Petroleum Industry Act, 2021</span><p class="desc">Restructured NNPC into NNPCL and created NUPRC and NMDPRA.</p></div></div>
+      <div class="term"><span class="abbr">DSO</span><div><span class="full">Domestic Supply Obligation</span><p class="desc">The quantity of petroleum products a producer must reserve for the domestic market — set by NMDPRA.</p></div></div>
+      <div class="term"><span class="abbr">NCS</span><div><span class="full">Nigeria Customs Service</span><p class="desc">Collects import, export and excise duties. Since the Customs Service Act 2023, funded by a <strong>4% FOB</strong> (Free On Board) levy rather than a Federation Account share.</p></div></div>
+      <div class="term"><span class="abbr">SBIRS</span><div><span class="full">State Board of Internal Revenue Service</span><p class="desc">Collects state-level personal income tax outside the NRS categories — established under the Personal Income Tax Act 1993.</p></div></div>
+      <div class="term"><span class="abbr">CIT</span><div><span class="full">Companies Income Tax</span><p class="desc">Tax on the profits of registered companies, collected by NRS.</p></div></div>
+      <div class="term"><span class="abbr">PPT</span><div><span class="full">Petroleum Profits Tax</span><p class="desc">Tax on the profits of companies in petroleum operations (also referred to as Hydrocarbon Tax).</p></div></div>
+      <div class="term"><span class="abbr">VAT</span><div><span class="full">Value Added Tax</span><p class="desc">Consumption tax on goods and services, collected by NRS. See <a href="ps-numbers.html#revenue">the 15/50/35 Federal/State/Local VAT pool split</a>.</p></div></div>
+      <div class="term"><span class="abbr">PAYE</span><div><span class="full">Pay As You Earn</span><p class="desc">Personal income tax deducted at source. PAYE of Armed Forces, Police, Foreign Affairs and FCT staff is the one revenue type that bypasses the Federation Account and goes <strong>straight to the CRF</strong>.</p></div></div>
+      <div class="term"><span class="abbr">CGT</span><div><span class="full">Capital Gains Tax</span><p class="desc">Tax on gains from disposing of a chargeable asset.</p></div></div>
+      <div class="term"><span class="abbr">FAAC</span><div><span class="full">Federation Accounts Allocation Committee</span><p class="desc">Meets monthly in technical and plenary sessions to review inflows and allocate the Federation Account. <a href="crf.html#fedaccount">Full treatment →</a></p></div></div>
+      <div class="term"><span class="abbr">SJLGAAC</span><div><span class="full">State Joint Local Government Account Allocation Committee</span><p class="desc">Historically distributed the local-government share; superseded for direct-to-council payment by the Supreme Court judgment of 11 July 2024. <a href="crf.html#fedaccount">Full treatment →</a></p></div></div>
+      <div class="term"><span class="abbr">RMAFC</span><div><span class="full">Revenue Mobilisation, Allocation and Fiscal Commission</span><p class="desc">Reviews the revenue-allocation formula and monitors Federation Account accruals/disbursement. <a href="crf.html#fedaccount">Full treatment →</a></p></div></div>
+      <div class="term"><span class="abbr">JRB</span><div><span class="full">Joint Revenue Board of Nigeria</span><p class="desc">2025 tax-reform body coordinating tax policy/administration across all three tiers. <a href="crf.html#fedaccount">Full treatment →</a></p></div></div>
+    </div>
+  </section>
+
+  <section id="procurement">
+    <div class="sec-tag"><span class="num">Ch 10&nbsp;&middot;&nbsp;</span>Public Procurement</div>
+    <h2>3&nbsp;&middot;&nbsp;Procurement bodies &amp; methods</h2>
+    <div class="glossary">
+      <div class="term"><span class="abbr">NCPP</span><div><span class="full">National Council on Public Procurement</span><p class="desc">Policy-making body chaired by the Minister of Finance, with the Attorney-General, SGF, Head of Service, Economic Adviser to the President and 6 part-time members.</p></div></div>
+      <div class="term"><span class="abbr">BPP</span><div><span class="full">Bureau of Public Procurement</span><p class="desc">Regulatory/supervisory body, headed by a Director-General — harmonises procurement policy and ensures probity, accountability and transparency.</p></div></div>
+      <div class="term"><span class="abbr">NCB</span><div><span class="full">National Competitive Bidding</span><p class="desc">A procurement method for mid-value contracts. See <a href="ps-numbers.html#procurement">the exact value thresholds</a>.</p></div></div>
+      <div class="term"><span class="abbr">ICB</span><div><span class="full">International Competitive Bidding</span><p class="desc">The procurement method for the highest-value contracts, open to international bidders.</p></div></div>
+      <div class="term"><span class="abbr">RFQ</span><div><span class="full">Request for Quotations</span><p class="desc">The low-value procurement method — at least 3 written quotations from unrelated suppliers.</p></div></div>
+      <div class="term"><span class="abbr">EOI</span><div><span class="full">Expression of Interest</span><p class="desc">Submitted by prospective bidders at the pre-qualification stage of a procurement process.</p></div></div>
+      <div class="term"><span class="abbr">QCBS</span><div><span class="full">Quality- and Cost-Based Selection</span><p class="desc">A standard consultancy-procurement selection method weighing technical quality against price. <em>(Not spelt out in the chapter's own prose — a standard procurement term used there only in a threshold table; verify the exact local usage with your tutor.)</em></p></div></div>
+    </div>
+  </section>
+
+  <section class="primary" id="treasury">
+    <div class="sec-tag"><span class="num">Ch 2, 7, 13, 18, 23&nbsp;&middot;&nbsp;</span>Treasury, warrants, vouchers &amp; audit</div>
+    <h2>4&nbsp;&middot;&nbsp;Treasury, warrants &amp; audit</h2>
+    <div class="glossary">
+      <div class="term"><span class="abbr">AGF</span><div><span class="full">Accountant-General of the Federation</span><p class="desc">Head of the Treasury, and issuer/custodian of every warrant on the CRF.</p></div></div>
+      <div class="term"><span class="abbr">OAGF</span><div><span class="full">Office of the Accountant-General of the Federation</span><p class="desc">Houses the Treasury; developed the ATRRS accounting system.</p></div></div>
+      <div class="term"><span class="abbr">CAGD</span><div><span class="full">Controller and Accountant-General's Department</span><p class="desc"><strong>Ghana's</strong> equivalent of the AGF's office — issues warrants directly to cost centres based on MOFEP's monthly warrants. <span class="loc">Ch7 §7.11</span></p></div></div>
+      <div class="term"><span class="abbr">PAC</span><div><span class="full">Public Accounts Committee</span><p class="desc">Legislative committee that studies the Auditor-General's reports and exposes fraud, waste and inefficiency.</p></div></div>
+      <div class="term"><span class="abbr">A-in-A</span><div><span class="full">Appropriation-in-Aid</span><p class="desc">Income a department earns itself (fees, sales, rent) that it may apply directly against its own expenditure rather than remitting wholly to the CRF.</p></div></div>
+      <div class="term"><span class="abbr">PGW</span><div><span class="full">Provisional General Warrant</span><p class="desc">Issued <em>before</em> the Appropriation Act, capped at the previous year's level, max 6 months. <a href="crf.html">Full warrant system →</a></p></div></div>
+      <div class="term"><span class="abbr">AGW</span><div><span class="full">Annual General Warrant</span><p class="desc">The main post-Act release for personal emoluments and services in the approved budget.</p></div></div>
+      <div class="term"><span class="abbr">SGW</span><div><span class="full">Supplementary General Warrant</span><p class="desc">Releases provision made in the approved supplementary estimates.</p></div></div>
+      <div class="term"><span class="abbr">REW</span><div><span class="full">Reserve Expenditure Warrant</span><p class="desc">Releases items the Minister of Finance deliberately withheld from the AGW/SGW for special control.</p></div></div>
+      <div class="term"><span class="abbr">VW</span><div><span class="full">Virement Warrant</span><p class="desc">Moves savings between sub-heads of the <em>same</em> head — cannot create a new sub-head or raise the total appropriated.</p></div></div>
+      <div class="term"><span class="abbr">DFAGW / DFREW / DFSGW</span><div><span class="full">Development Fund Annual / Reserve-Expenditure / Supplementary General Warrant</span><p class="desc">The Development Fund's own equivalents of AGW/REW/SGW, for capital rather than recurrent expenditure.</p></div></div>
+      <div class="term"><span class="abbr">DFSW</span><div><span class="full">Development Fund Supplementary Warrant <em>or</em> Development Fund Special Warrant</span><p class="desc">See <a href="#collisions">§13 below</a> — the source text uses this one abbreviation for two different warrants. <span class="loc">Ch7</span></p></div></div>
+      <div class="term"><span class="abbr">FTeR</span><div><span class="full">Federal Treasury e-Receipt</span><p class="desc">Mandatory digital-receipt system for tax/levy/revenue payments; issues a Unique Reference Number (URN) per transaction.</p></div></div>
+      <div class="term"><span class="abbr">URN</span><div><span class="full">Unique Reference Number</span><p class="desc">Issued per transaction under FTeR.</p></div></div>
+      <div class="term"><span class="abbr">PERC</span><div><span class="full">Personal Emoluments Record Card</span><p class="desc">Document opened at the start of every financial year for each serving officer, recording their salary/allowance movements.</p></div></div>
+      <div class="term"><span class="abbr">SRV / SIV</span><div><span class="full">Store Receipt Voucher / Store Issue Voucher</span><p class="desc">Evidence receipt into, and authorise issue from, a government store. <a href="stores-losses.html">Full document glossary →</a></p></div></div>
+    </div>
+  </section>
+
+  <section id="digital">
+    <div class="sec-tag"><span class="num">Ch 21&nbsp;&middot;&nbsp;</span>Emerging Issues in the Nigerian Public Sector</div>
+    <h2>5&nbsp;&middot;&nbsp;Digital / e-government reform systems</h2>
+    <div class="glossary">
+      <div class="term"><span class="abbr">TSA</span><div><span class="full">Treasury Single Account</span><p class="desc">2004 PFM-reform bank-account structure giving a unified view of government cash and curbing idle MDA balances held outside central control.</p></div></div>
+      <div class="term"><span class="abbr">GIFMIS</span><div><span class="full">Government Integrated Financial Management Information System</span><p class="desc">IT-based budget-management/accounting system spanning MDAs — a sub-component of the ERGP.</p></div></div>
+      <div class="term"><span class="abbr">ERGP</span><div><span class="full">Economic Reform and Governance Project</span><p class="desc">Approved December 2004 — the programme GIFMIS and ATRRS both sit under.</p></div></div>
+      <div class="term"><span class="abbr">ATRRS</span><div><span class="full">Accounting Transaction Recording and Reporting System</span><p class="desc">ICT accounting software developed by the OAGF, a bridge toward full GIFMIS adoption.</p></div></div>
+      <div class="term"><span class="abbr">IPPIS</span><div><span class="full">Integrated Personnel and Payroll Information System</span><p class="desc">Centralises personnel records and payroll administration across MDAs.</p></div></div>
+      <div class="term"><span class="abbr">MBS</span><div><span class="full">Merchant Buyer Solution</span><p class="desc">The platform behind NRS's mandatory e-invoicing system.</p></div></div>
+      <div class="term"><span class="abbr">APP</span><div><span class="full">Access Point Provider</span><p class="desc">A licensed intermediary in the NRS e-invoicing (MBS) system.</p></div></div>
+      <div class="term"><span class="abbr">TMRAS</span><div><span class="full">Treasury Management and Revenue Assurance System</span><p class="desc">Integrated platform linking treasuries, revenue agencies and the CBN for real-time cash pooling and leakage-tracking.</p></div></div>
+      <div class="term"><span class="abbr">PPP</span><div><span class="full">Public-Private Partnership</span><p class="desc">Private-sector co-financing of infrastructure — a toll road or a passport-issuance contract, for example.</p></div></div>
+    </div>
+  </section>
+
+  <section id="ethics">
+    <div class="sec-tag"><span class="num">Ch 22&nbsp;&middot;&nbsp;</span>Ethical Considerations in Public Sector Accounting</div>
+    <h2>6&nbsp;&middot;&nbsp;Anti-corruption &amp; ethics bodies</h2>
+    <div class="glossary">
+      <div class="term"><span class="abbr">ICPC</span><div><span class="full">Independent Corrupt Practices and Other Related Offences Commission</span><p class="desc">Established by the Corrupt Practices Act 2000 — a Chairman plus 12 other members. <a href="ps-numbers.html#ethics">Offence tariffs →</a></p></div></div>
+      <div class="term"><span class="abbr">EFCC</span><div><span class="full">Economic and Financial Crimes Commission</span><p class="desc">Enforces the Money Laundering Act, the Advance Fee Fraud Act, the Failed Banks Act and BOFIA. <a href="ps-numbers.html#ethics">Full treatment →</a></p></div></div>
+      <div class="term"><span class="abbr">CCB</span><div><span class="full">Code of Conduct Bureau</span><p class="desc">Established under the 1999 Constitution's Third Schedule Part I — a Chairman plus 9 members. <a href="ps-numbers.html#ethics">Full treatment →</a></p></div></div>
+      <div class="term"><span class="abbr">BOFIA</span><div><span class="full">Banks and Other Financial Institutions Act</span><p class="desc">One of the Acts the EFCC enforces — regulates banking and financial-institution conduct.</p></div></div>
+      <div class="term"><span class="abbr">KYC</span><div><span class="full">Know Your Customer</span><p class="desc">Banking/anti-money-laundering compliance requirement — verifying a customer's identity before or during a transaction.</p></div></div>
+    </div>
+  </section>
+
+  <section id="pension">
+    <div class="sec-tag"><span class="num">Ch 4, 5&nbsp;&middot;&nbsp;</span>Pensions and Gratuity &middot; Employee Benefits</div>
+    <h2>7&nbsp;&middot;&nbsp;Pension bodies</h2>
+    <p class="lede">Fully explained, with every rate and threshold, in <a href="ps-numbers.html#pension">"PS by the numbers" §1</a> — this is just the name key.</p>
+    <div class="glossary">
+      <div class="term"><span class="abbr">PenCom</span><div><span class="full">National Pension Commission</span><p class="desc">Regulates and supervises the Contributory Pension Scheme.</p></div></div>
+      <div class="term"><span class="abbr">PFA</span><div><span class="full">Pension Fund Administrator</span><p class="desc">Manages individual Retirement Savings Accounts (RSAs) on contributors' behalf.</p></div></div>
+      <div class="term"><span class="abbr">PFC</span><div><span class="full">Pension Fund Custodian</span><p class="desc">Holds pension assets in custody, separate from the PFA that manages them. <strong>See the collision warning in §13</strong> — this abbreviation means something else entirely in Ch16's GFS sector classification.</p></div></div>
+      <div class="term"><span class="abbr">RSA</span><div><span class="full">Retirement Savings Account</span><p class="desc">The individual account each contributor holds with a PFA.</p></div></div>
+      <div class="term"><span class="abbr">PTAD</span><div><span class="full">Pension Transitional Arrangements Directorate</span><p class="desc">Administers the pensions of retirees still on the old (pre-2004) Defined Benefit Scheme.</p></div></div>
+      <div class="term"><span class="abbr">RLA / PW</span><div><span class="full">Retiree Life Annuity / Programmed Withdrawal</span><p class="desc">The two ways a Contributory Pension Scheme retiree may access their RSA balance.</p></div></div>
+    </div>
+  </section>
+
+  <section id="gfs">
+    <div class="sec-tag"><span class="num">Ch 2, 3, 6, 16&nbsp;&middot;&nbsp;</span>Framework &amp; classification chapters</div>
+    <h2>8&nbsp;&middot;&nbsp;Classification &amp; reporting terms</h2>
+    <div class="glossary">
+      <div class="term"><span class="abbr">GGS</span><div><span class="full">General Government Sector</span><p class="desc">All resident central/state/local government units, social security funds, and controlled non-market non-profit institutions (schools, hospitals, courts) — excludes GBEs. <span class="loc">Ch16</span></p></div></div>
+      <div class="term"><span class="abbr">GBE</span><div><span class="full">Government Business Enterprise</span><p class="desc">A profit-oriented public entity reporting under IFRS rather than IPSAS — the counterpart to GGS.</p></div></div>
+      <div class="term"><span class="abbr">PNFC</span><div><span class="full">Public Non-Financial Corporation</span><p class="desc">A GFS institutional-sector classification for a non-financial, publicly-owned corporation.</p></div></div>
+      <div class="term"><span class="abbr">GFS</span><div><span class="full">Government Financial Statistics</span><p class="desc">The IMF manual/framework underlying the GGS/PNFC/PFC sector classifications.</p></div></div>
+      <div class="term"><span class="abbr">NCOA</span><div><span class="full">National Chart of Accounts</span><p class="desc">Standard budget/accounting classification code structure used across Nigerian public-sector budgeting. <span class="loc">Ch3, Ch6</span></p></div></div>
+      <div class="term"><span class="abbr">COFOG</span><div><span class="full">Classification of the Functions of Government</span><p class="desc">A GFS/NCOA-aligned functional classification standard for government spending.</p></div></div>
+      <div class="term"><span class="abbr">GPFR(s)</span><div><span class="full">General Purpose Financial Report(s)</span><p class="desc">The umbrella term for every report a public-sector entity produces for users who cannot demand information to meet their own needs. <span class="loc">Ch3</span></p></div></div>
+      <div class="term"><span class="abbr">GPFS</span><div><span class="full">General Purpose Financial Statements</span><p class="desc">One part of GPFRs specifically — every GPFS is a GPFR, but not every GPFR (a budget document, a service-performance report) is a GPFS. <span class="loc">Ch3</span></p></div></div>
+      <div class="term"><span class="abbr">MTEF</span><div><span class="full">Medium-Term Expenditure Framework</span><p class="desc">Multi-year fiscal planning framework the annual budget must be derived from. <a href="ps-numbers.html#budget">Deadlines →</a></p></div></div>
+      <div class="term"><span class="abbr">FSP</span><div><span class="full">Fiscal Strategy Paper</span><p class="desc">One of the four components the MTEF must contain, alongside the macroeconomic framework, the expenditure/revenue framework and the consolidated debt statement.</p></div></div>
+    </div>
+  </section>
+
+  <section id="budgeting">
+    <div class="sec-tag"><span class="num">Ch 6&nbsp;&middot;&nbsp;</span>Planning and Budgeting</div>
+    <h2>9&nbsp;&middot;&nbsp;Budgeting techniques</h2>
+    <p class="lede">Fully explained in the chapter itself — this is just the name key. <em>(Traditional/Line-item and Performance budgeting have no standard abbreviation in the source.)</em></p>
+    <div class="glossary">
+      <div class="term"><span class="abbr">ZBB</span><div><span class="full">Zero-Based Budgeting</span><p class="desc">Every item of expenditure re-justified annually from a "zero base" rather than carried forward.</p></div></div>
+      <div class="term"><span class="abbr">PPBS</span><div><span class="full">Planning, Programming and Budgeting System</span><p class="desc">Budgeting organised around programmes rather than departments, with 7 defined steps.</p></div></div>
+    </div>
+  </section>
+
+  <section class="primary" id="acts">
+    <div class="sec-tag"><span class="num">Cross-chapter&nbsp;&middot;&nbsp;</span>The legal instruments behind every body above</div>
+    <h2>10&nbsp;&middot;&nbsp;The Acts, and what each one creates</h2>
+    <p class="lede">Every body in this guide exists because some Act created it. Knowing the pairing — which Act, which body — is a recurring "which Act established X" question in its own right.</p>
+    <div class="actlist">
+      <div class="actrow"><div class="name">The 1999 Constitution of the Federal Republic of Nigeria (as amended)</div><div class="body">Establishes the <b>CRF</b>, <b>Development Fund</b>, <b>Contingency Fund</b>, the offices of Accountant-General and Auditor-General, the <b>Federation Account</b> (s.162), the <b>Code of Conduct Bureau</b> (Third Schedule Part I), and the National Assembly/Federal Executive Council themselves.</div></div>
+      <div class="actrow"><div class="name">Finance (Control and Management) Act, 1958</div><div class="body">Creates the <b>Development Fund</b> (s.25), the warrant system, and the eight generic fund types (general, capital project, special, trust, contingency, inter-governmental service, revolving, self-liquidating) — see <a href="crf.html">the fund-types guide</a>.</div></div>
+      <div class="actrow"><div class="name">Allocation of Revenue (Federation Account, etc.) Act</div><div class="body">Establishes <b>FAAC</b> and governs how the Federation Account is shared between the three tiers.</div></div>
+      <div class="actrow"><div class="name">Revenue Mobilisation, Allocation and Fiscal Commission Act, 1989</div><div class="body">Establishes <b>RMAFC</b>.</div></div>
+      <div class="actrow"><div class="name">Joint Revenue Board (Establishment) Act, 2025</div><div class="body">Part of the 2025 tax reform — establishes the <b>JRB</b> and renames FIRS to <b>NRS</b>.</div></div>
+      <div class="actrow"><div class="name">Fiscal Responsibility Act, 2007</div><div class="body">Establishes the <b>Fiscal Responsibility Commission</b> (spelt out in full in the source — no standard abbreviation, to avoid confusion with FRCN). Mandates the <b>MTEF</b>, the 3%-of-GDP deficit ceiling, and the 80%-of-operating-surplus remittance rule. <a href="ps-numbers.html#budget">Numbers →</a></div></div>
+      <div class="actrow"><div class="name">Public Procurement Act, 2007</div><div class="body">Establishes the <b>NCPP</b> and the <b>BPP</b>.</div></div>
+      <div class="actrow"><div class="name">Pension Reform Act, 2014</div><div class="body">Establishes <b>PenCom</b> and the Contributory Pension Scheme (PFAs, PFCs, RSAs). <a href="ps-numbers.html#pension">Numbers →</a></div></div>
+      <div class="actrow"><div class="name">Petroleum Industry Act, 2021</div><div class="body">Restructures NNPC into <b>NNPCL</b> and creates <b>NUPRC</b> and <b>NMDPRA</b>, absorbing the old DPR and PPPRA.</div></div>
+      <div class="actrow"><div class="name">Customs Service Act, 2023</div><div class="body">Reforms <b>NCS</b> funding to a 4% FOB levy, replacing the old 7% cost-of-collection deduction.</div></div>
+      <div class="actrow"><div class="name">Corrupt Practices and Other Related Offences Act, 2000</div><div class="body">Establishes <b>ICPC</b>.</div></div>
+      <div class="actrow"><div class="name">Economic and Financial Crimes Commission (Establishment) Act, 2004</div><div class="body">Establishes <b>EFCC</b>.</div></div>
+      <div class="actrow"><div class="name">Money Laundering (Prohibition) Act &middot; Advance Fee Fraud Act &middot; Failed Banks (Recovery of Debts) Act &middot; BOFIA</div><div class="body">The suite of Acts <b>EFCC</b> enforces.</div></div>
+      <div class="actrow"><div class="name">Financial Reporting Council of Nigeria Act, 2011</div><div class="body">Establishes <b>FRCN</b>.</div></div>
+      <div class="actrow"><div class="name">Personal Income Tax Act, 1993</div><div class="body">Basis for <b>SBIRS</b> collecting state-level personal income tax.</div></div>
+      <div class="actrow"><div class="name">Companies and Allied Matters Act (CAMA), 2020</div><div class="body">The general company-registration statute — governs NNPCL's own incorporation as a limited company.</div></div>
+    </div>
+  </section>
+
+  <section id="misc">
+    <div class="sec-tag"><span class="num">Referenced in passing&nbsp;&middot;&nbsp;</span>Other bodies &amp; general terms</div>
+    <h2>11&nbsp;&middot;&nbsp;Other bodies &amp; general terms</h2>
+    <div class="glossary">
+      <div class="term"><span class="abbr">CBN</span><div><span class="full">Central Bank of Nigeria</span><p class="desc">Widely referenced — an FRCN Board member-body, and a TMRAS participant.</p></div></div>
+      <div class="term"><span class="abbr">SEC</span><div><span class="full">Securities and Exchange Commission</span><p class="desc">Nigerian capital-markets regulator, referenced in the FRCN governance context.</p></div></div>
+      <div class="term"><span class="abbr">NDIC</span><div><span class="full">Nigeria Deposit Insurance Corporation</span><p class="desc">Insures bank deposits — referenced alongside CBN/SEC in the FRCN context.</p></div></div>
+      <div class="term"><span class="abbr">NAICOM</span><div><span class="full">National Insurance Commission</span><p class="desc">Regulates insurance — named as an FRCN Board member-body.</p></div></div>
+      <div class="term"><span class="abbr">NGX</span><div><span class="full">Nigeria Exchange Group Plc</span><p class="desc">The Nigerian stock exchange, referenced in the corporate-governance context.</p></div></div>
+      <div class="term"><span class="abbr">NEITI</span><div><span class="full">Nigeria Extractive Industries Transparency Initiative</span><p class="desc">Petroleum-revenue transparency body, referenced alongside the Federation Account's petroleum sources.</p></div></div>
+      <div class="term"><span class="abbr">ECOWAS</span><div><span class="full">Economic Community of West African States</span><p class="desc">Referenced in the Ghana-comparator section of the revenue chapter.</p></div></div>
+      <div class="term"><span class="abbr">AU</span><div><span class="full">African Union</span><p class="desc">Its Agenda 2063 is what PAFA works to support.</p></div></div>
+    </div>
+  </section>
+
+  <section id="ghana">
+    <div class="sec-tag"><span class="num">Ch 7, 9&nbsp;&middot;&nbsp;</span>Ghana comparator sections</div>
+    <h2>12&nbsp;&middot;&nbsp;Ghana-specific</h2>
+    <div class="glossary">
+      <div class="term"><span class="abbr">MOFEP</span><div><span class="full">Ministry of Finance and Economic Planning</span><p class="desc">Prepares Ghana's national work plan and quarterly cash ceilings, and issues monthly expenditure warrants to CAGD. <span class="loc">Ch7 §7.11</span></p></div></div>
+      <div class="term"><span class="abbr">RCC</span><div><span class="full">Regional Co-ordinating Council</span><p class="desc">Receives its own sub-total of MOFEP's warrant releases, alongside National and District levels.</p></div></div>
+      <div class="term"><span class="abbr">DACF</span><div><span class="full">District Assemblies' Common Fund</span><p class="desc">Also called the Local Government Fund — Ghana's Federation-Account-share equivalent for districts, at least 5% of total national revenue. <a href="crf.html">Full Ghana fund list →</a></p></div></div>
+    </div>
+  </section>
+
+  <section id="collisions">
+    <div class="sec-tag"><span class="num">Worth knowing&nbsp;&middot;&nbsp;</span>Same abbreviation, different things</div>
+    <h2>13&nbsp;&middot;&nbsp;Same letters, different things</h2>
+    <div class="trap">
+      <span class="k">PFC means two unrelated things in this syllabus</span>
+      <p>In <strong>Ch4/Ch5 (pensions)</strong>, PFC is the <strong>Pension Fund Custodian</strong> — the body that holds pension assets in custody. In <strong>Ch16 (GFS sector classification)</strong>, PFC is a <strong>Public Financial Corporation</strong> — an entirely different institutional-sector category. The two never appear in the same question, but if a past paper's option list ever looks like it's testing "PFC" out of context, check which chapter the question is actually drawn from before answering.</p>
+    </div>
+    <div class="trap">
+      <span class="k">DFSW means two different warrants in the source itself</span>
+      <p>Chapter 7's own text abbreviates both the <strong>"Development Fund Supplementary Warrant"</strong> and the <strong>"Development Fund Special Warrant"</strong> as <strong>DFSW</strong> — the ambiguity is in the source, not an error introduced here. Always refer to a Development Fund warrant by its full name rather than the abbreviation.</p>
+    </div>
+    <div class="trap">
+      <span class="k">"FRC" is deliberately never used for the Fiscal Responsibility Commission</span>
+      <p>The Fiscal Responsibility Act, 2007 establishes the <strong>Fiscal Responsibility Commission</strong> — the source text never abbreviates it, and this guide follows suit, precisely because "FRC" would be one letter away from <strong>FRCN</strong> (Financial Reporting Council of Nigeria), a completely different body from a completely different Act. Write it in full.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Sources: the ATSWA Part&nbsp;II Public Sector Accounting study text, all 23 chapters, plus the site's own Numbers and CRF guides.</span>
+    <span>ATSWA Part II &middot; Public Sector Accounting</span>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -443,6 +443,34 @@ CH = {
           'the original is forwarded to the Accountant-General of the Federation, and the '
           'duplicate to the Auditor-General for the Federation. A notification that a warrant '
           'has been issued is also published in the Federal Office Gazette.'},
+    {'table': {'align': 'lll', 'head': ['', 'Recurrent expenditure', 'Capital expenditure'],
+      'rows': [
+      ['Frequency', 'Incurred **regularly**, every year, as part of ordinary operations',
+       'Incurred **infrequently** — a one-off acquisition or project'],
+      ['What it buys', 'Items and services **consumed within the year** — salaries, running '
+       'costs, maintenance', 'A **fixed (non-current) asset** with a life beyond the year — a '
+       'road, a building, a vehicle, equipment'],
+      ['Benefit to government', 'Exhausted in the year it is spent', 'Continues to benefit the '
+       'government in **future years**'],
+      ['NCOA economic segment', '**Personnel cost** and **overhead**', '**Capital expenditure** '
+       '— its own distinct code'],
+      ['Fund it is charged to', 'The **Consolidated Revenue Fund**', 'The **Development Fund** '
+       '(itself fed by a yearly transfer from the CRF)'],
+      ['Warrant that releases it', 'Annual General Warrant (and its recurrent-side relatives — '
+       'PGW, SGW, REW)', '**Development Fund Annual General Warrant** (with its own '
+       'provisional/supplementary/virement counterparts below, under "Capital expenditure '
+       'warrants")'],
+      ['Typical examples', 'Salaries and wages; office running costs; debt service; repairs and '
+       'maintenance', 'Roads, bridges and dams; buildings and staff housing; hospitals; '
+       'vehicles; loans made to State Governments for their own development'],
+    ]}},
+    {'key': 'The two are **never mixed on the same warrant, or the same fund**: a recurrent '
+            'item is authorised from the CRF by an Annual General Warrant; a capital item is '
+            'authorised from the Development Fund by a Development Fund General Warrant. This '
+            'is precisely the "relationship between capital and recurrent expenditure" that '
+            '§6.6 flags **line-item budgeting** as failing to spell out clearly — the budget '
+            'groups spending by *which ministry* asked for it, not by *which of these two '
+            'natures* it is, so the two get mixed together within one department\'s vote.'},
     {'h4': 'Recurrent expenditure warrants'},
     {'p': 'Recurrent Expenditure Warrants are authorisations issued by the Minister of Finance '
           'to disburse from the **Consolidated Revenue Fund**:'},

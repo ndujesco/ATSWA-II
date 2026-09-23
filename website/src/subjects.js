@@ -25,5 +25,7 @@ var GUIDES = [
   { tag: 'PS · All chapters', href: 'guides/ps-numbers.html', title: 'PS by the numbers',
     blurb: 'Every memorisable numeric rule in the syllabus — years of service for gratuity/pension, procurement thresholds, board tenures, audit-query response times — grouped by theme with its exact chapter and section.' },
   { tag: 'PS · Ch 11', href: 'guides/stores-losses.html', title: 'Stores, losses & the Board of Survey',
-    blurb: 'The single most-repeated topic in the whole PS past-question bank: the full store-document glossary, Board of Survey vs Board of Enquiry, and the step-by-step procedure when cash or stores go missing.' }
+    blurb: 'The single most-repeated topic in the whole PS past-question bank: the full store-document glossary, Board of Survey vs Board of Enquiry, and the step-by-step procedure when cash or stores go missing.' },
+  { tag: 'PS · All chapters', href: 'guides/ps-abbreviations.html', title: 'PS abbreviations',
+    blurb: 'Every abbreviation in the syllabus — bodies, the Acts that create them, digital systems, taxes and technical terms — organisations first, with what each one does and where it’s covered.' }
 ];

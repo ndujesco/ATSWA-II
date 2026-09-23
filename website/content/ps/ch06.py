@@ -494,6 +494,32 @@ CH = {
           'the capital project is expected to be completed; if constraints prevent this, a fresh '
           'plan period emerges to accommodate the development. **Nigeria started adopting the '
           'Rolling Plan from 1990**, with the “1990 to 1992” Rolling Plan.'},
+    {'key': 'What "rolling" actually means. A **fixed** medium-term plan covers a set window — '
+            'say 1990 to 1992 — and then simply **stops**: planning has to start completely '
+            'afresh from zero once 1992 ends, using by-then years-old assumptions right up to '
+            'the point the new plan is drawn up. A **rolling** plan never stops and is never '
+            'stale: at the end of **each** year, the year just completed is **dropped off the '
+            'front**, and a **new year is added at the far end**, so the plan window always '
+            'slides forward by exactly one year and always still covers the same number of '
+            'years into the future — continuously re-based on the latest available data, rather '
+            'than only every three years.'},
+    {'table': {'align': 'll', 'head': ['After year...', 'The plan window becomes'], 'rows': [
+      ['1990 (the starting plan)', '1990 – 1992'],
+      ['1990 ends', '1991 – 1993 (1990 dropped, 1993 added)'],
+      ['1991 ends', '1992 – 1994 (1991 dropped, 1994 added)'],
+    ]}},
+    {'p': 'This is also why the technique is called a **continuous budget**: because the plan is '
+          're-based every single year rather than left to run its full length untouched, it can '
+          'absorb the reality that a capital project sometimes cannot be finished within its '
+          'original target window — the Ajaokuta Steel Rolling Mill is the study text\'s own '
+          'example of exactly this. Rather than the whole exercise being treated as a failure, a '
+          '**fresh plan period simply opens up** to accommodate the project\'s remaining work, '
+          'and the rolling window carries it forward until completion.'},
+    {'note': 'Two things distinguish a rolling plan from the ordinary Medium-Term Expenditure '
+             'Framework (MTEF) of §6.2, even though both look forward several years: the MTEF is '
+             're-issued wholesale at fixed points (a fresh one before each new financial year), '
+             'while a rolling plan is a genuinely **continuous** sliding window that shifts by '
+             'one year at a time, every year, without ever formally "ending" and restarting.'},
   ]},
 
   {'n': '6.7', 't': 'Factors militating against the budgeting system in Nigeria', 'b': [
