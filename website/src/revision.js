@@ -40,7 +40,11 @@
   function yearFilterBar(list) {
     var all = {};
     list.forEach(function (q) { yearsOf(q.diets).forEach(function (y) { all[y] = 1; }); });
-    var years = Object.keys(all).sort();
+    // Most-recent-first in the dropdown list, since a recent diet is what
+    // most users actually want to jump to — but the *default* selection
+    // (wired in wireYearFilter) still spans the full min..max range,
+    // independent of this display order.
+    var years = Object.keys(all).sort().reverse();
     if (years.length < 2) return '';
     var opts = years.map(function (y) { return '<option value="' + y + '">' + y + '</option>'; }).join('');
     return '<div class="revfilter">' +
@@ -56,7 +60,11 @@
   function wireYearFilter() {
     var from = A.el('revYearFrom'), to = A.el('revYearTo'), reset = A.el('revYearReset');
     if (!from || !to) return;
-    to.value = to.options[to.options.length - 1].value; // default: full range
+    // Options are listed most-recent-first, but the default selection is
+    // still the full min..max span regardless of that display order.
+    var optYears = [].slice.call(from.options).map(function (o) { return o.value; });
+    var minYear = optYears[optYears.length - 1], maxYear = optYears[0];
+    from.value = minYear; to.value = maxYear;
     var items = [].slice.call(document.querySelectorAll('[data-years]'));
     var topics = [].slice.call(document.querySelectorAll('.revtopic'));
     function apply() {
@@ -85,8 +93,8 @@
     from.addEventListener('change', apply);
     to.addEventListener('change', apply);
     if (reset) reset.addEventListener('click', function () {
-      from.value = from.options[0].value;
-      to.value = to.options[to.options.length - 1].value;
+      from.value = minYear;
+      to.value = maxYear;
       apply();
     });
     apply();
