@@ -67,6 +67,59 @@ CH = {
   ]},
 
   {'n': '20.3', 't': 'Running a simulation', 'b': [
+    {'p': 'There are generally two methods of simulation: the **Monte Carlo method** and '
+          '**system (computer) simulation**. Only the Monte Carlo method is developed in this '
+          'study text.'},
+    {'eg': {'tag': 'Study text', 't': 'Example 20.1 — simulating daily demand (inventory)',
+      'open': True, 'q': [
+      {'p': 'A company\'s daily demand pattern for a product, with probabilities, is:'},
+      {'table': {'align': 'lrrrrr', 'head': ['Demand', '0', '10', '20', '30', '40'], 'rows': [
+        ['Probability', '0.01', '0.20', '0.15', '0.50', '0.14'],
+      ]}},
+      {'p': '(a) Using the random numbers 40, 19, 87, 83, 73, 84, 29, 09, 02, 20, simulate '
+            'demand for 10 days. (b) Estimate the daily average demand from the simulated '
+            'data.'}],
+      'a': [
+      {'table': {'align': 'lrrl', 'head': ['Demand', 'Probability', 'Cumulative', 'Random '
+        'number interval'], 'rows': [
+        ['0', '0.01', '0.01', '—'], ['10', '0.20', '0.21', '00–20'],
+        ['20', '0.15', '0.36', '21–35'], ['30', '0.50', '0.86', '36–85'],
+        ['40', '0.14', '1.00', '86–99'],
+      ]}},
+      {'table': {'align': 'lrr', 'head': ['Day', 'Random number', 'Demand'], 'rows': [
+        ['1', '40', '30'], ['2', '19', '10'], ['3', '87', '40'], ['4', '83', '30'],
+        ['5', '73', '30'], ['6', '84', '30'], ['7', '29', '20'], ['8', '09', '10'],
+        ['9', '02', '10'], ['10', '20', '10'], ['**Total**', '', '**220**'],
+      ]}},
+      {'tex': '\\text{(b) Expected average} = \\frac{220}{10} = 22 \\text{ units}'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 20.2 — simulating a queuing system',
+      'open': True, 'q': [
+      {'p': 'Inter-arrival and service-time distributions for a queuing system:'},
+      {'table': {'align': 'lrr', 'head': ['Inter-arrival (min)', 'Probability', ''], 'rows': [
+        ['2', '0.15', ''], ['4', '0.23', ''], ['6', '0.35', ''], ['8', '0.17', ''],
+        ['10', '0.10', ''],
+      ]}},
+      {'table': {'align': 'lrr', 'head': ['Service time (min)', 'Probability', ''], 'rows': [
+        ['1', '0.10', ''], ['3', '0.22', ''], ['5', '0.33', ''], ['7', '0.23', ''],
+        ['9', '0.10', ''],
+      ]}},
+      {'p': 'Using arrival random numbers 93, 14, 72, 10, 21, 81, 87, 90, 38 and service random '
+            'numbers 71, 63, 14, 53, 64, 42, 07, 54, 66, simulate the queue for 60 minutes '
+            '(service starting 10:00am) and estimate (i) average queue length, (ii) average '
+            'customer waiting time, (iii) average service idle time, (iv) average service time, '
+            '(v) average time a customer spends in the system.'}],
+      'a': [
+      {'p': 'Running the simulation worksheet (arrival time, service start, random number, '
+            'service time, service ends, attendant/customer waiting, queue length) for all 9 '
+            'customers gives totals: inter-arrival 56 min, service time 41 min, attendant '
+            'waiting (idle) 20 min, customer waiting 23 min, queue length total 5.'},
+      {'ol': [
+        'Average queue length $= 5/9 \\approx 0.56 \\approx 1$ customer.',
+        'Average customer waiting time $= 23/9 = 2.56$ minutes.',
+        'Average service idle time $= 20/9 = 2.22$ minutes.',
+        'Average service time $= 41/9 = 4.56$ minutes.',
+        'Time a customer spends in the system $= 4.56 + 2.56 = 7.12$ minutes.',
+      ]}]}},
     {'eg': {'t': 'Simulating demand', 'q': [
       {'p': 'Using the demand distribution above and the random numbers 58, 12, 90, 33, 71, '
             '06, 84, 47, 25, 03, simulate demand for ten days and compute the average daily '
@@ -143,40 +196,29 @@ CH = {
                'comparison becomes meaningless.'}]}},
   ]},
 
-  {'n': '20.4', 't': 'Advantages and limitations', 'b': [
-    {'h4': 'Advantages'},
-    {'ul': [
-      '**Handles complexity.** Systems with several interacting random variables can be '
-      'modelled where no analytical solution exists.',
-      '**Avoids restrictive assumptions.** Any empirical distribution can be sampled, not only '
-      'the mathematically convenient ones.',
-      '**Safe and cheap experimentation.** Policies can be tested on the model rather than on '
-      'the real operation.',
-      '**Compresses time.** Years of operation can be simulated in seconds, and rare events '
-      'observed often enough to be studied.',
-      '**Shows the whole distribution of outcomes**, including the worst case, rather than a '
-      'single expected value.',
-      '**Comprehensible to management.** The logic of "if this happened, then that would '
-      'follow" is transparent in a way that a closed-form solution often is not.',
+  {'n': '20.4', 't': 'Advantages and disadvantages', 'b': [
+    {'h4': 'Advantages (study text)'},
+    {'ol': [
+      'Simulation is suitable for analysing large and complex real-life problems which may not '
+      'be solved by the usual quantitative methods.',
+      'Simulation can also be used for sensitivity analysis on complex systems.',
+      'It makes the decision-maker note and study the interactive system, and effect changes '
+      'where possible.',
+      'Simulation experiments make use of a **model**, not the system itself.',
+      'It can be used as a pre-test service for situations where new products or policies are '
+      'to be introduced.',
     ]},
-    {'h4': 'Limitations'},
-    {'ul': [
-      '**It does not optimise.** Simulation evaluates the policies you choose to test. A better '
-      'policy that was not tested will not be discovered.',
-      '**Results are estimates subject to sampling error.** Two runs with different random '
-      'numbers give different answers, and a short run may mislead badly — as the 2.3 against '
-      '2.6 above illustrates.',
-      '**Requires many trials** to produce reliable results, and hence computing resources for '
-      'any realistic problem.',
-      '**Depends on the input distributions.** If the assumed probabilities are wrong, the '
-      'simulation reproduces the error faithfully and with an air of authority.',
-      '**Model building is expensive** in skilled time, and the model must be validated before '
-      'it is trusted.',
+    {'h4': 'Disadvantages (study text)'},
+    {'ol': [
+      'Simulation may sometimes be very expensive and even take a long time to develop.',
+      'Simulation is a trial-and-error approach, and that is the reason for having different '
+      'solutions.',
+      'Simulation applications usually result in outcomes that are, at least to some extent, '
+      'ad hoc.',
     ]},
-    {'note': 'The standard examination point is the first limitation: **simulation is a '
-             'descriptive technique, not an optimising one**. Contrast it with linear '
-             'programming, which computes the optimum directly. Making that contrast explicitly '
-             'is usually worth a mark on its own.'},
+    {'note': 'The standard examination point is that **simulation is a descriptive/trial-and-'
+             'error technique, not an optimising one** — there is no mathematical model leading '
+             'directly to an optimal solution, so the result is always an approximation.'},
   ]},
 
   {'n': '20.5', 't': 'Worksheet summary — every term defined and every formula', 'b': [
@@ -203,13 +245,12 @@ CH = {
       'policies (e.g. order quantities), **every policy must be tested against the same '
       'stream of random numbers**, or the policy comparison is confounded with differences in '
       'the random demand stream itself.',
-      '**§20.4 Advantages and limitations** — advantages: handles complex interacting random '
-      'variables, avoids restrictive analytical assumptions, safe/cheap experimentation, '
-      'compresses time (years in seconds), shows the whole outcome distribution, and is '
-      'intuitively understandable to management. Limitations (see the full list below) '
-      'include that it is time-consuming to build/validate, gives no guaranteed optimum (only '
-      'compares the policies actually tried), and results depend on the quality of the input '
-      'distributions.',
+      '**§20.4 Advantages and disadvantages** — advantages: suitable for large/complex '
+      'problems the usual quantitative methods cannot solve; useful for sensitivity analysis; '
+      'lets the decision-maker study the interactive system and effect changes; uses a model, '
+      'not the real system; and can pre-test new products/policies. Disadvantages: can be '
+      'expensive and slow to develop; is trial-and-error (so different runs give different '
+      'solutions); results are, to some extent, ad hoc.',
     ]},
     {'h3': 'All the terms'},
     {'ul': [
@@ -257,15 +298,60 @@ CH = {
     ]}},
     {'note': 'The simulated mean approaches $E(X)$ as the number of trials increases; a large '
              'gap after few trials just reflects sampling variation.'},
-    {'h3': 'C. Advantages and limitations'},
+    {'h3': 'C. Advantages and disadvantages'},
     {'ul': [
-      '**Advantages** — handles complex, stochastic systems that defy analytic solution; no '
-      'disruption to the real system; "what-if" testing of policies; relatively easy to '
-      'understand.',
-      '**Limitations** — descriptive not optimising; results depend on the quality of the '
-      'input distributions and the random numbers; many trials needed for reliable estimates; '
-      'can be time-consuming / costly to build; each run gives only an estimate.',
+      '**Advantages** — suitable for large/complex problems beyond the usual quantitative '
+      'methods; useful for sensitivity analysis; lets the decision-maker study the system and '
+      'effect changes; uses a model rather than the real system; can pre-test new products or '
+      'policies.',
+      '**Disadvantages** — can be expensive and slow to develop; is a trial-and-error approach '
+      '(different runs give different solutions); results are, at least to some extent, ad hoc.',
     ]},
+  ]},
+
+  {'n': '20.6', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'By utilising simulation, the result that emanates from it is (A) Exact  (B) '
+        'Unrealistic  (C) An approximation  (D) Simplified  (E) Uncertain',
+        'A large complex simulation model will be most appropriate when (A) it is difficult to '
+        'create appropriate events  (B) it is expensive to write and use it as an experimental '
+        'device  (C) the average costs may not be well defined  (D) the certain decision '
+        'variable(s) cannot be clearly identified  (E) the time to be taken is short and '
+        'unpredictable',
+        'In the Monte Carlo simulation method, assigning random numbers means it is necessary '
+        'to (A) assign particular and appropriate random numbers  (B) not assign particular and '
+        'appropriate random numbers  (C) develop a cumulative probability distribution  (D) not '
+        'assign the exact range of random number interval as the probability  (E) have the '
+        'total frequency for assigning the random numbers',
+        'Before simulation is carried out, there is need to consider the analytical results in '
+        'order to (A) identify suitable values of decision variables for specific choices of '
+        'system parameters  (B) determine the optimal decision  (C) identify suitable values of '
+        'the system parameters  (D) compute the optimal values  (E) determine the variables '
+        'that are irrelevant',
+        'A method of simulation that utilises samples from a real population, and does not '
+        'assume a theoretical counterpart of the actual population, is known as the '
+        '.......................... method.',
+        'A simulation method that does not lend itself to analysis by a mathematical model, and '
+        'which draws samples from a table of random numbers, is called the '
+        '.......................... method.',
+        'An application of simulation to situations such as cash-flow analysis, price '
+        'determination, stock and commodity analysis, consumer behaviour, budgeting or '
+        'investment can be seen as .......................... and .......................... '
+        'applications.',
+        'The disadvantage of simulation over optimisation is that several options of measure of '
+        'performance cannot be examined. TRUE or FALSE?',
+      ]}],
+      'a': [
+      {'ol': [
+        '**C — an approximation.**', '**B.**', '**C — develop a cumulative probability '
+        'distribution.**', '**A.**', '**System simulation.**', '**Monte Carlo.**',
+        '**Business and Economic** applications.', '**False.**',
+      ]}]}},
+    {'note': 'The study text\'s own end-of-chapter answer key stops at question 8 — questions 9 '
+             'and 10 (and their answers) are missing/garbled in the printed source itself, not '
+             'omitted here.'},
   ]},
  ],
  'formulas': [

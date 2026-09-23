@@ -119,7 +119,7 @@ var ATSWA = (function () {
   function render() {
     route = parseHash();
     var p = route.parts;
-    closeSheet(); closeSearch();
+    closeSheet(); closeSearch(); closeMobileNav();
     document.body.removeAttribute('data-sub');
     if (!p.length) return VIEWS.home();
     if (p[0] === 's' && p[1]) {
@@ -158,6 +158,8 @@ var ATSWA = (function () {
     out.push('<a href="#/formulas"' + (p[0] === 'formulas' ? ' aria-current="page"' : '') + '>Formulas</a>');
     out.push('<a href="#/progress"' + (p[0] === 'progress' ? ' aria-current="page"' : '') + '>Progress</a>');
     el('tabs').innerHTML = out.join('');
+    var mn = el('mobilenav');
+    if (mn) mn.innerHTML = out.join('');
   }
 
   function loading(msg) {
@@ -460,11 +462,23 @@ var ATSWA = (function () {
            saveScore: saveScore, subOf: subOf, esc: esc, el: el, h: h,
            fmtClock: fmtClock, pct: pct, optText: optText, optPlain: optPlain,
            stemHTML: stemHTML, preBlock: preBlock, loading: loading,
-           closeSheet: function () { closeSheet(); }, DATA: DATA,
+           closeSheet: function () { closeSheet(); },
+           toggleMobileNav: toggleMobileNav, closeMobileNav: closeMobileNav, DATA: DATA,
            subStats: subStats };
 
   function closeSheet() {
     el('sheet').classList.remove('on'); el('veil').classList.remove('on');
   }
   function closeSearch() { el('srch').classList.remove('on'); }
+  function closeMobileNav() {
+    var mn = el('mobilenav'), btn = el('btn-menu');
+    if (mn) mn.classList.remove('on');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  }
+  function toggleMobileNav() {
+    var mn = el('mobilenav'), btn = el('btn-menu');
+    if (!mn || !btn) return;
+    var open = mn.classList.toggle('on');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
 })();

@@ -43,15 +43,15 @@ CH = {
     {'h4': 'Types of sets'},
     {'table': {'align': 'll', 'head': ['Type', 'Meaning'], 'rows': [
       ['**Finite / infinite**', 'A set is finite if its number of elements is countable; '
-       'otherwise it is infinite. $A=\\{$odd numbers between 0 and 12$\\}$ is finite; '
+       'otherwise it is infinite. $A=\\{\\text{odd numbers between 0 and 12}\\}$ is finite; '
        '$B=\\{1,2,3,\\dots\\}$ is infinite.'],
       ['**Cardinality (number of elements)**', 'For a finite set $A$, the number of elements is '
        'denoted $n(A)$. If $A=\\{1,4,7,8,5,6\\}$, then $n(A)=6$.'],
       ['**Empty / null set**', 'A set with no element, denoted $\\{\\ \\}$. E.g. the set of '
        'integers that are both odd and even is empty.'],
       ['**Universal set**', 'The collection of all conceivable objects under consideration, '
-       'denoted $U$. E.g. $U=\\{$all English alphabets$\\}$; $U=\\{$all candidates writing a '
-       'particular diet of ATS examination$\\}$.'],
+       'denoted $U$. E.g. $U=\\{\\text{all English alphabets}\\}$; '
+       '$U=\\{\\text{all candidates writing a particular diet of ATS examination}\\}$.'],
       ['**Subset**', 'If every element of $A$ is contained in $B$, $A$ is a subset of $B$: '
        '$A \\subseteq B$ (or $B \\supseteq A$, read "$B$ is a superset of $A$"). If every '
        'element of $A$ is also an element of $B$ **and** vice versa, $A$ and $B$ are equal '
@@ -73,9 +73,10 @@ CH = {
     ]},
     {'eg': {'tag': 'Study text', 't': 'Example 10.1 — listing the elements of a set',
       'open': True, 'q': [
-      {'p': 'List the elements of each of the following sets: (a) $X=\\{$odd numbers between 0 '
-            'and 10$\\}$; (b) $Y=\\{$odd numbers less than 20$\\}$; (c) $Z=\\{$even numbers '
-            'between 9 and 31$\\}$.'}],
+      {'p': 'List the elements of each of the following sets: (a) '
+            '$X=\\{\\text{odd numbers between 0 and 10}\\}$; (b) '
+            '$Y=\\{\\text{odd numbers less than 20}\\}$; (c) '
+            '$Z=\\{\\text{even numbers between 9 and 31}\\}$.'}],
       'a': [
       {'p': '(a) $X = \\{1,3,5,7,9\\}$'},
       {'p': '(b) $Y = \\{1,3,5,7,9,11,13,15,17,19\\}$'},
@@ -202,9 +203,11 @@ CH = {
         'library (B) A collection of tools in a carpentry shop (C) A collection of historical '
         'artifacts in a museum (D) A collection of undefined items (E) A group of all vowels '
         'in the English alphabet',
-        'Which of the following sets is infinite? (A) $D=\\{$all the days in a week$\\}$ '
-        '(B) $S=\\{$all the ICAN students in a Tuition house$\\}$ (C) $T=\\{$all the letters of '
-        'alphabet$\\}$ (D) $V=\\{$all even numbers$\\}$ (E) $P=\\{x: 1 \\le x \\le 7\\}$',
+        'Which of the following sets is infinite? '
+        '(A) $D=\\{\\text{all the days in a week}\\}$ '
+        '(B) $S=\\{\\text{all the ICAN students in a Tuition house}\\}$ '
+        '(C) $T=\\{\\text{all the letters of the alphabet}\\}$ '
+        '(D) $V=\\{\\text{all even numbers}\\}$ (E) $P=\\{x: 1 \\le x \\le 7\\}$',
         'From enrolment records for Principles of Accounting ($A$) and Quantitative Analysis '
         '($Q$): $n(A)=120$, $n(A \\cap Q)=40$ and $n(A \\cup Q)=240$. Calculate $n(Q)$. '
         '(A) 80  (B) 160  (C) 200  (D) 280  (E) 400',

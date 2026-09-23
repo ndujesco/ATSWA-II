@@ -1,461 +1,299 @@
 CH = {
  'n': 16,
  't': 'Inventory and Production Control',
- 'brief': 'The costs of holding inventory, the economic order quantity and its assumptions, '
-          'the economic batch quantity, reorder levels and buffer stock, and the evaluation of '
-          'quantity discounts.',
+ 'brief': 'The meaning and motives for holding inventory, the four types of inventory cost, and '
+          'the derivation and calculation of the Economic Order Quantity (EOQ).',
  'outcomes': [
-   'Identify the costs relevant to an inventory decision',
-   'Derive and apply the economic order quantity',
-   'Compute total inventory cost at any order size',
-   'Apply the economic batch quantity where replenishment is gradual',
-   'Compute reorder level, buffer stock and maximum and minimum levels',
-   'Evaluate whether a quantity discount should be accepted',
+   'Explain the meaning and functions of inventory',
+   'Understand the basic concepts in inventory control',
+   'Distinguish between deterministic and stochastic inventory models',
+   'Calculate the Economic Order Quantity (EOQ) under various situations',
  ],
  'secs': [
-  {'n': '16.1', 't': 'The costs of inventory', 'b': [
-    {'table': {'align': 'lll', 'head': ['Cost', 'Behaviour', 'Examples'], 'rows': [
-      ['**Ordering (set-up) cost**', 'Fixed per order; total rises with the number of orders',
-       'Requisitioning, placing the order, transport, receiving and inspection; machine set-up '
-       'for a production batch'],
-      ['**Holding (carrying) cost**', 'Per unit per period; total rises with order size',
-       'Interest on capital tied up, storage, insurance, obsolescence, deterioration, pilferage'],
-      ['**Purchase (acquisition) cost**', 'Per unit; constant unless discounts apply',
-       'Invoice price of the goods'],
-      ['**Stockout (shortage) cost**', 'Arises when demand cannot be met',
-       'Lost contribution, emergency purchases, idle time, loss of customer goodwill'],
-    ]}},
-    {'key': 'Ordering cost and holding cost move in **opposite** directions as the order size '
-            'changes: large orders mean few orders (low ordering cost) but high average '
-            'inventory (high holding cost). The economic order quantity is the size at which '
-            'their total is least — which, for the basic model, is exactly where the two are '
-            'equal.'},
-    {'p': 'Purchase cost is normally irrelevant to the *size* of the order, because the same '
-          'annual quantity is bought whatever the order size. It becomes relevant only when a '
-          'quantity discount changes the unit price.'},
+  {'n': '16.1', 't': 'Introduction', 'b': [
+    {'p': 'Inventory control — also called **inventory management** — is a process whereby the '
+          'stock levels of goods, products or materials in a company are managed and regulated. '
+          'Its goal is to balance supply and demand, minimise cost and maximise efficiency.'},
   ]},
 
-  {'n': '16.2', 't': 'The economic order quantity', 'b': [
-    {'fbox': {'h': 'EOQ and related quantities', 'rows': [
-      {'lb': 'Economic order quantity',
-       'tex': 'Q^{*} = \\sqrt{\\frac{2 D C_o}{C_h}}'},
-      {'lb': 'Number of orders per year',
-       'tex': 'N = \\frac{D}{Q}'},
-      {'lb': 'Annual ordering cost',
-       'tex': '\\frac{D}{Q} \\times C_o'},
-      {'lb': 'Annual holding cost',
-       'tex': '\\frac{Q}{2} \\times C_h'},
-      {'lb': 'Total relevant cost',
-       'tex': 'TC = \\frac{D}{Q}C_o + \\frac{Q}{2}C_h'},
-      {'lb': 'Minimum total cost',
-       'tex': 'TC^{*} = \\sqrt{2 D C_o C_h}'},
-      {'lb': 'Length of the order cycle',
-       'tex': '\\frac{Q^{*}}{D} \\times 365 \\text{ days}'},
-    ]}},
-    {'p': 'where $D$ is annual demand in units, $C_o$ the cost of placing one order, and $C_h$ '
-          'the cost of holding one unit for one year. Average inventory is $Q/2$ because stock '
-          'falls evenly from $Q$ at delivery to zero just before the next.'},
-    {'h4': 'Assumptions of the basic model'},
+  {'n': '16.2', 't': 'The concept of an inventory', 'b': [
+    {'p': 'Inventory control is an operations research model that deals with delivering the '
+          'right quantity of goods, of the right quality, to the right place, at the right time. '
+          'It explains how to identify the order quantity that minimises the relevant costs for '
+          'a given annual demand — establishing the concept of **Economic Order Quantity (EOQ)**.'},
+    {'p': 'Inventory could mean a list of items in a shop, house or company, or the stock of '
+          'items available in an organisation — raw materials, partly finished products or '
+          'finished products. Inventory taking also means stock taking.'},
+    {'h4': 'Three motives for holding stock'},
+    {'ol': [
+      '**Transaction motive** — to meet demand at any given time. The quantity demanded is '
+      'known with certainty, and replenishment on stock-out is immediate.',
+      '**Precautionary motive** — to avoid loss of sales due to uncertainties. Buffer or safety '
+      'stocks are held so as not to run out of supply.',
+      '**Speculative motive** — in anticipation of a shortage from the supplier, or a price '
+      'increase by the supplier; current stock may be increased.',
+    ]},
+  ]},
+
+  {'n': '16.3', 't': 'Reasons for keeping inventory in a typical company', 'b': [
+    {'p': 'Keeping an inventory is the same thing as holding stock. The reasons include:'},
+    {'ol': [
+      'acting as a buffer for variations in demand and usage;',
+      'taking advantage of quantity discounts by buying in bulk;',
+      'taking advantage of seasonal and price fluctuations;',
+      'keeping to the barest minimum the delay in the production process that lack of raw '
+      'materials may cause;',
+      'taking advantage of inflation or possible shortages; and',
+      'ensuring no stock-outs.',
+    ]},
+    {'p': 'The main objective of inventory control is to maintain stock levels so as to '
+          'minimise total inventory costs. Two main factors must be established — **when to '
+          'order** and **what quantity to order**.'},
+  ]},
+
+  {'n': '16.4', 't': 'Different types of inventory cost', 'b': [
+    {'p': 'Four types of inventory cost are considered:'},
+    {'h4': '(a) Holding costs (carrying costs)'},
     {'ul': [
-      'Demand is known, constant and continuous throughout the year.',
-      'The lead time is known and constant.',
-      'Replenishment is instantaneous — the whole order arrives at once.',
-      'The unit purchase price is constant; no quantity discounts.',
-      'Ordering cost per order and holding cost per unit per year are constant.',
-      'No stockouts are permitted, so no shortage cost enters the model.',
+      'cost of capital tied up, including interest on such capital;',
+      'handling and storage costs;', 'insurance and security costs;',
+      'loss on deterioration and/or obsolescence;',
+      'stock taking, auditing and perpetual inventory costs; and',
+      'loss due to pilferage and vermin damage.',
     ]},
-    {'eg': {'t': 'Computing the EOQ', 'q': [
-      {'p': 'Bello Trading Company uses 10,000 units of a component each year. The cost of '
-            'placing an order is ₦400 and the cost of holding one unit for a year is ₦8. '
-            'Compute (a) the economic order quantity; (b) the number of orders per year; '
-            '(c) the total annual inventory cost; (d) the length of the order cycle, assuming '
-            'a 250-day working year.'}],
-      'a': [
-      {'p': '**(a)**'},
-      {'tex': 'Q^{*} = \\sqrt{\\frac{2DC_o}{C_h}} = \\sqrt{\\frac{2 \\times 10{,}000 '
-              '\\times 400}{8}} = \\sqrt{\\frac{8{,}000{,}000}{8}} = \\sqrt{1{,}000{,}000} '
-              '= 1{,}000 \\text{ units}'},
-      {'p': '**(b)**'},
-      {'tex': 'N = \\frac{D}{Q^{*}} = \\frac{10{,}000}{1{,}000} = 10 \\text{ orders per year}'},
-      {'p': '**(c)**'},
-      {'table': {'align': 'lr', 'head': ['Cost', 'Amount (₦)'], 'rows': [
-        ['Ordering: $(10{,}000 \\div 1{,}000) \\times 400$', '4,000'],
-        ['Holding: $(1{,}000 \\div 2) \\times 8$', '4,000'],
-        ['Total relevant cost', '8,000'],
-      ]}},
-      {'p': 'Confirming with the direct formula:'},
-      {'tex': 'TC^{*} = \\sqrt{2DC_oC_h} = \\sqrt{2(10{,}000)(400)(8)} '
-              '= \\sqrt{64{,}000{,}000} = ₦8{,}000'},
-      {'p': '**(d)**'},
-      {'tex': '\\text{Cycle} = \\frac{1{,}000}{10{,}000} \\times 250 = 25 \\text{ working days}'},
-      {'key': 'Notice that ordering cost and holding cost are both ₦4,000. **At the EOQ the two '
-              'are always equal** — a one-second check on any EOQ answer. If they differ, the '
-              'quantity is not the EOQ.'}]}},
-    {'eg': {'t': 'Cost of departing from the EOQ', 'q': [
-      {'p': 'Using the data above, compute the total inventory cost if the company instead '
-            'ordered 2,000 units at a time, and comment.'}],
-      'a': [
-      {'tex': 'TC = \\frac{10{,}000}{2{,}000}(400) + \\frac{2{,}000}{2}(8) = 2{,}000 + 8{,}000 '
-              '= ₦10{,}000'},
-      {'p': 'The cost is ₦2,000 (25%) higher than the optimum. Note, however, that doubling the '
-            'order quantity raised total cost by only a quarter: the total-cost curve is '
-            '**flat near the optimum**, so a moderate departure from the EOQ — to a round '
-            'pallet quantity, say — costs little. This is one of the model\'s more useful '
-            'practical properties.'}]}},
+    {'h4': '(b) Ordering or procuring costs'},
+    {'p': 'All costs relating to the placement of orders for stock, whether internal or '
+          'external:'},
+    {'ul': [
+      'administrative costs of the departments placing and receiving orders;',
+      'transport costs; and',
+      'production set-up costs where goods are manufactured internally — planning, preparing '
+      'machinery and the workforce for each production run.',
+    ]},
+    {'h4': '(c) Shortage or stock-out costs'},
+    {'p': 'Where a company runs out of stock it normally incurs a loss, through:'},
+    {'ul': [
+      'loss of customers;', 'loss of sale and the contribution earned from the sale;',
+      'loss on production stoppages; and', 'loss on emergency purchase of stock at a higher '
+      'price.',
+    ]},
+    {'note': 'Of these four, loss of customers and loss of sale are **external**; loss on '
+             'production stoppages is **internal**.'},
+    {'h4': '(d) Material or stock costs'},
+    {'p': 'The supplier\'s price, or the direct cost of production — relevant especially when '
+          'bulk-purchase discounts are available, or savings in direct production cost are '
+          'possible with longer batch runs.'},
+    {'h4': 'Definition of terminologies'},
+    {'ul': [
+      '**Lead time (procurement time)** — the time, in days/weeks/months, between ordering and '
+      'eventual delivery. A lead time of one week means one week elapses between placing the '
+      'order and its supply.',
+      '**Physical stock** — the number of items physically in stock at the time of inventory.',
+      '**Free stock** — physical stock, plus awaiting orders, less unfulfilled demands.',
+      '**Maximum stock** — the selected stock level indicating that stocks have risen too high.',
+      '**Stock-outs** — a situation where there is demand for an item but the warehouse is out '
+      'of stock (e.g. four stock-outs means there is demand for 12 items but only 8 are '
+      'available).',
+      '**Buffer stock (safety stock / minimum stock)** — the level indicating that stock has '
+      'gone too low; held to safeguard against stock-outs.',
+      '**Economic Order Quantity (EOQ)** or **Economic Batch Quantity (EBQ)** — the ordering '
+      'quantity of an item of stock which minimises the costs involved.',
+      '**Re-order quantity** — the number of units of an item in one order.',
+      '**Re-order level** — the level of stock at which a new order for more units should be '
+      'placed.',
+      '**Demand** — the number of units of stock required within a particular period of time.',
+    ]},
+    {'note': 'Average stock $= Q/2$, where $Q$ is the reorder quantity — illustrated in the '
+             'study text by a simple stock diagram in which stock rises to a peak on delivery '
+             'and falls in a straight line to the reorder level as it is used up (safety stock '
+             'included).'},
   ]},
 
-  {'n': '16.3', 't': 'Gradual replenishment: the economic batch quantity', 'b': [
-    {'p': 'Where the items are manufactured rather than bought in, they arrive gradually at the '
-          'production rate $p$ while being consumed at the demand rate $d$. Stock therefore '
-          'builds up at $(p - d)$ and never reaches the full batch size, so average inventory '
-          'is lower and larger batches become economic.'},
-    {'fbox': {'h': 'Economic batch quantity', 'rows': [
-      {'lb': 'Batch size',
-       'tex': 'Q^{*} = \\sqrt{\\frac{2 D C_s}{C_h\\left(1 - \\dfrac{d}{p}\\right)}}'},
-      {'lb': 'Maximum inventory',
-       'tex': 'Q\\left(1 - \\frac{d}{p}\\right)'},
-      {'lb': 'Average inventory',
-       'tex': '\\frac{Q}{2}\\left(1 - \\frac{d}{p}\\right)'},
+  {'n': '16.5', 't': 'The Economic Order Quantity (EOQ)', 'b': [
+    {'p': 'The basic concept of EOQ involves an optimisation process, normally used in inventory '
+          'management, to minimise total inventory cost. This way, inventory costs are '
+          'minimised, supply-chain efficiency is improved, and other quantities are optimised.'},
+    {'h4': 'Underlying assumptions of the EOQ model'},
+    {'ol': [
+      'Rates of demand are known;', 'Stock-holding cost is known and constant;',
+      'Price per unit is known and constant;', 'No stock-outs are allowed;',
+      'Ordering cost is known and constant; and',
+      'No part-delivery — the ordered batch is delivered all at once.',
+    ]},
+    {'p': 'Notation: $d$ = the annual demand; $Q$ = the re-order quantity; $c$ = the ordering '
+          'cost for a single order; $h$ = the cost of holding a unit of stock for one year.'},
+    {'h4': 'Derivation of the EOQ formula'},
+    {'p': 'The total cost per annum is'},
+    {'tex': 'T = \\frac{cd}{Q} + \\frac{Qh}{2}'},
+    {'p': 'Minimising $T$ with respect to $Q$ (differentiating and setting $dT/dQ=0$ at the '
+          'turning point):'},
+    {'tex': '\\frac{dT}{dQ} = -\\frac{cd}{Q^2} + \\frac{h}{2} = 0 \\;\\Rightarrow\\; '
+            '\\frac{cd}{Q^2} = \\frac{h}{2} \\;\\Rightarrow\\; Q^2h = 2cd \\;\\Rightarrow\\; '
+            'Q = \\sqrt{\\frac{2cd}{h}}'},
+    {'p': 'Since $Q$ is a function of positive constants ($c,d,h>0$), $d^2T/dQ^2 = 2cd/Q^3 > 0$, '
+          'confirming $T$ is a **minimum** at this $Q$.'},
+    {'fbox': {'h': 'Derived quantities', 'rows': [
+      {'lb': 'Economic order quantity', 'tex': 'Q = \\sqrt{\\dfrac{2cd}{h}}'},
+      {'lb': 'Number of orders in a year', 'tex': '\\dfrac{d}{Q}'},
+      {'lb': 'Ordering cost in a year', 'tex': 'c \\cdot \\dfrac{d}{Q}'},
+      {'lb': 'Average stock', 'tex': '\\dfrac{Q}{2}'},
+      {'lb': 'Holding cost per annum', 'tex': 'h \\cdot \\dfrac{Q}{2}'},
+      {'lb': 'Length of inventory cycle',
+       'tex': '\\dfrac{52Q}{d} \\text{ weeks, or } \\dfrac{12Q}{d} \\text{ months}'},
+      {'lb': 'Total cost per annum', 'tex': '\\dfrac{cd}{Q} + \\dfrac{Qh}{2}'},
     ]}},
-    {'eg': {'t': 'Economic batch quantity', 'q': [
-      {'p': 'A component is used at 4,000 units a year and can be produced at 20,000 units a '
-            'year. Set-up cost per batch is ₦1,000 and holding cost ₦4 per unit per year. '
-            'Compute the economic batch quantity and the maximum inventory level.'}],
+    {'eg': {'tag': 'Study text', 't': 'Example 16.1 — orders, cycle length and total cost',
+      'open': True, 'q': [
+      {'p': 'The demand for an item is 60,000 per annum. The cost of an order is ₦25 and the '
+            'holding cost per item is ₦2 per annum. Find (a) the number of orders per year and '
+            'the associated ordering cost, (b) the length of the inventory cycle, (c) the total '
+            'cost per annum.'}],
       'a': [
-      {'tex': '1 - \\frac{d}{p} = 1 - \\frac{4{,}000}{20{,}000} = 1 - 0.2 = 0.8'},
-      {'tex': 'Q^{*} = \\sqrt{\\frac{2(4{,}000)(1{,}000)}{4 \\times 0.8}} '
-              '= \\sqrt{\\frac{8{,}000{,}000}{3.2}} = \\sqrt{2{,}500{,}000} = 1{,}581 '
+      {'tex': 'Q = \\sqrt{\\frac{2cd}{h}} = \\sqrt{\\frac{2 \\times 25 \\times 60{,}000}{2}} '
+              '= \\sqrt{1{,}500{,}000} \\approx 1{,}225 \\text{ items}'},
+      {'p': '**(a)** Number of orders per year $= d/Q = 60{,}000/1{,}225 \\approx 49$ orders; '
+            'associated ordering cost $= 49 \\times 25 = ₦1{,}225$.'},
+      {'p': '**(b)** Length of inventory cycle $= 52/49 \\approx 1.06$ weeks.'},
+      {'p': '**(c)** As printed in the study text: total cost per annum '
+            '$= (25 \\times 49) + \\dfrac{60{,}000 \\times 2}{2} = 1{,}225 + 60{,}000 = ₦61{,}225$.'},
+      {'warn': 'The study text\'s own second term here uses $\\dfrac{dh}{2}$ (annual demand '
+               '$\\times$ holding cost $\\div 2$) rather than the derived $\\dfrac{Qh}{2}$ '
+               '(average **stock** $\\times$ holding cost) the formula box above defines — '
+               'using $Q/2 \\times h \\approx 613 \\times 2 \\approx ₦1{,}225$ instead would give '
+               'a total nearer ₦2,450. This looks like a slip in the source\'s own worked '
+               'answer. The method (ordering cost $+$ holding cost) is right; verify which term '
+               'your own question actually wants before copying the ₦61,225 figure.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 16.2 — EOQ, ordering, holding and total cost',
+      'open': True, 'q': [
+      {'p': 'A company uses 120,000 units of Material X each year, costing ₦300 per unit. The '
+            'cost of placing an order is ₦6,500. The annual holding cost is 10% of the purchase '
+            'price of a unit. Determine (i) the EOQ, (ii) annual ordering cost, (iii) annual '
+            'holding cost, (iv) total annual cost.'}],
+      'a': [
+      {'p': 'Here the study text labels the quantities $C_o$ (fixed cost per order), $C_H$ '
+            '(holding cost per unit), $D$ (annual demand) — the same formula as before, '
+            'relabelled.'},
+      {'tex': 'C_H = 10\\% \\times 300 = ₦30 \\qquad Q = \\sqrt{\\frac{2C_oD}{C_H}} '
+              '= \\sqrt{\\frac{2 \\times 6{,}500 \\times 120{,}000}{30}} \\approx 7{,}211.1 '
               '\\text{ units}'},
-      {'tex': '\\text{Maximum inventory} = 1{,}581 \\times 0.8 = 1{,}265 \\text{ units}'},
-      {'note': 'Without the gradual-replenishment adjustment the EOQ would be '
-               '$\\sqrt{2(4{,}000)(1{,}000)/4} = 1{,}414$ units. Gradual delivery lowers the '
-               'effective holding cost, so the economic batch is larger.'}]}},
+      {'tex': '\\text{(ii) Annual ordering cost} = \\frac{D}{Q} \\times C_o '
+              '= \\frac{120{,}000}{7{,}211.1} \\times 6{,}500 \\approx ₦108{,}166'},
+      {'tex': '\\text{(iii) Annual holding cost} = \\frac{Q}{2} \\times C_H '
+              '\\approx \\frac{7{,}211.1}{2} \\times 30 \\approx ₦108{,}166'},
+      {'p': '**(iv)** Total annual cost that is minimised by the EOQ '
+            '$= 108{,}166 + 108{,}166 = ₦216{,}332$. Adding the annual purchase price '
+            '($120{,}000 \\times 300 = ₦36{,}000{,}000$), the grand total annual cost is '
+            '$₦216{,}332 + ₦36{,}000{,}000 = ₦36{,}216{,}332$.'},
+      {'key': 'Notice that in both examples the **ordering cost equals the holding cost** at '
+              'the EOQ — confirmed directly by the derivation above, since $Q$ was chosen '
+              'precisely to make $cd/Q = Qh/2$.'}]}},
   ]},
 
-  {'n': '16.4', 't': 'Control levels', 'b': [
-    {'fbox': {'h': 'Stock control levels', 'rows': [
-      {'lb': 'Reorder level',
-       'tex': '\\text{Max usage} \\times \\text{Max lead time}'},
-      {'lb': 'Reorder level (with buffer stock)',
-       'tex': '(\\text{Average usage} \\times \\text{Lead time}) + \\text{Buffer stock}'},
-      {'lb': 'Minimum (buffer) level',
-       'tex': '\\text{ROL} - (\\text{Average usage} \\times \\text{Average lead time})'},
-      {'lb': 'Maximum level',
-       'tex': '\\text{ROL} + Q^{*} - (\\text{Min usage} \\times \\text{Min lead time})'},
-      {'lb': 'Average inventory',
-       'tex': '\\text{Buffer stock} + \\frac{Q^{*}}{2}'},
-    ]}},
-    {'eg': {'t': 'Setting the control levels', 'q': [
-      {'p': 'Continuing the Bello example ($D = 10{,}000$, $Q^{*} = 1{,}000$, 250-day year), '
-            'usage varies between 30 and 50 units a day and the lead time between 4 and 6 days. '
-            'Compute the reorder level, the minimum level and the maximum level.'}],
-      'a': [
-      {'p': 'Average daily usage is $10{,}000 \\div 250 = 40$ units; average lead time is 5 '
-            'days.'},
-      {'tex': '\\text{Reorder level} = 50 \\times 6 = 300 \\text{ units}'},
-      {'tex': '\\text{Minimum level} = 300 - (40 \\times 5) = 300 - 200 = 100 \\text{ units}'},
-      {'tex': '\\text{Maximum level} = 300 + 1{,}000 - (30 \\times 4) = 1{,}300 - 120 '
-              '= 1{,}180 \\text{ units}'},
-      {'p': 'The **buffer (safety) stock** of 100 units is the cushion against usage or lead '
-            'time running above average. Average inventory is therefore $100 + 1{,}000/2 = 600$ '
-            'units rather than 500, and annual holding cost $600 \\times 8 = ₦4{,}800$ rather '
-            'than ₦4,000. The extra ₦800 is the price of the protection.'}]}},
-  ]},
-
-  {'n': '16.5', 't': 'Quantity discounts', 'b': [
-    {'p': 'A discount makes purchase price relevant, so the EOQ formula alone no longer '
-          'answers the question. The method is to compute the **total annual cost including '
-          'purchases** at the EOQ and at each discount threshold, and choose the lowest.'},
-    {'steps': [
-      'Compute the EOQ ignoring discounts, and the total cost at that quantity including '
-      'purchase cost.',
-      'For each discount level, take the **smallest order quantity that earns the discount**, '
-      'unless the EOQ already exceeds it.',
-      'Compute the total annual cost at each of those quantities: purchases + ordering + '
-      'holding.',
-      'Select the order quantity with the lowest total.',
-    ]},
-    {'eg': {'t': 'Evaluating a discount', 'q': [
-      {'p': 'Bello Trading (D = 10,000 units, $C_o$ = ₦400, $C_h$ = ₦8, EOQ = 1,000) currently '
-            'pays ₦100 per unit. The supplier now offers a 2% discount on orders of 2,000 units '
-            'or more. Should the offer be accepted?'}],
-      'a': [
-      {'table': {'align': 'lrr',
-        'head': ['', 'Order 1,000 (EOQ)', 'Order 2,000 (discount)'], 'rows': [
-        ['Unit price (₦)', '100.00', '98.00'],
-        ['Purchases: $10{,}000 \\times$ price', '1,000,000', '980,000'],
-        ['Ordering: $(10{,}000 \\div Q) \\times 400$', '4,000', '2,000'],
-        ['Holding: $(Q \\div 2) \\times 8$', '4,000', '8,000'],
-        ['**Total annual cost (₦)**', '**1,008,000**', '**990,000**'],
-      ]}},
-      {'p': 'Ordering 2,000 units at a time saves **₦18,000 a year**, so the discount should be '
-            '**accepted**. The saving on purchases (₦20,000) and on ordering (₦2,000) more than '
-            'covers the additional ₦4,000 of holding cost.'},
-      {'warn': 'Two refinements are often required. First, if holding cost is stated as a '
-               '**percentage of purchase price** rather than a fixed naira amount, it falls '
-               'with the discount and must be recomputed at the lower price. Second, the '
-               'financial saving should be weighed against the non-financial consequences of '
-               'holding twice the stock: more storage space, greater exposure to obsolescence '
-               'and deterioration, and more capital tied up.'}]}},
-  ]},
-
-  {'n': '16.6', 't': 'Worksheet summary — every term defined and every formula', 'b': [
+  {'n': '16.6', 't': 'Worksheet summary — every term and formula', 'b': [
     {'h3': 'Section-by-section checklist'},
     {'ol': [
-      '**§16.1 The costs of inventory** — ordering/set-up cost (fixed per order, total rises '
-      'with the *number* of orders); holding/carrying cost (per unit per period, total rises '
-      'with order *size*); purchase cost (irrelevant to order size unless discounts apply); '
-      'stockout cost (lost contribution, emergency buys, goodwill). Ordering and holding cost '
-      'move in **opposite** directions as order size changes — EOQ minimises their total.',
-      '**§16.2 The economic order quantity** — $Q^*=\\sqrt{2DC_o/C_h}$; average inventory '
-      '$=Q/2$; $TC=(D/Q)C_o+(Q/2)C_h$; minimum total cost '
-      '$TC^*=\\sqrt{2DC_oC_h}$. **At the EOQ, ordering cost always equals holding cost** — the '
-      'one-second check on any EOQ answer. Assumptions: known constant demand and lead time, '
-      'instantaneous replenishment, constant unit price (no discounts), no stockouts allowed. '
-      'The total-cost curve is **flat near the optimum**, so a moderate departure from the '
-      'exact EOQ (e.g. to a round pallet size) costs relatively little.',
-      '**§16.3 Gradual replenishment (economic batch quantity)** — used when items are '
-      '**produced**, not bought, so they arrive at production rate $p$ while being consumed at '
-      'demand rate $d$; $Q^*=\\sqrt{2DC_s/(C_h(1-d/p))}$, maximum inventory '
-      '$=Q(1-d/p)$, average $=\\,(Q/2)(1-d/p)$. Gradual delivery lowers effective holding '
-      'cost, so the economic batch is **larger** than the plain EOQ would be for the same data.',
-      '**§16.4 Control levels** — reorder level $=$ max usage $\\times$ max lead time (or '
-      'average usage $\\times$ lead time $+$ buffer stock); minimum/buffer level $=$ ROL $-$ '
-      '(average usage $\\times$ average lead time); maximum level $=$ ROL $+Q^*-$ (min usage '
-      '$\\times$ min lead time); average inventory $=$ buffer stock $+Q^*/2$. Buffer stock is '
-      'the cushion against usage or lead time running above average, and it raises average '
-      'inventory (and so holding cost) above the plain $Q^*/2$ figure.',
-      '**§16.5 Quantity discounts** — a discount makes purchase price relevant, so compare '
-      '**total annual cost including purchases** (purchases $+$ ordering $+$ holding) at the '
-      'EOQ and at the smallest order quantity earning each discount threshold, and pick the '
-      'lowest overall — never rely on the EOQ formula alone once a discount is offered.',
+      '**§16.1–16.2 Introduction and concept** — inventory control balances supply and demand '
+      'to minimise cost; three motives for holding stock: transaction, precautionary, '
+      'speculative.',
+      '**§16.3 Reasons for keeping inventory** — buffer for demand variation; quantity '
+      'discounts; seasonal/price fluctuations; avoiding production delay; hedging inflation/'
+      'shortages; avoiding stock-outs.',
+      '**§16.4 Types of cost** — holding (carrying), ordering (procuring), shortage '
+      '(stock-out), and material/stock costs — plus the full glossary of terms (lead time, '
+      'physical/free/maximum stock, stock-outs, buffer stock, EOQ/EBQ, reorder quantity/level, '
+      'demand).',
+      '**§16.5 EOQ** — derived by calculus from $T=cd/Q+Qh/2$, giving $Q=\\sqrt{2cd/h}$; at '
+      'this $Q$, ordering cost always equals holding cost. Six assumptions: known demand, '
+      'known/constant holding cost, known/constant unit price, no stock-outs, known/constant '
+      'ordering cost, no part-delivery.',
     ]},
-    {'h3': 'All the terms'},
-    {'ul': [
-      '**Inventory / stock** — goods held for production or sale.',
-      '**Motives for holding stock** — *transaction* (meet expected demand), *precautionary* '
-      '(buffer against variation in demand or lead time), *speculative* (expected price rise).',
-      '**Holding (carrying) cost $C_h$** — cost of keeping one unit in stock for one year: '
-      'storage, insurance, obsolescence, deterioration, capital tied up.',
-      '**Ordering (procurement / set-up) cost $C_o$** — cost of placing one order (or one '
-      'production set-up), independent of order size.',
-      '**Stock-out (shortage) cost** — cost of running out: lost sales, idle production, '
-      'goodwill.',
-      '**Purchase cost** — price $\\times$ annual demand; relevant only when it varies '
-      '(quantity discounts).',
-      '**Annual demand / usage $D$**.',
-      '**Lead time** — the delay between placing an order and receiving it.',
-      '**Economic order quantity (EOQ) $Q^{*}$** — the order size that minimises total annual '
-      'ordering + holding cost.',
-      '**Economic batch quantity (EBQ)** — the EOQ analogue when stock is replenished '
-      'gradually at production rate $p$ while being used at rate $d$.',
-      '**Buffer (safety) stock $B$** — stock held to cover demand above average during the '
-      'lead time.',
-      '**Reorder level (ROL)** — the stock level that triggers a new order.',
-      '**Maximum / minimum stock level** — control limits used to flag over- and '
-      'under-stocking.',
-    ]},
-    {'h3': 'EOQ model assumptions'},
-    {'ul': [
-      'demand is known and constant; holding cost per unit is known and constant; ordering '
-      'cost per order is known and constant; no stock-outs allowed; the whole order is '
-      'delivered at once (no part-delivery); no quantity discounts (basic model).',
-    ]},
-    {'h3': 'A. EOQ and total cost'},
-    {'fbox': {'h': 'EOQ', 'rows': [
-      {'lb': 'Total relevant annual cost',
-       'tex': 'TC = \\underbrace{\\dfrac{D}{Q}\\,C_o}_{\\text{ordering}} + '
-              '\\underbrace{\\dfrac{Q}{2}\\,C_h}_{\\text{holding}}'},
-      {'lb': 'EOQ (minimises TC)',
-       'tex': 'Q^{*} = \\sqrt{\\dfrac{2 D C_o}{C_h}}'},
-      {'lb': 'Minimum total cost',
-       'tex': 'TC^{*} = \\sqrt{2 D C_o C_h} \\quad (\\text{ordering cost} = \\text{holding '
-              'cost at } Q^{*})'},
-      {'lb': 'Number of orders per year', 'tex': 'N = \\dfrac{D}{Q^{*}}'},
-      {'lb': 'Time between orders (cycle length)',
-       'tex': 't = \\dfrac{Q^{*}}{D} \\ (\\text{years})'},
-    ]}},
-    {'h3': 'B. Economic batch quantity (gradual replenishment)'},
-    {'tex': 'Q^{*} = \\sqrt{\\dfrac{2 D C_s}{C_h\\left(1 - \\dfrac{d}{p}\\right)}} '
-            '\\qquad (C_s = \\text{set-up cost}, \\ d = \\text{usage rate}, \\ '
-            'p = \\text{production rate})'},
-    {'h3': 'C. Control levels'},
-    {'fbox': {'h': 'Stock control levels', 'rows': [
-      {'lb': 'Reorder level',
-       'tex': '\\text{ROL} = \\text{Max usage} \\times \\text{Max lead time}'},
-      {'lb': 'Minimum (buffer) level',
-       'tex': '\\text{Min level} = \\text{ROL} - (\\text{Avg usage} \\times \\text{Avg lead '
-              'time})'},
-      {'lb': 'Maximum level',
-       'tex': '\\text{Max level} = \\text{ROL} + Q^{*} - (\\text{Min usage} \\times '
-              '\\text{Min lead time})'},
-      {'lb': 'Reorder quantity', 'tex': 'Q^{*} \\text{ (the EOQ)}'},
-      {'lb': 'Average stock (with buffer)',
-       'tex': '\\bar{S} = B + \\dfrac{Q^{*}}{2}'},
-    ]}},
-    {'h3': 'D. Quantity discounts'},
-    {'ol': [
-      'Compute $TC$ at the EOQ (at the normal price): ordering + holding + purchase cost '
-      '$= \\dfrac{D}{Q^{*}}C_o + \\dfrac{Q^{*}}{2}C_h + PD$.',
-      'For each discount price, compute $TC$ at the **minimum quantity** that earns that '
-      'discount (holding cost uses the discounted unit cost).',
-      'Accept the discount only if its total cost (including the lower purchase cost) is less.',
-    ]},
+    {'h3': 'Notation'},
+    {'p': '$d$ = annual demand; $Q$ = re-order quantity; $c$ = ordering cost per order; $h$ = '
+          'holding cost per unit per year (some worked examples relabel these $D$, $Q$, '
+          '$C_o$, $C_H$ — same formula).'},
   ]},
  ],
  'formulas': [
-  {'lb': 'Economic order quantity',
-   'tex': 'Q^{*} = \\sqrt{\\frac{2DC_o}{C_h}}'},
-  {'lb': 'Total relevant cost',
-   'tex': 'TC = \\frac{D}{Q}C_o + \\frac{Q}{2}C_h'},
-  {'lb': 'Minimum total cost', 'tex': 'TC^{*} = \\sqrt{2DC_oC_h}'},
-  {'lb': 'Economic batch quantity',
-   'tex': 'Q^{*} = \\sqrt{\\frac{2DC_s}{C_h(1 - d/p)}}'},
-  {'lb': 'Reorder level',
-   'tex': '\\text{Max usage} \\times \\text{Max lead time}'},
-  {'lb': 'Minimum level',
-   'tex': '\\text{ROL} - (\\text{Avg usage} \\times \\text{Avg lead time})'},
-  {'lb': 'Maximum level',
-   'tex': '\\text{ROL} + Q^{*} - (\\text{Min usage} \\times \\text{Min lead time})'},
-  {'lb': 'Average inventory with buffer',
-   'tex': 'B + \\frac{Q^{*}}{2}'},
+  {'lb': 'Economic order quantity', 'tex': 'Q = \\sqrt{\\frac{2cd}{h}}'},
+  {'lb': 'Number of orders per annum', 'tex': '\\frac{d}{Q}'},
+  {'lb': 'Ordering cost per annum', 'tex': 'c \\cdot \\frac{d}{Q}'},
+  {'lb': 'Average stock', 'tex': '\\frac{Q}{2}'},
+  {'lb': 'Holding cost per annum', 'tex': 'h \\cdot \\frac{Q}{2}'},
+  {'lb': 'Total cost per annum', 'tex': '\\frac{cd}{Q} + \\frac{Qh}{2}'},
+  {'lb': 'Length of inventory cycle (weeks)', 'tex': '\\frac{52Q}{d}'},
  ],
  'focus':
-   'One or two Section A marks on the EOQ formula or a reorder level, and a Section B question '
-   'in perhaps half the diets, usually EOQ plus a discount evaluation plus a discussion of the '
-   'assumptions. The formula itself is given credit only once; the marks are in the total-cost '
-   'table and the assumptions, so never stop at the square root.',
+   'A dependable Section A/B source: derive or quote the EOQ formula, compute the number of '
+   'orders, the ordering/holding cost and the total annual cost. The examiner sometimes swaps '
+   'notation between examples ($c,d,h$ vs $C_o, D, C_H$) — read which letter means what before '
+   'substituting.',
  'errors': [
-   'Using $Q$ rather than $Q/2$ for average inventory.',
-   'Forgetting to square-root, or omitting the 2 in the numerator.',
-   'Mixing time periods — annual demand with a monthly holding cost.',
-   'Including purchase cost in the basic EOQ computation, where it is irrelevant.',
-   'Excluding purchase cost from a discount evaluation, where it is the whole point.',
-   'Using the EOQ quantity rather than the discount threshold when testing a discount level.',
-   'Forgetting to add buffer stock to average inventory when computing holding cost.',
+   'Forgetting the square root, or the 2 in the numerator.',
+   'Using $Q$ instead of $Q/2$ for average stock and holding cost.',
+   'Mixing time periods — annual demand with a cost stated for a different period.',
+   'Not checking that ordering cost equals holding cost at the computed EOQ.',
  ],
  'quiz': {
   'mcq': [
-   {'q': 'Annual demand is 8,000 units, ordering cost ₦250 per order and holding cost ₦4 per '
-         'unit per year. The economic order quantity is',
-    'o': ['500 units', '1,000 units', '2,000 units', '1,414 units', '600 units'],
+   {'q': 'Annual demand is 3,600 units, the cost of an order is ₦16 and holding cost per unit '
+         'is ₦2 per annum. The number of orders per year is',
+    'o': ['240', '15', '225', '220', '25'],
     'a': 1,
-    'w': 'Substitute directly into the EOQ formula.',
-    'calc': 'Q^{*} = \\sqrt{\\frac{2(8{,}000)(250)}{4}} = \\sqrt{1{,}000{,}000} = 1{,}000',
-    'src': 'Chapter 16.2', 'sec': '16.2'},
-   {'q': 'At the economic order quantity,',
-    'o': ['ordering cost is minimised', 'ordering cost equals holding cost',
-          'holding cost is minimised', 'purchase cost is minimised',
-          'the number of orders is minimised'],
+    'w': 'Find $Q$ first, then divide demand by $Q$.',
+    'calc': 'Q = \\sqrt{\\frac{2(16)(3{,}600)}{2}} = \\sqrt{57{,}600} = 240 \\Rightarrow '
+            '\\frac{3{,}600}{240} = 15',
+    'src': 'Chapter 16.5', 'sec': '16.5'},
+   {'q': 'At the Economic Order Quantity,', 'o': ['ordering cost is minimised',
+          'ordering cost equals holding cost', 'holding cost is minimised',
+          'purchase cost is minimised', 'the number of orders is minimised'],
     'a': 1,
-    'w': 'The two costs move in opposite directions; their sum is least where they are equal.',
-    'src': 'Chapter 16.2', 'sec': '16.2'},
-   {'q': 'Maximum usage is 60 units a day and the maximum lead time 8 days. The reorder level '
-         'is',
-    'o': ['68 units', '480 units', '420 units', '240 units', '52 units'],
-    'a': 1,
-    'w': 'The reorder level must cover the worst case: highest usage over the longest lead '
-         'time.',
-    'calc': '\\text{ROL} = 60 \\times 8 = 480 \\text{ units}',
-    'src': 'Chapter 16.4', 'sec': '16.4'},
-   {'q': 'Which of the following is NOT an assumption of the basic EOQ model?',
-    'o': ['Demand is constant and known', 'Lead time is constant',
-          'Quantity discounts are available', 'Replenishment is instantaneous',
-          'Holding cost per unit is constant'],
+    'w': 'The EOQ is derived precisely by setting the marginal ordering cost equal to the '
+         'marginal holding cost.',
+    'src': 'Chapter 16.5', 'sec': '16.5'},
+   {'q': 'Which of these is NOT a reason for holding stock, per the study text?',
+    'o': ['To take advantage of quantity discount', 'To act as a buffer for demand variation',
+          'To ensure the store is filled up at all times', 'To take advantage of inflation',
+          'To ensure no stock-outs'],
     'a': 2,
-    'w': 'The basic model assumes a constant unit price. Discounts require the extended '
-         'analysis of total cost including purchases.',
-    'src': 'Chapter 16.2', 'sec': '16.2'},
-   {'q': 'If annual demand doubles, all other costs remaining unchanged, the economic order '
-         'quantity',
-    'o': ['doubles', 'increases by about 41%', 'halves', 'is unchanged',
-          'increases by 100 units'],
-    'a': 1,
-    'w': 'Demand is under a square root, so the EOQ rises by $\\sqrt{2} = 1.414$ — an increase '
-         'of about 41%, not 100%.',
-    'src': 'Chapter 16.2', 'sec': '16.2'},
-   {'q': 'A firm orders 400 units at a time against annual demand of 4,800 units, with '
-         'ordering cost ₦150 and holding cost ₦5 per unit per year. Its total relevant cost is',
-    'o': ['₦1,800', '₦2,800', '₦2,000', '₦3,800', '₦1,000'],
-    'a': 1,
-    'w': 'Add the ordering cost for 12 orders to the holding cost on average inventory of 200 '
-         'units.',
-    'calc': 'TC = \\frac{4{,}800}{400}(150) + \\frac{400}{2}(5) = 1{,}800 + 1{,}000 = ₦2{,}800',
-    'src': 'Chapter 16.2', 'sec': '16.2'},
+    'w': 'Keeping the store "filled up at all times" is not one of the six listed reasons — '
+         'stock is held for specific, costed reasons, not for its own sake.',
+    'src': 'Chapter 16.3', 'sec': '16.3'},
+   {'q': 'Given annual demand 50,000, reorder quantity 2,000, ordering cost ₦20 per order and '
+         'holding cost ₦2 per item per annum, the total cost per annum is',
+    'o': ['₦2,500', '₦4,000', '₦500', '₦2,000', '₦52,000'],
+    'a': 0,
+    'w': 'Total cost $= (d/Q)c + (Q/2)h$.',
+    'calc': '\\frac{50{,}000}{2{,}000}(20) + \\frac{2{,}000}{2}(2) = 500 + 2{,}000 = ₦2{,}500',
+    'src': 'Chapter 16.5', 'sec': '16.5'},
+   {'q': 'A stock-out is a situation where', 'o': ['no item is ever stocked',
+          'the store deliberately holds zero stock', 'there is demand for an item but it is '
+          'not in store', 'a customer cancels an order', 'stock is being counted'],
+    'a': 2,
+    'w': 'A stock-out means demand exists but the warehouse cannot meet it.',
+    'src': 'Chapter 16.4', 'sec': '16.4'},
   ],
   'theory': [
-   {'q': 'Ogunsanya Nigeria Limited uses 24,000 units of a raw material each year. The cost of '
-         'placing and processing an order is ₦750 and the cost of holding one unit in store for '
-         'a year is ₦20. The material costs ₦150 per unit. The supplier has offered a discount '
-         'of 3% on orders of 3,000 units or more. (a) Compute the economic order quantity and '
-         'the total relevant cost at that quantity. (b) Advise whether the discount should be '
-         'accepted, supporting your advice with computations. (c) State four assumptions of the '
-         'EOQ model and comment on their realism.',
-    'marks': 15,
+   {'q': 'Explain the three motives for holding stock, and state the four types of inventory '
+         'cost with two examples of each.',
+    'marks': 10,
     'a': [
-      {'h4': '(a) Economic order quantity'},
-      {'tex': 'Q^{*} = \\sqrt{\\frac{2DC_o}{C_h}} = \\sqrt{\\frac{2 \\times 24{,}000 '
-              '\\times 750}{20}} = \\sqrt{\\frac{36{,}000{,}000}{20}} = \\sqrt{1{,}800{,}000}'},
-      {'tex': 'Q^{*} = 1{,}341.64 \\approx 1{,}342 \\text{ units}'},
-      {'p': 'Total relevant cost at the EOQ:'},
-      {'table': {'align': 'lr', 'head': ['Cost', 'Amount (₦)'], 'rows': [
-        ['Ordering: $(24{,}000 \\div 1{,}342) \\times 750$', '13,413'],
-        ['Holding: $(1{,}342 \\div 2) \\times 20$', '13,420'],
-        ['Total relevant cost', '26,833'],
-      ]}},
-      {'p': 'Or directly, $TC^{*} = \\sqrt{2DC_oC_h} = \\sqrt{2(24{,}000)(750)(20)} '
-            '= \\sqrt{720{,}000{,}000} = ₦26{,}833$. The two cost elements are almost equal, '
-            'as they must be at the EOQ; the small difference is rounding to a whole number of '
-            'units.'},
-      {'h4': '(b) Evaluation of the discount'},
-      {'p': 'The discount makes purchase cost relevant, so the comparison must be of **total '
-            'annual cost including purchases**. The discounted price is '
-            '$150 \\times 0.97 = ₦145.50$. The relevant order quantity for the discount is the '
-            'threshold of 3,000 units, since ordering more than the minimum needed would only '
-            'add holding cost.'},
-      {'table': {'align': 'lrr',
-        'head': ['', 'Order 1,342 (EOQ)', 'Order 3,000 (discount)'], 'rows': [
-        ['Unit price (₦)', '150.00', '145.50'],
-        ['Purchases: $24{,}000 \\times$ price', '3,600,000', '3,492,000'],
-        ['Ordering: $(24{,}000 \\div Q) \\times 750$', '13,413', '6,000'],
-        ['Holding: $(Q \\div 2) \\times 20$', '13,420', '30,000'],
-        ['**Total annual cost (₦)**', '**3,626,833**', '**3,528,000**'],
-      ]}},
-      {'p': 'Ordering 3,000 units at a time reduces total annual cost by '
-            '$3{,}626{,}833 - 3{,}528{,}000 = ₦98{,}833$. The **discount should be accepted**.'},
-      {'p': 'The reason is clear from the components: the saving on purchases is ₦108,000 and '
-            'on ordering ₦7,413, a total of ₦115,413, against additional holding cost of only '
-            '₦16,580. Where the purchase price is large relative to the holding cost — as here, '
-            '₦150 against ₦20 — even a small percentage discount will usually outweigh the '
-            'extra carrying cost.'},
-      {'p': 'Two qualifications should accompany the advice. If the holding cost of ₦20 is in '
-            'substance a percentage of the purchase price, it would fall to about ₦19.40 at the '
-            'discounted price, making the case marginally stronger still. Against that, average '
-            'inventory rises from 671 to 1,500 units, which requires storage space and '
-            'increases exposure to obsolescence, deterioration and pilferage — factors the model '
-            'does not price.'},
-      {'h4': '(c) Assumptions and their realism'},
+      {'h4': 'The three motives'},
       {'ol': [
-        '**Demand is known, constant and even throughout the year.** Rarely true. Most demand '
-        'is seasonal or uncertain, which is precisely why buffer stock is held — a quantity the '
-        'basic model does not contemplate at all.',
-        '**Lead time is known and constant.** Suppliers are late, especially where imports and '
-        'clearing are involved. Variable lead time is the second reason for buffer stock.',
-        '**Replenishment is instantaneous.** Reasonable for bought-in goods delivered in one '
-        'consignment, but false for manufactured items, where the economic batch quantity '
-        'model with its $(1 - d/p)$ adjustment is required.',
-        '**Costs are constant and known.** Ordering cost per order and holding cost per unit '
-        'are treated as fixed, but in practice much of the ordering cost is a share of '
-        'departmental salaries that would not change with one more order, and holding cost '
-        'depends on an interest rate and a valuation of storage space that are both estimates.',
-        '**No stockouts occur and no quantity discounts are available.** Both are relaxed in '
-        'extended versions of the model, as part (b) illustrates for discounts.',
+        '**Transaction motive** — demand is known with certainty and replenishment on '
+        'stock-out is immediate.',
+        '**Precautionary motive** — buffer/safety stock held to avoid lost sales from '
+        'uncertainty.',
+        '**Speculative motive** — stock increased in anticipation of a supply shortage or a '
+        'price rise.',
       ]},
-      {'p': 'Despite these assumptions the model remains useful, for two reasons. Its total-cost '
-            'curve is very flat near the optimum, so an order quantity rounded to a practical '
-            'figure costs little extra; and the discipline of identifying ordering and holding '
-            'costs separately often improves inventory management more than the resulting '
-            'number does.'}],
-    'src': 'Chapter 16.2, 16.5', 'sec': '16.2'},
+      {'h4': 'The four types of inventory cost'},
+      {'table': {'head': ['Cost', 'Examples'], 'align': 'll', 'rows': [
+        ['Holding (carrying)', 'Interest on capital tied up; insurance and security costs'],
+        ['Ordering (procuring)', 'Administrative cost of placing orders; transport costs'],
+        ['Shortage (stock-out)', 'Loss of customers; loss on emergency purchase at a higher '
+         'price'],
+        ['Material / stock cost', "The supplier's price, or the direct cost of production"],
+      ]}}],
+    'src': 'Chapter 16.2, 16.4', 'sec': '16.4'},
   ]},
 }

@@ -74,11 +74,77 @@ CH = {
                'decision to keep the machine an extra year for operational reasons costs '
                'little, and the answer should say so. What the table does establish firmly is '
                'that replacing after one or two years is expensive.'},
-      {'warn': 'The basic model ignores the time value of money. Where the asset\'s life is '
-               'long or interest rates are high, the correct approach is to discount each '
-               'year\'s cash flows and compare the **equivalent annual cost** — the net present '
-               'value of one replacement cycle divided by the annuity factor for that number '
-               'of years. Say so if the question mentions a cost of capital.'}]}},
+      {'warn': 'This basic model ignores the time value of money — see §18.2\'s discounting '
+               'method below for how the study text treats a case where interest rates matter.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 18.1 — replacement age of a grinding machine '
+      '(no discounting)', 'open': True, 'q': [
+      {'p': 'An owner of a grinding machine estimates that operating cost per year is: Year 1 '
+            '₦250, Year 2 ₦550, Year 3 ₦850, Year 4 ₦1,250, Year 5 ₦1,850, Year 6 ₦2,550, Year '
+            '7 ₦3,250, Year 8 ₦4,050. The cost price is ₦12,300 and the scrap value is ₦250. '
+            'When should the machine be replaced?'}],
+      'a': [
+      {'table': {'align': 'lrrrrr', 'head': ['Year $n$', 'Running cost', 'Cumulative running '
+        'cost', 'Depreciation ($C-S$)', 'Total cost', 'Average cost'], 'rows': [
+        ['1', '250', '250', '12,050', '12,300', '12,300'],
+        ['2', '550', '800', '12,050', '12,850', '6,425'],
+        ['3', '850', '1,650', '12,050', '13,700', '4,566.67'],
+        ['4', '1,250', '2,900', '12,050', '14,950', '3,737.50'],
+        ['5', '1,850', '4,750', '12,050', '16,800', '3,360'],
+        ['6', '2,550', '7,300', '12,050', '19,350', '**3,225**'],
+        ['7', '3,250', '10,550', '12,050', '22,600', '3,228.57'],
+        ['8', '4,050', '14,600', '12,050', '26,650', '3,331.25'],
+      ]}},
+      {'p': 'Average annual cost is lowest in year 6, so the machine should be replaced at the '
+            'end of the **sixth year** of use.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 18.2 — replacement with maintenance cost and '
+      'resale value tables', 'open': True, 'q': [
+      {'p': 'A machine costing ₦70,000 has maintenance cost and resale value per year:'},
+      {'table': {'align': 'lrr', 'head': ['Year', 'Maintenance cost', 'Resale value'], 'rows': [
+        ['1', '9,000', '40,000'], ['2', '12,000', '20,000'], ['3', '16,000', '12,000'],
+        ['4', '21,000', '6,000'], ['5', '28,000', '5,000'], ['6', '37,000', '4,000'],
+        ['7', '47,000', '4,000'], ['8', '59,000', '4,000'],
+      ]}},
+      {'p': 'When should the machine be replaced?'}],
+      'a': [
+      {'table': {'align': 'lrrrrr', 'head': ['Year $n$', 'Capital cost ($C-S$)',
+        'Annual maintenance', 'Cumulative maintenance', 'Total cost', 'Average cost'], 'rows': [
+        ['1', '30,000', '9,000', '9,000', '39,000', '39,000'],
+        ['2', '50,000', '12,000', '21,000', '71,000', '35,500'],
+        ['3', '58,000', '16,000', '37,000', '95,000', '31,666.67'],
+        ['4', '64,000', '21,000', '58,000', '122,000', '30,500'],
+        ['5', '65,000', '28,000', '86,000', '151,000', '**30,200**'],
+        ['6', '66,000', '37,000', '123,000', '189,000', '31,500'],
+        ['7', '66,000', '47,000', '170,000', '236,000', '33,714'],
+        ['8', '66,000', '59,000', '229,000', '295,000', '36,875'],
+      ]}},
+      {'p': 'Average cost is minimum in year 5, so the machine should be replaced by the end of '
+            'the **fifth year**.'}]}},
+    {'h4': 'When the value of money changes with time'},
+    {'p': 'Where maintenance cost rises with time **and** the value of money is also changing, '
+          'the replacement decision is based on the equivalent (discounted) cost. The present '
+          'value (worth) of ₦100 spent after $n$ years, where the interest rate is $r$ per cent '
+          'a year, is'},
+    {'tex': 'D = \\frac{100}{(100+r)^n}', 'tag': '(18.1)'},
+    {'p': 'where $D$ is the discount rate/factor. Each year\'s cost is multiplied by the '
+          'discount factor for that year, and the machine with the **lower total discounted '
+          'cost** is preferred.'},
+    {'eg': {'tag': 'Study text', 't': 'Example 18.3 — comparing two machines with discounting',
+      'open': True, 'q': [
+      {'p': 'The yearly costs of two machines, money value neglected, are:'},
+      {'table': {'align': 'lrrr', 'head': ['Year', '1', '2', '3'], 'rows': [
+        ['Machine A (₦)', '1,400', '800', '1,000'],
+        ['Machine B (₦)', '24,000', '300', '1,100'],
+      ]}},
+      {'p': 'If the money value is 12% per year, find the discounted cost pattern of each '
+            'machine and determine which is more economical.'}],
+      'a': [
+      {'tex': 'd = \\frac{1}{1+0.12} = 0.89'},
+      {'table': {'align': 'lrrrr', 'head': ['', 'Year 1', 'Year 2 ($\\times 0.89$)',
+        'Year 3 ($\\times 0.89^2$)', 'Total'], 'rows': [
+        ['Machine A', '1,400', '712', '792.1', '**2,904.1**'],
+        ['Machine B', '24,000', '267', '871.31', '**25,138.3**'],
+      ]}},
+      {'p': '**Machine A is more economical**, since its total discounted cost is much lower.'}]}},
   ]},
 
   {'n': '18.3', 't': 'Items that fail suddenly', 'b': [
@@ -149,6 +215,47 @@ CH = {
                '**among the replacements** — omitting them understates $N_3$ and $N_4$ badly. '
                'Second, the mean life is a weighted average using the failure probabilities, '
                'not the simple average of 1, 2, 3 and 4.'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 18.4 — individual replacement (resistors)',
+      'open': True, 'q': [
+      {'p': 'Resistors used in a company\'s computers have a life span of five months, with '
+            'failure rates: month 1, 10%; month 2, 30%; month 3, 35%; month 4, 20%; month 5, '
+            '5%. 798 resistors are fixed for use at a time. Each resistor costs ₦14 if replaced '
+            'as part of a group, or ₦60 if replaced individually. Determine the cost of '
+            'individual monthly replacement.'}],
+      'a': [
+      {'p': 'Average life span $t = \\sum P_iX_i = 1(0.10)+2(0.30)+3(0.35)+4(0.20)+5(0.05) '
+            '= 0.10+0.60+1.05+0.80+0.25 = 2.80$ months.'},
+      {'tex': 'R = \\frac{N}{t} = \\frac{798}{2.80} = 285 \\text{ (average monthly replacements)}'},
+      {'tex': 'C = RK = 285 \\times 60 = ₦17{,}100 \\text{ (individual replacement cost)}'}]}},
+    {'eg': {'tag': 'Study text', 't': 'Example 18.5 — group replacement (resistors, continued)',
+      'open': True, 'q': [
+      {'p': 'Using the data in Example 18.4, determine (a) the best interval between group '
+            'replacements, and (b) the cost of group replacement.'}],
+      'a': [
+      {'p': 'Let $N_i$ be the number of items replaced at the end of month $i$, with $N_0=798$. '
+            'Projecting forward using the monthly failure probabilities $P_1$–$P_5$ (0.10, '
+            '0.30, 0.35, 0.20, 0.05):'},
+      {'table': {'align': 'lr', 'head': ['Month', 'Failures ($N_i$)'], 'rows': [
+        ['1', '80'], ['2', '247'], ['3', '328'], ['4', '295'], ['5', '270'], ['6', '284'],
+      ]}},
+      {'note': 'The number of failures each month rises to month 3, falls, then rises again '
+               'from month 6 — it oscillates continuously until the system reaches a steady '
+               'state.'},
+      {'p': 'Total cost of group replacement at the end of each month '
+            '$=$ (number replaced as a group $\\times$ ₦14) $+$ (cumulative individual '
+            'failures replaced $\\times$ ₦60):'},
+      {'table': {'align': 'lrr', 'head': ['End of month', 'Total cost (₦)', 'Average cost per '
+        'month (₦)'], 'rows': [
+        ['1', '15,972', '15,972'],
+        ['2', '30,792', '**15,396**'],
+        ['3', '50,472', '16,824'],
+        ['4', '68,172', '17,043'],
+        ['5', '84,372', '16,874'],
+      ]}},
+      {'p': '**(a)** The average cost per month is lowest at the end of month 2, so group '
+            'replacement should occur **every two months**. **(b)** The cost of the group '
+            'replacement is **₦15,396** — cheaper than the ₦17,100 individual-only cost found '
+            'in Example 18.4.'}]}},
   ]},
 
   {'n': '18.4', 't': 'Worksheet summary — every term defined and every formula', 'b': [
@@ -164,9 +271,9 @@ CH = {
       '($C$ = purchase cost, $S_n$ = resale value at year $n$, $R_t$ = running cost in year '
       '$t$); capital cost per year **falls** with longer ownership, running cost per year '
       '**rises**, so $AAC$ is U-shaped — replace at the age that minimises it. The bottom of '
-      'the U is usually flat, so a small departure from the exact optimum costs little; the '
-      'basic model **ignores the time value of money** — where that matters, discount to an '
-      '**equivalent annual cost** instead.',
+      'the U is usually flat, so a small departure from the exact optimum costs little. Where '
+      'the value of money is also changing with time, discount each year\'s cost by '
+      '$D=100/(100+r)^n$ and compare **total discounted cost** across options instead.',
       '**§18.3 Items that fail suddenly** — project period failures $N_t$ **including failures '
       'among the replacements themselves** (a common omission that understates later periods); '
       'mean life $\\bar{L}=\\sum t\\,p_t$ (a probability-weighted average, not a simple one); '
@@ -207,15 +314,13 @@ CH = {
        'tex': 'AAC(n) = \\dfrac{(C - S_n) + \\sum_{t=1}^{n} R_t}{n}'},
       {'lb': 'Rule', 'tex': '\\text{replace at the } n \\text{ that minimises } AAC(n)'},
     ]}},
-    {'h3': 'B. Items that deteriorate — with discounting'},
-    {'fbox': {'h': 'Discounted cost', 'rows': [
-      {'lb': 'Discount factor', 'tex': 'd = \\dfrac{1}{1 + r}'},
-      {'lb': 'Present value of the cost pattern over $n$ years',
-       'tex': 'PV(n) = C + \\sum_{t=1}^{n} R_t\\,d^{\\,t} - S_n\\,d^{\\,n}'},
-      {'lb': 'Equivalent annual cost',
-       'tex': 'EAC = \\dfrac{PV \\text{ of one replacement cycle}}{\\text{annuity factor for } '
-              'n \\text{ years}}'},
-      {'lb': 'Rule', 'tex': '\\text{choose the machine / age with the lowest EAC}'},
+    {'h3': 'B. Items that deteriorate — with the value of money changing'},
+    {'fbox': {'h': 'Discounted cost comparison', 'rows': [
+      {'lb': 'Discount rate/factor for year $n$',
+       'tex': 'D = \\dfrac{100}{(100+r)^{n}}'},
+      {'lb': 'Discounted cost in year $t$', 'tex': '\\text{Cost}_t \\times d^{\\,t-1}'},
+      {'lb': 'Rule',
+       'tex': '\\text{sum each option\'s discounted yearly costs; choose the lower total}'},
     ]}},
     {'h3': 'C. Items that fail suddenly'},
     {'fbox': {'h': 'Failure projection and group replacement', 'rows': [
@@ -232,15 +337,68 @@ CH = {
               'below the individual-only cost}'},
     ]}},
   ]},
+
+  {'n': '18.5', 't': 'End-of-chapter questions (study text)', 'b': [
+    {'eg': {'tag': 'Study text', 't': 'Multiple-choice and short-answer questions, with answers',
+      'open': True, 'q': [
+      {'ol': [
+        'Which of the following is the reason for the study of replacement theory? (A) To '
+        'ensure efficient functioning of the equipment  (B) To know when and how best the '
+        'equipment can be replaced  (C) To minimize the costs of maintenance  (D) (A) and (B) '
+        'only  (E) (A), (B) and (C)',
+        'Which of the following is a policy in the replacement of equipment or items that fail '
+        'suddenly? (A) Gradual replacement policy  (B) Individual replacement policy  '
+        '(C) Group replacement policy  (D) (B) and (C) only  (E) (A) and (B) only',
+        'Which of the following is NOT a resulting effect of gradual failure or deterioration '
+        'of items? (A) The output of the equipment  (B) Its production capacity  (C) The '
+        'maintenance and operating costs  (D) The value of the re-sale price of the item  '
+        '(E) The efficiency of the equipment',
+      ]},
+      {'p': 'A certain item has monthly failure probabilities 0.05, 0.08, 0.12, 0.18, 0.25, '
+            '0.20, 0.08, 0.04 for months 1–8 respectively (cumulative: 0.05, 0.13, 0.25, 0.43, '
+            '0.68, 0.88, 0.96, 1.00). The total number of items is 1,000; individual and group '
+            'replacement cost ₦2.25 and 60 kobo per item respectively. Use this to answer '
+            'questions 4–6.'},
+      {'ol': [
+        'The average number of failures per month is approximately …',
+        'The average cost of individual replacement is …',
+        'The best interval between group replacements is …',
+        'At the old age of an operating machine, state the reason why it will definitely '
+        'require higher operating costs and more maintenance costs.',
+        'The two common replacement policies are replacement of equipment/items that: '
+        '(i) … (ii) …',
+        'State any TWO consequences of equipment/items that deteriorate with time having their '
+        'efficiency get low.',
+        'State two characterising features of the policy that governs an equipment that is '
+        'replaced immediately it fails.',
+      ]}],
+      'a': [
+      {'ol': [
+        '**E** — all three (A, B and C) are reasons for the study.',
+        '**D** — individual and group replacement are both sudden-failure policies.',
+        '**B**, per the study text\'s own printed key — though §18.2 lists "a decrease in the '
+        'equipment production capacity" as one of the three effects of gradual failure, which '
+        'sits awkwardly with this answer. Treat this one with caution; verify with your tutor.',
+        'Expected value $=(1\\times0.05)+(2\\times0.08)+\\dots+(8\\times0.04)=4.62$. Average '
+        'number of failures per month $=1{,}000/4.62 \\approx$ **216**.',
+        'Average cost of individual replacement $=216 \\times 2.25 = $ **₦486**.',
+        'Minimum cost of group replacement per month occurs in the **3rd month**.',
+        'The reason is due to repairing and replacement of some parts.',
+        '(i) equipment/items that deteriorate or wear out gradually; and (ii) equipment/items '
+        'that fail suddenly.',
+        '(i) a decrease in production capacity; (ii) increasing maintenance and operating '
+        'costs; (iii) a decrease in the re-sale (salvage) value of the item — any two.',
+        '(i) the item\'s life span is uncertain; (ii) failure is assumed to occur only at the '
+        'end of its life span.',
+      ]}]}},
+  ]},
  ],
  'formulas': [
   {'lb': 'Total cost of ownership over $n$ years',
    'tex': 'TC(n) = (C - S_n) + \\sum_{t=1}^{n} R_t'},
   {'lb': 'Average annual cost of ownership',
    'tex': 'AAC_n = \\frac{(C - S_n) + \\sum_{t=1}^{n} R_t}{n}'},
-  {'lb': 'Discount factor', 'tex': 'd = \\frac{1}{1 + r}'},
-  {'lb': 'PV of a replacement cycle',
-   'tex': 'PV(n) = C + \\sum_{t=1}^{n} R_t\\,d^{\\,t} - S_n\\,d^{\\,n}'},
+  {'lb': 'Discount rate/factor for year $n$', 'tex': 'D = \\frac{100}{(100+r)^{n}}'},
   {'lb': 'Mean life from a failure distribution',
    'tex': '\\bar{L} = \\sum t\\,p_t'},
   {'lb': 'Cost per period, individual replacement only',
@@ -251,8 +409,6 @@ CH = {
    'tex': 'N_t = \\sum_{k=1}^{t} N_{t-k}\\,p_k'},
   {'lb': 'Cost per period, group replacement at $n$',
    'tex': '\\frac{N C_g + C_i \\sum N_t}{n}'},
-  {'lb': 'Equivalent annual cost (with discounting)',
-   'tex': 'EAC = \\frac{NPV \\text{ of one cycle}}{\\text{Annuity factor}}'},
  ],
  'focus':
    'Appears in Section B in perhaps one diet in three, and almost always as the deterioration '
@@ -370,9 +526,8 @@ CH = {
         '**The time value of money is ignored.** Costs in year 5 are treated as equal to costs '
         'in year 1, which they are not. With a positive cost of capital, later running costs '
         'are worth less in present-value terms, which tends to favour keeping the asset longer. '
-        'The correct treatment is to discount the cash flows of one replacement cycle and '
-        'compare the **equivalent annual cost**, $NPV \\div$ annuity factor, across the '
-        'possible lives.',
+        'The correct treatment discounts each year\'s cost by $D=100/(100+r)^n$ and compares '
+        'the **total discounted cost** of each option, as in §18.2\'s machine-A-vs-B example.',
         '**All figures are estimates.** Running costs four and five years ahead and resale '
         'values in a second-hand market that may not exist as forecast are both uncertain. '
         'Since the difference between a two-year and a three-year cycle is only 1.7%, an error '

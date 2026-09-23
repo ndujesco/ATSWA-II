@@ -113,10 +113,14 @@ t('QA ch12 renders MathML and a formula box', () => {
   ok(count(v, '<math') > 30, 'expected many equations, got ' + count(v, '<math'));
 });
 
-t('QA ch15 renders simplex tableaux', () => {
+t('QA ch15 renders the graphical LP method', () => {
+  // The actual study text explicitly says the simplex method is "beyond the
+  // scope of this study pack" — only the graphical (2-variable) method and
+  // shadow/dual pricing are covered. Removed simplex-tableau content in the
+  // 2026-09 QA fidelity pass; this test now checks what's genuinely there.
   const v = view(w, '#/s/QA/15');
-  has(v, 'Final tableau');
-  has(v, 'Shadow price');
+  has(v, 'feasible region');
+  has(v, 'Shadow cost');
   has(v, '<table');
 });
 
@@ -133,10 +137,15 @@ t('QA ch20 random-number ranges render', () => {
 });
 
 t('every QA chapter renders without "undefined"', () => {
+  // Chapters 10 and 11 legitimately use the English word "undefined" in their
+  // own prose (an MCQ option "a collection of undefined items"; ch11's "an
+  // undefined slope" describing a vertical line) — not a rendering bug, same
+  // situation as the PS ch1 case handled separately below.
+  const legitimate = { 10: 1, 11: 1 };
   for (let n = 1; n <= 20; n++) {
     const v = view(w, '#/s/QA/' + n);
     ok(v.length > 2000, 'chapter ' + n + ' rendered only ' + v.length + ' chars');
-    ok(v.indexOf('undefined') < 0, 'chapter ' + n + ' contains "undefined"');
+    if (!legitimate[n]) ok(v.indexOf('undefined') < 0, 'chapter ' + n + ' contains "undefined"');
   }
 });
 
@@ -186,7 +195,11 @@ t('a QA past paper renders with answers', () => {
 
 t('formula index includes the new QA formulas', () => {
   const v = view(w, '#/formulas');
-  ['Sinking fund', 'Economic order quantity', 'PERT expected time',
+  // PERT (probabilistic three-estimate network analysis) isn't in the actual study
+  // text for this course, which covers only deterministic critical path analysis —
+  // removed in the 2026-09 QA fidelity pass; "Independent float" replaces it here
+  // as a formula that genuinely is in the source.
+  ['Sinking fund', 'Economic order quantity', 'Independent float',
    'Total float'].forEach(s => has(v, s));
 });
 

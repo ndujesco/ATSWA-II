@@ -442,7 +442,7 @@ CH = {
   {'lb': 'Simple interest amount', 'tex': 'A_n = P(1+rn)'},
   {'lb': 'Compound interest amount', 'tex': 'A_n = P(1+r)^n'},
   {'lb': 'Present value (compound)', 'tex': 'P = \\frac{A_n}{(1+r)^n}'},
-  {'lb': 'Sum of an ordinary annuity (sinking fund)',
+  {'lb': 'Sinking fund (sum of an ordinary annuity)',
    'tex': 'S = A\\left[\\frac{(1+r)^n-1}{r}\\right]'},
   {'lb': 'Present value of an ordinary annuity',
    'tex': 'P = \\frac{A\\left[1-(1+r)^{-n}\\right]}{r}'},
