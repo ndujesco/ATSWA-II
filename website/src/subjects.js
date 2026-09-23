@@ -27,5 +27,7 @@ var GUIDES = [
   { tag: 'PS · Ch 11', href: 'guides/stores-losses.html', title: 'Stores, losses & the Board of Survey',
     blurb: 'The single most-repeated topic in the whole PS past-question bank: the full store-document glossary, Board of Survey vs Board of Enquiry, and the step-by-step procedure when cash or stores go missing.' },
   { tag: 'PS · All chapters', href: 'guides/ps-abbreviations.html', title: 'PS abbreviations',
-    blurb: 'Every abbreviation in the syllabus — bodies, the Acts that create them, digital systems, taxes and technical terms — organisations first, with what each one does and where it’s covered.' }
+    blurb: 'Every abbreviation in the syllabus — bodies, the Acts that create them, digital systems, taxes and technical terms — organisations first, with what each one does and where it’s covered.' },
+  { tag: 'PS · Ch 7', href: 'guides/financial-officers.html', title: 'Financial officers & their duties',
+    blurb: 'The Minister of Finance, the Accountant-General, the Auditor-General (Federal and State), accounting officers, sub-accounting officers and the officer controlling expenditure — what each one actually does, and how they answer to each other.' }
 ];

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PS Financial Officers</title>
+<meta name="description" content="Every financial officer in the ATSWA Part II Public Sector Accounting syllabus — the Minister of Finance, the Accountant-General, the Auditor-General, accounting officers and more — what each one actually does, in one reference.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E5C42'/%3E%3Cpath d='M7 6h18v6H13v5h11v6H13v6H7z' fill='%23F6F1E6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F6F1E6; --paper-raised:#FBF8F1;
+    --ink:#1B231E; --ink-soft:#4E5951; --ink-faint:#7C877E;
+    --green:#1E5C42; --green-deep:#123B2B; --green-wash:#E7EEE7;
+    --gold:#96742A; --gold-wash:#F1E7CE;
+    --rule:rgba(27,35,30,0.14); --rule-strong:rgba(27,35,30,0.28);
+    --shadow:0 1px 2px rgba(27,35,30,0.06);
+    --warn-bg:#FBEEEA; --warn-ink:#8A3B24; --warn-rule:#D9B7A8;
+    --super-bg:#EEF1FB; --super-ink:#2E3E86; --super-rule:#C7D0EE;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1613; --paper-raised:#151E19;
+      --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+      --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+      --gold:#D3AE5C; --gold-wash:#26210F;
+      --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+      --shadow:0 1px 2px rgba(0,0,0,0.35);
+      --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+      --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1613; --paper-raised:#151E19;
+    --ink:#EAE6DA; --ink-soft:#B8C2BA; --ink-faint:#7E8B82;
+    --green:#5FA983; --green-deep:#DCEFE5; --green-wash:#17251E;
+    --gold:#D3AE5C; --gold-wash:#26210F;
+    --rule:rgba(234,230,218,0.14); --rule-strong:rgba(234,230,218,0.26);
+    --shadow:0 1px 2px rgba(0,0,0,0.35);
+    --warn-bg:#241611; --warn-ink:#E3AC93; --warn-rule:#4A2E23;
+    --super-bg:#161A28; --super-ink:#9BAEEF; --super-rule:#2C355C;
+  }
+
+  *{box-sizing:border-box;}
+  html{background:var(--paper);}
+  body{
+    background:var(--paper); color:var(--ink); font-family:var(--font-body);
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; margin:0;
+  }
+  ::selection{background:var(--gold-wash);}
+
+  .topbar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);}
+  .topbar .in{max-width:940px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .topbar a.back{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-soft);text-decoration:none;display:flex;align-items:center;gap:6px;}
+  .topbar a.back:hover{color:var(--green);}
+  .topbar a.back .arrow{color:var(--gold);}
+  .topbar .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase;}
+
+  .page{max-width:940px;margin:0 auto;padding:40px 20px 96px;}
+
+  .masthead{display:flex;flex-direction:column;gap:10px;padding-bottom:28px;margin-bottom:30px;border-bottom:2px solid var(--ink);}
+  .masthead .eyebrow{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:10px;}
+  .masthead .eyebrow::before{content:'§';font-size:14px;color:var(--gold);}
+  .masthead h1{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,4.4vw,42px);line-height:1.1;letter-spacing:-.01em;margin:2px 0 0;text-wrap:balance;}
+  .masthead .dek{font-size:16px;color:var(--ink-soft);max-width:70ch;margin-top:2px;}
+
+  .jump{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:40px;}
+  .jump a{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.02em;color:var(--ink-soft);
+    background:var(--paper-raised);border:1px solid var(--rule);border-radius:20px;padding:6px 12px;text-decoration:none;}
+  .jump a:hover{color:var(--green);border-color:var(--green);}
+  .jump a b{color:var(--gold);font-weight:600;margin-right:1px;}
+
+  section{position:relative;padding-left:22px;margin-bottom:42px;scroll-margin-top:64px;}
+  section::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--rule);}
+  section.primary::before{background:var(--green);width:3px;left:-1px;}
+  .sec-tag{display:inline-flex;align-items:baseline;gap:7px;font-family:var(--font-mono);font-size:12px;letter-spacing:.05em;color:var(--green);margin-bottom:6px;}
+  .sec-tag .num{background:var(--green-wash);color:var(--green);padding:2px 7px;border-radius:3px;font-weight:600;}
+  h2{font-family:var(--font-display);font-weight:600;font-size:24px;letter-spacing:-.005em;margin:0 0 4px;text-wrap:balance;}
+  h3{font-family:var(--font-display);font-weight:600;font-size:17.5px;margin:22px 0 9px;}
+  h4{font-family:var(--font-mono);font-weight:600;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:18px 0 8px;}
+  p{margin:0 0 12px;max-width:72ch;}
+  .lede{font-size:15px;color:var(--ink-soft);max-width:70ch;}
+  strong{font-weight:600;color:var(--ink);}
+  a{color:var(--green);text-decoration-color:var(--rule-strong);text-underline-offset:2px;}
+
+  .defcap{background:var(--paper-raised);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;margin:12px 0 16px;box-shadow:var(--shadow);}
+  .defcap .k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:5px;}
+  .defcap p{margin:0;font-size:14.5px;}
+
+  .twrap{overflow-x:auto;margin:12px 0 18px;border:1px solid var(--rule);border-radius:8px;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--paper-raised);}
+  th{text-align:left;font-family:var(--font-mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;padding:8px 11px;border-bottom:1px solid var(--rule-strong);background:var(--green-wash);}
+  td{padding:8px 11px;border-bottom:1px solid var(--rule);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  td.n{font-family:var(--font-mono);font-weight:600;color:var(--green);white-space:nowrap;}
+
+  ul,ol{margin:0 0 13px;padding-left:20px;}
+  li{margin-bottom:6px;max-width:68ch;}
+  ul.plain{list-style:none;padding-left:0;}
+  ul.plain li{padding-left:17px;position:relative;font-size:14.5px;}
+  ul.plain li::before{content:'—';position:absolute;left:0;color:var(--gold);}
+
+  .trap{background:var(--warn-bg);border:1px solid var(--warn-rule);border-radius:8px;padding:14px 16px;margin:14px 0;}
+  .trap .k{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--warn-ink);display:flex;align-items:center;gap:7px;margin-bottom:6px;font-weight:600;}
+  .trap .k::before{content:'⚠';font-size:12px;}
+  .trap p{margin:0;color:var(--ink);font-size:14px;}
+  .trap strong{color:var(--warn-ink);}
+
+  .ladder{display:flex;flex-direction:column;margin:14px 0;}
+  .rung{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:11px 0;border-bottom:1px dashed var(--rule);}
+  .rung:last-child{border-bottom:none;}
+  .rung .who{font-family:var(--font-display);font-weight:600;font-size:14.5px;color:var(--green);}
+  .rung .what{font-size:13.5px;color:var(--ink-soft);}
+  @media (max-width:560px){.rung{grid-template-columns:1fr;gap:2px;}}
+
+  footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule);font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  @media (max-width:600px){
+    .page{padding:28px 14px 72px;}
+    section{padding-left:16px;}
+    h2{font-size:21px;}
+    table{font-size:12.5px;}
+    th,td{padding:7px 8px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="in">
+  <a class="back" href="../index.html#/s/PS/7"><span class="arrow">&larr;</span> Back to PS Chapter 7</a>
+  <span class="kicker">Study guide</span>
+</div></div>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="eyebrow">Public Sector Accounting &middot; Chapter 7</div>
+    <h1>Financial officers &amp; what each one does</h1>
+    <p class="dek">Eight officers control Nigeria's public money, from the political appointee at the top to the officer watching a single ministry's vote-heads day to day. This guide sets out what each one actually does — condensed from the study text's own (very long) function lists — and how they relate to each other.</p>
+  </header>
+
+  <nav class="jump">
+    <a href="#overview"><b>0</b> The two kinds of officer</a>
+    <a href="#minister"><b>1</b> Minister of Finance</a>
+    <a href="#agf"><b>2</b> Accountant-General (AGF)</a>
+    <a href="#augf"><b>3</b> Auditor-General, Federal (AuGF)</a>
+    <a href="#stateaug"><b>4</b> Auditor-General, State</a>
+    <a href="#accounting"><b>5</b> Accounting officers</a>
+    <a href="#subaccounting"><b>6</b> Sub-accounting officers</a>
+    <a href="#controlling"><b>7</b> Officer controlling expenditure</a>
+    <a href="#budget"><b>8</b> Budget Office</a>
+    <a href="#ladder"><b>9</b> Who answers to whom</a>
+  </nav>
+
+  <section id="overview">
+    <div class="sec-tag"><span class="num">§7.1&nbsp;&middot;&nbsp;</span>Introduction</div>
+    <h2>0&nbsp;&middot;&nbsp;The two kinds of officer</h2>
+    <p>Officials managing government funds and property fall into two categories:</p>
+    <div class="defcap"><span class="k">Career officials</span><p>Attained their positions by experience, hard work and efficiency, and cannot be arbitrarily removed — the <strong>AGF, the AuGF, accounting officers, sub-accounting officers, Federal Pay Officers, revenue collectors</strong> and the Local Government Secretary.</p></div>
+    <div class="defcap"><span class="k">Political officials</span><p>Occupy their positions by political appointment, not necessarily with field experience — the <strong>Federal Minister of Finance</strong>, a State Commissioner for Finance, a Local Government Chairman and Councillors.</p></div>
+    <p>All government expenditure must be properly authorised — the authority that empowers an officer controlling a vote to spend is a <strong>warrant</strong>, always issued and signed by the Minister of Finance. See <a href="crf.html">the full warrant system</a>.</p>
+  </section>
+
+  <section id="minister">
+    <div class="sec-tag"><span class="num">§7.2&nbsp;&middot;&nbsp;</span>Political appointment</div>
+    <h2>1&nbsp;&middot;&nbsp;The Minister of Finance</h2>
+    <p>Appointed by the President (after Senate approval) — responsible for the control and management of the Federation's public funds.</p>
+    <ul class="plain">
+      <li>Prepares the <b>annual estimates</b> of revenue and expenditure.</li>
+      <li>Formulates fiscal and monetary policy.</li>
+      <li>Mobilises foreign and domestic financial resources for development.</li>
+      <li>Maintains a favourable balance of payments and adequate foreign exchange reserves.</li>
+      <li>Stabilises the value of the naira, internally and externally.</li>
+      <li>Supervises the allocation of revenue to the three tiers of government.</li>
+      <li>Liaises with international bodies (ECOWAS, the UN, the EU, the AU) to accelerate the development of Nigerian financial institutions.</li>
+    </ul>
+  </section>
+
+  <section class="primary" id="agf">
+    <div class="sec-tag"><span class="num">§7.3&nbsp;&middot;&nbsp;</span>Financial Regulations 106 &amp; 107 (2009)</div>
+    <h2>2&nbsp;&middot;&nbsp;The Accountant-General of the Federation (AGF)</h2>
+    <p>The <strong>Chief Accounting Officer</strong> for the Federation's receipts and payments — general supervisor of every MDA's accounts, and preparer of the nation's annual financial statements.</p>
+    <h4>Powers (FR 106)</h4>
+    <ul class="plain">
+      <li>Access to the books/records of every ministry at any reasonable time.</li>
+      <li>Power to demand information/explanation needed for his duties.</li>
+      <li>Power to carry out special/ad-hoc investigations in any MDA.</li>
+    </ul>
+    <h4>Functions (FR 107) — the essentials</h4>
+    <ul class="plain">
+      <li>Supervises MDA accounts; collates, prepares and publishes the government's statutory financial statements.</li>
+      <li>Maintains and operates the <b>CRF, Development Fund, Contingency Fund</b> and the <b>Federation Account</b> itself.</li>
+      <li>Manages federal government investments and services public debt/loans.</li>
+      <li>Runs Federal Pay Offices in every state capital; inspects MDA books for compliance.</li>
+      <li>Approves accounting codes, internal-audit guides and stock-verification manuals.</li>
+      <li>Investigates fraud, loss of funds/stores and other financial malpractice.</li>
+      <li>Issues Treasury Circulars and Treasury-numbered forms; formulates federal accounting policy.</li>
+      <li>Supervises computerisation of MDA accounting systems; trains accounts/internal-audit staff.</li>
+    </ul>
+  </section>
+
+  <section class="primary" id="augf">
+    <div class="sec-tag"><span class="num">§7.4&nbsp;&middot;&nbsp;</span>1999 Constitution, ss.84&ndash;87 &middot; FR 109</div>
+    <h2>3&nbsp;&middot;&nbsp;The Auditor-General for the Federation (AuGF)</h2>
+    <p>Audits and reports on the public accounts of the Federation. At the end of audit, states whether: accounts were properly kept; all public funds were fully accounted for; money was expended as authorised; and essential records adequately safeguard public property.</p>
+    <h4>Appointment &amp; tenure</h4>
+    <ul class="plain">
+      <li>Appointed by the President on the Federal Civil Service Commission's recommendation, confirmed by the Senate.</li>
+      <li>Leaves office on <strong>35 years' service or age 60</strong>, whichever is earlier — or for ill-health, death or gross misconduct.</li>
+      <li>Removal (s.87(1)): by the President, acting on an address supported by a <strong>two-thirds majority of the Senate</strong>.</li>
+    </ul>
+    <h4>The four types of audit (FR 109)</h4>
+    <div class="twrap"><table>
+      <thead><tr><th>Type</th><th>Checks</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Financial audit</strong></td><td>Accounts satisfactorily and faithfully kept</td></tr>
+        <tr><td><strong>Appropriation audit</strong></td><td>Funds expended as appropriated by the National Assembly</td></tr>
+        <tr><td><strong>Financial control audit</strong></td><td>Procedures observed in tendering, contracts and storekeeping</td></tr>
+        <tr><td><strong>Value-for-money (performance) audit</strong></td><td>Economy, efficiency and effectiveness of projects/programmes</td></tr>
+      </tbody>
+    </table></div>
+    <div class="trap">
+      <span class="k">The classic exam trap</span>
+      <p>The AuGF does <strong>not</strong> directly audit statutory corporations, commissions or agencies (s.85(3)). He supplies them a list of approved external auditors, comments on their audited accounts, and conducts periodic checks (s.85(4)) — the statutory audit itself is done by the firm the corporation appoints.</p>
+    </div>
+    <h4>Independence</h4>
+    <ul class="plain">
+      <li><strong>s.85(6)</strong> — not subject to the direction or control of any other authority or person.</li>
+      <li><strong>s.87(2)</strong> — cannot be removed before retiring age except for incapacity or misconduct.</li>
+      <li><strong>s.84(3)&ndash;(4)</strong> — remuneration is a direct CRF charge, and cannot be altered to his detriment after appointment.</li>
+    </ul>
+    <p>Reports to the National Assembly within <strong>90 days</strong> of receiving the AGF's financial statements (s.85(5)). See <a href="ps-numbers.html#officers">every other numeric threshold →</a></p>
+  </section>
+
+  <section id="stateaug">
+    <div class="sec-tag"><span class="num">§7.5&nbsp;&middot;&nbsp;</span>1999 Constitution, s.126(1)</div>
+    <h2>4&nbsp;&middot;&nbsp;The Auditor-General for a State</h2>
+    <p>Appointed by the State Governor on the State Civil Service Commission's recommendation, confirmed by the State House of Assembly.</p>
+    <ul class="plain">
+      <li>Ensures public establishments keep adequate accounts and that public money is fully accounted for.</li>
+      <li>Audits the public accounts of the State, and of all State officers and courts.</li>
+      <li>Certifies computations of pensions/gratuities of retiring officers.</li>
+      <li>Monitors and evaluates government projects.</li>
+      <li>Liaises with the State House of Assembly's <b>Public Accounts Committee</b>.</li>
+      <li>Recommends external-auditor remuneration for State corporations/commissions, and reviews their reports.</li>
+      <li>Special audits across the executive, legislature and judiciary of the State.</li>
+    </ul>
+  </section>
+
+  <section id="accounting">
+    <div class="sec-tag"><span class="num">§7.6&nbsp;&middot;&nbsp;</span>Permanent Secretaries of the MDAs</div>
+    <h2>5&nbsp;&middot;&nbsp;Accounting officers</h2>
+    <p>The <strong>Permanent Secretary</strong> of a ministry (or head of an extra-ministerial office), in full control of the human, material and financial resources of the organisation, and responsible for its day-to-day financial affairs.</p>
+    <h4>General duties</h4>
+    <ul class="plain">
+      <li>Safeguards public funds and the regularity/propriety of expenditure under his control — <b>accountability continues even after leaving office</b>.</li>
+      <li>Establishes and maintains proper budgetary/accounting systems for internal control and transparency.</li>
+      <li>Renders monthly returns/transcripts to the AGF.</li>
+      <li>Appears personally before the <b>Public Accounts Committee</b> to answer audit queries.</li>
+      <li>Ensures accurate collection/accounting of public money, and that revenue collected is remitted promptly, never spent directly.</li>
+      <li>Reports and investigates any loss of revenue promptly.</li>
+    </ul>
+    <h4>Special duties under the Public Procurement Act</h4>
+    <ul class="plain">
+      <li>Presides over the entity's Tenders' Board, Procurement Planning Committee and Procurement Committee; constitutes the Procurement Evaluation Committee.</li>
+      <li>Ensures adequate appropriation for procurement is in the annual budget.</li>
+      <li>Renders annual procurement returns to the <b>Bureau of Public Procurement (BPP)</b>.</li>
+      <li><strong>Personally liable</strong> for any breach of the Act by the organisation — whether or not he caused it directly, even if a subordinate or delegate is actually responsible.</li>
+    </ul>
+    <div class="trap"><span class="k">Not called "surcharge" here — but it is one</span><p>The chapter never uses the word "surcharge" for this personal liability, but the mechanism is identical: an officer answers personally for a loss or breach on his watch, regardless of who actually caused it.</p></div>
+  </section>
+
+  <section id="subaccounting">
+    <div class="sec-tag"><span class="num">§7.7&nbsp;&middot;&nbsp;</span>Examples: Sub-Treasurer, FPO, PPO, CAPO, DFA</div>
+    <h2>6&nbsp;&middot;&nbsp;Sub-accounting officers</h2>
+    <p>Entrusted with the receipt, custody and disbursement of public funds — required to maintain a recognised cash book plus whatever other books the AGF prescribes. Examples: the <b>Sub-Treasurer of the Federation</b>, <b>Federal Pay Officer (FPO)</b>, <b>Police Pay Officer (PPO)</b>, <b>Customs Area Pay Officer (CAPO)</b>, <b>Director of Finance and Accounts (DFA)</b>.</p>
+    <ul class="plain">
+      <li>Establishes the AGF's prescribed system of accounts; supervises prompt collection of public revenue.</li>
+      <li>Promptly posts all receipts to the correct heads/sub-heads.</li>
+      <li>Safeguards public funds, securities, stamps and valuable documents.</li>
+      <li>Supervises staff entrusted with public funds; guards against fraud, embezzlement and carelessness.</li>
+      <li>Ensures no payment is made without proper authorisation; promptly charges all disbursements.</li>
+      <li>Reconciles cash/stamps in his care against the cash book and stamp register.</li>
+      <li>Makes good any minor (non-fraud) deficiency personally, reporting it in writing to the Minister of Finance.</li>
+      <li><b>Maintains the cash book.</b></li>
+    </ul>
+  </section>
+
+  <section id="controlling">
+    <div class="sec-tag"><span class="num">§7.8&nbsp;&middot;&nbsp;</span>Within a single ministry's vote</div>
+    <h2>7&nbsp;&middot;&nbsp;Officer controlling expenditure</h2>
+    <p>In charge of the vote-heads of a single ministry or extra-ministerial department — monitors government expenditure and prevents extra-budgetary spending.</p>
+    <ul class="plain">
+      <li>Ensures no payment is made without proper authority.</li>
+      <li>Promptly charges all disbursements to the correct heads/sub-heads; keeps books up to date.</li>
+      <li>Produces cash, stamps etc. on demand from the AGF or AuGF.</li>
+      <li>Confirms funds are available under the right head/sub-head before specific vouchers are paid.</li>
+      <li>Secures the custody of public funds.</li>
+      <li><b>Maintains the vote book.</b></li>
+    </ul>
+  </section>
+
+  <section id="budget">
+    <div class="sec-tag"><span class="num">§7.9&nbsp;&middot;&nbsp;</span>Budget Office of the Federation</div>
+    <h2>8&nbsp;&middot;&nbsp;The Budget Office</h2>
+    <p>Through which the Minister of Finance monitors and evaluates budget implementation, assesses fiscal-target attainment, and reports to the Fiscal Responsibility Commission and the National Assembly's Joint Finance Committee.</p>
+    <ul class="plain">
+      <li>Develops economic assumptions/forecasts; issues budget guidelines to MDAs.</li>
+      <li>Liaises between the Presidency and MDAs during budget preparation.</li>
+      <li>Compiles revenue/expenditure estimates; drafts the budget speech.</li>
+      <li>Supervises budget implementation; monitors/evaluates funded programmes.</li>
+      <li>Assesses the budget's economic impact; researches budget utilisation against national objectives.</li>
+    </ul>
+  </section>
+
+  <section class="primary" id="ladder">
+    <div class="sec-tag"><span class="num">Putting it together&nbsp;&middot;&nbsp;</span>Who answers to whom</div>
+    <h2>9&nbsp;&middot;&nbsp;Who answers to whom</h2>
+    <div class="ladder">
+      <div class="rung"><div class="who">Officer controlling expenditure</div><div class="what">Charges expenditure and keeps the vote book current, within a single ministry — produces cash/records to the AGF or AuGF on demand.</div></div>
+      <div class="rung"><div class="who">Sub-accounting officer</div><div class="what">Runs a specific cash office (a Pay Office, say), maintaining the cash book — answers to the accounting officer and the AGF.</div></div>
+      <div class="rung"><div class="who">Accounting officer</div><div class="what">The Permanent Secretary — in overall control of one MDA, answers personally to the Public Accounts Committee, renders returns to the AGF.</div></div>
+      <div class="rung"><div class="who">Accountant-General</div><div class="what">Consolidates and supervises <em>across every MDA</em>, operates the CRF/DF/CF/Federation Account, prepares the nation's own financial statements.</div></div>
+      <div class="rung"><div class="who">Auditor-General</div><div class="what">Sits <em>outside</em> the accounting hierarchy entirely — audits what the AGF and every accounting officer produced, reports directly to the National Assembly, answerable to no other authority.</div></div>
+      <div class="rung"><div class="who">Minister of Finance</div><div class="what">The political head — sets fiscal policy, signs every warrant that releases money in the first place, and receives the Budget Office's reports.</div></div>
+    </div>
+    <p>See also <a href="ps-numbers.html">every numeric threshold</a> tied to these officers (tenure, deadlines, surcharge limits) and <a href="crf.html">the full warrant system</a> the Minister signs off on.</p>
+  </section>
+
+  <footer>
+    <span>Source: ATSWA Part&nbsp;II Public Sector Accounting study text, Chapter 7.</span>
+    <span>ATSWA Part II &middot; Public Sector Accounting</span>
+  </footer>
+
+</div>
+</body>
+</html>

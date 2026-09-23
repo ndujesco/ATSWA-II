@@ -35,6 +35,9 @@ CH = {
           'expenditure is called a **“warrant”**. All warrants are issued and signed by the '
           'Minister of Finance, and divide broadly into **recurrent expenditure warrants** and '
           '**capital expenditure warrants** (section 7.10).'},
+    {'note': '[Every officer in this chapter, and how they answer to each other, in one place →]'
+             '(guides/financial-officers.html) — condensed from the study text\'s own (very '
+             'long) function lists.'},
   ]},
 
   {'n': '7.2', 't': 'The Minister of Finance', 'b': [
